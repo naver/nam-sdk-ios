@@ -1,0 +1,6 @@
+framework module GFPSDKMediationInMobi {
+  umbrella header "GFPSDKMediationInMobi.h"
+
+  export *
+  module * { export * }
+}

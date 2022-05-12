@@ -1,0 +1,6 @@
+framework module GFPSDKMediationFAN {
+  umbrella header "GFPSDKMediationFAN.h"
+
+  export *
+  module * { export * }
+}

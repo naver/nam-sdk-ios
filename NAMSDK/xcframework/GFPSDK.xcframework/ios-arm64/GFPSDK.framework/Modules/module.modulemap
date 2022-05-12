@@ -1,0 +1,6 @@
+framework module GFPSDK {
+  umbrella header "GFPSDK.h"
+
+  export *
+  module * { export * }
+}
