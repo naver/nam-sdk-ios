@@ -21,6 +21,10 @@
 	<dict>
 		<key>Headers/GFPSDKMediationUnity.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TOR/qLDpf36amvXMOMqaD3uzgOY=
+			</data>
 			<key>hash2</key>
 			<data>
 			IbreuvDpjNwhLsDx8ITn67y9D0pPJpb2z6qv2Y3CR/k=
@@ -28,6 +32,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			XPfO3nn0lnxfNyHvn7uzhUzXHNE=
+			</data>
 			<key>hash2</key>
 			<data>
 			+t9T8b8UEcNSKDTxtMJd61WKkUoZD36teNhpPVxVMMU=

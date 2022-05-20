@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDK.xcframework"
     sdk.dependency 'KissXML', '~> 5.2'
   end
-
+  
   s.subspec 'MediationDFP' do |dfp|
     dfp.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDFP.xcframework"
     dfp.dependency 'NAMSDK/GFPSDK'

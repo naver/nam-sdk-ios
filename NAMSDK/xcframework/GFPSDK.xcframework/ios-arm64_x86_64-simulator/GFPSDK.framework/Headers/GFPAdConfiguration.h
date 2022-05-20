@@ -13,9 +13,13 @@
 #import "GFPLogLevel.h"
 #import "GFPAdInterfaceStyle.h"
 
-// CHECK: Remove header reference when public open.
-#import "GFPSDKPhase.h"
 
+typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
+    GFPPhasePrivate = 1 << 0,
+    GFPPhaseDev = 1 << 1,
+    GFPPhaseTest = 1 << 2,
+    GFPPhaseReal = 1 << 3,
+};
 
 
 @interface GFPAdConfiguration : NSObject
