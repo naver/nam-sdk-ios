@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -24,23 +24,11 @@ Pod::Spec.new do |s|
     sdk.dependency 'KissXML', '~> 5.2'
   end
 
-  s.subspec 'GFPSDKInternal' do |internal|
-    internal.vendored_frameworks = "NAMSDK/xcframework/GFPSDKInternal.xcframework"
-    internal.dependency 'NAMSDK/GFPSDK'
-  end
-
   s.subspec 'MediationDFP' do |dfp|
     dfp.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDFP.xcframework"
     dfp.dependency 'NAMSDK/GFPSDK'
     dfp.dependency 'Google-Mobile-Ads-SDK', '8.12.0'
-  end
-  
-  s.subspec 'MediationIMA' do |ima|
-    ima.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationIMA.xcframework"
-    ima.dependency 'NAMSDK/GFPSDK'
-    ima.dependency 'GoogleAds-IMA-iOS-SDK', '3.14.4'
-    ima.resources = ['NAMSDK/ResourceBundle/GFPIMAResource.bundle']    
-  end
+  end  
   
   s.subspec 'MediationNDA' do |nda|
     nda.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationNDA.xcframework"
@@ -48,19 +36,6 @@ Pod::Spec.new do |s|
     nda.resources = ['NAMSDK/ResourceBundle/GFPNDAMraidResource.bundle', 'NAMSDK/ResourceBundle/GFPNDANativeResource.bundle']    
   end
 
-  s.subspec 'MediationNDAVideo' do |nda|
-    nda.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationNDAVideo.xcframework"
-    nda.dependency 'NAMSDK/GFPSDK'    
-    nda.resources = ['NAMSDK/ResourceBundle/GFPNDAVideoResource.bundle']    
-  end
-
-  s.subspec 'MediationNDARich' do |nda|
-    nda.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationNDARich.xcframework"
-    nda.dependency 'NAMSDK/GFPSDK'
-    nda.dependency 'NAMSDK/MediationNDA'
-    nda.dependency 'NAMSDK/MediationNDAVideo'
-  end
-  
   s.subspec 'MediationFAN' do |fan|
     fan.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationFAN.xcframework"
     fan.dependency 'NAMSDK/GFPSDK'    
