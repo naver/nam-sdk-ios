@@ -4,6 +4,13 @@
 <dict>
 	<key>Display Ad</key>
 	<array>
+		<string>IOS_nw_native-N345765840</string>
+		<string>AOS_nw_native-N345765840</string>
+		<string>WEB_nw_native_1-N345765840</string>
+		<string>WEB_nw_native_2-N345765840</string>
+		<string>IOS_nw_banner-N345765840</string>
+		<string>AOS_nw_banner-N345765840</string>
+		<string>WEB_nw_banner-N345765840</string>
 		<string>NS_IOS_MIX_BANNER_TEST</string>
 		<string>NS_IOS_GFD_BANNER_TEST</string>
 		<string>NS_IOS_NDP_BANNER_TEST</string>
