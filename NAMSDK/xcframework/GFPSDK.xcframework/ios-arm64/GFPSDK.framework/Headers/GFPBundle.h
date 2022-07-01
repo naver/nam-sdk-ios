@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString * const kSDKNameGFP;
+extern NSString * const kSDKNameNAM;
+
 @interface GFPBundle : NSObject
 
 @property (class, nonatomic, readonly) GFPBundle *sharedInstance;
@@ -17,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)appVersion;
 + (NSString *)appName;
 + (NSString *)identifier;
++ (NSString *)sdkName;
 
 - (NSArray <NSString *> *)skAdNetworkList;
 
