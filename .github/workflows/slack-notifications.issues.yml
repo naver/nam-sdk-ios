@@ -1,0 +1,19 @@
+name: Slack Notification on Issues
+on:
+  issues:
+    types: [ opened, closed, reopened ]
+jobs:
+  slack_job:
+    runs-on: macos-latest
+    steps:
+      - name: Post to a Slack channel
+        id: slack
+        uses: slackapi/slack-github-action@v1.19.0
+        with:
+          # Slack channel id, channel name, or user id to post message.
+          # See also: https://api.slack.com/methods/chat.postMessage#channels
+          channel-id: 'nam-sdk-ios-notification'
+          # For posting a simple plain text message
+          slack-message: "이슈 ${{ github.event.issue.title }} (${{ github.event.issue.labels }}) 이(가) ${{ github.event.issue.state }} 되었습니다. 작성자: ${{ github.event.issue.user.login }} \n${{ github.event.issue.html_url }}"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

@@ -1,9 +1,9 @@
 name: slack-github-action
-
-on: [push]
-
+on:
+  pull_request:
+    types: [ opened, closed, reopened ]
 jobs:
-  push_job:
+  slack_job:
     runs-on: macos-latest
     steps:
       - name: Post to a Slack channel
@@ -14,6 +14,6 @@ jobs:
           # See also: https://api.slack.com/methods/chat.postMessage#channels
           channel-id: 'nam-sdk-ios-notification'
           # For posting a simple plain text message
-          slack-message: "GitHub build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+          slack-message: "PR ${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }} 이(가) ${{ github.event.pull_request.state }} 되었습니다. 작성자: ${{ github.event.pull_request.user.login }}\n${{ github.event.pull_request.html_url }}"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
