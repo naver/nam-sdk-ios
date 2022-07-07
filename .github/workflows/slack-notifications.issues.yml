@@ -3,7 +3,6 @@ on:
   issues:
     types: [ opened, closed, reopened ]
   workflow_dispatch:
-  # push: # 메인으로 머지할 때 comment 처리하기. (main이 아닌 브랜치에서 workflow를 등록하기 위함.)
 jobs:
   slack_job:
     runs-on: macos-latest
@@ -16,6 +15,6 @@ jobs:
           # See also: https://api.slack.com/methods/chat.postMessage#channels
           channel-id: 'nam-sdk-ios-notification'
           # For posting a simple plain text message
-          slack-message: "이슈 ${{ github.event.issue.title }} (${{ github.event.issue.labels }}) 이(가) ${{ github.event.issue.state }} 되었습니다. 작성자: ${{ github.event.issue.user.login }} \n${{ github.event.issue.html_url }}"
+          slack-message: "이슈 ${{ github.event.issue.title }} 이(가) ${{ github.event.issue.state }} 되었습니다. 작성자: ${{ github.event.issue.user.login }} \n${{ github.event.issue.html_url }}"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

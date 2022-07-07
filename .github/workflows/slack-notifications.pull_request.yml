@@ -3,7 +3,6 @@ on:
   pull_request:
     types: [ opened, closed, reopened ]
   workflow_dispatch:
-  push: # 메인으로 머지할 때 comment 처리하기. (main이 아닌 브랜치에서 workflow를 등록하기 위함.)
 jobs:
   slack_job:
     runs-on: macos-latest
