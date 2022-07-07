@@ -27,6 +27,8 @@ If applicable, add screenshots to help explain your problem.
  - Device: [e.g. iphone 8 Simulator]
  - OS: [e.g. iOS 15.5]
  - NAM SDK Version: [e.g. 1.0.0]
+ - Network Connection Type: [e.g. 5G]
+ - Reproducibility Rate: [e.g. 1.74%]
 
 **Additional context**
 Add any other context about the problem here.
