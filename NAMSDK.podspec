@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "4.3.0"
+  s.version      = "0.0.5"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
     unity.dependency 'UnityAds', '4.2.1'
   end
   
-  s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'CoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
+  s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
   
   s.requires_arc = true
   

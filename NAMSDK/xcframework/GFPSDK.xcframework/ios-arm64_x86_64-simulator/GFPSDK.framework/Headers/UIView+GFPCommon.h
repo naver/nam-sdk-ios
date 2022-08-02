@@ -78,6 +78,7 @@ typedef NS_ENUM(NSUInteger, GFPOriginType) {
 - (void)moveToTypeWith:(GFPAlignment)type withView:(UIView *)view gap:(CGFloat)gap;
 
 - (void)alignWith:(GFPAlignment)type withView:(UIView *)view;
+- (void)alignWith:(GFPAlignment)type withView:(UIView *)view gap:(CGFloat)gap;
 
 - (void)updateSizeWith:(GFPSizeType)type value:(CGFloat)value;
 - (void)updateSizeWith:(CGSize)aSize;

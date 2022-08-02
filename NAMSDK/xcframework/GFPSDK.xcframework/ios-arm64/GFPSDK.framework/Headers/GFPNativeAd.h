@@ -9,6 +9,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class UIView;
 @class UIImage;
@@ -132,6 +133,9 @@ typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
  * Image 객체
 */
 @property (readonly, nonatomic, strong, nonnull) UIImage *image;
+
+
+- (CGFloat)estimateHeightWith:(CGFloat)viewWidth;
 
 @end
 

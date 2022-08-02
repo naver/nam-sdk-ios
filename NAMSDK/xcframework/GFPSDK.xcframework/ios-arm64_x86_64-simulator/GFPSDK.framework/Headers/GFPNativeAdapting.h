@@ -58,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (GFPWaterfallDedup * _Nullable)dedup;
 
+- (CGFloat)estimateHeightWith:(CGFloat)viewWidth;
+
 @end
 
 NS_ASSUME_NONNULL_END

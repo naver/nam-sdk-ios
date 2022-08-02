@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/GFPAdConfiguration.h</key>
 		<data>
-		6VXgua4sqHKP9wFM+EmG7IV/3Nc=
+		9HNx90tKIxDS/Lte2QOdk4f7Lqk=
 		</data>
 		<key>Headers/GFPAdDedupeManager.h</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Headers/GFPNativeAd.h</key>
 		<data>
-		nIHueiDQxI0Ehg3+IRmE7WsiQuI=
+		xY0MybqTFDww/gqDXe+DiSwcO20=
 		</data>
 		<key>Headers/GFPNativeAdDelegate.h</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>Headers/GFPNativeAdapting.h</key>
 		<data>
-		NFJj5Z74P2CYZA19jGzYzJZD/ps=
+		B/yDeQbOElLW/limWDMCj6K9eY8=
 		</data>
 		<key>Headers/GFPNativeAdaptorDelegate.h</key>
 		<data>
@@ -454,7 +454,7 @@
 		</data>
 		<key>Headers/UIView+GFPCommon.h</key>
 		<data>
-		4E4NAaAsogSpAH93rBVHktyOk5E=
+		+9ZR7B5JkwfbIZEc3grsNvMEE2M=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -548,11 +548,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6VXgua4sqHKP9wFM+EmG7IV/3Nc=
+			9HNx90tKIxDS/Lte2QOdk4f7Lqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			uLJgh+goeU1TX+wt1KYtvQ4KqOnydVccZ6s7jf9wz/U=
+			0czA9H1W76/IrienCYscSIBAJYiABcuYaXYRonlJm1g=
 			</data>
 		</dict>
 		<key>Headers/GFPAdDedupeManager.h</key>
@@ -1054,11 +1054,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nIHueiDQxI0Ehg3+IRmE7WsiQuI=
+			xY0MybqTFDww/gqDXe+DiSwcO20=
 			</data>
 			<key>hash2</key>
 			<data>
-			M+TTVO21TbjWsyRb147zIuVqznQaoxEhFCzf1Kks+eA=
+			aMQjNlWyoNJgzSb9sBLtWLcQLTNcT96J3Hex3nwxhfQ=
 			</data>
 		</dict>
 		<key>Headers/GFPNativeAdDelegate.h</key>
@@ -1098,11 +1098,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NFJj5Z74P2CYZA19jGzYzJZD/ps=
+			B/yDeQbOElLW/limWDMCj6K9eY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wDmT6sMIvNzQodmWAID7eC6w3eg4O1MuMzpzjYpH3EQ=
+			GDVGZHQhU/pQuICOIwKN13ZR5ybju2kuQXyF3u/aTrs=
 			</data>
 		</dict>
 		<key>Headers/GFPNativeAdaptorDelegate.h</key>
@@ -1703,11 +1703,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4E4NAaAsogSpAH93rBVHktyOk5E=
+			+9ZR7B5JkwfbIZEc3grsNvMEE2M=
 			</data>
 			<key>hash2</key>
 			<data>
-			mOpNUCria+wdS90y7rn56cFXKWuWK5hxP4gRumHK0ck=
+			b/0GpJg0fTTwSFVO8D9QGYSDVfmEHMn2xhsobVsW7Gk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

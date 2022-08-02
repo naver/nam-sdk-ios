@@ -90,6 +90,10 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
  */
 @property (nonatomic, assign) GFPAdInterfaceStyle adInterfaceStyle;
 
+/**
+ * 외부 DSP SDK(=DFP)의 CrashReport 기능 사용 여부. (기본값 NO)
+ */
+@property (nonatomic, assign) BOOL disableCrashReport;
 
 /**
  * AdProvider 별 테스트 모드 설정.
