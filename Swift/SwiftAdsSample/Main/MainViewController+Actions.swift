@@ -173,7 +173,7 @@ extension MainViewController {
         let scrollTopButton = UIButton.gray2
         self.adViewController!.view.addSubview(scrollTopButton)
         
-        scrollTopButton.setTitle("Scroll Top to View Ad", for: .normal)
+        scrollTopButton.setTitle("Scroll Top to Show Ad", for: .normal)
         scrollTopButton.fitSizeTo(fontSize: FontSize)
         scrollTopButton.translatesAutoresizingMaskIntoConstraints = false
         scrollTopButton.widthAnchor.constraint(equalToConstant: scrollTopButton.frame.width + 15).isActive = true

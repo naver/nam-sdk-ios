@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AdsSampleApp
+@testable import SwiftAdsSample
 
 class AdsSampleAppTests: XCTestCase {
 

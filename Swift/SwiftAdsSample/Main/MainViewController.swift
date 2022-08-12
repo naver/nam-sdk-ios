@@ -145,9 +145,13 @@ final class MainViewController: UIViewController {
 
 extension MainViewController: VerticalSplitViewDelegate {
     func splitterDragged(by: CGFloat) {
-        if by < 0 {
+        print("test:", adView.frame.maxY, verticalSplitView.splitter.frame.minY, adView.contentSize.height - (adView.frame.maxY - verticalSplitView.splitter.frame.minY), adView.contentSize.height)
+        // sticks to adView's content offset's bottom
+        if adView.contentOffset.y + adView.frame.height + 60 >= adView.contentSize.height {
             let currentOffset = self.adView.contentOffset
-            let newOffset = CGPoint(x: currentOffset.x, y: currentOffset.y - by)
+            let newOffsetY = max(currentOffset.y - by, adView.contentSize.height - (verticalSplitView.splitter.frame.minY - adView.frame.minY))
+            let newOffset = CGPoint(x: currentOffset.x, y: newOffsetY)
+        
             self.adView.setContentOffset(newOffset, animated: false)
         }
     }

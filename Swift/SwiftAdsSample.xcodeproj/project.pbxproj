@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061DB0D98326E44E78306816 /* Pods_SwiftAdsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95454AB358778AA9C489B4 /* Pods_SwiftAdsSample.framework */; };
 		1F938A1125AEB42D00EC4BF4 /* GFPNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F938A0F25AEB42D00EC4BF4 /* GFPNativeAdView.xib */; };
 		1F938A1225AEB42D00EC4BF4 /* GFPNativeSimpleAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F938A1025AEB42D00EC4BF4 /* GFPNativeSimpleAdView.xib */; };
 		1F938A1C25AEC5A800EC4BF4 /* CallHistoryTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F938A1B25AEC5A800EC4BF4 /* CallHistoryTextView.swift */; };
@@ -30,7 +31,7 @@
 		1FA3520325B5618900A86E25 /* AdTimeoutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA351D625B5611400A86E25 /* AdTimeoutInfo.swift */; };
 		1FAFC51F25CA74300037C96C /* SettingDedupeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFC51E25CA74300037C96C /* SettingDedupeViewController.swift */; };
 		1FB55C872563B69B00486B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55C862563B69B00486B6F /* AppDelegate.swift */; };
-		1FB55C9E2563B69D00486B6F /* AdsSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55C9D2563B69D00486B6F /* AdsSampleAppTests.swift */; };
+		1FB55C9E2563B69D00486B6F /* SwiftAdsSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55C9D2563B69D00486B6F /* SwiftAdsSampleTests.swift */; };
 		1FB55D0D2563B88F00486B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB55D0C2563B88F00486B6F /* Assets.xcassets */; };
 		1FB55D192563B8C900486B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB55D172563B8C900486B6F /* LaunchScreen.storyboard */; };
 		1FB55D1F2563B8D000486B6F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FB55D1D2563B8D000486B6F /* Localizable.strings */; };
@@ -104,11 +105,11 @@
 		1F938BED25B1718E00EC4BF4 /* SettingSliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSliderTableViewCell.xib; sourceTree = "<group>"; };
 		1FA351D625B5611400A86E25 /* AdTimeoutInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTimeoutInfo.swift; sourceTree = "<group>"; };
 		1FAFC51E25CA74300037C96C /* SettingDedupeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDedupeViewController.swift; sourceTree = "<group>"; };
-		1FB55C832563B69B00486B6F /* AdsSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdsSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB55C832563B69B00486B6F /* SwiftAdsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAdsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB55C862563B69B00486B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB55C942563B69C00486B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB55C992563B69D00486B6F /* AdsSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdsSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FB55C9D2563B69D00486B6F /* AdsSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsSampleAppTests.swift; sourceTree = "<group>"; };
+		1FB55C9D2563B69D00486B6F /* SwiftAdsSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAdsSampleTests.swift; sourceTree = "<group>"; };
 		1FB55C9F2563B69D00486B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB55CA42563B69D00486B6F /* AdsSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdsSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB55D0C2563B88F00486B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +121,8 @@
 		1FB55EF6256604C200486B6F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1FB55F16256605A700486B6F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1FB55F65256670A000486B6F /* SampleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleExtension.swift; sourceTree = "<group>"; };
+		AD95454AB358778AA9C489B4 /* Pods_SwiftAdsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAdsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B712356C356952A1A4BC4BF1 /* Pods-SwiftAdsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdsSample.release.xcconfig"; path = "Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample.release.xcconfig"; sourceTree = "<group>"; };
 		CE21A012282CDC54001FD1A3 /* default_unitID_test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_unitID_test.plist; sourceTree = "<group>"; };
 		CE26BBE625BABBCA00F970AD /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		CE3B4CFB2820F2C700B55921 /* MainViewManager+UnitID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewManager+UnitID.swift"; sourceTree = "<group>"; };
@@ -142,6 +145,7 @@
 		CEFB1CA32811240D00F37E11 /* InterstitialAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialAdViewController.swift; sourceTree = "<group>"; };
 		CEFB1CA52811241000F37E11 /* RewardedAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAdViewController.swift; sourceTree = "<group>"; };
 		CEFB1CAB281124D600F37E11 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		F7A150E6BAEE0349FAF63E61 /* Pods-SwiftAdsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdsSample.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061DB0D98326E44E78306816 /* Pods_SwiftAdsSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +177,8 @@
 		1A3FBBE1FDEDF71FA8EDF5FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				F7A150E6BAEE0349FAF63E61 /* Pods-SwiftAdsSample.debug.xcconfig */,
+				B712356C356952A1A4BC4BF1 /* Pods-SwiftAdsSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -199,24 +206,25 @@
 		1FB55C7A2563B69B00486B6F = {
 			isa = PBXGroup;
 			children = (
-				1FB55C852563B69B00486B6F /* AdsSampleApp */,
-				1FB55C9C2563B69D00486B6F /* AdsSampleAppTests */,
+				1FB55C852563B69B00486B6F /* SwiftAdsSample */,
+				1FB55C9C2563B69D00486B6F /* SwiftAdsSampleTests */,
 				1FB55C842563B69B00486B6F /* Products */,
 				1A3FBBE1FDEDF71FA8EDF5FE /* Pods */,
+				5FA44BABC7625BAB62761C37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		1FB55C842563B69B00486B6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FB55C832563B69B00486B6F /* AdsSampleApp.app */,
+				1FB55C832563B69B00486B6F /* SwiftAdsSample.app */,
 				1FB55C992563B69D00486B6F /* AdsSampleAppTests.xctest */,
 				1FB55CA42563B69D00486B6F /* AdsSampleAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FB55C852563B69B00486B6F /* AdsSampleApp */ = {
+		1FB55C852563B69B00486B6F /* SwiftAdsSample */ = {
 			isa = PBXGroup;
 			children = (
 				1FB55D232563B90800486B6F /* Common */,
@@ -229,16 +237,16 @@
 				1FB55C862563B69B00486B6F /* AppDelegate.swift */,
 				1FB55C942563B69C00486B6F /* Info.plist */,
 			);
-			path = AdsSampleApp;
+			path = SwiftAdsSample;
 			sourceTree = "<group>";
 		};
-		1FB55C9C2563B69D00486B6F /* AdsSampleAppTests */ = {
+		1FB55C9C2563B69D00486B6F /* SwiftAdsSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				1FB55C9D2563B69D00486B6F /* AdsSampleAppTests.swift */,
+				1FB55C9D2563B69D00486B6F /* SwiftAdsSampleTests.swift */,
 				1FB55C9F2563B69D00486B6F /* Info.plist */,
 			);
-			path = AdsSampleAppTests;
+			path = SwiftAdsSampleTests;
 			sourceTree = "<group>";
 		};
 		1FB55CE42563B73200486B6F /* Resource */ = {
@@ -339,6 +347,14 @@
 			path = Rewarded;
 			sourceTree = "<group>";
 		};
+		5FA44BABC7625BAB62761C37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD95454AB358778AA9C489B4 /* Pods_SwiftAdsSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEA4AB09282E332000B7B10D /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,21 +406,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FB55C822563B69B00486B6F /* AdsSampleApp */ = {
+		1FB55C822563B69B00486B6F /* SwiftAdsSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FB55CAD2563B69D00486B6F /* Build configuration list for PBXNativeTarget "AdsSampleApp" */;
+			buildConfigurationList = 1FB55CAD2563B69D00486B6F /* Build configuration list for PBXNativeTarget "SwiftAdsSample" */;
 			buildPhases = (
+				B822A7108FBC59B0F0BDBF6C /* [CP] Check Pods Manifest.lock */,
 				1FB55C7F2563B69B00486B6F /* Sources */,
 				1FB55C802563B69B00486B6F /* Frameworks */,
 				1FB55C812563B69B00486B6F /* Resources */,
+				7DA40CE4DE7A8947DC2A98FF /* [CP] Embed Pods Frameworks */,
+				97D9F130DCA3E65D922B1BEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AdsSampleApp;
+			name = SwiftAdsSample;
 			productName = AdsSampleApp;
-			productReference = 1FB55C832563B69B00486B6F /* AdsSampleApp.app */;
+			productReference = 1FB55C832563B69B00486B6F /* SwiftAdsSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1FB55C982563B69D00486B6F /* AdsSampleAppTests */ = {
@@ -465,7 +484,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1FB55C7E2563B69B00486B6F /* Build configuration list for PBXProject "AdsSampleApp" */;
+			buildConfigurationList = 1FB55C7E2563B69B00486B6F /* Build configuration list for PBXProject "SwiftAdsSample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -478,7 +497,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FB55C822563B69B00486B6F /* AdsSampleApp */,
+				1FB55C822563B69B00486B6F /* SwiftAdsSample */,
 				1FB55C982563B69D00486B6F /* AdsSampleAppTests */,
 				1FB55CA32563B69D00486B6F /* AdsSampleAppUITests */,
 			);
@@ -523,6 +542,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DA40CE4DE7A8947DC2A98FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D9F130DCA3E65D922B1BEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B822A7108FBC59B0F0BDBF6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftAdsSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FB55C7F2563B69B00486B6F /* Sources */ = {
@@ -575,7 +653,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FB55C9E2563B69D00486B6F /* AdsSampleAppTests.swift in Sources */,
+				1FB55C9E2563B69D00486B6F /* SwiftAdsSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,12 +669,12 @@
 /* Begin PBXTargetDependency section */
 		1FB55C9B2563B69D00486B6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1FB55C822563B69B00486B6F /* AdsSampleApp */;
+			target = 1FB55C822563B69B00486B6F /* SwiftAdsSample */;
 			targetProxy = 1FB55C9A2563B69D00486B6F /* PBXContainerItemProxy */;
 		};
 		1FB55CA62563B69D00486B6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1FB55C822563B69B00486B6F /* AdsSampleApp */;
+			target = 1FB55C822563B69B00486B6F /* SwiftAdsSample */;
 			targetProxy = 1FB55CA52563B69D00486B6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -741,18 +819,19 @@
 		};
 		1FB55CAE2563B69D00486B6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A150E6BAEE0349FAF63E61 /* Pods-SwiftAdsSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2YJ9ZX2DS;
-				INFOPLIST_FILE = AdsSampleApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftAdsSample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.AdsSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.SwiftAdsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -761,18 +840,19 @@
 		};
 		1FB55CAF2563B69D00486B6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B712356C356952A1A4BC4BF1 /* Pods-SwiftAdsSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2YJ9ZX2DS;
-				INFOPLIST_FILE = AdsSampleApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftAdsSample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.AdsSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.SwiftAdsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -862,7 +942,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FB55C7E2563B69B00486B6F /* Build configuration list for PBXProject "AdsSampleApp" */ = {
+		1FB55C7E2563B69B00486B6F /* Build configuration list for PBXProject "SwiftAdsSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FB55CAB2563B69D00486B6F /* Debug */,
@@ -871,7 +951,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FB55CAD2563B69D00486B6F /* Build configuration list for PBXNativeTarget "AdsSampleApp" */ = {
+		1FB55CAD2563B69D00486B6F /* Build configuration list for PBXNativeTarget "SwiftAdsSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FB55CAE2563B69D00486B6F /* Debug */,

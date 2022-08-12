@@ -55,22 +55,22 @@ PODS:
     - KissXML/Additions
     - KissXML/Core
   - KissXML/Core (5.3.1)
-  - NAMSDK (0.0.1):
-    - NAMSDK/GFPSDK (= 0.0.1)
-  - NAMSDK/GFPSDK (0.0.1):
+  - NAMSDK (0.0.5):
+    - NAMSDK/GFPSDK (= 0.0.5)
+  - NAMSDK/GFPSDK (0.0.5):
     - KissXML (~> 5.2)
-  - NAMSDK/MediationDFP (0.0.1):
+  - NAMSDK/MediationDFP (0.0.5):
     - Google-Mobile-Ads-SDK (= 8.12.0)
     - NAMSDK/GFPSDK
-  - NAMSDK/MediationFAN (0.0.1):
+  - NAMSDK/MediationFAN (0.0.5):
     - FBAudienceNetwork (= 6.9.0)
     - NAMSDK/GFPSDK
-  - NAMSDK/MediationInMobi (0.0.1):
+  - NAMSDK/MediationInMobi (0.0.5):
     - InMobiSDK (= 10.0.1)
     - NAMSDK/GFPSDK
-  - NAMSDK/MediationNDA (0.0.1):
+  - NAMSDK/MediationNDA (0.0.5):
     - NAMSDK/GFPSDK
-  - NAMSDK/MediationUnity (0.0.1):
+  - NAMSDK/MediationUnity (0.0.5):
     - NAMSDK/GFPSDK
     - UnityAds (= 4.0.0)
   - nanopb (2.30908.0):
@@ -78,17 +78,17 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - PromisesObjC (2.1.0)
+  - PromisesObjC (2.1.1)
   - UnityAds (4.0.0)
 
 DEPENDENCIES:
   - AmazonPublisherServicesSDK (= 3.4.6)
-  - NAMSDK
-  - NAMSDK/MediationDFP
-  - NAMSDK/MediationFAN
-  - NAMSDK/MediationInMobi
-  - NAMSDK/MediationNDA
-  - NAMSDK/MediationUnity
+  - NAMSDK (from `../`)
+  - NAMSDK/MediationDFP (from `../`)
+  - NAMSDK/MediationFAN (from `../`)
+  - NAMSDK/MediationInMobi (from `../`)
+  - NAMSDK/MediationNDA (from `../`)
+  - NAMSDK/MediationUnity (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -100,10 +100,13 @@ SPEC REPOS:
     - GoogleUtilities
     - InMobiSDK
     - KissXML
-    - NAMSDK
     - nanopb
     - PromisesObjC
     - UnityAds
+
+EXTERNAL SOURCES:
+  NAMSDK:
+    :path: "../"
 
 SPEC CHECKSUMS:
   AmazonPublisherServicesSDK: d302b2e4695be199fa520786f66570499cff6c94
@@ -114,11 +117,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   InMobiSDK: 91a9ce7070f892a28e005605c23c58434be6c4c5
   KissXML: 5c8e0f2e8b9f071d3e1ae123dec3eb5da615c10c
-  NAMSDK: cd539fcf6d05376a3802519bcf2f85fce3bcfadf
+  NAMSDK: 1e0e09ba121c6c4366a0a68fab6254a03d6c9d68
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   UnityAds: 9649e17d2d255f91c0a84e00062a0d07d8fba8a5
 
-PODFILE CHECKSUM: b591926912b35c1408d6b3312b9c2e89fa09439c
+PODFILE CHECKSUM: 798f4200bc02d036dc02a58788e072b29431d648
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
