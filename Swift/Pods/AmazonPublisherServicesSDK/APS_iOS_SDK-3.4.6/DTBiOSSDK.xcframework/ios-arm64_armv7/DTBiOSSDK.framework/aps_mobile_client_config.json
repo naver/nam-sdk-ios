@@ -1,0 +1,16 @@
+{
+  "metrics": {
+    "mediation_latency": false,
+    "lost_bid": false,
+    "fetch_latency": false,
+    "fetch_failure": false,
+    "alert_sdk_wrapping": false,
+    "alert_sdk_wrapping_v2": false,
+    "skadnp": 1,
+    "skadn_p2_ep": "https://e7dv6y8g3a.execute-api.us-west-2.amazonaws.com/Beta/echo"
+  },
+  "sample_rates": {
+     "wrapping_pixel": 5,
+     "skadn": 20
+  }
+}

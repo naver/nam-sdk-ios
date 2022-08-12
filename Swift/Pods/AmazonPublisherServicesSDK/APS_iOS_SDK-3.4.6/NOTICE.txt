@@ -1,0 +1,17 @@
+Licenses to the Google Mobile Ads SDK are governed by the Google Terms of Service at https://policies.google.com/terms?gl=US&hl=en and the Google API Terms of Service at https://developers.google.com/terms/
+
+Information about the Google Mobile Ads SDK for iOS is available here: https://developers.google.com/mobile-ads-sdk/docs/dfp/ios/download
+
+Information about the Google Mobile Ads SDK for Android is available here: https://developers.google.com/mobile-ads-sdk/docs/dfp/android/sdk
+
+License to the 5.0 MoPub SDK is governed by the following terms:
+
+MoPub's terms are available here: https://www.mopub.com/legal/sdk-license-agreement/
+
+MOAT's terms are available here: https://moat.com/terms and here: https://moat.com/third_party_software_attribution
+
+IAS's terms are available here: https://integralads.com/sdk-license-agreement/
+
+Information about the MoPub iOS SDK is available here: https://developers.mopub.com/docs/ios/getting-started/
+
+Information about the MoPub Android SDK is available here: https://bintray.com/mopub/mopub-android-sdk/mopub-android-sdk/5.0.0#read

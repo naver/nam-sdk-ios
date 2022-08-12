@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources.sh
+${PODS_ROOT}/../../NAMSDK/resourcebundle/GFPSDKResource.bundle
+${PODS_ROOT}/../../NAMSDK/resourcebundle/GFPNDAMraidResource.bundle
+${PODS_ROOT}/../../NAMSDK/resourcebundle/GFPNDANativeResource.bundle
