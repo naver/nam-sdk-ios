@@ -40,26 +40,12 @@ final class MainViewManager {
         }
     }
     
-    public var isCustomUnitIDList: Bool = false {
-        didSet {
-            UserDefaults.isCustomUnitIDList = self.isCustomUnitIDList
-        }
+    var previousDefaultUnitIDList: UnitIDList! = UnitIDList() {
+        didSet { UserDefaults.previousDefaultUnitIDList = self.previousDefaultUnitIDList}
     }
-    
-    public var unitIDList: [String : [String]]! {
-        get {
-            return self.isCustomUnitIDList ? self.customUnitIDList : self.defaultUnitIDList
-        }
-        set {
-            self.isCustomUnitIDList = true
-            self.customUnitIDList = newValue
-        }
-    }
-    
-    var defaultUnitIDList: [String : [String]]! = [String : [String]]()
-    
-    var customUnitIDList: [String : [String]]! = [String : [String]]() {
-        didSet { UserDefaults.customUnitIDList = self.customUnitIDList }
+    var defaultUnitIDList: UnitIDList! = UnitIDList()
+    var unitIDList: UnitIDList! = UnitIDList() {
+        didSet { UserDefaults.unitIDList = self.unitIDList }
     }
     
     func addHistory(_ aText:String) {
@@ -71,9 +57,8 @@ final class MainViewManager {
     }
     
     init() {
-        loadDefaultUnitIDListFromFile()
-        refreshCustomUnitIDList()
-        loadSelectionsFromMemory()
+        loadMainViewSettingsFromMemory()
+        loadUnitID()
     }
     
     private weak var adTypeLabel: UILabel?
@@ -159,8 +144,13 @@ extension UserDefaults {
         }
     }
     
-    static var customUnitIDList: [String : [String]]? {
-        get { return UserDefaults.standard.object(forKey: "customUnitIDList") as? [String : [String]] }
-        set { UserDefaults.standard.set(newValue, forKey: "customUnitIDList") }
+    static var previousDefaultUnitIDList: UnitIDList? {
+        get { return UserDefaults.standard.object(forKey: "previousDefaultUnitIDList") as? UnitIDList }
+        set { UserDefaults.standard.set(newValue, forKey: "previousDefaultUnitIDList") }
+    }
+    
+    static var unitIDList: UnitIDList? {
+        get { return UserDefaults.standard.object(forKey: "unitIDList") as? UnitIDList }
+        set { UserDefaults.standard.set(newValue, forKey: "unitIDList") }
     }
 }

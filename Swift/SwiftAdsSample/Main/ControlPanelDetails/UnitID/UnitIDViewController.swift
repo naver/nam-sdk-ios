@@ -94,7 +94,6 @@ final class UnitIDViewController: UIViewController {
     private func loadUnitIDList() {
         // TODO: phase 타입 구분해서 불러오도록
         guard let adType = MainViewManager.shared.adType else { return }
-        print(MainViewManager.shared.isCustomUnitIDList)
         let list = MainViewManager.shared.unitIDList[adType.title]
         self.unitIDList = list ?? [String]()
     }
@@ -179,9 +178,6 @@ extension UnitIDViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
     -> UISwipeActionsConfiguration? {
-        if MainViewManager.shared.isCustomUnitIDList == false {
-            return nil
-        }
         
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completionHandler) in
             weak var weakSelf = self

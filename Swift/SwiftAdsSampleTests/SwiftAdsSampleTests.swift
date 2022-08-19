@@ -1,5 +1,5 @@
 //
-//  AdsSampleAppTests.swift
+//  SwiftAdsSampleTests.swift
 //
 //  NAM(Naver Ad Manager) SDK for iOS
 //  Copyright 2022-present NAVER Corp.

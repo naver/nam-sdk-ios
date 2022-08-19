@@ -30,6 +30,12 @@ final class AdTypeViewController: UIViewController {
         showMainViewOnStartup()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        MainViewManager.shared.adType = nil
+    }
+    
     func setupViews() {
         self.tableView = UITableView()
         self.view.addSubview(self.tableView!)

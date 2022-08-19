@@ -69,10 +69,6 @@ final class MainViewController: UIViewController {
         }
     }
     
-    deinit {
-        MainViewManager.shared.adType = nil
-    }
-    
     private func setupSubviews() {
         self.controlPanel = UIView()
 //        self.adTypeOptionsButton = UIButton.gray1
