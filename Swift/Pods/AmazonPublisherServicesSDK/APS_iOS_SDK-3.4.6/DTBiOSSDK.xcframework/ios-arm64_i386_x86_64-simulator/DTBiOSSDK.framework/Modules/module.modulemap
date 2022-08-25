@@ -1,6 +1,0 @@
-framework module DTBiOSSDK {
-  umbrella header "DTBiOSSDK.h"
-
-  export *
-  module * { export * }
-}

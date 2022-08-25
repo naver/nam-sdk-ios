@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks.sh
-${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
-${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework
-${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
-${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK

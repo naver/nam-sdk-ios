@@ -1,7 +1,0 @@
-${PODS_ROOT}/Target Support Files/NAMSDK/NAMSDK-xcframeworks.sh
-${PODS_ROOT}/../../NAMSDK/xcframework/GFPSDK.xcframework
-${PODS_ROOT}/../../NAMSDK/xcframework/GFPSDKMediationDFP.xcframework
-${PODS_ROOT}/../../NAMSDK/xcframework/GFPSDKMediationFAN.xcframework
-${PODS_ROOT}/../../NAMSDK/xcframework/GFPSDKMediationInMobi.xcframework
-${PODS_ROOT}/../../NAMSDK/xcframework/GFPSDKMediationNDA.xcframework
-${PODS_ROOT}/../../NAMSDK/xcframework/GFPSDKMediationUnity.xcframework
