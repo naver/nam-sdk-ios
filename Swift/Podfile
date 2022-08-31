@@ -1,0 +1,36 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+
+def real_podspec # Real
+  pod 'NAMSDK'
+  pod 'NAMSDK/MediationNDA'
+  pod 'NAMSDK/MediationDFP'  
+  pod 'NAMSDK/MediationFAN'
+  pod 'NAMSDK/MediationInMobi'
+  pod 'NAMSDK/MediationUnity'
+end
+
+
+def local_podspec # Local
+  pod 'NAMSDK', :path => "../"               # SDK 본체
+  pod 'NAMSDK/MediationNDA', :path => "../"
+  pod 'NAMSDK/MediationDFP', :path => "../"
+  pod 'NAMSDK/MediationFAN', :path => "../"
+  pod 'NAMSDK/MediationInMobi', :path => "../"
+  pod 'NAMSDK/MediationUnity', :path => "../"
+end
+
+
+def headerBidding_sdk
+  pod 'AmazonPublisherServicesSDK', '3.4.6' # 헤더비딩 Amazon
+end
+
+target 'SwiftAdsSample' do
+  use_frameworks!
+  
+  local_podspec
+  #real_podspec
+  headerBidding_sdk
+
+end
