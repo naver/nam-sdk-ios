@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GFPS2SAdClickDelegate.h"
 
 @class GFPSKAdNetworkInfo;
 @class UIViewController;
-
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,9 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL forceURLLanding;
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWith:(UIViewController *)aTarget skAdNetwork:(GFPSKAdNetworkInfo * _Nullable)aSKAdNetwork NS_DESIGNATED_INITIALIZER;
 
-- (void)openLanding:(void (^)(BOOL isSuccess))aCompletion;
+- (instancetype)initWith:(UIViewController * _Nullable)aTarget
+             skAdNetwork:(GFPSKAdNetworkInfo * _Nullable)aSKAdNetwork
+           clickDelegate:(id <GFPS2SAdClickDelegate> _Nullable)clickDelegate NS_DESIGNATED_INITIALIZER;
+
+- (void)openLanding:(GFPS2SAdLandingHandler)aCompletion;
 
 @end
 

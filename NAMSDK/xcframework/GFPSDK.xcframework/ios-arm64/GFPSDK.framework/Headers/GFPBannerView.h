@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "GFPBannerViewDelegate.h"
 #import "GFPMRAIDSupportSetting.h"
-#import "GFPImpression.h"
 #import "GFPBannerViewLayoutType.h"
+#import "GFPS2SAdClickDelegate.h"
 
 @protocol GFPBannerAdapting;
 
@@ -20,6 +20,7 @@
 @class GFPBannerAdSize;
 @class GFPAdAdaptor;
 @class GFPLoadResponseInfo;
+@class GFPAdBannerWebViewOptions;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -58,6 +59,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readwrite, nonatomic, weak) id <GFPBannerViewDelegate> delegate;
 
 /**
+ * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
+ */
+@property (readwrite, nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
+
+/**
  * 배너 레이아웃 타입. (기본값: GFPBannerViewLayoutTypeFixed)
  */
 @property (readwrite, nonatomic, assign) GFPBannerViewLayoutType layoutType;
@@ -90,15 +96,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- * 광고 유효 노출 설정 정보
- * 해당 기능은 deprecate 되었으며, 서버 응답에 의해 imp를 설정합니다.
- */
-@property (readwrite, nonatomic, strong) GFPImpressionSetting *impressionSetting DEPRECATED_ATTRIBUTE;
-
-/**
  * 광고 응답 객체
  */
 @property (readonly, nonatomic, strong) GFPLoadResponseInfo *responseInfo;
+
+/**
+ * WebView options
+ */
+@property (nonatomic, strong, nullable) GFPAdBannerWebViewOptions *webViewOptions;
 
 
 /**
@@ -117,6 +122,7 @@ NS_ASSUME_NONNULL_BEGIN
  * GFPAdLoader를 사용해서 로드하는 경우에 해당 메서드를 호출하면 Exception이 발생합니다.
  */
 - (void)loadAd;
+
 
 @end
 

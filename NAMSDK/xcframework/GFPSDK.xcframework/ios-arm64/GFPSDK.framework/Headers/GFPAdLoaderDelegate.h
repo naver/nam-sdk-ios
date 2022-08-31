@@ -13,6 +13,7 @@
 @class GFPBannerView;
 @class GFPLoadResponseInfo;
 
+
 @protocol GFPAdLoaderDelegate <NSObject>
 
 @optional

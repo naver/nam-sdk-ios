@@ -80,13 +80,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 
 @interface GFPNativeSimpleAdRenderingSetting : GFPNativeBaseRenderingSetting
 
-/**
- * 네이티브 Simple형(=단일 이미지뷰) 광고에 AdBadge가 포함되는 지 결정합니다. AdBadge는 우측하단에 그려집니다.
- * (기본값은 YES)
- * 해당 기능은 deprecate 되었으며, 내부의 로직에 의해 AdBadge를 그립니다.
- */
-@property (nonatomic, assign) BOOL renderAdBadge DEPRECATED_ATTRIBUTE;;
-
 @end
 
 NS_ASSUME_NONNULL_END

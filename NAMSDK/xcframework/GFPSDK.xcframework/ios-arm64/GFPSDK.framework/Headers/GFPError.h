@@ -17,7 +17,6 @@ FOUNDATION_EXPORT NSString *const GFPErrorDescriptionKey;
 FOUNDATION_EXPORT NSString *const GFPErrorSubcodeKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderNDAErrorKey;
-FOUNDATION_EXPORT NSString *const GFPBannerProviderMoPubErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderInMobiErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderUnityErrorKey;
@@ -26,16 +25,13 @@ FOUNDATION_EXPORT NSString *const GFPVideoProviderNDAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPVideoProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderFANErrorKey;
-FOUNDATION_EXPORT NSString *const GFPNativeProviderMoPubErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderInMobiErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderNDAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderFANErrorKey;
-FOUNDATION_EXPORT NSString *const GFPInterstitialProviderMoPubErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderUnityErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderFANErrorKey;
-FOUNDATION_EXPORT NSString *const GFPRewardProviderMoPubErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderUnityErrorKey;
 
 typedef NS_ENUM(NSInteger, GFPErrorCode) {
@@ -78,8 +74,8 @@ typedef NS_ENUM(NSInteger, GFPErrorCode) {
     GFPErrorNoFill = 3310,
     GFPErrorBannerProviderLoadFailed = 3311,
     GFPErrorVideoProviderLoadFailed = 3312,
-    GFPErrorNativeProviderLoadFailed = 3313, //TODO: check
-    GFPErrorInvalidAdSize = 3313,
+    GFPErrorNativeProviderLoadFailed = 3313,
+    GFPErrorInvalidAdSize = 3314,
 
     GFPErrorRenderingNotSupported = 3320,
 

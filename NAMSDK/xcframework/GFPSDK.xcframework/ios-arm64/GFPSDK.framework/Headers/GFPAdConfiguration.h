@@ -12,7 +12,7 @@
 #import "GFPRenderDisplayAgent.h"
 #import "GFPLogLevel.h"
 #import "GFPAdInterfaceStyle.h"
-
+#import "GFPS2SAdClickDelegate.h"
 
 typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
     GFPPhasePrivate = 1 << 0,
@@ -29,6 +29,7 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
 
 /**
  * 배너광고 요청 타임아웃 (기본값 60초, kGFPDefaultBannerAdRequestTimeout)
+ * GFPBannerView 를 통한 로드 시 적용됨.
  */
 @property (nonatomic, assign) NSTimeInterval bannerAdRequestTimeout;
 
@@ -38,12 +39,8 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
 @property (nonatomic, assign) NSTimeInterval videoAdRequestTimeout;
 
 /**
- * 네이티브광고 요청 타임아웃 (기본값 60초, kGFPDefaultNativeAdRequestTimeout)
- */
-@property (nonatomic, assign) NSTimeInterval nativeAdRequestTimeout;
-
-/**
- * 통합광고 요청 타임아웃 (기본값 60초, kGFPDefaultUnifiedAdRequestTimeout)
+ * 통합광고(배너+네이티브) 요청 타임아웃 (기본값 60초, kGFPDefaultUnifiedAdRequestTimeout)
+ * GFPAdLoader를 통한 광고 로드 시 적용됨.
  */
 @property (nonatomic, assign) NSTimeInterval unifiedAdRequestTimeout;
 
@@ -62,6 +59,11 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
  * 광고 클릭 후 렌더링 타입
  */
 @property (nonatomic, strong) GFPRenderDisplayAgent *displayAgent;
+
+/**
+ * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
+ */
+@property (nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
 
 
 /**

@@ -14,9 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNetworkUtils : NSObject
 
+@property (class, nonatomic, readonly) GFPNetworkUtils *sharedInstance;
+
 + (BOOL)isWIFI;
 
-+ (NSString *)networkType;
++ (NSString *)networkTypeDescForInit;
++ (NSString *)networkTypeDescForAdcall;
 
 @end
 

@@ -33,7 +33,6 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPLogLevel.h>
 #import <GFPSDK/GFPAdConfiguration.h>
 #import <GFPSDK/GFPMRAIDSupportSetting.h>
-#import <GFPSDK/GFPImpression.h>
 
 #import <GFPSDK/GFPVideoAdScheduleManager.h>
 #import <GFPSDK/GFPVideoAdScheduleManagerDelegate.h>
@@ -116,4 +115,4 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPStoreKitUtils.h>
 #import <GFPSDK/GFPClickLandingUtil.h>
 #import <GFPSDK/GFPLoadResponseInfo.h>
-
+#import <GFPSDK/GFPS2SAdClickDelegate.h>

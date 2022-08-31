@@ -21,7 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 extern NSTimeInterval const kGFPDefaultBannerAdRequestTimeout;
 extern NSTimeInterval const kGFPDefaultVideoAdRequestTimeout;
-extern NSTimeInterval const kGFPDefaultNativeAdRequestTimeout;
+extern NSTimeInterval const kGFPDefaultUnifiedAdRequestTimeout;
+extern NSTimeInterval const kGFPDefaultRewardedAdRequestTimeout;
+extern NSTimeInterval const kGFPDefaultInterstitialAdRequestTimeout;
 
 typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
 

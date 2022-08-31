@@ -6,7 +6,7 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
-
+#import "GFPS2SAdClickDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)canOpenURL:(NSURL *)aURL;
 
-+ (void)openURLWith:(NSString *)aURL completion:(void (^ _Nullable)(BOOL isSuccess))aCompletion;
++ (void)openURLWith:(NSString *)aURL completion:(GFPS2SAdLandingHandler)aCompletion;
 
 + (NSURLRequest *)defaultRequestWith:(NSURL * __nonnull)url;
 

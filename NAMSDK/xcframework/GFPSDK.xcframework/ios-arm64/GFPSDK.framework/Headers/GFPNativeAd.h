@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSInteger, GFPNativeAdProviderType) {
     GFPNativeAdProviderTypeFAN = 1 << 0,     // Facebook Audience Network
     GFPNativeAdProviderTypeDFP = 1 << 1,     // Google DFP
-    GFPNativeAdProviderTypeMoPub = 1 << 2,   // MoPub
+    // GFPNativeAdProviderTypeMoPub = 1 << 2,   // (deprecate)MoPub
     GFPNativeAdProviderTypeInMobi = 1 << 3,  // InMobi
     GFPNativeAdProviderTypeNDA = 1 << 4      // Naver Native
 };
@@ -63,7 +63,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
  *   - GFPNativeAdRenderingSetting.hasMediaView == YES 이면, "FBNativeAd" 객체
  *   - GFPNativeAdRenderingSetting.hasMediaView == NO 이면, "FBNativeBannerAd" 객체
  * - adProvider 가 GFPNativeAdProviderDFP 인 경우, "GADNativeAd" 객체
- * - adProvider 가 GFPNativeAdProviderTypeMoPub 인 경우, "MPNativeAd" 객체
  * - adProvider 가 GFPNativeAdProviderTypeInMobi 인 경우, "IMNative" 객체
  */
 @property(readonly, nonatomic, strong) id adProviderNativeAd;

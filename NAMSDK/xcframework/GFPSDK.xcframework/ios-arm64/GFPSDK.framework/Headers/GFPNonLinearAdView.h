@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "GFPTextAdViewAttribute.h"
+#import "GFPS2SAdClickDelegate.h"
 
 @class GFPRemindAd;
-
+@class GFPClickLandingUtil;
 
 typedef NS_OPTIONS(NSInteger, GFPRemindTextType) {
     GFPRemindNormal = 0,
@@ -39,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<NonLinearViewDelegate> delegate;
 @property (nonatomic, strong) GFPRemindAd *remindAd;
 
+@property (nonatomic, strong, readonly) GFPClickLandingUtil *landingUtil;
+
 @property (nonatomic, assign) GFPNonLinearContainerType containerType;
 @property (nonatomic, strong) GFPTextAdViewAttribute *attribute; // Only for RemindText.
 
@@ -53,6 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportViewTracking;
 - (void)updateRemindAd;
+- (void)updateClickDelegate:(id <GFPS2SAdClickDelegate>)clickDelegate;
 
 - (void)wasClicked:(id)sender;
 - (IBAction)close:(id)sender;

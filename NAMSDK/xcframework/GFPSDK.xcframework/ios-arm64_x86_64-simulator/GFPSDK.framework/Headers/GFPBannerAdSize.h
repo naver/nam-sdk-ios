@@ -23,7 +23,6 @@ extern CGFloat const kGFPFluidReponseAdSize;
 
 @interface GFPBannerAdSize : NSObject
 
-@property (readonly, nonatomic, assign, getter=isFluidWidth) BOOL fluidWidth DEPRECATED_ATTRIBUTE;
 @property (readonly, nonatomic, assign) CGSize size;
 @property (readonly, nonatomic, assign) CGSize fluidSize;
 @property (readonly, nonatomic, assign) BOOL isValid;

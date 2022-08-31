@@ -12,8 +12,8 @@ typedef NS_OPTIONS(NSInteger, GFPAdProviderSettingType) {
     GFPAdProviderSettingTypeNone = 0,
     GFPAdProviderSettingTypeDFP,
     GFPAdProviderSettingTypeFAN,
-    GFPAdProviderSettingTypeMoPub,
     GFPAdProviderSettingTypeUnity,
+    GFPAdProviderSettingTypeOMID = 100, //for bidRequest's testMode.
 };
 
 

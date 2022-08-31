@@ -10,7 +10,6 @@
 
 #import <UIKit/UIKit.h>
 #import "GFPAdAdapting.h"
-#import "GFPImpression.h"
 
 
 @class GFPEventReporter;

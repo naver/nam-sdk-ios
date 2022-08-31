@@ -22,6 +22,8 @@ extern NSString * const kSDKNameNAM;
 + (NSString *)identifier;
 + (NSString *)sdkName;
 
++ (NSString *)sdkResourceWith:(NSString *)aPath type:(NSString *)aType;
+
 - (NSArray <NSString *> *)skAdNetworkList;
 
 @end

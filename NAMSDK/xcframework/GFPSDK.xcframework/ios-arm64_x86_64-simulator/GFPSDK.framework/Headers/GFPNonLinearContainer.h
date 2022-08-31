@@ -12,13 +12,12 @@
 
 @class GFPNonLinearAdView;
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 
 @interface GFPNonLinearContainer : UIView
 
-@property (nonatomic, weak) id<GFPNonLinearDelegate> delegate;
+@property (nonatomic, weak) id <GFPNonLinearDelegate> delegate;
 
 @property (nonatomic, strong) GFPNonLinearAdView *nonLinearView;
 

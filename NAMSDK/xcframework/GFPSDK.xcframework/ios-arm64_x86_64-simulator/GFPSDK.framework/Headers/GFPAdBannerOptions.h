@@ -10,13 +10,13 @@
 #import <UIKit/UIKit.h>
 #import "GFPBannerViewDelegate.h"
 #import "GFPMRAIDSupportSetting.h"
-#import "GFPImpression.h"
 #import "GFPBannerViewLayoutType.h"
+#import "GFPAdConfiguration.h"
 
 @class GFPNativeAdRenderingSetting;
 @class GFPNativeSimpleAdRenderingSetting;
 @class GFPBannerAdSize;
-
+@class GFPAdBannerWebViewOptions;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPAdBannerOptions : NSObject
@@ -47,13 +47,26 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (readwrite, nonatomic, setter=setMraidSupportType:) GFPMraidSupportType mraidSupportType;
 
-/**
- * 광고 유효 노출 설정 정보
- * 해당 기능은 deprecate 되었으며, 서버 응답에 의해 imp를 설정합니다.
- */
-@property (readwrite, nonatomic, strong) GFPImpressionSetting *impressionSetting DEPRECATED_ATTRIBUTE;
 
+/**
+ * Banner webview option 설정
+ */
+@property (readwrite, nonatomic, strong) GFPAdBannerWebViewOptions *webViewOption;
 
 @end
+
+@interface GFPAdBannerWebViewOptions : NSObject
+
+/**
+ * Banner Inset 설정 insets mode
+ */
+@property (readwrite, assign) UIScrollViewContentInsetAdjustmentBehavior contentInsetAdjustmentBehavior;
+/**
+ * Banner Inset 설정 default size
+ */
+@property (readwrite, assign) CGPoint defaultContentOffset;
+
+@end
+
 
 NS_ASSUME_NONNULL_END

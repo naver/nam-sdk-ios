@@ -20,6 +20,8 @@
 #import "GFPVideoAdRenderingSetting.h"
 #import "GFPVideoDisplayMode.h"
 
+#import "GFPS2SAdClickDelegate.h"
+
 @protocol GFPNonLinearDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -60,11 +62,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, nullable) UIViewController *rootViewController;
 
 
+/**
+ * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
+ */
+@property (nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
+
+
 - (instancetype)initWithAdScheduleID:(NSString * _Nonnull)aAdScheduleID contentPlayer:(AVPlayer *)aContentPlayer videoView:(UIView *)aVideoView scheduleParam:(GFPAdScheduleParam *)aScheduleParam;
 
 - (void)loadSchedule;
 
 - (void)startWith:(BOOL)isNormal;
+
 - (void)resume;
 - (void)pause;
 - (void)destroy;
