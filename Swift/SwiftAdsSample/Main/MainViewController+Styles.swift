@@ -23,6 +23,7 @@ extension MainViewController {
         if (UIDevice.current.userInterfaceIdiom == .pad) {
             setupAutoLayoutiPad()
         }
+        setupConstraintsiPhonePortrait()
     }
     
     func setupConstraintsiPhonePortrait() {

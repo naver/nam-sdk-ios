@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import GFPSDK
 
 enum UnitIdSection : Int {
     case idInput

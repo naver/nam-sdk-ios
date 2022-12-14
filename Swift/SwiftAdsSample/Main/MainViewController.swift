@@ -47,19 +47,21 @@ final class MainViewController: UIViewController {
         setupStyles()
         setupActions()
         MainViewManager.shared.linkMainViewController(self)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        openLogsViewIfVideoAd()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
+
         if self.unitIDLabel.text == nil {
             self.unitIDLabel.text = "⇦ Select An Unit ID"
         }
-        
+
+        GFPAdManager.adConfiguration().phase = .test
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        openLogsViewIfVideoAd()
+    }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.userInterfaceIdiom == .phone {
             if UIDevice.current.orientation.isPortrait {
                 setupConstraintsiPhonePortrait()
@@ -67,8 +69,9 @@ final class MainViewController: UIViewController {
                 setupConstraintsiPhoneLandscape()
             }
         }
+        super.viewWillTransition(to: size, with: coordinator)
     }
-    
+
     private func setupSubviews() {
         self.controlPanel = UIView()
 //        self.adTypeOptionsButton = UIButton.gray1
@@ -116,6 +119,7 @@ final class MainViewController: UIViewController {
         case .rewarded, .interstitial:
             self.verticalSplitView.openLowerView()
         default:
+            self.verticalSplitView.equalHeightViews()
             break
         }
     }

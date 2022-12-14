@@ -40,7 +40,7 @@
 		1FB55F17256605A800486B6F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55F16256605A700486B6F /* SettingViewController.swift */; };
 		1FB55F212566078B00486B6F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55EF6256604C200486B6F /* MainViewController.swift */; };
 		1FB55F66256670A100486B6F /* SampleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55F65256670A000486B6F /* SampleExtension.swift */; };
-		922C24E3A30F7E8F2B0CF37C /* Pods_SwiftAdsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2125239225B225C5277AB8 /* Pods_SwiftAdsSample.framework */; };
+		B3E92A1650ECAC8692BA06D6 /* Pods_SwiftAdsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85F379835D32420293896D5 /* Pods_SwiftAdsSample.framework */; };
 		CE21A013282CDC54001FD1A3 /* AdUnitIDList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE21A012282CDC54001FD1A3 /* AdUnitIDList.plist */; };
 		CE26BBE725BABBCA00F970AD /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26BBE625BABBCA00F970AD /* NibLoadable.swift */; };
 		CE3B4CFC2820F2C700B55921 /* MainViewManager+UnitID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B4CFB2820F2C700B55921 /* MainViewManager+UnitID.swift */; };
@@ -122,7 +122,7 @@
 		1FB55EF6256604C200486B6F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1FB55F16256605A700486B6F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1FB55F65256670A000486B6F /* SampleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleExtension.swift; sourceTree = "<group>"; };
-		45142B05DD97A9F6AC2210A4 /* Pods-SwiftAdsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdsSample.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample.debug.xcconfig"; sourceTree = "<group>"; };
+		614F66A04A399786E258328F /* Pods-SwiftAdsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdsSample.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample.debug.xcconfig"; sourceTree = "<group>"; };
 		CE21A012282CDC54001FD1A3 /* AdUnitIDList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdUnitIDList.plist; sourceTree = "<group>"; };
 		CE26BBE625BABBCA00F970AD /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		CE3B4CFB2820F2C700B55921 /* MainViewManager+UnitID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewManager+UnitID.swift"; sourceTree = "<group>"; };
@@ -146,8 +146,8 @@
 		CEFB1CA32811240D00F37E11 /* InterstitialAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialAdViewController.swift; sourceTree = "<group>"; };
 		CEFB1CA52811241000F37E11 /* RewardedAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAdViewController.swift; sourceTree = "<group>"; };
 		CEFB1CAB281124D600F37E11 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
-		DA2125239225B225C5277AB8 /* Pods_SwiftAdsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAdsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F82A62D4CF9162BC63BAFE6A /* Pods-SwiftAdsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdsSample.release.xcconfig"; path = "Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample.release.xcconfig"; sourceTree = "<group>"; };
+		D53C0F87420EDBF81D8F4CAB /* Pods-SwiftAdsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdsSample.release.xcconfig"; path = "Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample.release.xcconfig"; sourceTree = "<group>"; };
+		D85F379835D32420293896D5 /* Pods_SwiftAdsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAdsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				922C24E3A30F7E8F2B0CF37C /* Pods_SwiftAdsSample.framework in Frameworks */,
+				B3E92A1650ECAC8692BA06D6 /* Pods_SwiftAdsSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +179,8 @@
 		1A3FBBE1FDEDF71FA8EDF5FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				45142B05DD97A9F6AC2210A4 /* Pods-SwiftAdsSample.debug.xcconfig */,
-				F82A62D4CF9162BC63BAFE6A /* Pods-SwiftAdsSample.release.xcconfig */,
+				614F66A04A399786E258328F /* Pods-SwiftAdsSample.debug.xcconfig */,
+				D53C0F87420EDBF81D8F4CAB /* Pods-SwiftAdsSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 				1FB55C9C2563B69D00486B6F /* SwiftAdsSampleTests */,
 				1FB55C842563B69B00486B6F /* Products */,
 				1A3FBBE1FDEDF71FA8EDF5FE /* Pods */,
-				EF68940F3903158605FF63EF /* Frameworks */,
+				291E8EE4ABA2EF5BB72E78B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -334,6 +334,14 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		291E8EE4ABA2EF5BB72E78B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85F379835D32420293896D5 /* Pods_SwiftAdsSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4FB4DB9D261B541800F636D8 /* Interstitial */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,14 +406,6 @@
 			path = UnitID;
 			sourceTree = "<group>";
 		};
-		EF68940F3903158605FF63EF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DA2125239225B225C5277AB8 /* Pods_SwiftAdsSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -413,12 +413,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FB55CAD2563B69D00486B6F /* Build configuration list for PBXNativeTarget "SwiftAdsSample" */;
 			buildPhases = (
-				150813BF8DC5ABAE47EC4253 /* [CP] Check Pods Manifest.lock */,
+				B02D10F79CF87358AD2CEB8F /* [CP] Check Pods Manifest.lock */,
 				1FB55C7F2563B69B00486B6F /* Sources */,
 				1FB55C802563B69B00486B6F /* Frameworks */,
 				1FB55C812563B69B00486B6F /* Resources */,
-				B472E780EE22FEA2205F0A5C /* [CP] Embed Pods Frameworks */,
-				A5FA51E078315EBEC2094784 /* [CP] Copy Pods Resources */,
+				4DF4CB7D8DC18DC9CA09D396 /* [CP] Embed Pods Frameworks */,
+				1E8C0B77FA434BCB51A08A40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -547,7 +547,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		150813BF8DC5ABAE47EC4253 /* [CP] Check Pods Manifest.lock */ = {
+		1E8C0B77FA434BCB51A08A40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DF4CB7D8DC18DC9CA09D396 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02D10F79CF87358AD2CEB8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -567,40 +601,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5FA51E078315EBEC2094784 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B472E780EE22FEA2205F0A5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAdsSample/Pods-SwiftAdsSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -823,7 +823,7 @@
 		};
 		1FB55CAE2563B69D00486B6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45142B05DD97A9F6AC2210A4 /* Pods-SwiftAdsSample.debug.xcconfig */;
+			baseConfigurationReference = 614F66A04A399786E258328F /* Pods-SwiftAdsSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -835,7 +835,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.SwiftAdsSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.AdsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -844,7 +844,7 @@
 		};
 		1FB55CAF2563B69D00486B6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82A62D4CF9162BC63BAFE6A /* Pods-SwiftAdsSample.release.xcconfig */;
+			baseConfigurationReference = D53C0F87420EDBF81D8F4CAB /* Pods-SwiftAdsSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -856,7 +856,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.SwiftAdsSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.da.gfp.AdsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

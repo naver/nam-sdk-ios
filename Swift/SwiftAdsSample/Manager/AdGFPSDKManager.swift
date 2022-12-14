@@ -37,9 +37,8 @@ class AdGFPSDKManger : NSObject, GFPAdManagerDelegate {
     private func updateTestMode() {
         let dfpConfig = GFPAdProviderSetting.type(.DFP, testMode: UserDefaults.testModeGoogle)!
         let fanConfig = GFPAdProviderSetting.type(.FAN, testMode: UserDefaults.testModeFacebook)!
-        let mopubConfig = GFPAdProviderSetting.type(.moPub, testMode: UserDefaults.testModeMopub)!
         
-        GFPAdManager.adConfiguration().adProviderConfigList = [dfpConfig, fanConfig, mopubConfig]
+        GFPAdManager.adConfiguration().adProviderConfigList = [dfpConfig, fanConfig]
     }
     
     private func updateTimeOutAll() {

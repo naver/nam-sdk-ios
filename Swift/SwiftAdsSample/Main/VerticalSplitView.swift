@@ -95,6 +95,16 @@ final class VerticalSplitView: UIView {
             self.layoutIfNeeded()
         }) { _ in }
     }
+
+    public func equalHeightViews() {
+        let movedY = -(self.frame.height/2.0)
+
+        self.splitterCenterY.constant = movedY
+
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseOut) {
+            self.layoutIfNeeded()
+        }
+    }
 }
 
 let DraggableSplitterHeight: CGFloat = 29 * GlobalLayoutScale
@@ -203,7 +213,7 @@ extension VerticalSplitView {
         
         let movedY: CGFloat
         if (self.isSplitterInitialPos || gestureY >= -SplitterBottomMargin) { // Open the lower view
-            movedY = -(self.frame.height - SplitterTopMargin)
+            movedY = -(self.frame.height/2.0)
         } else { // Close the lower view
             movedY = -SplitterBottomMargin
         }
