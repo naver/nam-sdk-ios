@@ -6,12 +6,14 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
+  
+
 
 #import <UIKit/UIKit.h>
 #import "GFPBannerViewDelegate.h"
 #import "GFPMRAIDSupportSetting.h"
-#import "GFPBannerViewLayoutType.h"
 #import "GFPAdConfiguration.h"
+#import "Swift-Enum.h"
 
 @class GFPNativeAdRenderingSetting;
 @class GFPNativeSimpleAdRenderingSetting;

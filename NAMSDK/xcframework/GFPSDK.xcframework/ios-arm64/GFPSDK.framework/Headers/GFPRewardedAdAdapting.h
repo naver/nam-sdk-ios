@@ -17,14 +17,14 @@ static NSTimeInterval const kGFPRewardedExpiredTimeInSecond = 3600;
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPRewardedStatus) {
-    GFPRewardedNotYet = 0,
-    GFPRewardedLoaded = 1 << 0,
+    GFPRewardedNotYet = 1 << 0,
+    GFPRewardedLoaded = 1 << 1,
     GFPRewardedShowed = 1 << 2,
 };
 
 @protocol GFPRewardedAdAdapting <GFPAdAdapting>
 
-@property (readwrite, nonatomic, weak) id <GFPRewardedAdAdaptorDelegate> delegate;
+@property (nullable, readwrite, nonatomic, weak) id <GFPRewardedAdAdaptorDelegate> delegate;
 
 @property (nonatomic, assign) BOOL isExpired;
 @property (nonatomic, assign) GFPRewardedStatus status;

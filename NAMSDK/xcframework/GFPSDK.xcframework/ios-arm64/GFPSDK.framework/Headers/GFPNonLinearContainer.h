@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GFPTextAdViewAttribute.h"
 #import "GFPNonLinearDelegate.h"
-
+#import "Swift-Enum.h"
 @class GFPNonLinearAdView;
-
+@class GFPTextAdViewAttribute;
 NS_ASSUME_NONNULL_BEGIN
 
 

@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)openURLWith:(NSString *)aURL completion:(GFPS2SAdLandingHandler)aCompletion;
 
-+ (NSURLRequest *)defaultRequestWith:(NSURL * __nonnull)url;
++ (NSURLRequest *)defaultRequestWith:(NSURL *__nonnull)url;
 
 + (BOOL)hasHttpPrefix:(NSURL *)aURL;
 

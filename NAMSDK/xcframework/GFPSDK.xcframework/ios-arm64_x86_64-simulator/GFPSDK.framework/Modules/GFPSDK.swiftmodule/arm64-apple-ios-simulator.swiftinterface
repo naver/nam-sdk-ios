@@ -1,0 +1,661 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GFPSDK
+import CoreLocation
+import CoreTelephony
+import Foundation
+@_exported import GFPSDK
+import Network
+import OSLog
+import QuartzCore
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPAdInterfaceStyle : ObjectiveC.NSObject {
+  @objc public static let Changed: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol GFPEventReportPresentable : ObjectiveC.NSObjectProtocol {
+  @objc var adCallRequestTime: Foundation.NSNumber { get set }
+}
+@objc public enum GFPLogLevel : Swift.Int, Swift.Comparable {
+  case trace = 0
+  case debug
+  case info
+  case error
+  case critical
+  case none
+  public static func < (lhs: GFPSDK.GFPLogLevel, rhs: GFPSDK.GFPLogLevel) -> Swift.Bool
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GFPLog) public class GFPLog : ObjectiveC.NSObject {
+  @objc(sharedInstance) public static let shared: GFPSDK.GFPLog
+  @objc(logLevel) public var logLevel: GFPSDK.GFPLogLevel {
+    @objc get
+    @objc set
+  }
+  @objc(hasLogLevel) public var hasLogLevel: Swift.Bool {
+    @objc get
+  }
+  @objc(logLevelDesc) public var logLevelDesc: Swift.String {
+    @objc get
+  }
+  @objc(logIdentifier) public static var logIdentifier: Swift.String {
+    @objc get
+  }
+  @objc(logLevelDescWith:) public static func logLevelDescription(logLevel: GFPSDK.GFPLogLevel) -> Swift.String
+  @objc(logMessage:method:logLevel:debugMode:) public static func objcLog(_ message: Any, _ method: Any, logLevel: GFPSDK.GFPLogLevel, debugMode: Swift.Bool)
+  public static func log(_ message: Any, _ method: Any, _ arguments: [Any], logLevel: GFPSDK.GFPLogLevel, _ debugMode: Swift.Bool = false)
+  @objc deinit
+}
+extension GFPSDK.GFPLog {
+  public static func trace(_ message: Any, _ method: Any = #function, _ arguments: Any...)
+  public static func debug(_ message: Any, _ method: Any = #function, _ arguments: Any...)
+  public static func info(_ message: Any, _ method: Any = #function, _ arguments: Any...)
+  public static func error(_ message: Any, _ method: Any = #function, _ arguments: Any...)
+  public static func critical(_ message: Any, _ method: Any = #function, _ arguments: Any...)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPMergeUtils : ObjectiveC.NSObject {
+  @objc(mergeWithArray1:array2:) public class func merge(array1: [Any], array2: [Any]) -> [Any]
+  @objc public class func merge(dict1: [Swift.String : [Swift.String]], dict2: [Swift.String : [Swift.String]]) -> [Swift.String : [Swift.String]]
+  @objc deinit
+}
+@objc public protocol GFPQueueObject : ObjectiveC.NSObjectProtocol {
+}
+@objc @objcMembers public class GFPLimitQueue : ObjectiveC.NSObject {
+  @objc public var queue: [GFPSDK.GFPQueueObject] {
+    @objc get
+  }
+  @objc public var size: Swift.Int {
+    get
+  }
+  @objc public var isFull: Swift.Bool {
+    @objc get
+  }
+  @objc public var isEmpty: Swift.Bool {
+    @objc get
+  }
+  @objc public func enqueue(_ queueObject: GFPSDK.GFPQueueObject?)
+  @objc public func enqueueAndReplace(_ queueObject: GFPSDK.GFPQueueObject?)
+  @objc public func dequeue() -> GFPSDK.GFPQueueObject?
+  @objc public class func sizeWith(_ size: Swift.Int) -> GFPSDK.GFPLimitQueue
+  @objc public init(size: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdRenderingSetting : ObjectiveC.NSObject {
+  @objc public static let GFPVideoAdRenderingSettingAutodetectBitrate: Swift.Int
+  @objc public static let GFPVideoAdRenderingSettingDefaultStartTimeout: Swift.Double
+  @objc public static let GFPVideoAdRenderingSettingDefaultBufferingTimeout: Swift.Double
+  @objc public var bitrateKbps: Swift.Int
+  @objc public var mimeTypes: [Swift.String]?
+  @objc public var startTimeoutInterval: Foundation.TimeInterval
+  @objc public var bufferingTimeoutInterval: Foundation.TimeInterval
+  @objc public var isPreferContentWidthUI: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class GFPUADeviceInfo : ObjectiveC.NSObject {
+  @objc public var systemVersion: Swift.String
+  @objc public var deviceType: Swift.String
+  @objc(initWith:deviceType:) public init(_ aSystemVersion: Swift.String, deviceType aDeviceType: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPServiceInfo : ObjectiveC.NSObject {
+  @objc public var appName: Swift.String
+  @objc public var appVersion: Swift.String
+  @objc override dynamic public init()
+  @objc public var dict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
+  @objc public var appVersionDict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @objcMembers public class GFPDeviceInfo : ObjectiveC.NSObject {
+  @objc public var uaInfo: GFPSDK.GFPUADeviceInfo
+  @objc public var serviceInfo: GFPSDK.GFPServiceInfo
+  @objc public init(_ version: Swift.String)
+  @objc public var dict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
+  @objc public var initializeDict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
+  @objc deinit
+}
+@objc extension Foundation.NSDictionary {
+  @objc(objectWithKey:) dynamic public func object(key: Any) -> Any?
+  @objc(objectWithKey:returnType:) dynamic public func object(key: Any, classType: Swift.AnyClass) -> Any?
+  @objc(boolWithKey:) dynamic public func bool(key: Any) -> Swift.Bool
+  @objc(isEmpty:) dynamic public class func isEmpty(dict: Foundation.NSDictionary?) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPAdProviderSetting : ObjectiveC.NSObject {
+  @objc public var type: GFPSDK.GFPAdProviderSettingType {
+    get
+  }
+  @objc public var isTestMode: Swift.Bool {
+    @objc get
+  }
+  @objc public class func type(_ type: GFPSDK.GFPAdProviderSettingType, testMode: Swift.Bool) -> GFPSDK.GFPAdProviderSetting
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum GFPVideoBackgroundActionType : Swift.Int {
+  case play
+  case pause
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdPlayerSetting : ObjectiveC.NSObject {
+  @objc public var backAction: GFPSDK.GFPVideoBackgroundActionType
+  @objc public var audioSetting: GFPSDK.GFPVideoAudioSettingType
+  @objc(initWithAction:audioSetting:) public init(action aAction: GFPSDK.GFPVideoBackgroundActionType, audioSetting aType: GFPSDK.GFPVideoAudioSettingType)
+  @objc convenience override dynamic public init()
+  @objc convenience public init(action aAction: GFPSDK.GFPVideoBackgroundActionType)
+  @objc convenience public init(audioSetting aType: GFPSDK.GFPVideoAudioSettingType)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum GFPNetworkType : Swift.Int {
+  case Unknown
+  case Ethernet
+  case Wifi
+  case Cellular
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPCellularType : Swift.Int {
+  case Unknown
+  case G2
+  case G3
+  case G4
+  case G5
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPNetworkUtils : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: GFPSDK.GFPNetworkUtils
+  @objc public var info: Swift.Dictionary<Swift.String, Swift.Int>?
+  @objc public var networkType: GFPSDK.GFPNetworkType {
+    @objc get
+  }
+  @objc public var cellularType: GFPSDK.GFPCellularType {
+    @objc get
+  }
+  @objc public static var isWIFI: Swift.Bool {
+    @objc get
+  }
+  @objc public static var networkTypeDescForInit: Swift.String {
+    @objc get
+  }
+  @objc public static var networkTypeDescForAdcall: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum GFPOMContantsType : Swift.Int {
+  case HTML
+  case HTMLVideo
+  case video
+  case image
+  case audio
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPTimeUtils : ObjectiveC.NSObject {
+  @objc public class var currentUptime: Foundation.NSNumber {
+    @objc get
+  }
+  @objc public class func convertTimeFormatString(_ timeString: Swift.String) -> Foundation.TimeInterval
+  @objc(convertTimeOrPercentFormatString:withDurationTimeInterval:) public class func convertTimeOrPercentFormatString(_ timeString: Swift.String, durationTimeInterval: Foundation.TimeInterval) -> Foundation.TimeInterval
+  @objc public class func secondFromTimeInterval(_ timeInterval: Foundation.TimeInterval) -> Swift.Int
+  @objc deinit
+}
+@objc public protocol GFPEventReportDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func reportTrackingAckImp(_ aURL: Swift.String)
+  @objc func reportTrackingViewableImp(_ aURL: Foundation.URL)
+  @objc func reportTrackingRenderedImp(_ aURL: Foundation.URL)
+  @objc func reportTrackingAttachedImp(_ aURL: Foundation.URL)
+  @objc func reportTrackingClickEvent(_ aURL: Foundation.URL)
+  @objc func reportTrackingMuteEvent(_ aURL: Foundation.URL)
+  @objc func reportTrackingLoadError(_ loadEventInfo: Swift.String)
+  @objc func reportTrackingStartError(_ startEventInfo: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class GFPTextAdViewAttribute : ObjectiveC.NSObject {
+  @objc public var backgroundColor: UIKit.UIColor?
+  @objc public var textColor: UIKit.UIColor?
+  @objc public var verticalBarColor: UIKit.UIColor?
+  @objc public var closeIcon: UIKit.UIImage?
+  @objc public var moreIcon: UIKit.UIImage?
+  @objc public var containerView: UIKit.UIView?
+  @objc override dynamic public init()
+  @objc(initWithContainer:) required public init(with container: UIKit.UIView?)
+  @objc deinit
+}
+@objc public enum GFPBannerProviderOption : Swift.Int {
+  case none
+  case NDA
+  case DFP
+  case inMobi
+  case FAN
+  case unity
+  case appLovin
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPVideoProviderOption : Swift.Int {
+  case none
+  case NDA
+  case IMA
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPNativeProviderOption : Swift.Int {
+  case none
+  case NDA
+  case DFP
+  case FAN
+  case inMobi
+  case appLovin
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPCombinedProviderOption : Swift.Int {
+  case none
+  case DFP
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPRewardedAdProviderOption : Swift.Int {
+  case none
+  case DFP
+  case FAN
+  case inMobi
+  case unity
+  case appLovin
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPInterstitialAdProviderOption : Swift.Int {
+  case none
+  case DFP
+  case FAN
+  case inMobi
+  case unity
+  case appLovin
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class GFPVideoAdParam : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var scheduleID: Swift.String {
+    get
+  }
+  @objc public var requestID: Swift.String {
+    get
+  }
+  @objc public var contentLength: Swift.Float {
+    get
+  }
+  @objc public var remindRequest: Swift.Int {
+    get
+  }
+  @objc public var startDelay: Swift.Int
+  @objc public var hasRemind: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public init(scheduleID aScheduleID: Swift.String, requestID: Swift.String, contentLength: Swift.Float)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc @objcMembers public class GFPUserAgent : ObjectiveC.NSObject {
+  @objc public var useDefaultUA: Swift.Bool
+  @objc public var updateUA: Swift.String?
+  @objc public var wkwebViewUA: Swift.String {
+    @objc get
+  }
+  @objc(initWith:) public init(deviceInfo: GFPSDK.GFPUADeviceInfo)
+  @objc public init(externalUserAgent: Swift.String)
+  @objc deinit
+}
+@objc public protocol GFPDictPresentable {
+  @objc func dictionary() -> [Swift.String : Swift.String]?
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPSDKPhase : ObjectiveC.NSObject {
+  @objc public class func sdkInitPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
+  @objc public class func skadnRegisterPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
+  @objc public class func waterfallPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
+  @objc public class func videoSchedulePhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
+  @objc public class func neloPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Swift.String {
+  public func encodingSubStringFrom(_ aIndex: Swift.Int) -> Swift.String?
+  public func encodingSubStringFrom(_ aIndex: Swift.String.Index) -> Swift.String?
+  public func encodingSubStringTo(_ aIndex: Swift.Int) -> Swift.String?
+  public func encodingSubStringTo(_ aIndex: Swift.String.Index) -> Swift.String?
+  public func isStringNumeric() -> Swift.Bool
+}
+@objc extension Foundation.NSString {
+  @objc dynamic public func encodingSubStringFrom(aIndex: Swift.Int) -> Foundation.NSString?
+  @objc dynamic public func encodingSubStringTo(aIndex: Swift.Int) -> Foundation.NSString?
+  @objc dynamic public func isStringNumeric() -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPStringUtils : ObjectiveC.NSObject {
+  @objc(isValidUDID:) public class func isValidUDID(adID: Swift.String) -> Swift.Bool
+  @objc public class func whiteSpaceTrimWith(_ aString: Swift.String) -> Swift.String
+  @objc public class func whiteSpaceNewLineTrimWith(_ aString: Swift.String) -> Swift.String
+  @objc public class func hasLengthWhiteSpaceTrimWith(_ aString: Swift.String) -> Swift.Bool
+  @objc(isEmptyWith:) public class func isEmpty(_ aString: Swift.String?) -> Swift.Bool
+  @objc public class func encodeByAddingPercentEscapesWith(_ aString: Swift.String) -> Swift.String
+  @objc public class func queryComponentsWith(_ aString: Swift.String) -> Swift.Dictionary<Swift.String, Swift.String>?
+  @objc public class func isValidTimeFormatString(_ timeString: Swift.String) -> Swift.Bool
+  @objc public class func isValidPercentFormatString(_ percentString: Swift.String) -> Swift.Bool
+  @objc public class func isValidTimeOrPercentFormatString(_ aString: Swift.String) -> Swift.Bool
+  @objc public class func filterJsonStringWith(_ dictionary: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.String
+  @objc public class func jsonStringWith(_ dictionary: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.String
+  @objc public class func filterHostMetaWith(_ aDict: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Dictionary<Swift.AnyHashable, Any>
+  @objc public class func hasHttpPrefix(_ url: Swift.String) -> Swift.Bool
+  @objc public class func convertWith(_ object: Any) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPBundle : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: GFPSDK.GFPBundle
+  @objc public static var appVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var appName: Swift.String {
+    @objc get
+  }
+  @objc public static var identifier: Swift.String {
+    @objc get
+  }
+  @objc public func skAdNetworkList() -> [Swift.String]
+  @objc override dynamic public init()
+  @objc public func setup()
+  @objc public class func sdkResource(with aPath: Swift.String, type aType: Swift.String) -> Swift.String?
+  @objc deinit
+}
+@objc public enum GFPAlignmentCenter : Swift.Int {
+  case vertical = 0
+  case horizontal
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPSizeType : Swift.Int {
+  case height = 0
+  case width
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPOriginType : Swift.Int {
+  case x = 0
+  case y
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc extension UIKit.UIColor {
+  @objc(colorFromHexString:) dynamic public class func color(hexString: Swift.String) -> UIKit.UIColor?
+  @objc(colorWithRGBIntWith:) dynamic public class func color(rgbInt: Swift.UInt64) -> UIKit.UIColor
+  @objc(colorWithRGBIntWith:alpha:) dynamic public class func color(rgbInt: Swift.UInt64, alpha: CoreGraphics.CGFloat) -> UIKit.UIColor
+  @objc(colorWithRedWith:green:blue:alpha:) dynamic public class func color(red: CoreGraphics.CGFloat, green: CoreGraphics.CGFloat, blue: CoreGraphics.CGFloat, alpha: CoreGraphics.CGFloat) -> UIKit.UIColor
+}
+@objc extension UIKit.UIView {
+  @objc(frameWith:) @_Concurrency.MainActor(unsafe) dynamic public class func frame(_ frame: CoreGraphics.CGRect) -> Swift.String
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func printSize(functionName: [Swift.CChar])
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func printOrigin(functionName: [Swift.CChar])
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func sideSafeAreaInsets() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func sizeWidth() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func sizeHeight() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func leftSafeInsets() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func rightSafeInsets() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func topSafeInsets() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func topBottomSafeAreaInsets() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func maxY() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func maxX() -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func showDebugBorderWithColorWith(color: UIKit.UIColor)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addConstraintCenterWith(aItem: UIKit.UIView, toItem: UIKit.UIView, attribute: UIKit.NSLayoutConstraint.Attribute)
+  @objc(moveWith:) @_Concurrency.MainActor(unsafe) dynamic public func moveWith(type: GFPSDK.GFPAlignmentCenter)
+  @objc(moveWith:margin:) @_Concurrency.MainActor(unsafe) dynamic public func moveWith(type: GFPSDK.GFPAlignmentCenter, margin: CoreGraphics.CGFloat)
+  @objc(moveToTypeWith:margin:) @_Concurrency.MainActor(unsafe) dynamic public func moveToTypeWith(type: GFPSDK.GFPAlignment, margin: CoreGraphics.CGFloat)
+  @objc(moveToTypeWith:withView:gap:) @_Concurrency.MainActor(unsafe) dynamic public func moveToTypeWith(type: GFPSDK.GFPAlignment, view: UIKit.UIView, gap: CoreGraphics.CGFloat)
+  @objc(alignWith:withView:) @_Concurrency.MainActor(unsafe) dynamic public func alignWith(type: GFPSDK.GFPAlignment, view: UIKit.UIView)
+  @objc(alignWith:withView:gap:) @_Concurrency.MainActor(unsafe) dynamic public func alignWith(type: GFPSDK.GFPAlignment, view: UIKit.UIView, gap: CoreGraphics.CGFloat)
+  @objc(alignCenterWith:withView:) @_Concurrency.MainActor(unsafe) dynamic public func alignCenter(type: GFPSDK.GFPAlignmentCenter, view: UIKit.UIView)
+  @objc(alignCenterWith:withView:gap:) @_Concurrency.MainActor(unsafe) dynamic public func alignCenter(type: GFPSDK.GFPAlignmentCenter, view: UIKit.UIView, gap: CoreGraphics.CGFloat)
+  @objc(updateSizeWith:value:) @_Concurrency.MainActor(unsafe) dynamic public func updateSizeWith(type: GFPSDK.GFPSizeType, value: CoreGraphics.CGFloat)
+  @objc(updateSizeWith:) @_Concurrency.MainActor(unsafe) dynamic public func updateSizeWith(aSize: CoreGraphics.CGSize)
+  @objc(updateOriginWith:) @_Concurrency.MainActor(unsafe) dynamic public func updateOriginWith(aOrigin: CoreGraphics.CGPoint)
+  @objc(updateOriginTypeWith:value:) @_Concurrency.MainActor(unsafe) dynamic public func updateOriginTypeWith(aType: GFPSDK.GFPOriginType, aValue: CoreGraphics.CGFloat)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func disableAccessibilityForSubviews()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public class func loadWithBundle(aBundle: Foundation.Bundle, nibName: Swift.String) -> UIKit.UIView?
+}
+@objc extension UIKit.UIImageView {
+  @objc(startSpinningWith:) @_Concurrency.MainActor(unsafe) dynamic public func startSpinningWith(duration: Swift.Double)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func stopSpinning()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public class func imageWithImage(image: UIKit.UIImage, scaleSize: CoreGraphics.CGSize) -> UIKit.UIImage?
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPDeviceLocInfo : ObjectiveC.NSObject {
+  @objc public var latitude: Swift.String
+  @objc public var longitude: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPDeviceUtils : ObjectiveC.NSObject {
+  @objc public static var preferredLanguageCode: Swift.String? {
+    @objc get
+  }
+  @objc public static var getDeviceCountryCode: Swift.String? {
+    @objc get
+  }
+  @objc public static var localeIdentifier: Swift.String? {
+    @objc get
+  }
+  @objc public static var isStatusBarLandscape: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isIPad: Swift.Bool {
+    @objc get
+  }
+  @objc public static var systemName: Swift.String {
+    @objc get
+  }
+  @objc public static var systemVer: Swift.String {
+    @objc get
+  }
+  @objc public static var deviceModel: Swift.String {
+    @objc get
+  }
+  @objc public static var carrier: Swift.String? {
+    @objc get
+  }
+  @objc public static var screenRect: CoreGraphics.CGRect {
+    @objc get
+  }
+  @objc public static var nativeScaleFactor: CoreGraphics.CGFloat {
+    @objc get
+  }
+  @objc public static var isSKAdNetworkAvaliable: Swift.Bool {
+    @objc get
+  }
+  @objc public static func getLocationInfo() -> GFPSDK.GFPDeviceLocInfo?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
+@objc public protocol GFPS2SAdClickDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func openURLWith(_ urlString: Swift.String, landingHandler: (Swift.Bool) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPSizeUtils : ObjectiveC.NSObject {
+  @objc(isSquareWith:) public class func isSquare(_ size: CoreGraphics.CGSize) -> Swift.Bool
+  @objc(ratioWith:) public class func ratio(_ size: CoreGraphics.CGSize) -> CoreGraphics.CGFloat
+  @objc(isContainsNaN:) public class func isContainsNaN(_ size: CoreGraphics.CGSize) -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPRectUtils : ObjectiveC.NSObject {
+  @objc(isContainsNaN:) public class func isContainsNaN(_ rect: CoreGraphics.CGRect) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum GFPVideoDisplayType : Swift.Int {
+  case normal
+  case casting
+  case PIP
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPVideoDisplayMode : ObjectiveC.NSObject {
+  @objc public var mode: GFPSDK.GFPVideoDisplayType {
+    get
+  }
+  @objc public var text: Swift.String? {
+    get
+  }
+  @objc weak public var customTopView: UIKit.UIView? {
+    get
+  }
+  @objc public var isCasting: Swift.Bool {
+    @objc get
+  }
+  @objc public var isPIP: Swift.Bool {
+    @objc get
+  }
+  @available(*, unavailable)
+  @objc override dynamic public init()
+  @objc public class func normal() -> GFPSDK.GFPVideoDisplayMode
+  @objc public class func casting(with text: Swift.String?) -> GFPSDK.GFPVideoDisplayMode
+  @objc public class func pip() -> GFPSDK.GFPVideoDisplayMode
+  @objc public class func pip(with customTopView: UIKit.UIView?) -> GFPSDK.GFPVideoDisplayMode
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPViewUtils : ObjectiveC.NSObject {
+  @objc public class func removeSubviews(_ aView: UIKit.UIView)
+  @objc public class func originalFrame(_ aView: UIKit.UIView) -> CoreGraphics.CGRect
+  @objc public class func isVisibility(_ aView: UIKit.UIView) -> Swift.Bool
+  @objc public class func isViewableOnScreen(_ aView: UIKit.UIView) -> Swift.Bool
+  @objc public class func isAtLeastHalfViewable(_ aView: UIKit.UIView) -> Swift.Bool
+  @objc public class func exposedPercentage(_ aView: UIKit.UIView) -> CoreGraphics.CGFloat
+  @objc public class func visibleRectangle(_ aView: UIKit.UIView) -> CoreGraphics.CGRect
+  @objc public class func fillSuperviewWithCenterAlignment(_ aView: UIKit.UIView)
+  @objc(setConstraintWithFrameSize:) public class func setConstraint(_ aView: UIKit.UIView)
+  @objc(setConstraintWithSize:view:) public class func setConstraint(_ size: CoreGraphics.CGSize, view: UIKit.UIView)
+  @objc public class func matchSuperViewSize(_ aView: UIKit.UIView)
+  @objc public class func matchSuperViewSafetyAreaThroughConstraints(_ aView: UIKit.UIView)
+  @objc public class func arrangeToSuperviewWithXAttribute(_ xAttribute: UIKit.NSLayoutConstraint.Attribute, yAttribute: UIKit.NSLayoutConstraint.Attribute, view: UIKit.UIView)
+  @objc public class func arrangeToSuperviewWithXAttribute(_ xAttribute: UIKit.NSLayoutConstraint.Attribute, yAttribute: UIKit.NSLayoutConstraint.Attribute, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat, view: UIKit.UIView)
+  @objc public class func arrangeToSuperViewApplyingSafeAreaWithXAttribute(_ xAttribute: UIKit.NSLayoutConstraint.Attribute, yAttribute: UIKit.NSLayoutConstraint.Attribute, offsetX: CoreGraphics.CGFloat, offsetY: CoreGraphics.CGFloat, view: UIKit.UIView)
+  @objc public class func removeSizeConstraintOnSuperview(_ aView: UIKit.UIView)
+  @objc public class func removeSizeConstraintOnSuperviewLayoutGuide(_ aView: UIKit.UIView)
+  @objc public class func removeArrangeConstraintsOnSuperview(_ aView: UIKit.UIView)
+  @objc public class func removeArrangeConstraintsOnSuperviewSafeLayoutGuide(_ aView: UIKit.UIView)
+  @objc public class func removeSizeConstraintOnSelf(_ aView: UIKit.UIView)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension Foundation.Timer {
+  @objc public static let kAttachedCheckDefaultFrequency: Swift.Double
+  @objc dynamic public class func scheduledTimer(timeInterval: Foundation.TimeInterval, block: @escaping () -> Swift.Void, repeats: Swift.Bool) -> Foundation.Timer
+  @objc dynamic public class func scheduledTimer(timeInterval: Foundation.TimeInterval, block: @escaping () -> Swift.Void, repeats: Swift.Bool, mode: Foundation.RunLoop.Mode) -> Foundation.Timer
+}
+extension GFPSDK.GFPLogLevel : Swift.Hashable {}
+extension GFPSDK.GFPLogLevel : Swift.RawRepresentable {}
+extension GFPSDK.GFPVideoBackgroundActionType : Swift.Equatable {}
+extension GFPSDK.GFPVideoBackgroundActionType : Swift.Hashable {}
+extension GFPSDK.GFPVideoBackgroundActionType : Swift.RawRepresentable {}
+extension GFPSDK.GFPNetworkType : Swift.Equatable {}
+extension GFPSDK.GFPNetworkType : Swift.Hashable {}
+extension GFPSDK.GFPNetworkType : Swift.RawRepresentable {}
+extension GFPSDK.GFPCellularType : Swift.Equatable {}
+extension GFPSDK.GFPCellularType : Swift.Hashable {}
+extension GFPSDK.GFPCellularType : Swift.RawRepresentable {}
+extension GFPSDK.GFPOMContantsType : Swift.Equatable {}
+extension GFPSDK.GFPOMContantsType : Swift.Hashable {}
+extension GFPSDK.GFPOMContantsType : Swift.RawRepresentable {}
+extension GFPSDK.GFPBannerProviderOption : Swift.Equatable {}
+extension GFPSDK.GFPBannerProviderOption : Swift.Hashable {}
+extension GFPSDK.GFPBannerProviderOption : Swift.RawRepresentable {}
+extension GFPSDK.GFPVideoProviderOption : Swift.Equatable {}
+extension GFPSDK.GFPVideoProviderOption : Swift.Hashable {}
+extension GFPSDK.GFPVideoProviderOption : Swift.RawRepresentable {}
+extension GFPSDK.GFPNativeProviderOption : Swift.Equatable {}
+extension GFPSDK.GFPNativeProviderOption : Swift.Hashable {}
+extension GFPSDK.GFPNativeProviderOption : Swift.RawRepresentable {}
+extension GFPSDK.GFPCombinedProviderOption : Swift.Equatable {}
+extension GFPSDK.GFPCombinedProviderOption : Swift.Hashable {}
+extension GFPSDK.GFPCombinedProviderOption : Swift.RawRepresentable {}
+extension GFPSDK.GFPRewardedAdProviderOption : Swift.Equatable {}
+extension GFPSDK.GFPRewardedAdProviderOption : Swift.Hashable {}
+extension GFPSDK.GFPRewardedAdProviderOption : Swift.RawRepresentable {}
+extension GFPSDK.GFPInterstitialAdProviderOption : Swift.Equatable {}
+extension GFPSDK.GFPInterstitialAdProviderOption : Swift.Hashable {}
+extension GFPSDK.GFPInterstitialAdProviderOption : Swift.RawRepresentable {}
+extension GFPSDK.GFPAlignmentCenter : Swift.Equatable {}
+extension GFPSDK.GFPAlignmentCenter : Swift.Hashable {}
+extension GFPSDK.GFPAlignmentCenter : Swift.RawRepresentable {}
+extension GFPSDK.GFPSizeType : Swift.Equatable {}
+extension GFPSDK.GFPSizeType : Swift.Hashable {}
+extension GFPSDK.GFPSizeType : Swift.RawRepresentable {}
+extension GFPSDK.GFPOriginType : Swift.Equatable {}
+extension GFPSDK.GFPOriginType : Swift.Hashable {}
+extension GFPSDK.GFPOriginType : Swift.RawRepresentable {}
+extension GFPSDK.GFPVideoDisplayType : Swift.Equatable {}
+extension GFPSDK.GFPVideoDisplayType : Swift.Hashable {}
+extension GFPSDK.GFPVideoDisplayType : Swift.RawRepresentable {}

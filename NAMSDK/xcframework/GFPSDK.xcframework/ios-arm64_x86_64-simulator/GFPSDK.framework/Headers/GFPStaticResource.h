@@ -27,6 +27,7 @@ typedef NS_OPTIONS(NSInteger, GFPResourceCode) {
     GFPResourceProviderNotice = 1 << 2,
     GFPResourceAdProviderNotice = 1 << 3,
     GFPResourceAlert = 1 << 4,
+    GFPResourceSearchKeyword = 1 << 5,
 };
 
 

@@ -5,9 +5,8 @@
 //  Copyright 2022-present NAVER Corp.
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
-
-#import "GFPATTAuthorizationStatus.h"
-
+  
+#import "Swift-Enum.h"
 
 @protocol GFPAdManagerDelegate <NSObject>
 

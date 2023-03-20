@@ -21,25 +21,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeAdapting <GFPAdAdapting>
 
-@property(readwrite, nonatomic, weak) id <GFPNativeAdaptorDelegate> delegate;
+@property(nullable, readwrite, nonatomic, weak) id <GFPNativeAdaptorDelegate> delegate;
 
 - (GFPNativeAdProviderType)adProviderType;
 
-- (id)adProviderNativeAd;
+- (nullable id)adProviderNativeAd;
 
 - (BOOL)hasIconImage;
 
-- (NSString *)title;
+- (NSString * _Nullable)title;
 
-- (NSString *)body;
+- (NSString * _Nullable)body;
 
-- (NSString *)advertiser;
+- (NSString * _Nullable)advertiser;
 
-- (NSString *)badge;
+- (NSString * _Nullable)badge;
 
-- (NSString *)callToAction;
+- (NSString * _Nullable)callToAction;
 
-- (NSString *)socialContext;
+- (NSString * _Nullable)socialContext;
 
 - (void)registerView:(GFPNativeBaseView *)nativeAdView;
 

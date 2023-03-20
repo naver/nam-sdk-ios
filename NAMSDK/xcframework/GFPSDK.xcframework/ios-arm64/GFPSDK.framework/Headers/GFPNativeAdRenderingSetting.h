@@ -5,16 +5,17 @@
 //  Copyright 2022-present NAVER Corp.
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
+  
+
 
 #import <Foundation/Foundation.h>
-#import "GFPAdInterfaceStyle.h"
 #import "GFPAdBackgroundInfo.h"
 #import "GFPNativeAdDelegate.h"
-
+#import "Swift-Enum.h"
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
-    GFPAdChoicesViewPositionTopRightCorner,
+    GFPAdChoicesViewPositionTopRightCorner = 1,
     GFPAdChoicesViewPositionTopLeftCorner,
     GFPAdChoicesViewPositionBottomRightCorner,
     GFPAdChoicesViewPositionBottomLeftCorner

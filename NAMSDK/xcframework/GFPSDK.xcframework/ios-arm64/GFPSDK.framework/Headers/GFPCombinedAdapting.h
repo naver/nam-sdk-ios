@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPCombinedAdapting <GFPAdAdapting>
 
-@property (nonatomic, strong, nullable) GFPAdAdaptor <GFPBannerAdapting> *bannerAdaptor;
-@property (nonatomic, strong) GFPAdAdaptor <GFPNativeAdapting> *nativeAdaptor;
+@property (readonly, nonatomic, strong, nullable) GFPAdAdaptor <GFPBannerAdapting> *bannerAdaptor;
+@property (readonly, nonatomic, strong, nullable) GFPAdAdaptor <GFPNativeAdapting> *nativeAdaptor;
 
 @property (readonly, nonatomic, assign) BOOL nativeLoaded;
 

@@ -26,7 +26,8 @@ typedef NS_OPTIONS(NSInteger, GFPNativeAdProviderType) {
     GFPNativeAdProviderTypeDFP = 1 << 1,     // Google DFP
     // GFPNativeAdProviderTypeMoPub = 1 << 2,   // (deprecate)MoPub
     GFPNativeAdProviderTypeInMobi = 1 << 3,  // InMobi
-    GFPNativeAdProviderTypeNDA = 1 << 4      // Naver Native
+    GFPNativeAdProviderTypeNDA = 1 << 4,      // Naver Native
+    GFPNativeAdProviderTypeAppLovin = 1 << 5, // AppLovin
 };
 
 typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
