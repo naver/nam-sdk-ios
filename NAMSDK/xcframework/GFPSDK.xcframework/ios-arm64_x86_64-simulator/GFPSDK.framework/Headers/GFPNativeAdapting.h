@@ -60,6 +60,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CGFloat)estimateHeightWith:(CGFloat)viewWidth;
 
+- (CGSize)imageSize;
+
+- (CGSize)iconSize;
+
+- (void)clearResource;
+
+- (BOOL)isReloadRequired;
+
+- (void)reloadMediaResource;
 @end
 
 NS_ASSUME_NONNULL_END

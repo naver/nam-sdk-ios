@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GFPAPSAdParam.h"
+@class GFPAPSAdParam;
+@class GFPContentInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -76,6 +77,10 @@ typedef NS_ENUM(NSInteger, GFPAdParamGenderType) {
  */
 @property (readwrite, nonatomic, nullable) GFPAPSAdParam *apsParam;
 
+/**
+ * Communication Ad 용 Content Info.
+ */
+@property (readwrite, nonatomic, nullable) GFPContentInfo *contentInfo;
 
 @end
 

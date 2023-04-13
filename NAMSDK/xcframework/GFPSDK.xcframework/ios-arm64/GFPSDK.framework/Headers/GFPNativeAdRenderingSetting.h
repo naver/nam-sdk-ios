@@ -56,7 +56,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, weak) id<GFPNativeVideoEventDelegate> videoEventDelegate;
 
-
 @end
 
 
@@ -75,6 +74,12 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * (기본값은 YES)
  */
 @property (nonatomic, assign) BOOL hasMediaView;
+
+/**
+ * 네이티브 광고 성능을 위해 Internal Cache를 사용할 지 결정합니다.
+ * (기본값은 NO)
+ */
+@property (nonatomic, assign) BOOL useInternalCache;
 
 @end
 

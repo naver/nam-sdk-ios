@@ -319,8 +319,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)systemVer SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull deviceModel;)
 + (NSString * _Nonnull)deviceModel SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable carrier;)
-+ (NSString * _Nullable)carrier SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGRect screenRect;)
 + (CGRect)screenRect SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat nativeScaleFactor;)
@@ -754,7 +752,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kAttachedChec
 
 
 @interface UIColor (SWIFT_EXTENSION(GFPSDK))
-+ (UIColor * _Nullable)colorFromHexString:(NSString * _Nonnull)hexString SWIFT_WARN_UNUSED_RESULT;
 + (UIColor * _Nonnull)colorWithRGBIntWith:(uint64_t)rgbInt SWIFT_WARN_UNUSED_RESULT;
 + (UIColor * _Nonnull)colorWithRGBIntWith:(uint64_t)rgbInt alpha:(CGFloat)alpha SWIFT_WARN_UNUSED_RESULT;
 + (UIColor * _Nonnull)colorWithRedWith:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha SWIFT_WARN_UNUSED_RESULT;
@@ -796,6 +793,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kAttachedChec
 - (void)updateSizeWith:(CGSize)aSize;
 - (void)updateOriginWith:(CGPoint)aOrigin;
 - (void)updateOriginTypeWith:(enum GFPOriginType)aType value:(CGFloat)aValue;
+- (void)enableAccessibilityForLabelSubviews;
+- (void)disableAccessibilityForLabelSubviews;
+- (void)enableAccessibilityForImageSubviews;
+- (void)disableAccessibilityForImageSubviews;
 - (void)disableAccessibilityForSubviews;
 + (UIView * _Nullable)loadWithBundleWithABundle:(NSBundle * _Nonnull)aBundle nibName:(NSString * _Nonnull)nibName SWIFT_WARN_UNUSED_RESULT;
 @end

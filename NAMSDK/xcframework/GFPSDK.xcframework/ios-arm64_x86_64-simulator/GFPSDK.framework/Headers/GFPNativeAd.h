@@ -121,6 +121,31 @@ typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
  */
 @property (nullable, readonly, nonatomic, strong) NSString *badge;
 
+/**
+ * image view 소재 크기. 존재하지 않으면 CGSizeZero 를 반환.
+ */
+@property (readonly, nonatomic, assign) CGSize imageSize;
+
+/**
+ * icon view 소재 크기. 존재하지 않으면 CGSizeZero 를 반환.
+ */
+@property (readonly, nonatomic, assign) CGSize iconSize;
+
+
+/**
+ * S2S 사용 시 mediaView Image 초기화를 위한 기능
+ */
+- (void)clearForMemoryWarning;
+
+/**
+ * S2S 사용 시 mediaView Image 재로드가 필요한 경우
+ */
+- (BOOL)isReloadRequired;
+
+/**
+ * S2S 사용 시 mediaView Image 수동 재로드
+ */
+- (void)reloadMedia;
 
 @end
 

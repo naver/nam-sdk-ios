@@ -108,6 +108,11 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
 + (BOOL)isSdkInitialized;
 
 
+/**
+ * MemoryCache Clear (for memory warning)
+ */
++ (void)clearMemoryCache;
+
 @end
 
 NS_ASSUME_NONNULL_END

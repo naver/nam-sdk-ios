@@ -448,10 +448,9 @@ extension Swift.String {
   }
 }
 @objc extension UIKit.UIColor {
-  @objc(colorFromHexString:) dynamic public class func color(hexString: Swift.String) -> UIKit.UIColor?
-  @objc(colorWithRGBIntWith:) dynamic public class func color(rgbInt: Swift.UInt64) -> UIKit.UIColor
-  @objc(colorWithRGBIntWith:alpha:) dynamic public class func color(rgbInt: Swift.UInt64, alpha: CoreGraphics.CGFloat) -> UIKit.UIColor
-  @objc(colorWithRedWith:green:blue:alpha:) dynamic public class func color(red: CoreGraphics.CGFloat, green: CoreGraphics.CGFloat, blue: CoreGraphics.CGFloat, alpha: CoreGraphics.CGFloat) -> UIKit.UIColor
+  @objc(colorWithRGBIntWith:) dynamic public class func gfpColor(rgbInt: Swift.UInt64) -> UIKit.UIColor
+  @objc(colorWithRGBIntWith:alpha:) dynamic public class func gfpColor(rgbInt: Swift.UInt64, alpha: CoreGraphics.CGFloat) -> UIKit.UIColor
+  @objc(colorWithRedWith:green:blue:alpha:) dynamic public class func gfpColor(red: CoreGraphics.CGFloat, green: CoreGraphics.CGFloat, blue: CoreGraphics.CGFloat, alpha: CoreGraphics.CGFloat) -> UIKit.UIColor
 }
 @objc extension UIKit.UIView {
   @objc(frameWith:) @_Concurrency.MainActor(unsafe) dynamic public class func frame(_ frame: CoreGraphics.CGRect) -> Swift.String
@@ -480,6 +479,10 @@ extension Swift.String {
   @objc(updateSizeWith:) @_Concurrency.MainActor(unsafe) dynamic public func updateSizeWith(aSize: CoreGraphics.CGSize)
   @objc(updateOriginWith:) @_Concurrency.MainActor(unsafe) dynamic public func updateOriginWith(aOrigin: CoreGraphics.CGPoint)
   @objc(updateOriginTypeWith:value:) @_Concurrency.MainActor(unsafe) dynamic public func updateOriginTypeWith(aType: GFPSDK.GFPOriginType, aValue: CoreGraphics.CGFloat)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func enableAccessibilityForLabelSubviews()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func disableAccessibilityForLabelSubviews()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func enableAccessibilityForImageSubviews()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func disableAccessibilityForImageSubviews()
   @objc @_Concurrency.MainActor(unsafe) dynamic public func disableAccessibilityForSubviews()
   @objc @_Concurrency.MainActor(unsafe) dynamic public class func loadWithBundle(aBundle: Foundation.Bundle, nibName: Swift.String) -> UIKit.UIView?
 }
@@ -516,9 +519,6 @@ extension Swift.String {
     @objc get
   }
   @objc public static var deviceModel: Swift.String {
-    @objc get
-  }
-  @objc public static var carrier: Swift.String? {
     @objc get
   }
   @objc public static var screenRect: CoreGraphics.CGRect {
