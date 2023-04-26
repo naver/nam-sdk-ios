@@ -15,16 +15,16 @@ static NSTimeInterval const kGFPInterstitialExpiredTimeInSecond = 3600;
 @protocol GFPInterstitialAdAdaptorDelegate;
 
 typedef NS_OPTIONS(NSInteger, GFPInterstitialStatus) {
-    GFPInterstitialNotYet = 1 << 0,
-    GFPInterstitialLoaded = 1 << 1,
-    GFPInterstitialShowed = 1 << 2,
+    GFPInterstitialNotYet = 0,
+    GFPInterstitialLoaded = 1 << 0,
+    GFPInterstitialShowed = 1 << 1,
 };
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPInterstitialAdAdapting <GFPAdAdapting>
 
-@property (nullable, readwrite, nonatomic, weak) id <GFPInterstitialAdAdaptorDelegate> delegate;
+@property (readwrite, nonatomic, weak) id <GFPInterstitialAdAdaptorDelegate> delegate;
 
 @property (nonatomic, assign) BOOL isExpired;
 @property (nonatomic, assign) GFPInterstitialStatus status;

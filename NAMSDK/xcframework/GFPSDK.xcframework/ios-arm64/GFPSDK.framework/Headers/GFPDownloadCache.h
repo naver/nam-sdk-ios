@@ -12,7 +12,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^ImageDownloadCompletionHandler)(UIImage *_Nullable image, NSURL *_Nullable url, NSError *_Nullable error);
 typedef void (^DownloadCompletionHandler)(NSData *_Nullable data, NSURL *_Nullable url, NSError *_Nullable error);
 typedef void (^ImageCompletionHandler)(UIImage *_Nullable image, NSError *_Nullable error);
 typedef void (^ImageFullCompletionHandler)(UIImage *_Nullable image, NSURL *_Nullable url, NSError *_Nullable error);
@@ -28,8 +27,6 @@ typedef void (^ImageFullCompletionHandler)(UIImage *_Nullable image, NSURL *_Nul
 - (void)imageWithURL:(NSURL * _Nullable)aURL completion:(ImageCompletionHandler)aCompletion;
 - (void)imageWithURL:(NSURL * _Nullable)aURL fullCompletion:(ImageFullCompletionHandler)aCompletion;
 - (void)imageWithURL:(NSURL * _Nullable)aURL timeoutInterval:(NSTimeInterval)timeoutInterval fullCompletion:(ImageFullCompletionHandler)aCompletion;
-
-- (void)clearCache;
 
 @end
 

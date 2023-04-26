@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) GFPAdInfoSize *responseSize;
 @property (readonly, nonatomic, strong) NSArray<GFPAdInfoSize *> *requestSizes;
 
-@property (readonly, nonatomic, strong) NSDictionary<NSString *, NSObject *> *sdkRequestInfo;
+@property (readonly, nonatomic, strong) NSDictionary<NSString *, NSString *> *sdkRequestInfo;
 
 @property (readonly, nonatomic, strong) GFPAdParam *adParam;
 @property (readonly, nonatomic, strong) GFPEventReporter *eventReporter;
@@ -92,11 +92,6 @@ NS_ASSUME_NONNULL_BEGIN
  * Vast 관련 정보.
  */
 @property (readonly, nonatomic, strong, nullable) NSNumber *vastMaxRedirect;
-
-/**
- * Banner Base url info
- */
-@property(readonly, nonatomic, strong, nullable) NSString *baseUrl;
 
 /**
  * AdChoice 정보 객체

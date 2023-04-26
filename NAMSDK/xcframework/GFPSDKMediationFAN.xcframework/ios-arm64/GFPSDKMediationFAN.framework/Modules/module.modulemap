@@ -4,8 +4,3 @@ framework module GFPSDKMediationFAN {
   export *
   module * { export * }
 }
-
-module GFPSDKMediationFAN.Swift {
-    header "GFPSDKMediationFAN-Swift.h"
-    requires objc
-}

@@ -5,17 +5,16 @@
 //  Copyright 2022-present NAVER Corp.
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
-  
-
 
 #import <Foundation/Foundation.h>
+#import "GFPAdInterfaceStyle.h"
 #import "GFPAdBackgroundInfo.h"
 #import "GFPNativeAdDelegate.h"
-#import "Swift-Enum.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
-    GFPAdChoicesViewPositionTopRightCorner = 1,
+    GFPAdChoicesViewPositionTopRightCorner,
     GFPAdChoicesViewPositionTopLeftCorner,
     GFPAdChoicesViewPositionBottomRightCorner,
     GFPAdChoicesViewPositionBottomLeftCorner
@@ -56,6 +55,7 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, weak) id<GFPNativeVideoEventDelegate> videoEventDelegate;
 
+
 @end
 
 
@@ -74,12 +74,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * (기본값은 YES)
  */
 @property (nonatomic, assign) BOOL hasMediaView;
-
-/**
- * 네이티브 광고 성능을 위해 Internal Cache를 사용할 지 결정합니다.
- * (기본값은 NO)
- */
-@property (nonatomic, assign) BOOL useInternalCache;
 
 @end
 

@@ -9,6 +9,7 @@
 #include <AvailabilityMacros.h>
 #import <Foundation/Foundation.h>
 
+#import "GFPLogLevel.h"
 #import "GFPRenderDisplayAgent.h"
 #import "GFPAdConfiguration.h"
 
@@ -107,11 +108,6 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
  */
 + (BOOL)isSdkInitialized;
 
-
-/**
- * MemoryCache Clear (for memory warning)
- */
-+ (void)clearMemoryCache;
 
 @end
 

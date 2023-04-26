@@ -3,11 +3,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#if !(TARGET_OS_TV)
 #import <WebKit/WebKit.h>
-#endif
-
 #import "OMIDPartner.h"
 #import "OMIDVerificationScriptResource.h"
 
@@ -20,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OMIDNavercorpAdSessionContext : NSObject
 
 - (null_unspecified instancetype)init NS_UNAVAILABLE;
-
-#if !(TARGET_OS_TV)
 
 /**
  * Initializes a new ad session context providing reference to partner and web view where
@@ -44,8 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
                               contentUrl:(nullable NSString *)contentUrl
                customReferenceIdentifier:(nullable NSString *)customReferenceIdentifier
                                    error:(NSError *_Nullable *_Nullable)error;
-#endif
-
 /**
  * Initializes a new ad session context providing reference to partner and a list of
  * script resources which should be managed by OMID.
@@ -70,7 +62,6 @@ NS_ASSUME_NONNULL_BEGIN
                customReferenceIdentifier:(nullable NSString *)customReferenceIdentifier
                                    error:(NSError *_Nullable *_Nullable)error;
 
-#if !(TARGET_OS_TV)
 /**
  * Initializes a new ad session context providing reference to partner and web view where
  * OM SDK JavaScript service has been injected.
@@ -92,7 +83,6 @@ NS_ASSUME_NONNULL_BEGIN
                               contentUrl:(nullable NSString *)contentUrl
                customReferenceIdentifier:(nullable NSString *)customReferenceIdentifier
                                    error:(NSError *_Nullable *_Nullable)error;
-#endif
 
 @end
 

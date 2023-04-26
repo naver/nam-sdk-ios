@@ -4,8 +4,3 @@ framework module GFPSDKMediationUnity {
   export *
   module * { export * }
 }
-
-module GFPSDKMediationUnity.Swift {
-    header "GFPSDKMediationUnity-Swift.h"
-    requires objc
-}

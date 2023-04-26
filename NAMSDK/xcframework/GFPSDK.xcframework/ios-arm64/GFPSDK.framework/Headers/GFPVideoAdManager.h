@@ -6,7 +6,6 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
-  
 
 
 #import <Foundation/Foundation.h>
@@ -14,20 +13,18 @@
 #import "GFPVideoAdQoeDelegate.h"
 #import "GFPVideoAdPIPDelegate.h"
 #import "GFPVideoAdPlacement.h"
+#import "GFPVideoAdPlayerSetting.h"
+#import "GFPVideoAdRenderingSetting.h"
+#import "GFPVideoDisplayMode.h"
 #import "GFPS2SAdClickDelegate.h"
 
 @class GFPAdParam;
 @class GFPVideoAdParam;
 @class GFPVideoAdInfo;
-@class GFPVideoAdPlayerSetting;
-@class GFPVideoAdRenderingSetting;
-@class GFPVideoDisplayMode;
 
 @class AVPlayer;
 @class UIView;
 @class UIViewController;
-
-@protocol GFPS2SAdClickDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 

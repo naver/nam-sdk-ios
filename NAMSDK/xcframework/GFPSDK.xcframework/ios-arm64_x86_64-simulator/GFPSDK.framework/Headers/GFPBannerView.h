@@ -6,17 +6,13 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
-  
-
-
 #import <UIKit/UIKit.h>
 #import "GFPBannerViewDelegate.h"
 #import "GFPMRAIDSupportSetting.h"
+#import "GFPBannerViewLayoutType.h"
 #import "GFPS2SAdClickDelegate.h"
-#import "Swift-Enum.h"
 
 @protocol GFPBannerAdapting;
-@protocol GFPS2SAdClickDelegate;
 
 @class GFPAdParam;
 @class GFPNativeAdRenderingSetting;

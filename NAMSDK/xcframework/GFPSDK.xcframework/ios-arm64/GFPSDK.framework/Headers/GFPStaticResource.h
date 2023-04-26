@@ -28,7 +28,6 @@ typedef NS_OPTIONS(NSInteger, GFPResourceCode) {
     GFPResourceAdProviderNotice = 1 << 3,
     GFPResourceAlert = 1 << 4,
     GFPResourceSearchKeyword = 1 << 5,
-    GFPResourceAdChoices = 1 << 6,
 };
 
 
@@ -70,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) BaseStaticResource *resource;
 
 @property (readonly, nonatomic, assign) GFPResourceCode code;
-@property (readonly, nonatomic, strong) NSString *value; // 문구 및 리소스 url
+@property (readonly, nonatomic, strong) NSString *value; // 문구
 
 
 - (instancetype)initWithDomElement:(DDXMLElement *)aElement duration:(NSTimeInterval)aDuration error:(GFPError *_Nullable * _Nullable)aError;

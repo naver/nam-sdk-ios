@@ -10,20 +10,19 @@
 #import <AVKit/AVKit.h>
 #import <UIKit/UIKit.h>
 
-#import "Swift-Enum.h"
 #import "GFPAdScheduleParam.h"
 #import "GFPAdvertiseParams.h"
+#import "GFPVideoAdPlayerSetting.h"
 
 #import "GFPVideoAdScheduleManagerDelegate.h"
 #import "GFPNonLinearDelegate.h"
 
+#import "GFPVideoAdRenderingSetting.h"
+#import "GFPVideoDisplayMode.h"
+
 #import "GFPS2SAdClickDelegate.h"
 
 @protocol GFPNonLinearDelegate;
-@protocol GFPS2SAdClickDelegate;
-@class GFPVideoAdRenderingSetting;
-@class GFPVideoDisplayMode;
-@class GFPVideoAdPlayerSetting;
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -5,18 +5,13 @@
 //  Copyright 2022-present NAVER Corp.
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
-  
-
 
 #import <UIKit/UIKit.h>
+#import "GFPTextAdViewAttribute.h"
 #import "GFPS2SAdClickDelegate.h"
-#import "Swift-Enum.h"
 
 @class GFPRemindAd;
 @class GFPClickLandingUtil;
-@class GFPTextAdViewAttribute;
-
-@protocol GFPS2SAdClickDelegate;
 
 typedef NS_OPTIONS(NSInteger, GFPRemindTextType) {
     GFPRemindNormal = 0,

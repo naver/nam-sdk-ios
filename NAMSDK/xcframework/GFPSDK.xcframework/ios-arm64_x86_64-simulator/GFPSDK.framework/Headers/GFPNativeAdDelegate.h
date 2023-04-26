@@ -41,20 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)nativeAdWasMuted:(GFPNativeAd *)nativeAd;
 
-/**
- * 리로스 재로드가 필요할 때 리소스 재 로드 성공 시 호출됩니다.
- * @param nativeAd 네이티브 광고 객체
- */
-- (void)nativeAdDidReloaded:(GFPNativeAd *)nativeAd;
-
-/**
- * 리로스 재로드가 필요할 때 리소스 재 로드 실패 시 호출됩니다.
- * @param nativeAd 네이티브 광고 객체
- * @param error     에러객체
- */
-- (void)nativeAd:(GFPNativeAd *)nativeAd didReloadFailWithError:(GFPError *)error;
-
-
 @end
 
 @protocol GFPNativeSimpleAdDelegate <NSObject>

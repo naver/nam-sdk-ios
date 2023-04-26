@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-  
-
+#import "GFPVideoDisplayMode.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class GFPVideoDisplayMode;
 @interface GFPVideoCastingView : UIView
 
 @property (nonatomic, strong) GFPVideoDisplayMode *mode;
