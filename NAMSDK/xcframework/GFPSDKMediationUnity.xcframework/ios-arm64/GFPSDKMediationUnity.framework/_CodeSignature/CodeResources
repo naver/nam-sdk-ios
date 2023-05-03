@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/GFPSDKMediationUnity-Swift.h</key>
+		<data>
+		SypyhASgBNlEGFpzybU2SYrWmqU=
+		</data>
 		<key>Headers/GFPSDKMediationUnity.h</key>
 		<data>
 		TOR/qLDpf36amvXMOMqaD3uzgOY=
@@ -12,13 +16,36 @@
 		<data>
 		q39afIuF+BVks2q/vQOYEumJAYM=
 		</data>
+		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		cijLyKg0+UbysLXL/hJ5RBeIaQQ=
+		</data>
+		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		glmPuoSZxJSDUtkLsVIpDi+HT9Q=
+		</data>
+		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		7YaGpuxMUjcAjVrKOO/4v/JP1j4=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		XPfO3nn0lnxfNyHvn7uzhUzXHNE=
+		O9HXEc6Gpl6C8wvyOojxbs09liw=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/GFPSDKMediationUnity-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SypyhASgBNlEGFpzybU2SYrWmqU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Oz5SLbuRU4D4No+UHs7qMYvROHloH4g6P8VB9yg0y9A=
+			</data>
+		</dict>
 		<key>Headers/GFPSDKMediationUnity.h</key>
 		<dict>
 			<key>hash</key>
@@ -30,15 +57,48 @@
 			IbreuvDpjNwhLsDx8ITn67y9D0pPJpb2z6qv2Y3CR/k=
 			</data>
 		</dict>
+		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cijLyKg0+UbysLXL/hJ5RBeIaQQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			w5PIYKjh8cP/hc8tjZSx6W3cnzLa+yVVIJriOZoVzXQ=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			glmPuoSZxJSDUtkLsVIpDi+HT9Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			KwaPvVSGConxrL6+giTkCAZ+eDZXNEFGPUqfw9DjroE=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7YaGpuxMUjcAjVrKOO/4v/JP1j4=
+			</data>
+			<key>hash2</key>
+			<data>
+			cUjvZtmGCiES85gELipXqnOq7aSjAVe/gYm1949jFXs=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XPfO3nn0lnxfNyHvn7uzhUzXHNE=
+			O9HXEc6Gpl6C8wvyOojxbs09liw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+t9T8b8UEcNSKDTxtMJd61WKkUoZD36teNhpPVxVMMU=
+			p08iLKvW5NPhteSQSo82cvWncbHoG3FhrokiW4bezwM=
 			</data>
 		</dict>
 	</dict>

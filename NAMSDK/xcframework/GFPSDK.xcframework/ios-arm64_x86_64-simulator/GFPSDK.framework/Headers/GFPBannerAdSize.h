@@ -5,21 +5,25 @@
 //  Copyright 2022-present NAVER Corp.
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
+  
+
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-
-#import "GFPBannerViewLayoutType.h"
+#import "Swift-Enum.h"
 
 typedef NS_OPTIONS(NSInteger, GFPBannerSizeType) {
-    GFPBannerFixed = 0,
-    GFPBannerFluidWidth = 1,
-    GFPBannerFluidHeight = 2,
-    GFPBannerFluid = 3,
+    GFPBannerFixed = 1,
+    GFPBannerFluidWidth = 2,
+    GFPBannerFluidHeight = 3,
+    GFPBannerFluid = 4,
 };
 
 extern CGFloat const kGFPFluidAdSize;
 extern CGFloat const kGFPFluidReponseAdSize;
+
+NS_ASSUME_NONNULL_BEGIN
+
 
 @interface GFPBannerAdSize : NSObject
 
@@ -40,3 +44,5 @@ extern CGFloat const kGFPFluidReponseAdSize;
 + (GFPBannerSizeType)typeWith:(GFPBannerViewLayoutType)aLayoutType;
 
 @end
+
+NS_ASSUME_NONNULL_END

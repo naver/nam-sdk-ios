@@ -6,24 +6,20 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
+
 #import <Foundation/Foundation.h>
 
-#import "GFPAdProviderSetting.h"
 #import "GFPRenderDisplayAgent.h"
-#import "GFPLogLevel.h"
-#import "GFPAdInterfaceStyle.h"
 #import "GFPS2SAdClickDelegate.h"
+#import "Swift-Enum.h"
 
-typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
-    GFPPhasePrivate = 1 << 0,
-    GFPPhaseDev = 1 << 1,
-    GFPPhaseTest = 1 << 2,
-    GFPPhaseReal = 1 << 3,
-};
+NS_ASSUME_NONNULL_BEGIN
 
+
+@class GFPAdProviderSetting;
+@protocol GFPS2SAdClickDelegate;
 
 @interface GFPAdConfiguration : NSObject
-
 
 @property (nonatomic, assign) GFPPhaseType phase;
 
@@ -108,7 +104,9 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
 @property (nonatomic, readonly, strong) NSDictionary <NSString *, NSString *> *cookie;
 
 
-- (GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
+-(GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
 
 
 @end
+
+NS_ASSUME_NONNULL_END
