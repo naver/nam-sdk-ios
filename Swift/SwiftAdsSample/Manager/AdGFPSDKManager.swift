@@ -31,15 +31,14 @@ class AdGFPSDKManger : NSObject, GFPAdManagerDelegate {
     
     private func turnOnDebug() {
 //        GFPAdManager.perform(Selector("turnOnDebugMode"))
-        GFPAdManager.adConfiguration().logLevel = .trace
+        GFPAdManager.adConfiguration().logLevel = []
     }
     
     private func updateTestMode() {
-        let dfpConfig = GFPAdProviderSetting.type(.DFP, testMode: UserDefaults.testModeGoogle)!
-        let fanConfig = GFPAdProviderSetting.type(.FAN, testMode: UserDefaults.testModeFacebook)!
-        let mopubConfig = GFPAdProviderSetting.type(.moPub, testMode: UserDefaults.testModeMopub)!
-        
-        GFPAdManager.adConfiguration().adProviderConfigList = [dfpConfig, fanConfig, mopubConfig]
+        let dfpConfig = GFPAdProviderSetting.type(.DFP, testMode: UserDefaults.testModeGoogle)
+        let fanConfig = GFPAdProviderSetting.type(.FAN, testMode: UserDefaults.testModeFacebook)
+
+        GFPAdManager.adConfiguration().adProviderConfigList = [dfpConfig, fanConfig]
     }
     
     private func updateTimeOutAll() {
@@ -66,7 +65,7 @@ class AdGFPSDKManger : NSObject, GFPAdManagerDelegate {
     }
     
     private func updateLogTrace() {
-        GFPAdManager.adConfiguration().logLevel = .trace
+        GFPAdManager.adConfiguration().logLevel = []
     }
         
     private func updateRealPhase() {
@@ -124,6 +123,7 @@ class AdGFPSDKManger : NSObject, GFPAdManagerDelegate {
     }
     
     @objc func attStatus() -> GFPATTAuthorizationStatus {
-        return .authorizeNotDetermined
+        return .notDetermined
+        //return .authorizeNotDetermined
     }
 }
