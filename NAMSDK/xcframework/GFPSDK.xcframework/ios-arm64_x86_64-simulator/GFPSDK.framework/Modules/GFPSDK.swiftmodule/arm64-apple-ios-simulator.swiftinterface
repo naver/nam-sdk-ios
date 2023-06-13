@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GFPSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -21,7 +21,7 @@ import _StringProcessing
 @objc public protocol GFPQueueObject : ObjectiveC.NSObjectProtocol {
 }
 @objc @objcMembers public class GFPLimitQueue : ObjectiveC.NSObject {
-  @objc public var queue: [any GFPSDK.GFPQueueObject] {
+  @objc public var queue: [GFPSDK.GFPQueueObject] {
     @objc get
   }
   @objc public var size: Swift.Int {
@@ -33,9 +33,9 @@ import _StringProcessing
   @objc public var isEmpty: Swift.Bool {
     @objc get
   }
-  @objc public func enqueue(_ queueObject: (any GFPSDK.GFPQueueObject)?)
-  @objc public func enqueueAndReplace(_ queueObject: (any GFPSDK.GFPQueueObject)?)
-  @objc public func dequeue() -> (any GFPSDK.GFPQueueObject)?
+  @objc public func enqueue(_ queueObject: GFPSDK.GFPQueueObject?)
+  @objc public func enqueueAndReplace(_ queueObject: GFPSDK.GFPQueueObject?)
+  @objc public func dequeue() -> GFPSDK.GFPQueueObject?
   @objc public class func sizeWith(_ size: Swift.Int) -> GFPSDK.GFPLimitQueue
   @objc public init(size: Swift.Int)
   @objc deinit
