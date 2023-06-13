@@ -1,0 +1,4 @@
+*.xcuserstate
+example/AdsSampleApp.xcworkspace
+Swift/Pods
+Swift/SwiftSample.xcworkspace
