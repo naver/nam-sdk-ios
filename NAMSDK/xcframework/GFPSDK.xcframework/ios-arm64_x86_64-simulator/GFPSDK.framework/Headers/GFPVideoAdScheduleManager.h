@@ -19,10 +19,6 @@
 
 #import "GFPS2SAdClickDelegate.h"
 
-#if __has_include("NAMSDK.h")
-#import "NAMSDK.h"
-#endif
-
 @protocol GFPNonLinearDelegate;
 @protocol GFPS2SAdClickDelegate;
 @class GFPVideoAdRenderingSetting;
@@ -66,12 +62,10 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (nonatomic, weak, nullable) UIViewController *rootViewController;
 
-#if !NAMSDK
 /**
  * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
  */
 @property (nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
-#endif
 
 
 - (instancetype)initWithAdScheduleID:(NSString * _Nonnull)aAdScheduleID contentPlayer:(AVPlayer *)aContentPlayer videoView:(UIView *)aVideoView scheduleParam:(GFPAdScheduleParam *)aScheduleParam;

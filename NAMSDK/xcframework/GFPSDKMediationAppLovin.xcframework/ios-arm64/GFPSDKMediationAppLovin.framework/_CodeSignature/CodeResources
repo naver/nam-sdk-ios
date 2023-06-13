@@ -243,7 +243,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationAppLovin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		R7RVZd/BGOLli8IsVk+OZ0vines=
+		DDkXvH4YuL5XHTfppJ76YWa2+4U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -791,11 +791,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R7RVZd/BGOLli8IsVk+OZ0vines=
+			DDkXvH4YuL5XHTfppJ76YWa2+4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			nmBvDEbZcaKxXsgaxY6Z05Mx87WmOLKIi+CnzDexg7U=
+			lxrkJyRkm8cg3soCnIkc2nNXGDuHhG3YTHeuU6/rFck=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

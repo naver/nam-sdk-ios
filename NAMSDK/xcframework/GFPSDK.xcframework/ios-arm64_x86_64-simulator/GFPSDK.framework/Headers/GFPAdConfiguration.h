@@ -15,10 +15,6 @@
 
 @import NaverAdsServices;
 
-#if __has_include("NAMSDK.h")
-#import "NAMSDK.h"
-#endif
-
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -67,12 +63,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) GFPRenderDisplayAgent *displayAgent;
 
-#if !NAMSDK
 /**
  * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
  */
 @property (nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
-#endif
 
 /**
  * 비디오 광고 재생 시, Loudness (볼륨 자동 조절) 사용 여부. (기본값 NO)
