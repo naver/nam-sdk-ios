@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GFPError.h"
+#import "GFPErrorSupporter.h"
 #import "GFPVideoAdManager.h"
 #import "GFPVideoAdPlacement.h"
 

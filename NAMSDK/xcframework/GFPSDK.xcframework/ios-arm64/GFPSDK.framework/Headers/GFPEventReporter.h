@@ -60,6 +60,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportGfpTracking:(NSString *)gfpBaseUrl;
 
+- (void)reportRewardVideoClose:(NSString *)playTime;
+
 - (void)reportMute;
 
 - (void)reportVImp100;

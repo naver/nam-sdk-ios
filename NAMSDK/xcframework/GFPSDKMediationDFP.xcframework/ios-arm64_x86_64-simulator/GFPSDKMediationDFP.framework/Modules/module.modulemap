@@ -6,6 +6,6 @@ framework module GFPSDKMediationDFP {
 }
 
 module GFPSDKMediationDFP.Swift {
-    header "GFPSDKMediationDFP-Swift.h"
-    requires objc
+  header "GFPSDKMediationDFP-Swift.h"
+  requires objc
 }

@@ -17,7 +17,6 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
     GFPPhaseTypeTest = 3,
     GFPPhaseTypeReal = 4,
 };
-typedef NS_OPTIONS(NSInteger, GFPLogLevel);
 
 typedef NS_OPTIONS(NSInteger, GFPAdInterfaceStyle) {
     GFPAdInterfaceStyleSystem = 1,
@@ -45,13 +44,6 @@ typedef NS_ENUM(NSInteger, GFPATTAuthorizationStatus) {
     GFPATTAuthorizationStatusRestricted = 1,
     GFPATTAuthorizationStatusDenied = 2,
     GFPATTAuthorizationStatusAuthorized = 3,
-};
-
-typedef NS_OPTIONS(NSInteger, GFPAlignment) {
-    GFPAlignmentLeft = 1,
-    GFPAlignmentTop = 2,
-    GFPAlignmentRight = 3,
-    GFPAlignmentBottom = 4,        
 };
 
 /**

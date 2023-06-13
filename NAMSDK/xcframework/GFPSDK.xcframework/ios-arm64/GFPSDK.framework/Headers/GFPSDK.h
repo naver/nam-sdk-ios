@@ -14,12 +14,16 @@ FOUNDATION_EXPORT double GFPSDKVersionNumber;
 //! Project version string for GFPSDK.
 FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 
+#if __has_include(<GFPSDK/NAMSDK.h>)
+#import <GFPSDK/NAMSDK.h>
+#endif
+
 // In this header, you should import all the public headers of your framework using statements like #import <GFPSDK/PublicHeader.h>
 
 #import <GFPSDK/GFPAdParam.h>
+#import <GFPSDK/GFPUserParam.h>
 #import <GFPSDK/GFPContentInfo.h>
 #import <GFPSDK/GFPAdManager.h>
-#import <GFPSDK/GFPError.h>
 #import <GFPSDK/GFPBannerView.h>
 #import <GFPSDK/GFPBannerViewDelegate.h>
 #import <GFPSDK/GFPBannerAdSize.h>
@@ -96,10 +100,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 
 #import <GFPSDK/GFPConfigDictionaryConverter.h>
 #import <GFPSDK/GFPNativeViewUtils.h>
-#import <GFPSDK/GFPDownloadCache.h>
-#import <GFPSDK/GFPURLUtils.h>
 #import <GFPSDK/GFPErrorUtils.h>
-#import <GFPSDK/GFPStoreKitUtils.h>
 #import <GFPSDK/GFPClickLandingUtil.h>
 #import <GFPSDK/GFPLoadResponseInfo.h>
 #import <GFPSDK/GFPS2SAdClickDelegate.h>
@@ -126,7 +127,6 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPAPIQueryItems.h>
 #import <GFPSDK/GFPAdAttachmentInfo.h>
 #import <GFPSDK/GFPVideoAdManager.h>
-
 
 //For internal
 #import <GFPSDK/GFPMediator.h>

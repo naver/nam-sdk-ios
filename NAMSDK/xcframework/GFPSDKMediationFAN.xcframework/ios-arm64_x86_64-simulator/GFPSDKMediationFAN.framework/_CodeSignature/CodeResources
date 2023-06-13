@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GFPSDKMediationFAN-Swift.h</key>
 		<data>
-		fKuOABhFbEZWTEyMMkVmU3WV/wM=
+		m5J+CcbyYj0nr61Gi8zJoVO9hpQ=
 		</data>
 		<key>Headers/GFPSDKMediationFAN.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sPAravApzQnRDugt6ZQVbZupd4c=
+		t+X9Sp4wBqCIZHKte1PSjOyq3+M=
+		</data>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		9YpzqSAmIFzjkFACK7Z40Jj0oD4=
+		</data>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		yZtYzjiAnF3sX0b0S1v/zBPE+Ug=
 		</data>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		NYagE5o15q5+oJ8OrDaYxFCNaIE=
+		0CFSKqj6Zq/EJJgA5ZIMOzd6z4o=
 		</data>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9SZnzrMsx+FfroMO8vW8O+BzlII=
+		yZtYzjiAnF3sX0b0S1v/zBPE+Ug=
 		</data>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5dhv9vRJso62bqJdShKLKNW0JIs=
+		XwGpLSzSSj6tEN9a8hYIQ90t38g=
+		</data>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		9YpzqSAmIFzjkFACK7Z40Jj0oD4=
+		</data>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		kgjZqvetWEfsc0uqwQLOL8lwk3E=
 		</data>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		r1B8wuXGayvE4j+LPtMqoFHjdfo=
+		iIlitS8E70al6LxU94vFicI3uls=
 		</data>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5JoKvtRZ1hY077iU0VTdSUf7nec=
+		kgjZqvetWEfsc0uqwQLOL8lwk3E=
 		</data>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		u95KiJYGbcPypNbbCWiIfur3y6o=
+		CdPCYyQsq75FlxHlrkopuv0g558=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		s0TTcaLsvf+T6He3geQWIyHHaPI=
+		7SwaVhBAYvFTjxFoJ5TAksbYUD4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fKuOABhFbEZWTEyMMkVmU3WV/wM=
+			m5J+CcbyYj0nr61Gi8zJoVO9hpQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			pDcdwRgVihd+EsKTI55J4+5zUkxFUS86I4CYdKeh7gY=
+			Zc+xA8gvENqxBdcGzxsjhRK1bsA+/MmKZmEbK//XJLg=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationFAN.h</key>
@@ -69,81 +85,125 @@
 			4C4Kbl+4tmvQOpC1f9ORnSIBV5EHjCyPq8rYk9xlGZw=
 			</data>
 		</dict>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9YpzqSAmIFzjkFACK7Z40Jj0oD4=
+			</data>
+			<key>hash2</key>
+			<data>
+			9fSTHm6lW3s3PzqMxPulTzcIC6BWmMbWg9ay7XlY3Nk=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yZtYzjiAnF3sX0b0S1v/zBPE+Ug=
+			</data>
+			<key>hash2</key>
+			<data>
+			NXIdc2lkMuvNmTd3U69yBollNL8wv+e0zf4C/XHCOJE=
+			</data>
+		</dict>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NYagE5o15q5+oJ8OrDaYxFCNaIE=
+			0CFSKqj6Zq/EJJgA5ZIMOzd6z4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			SoD542TZPF4lx5tD+dC9r24tNPFG5mwJ5Syqflezanw=
+			UZSOGOa/hg+WX3HD155Jv5G66DXnot6CcJzIjiGBmio=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9SZnzrMsx+FfroMO8vW8O+BzlII=
+			yZtYzjiAnF3sX0b0S1v/zBPE+Ug=
 			</data>
 			<key>hash2</key>
 			<data>
-			3rdfrFGL5f3ynktbqZ5yvrm3Vlw9HAj/vLzYCOzhAyY=
+			NXIdc2lkMuvNmTd3U69yBollNL8wv+e0zf4C/XHCOJE=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5dhv9vRJso62bqJdShKLKNW0JIs=
+			XwGpLSzSSj6tEN9a8hYIQ90t38g=
 			</data>
 			<key>hash2</key>
 			<data>
-			xHl1RSCpLiUfeeily1A9K0RpkZAzscVLH0ilzGp4l8s=
+			d7YUIENEdyzchFhKyjbXTWXzihR6Bmf1KzJmAxulv4I=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9YpzqSAmIFzjkFACK7Z40Jj0oD4=
+			</data>
+			<key>hash2</key>
+			<data>
+			9fSTHm6lW3s3PzqMxPulTzcIC6BWmMbWg9ay7XlY3Nk=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kgjZqvetWEfsc0uqwQLOL8lwk3E=
+			</data>
+			<key>hash2</key>
+			<data>
+			mvEKlifGYAEpj3vg0vCA/vFcoZlfP0qGPGdOB6D2ugQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r1B8wuXGayvE4j+LPtMqoFHjdfo=
+			iIlitS8E70al6LxU94vFicI3uls=
 			</data>
 			<key>hash2</key>
 			<data>
-			qKGN+H1wVl6JUCPHG3eHbXsStVh9UnRpjEu2re4pdCg=
+			J5gQV/9GCu2T+MUROLk/jCqtlaVhtwaJO+fBRJHKGeI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5JoKvtRZ1hY077iU0VTdSUf7nec=
+			kgjZqvetWEfsc0uqwQLOL8lwk3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			B7EEdRDRu/6OjWdD4uuM+VTgInZpSDJF21IiouMeJHc=
+			mvEKlifGYAEpj3vg0vCA/vFcoZlfP0qGPGdOB6D2ugQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationFAN.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u95KiJYGbcPypNbbCWiIfur3y6o=
+			CdPCYyQsq75FlxHlrkopuv0g558=
 			</data>
 			<key>hash2</key>
 			<data>
-			rdSiBnMogUq7o9rax4kcaSA98pl7G20q/9D10Qw9QqQ=
+			RjVMTIWiImMdcohWr2J5ifMvxx2ym7s31JqwUPZRVac=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s0TTcaLsvf+T6He3geQWIyHHaPI=
+			7SwaVhBAYvFTjxFoJ5TAksbYUD4=
 			</data>
 			<key>hash2</key>
 			<data>
-			vmt4uE2uNXdJQ0F6KLOJfzEyJlMmLU0VxCnrZNP9l6I=
+			Q5YUW1Y5fpZXHi2B6LwTBJKQ6aZIt9bNZkXbEK8qIgU=
 			</data>
 		</dict>
 	</dict>

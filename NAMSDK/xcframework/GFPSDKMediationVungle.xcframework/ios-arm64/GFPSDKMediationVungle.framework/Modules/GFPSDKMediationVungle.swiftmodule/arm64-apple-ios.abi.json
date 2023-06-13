@@ -1,0 +1,530 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleSDK",
+        "printedName": "VungleSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VungleSDK",
+        "printedName": "VungleSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleSDK",
+        "printedName": "VungleSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VungleSDK",
+        "printedName": "VungleSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1343,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 1456,
+      "length": 31,
+      "value": "\"Invalide Interstitial Context\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2538,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2659,
+      "length": 33,
+      "value": "\"Failed to initialize VungleSDK.\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 325,
+      "length": 30,
+      "value": "\"GFPSDKMediationVungle.GFPVungleInterstitialAdAdaptor\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3235,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3358,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4200,
+      "length": 169,
+      "value": "\"VungleSDKDelegate.vungleAdPlayabilityUpdate() isAdPlayable:\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4275,
+      "length": 4,
+      "value": "\" with error={domain: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4311,
+      "length": 1,
+      "value": "\", code: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4332,
+      "length": 1,
+      "value": "\", description: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4367,
+      "length": 1,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4422,
+      "length": 76,
+      "value": "\"VungleSDKDelegate.vungleAdPlayabilityUpdate() isAdPlayable:\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4497,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4733,
+      "length": 14,
+      "value": "\"isAdPlayable\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 49,
+      "value": "\"Cannot initialize Vungle SDK with empty App ID.\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 760,
+      "length": 49,
+      "value": "\"Cannot initialize Vungle SDK with empty App ID.\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 894,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1026,
+      "length": 72,
+      "value": "\"VungleSDK shared instance cannot be used with multiple ApplicationIDs.\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1183,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1512,
+      "length": 71,
+      "value": "\"Error occured while starting VungleSDK: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1582,
+      "length": 65,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1667,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1699,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 13,
+      "value": "\"placementId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 13,
+      "value": "\"placementId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 819,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1023,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1136,
+      "length": 131,
+      "value": "\"GFPVungle adaptors require Vungle ApplicationID and PlacementID to load ads. appID:\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 1,
+      "value": "\", placementID:\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1266,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1306,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 1419,
+      "length": 27,
+      "value": "\"Invalide Rewarded Context\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2489,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 2610,
+      "length": 33,
+      "value": "\"Failed to initialize VungleSDK.\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 26,
+      "value": "\"GFPSDKMediationVungle.GFPVungleRewardedAdAdaptor\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3175,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3298,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4058,
+      "length": 169,
+      "value": "\"VungleSDKDelegate.vungleAdPlayabilityUpdate() isAdPlayable:\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4133,
+      "length": 4,
+      "value": "\" with error={domain: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4169,
+      "length": 1,
+      "value": "\", code: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4190,
+      "length": 1,
+      "value": "\", description: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4225,
+      "length": 1,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4280,
+      "length": 76,
+      "value": "\"VungleSDKDelegate.vungleAdPlayabilityUpdate() isAdPlayable:\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4355,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 4591,
+      "length": 14,
+      "value": "\"isAdPlayable\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 5361,
+      "length": 4,
+      "value": "\"-1\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleErrorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 423,
+      "length": 115,
+      "value": "\"Vungle Provider Ad Load Error. (domain:  \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleErrorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 480,
+      "length": 1,
+      "value": "\", code: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleErrorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 1,
+      "value": "\", description: \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleErrorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleErrorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1032,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Common\/GFPVungleErrorUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 63,
+      "value": "\"\""
+    }
+  ]
+}

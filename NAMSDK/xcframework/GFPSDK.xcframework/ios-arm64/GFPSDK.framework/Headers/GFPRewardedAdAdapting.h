@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 #import "GFPAdAdapting.h"
 
-static NSTimeInterval const kGFPRewardedExpiredTimeInSecond = 3600;
-
 @protocol GFPRewardedAdAdaptorDelegate;
 
 NS_ASSUME_NONNULL_BEGIN

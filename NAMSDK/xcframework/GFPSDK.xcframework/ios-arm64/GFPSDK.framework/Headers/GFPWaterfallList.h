@@ -27,6 +27,7 @@
 @class GFPSKAdNetworkInfo;
 @class GFPAdChoiceInfo;
 @class GFPAdImpressionInfo;
+@class GFPRewardedAdInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -111,6 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *attachImpressions;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *completeImpressions;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *mutes;
+@property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *closeImpressions;
 
 - (instancetype _Nullable)init NS_UNAVAILABLE;
 
@@ -179,6 +181,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) GFPAdInfoSize *responseSize;
 @property (readonly, nonatomic, strong, nullable) NSDictionary<NSString *, NSString *> *sdkRequestInfo;
 @property (readonly, nonatomic, assign, nullable) NSNumber *timeout; // milliseconds
+
 @property (readonly, nonatomic, strong, nullable) NSString *bidPrice;
 
 @property (readonly, nonatomic, strong, nullable) GFPAdHTML *adHTML;
@@ -187,6 +190,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) GFPAdChoiceInfo *adChoiceInfo;
 
 @property (readonly, nonatomic, strong, nullable) NSString *baseUrl;
+
+@property (readonly, nonatomic, strong, nullable) NSNumber *videoloadTimeout; // milliseconds
+@property (readonly, nonatomic, strong, nullable) NSNumber *expireTime; // seconds
+
+@property (readonly, nonatomic, strong, nullable) GFPRewardedAdInfo *rewardedAdInfo;
+
 
 - (instancetype _Nullable)init NS_UNAVAILABLE;
     

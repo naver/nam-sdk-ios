@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GFPSDKMediationInMobi-Swift.h</key>
 		<data>
-		HoatLw3FWec0/ecZnGTzZ6zNhr8=
+		3ipyu8EjPEi33pHs46hQa3l2NjQ=
 		</data>
 		<key>Headers/GFPSDKMediationInMobi.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fvUxjFWNIGy4jCl5SS8wYYvLHHE=
+		olJZCLKihdCGXcZ2Qz2hMfHpeJw=
+		</data>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		WlNtWa3BQ1y4WEP8Y5kRiWuNca4=
+		</data>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		P2lpf7g1A389AL+FZaHKWqk4mM8=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QW79U7GqoPemlC5lUirDVNCmT3Q=
+		0+uhJnsNaPY02Jx1qd8/OfFN/UM=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OQhvg/zY5ecG1HPmrvQKZbOZhes=
+		P2lpf7g1A389AL+FZaHKWqk4mM8=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JlLIINhtVdc4thNa4Xg04MjWqfU=
+		iBUVyhmNDB87KwRPUVwRRaitt2U=
+		</data>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		WlNtWa3BQ1y4WEP8Y5kRiWuNca4=
+		</data>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		xWWuIwnytjixWPxPj8MVz5NjIRQ=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8/+HJzDQoqtiQKDpnadwPUJk9ys=
+		1yu9jQJaF21PihMPSW29xSvo54w=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fTyoRo0eMK5PIWDSPYaX5pY9Hyo=
+		xWWuIwnytjixWPxPj8MVz5NjIRQ=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Dodd5ycPfLyEEXeCxRNNHOd2Fqk=
+		oTiRyvAutGEGWfDx+XEXG0Mcf1g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		nIGCdqN/kUEOKIqVlYfDGQlDDLQ=
+		gp54/IpRXePWRPFCFP/gybOMLTI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HoatLw3FWec0/ecZnGTzZ6zNhr8=
+			3ipyu8EjPEi33pHs46hQa3l2NjQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qVQ2EhbmOrQQVSEO2QV4OkxkfWbdXrEEAk6MW9Ae0+o=
+			taZwkGXD5ylHXleYrYT7V0KM6aV7xGdSZSdLgh1v98w=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationInMobi.h</key>
@@ -69,81 +85,125 @@
 			G8y6XQ3yfwQFSvVZslArA70iADuZuUwWKMFZasoWywk=
 			</data>
 		</dict>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlNtWa3BQ1y4WEP8Y5kRiWuNca4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ot8tot36TBNRrFOfFBMDQKmTYsL1Zmpi+T4GOtooc5o=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P2lpf7g1A389AL+FZaHKWqk4mM8=
+			</data>
+			<key>hash2</key>
+			<data>
+			/2L64D1lCyzZRh730x2Pi/W/gQqz1yJtrr5s8fQaHMg=
+			</data>
+		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QW79U7GqoPemlC5lUirDVNCmT3Q=
+			0+uhJnsNaPY02Jx1qd8/OfFN/UM=
 			</data>
 			<key>hash2</key>
 			<data>
-			xWIAhM5C63OOXUBAw79P0HkFp8cgz9zdJwPCAIsQcBA=
+			TSOgG5JxMKMDMXt0NhDa2Xk1XUhCbFBFiAHBl/GBpPw=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OQhvg/zY5ecG1HPmrvQKZbOZhes=
+			P2lpf7g1A389AL+FZaHKWqk4mM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			a+OllY+9xRBnOMP70WtenFXZ2JGMc8MAOgdIMFx29OU=
+			/2L64D1lCyzZRh730x2Pi/W/gQqz1yJtrr5s8fQaHMg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JlLIINhtVdc4thNa4Xg04MjWqfU=
+			iBUVyhmNDB87KwRPUVwRRaitt2U=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZccucfM5HhZGymeGEmyeg53dMkqJGOqvAuU7HCGCZwo=
+			KKQ3PHg6NBbscsx0nCTjMUJg5ZDYMhkGuqrwVcgIR3E=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlNtWa3BQ1y4WEP8Y5kRiWuNca4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ot8tot36TBNRrFOfFBMDQKmTYsL1Zmpi+T4GOtooc5o=
+			</data>
+		</dict>
+		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xWWuIwnytjixWPxPj8MVz5NjIRQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			GtJO/RwZZYuezQx29Ybu1DEuqzCYk8m9tlDPegSsKkA=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8/+HJzDQoqtiQKDpnadwPUJk9ys=
+			1yu9jQJaF21PihMPSW29xSvo54w=
 			</data>
 			<key>hash2</key>
 			<data>
-			SwGiGSh3wFJjyOtgysmdzHKO2Cz/lGBbyKAmMFDQKDg=
+			uNR/dVqsY1Z9BHgNWQ/2cFr//BgtZcIkk1XR/T7OMVY=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fTyoRo0eMK5PIWDSPYaX5pY9Hyo=
+			xWWuIwnytjixWPxPj8MVz5NjIRQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			QcFnizey3XWk7+SQX+CzZvoVt9ZPMen6BaLkruwFhBo=
+			GtJO/RwZZYuezQx29Ybu1DEuqzCYk8m9tlDPegSsKkA=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dodd5ycPfLyEEXeCxRNNHOd2Fqk=
+			oTiRyvAutGEGWfDx+XEXG0Mcf1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			gIulQIGUcpNV7H8YbauslWd2lj/+s77arXhj2/s9Sx0=
+			PeS8bTiKXGpgzQviHrlxO2GriyQsSBobSbqP45zB0Wg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nIGCdqN/kUEOKIqVlYfDGQlDDLQ=
+			gp54/IpRXePWRPFCFP/gybOMLTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3bjqvMWZRaCpWvqobjU/cZgJfll55cc0rR/dUIByK1A=
+			dAQLnhBFgVetv6GHd8HPMdeLhBagrRUQ+ZTWVtCA5F8=
 			</data>
 		</dict>
 	</dict>

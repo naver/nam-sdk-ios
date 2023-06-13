@@ -11,6 +11,7 @@
 
 #import "GFPRenderDisplayAgent.h"
 #import "GFPAdConfiguration.h"
+#import "GFPUserParam.h"
 
 #import "GFPAdManagerDelegate.h"
 
@@ -74,6 +75,16 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
  * GFPSDK 설정 조회
  */
 + (GFPAdConfiguration *)adConfiguration;
+
+/**
+ * 유저 타겟 정보 설정
+ */
++ (void)setUserParam:(GFPUserParam *)param;
+
+/**
+ * 유저 타겟 정보 조회
+ */
++ (nullable GFPUserParam *)userParam;
 
 
 /**

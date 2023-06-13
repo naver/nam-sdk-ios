@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Swift-Enum.h"
 #import "GFPNativeAdRenderingSetting.h"
-
+@import NaverAdsServices;
 //typedef struct GFPCornerInfo {
 //    GFPAlignment leftRightType;
 //    GFPAlignment topBottomType;

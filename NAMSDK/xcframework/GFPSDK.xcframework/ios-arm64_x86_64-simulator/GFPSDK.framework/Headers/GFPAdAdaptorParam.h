@@ -24,6 +24,7 @@
 @class GFPWaterfallExtra;
 @class GFPSKAdNetworkInfo;
 @class GFPAdChoiceInfo;
+@class GFPRewardedAdInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) GFPEventReporter *eventReporter;
 
 @property (readonly, nonatomic, strong) NSString *responseCreativeType;
+
+@property (readonly, nonatomic, strong) GFPRewardedAdInfo *rewardedAdInfo;
 
 
 /**
@@ -59,6 +62,8 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (readonly, nonatomic, strong, nullable) GFPAdHTML *adHTML;
 @property (readonly, nonatomic, strong, nullable) GFPNativeAdInfo *nativeInfo;
+@property (readonly, nonatomic, strong, nullable) NSNumber *videoLoadTimeout;
+@property (readonly, nonatomic, strong, nullable) NSNumber *expireTime;
 
 
 /**

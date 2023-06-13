@@ -10,8 +10,6 @@
 
 #import "GFPAdAdapting.h"
 
-static NSTimeInterval const kGFPInterstitialExpiredTimeInSecond = 3600;
-
 @protocol GFPInterstitialAdAdaptorDelegate;
 
 typedef NS_OPTIONS(NSInteger, GFPInterstitialStatus) {

@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "GFPRenderDisplayAgent.h"
 #import "GFPAdConfiguration.h"
+#import "GFPUserParam.h"
 
 #import "GFPAdManagerDelegate.h"
 
@@ -22,7 +23,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"5.2.4"
+#define GFP_SDK_VERSION              @"6.0.0"
 
 @interface GFPCoreConfig : NSObject
 
@@ -39,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> initializeInfo;
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> appVersionInfo;
 
+@property (nullable, nonatomic, strong, readwrite) GFPUserParam *userParam;
 @property (nonatomic, strong, readonly, nullable) NSString *adID;
 @property (nonatomic, strong, readonly, nullable) NSString *idfv;
 
@@ -49,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)updateUserAgentWith:(NSString *)externalUserAgent;
 - (BOOL)limitAdTracking;
-- (NSDictionary *)commonCookieHeader;
+- (NSDictionary<NSString *, NSString *> *)commonCookieHeader;
 - (NSDictionary<NSString *, NSString *> *)commonHeader;
 
 - (NSString *)requestBaseURLWithType:(GFPRequestType)aType;

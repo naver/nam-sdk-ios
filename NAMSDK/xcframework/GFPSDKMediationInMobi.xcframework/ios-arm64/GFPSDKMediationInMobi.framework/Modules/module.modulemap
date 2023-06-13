@@ -6,6 +6,6 @@ framework module GFPSDKMediationInMobi {
 }
 
 module GFPSDKMediationInMobi.Swift {
-    header "GFPSDKMediationInMobi-Swift.h"
-    requires objc
+  header "GFPSDKMediationInMobi-Swift.h"
+  requires objc
 }

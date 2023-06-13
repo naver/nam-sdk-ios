@@ -46,12 +46,24 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
+@interface HTMLResource : NSObject
+
+@property (readonly, nonatomic, strong) NSString *content;
+
+- (instancetype)initWithElement:(DDXMLElement *)aElement error:(GFPError *_Nullable * _Nullable)aError;
+
+@end
+
+
+
 
 @interface StaticResource : BaseStaticResource
 
 @property (readonly, nonatomic, assign) GFPRemindType type;
 
 - (instancetype)initWithResourceElement:(DDXMLElement *)aElement error:(GFPError *_Nullable * _Nullable)aError;
+- (instancetype)initWithImageResourceElement:(DDXMLElement *)aElement error:(GFPError *_Nullable * _Nullable)aError;
+- (BOOL)isSupportedImage;
 
 @end
 

@@ -6,6 +6,6 @@ framework module GFPSDKMediationFAN {
 }
 
 module GFPSDKMediationFAN.Swift {
-    header "GFPSDKMediationFAN-Swift.h"
-    requires objc
+  header "GFPSDKMediationFAN-Swift.h"
+  requires objc
 }
