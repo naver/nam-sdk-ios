@@ -5,6 +5,7 @@ platform :ios, '11.0'
 def real_podspec # Real
   pod 'NAMSDK'
   pod 'NAMSDK/MediationNDA'
+  pod 'NAMSDK/MediationNDAVideo'
   pod 'NAMSDK/MediationDFP'  
   pod 'NAMSDK/MediationFAN'
   pod 'NAMSDK/MediationInMobi'
@@ -15,6 +16,7 @@ end
 def local_podspec # Local
   pod 'NAMSDK', :path => "../"               # SDK 본체
   pod 'NAMSDK/MediationNDA', :path => "../"
+  pod 'NAMSDK/MediationNDAVideo', :path => "../"
   pod 'NAMSDK/MediationDFP', :path => "../"
   pod 'NAMSDK/MediationFAN', :path => "../"
   pod 'NAMSDK/MediationInMobi', :path => "../"
@@ -26,11 +28,16 @@ def headerBidding_sdk
   pod 'AmazonPublisherServicesSDK', '3.4.6' # 헤더비딩 Amazon
 end
 
-target 'SwiftAdsSample' do
+def sample
+  pod 'SnapKit'
+end
+
+target 'SwiftSample' do
   use_frameworks!
   
   local_podspec
   #real_podspec
   headerBidding_sdk
+  sample
 
 end
