@@ -12,11 +12,13 @@ class ScheduledVideoAdExample: AdViewController {
 
     var scheduleManager: GFPVideoAdScheduleManager?
 
-    var player = AVPlayer()
-
     var playerVc = CustomPlayerVC()
 
-    var duration: CMTime = .init(seconds: 60, preferredTimescale: .max)
+    /** Resets these properties before loadAd() */
+    var player = AVPlayer()
+
+    var duration: CMTime = .zero
+    /**-----------------------------------------------*/
 
     private let TestVideoURL: URL = .init(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!
 

@@ -194,7 +194,8 @@ class CustomPlayerVC: AVPlayerViewController {
             updateButtons()
 
             player?.addPeriodicTimeObserver(forInterval: .init(seconds: 1, preferredTimescale: 600), queue: .main) { [weak self] time in
-                self?.slider.maximumValue = max(Float(self?.player?.currentItem?.duration.seconds ?? 1.0), 1.0)
+                let maxDuration = Float(self?.player?.currentItem?.duration.seconds ?? .zero)
+                self?.slider.maximumValue = (maxDuration >= .leastNonzeroMagnitude && maxDuration <= .greatestFiniteMagnitude) ? maxDuration : .zero
                 self?.slider.value = Float(time.seconds)
 
                 let formatter = DateComponentsFormatter()
