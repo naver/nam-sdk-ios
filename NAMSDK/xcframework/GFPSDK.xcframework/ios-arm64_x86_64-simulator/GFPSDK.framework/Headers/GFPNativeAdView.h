@@ -27,7 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, nullable) IBOutlet UILabel *callToActionLabel;
 @property (nonatomic, weak, nullable) IBOutlet UIView *adChoicesView;
 @property (nonatomic, weak, nullable) IBOutlet UILabel *adBadgeLabel;
-@property (nonatomic, weak, nullable) IBOutlet UILabel *noticeLabel;
 
 @end
 

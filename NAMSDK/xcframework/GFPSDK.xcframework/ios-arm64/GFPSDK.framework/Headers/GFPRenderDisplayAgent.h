@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithType:(GFPRenderDisplayAgentType)aType scheme:(NSString * _Nonnull)aScheme;
 
-- (nullable NSURL *)landingURLWith:(NSString *)aURL;
+- (NSURL *)landingURLWith:(NSString *)aURL;
 
 @end
 

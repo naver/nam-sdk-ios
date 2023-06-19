@@ -24,7 +24,6 @@
 @class GFPWaterfallExtra;
 @class GFPSKAdNetworkInfo;
 @class GFPAdChoiceInfo;
-@class GFPRewardedAdInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,14 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) GFPAdInfoSize *responseSize;
 @property (readonly, nonatomic, strong) NSArray<GFPAdInfoSize *> *requestSizes;
 
-@property (readonly, nonatomic, strong) NSDictionary<NSString *, NSObject *> *sdkRequestInfo;
+@property (readonly, nonatomic, strong) NSDictionary<NSString *, NSString *> *sdkRequestInfo;
 
 @property (readonly, nonatomic, strong) GFPAdParam *adParam;
 @property (readonly, nonatomic, strong) GFPEventReporter *eventReporter;
 
 @property (readonly, nonatomic, strong) NSString *responseCreativeType;
-
-@property (readonly, nonatomic, strong) GFPRewardedAdInfo *rewardedAdInfo;
 
 
 /**
@@ -62,8 +59,6 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (readonly, nonatomic, strong, nullable) GFPAdHTML *adHTML;
 @property (readonly, nonatomic, strong, nullable) GFPNativeAdInfo *nativeInfo;
-@property (readonly, nonatomic, strong, nullable) NSNumber *videoLoadTimeout;
-@property (readonly, nonatomic, strong, nullable) NSNumber *expireTime;
 
 
 /**
@@ -97,11 +92,6 @@ NS_ASSUME_NONNULL_BEGIN
  * Vast 관련 정보.
  */
 @property (readonly, nonatomic, strong, nullable) NSNumber *vastMaxRedirect;
-
-/**
- * Banner Base url info
- */
-@property(readonly, nonatomic, strong, nullable) NSString *baseUrl;
 
 /**
  * AdChoice 정보 객체

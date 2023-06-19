@@ -4,8 +4,3 @@ framework module GFPSDK {
   export *
   module * { export * }
 }
-
-module GFPSDK.Swift {
-  header "GFPSDK-Swift.h"
-  requires objc
-}

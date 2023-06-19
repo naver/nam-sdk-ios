@@ -38,8 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @param param 어댑터 파라미터
  * @return 광고 어댑터
  */
-- (nullable GFPAdAdaptor <GFPAdAdapting> *)createAdAdaptorWithParam:(GFPAdAdaptorParam *)param
-                                                              error:(GFPError *_Nullable *_Nullable)error;
+- (GFPAdAdaptor <GFPAdAdapting> *)createAdAdaptorWithParam:(GFPAdAdaptorParam *)param
+                                                     error:(GFPError *_Nullable *_Nullable)error;
 
 
 @end

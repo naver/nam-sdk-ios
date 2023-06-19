@@ -23,9 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPBannerAdapting <GFPAdAdapting>
 
-@property (nullable, readwrite, nonatomic, weak) id <GFPBannerAdaptorDelegate> delegate;
-@property (nullable, readwrite, nonatomic, strong) UIView *adView;
-@property (nullable, readwrite, nonatomic, strong) GFPBannerAdSize *bannerAdSize;
+@property(readwrite, nonatomic, weak) id <GFPBannerAdaptorDelegate> delegate;
+@property(readwrite, nonatomic, strong) UIView *adView;
+@property(readwrite, nonatomic, strong) GFPBannerAdSize *bannerAdSize;
 
 @end
 

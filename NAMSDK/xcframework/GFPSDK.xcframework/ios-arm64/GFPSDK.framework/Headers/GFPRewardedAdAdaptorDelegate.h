@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)rewardedAdDidStart:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
 - (void)rewardedAdAdaptor:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor didCompleteWithReward:(GFPReward *_Nullable)reward;
-- (void)rewardedAdDidClose:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor elapsedTime:(NSString *)elapsedTime;
+- (void)rewardedAdDidClose:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
 - (void)rewardedAdAdaptor:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor didFailWithError:(GFPError *)error;
 
 - (void)rewardedAdWasClicked:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;

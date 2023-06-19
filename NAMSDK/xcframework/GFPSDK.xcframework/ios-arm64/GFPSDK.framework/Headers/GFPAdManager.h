@@ -9,9 +9,9 @@
 #include <AvailabilityMacros.h>
 #import <Foundation/Foundation.h>
 
+#import "GFPLogLevel.h"
 #import "GFPRenderDisplayAgent.h"
 #import "GFPAdConfiguration.h"
-#import "GFPUserParam.h"
 
 #import "GFPAdManagerDelegate.h"
 
@@ -76,16 +76,6 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
  */
 + (GFPAdConfiguration *)adConfiguration;
 
-/**
- * 유저 타겟 정보 설정
- */
-+ (void)setUserParam:(GFPUserParam *)param;
-
-/**
- * 유저 타겟 정보 조회
- */
-+ (nullable GFPUserParam *)userParam;
-
 
 /**
  * GFPSDK Cookie 조회
@@ -118,11 +108,6 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
  */
 + (BOOL)isSdkInitialized;
 
-
-/**
- * MemoryCache Clear (for memory warning)
- */
-+ (void)clearMemoryCache;
 
 @end
 

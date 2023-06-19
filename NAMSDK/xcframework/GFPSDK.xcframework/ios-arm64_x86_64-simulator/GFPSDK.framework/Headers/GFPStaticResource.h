@@ -28,7 +28,6 @@ typedef NS_OPTIONS(NSInteger, GFPResourceCode) {
     GFPResourceAdProviderNotice = 1 << 3,
     GFPResourceAlert = 1 << 4,
     GFPResourceSearchKeyword = 1 << 5,
-    GFPResourceAdChoices = 1 << 6,
 };
 
 
@@ -46,24 +45,12 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface HTMLResource : NSObject
-
-@property (readonly, nonatomic, strong) NSString *content;
-
-- (instancetype)initWithElement:(DDXMLElement *)aElement error:(GFPError *_Nullable * _Nullable)aError;
-
-@end
-
-
-
 
 @interface StaticResource : BaseStaticResource
 
 @property (readonly, nonatomic, assign) GFPRemindType type;
 
 - (instancetype)initWithResourceElement:(DDXMLElement *)aElement error:(GFPError *_Nullable * _Nullable)aError;
-- (instancetype)initWithImageResourceElement:(DDXMLElement *)aElement error:(GFPError *_Nullable * _Nullable)aError;
-- (BOOL)isSupportedImage;
 
 @end
 
@@ -82,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) BaseStaticResource *resource;
 
 @property (readonly, nonatomic, assign) GFPResourceCode code;
-@property (readonly, nonatomic, strong) NSString *value; // 문구 및 리소스 url
+@property (readonly, nonatomic, strong) NSString *value; // 문구
 
 
 - (instancetype)initWithDomElement:(DDXMLElement *)aElement duration:(NSTimeInterval)aDuration error:(GFPError *_Nullable * _Nullable)aError;

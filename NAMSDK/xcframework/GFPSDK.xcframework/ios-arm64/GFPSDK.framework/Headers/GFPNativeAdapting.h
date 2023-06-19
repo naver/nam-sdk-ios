@@ -21,25 +21,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeAdapting <GFPAdAdapting>
 
-@property(nullable, readwrite, nonatomic, weak) id <GFPNativeAdaptorDelegate> delegate;
+@property(readwrite, nonatomic, weak) id <GFPNativeAdaptorDelegate> delegate;
 
 - (GFPNativeAdProviderType)adProviderType;
 
-- (nullable id)adProviderNativeAd;
+- (id)adProviderNativeAd;
 
 - (BOOL)hasIconImage;
 
-- (NSString * _Nullable)title;
+- (NSString *)title;
 
-- (NSString * _Nullable)body;
+- (NSString *)body;
 
-- (NSString * _Nullable)advertiser;
+- (NSString *)advertiser;
 
-- (NSString * _Nullable)badge;
+- (NSString *)badge;
 
-- (NSString * _Nullable)callToAction;
+- (NSString *)callToAction;
 
-- (NSString * _Nullable)socialContext;
+- (NSString *)socialContext;
 
 - (void)registerView:(GFPNativeBaseView *)nativeAdView;
 
@@ -56,21 +56,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIImage * _Nullable)image;
 
-- (NSString * _Nullable)notice;
-
 - (GFPWaterfallDedup * _Nullable)dedup;
 
 - (CGFloat)estimateHeightWith:(CGFloat)viewWidth;
 
-- (CGSize)imageSize;
-
-- (CGSize)iconSize;
-
-- (void)clearResource;
-
-- (BOOL)isReloadRequired;
-
-- (void)reloadMediaResource;
 @end
 
 NS_ASSUME_NONNULL_END

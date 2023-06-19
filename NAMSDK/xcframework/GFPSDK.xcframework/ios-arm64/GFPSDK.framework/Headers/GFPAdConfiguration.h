@@ -6,23 +6,24 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
-
 #import <Foundation/Foundation.h>
 
+#import "GFPAdProviderSetting.h"
 #import "GFPRenderDisplayAgent.h"
+#import "GFPLogLevel.h"
+#import "GFPAdInterfaceStyle.h"
 #import "GFPS2SAdClickDelegate.h"
-#import "Swift-Enum.h"
 
-@import NaverAdsServices;
+typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
+    GFPPhasePrivate = 1 << 0,
+    GFPPhaseDev = 1 << 1,
+    GFPPhaseTest = 1 << 2,
+    GFPPhaseReal = 1 << 3,
+};
 
-NS_ASSUME_NONNULL_BEGIN
-
-
-@class GFPAdProviderSetting;
-
-@protocol GFPS2SAdClickDelegate;
 
 @interface GFPAdConfiguration : NSObject
+
 
 @property (nonatomic, assign) GFPPhaseType phase;
 
@@ -53,10 +54,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) NSTimeInterval interstitialAdRequestTimeout;
 
-/**
- * 전역 추가 파라미터 (주의! 추가 파라미터 사전의 키/값은 모두 문자열 타입이어야 합니다.)
- */
-@property (nonatomic, copy, nullable) NSDictionary <NSString *, NSString *> *customParam;
 
 /**
  * 광고 클릭 후 렌더링 타입
@@ -67,6 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
  * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
  */
 @property (nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
+
 
 /**
  * 비디오 광고 재생 시, Loudness (볼륨 자동 조절) 사용 여부. (기본값 NO)
@@ -110,9 +108,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) NSDictionary <NSString *, NSString *> *cookie;
 
 
--(GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
+- (GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
 
 
 @end
-
-NS_ASSUME_NONNULL_END

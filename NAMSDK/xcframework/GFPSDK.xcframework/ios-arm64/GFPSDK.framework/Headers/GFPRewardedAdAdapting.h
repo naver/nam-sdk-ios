@@ -10,19 +10,21 @@
 #import <UIKit/UIKit.h>
 #import "GFPAdAdapting.h"
 
+static NSTimeInterval const kGFPRewardedExpiredTimeInSecond = 3600;
+
 @protocol GFPRewardedAdAdaptorDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPRewardedStatus) {
-    GFPRewardedNotYet = 1 << 0,
-    GFPRewardedLoaded = 1 << 1,
+    GFPRewardedNotYet = 0,
+    GFPRewardedLoaded = 1 << 0,
     GFPRewardedShowed = 1 << 2,
 };
 
 @protocol GFPRewardedAdAdapting <GFPAdAdapting>
 
-@property (nullable, readwrite, nonatomic, weak) id <GFPRewardedAdAdaptorDelegate> delegate;
+@property (readwrite, nonatomic, weak) id <GFPRewardedAdAdaptorDelegate> delegate;
 
 @property (nonatomic, assign) BOOL isExpired;
 @property (nonatomic, assign) GFPRewardedStatus status;

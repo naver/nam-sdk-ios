@@ -4,8 +4,3 @@ framework module GFPSDKMediationInMobi {
   export *
   module * { export * }
 }
-
-module GFPSDKMediationInMobi.Swift {
-  header "GFPSDKMediationInMobi-Swift.h"
-  requires objc
-}
