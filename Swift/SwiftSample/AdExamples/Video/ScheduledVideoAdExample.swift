@@ -16,7 +16,7 @@ class ScheduledVideoAdExample: AdViewController {
 
     var playerVc = CustomPlayerVC()
 
-    var duration: CMTime = .init(seconds: 60, preferredTimescale: .max) //TODO: self.contentPlayer.currentItem.duration
+    var duration: CMTime = .init(seconds: 60, preferredTimescale: .max)
 
     private let TestVideoURL: URL = .init(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!
 
@@ -29,6 +29,7 @@ class ScheduledVideoAdExample: AdViewController {
     private func configure() {
         let player = AVPlayer(url: TestVideoURL)
         self.player = player
+        self.duration = player.currentItem?.duration ?? .zero
 
         let playerVc = CustomPlayerVC()
         self.playerVc = playerVc
@@ -89,9 +90,14 @@ class ScheduledVideoAdExample: AdViewController {
     }
 }
 
+extension ScheduledVideoAdExample: AVPlayerPlaybackCoordinatorDelegate {
+    
+}
+
 extension ScheduledVideoAdExample: GFPVideoAdScheduleManagerDelegate {
     func scheduleManager(_ aScheduleAdManager: GFPVideoAdScheduleManager, didLoadedSchedule aAdBreak: [GFPVideoAdBreak]?) {
         addLog("Schedule Manager Did Load Schedule.")
+        self.duration = self.player.currentItem?.duration ?? .init(seconds: 0, preferredTimescale: .max)
     }
 
     func scheduleManager(_ aScheduleAdManager: GFPVideoAdScheduleManager, didStartReadyAd aResult: GFPVideoAdBreakResult) {
