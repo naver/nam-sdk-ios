@@ -29,7 +29,6 @@
 		CE58BD4329ED10DF007A271F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58BD4229ED10DF007A271F /* BaseCell.swift */; };
 		CE63C7AF28AF560300EB25B9 /* UnitIDList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63C7AE28AF560300EB25B9 /* UnitIDList.swift */; };
 		CEA4AB10282E57C900B7B10D /* SegmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4AB0F282E57C900B7B10D /* SegmentCell.swift */; };
-		CEB5C4232A25819900B7CA88 /* VideoAdExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5C4222A25819900B7CA88 /* VideoAdExample.swift */; };
 		CEB5C4252A25FE9500B7CA88 /* ScheduledVideoAdExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5C4242A25FE9500B7CA88 /* ScheduledVideoAdExample.swift */; };
 		CEB5C4292A27193400B7CA88 /* CustomPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5C4282A27193400B7CA88 /* CustomPlayerVC.swift */; };
 		CEC380E929F1052700F5FEA8 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC380E829F1052700F5FEA8 /* SwitchCell.swift */; };
@@ -88,7 +87,6 @@
 		CE58BD4229ED10DF007A271F /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		CE63C7AE28AF560300EB25B9 /* UnitIDList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitIDList.swift; sourceTree = "<group>"; };
 		CEA4AB0F282E57C900B7B10D /* SegmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentCell.swift; sourceTree = "<group>"; };
-		CEB5C4222A25819900B7CA88 /* VideoAdExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAdExample.swift; sourceTree = "<group>"; };
 		CEB5C4242A25FE9500B7CA88 /* ScheduledVideoAdExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledVideoAdExample.swift; sourceTree = "<group>"; };
 		CEB5C4282A27193400B7CA88 /* CustomPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerVC.swift; sourceTree = "<group>"; };
 		CEC380E829F1052700F5FEA8 /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
@@ -325,7 +323,6 @@
 		CEB5C4212A25815D00B7CA88 /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				CEB5C4222A25819900B7CA88 /* VideoAdExample.swift */,
 				CEB5C4242A25FE9500B7CA88 /* ScheduledVideoAdExample.swift */,
 				CEB5C4282A27193400B7CA88 /* CustomPlayerVC.swift */,
 			);
@@ -544,7 +541,6 @@
 				CE097FDB2A138BD000AAB74D /* TableAdControlVC.swift in Sources */,
 				CEC58C772A024AD900C22FF1 /* SliderCell.swift in Sources */,
 				CEFB1C8C28111F1B00F37E11 /* UnitIDViewController.swift in Sources */,
-				CEB5C4232A25819900B7CA88 /* VideoAdExample.swift in Sources */,
 				CEC380F129F780FC00F5FEA8 /* DetailCell.swift in Sources */,
 				CEC381062A00F4C000F5FEA8 /* BaseTableVC.swift in Sources */,
 				CEC380F929FA4CCE00F5FEA8 /* SettingsSelectorDetailVC.swift in Sources */,

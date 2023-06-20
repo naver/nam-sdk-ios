@@ -13,7 +13,6 @@ enum AdType: String, Hashable, CaseIterable, Codable {
     case rewarded
     case interstitial
     case tableViewAd
-    case video
     case scheduled
 
     var title : String {
@@ -22,7 +21,6 @@ enum AdType: String, Hashable, CaseIterable, Codable {
         case .rewarded: return "Rewarded Ad"
         case .interstitial: return "Interstitial Ad"
         case .tableViewAd: return "Ads in TableView"
-        case .video: return "Video Ad"
         case .scheduled: return "Scheduled Video Ad"
         }
     }
@@ -34,7 +32,6 @@ enum AdType: String, Hashable, CaseIterable, Codable {
         case .rewarded: return "Rewarded Ad"
         case .interstitial: return "Interstitial Ad"
         case .tableViewAd: return "Display Ad"
-        case .video: return "Video Ad"
         case .scheduled: return "Scheduled Video Ad"
         }
     }
@@ -45,7 +42,6 @@ enum AdType: String, Hashable, CaseIterable, Codable {
         case .rewarded: return RewardedAdExample()
         case .interstitial: return InterstitialAdExample()
         case .tableViewAd: return TableViewAdExample()
-        case .video: return VideoAdExample()
         case .scheduled: return ScheduledVideoAdExample()
         }
     }

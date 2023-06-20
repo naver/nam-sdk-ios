@@ -54,8 +54,8 @@ final class DoubleValueCell: BaseCell {
         SettingsManager.observeSettingsChanged { [weak self] manager in
             guard let self = self else {return}
             guard let value = self.valueProvider?() else {return}
-            textField.text = String(describing: value)
-            _ = textField.round(maximumFractionDigits: maximumFractionDigits)
+            self.textField.text = String(describing: value)
+            _ = self.textField.round(maximumFractionDigits: self.maximumFractionDigits)
         }
     }
 

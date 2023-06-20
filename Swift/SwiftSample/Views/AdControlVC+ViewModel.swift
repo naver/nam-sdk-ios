@@ -217,7 +217,7 @@ extension AdControlVC.ViewModel {
         var height: CGFloat? = nil
 
         switch self.adType {
-        case .display, .video, .scheduled:
+        case .display, .scheduled:
             if UIDevice.current.userInterfaceIdiom == .pad {
                 height = 1300
             } else {

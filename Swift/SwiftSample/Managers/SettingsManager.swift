@@ -193,7 +193,7 @@ class SettingsManager: NSObject {
         }
     }
 
-    @Persisted(key: .phase, defaultValue: .test)
+    @Persisted(key: .phase, defaultValue: .real)
     var phase: GFPPhaseType {
         didSet {
             GFPAdManager.adConfiguration().phase = phase
