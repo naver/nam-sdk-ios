@@ -47,7 +47,7 @@ final class TextFieldCell: BaseCell {
         SettingsManager.observeSettingsChanged { [weak self] _ in
             guard let self = self else {return}
             guard let text = self.valueProvider?() else {return}
-            textField.text = text
+            self.textField.text = text
         }
     }
 

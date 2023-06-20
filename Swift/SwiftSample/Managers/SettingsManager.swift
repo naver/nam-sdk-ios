@@ -60,6 +60,17 @@ class SettingsManager: NSObject {
 
     override init() {
         super.init()
+        initializeSDK { error in
+            if error == nil {return}
+
+            let alert = UIAlertController(title: "Swift Sample Failed to Initialize SDK", message: error?.localizedDescription, preferredStyle: .alert)
+
+            let closeAction = UIAlertAction(title: "Confirm", style: UIAlertAction.Style.cancel, handler: nil)
+
+            alert.addAction(closeAction)
+
+            UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true)
+        }
         darkMode = darkMode
         useLoudness = useLoudness
         displayAgent = displayAgent
@@ -78,17 +89,6 @@ class SettingsManager: NSObject {
         yearOfBirth = yearOfBirth
         userCountryCode = userCountryCode
         userID = userID
-        initializeSDK { error in
-            if error == nil {return}
-
-            let alert = UIAlertController(title: "Swift Sample Failed to Initialize SDK", message: error?.localizedDescription, preferredStyle: .alert)
-
-            let closeAction = UIAlertAction(title: "Confirm", style: UIAlertAction.Style.cancel, handler: nil)
-
-            alert.addAction(closeAction)
-
-            UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true)
-        }
     }
 
     func resetAllSettings() {
@@ -96,7 +96,7 @@ class SettingsManager: NSObject {
         language = .kr
         useLoudness = false
         logLevel = .debug
-        phase = .test
+        phase = .real
         displayAgent = .displayAgentTypeInApp
         useImageCache = false
         setTimeout(60.0, forType: .displayAd)
@@ -193,7 +193,7 @@ class SettingsManager: NSObject {
         }
     }
 
-    @Persisted(key: .phase, defaultValue: .test)
+    @Persisted(key: .phase, defaultValue: .real)
     var phase: GFPPhaseType {
         didSet {
             GFPAdManager.adConfiguration().phase = phase
@@ -347,7 +347,9 @@ class SettingsManager: NSObject {
         GFPAdManager.setup(withPublisherCd: cd.rawValue, target: self) { [weak self] error in
             guard let self = self else {return}
             self.initializeErrorDesc = error.debugDescription
-            completion(error)
+            DispatchQueue.main.async {
+                completion(error)
+            }
         }
     }
 

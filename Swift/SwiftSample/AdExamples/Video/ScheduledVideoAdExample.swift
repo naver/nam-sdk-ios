@@ -12,11 +12,15 @@ class ScheduledVideoAdExample: AdViewController {
 
     var scheduleManager: GFPVideoAdScheduleManager?
 
-    var player = AVPlayer()
-
     var playerVc = CustomPlayerVC()
 
-    var duration: CMTime = .init(seconds: 60, preferredTimescale: .max) //TODO: self.contentPlayer.currentItem.duration
+    /** Resets these properties before loadAd() */
+    var player = AVPlayer()
+
+    var duration: CMTime {
+        return self.player.currentItem?.duration ?? .zero
+    }
+    /**-----------------------------------------------*/
 
     private let TestVideoURL: URL = .init(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!
 
@@ -59,7 +63,7 @@ class ScheduledVideoAdExample: AdViewController {
 
         let scheduleParam = GFPAdScheduleParam(
             placementPolicy: .pre,
-            duration: CMTimeGetSeconds(duration),
+            duration: CMTimeGetSeconds(self.duration),
             param: SettingsManager.shared.adParam)
 
         let scheduleManager = GFPVideoAdScheduleManager(
@@ -87,17 +91,39 @@ class ScheduledVideoAdExample: AdViewController {
             self.playerVc.didMove(toParent: nil)
         }
     }
+    
+    fileprivate func contentPause() {
+        self.player.pause()
+    }
+    
+    fileprivate func contentPlay() {
+        self.player.play()
+    }
+}
+
+extension ScheduledVideoAdExample: AVPlayerPlaybackCoordinatorDelegate {
+    
 }
 
 extension ScheduledVideoAdExample: GFPVideoAdScheduleManagerDelegate {
     func scheduleManager(_ aScheduleAdManager: GFPVideoAdScheduleManager, didLoadedSchedule aAdBreak: [GFPVideoAdBreak]?) {
         addLog("Schedule Manager Did Load Schedule.")
     }
+    
+    func scheduleManager(_ aScheduleAdManager: GFPVideoAdScheduleManager, didFailScheduleWithError aError: GFPError) {
+        addLog("Schedule Manager Did Fail Schedule.")
+        
+        self.contentPlay()
+    }
 
     func scheduleManager(_ aScheduleAdManager: GFPVideoAdScheduleManager, didStartReadyAd aResult: GFPVideoAdBreakResult) {
         addLog("Schedule Manager Can Start Ad.")
 
         self.scheduleManager?.start(with: true)
+    }
+    
+    func scheduleManager(_ aScheduleAdManager: GFPVideoAdScheduleManager, didFailWith aResult: GFPVideoAdBreakResult) {
+        addLog("Schedule Manager Did Fail.")
     }
 
     func scheduleManager(_ aScheduleAdManager: GFPVideoAdScheduleManager, didStartAd aResult: GFPVideoAdBreakResult) {
@@ -127,7 +153,13 @@ extension ScheduledVideoAdExample: GFPVideoAdScheduleManagerDelegate {
     func scheduleManagerContentResumeRequest(_ aScheduleAdManager: GFPVideoAdScheduleManager) {
         addLog("Schedule Manager Will Resume Content")
 
-        player.play()
+        self.contentPlay()
+    }
+    
+    func scheduleManagerContentPauseRequest(_ aScheduleAdManager: GFPVideoAdScheduleManager) {
+        addLog("Schedule Manager Will Pause Content")
+        
+        self.contentPause()
     }
 
 }

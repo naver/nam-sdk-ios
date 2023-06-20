@@ -12,6 +12,7 @@ import AppTrackingTransparency
 import AdSupport
 import Network
 
+
 final class SettingsViewController: BaseTableVC {
 
     private static let manager: SettingsManager = .shared
@@ -23,7 +24,6 @@ final class SettingsViewController: BaseTableVC {
 
     private var sections: [Section] = [
         Section(title: "SDK_Settings".localized, rows: [
-            .phase,
             .userParams,
             .initializeSdk,
             .deduplication,

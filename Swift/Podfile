@@ -10,6 +10,8 @@ def real_podspec # Real
   pod 'NAMSDK/MediationFAN'
   pod 'NAMSDK/MediationInMobi'
   pod 'NAMSDK/MediationUnity'
+  pod 'NAMSDK/MediationAppLovin'
+  pod 'NAMSDK/MediationVungle'
 end
 
 
@@ -21,6 +23,8 @@ def local_podspec # Local
   pod 'NAMSDK/MediationFAN', :path => "../"
   pod 'NAMSDK/MediationInMobi', :path => "../"
   pod 'NAMSDK/MediationUnity', :path => "../"
+  pod 'NAMSDK/MediationAppLovin', :path => "../"
+  pod 'NAMSDK/MediationVungle', :path => "../"
 end
 
 
