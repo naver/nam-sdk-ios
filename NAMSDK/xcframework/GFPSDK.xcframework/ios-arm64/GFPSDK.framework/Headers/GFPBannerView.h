@@ -6,13 +6,17 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
+  
+
+
 #import <UIKit/UIKit.h>
 #import "GFPBannerViewDelegate.h"
 #import "GFPMRAIDSupportSetting.h"
-#import "GFPBannerViewLayoutType.h"
 #import "GFPS2SAdClickDelegate.h"
+#import "Swift-Enum.h"
 
 @protocol GFPBannerAdapting;
+@protocol GFPS2SAdClickDelegate;
 
 @class GFPAdParam;
 @class GFPNativeAdRenderingSetting;
@@ -57,11 +61,6 @@ NS_ASSUME_NONNULL_BEGIN
  * 광고 로드 및 이벤트 리스너
  */
 @property (readwrite, nonatomic, weak) id <GFPBannerViewDelegate> delegate;
-
-/**
- * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
- */
-@property (readwrite, nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
 
 /**
  * 배너 레이아웃 타입. (기본값: GFPBannerViewLayoutTypeFixed)

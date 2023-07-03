@@ -4,37 +4,22 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>GFPSDK.plist</key>
-		<data>
-		/yW8B1Lu/Qb4ADaZrnb2H5Vur8o=
-		</data>
 		<key>omsdk-v1.js</key>
 		<data>
-		ZqlsbpT170ddgEMPOyEEURytcEk=
+		UPsyQ4QhueEUHFjFPzJBwqY+ezo=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>GFPSDK.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/yW8B1Lu/Qb4ADaZrnb2H5Vur8o=
-			</data>
-			<key>hash2</key>
-			<data>
-			Db8mPWu0Kz+Bkn1ssd1jS6TFGJPUbWugTt95LttOHCI=
-			</data>
-		</dict>
 		<key>omsdk-v1.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZqlsbpT170ddgEMPOyEEURytcEk=
+			UPsyQ4QhueEUHFjFPzJBwqY+ezo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ToXpTJSLJ0sOMCl6LZp5U/aQpj+iPtl8izzzlYhd8Ms=
+			ShR/8hidaXo8kuwWQMmddy/BUzb0V0wNJBtDy9CTvc4=
 			</data>
 		</dict>
 	</dict>

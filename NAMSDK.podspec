@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "4.5.4"
+  s.version      = "6.1.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -18,22 +18,18 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "#{s.version.to_s}" }
 
   s.default_subspecs = "GFPSDK"
-  
+
   s.subspec 'GFPSDK' do |sdk|
     sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDK.xcframework", "NAMSDK/xcframework/libraries/OMSDK_Navercorp.xcframework"
     sdk.dependency 'KissXML', '~> 5.2'
+    sdk.dependency 'Naver-Ads-Services', '~> 1.0.0'
     sdk.resources = ['NAMSDK/ResourceBundle/GFPSDKResource.bundle']
   end
-
-  s.subspec 'GFPSDKInternal' do |internal|
-    internal.vendored_frameworks = "NAMSDK/xcframework/GFPSDKInternal.xcframework"
-    internal.dependency 'NAMSDK/GFPSDK'
-  end
-
+  
   s.subspec 'MediationDFP' do |dfp|
     dfp.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDFP.xcframework"
     dfp.dependency 'NAMSDK/GFPSDK'
-    dfp.dependency 'Google-Mobile-Ads-SDK', '8.12.0'
+    dfp.dependency 'Google-Mobile-Ads-SDK', '10.1.0'
   end
   
   s.subspec 'MediationNDA' do |nda|
@@ -41,30 +37,50 @@ Pod::Spec.new do |s|
     nda.dependency 'NAMSDK/GFPSDK'    
     nda.resources = ['NAMSDK/ResourceBundle/GFPNDAMraidResource.bundle', 'NAMSDK/ResourceBundle/GFPNDANativeResource.bundle']    
   end
+
+  s.subspec 'MediationNDAVideo' do |ndaVideo|
+    ndaVideo.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationNDAVideo.xcframework"
+    ndaVideo.resources = ['NAMSDK/ResourceBundle/GFPNDAVideoResource.bundle']
+    ndaVideo.dependency 'NAMSDK/GFPSDK'
+  end
   
   s.subspec 'MediationFAN' do |fan|
     fan.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationFAN.xcframework"
     fan.dependency 'NAMSDK/GFPSDK'    
-    fan.dependency 'FBAudienceNetwork', '6.11.2'
+    fan.dependency 'FBAudienceNetwork', '6.12.0'
   end
   
   s.subspec 'MediationInMobi' do |inMobi|
     inMobi.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationInMobi.xcframework"
     inMobi.dependency 'NAMSDK/GFPSDK'
-    inMobi.dependency 'InMobiSDK', '10.0.1'
+    inMobi.dependency 'InMobiSDK', '10.1.2'
   end
   
   s.subspec 'MediationUnity' do |unity|
     unity.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationUnity.xcframework"
     unity.dependency 'NAMSDK/GFPSDK'
-    unity.dependency 'UnityAds', '4.2.1'
+    unity.dependency 'UnityAds', '4.6.1'
   end
   
+  s.subspec 'MediationAppLovin' do |appLovin|
+    appLovin.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationAppLovin.xcframework"
+    appLovin.resources = ['NAMSDK/ResourceBundle/GFPAppLovinResource.bundle']
+    appLovin.dependency 'NAMSDK/GFPSDK'
+    appLovin.dependency 'AppLovinSDK', '11.7.1'
+  end
+
+  s.subspec 'MediationVungle' do |vungle|
+    vungle.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationVungle.xcframework"
+    vungle.dependency 'NAMSDK/GFPSDK'
+    vungle.dependency 'VungleSDK-iOS', '6.12.3'
+  end
+
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
   
   s.requires_arc = true
   
   s.static_framework = true
   s.swift_versions = ['5.0']
-
+  
+  s.pod_target_xcconfig  = { 'OTHER_LDFLAGS' => '-ObjC' }
 end

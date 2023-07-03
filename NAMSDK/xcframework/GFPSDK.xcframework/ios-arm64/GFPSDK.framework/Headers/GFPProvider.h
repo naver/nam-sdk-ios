@@ -23,6 +23,8 @@ FOUNDATION_EXPORT NSString *const GFPProviderTypeIMA;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeFAN;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeINMOBI;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeUNITY;
+FOUNDATION_EXPORT NSString *const GFPProviderTypeAppLovin;
+FOUNDATION_EXPORT NSString *const GFPProviderTypeVungle;
 
 typedef NSString *GFPProviderRenderType NS_STRING_ENUM;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNDP;
@@ -34,9 +36,13 @@ FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeGV;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeFAN;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeINMOBI;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeUNITY;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeAppLovin;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeVungle;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeSIMPLE;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNORMAL;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeCOMPOSITE;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeJSTAG;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeRewarded;
 
 typedef NSString *GFPProviderCreativeType NS_STRING_ENUM;
 FOUNDATION_EXPORT NSString *const GFPProviderCreativeTypeBanner;

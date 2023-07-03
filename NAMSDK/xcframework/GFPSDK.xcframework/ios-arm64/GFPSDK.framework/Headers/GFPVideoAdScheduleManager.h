@@ -10,19 +10,20 @@
 #import <AVKit/AVKit.h>
 #import <UIKit/UIKit.h>
 
+#import "Swift-Enum.h"
 #import "GFPAdScheduleParam.h"
 #import "GFPAdvertiseParams.h"
-#import "GFPVideoAdPlayerSetting.h"
 
 #import "GFPVideoAdScheduleManagerDelegate.h"
 #import "GFPNonLinearDelegate.h"
 
-#import "GFPVideoAdRenderingSetting.h"
-#import "GFPVideoDisplayMode.h"
-
 #import "GFPS2SAdClickDelegate.h"
 
 @protocol GFPNonLinearDelegate;
+@protocol GFPS2SAdClickDelegate;
+@class GFPVideoAdRenderingSetting;
+@class GFPVideoDisplayMode;
+@class GFPVideoAdPlayerSetting;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -60,12 +61,6 @@ NS_ASSUME_NONNULL_BEGIN
  * 구글 광고 로드를 위해서는 필수 조건 (View hierachy가 있는 ViewController.)
 */
 @property (nonatomic, weak, nullable) UIViewController *rootViewController;
-
-
-/**
- * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
- */
-@property (nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
 
 
 - (instancetype)initWithAdScheduleID:(NSString * _Nonnull)aAdScheduleID contentPlayer:(AVPlayer *)aContentPlayer videoView:(UIView *)aVideoView scheduleParam:(GFPAdScheduleParam *)aScheduleParam;

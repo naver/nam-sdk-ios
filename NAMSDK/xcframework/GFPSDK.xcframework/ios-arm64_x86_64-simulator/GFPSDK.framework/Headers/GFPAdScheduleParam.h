@@ -6,13 +6,16 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
+  
+
+
 #import <Foundation/Foundation.h>
 #import "GFPAdParam.h"
 #import "GFPVideoAdPlacement.h"
-#import "GFPTextAdViewAttribute.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class GFPTextAdViewAttribute;
 
 @interface GFPAdScheduleParam : NSObject
 

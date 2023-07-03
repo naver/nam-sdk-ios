@@ -7,19 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UIView+GFPCommon.h"
+#import "Swift-Enum.h"
 #import "GFPNativeAdRenderingSetting.h"
-
-typedef struct GFPCornerInfo {
-    GFPAlignment leftRightType;
-    GFPAlignment topBottomType;
-} GFPCornerInfo;
+@import NaverAdsServices;
+//typedef struct GFPCornerInfo {
+//    GFPAlignment leftRightType;
+//    GFPAlignment topBottomType;
+//} GFPCornerInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface GFPCornerInfo : NSObject
+
+@property (nonatomic, assign) GFPAlignment leftRightType;
+@property (nonatomic, assign) GFPAlignment topBottomType;
+
+@end
+
+
+
 @interface GFPNativeViewUtils : NSObject
 
-+ (GFPCornerInfo)cornerInfoWith:(GFPAdChoicesViewPosition)position;
++ (GFPCornerInfo *)cornerInfoWith:(GFPAdChoicesViewPosition)position;
 
 + (CGRect)adChoicesViewFrameWith:(CGRect)frame;
 

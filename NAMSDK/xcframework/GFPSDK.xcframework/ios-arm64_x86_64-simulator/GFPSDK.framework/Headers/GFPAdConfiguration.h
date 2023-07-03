@@ -6,24 +6,25 @@
 //  Unauthorized use, modification and redistribution of this software are strongly prohibited.
 //
 
+
 #import <Foundation/Foundation.h>
 
-#import "GFPAdProviderSetting.h"
 #import "GFPRenderDisplayAgent.h"
-#import "GFPLogLevel.h"
-#import "GFPAdInterfaceStyle.h"
 #import "GFPS2SAdClickDelegate.h"
+#import "GFPPrivacySetting.h"
 
-typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
-    GFPPhasePrivate = 1 << 0,
-    GFPPhaseDev = 1 << 1,
-    GFPPhaseTest = 1 << 2,
-    GFPPhaseReal = 1 << 3,
-};
+#import "Swift-Enum.h"
 
+@import NaverAdsServices;
+
+NS_ASSUME_NONNULL_BEGIN
+
+
+@class GFPAdProviderSetting;
+
+@protocol GFPS2SAdClickDelegate;
 
 @interface GFPAdConfiguration : NSObject
-
 
 @property (nonatomic, assign) GFPPhaseType phase;
 
@@ -54,16 +55,15 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
  */
 @property (nonatomic, assign) NSTimeInterval interstitialAdRequestTimeout;
 
+/**
+ * 전역 추가 파라미터 (주의! 추가 파라미터 사전의 키/값은 모두 문자열 타입이어야 합니다.)
+ */
+@property (nonatomic, copy, nullable) NSDictionary <NSString *, NSString *> *customParam;
 
 /**
  * 광고 클릭 후 렌더링 타입
  */
 @property (nonatomic, strong) GFPRenderDisplayAgent *displayAgent;
-
-/**
- * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
- */
-@property (nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
 
 
 /**
@@ -107,8 +107,15 @@ typedef NS_OPTIONS(NSInteger, GFPPhaseType) {
  */
 @property (nonatomic, readonly, strong) NSDictionary <NSString *, NSString *> *cookie;
 
+/**
+ * Privacy 설정.
+ */
+@property (nonatomic, strong, nullable) GFPPrivacySetting *privacySetting;
+
 
 - (GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
 
 
 @end
+
+NS_ASSUME_NONNULL_END

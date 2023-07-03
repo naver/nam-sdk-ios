@@ -33,11 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readwrite, nonatomic, weak) id <GFPAdLoaderDelegate> delegate;
 
 /**
- * s2s 광고 클릭 지원. delegate 설정 후 openURL:landingDelegate: 구현 시 클릭에 관한 커스톰 동작이 가능합니다.
- */
-@property (readwrite, nonatomic, weak, nullable) id <GFPS2SAdClickDelegate> s2sClickDelegate;
-
-/**
  * 광고 요청이후 로드 완료시점까지 타임아웃 (Optional)
  */
 @property (readwrite, nonatomic, assign) NSTimeInterval requestTimeoutInterval;
