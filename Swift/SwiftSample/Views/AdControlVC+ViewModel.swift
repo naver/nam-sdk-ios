@@ -8,6 +8,7 @@
 
 import Foundation
 import GFPSDK
+import AppLovinSDK
 
 class WfMatcher: Codable {
     var text: String
@@ -120,12 +121,22 @@ extension AdControlVC.ViewModel {
         let loadTap = UITapGestureRecognizer(target: self, action: #selector(loadTapped(_:)))
         self.vc?.loadButton.addGestureRecognizer(loadTap)
 
-        let loadWithoutImpressionTap = UITapGestureRecognizer(target: self, action: #selector(loadWithoutImpressionTapped(_:)))
-        self.vc?.loadWithoutImpressionButton.addGestureRecognizer(loadWithoutImpressionTap)
+//        let loadWithoutImpressionTap = UITapGestureRecognizer(target: self, action: #selector(loadWithoutImpressionTapped(_:)))
+//        self.vc?.loadWithoutImpressionButton.addGestureRecognizer(loadWithoutImpressionTap)
 
         let resetTap = UITapGestureRecognizer(target: self, action: #selector(unloadTapped(_:)))
         self.vc?.resetButton.addGestureRecognizer(resetTap)
 
+        let appLovinDebuggerTap = UITapGestureRecognizer(target: self, action: #selector(appLovinDebuggerTapped(_:)))
+        self.vc?.applovinDebuggerButton.addGestureRecognizer(appLovinDebuggerTap)
+    }
+
+    @objc func appLovinDebuggerTapped(_ sender: UITapGestureRecognizer) {
+        if let sdkKey = UserDefaults.standard.string(forKey: "AppLovinDubggerSDKKey") {
+            ALSdk.shared(withKey: sdkKey)!.showMediationDebugger()
+        } else {
+            addLog("An Applovin ad must be loaded in prior to load debugger.")
+        }
     }
 
     @IBAction func settingsTapped() {

@@ -30,8 +30,9 @@ final class AdControlVC: UIViewController {
 
     let loadButtonsStack = UIStackView()
     let loadButton = UIButton.load(withTitle: " Load ")
-    let loadWithoutImpressionButton = UIButton.load(withTitle: "out of visibility")
+//    let loadWithoutImpressionButton = UIButton.load(withTitle: "out of visibility")
     let resetButton = UIButton.reset(withTitle: "Reset")
+    let applovinDebuggerButton = UIButton.gray1(withTitle: "AppLovin Debugger")
 
     let verticalSplitView = VerticalSplitView()
     
@@ -114,8 +115,9 @@ final class AdControlVC: UIViewController {
         }
 
         [self.loadButton,
-         self.loadWithoutImpressionButton,
+//         self.loadWithoutImpressionButton,
          self.resetButton,
+         self.applovinDebuggerButton
         ].forEach {
             self.loadButtonsStack.addArrangedSubview($0)
         }
