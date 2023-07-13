@@ -23,7 +23,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"6.1.0"
+#define GFP_SDK_VERSION              @"6.1.1"
 
 @interface GFPCoreConfig : NSObject
 
