@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
 #endif
@@ -277,6 +278,7 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionAppLovin = 6,
 };
 
+@class NSBundle;
 
 SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
 @interface GFPBundle : NSObject
@@ -292,6 +294,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setup;
 + (NSString * _Nullable)sdkResourceWith:(NSString * _Nullable)aPath type:(NSString * _Nullable)aType SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isExistImageWithBundle:(NSBundle * _Nullable)bundle name:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 @end
 
 /// GFP에서 지원하는 Combined (배너, 네이티브)광고 제공자 목록
@@ -299,6 +302,19 @@ typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionNone = 0,
   GFPCombinedProviderOptionDFP = 1,
 };
+
+
+SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
+@interface GFPCustomAsset : NSObject
+@property (nonatomic, readonly, strong) NSBundle * _Nullable bundle;
+@property (nonatomic, readonly) CGSize size;
+@property (nonatomic, readonly, copy) NSString * _Nonnull lightModeName;
+@property (nonatomic, readonly, copy) NSString * _Nonnull darkModeName;
+- (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size lightModeName:(NSString * _Nonnull)lightModeName darkModeName:(NSString * _Nonnull)darkModeName OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) BOOL isExistResource;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class GFPUADeviceInfo;
 @class GFPServiceInfo;
@@ -507,10 +523,19 @@ SWIFT_CLASS("_TtC6GFPSDK23GFPVideoAdPlayerSetting")
 @property (nonatomic) enum GFPVideoBackgroundActionType backAction;
 /// 광고 재생 도중 Audio output 관련 동작 정리. (Optional, Default는 AVPlayer 기본 동작)
 @property (nonatomic) GFPVideoAudioSettingType audioSetting;
-- (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction audioSetting:(GFPVideoAudioSettingType)aType OBJC_DESIGNATED_INITIALIZER;
+/// externalPlayBack 비활성화 여부 (Default는 false)
+/// <ul>
+///   <li>
+///     true로 설정시 광고 플레이어의 allowExternalPlayBack이 false로 설정됩니다.
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) BOOL disableExternalPlayback;
+- (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction audioSetting:(GFPVideoAudioSettingType)aType disableExternalPlayback:(BOOL)disableExternalPlayBack OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;
+- (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction audioSetting:(GFPVideoAudioSettingType)aType;
 - (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction;
 - (nonnull instancetype)initWithAudioSetting:(GFPVideoAudioSettingType)aType;
+- (nonnull instancetype)initWithDisableExternalPlayback:(BOOL)disableExternalPlayback;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
@@ -826,6 +851,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
 #endif
@@ -873,6 +899,7 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionAppLovin = 6,
 };
 
+@class NSBundle;
 
 SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
 @interface GFPBundle : NSObject
@@ -888,6 +915,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setup;
 + (NSString * _Nullable)sdkResourceWith:(NSString * _Nullable)aPath type:(NSString * _Nullable)aType SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isExistImageWithBundle:(NSBundle * _Nullable)bundle name:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 @end
 
 /// GFP에서 지원하는 Combined (배너, 네이티브)광고 제공자 목록
@@ -895,6 +923,19 @@ typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionNone = 0,
   GFPCombinedProviderOptionDFP = 1,
 };
+
+
+SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
+@interface GFPCustomAsset : NSObject
+@property (nonatomic, readonly, strong) NSBundle * _Nullable bundle;
+@property (nonatomic, readonly) CGSize size;
+@property (nonatomic, readonly, copy) NSString * _Nonnull lightModeName;
+@property (nonatomic, readonly, copy) NSString * _Nonnull darkModeName;
+- (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size lightModeName:(NSString * _Nonnull)lightModeName darkModeName:(NSString * _Nonnull)darkModeName OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) BOOL isExistResource;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class GFPUADeviceInfo;
 @class GFPServiceInfo;
@@ -1103,10 +1144,19 @@ SWIFT_CLASS("_TtC6GFPSDK23GFPVideoAdPlayerSetting")
 @property (nonatomic) enum GFPVideoBackgroundActionType backAction;
 /// 광고 재생 도중 Audio output 관련 동작 정리. (Optional, Default는 AVPlayer 기본 동작)
 @property (nonatomic) GFPVideoAudioSettingType audioSetting;
-- (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction audioSetting:(GFPVideoAudioSettingType)aType OBJC_DESIGNATED_INITIALIZER;
+/// externalPlayBack 비활성화 여부 (Default는 false)
+/// <ul>
+///   <li>
+///     true로 설정시 광고 플레이어의 allowExternalPlayBack이 false로 설정됩니다.
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) BOOL disableExternalPlayback;
+- (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction audioSetting:(GFPVideoAudioSettingType)aType disableExternalPlayback:(BOOL)disableExternalPlayBack OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;
+- (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction audioSetting:(GFPVideoAudioSettingType)aType;
 - (nonnull instancetype)initWithAction:(enum GFPVideoBackgroundActionType)aAction;
 - (nonnull instancetype)initWithAudioSetting:(GFPVideoAudioSettingType)aType;
+- (nonnull instancetype)initWithDisableExternalPlayback:(BOOL)disableExternalPlayback;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 

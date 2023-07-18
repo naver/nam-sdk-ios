@@ -18,6 +18,17 @@ import _StringProcessing
 @objc public protocol GFPEventReportPresentable : ObjectiveC.NSObjectProtocol {
   @objc var adCallRequestTime: Foundation.NSNumber { get set }
 }
+@objc @objcMembers public class GFPCustomAsset : ObjectiveC.NSObject {
+  @objc final public let bundle: Foundation.Bundle?
+  @objc final public let size: CoreFoundation.CGSize
+  @objc final public let lightModeName: Swift.String
+  @objc final public let darkModeName: Swift.String
+  @objc(initWith:size:lightModeName:darkModeName:) public init(bundle: Foundation.Bundle?, size: CoreFoundation.CGSize, lightModeName: Swift.String, darkModeName: Swift.String)
+  @objc(isExistResource) public var isExistResource: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
 @objc public protocol GFPQueueObject : ObjectiveC.NSObjectProtocol {
 }
 @objc @objcMembers public class GFPLimitQueue : ObjectiveC.NSObject {
@@ -107,10 +118,13 @@ import _StringProcessing
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdPlayerSetting : ObjectiveC.NSObject {
   @objc public var backAction: GFPSDK.GFPVideoBackgroundActionType
   @objc public var audioSetting: GFPSDK.GFPVideoAudioSettingType
-  @objc(initWithAction:audioSetting:) public init(action aAction: GFPSDK.GFPVideoBackgroundActionType, audioSetting aType: GFPSDK.GFPVideoAudioSettingType)
+  @objc final public let disableExternalPlayback: Swift.Bool
+  @objc(initWithAction:audioSetting:disableExternalPlayback:) public init(action aAction: GFPSDK.GFPVideoBackgroundActionType, audioSetting aType: GFPSDK.GFPVideoAudioSettingType, disableExternalPlayBack: Swift.Bool)
   @objc convenience override dynamic public init()
+  @objc(initWithAction:audioSetting:) convenience public init(action aAction: GFPSDK.GFPVideoBackgroundActionType, audioSetting aType: GFPSDK.GFPVideoAudioSettingType)
   @objc convenience public init(action aAction: GFPSDK.GFPVideoBackgroundActionType)
   @objc convenience public init(audioSetting aType: GFPSDK.GFPVideoAudioSettingType)
+  @objc convenience public init(disableExternalPlayback: Swift.Bool)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -290,6 +304,7 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc public func setup()
   @objc public class func sdkResource(with aPath: Swift.String?, type aType: Swift.String?) -> Swift.String?
+  @objc public class func isExistImage(bundle: Foundation.Bundle?, name: Swift.String) -> Swift.Bool
   @objc deinit
 }
 public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void

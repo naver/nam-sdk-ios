@@ -12,6 +12,7 @@
 #import "GFPAdBackgroundInfo.h"
 #import "GFPNativeAdDelegate.h"
 #import "Swift-Enum.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {

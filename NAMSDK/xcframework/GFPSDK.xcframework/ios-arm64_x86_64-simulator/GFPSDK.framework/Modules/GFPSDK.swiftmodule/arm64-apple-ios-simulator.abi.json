@@ -281,6 +281,429 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "GFPCustomAsset",
+        "printedName": "GFPCustomAsset",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bundle",
+            "printedName": "bundle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(py)bundle",
+            "mangledName": "$s6GFPSDK14GFPCustomAssetC6bundleSo8NSBundleCSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Bundle?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bundle",
+                        "printedName": "Foundation.Bundle",
+                        "usr": "c:objc(cs)NSBundle"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(im)bundle",
+                "mangledName": "$s6GFPSDK14GFPCustomAssetC6bundleSo8NSBundleCSgvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(py)size",
+            "mangledName": "$s6GFPSDK14GFPCustomAssetC4sizeSo6CGSizeVvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(im)size",
+                "mangledName": "$s6GFPSDK14GFPCustomAssetC4sizeSo6CGSizeVvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lightModeName",
+            "printedName": "lightModeName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(py)lightModeName",
+            "mangledName": "$s6GFPSDK14GFPCustomAssetC13lightModeNameSSvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(im)lightModeName",
+                "mangledName": "$s6GFPSDK14GFPCustomAssetC13lightModeNameSSvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "darkModeName",
+            "printedName": "darkModeName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(py)darkModeName",
+            "mangledName": "$s6GFPSDK14GFPCustomAssetC12darkModeNameSSvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(im)darkModeName",
+                "mangledName": "$s6GFPSDK14GFPCustomAssetC12darkModeNameSSvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bundle:size:lightModeName:darkModeName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPCustomAsset",
+                "printedName": "GFPSDK.GFPCustomAsset",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(im)initWith:size:lightModeName:darkModeName:",
+            "mangledName": "$s6GFPSDK14GFPCustomAssetC6bundle4size13lightModeName04darkgH0ACSo8NSBundleCSg_So6CGSizeVS2Stcfc",
+            "moduleName": "GFPSDK",
+            "objc_name": "initWith:size:lightModeName:darkModeName:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "isExistResource",
+            "printedName": "isExistResource",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(py)isExistResource",
+            "mangledName": "$s6GFPSDK14GFPCustomAssetC15isExistResourceSbvp",
+            "moduleName": "GFPSDK",
+            "objc_name": "isExistResource",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(im)isExistResource",
+                "mangledName": "$s6GFPSDK14GFPCustomAssetC15isExistResourceSbvg",
+                "moduleName": "GFPSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPCustomAsset",
+                "printedName": "GFPSDK.GFPCustomAsset",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset(im)init",
+            "mangledName": "$s6GFPSDK14GFPCustomAssetCACycfc",
+            "moduleName": "GFPSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDK@objc(cs)GFPCustomAsset",
+        "mangledName": "$s6GFPSDK14GFPCustomAssetC",
+        "moduleName": "GFPSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3458,9 +3881,60 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "disableExternalPlayback",
+            "printedName": "disableExternalPlayback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting(py)disableExternalPlayback",
+            "mangledName": "$s6GFPSDK23GFPVideoAdPlayerSettingC23disableExternalPlaybackSbvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting(im)disableExternalPlayback",
+                "mangledName": "$s6GFPSDK23GFPVideoAdPlayerSettingC23disableExternalPlaybackSbvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(action:audioSetting:)",
+            "printedName": "init(action:audioSetting:disableExternalPlayBack:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3479,13 +3953,19 @@
                 "name": "GFPVideoAudioSettingType",
                 "printedName": "GFPSDK.GFPVideoAudioSettingType",
                 "usr": "c:@E@GFPVideoAudioSettingType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting(im)initWithAction:audioSetting:",
-            "mangledName": "$s6GFPSDK23GFPVideoAdPlayerSettingC6action05audioE0AcA0B20BackgroundActionTypeO_So0b5AudioeJ0Vtcfc",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting(im)initWithAction:audioSetting:disableExternalPlayback:",
+            "mangledName": "$s6GFPSDK23GFPVideoAdPlayerSettingC6action05audioE023disableExternalPlayBackAcA0B20BackgroundActionTypeO_So0b5AudioeN0VSbtcfc",
             "moduleName": "GFPSDK",
-            "objc_name": "initWithAction:audioSetting:",
+            "objc_name": "initWithAction:audioSetting:disableExternalPlayback:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -3516,6 +3996,42 @@
               "Override",
               "Convenience",
               "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(action:audioSetting:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPVideoAdPlayerSetting",
+                "printedName": "GFPSDK.GFPVideoAdPlayerSetting",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPVideoBackgroundActionType",
+                "printedName": "GFPSDK.GFPVideoBackgroundActionType",
+                "usr": "c:@M@GFPSDK@E@GFPVideoBackgroundActionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPVideoAudioSettingType",
+                "printedName": "GFPSDK.GFPVideoAudioSettingType",
+                "usr": "c:@E@GFPVideoAudioSettingType"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting(im)initWithAction:audioSetting:",
+            "mangledName": "$s6GFPSDK23GFPVideoAdPlayerSettingC6action05audioE0AcA0B20BackgroundActionTypeO_So0b5AudioeJ0Vtcfc",
+            "moduleName": "GFPSDK",
+            "objc_name": "initWithAction:audioSetting:",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Convenience"
           },
@@ -3569,6 +4085,35 @@
             "declKind": "Constructor",
             "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting(im)initWithAudioSetting:",
             "mangledName": "$s6GFPSDK23GFPVideoAdPlayerSettingC05audioE0ACSo0b5AudioE4TypeV_tcfc",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(disableExternalPlayback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPVideoAdPlayerSetting",
+                "printedName": "GFPSDK.GFPVideoAdPlayerSetting",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdPlayerSetting(im)initWithDisableExternalPlayback:",
+            "mangledName": "$s6GFPSDK23GFPVideoAdPlayerSettingC23disableExternalPlaybackACSb_tcfc",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "Convenience",
@@ -9182,6 +9727,49 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isExistImage",
+            "printedName": "isExistImage(bundle:name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPBundle(cm)isExistImageWithBundle:name:",
+            "mangledName": "$s6GFPSDK9GFPBundleC12isExistImage6bundle4nameSbSo8NSBundleCSg_SStFZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -10107,6 +10695,13 @@
       "offset": 322,
       "length": 25,
       "value": "\"gfp_adinterface_changed\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomAsset.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 14,
+      "value": "\"GFPSDK.GFPCustomAsset\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Util\/GFPLimitQueue.swift",
