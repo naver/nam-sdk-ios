@@ -61,15 +61,6 @@ class SettingsManager: NSObject {
     override init() {
         super.init()
         initializeSDK { error in
-            if error == nil {return}
-
-            let alert = UIAlertController(title: "Swift Sample Failed to Initialize SDK", message: error?.localizedDescription, preferredStyle: .alert)
-
-            let closeAction = UIAlertAction(title: "Confirm", style: UIAlertAction.Style.cancel, handler: nil)
-
-            alert.addAction(closeAction)
-
-            UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true)
         }
         darkMode = darkMode
         useLoudness = useLoudness
