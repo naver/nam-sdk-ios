@@ -14,6 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class GFPAdParam;
+@protocol GFPS2SAdClickDelegate;
 
 @interface GFPRewardedAdManager : NSObject
 
@@ -28,7 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
  * 광고 요청이후 로드 완료시점까지 타임아웃 (Optional)
  */
 @property(readwrite, nonatomic, assign) NSTimeInterval requestTimeoutInterval;
-
 
 - (instancetype)initWithUnitID:(NSString *)adUnitID
                        adParam:(GFPAdParam *)adParam;

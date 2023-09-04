@@ -32,6 +32,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPVideoAdQoeDelegate.h>
 #import <GFPSDK/GFPAdConfiguration.h>
 #import <GFPSDK/GFPMRAIDSupportSetting.h>
+#import <GFPSDK/GFPUserInterestDelegate.h>
 
 #import <GFPSDK/GFPVideoAdScheduleManager.h>
 #import <GFPSDK/GFPVideoAdScheduleManagerDelegate.h>
@@ -46,8 +47,6 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPStaticResource.h>
 
 #import <GFPSDK/GFPAdBannerOptions.h>
-#import <GFPSDK/GFPAdNativeOptions.h>
-#import <GFPSDK/GFPAdNativeSimpleOptions.h>
 #import <GFPSDK/GFPAdLoader.h>
 #import <GFPSDK/GFPAdLoaderDelegate.h>
 
@@ -89,8 +88,8 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPVideoAdapting.h>
 #import <GFPSDK/GFPAdAdaptor.h>
 #import <GFPSDK/GFPAdDedupeManager.h>
-
-
+#import <GFPSDK/GFPVideoController.h>
+#import <GFPSDK/GFPVideoEventDelegate.h>
 
 #import <GFPSDK/GFPInterstitialAdAdaptorDelegate.h>
 

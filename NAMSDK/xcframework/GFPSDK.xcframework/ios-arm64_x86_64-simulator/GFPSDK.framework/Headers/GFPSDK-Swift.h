@@ -255,7 +255,43 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSObject;
 @class NSString;
+@class NSData;
+
+@interface GFPAdLoader (SWIFT_EXTENSION(GFPSDK))
+/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
+/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
+/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
+@end
+
+@class GFPNativeAdRenderingSetting;
+@class GFPVideoOptions;
+
+SWIFT_CLASS("_TtC6GFPSDK18GFPAdNativeOptions")
+@interface GFPAdNativeOptions : NSObject
+/// 광고 렌터링 세팅 (Optional)
+@property (nonatomic, strong) GFPNativeAdRenderingSetting * _Nullable renderingSetting;
+/// 네이티브 동영상 광고 세팅 (Optional)
+@property (nonatomic, strong) GFPVideoOptions * _Nullable videoOptions;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class GFPNativeSimpleAdRenderingSetting;
+
+SWIFT_CLASS("_TtC6GFPSDK24GFPAdNativeSimpleOptions")
+@interface GFPAdNativeSimpleOptions : NSObject
+/// 네이티브 Simple 형(=단일 이미지) 광고 렌더링 세팅 (Optional)
+@property (nonatomic, strong) GFPNativeSimpleAdRenderingSetting * _Nullable simpleAdRenderingSetting;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC6GFPSDK20GFPAdProviderSetting")
 @interface GFPAdProviderSetting : NSObject
@@ -277,6 +313,19 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionUnity = 5,
   GFPBannerProviderOptionAppLovin = 6,
 };
+
+
+@interface GFPBannerView (SWIFT_EXTENSION(GFPSDK))
+/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
+/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
+/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
+@end
 
 @class NSBundle;
 
@@ -356,6 +405,16 @@ SWIFT_PROTOCOL("_TtP6GFPSDK25GFPEventReportPresentable_")
 @property (nonatomic, strong) NSNumber * _Nonnull adCallRequestTime;
 @end
 
+@class GFPWaterfallAdSize;
+
+SWIFT_CLASS("_TtC6GFPSDK16GFPInternalUtils")
+@interface GFPInternalUtils : NSObject
++ (NSArray<GFPWaterfallAdSize *> * _Nonnull)adResponseSizeWithDictionary:(NSDictionary * _Nonnull)dictionary SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<GFPWaterfallAdSize *> * _Nonnull)adResponseSizeWithString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<GFPWaterfallAdSize *> * _Nonnull)adResponseSizeWithData:(NSData * _Nonnull)data SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// GFP에서 지원하는 Interstitial 광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionNone = 0,
@@ -366,6 +425,25 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionAppLovin = 5,
   GFPInterstitialAdProviderOptionVungle = 6,
 };
+
+@class UIColor;
+
+SWIFT_CLASS("_TtC6GFPSDK14GFPLabelOption")
+@interface GFPLabelOption : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull defaultHighlightTextColor;)
++ (UIColor * _Nonnull)defaultHighlightTextColor SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nullable defaultHighlightBgColor;)
++ (UIColor * _Nullable)defaultHighlightBgColor SWIFT_WARN_UNUSED_RESULT;
+/// Label 에 해당하는 문자열.
+@property (nonatomic, readonly, copy) NSString * _Nullable text;
+/// 광고의 색상 전환이 필요할 때 텍스트 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable highlightTextColor;
+/// 광고의 색상 전환이 필요할 때 텍스트 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable highlightBgColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text hightlightTextColor:(UIColor * _Nullable)highlightTextColor highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @protocol GFPQueueObject;
 
@@ -383,6 +461,34 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPLimitQueue")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+enum GFPMediaType : NSInteger;
+@class GFPVideoController;
+@class UIImage;
+
+SWIFT_CLASS("_TtC6GFPSDK12GFPMediaData")
+@interface GFPMediaData : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspectRatio;)
++ (CGFloat)unknwonAspectRatio SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) enum GFPMediaType mediaType;
+@property (nonatomic, readonly, strong) GFPVideoController * _Nullable videoController;
+/// 미디어의 aspectRatio. 값이 없을 경우 -1 을 반환.
+@property (nonatomic, readonly) CGFloat aspectRatio;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
++ (GFPMediaData * _Nonnull)createImageInfoWith:(UIImage * _Nullable)image SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createVideoInfoWith:(GFPVideoController * _Nullable)videoController SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createRichMediaInfo SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createC2SInfoWith:(CGFloat)c2sAspectRatio SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, GFPMediaType, open) {
+  GFPMediaTypeImage = 0,
+  GFPMediaTypeVideo = 1,
+  GFPMediaTypeRichMedia = 2,
+  GFPMediaTypeUnknown = 3,
+};
 
 /// GFP에서 지원하는 네이티브광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
@@ -446,8 +552,6 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
 @end
 
-@class UIColor;
-@class UIImage;
 @class UIView;
 
 SWIFT_CLASS("_TtC6GFPSDK22GFPTextAdViewAttribute")
@@ -493,6 +597,19 @@ SWIFT_CLASS("_TtC6GFPSDK12GFPUserAgent")
 - (nonnull instancetype)initWithExternalUserAgent:(NSString * _Nonnull)externalUserAgent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVideoAdManager (SWIFT_EXTENSION(GFPSDK))
+/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
+/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
+/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
 @end
 
 
@@ -596,12 +713,53 @@ typedef SWIFT_ENUM(NSInteger, GFPVideoDisplayType, open) {
   GFPVideoDisplayTypePIP = 2,
 };
 
+enum GFPVideoPlayPolicy : NSInteger;
+
+SWIFT_CLASS("_TtC6GFPSDK15GFPVideoOptions")
+@interface GFPVideoOptions : NSObject
+/// 광고 영상의 재생 정책을 설정합니다. (기본값 Auto)
+/// <ul>
+///   <li>
+///     Auto: 네트워크가 WiFi, Cellular 일 때 영상 끝까지 재생됩니다.
+///   </li>
+///   <li>
+///     Auto Only WiFi: 네트워크가 WiFi 일 때 영상 끝까지 재생됩니다. Cellular의 경우 n초 재생 후 정지합니다.
+///   </li>
+///   <li>
+///     Manual: 광고 노출 시 영상이 일시정지 상태에서 노출됩니다. 재생 시점은 서비스에서 결정합니다.
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) enum GFPVideoPlayPolicy playPolicy;
+/// 광고 영상의 Custom Control View 사용 여부를 설정합니다. (기본값 false)
+/// true로 설정 시 control 구성 요소를 숨기며, false로 설정 시 sdk 내에서 control 구성 요소를 그려줍니다.
+@property (nonatomic, readonly) BOOL useCustomControlView;
+- (nonnull instancetype)initWithPlayPolicy:(enum GFPVideoPlayPolicy)playPolicy useCustomControlView:(BOOL)useCustomControlView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+typedef SWIFT_ENUM(NSInteger, GFPVideoPlayPolicy, open) {
+  GFPVideoPlayPolicyManual = 0,
+  GFPVideoPlayPolicyAutoPlay = 1,
+  GFPVideoPlayPolicyAutoPlayOnlyWiFi = 2,
+};
+
 /// GFP에서 지원하는 비디오광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPVideoProviderOption, open) {
   GFPVideoProviderOptionNone = 0,
   GFPVideoProviderOptionNDA = 1,
   GFPVideoProviderOptionIMA = 2,
 };
+
+
+SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
+@interface GFPWaterfallAdSize : NSObject
+@property (nonatomic) CGFloat width;
+@property (nonatomic) CGFloat height;
+@property (nonatomic, readonly) CGSize size;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC6GFPSDK20kGFPAdInterfaceStyle")
@@ -876,7 +1034,43 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSObject;
 @class NSString;
+@class NSData;
+
+@interface GFPAdLoader (SWIFT_EXTENSION(GFPSDK))
+/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
+/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
+/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
+@end
+
+@class GFPNativeAdRenderingSetting;
+@class GFPVideoOptions;
+
+SWIFT_CLASS("_TtC6GFPSDK18GFPAdNativeOptions")
+@interface GFPAdNativeOptions : NSObject
+/// 광고 렌터링 세팅 (Optional)
+@property (nonatomic, strong) GFPNativeAdRenderingSetting * _Nullable renderingSetting;
+/// 네이티브 동영상 광고 세팅 (Optional)
+@property (nonatomic, strong) GFPVideoOptions * _Nullable videoOptions;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class GFPNativeSimpleAdRenderingSetting;
+
+SWIFT_CLASS("_TtC6GFPSDK24GFPAdNativeSimpleOptions")
+@interface GFPAdNativeSimpleOptions : NSObject
+/// 네이티브 Simple 형(=단일 이미지) 광고 렌더링 세팅 (Optional)
+@property (nonatomic, strong) GFPNativeSimpleAdRenderingSetting * _Nullable simpleAdRenderingSetting;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC6GFPSDK20GFPAdProviderSetting")
 @interface GFPAdProviderSetting : NSObject
@@ -898,6 +1092,19 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionUnity = 5,
   GFPBannerProviderOptionAppLovin = 6,
 };
+
+
+@interface GFPBannerView (SWIFT_EXTENSION(GFPSDK))
+/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
+/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
+/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
+@end
 
 @class NSBundle;
 
@@ -977,6 +1184,16 @@ SWIFT_PROTOCOL("_TtP6GFPSDK25GFPEventReportPresentable_")
 @property (nonatomic, strong) NSNumber * _Nonnull adCallRequestTime;
 @end
 
+@class GFPWaterfallAdSize;
+
+SWIFT_CLASS("_TtC6GFPSDK16GFPInternalUtils")
+@interface GFPInternalUtils : NSObject
++ (NSArray<GFPWaterfallAdSize *> * _Nonnull)adResponseSizeWithDictionary:(NSDictionary * _Nonnull)dictionary SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<GFPWaterfallAdSize *> * _Nonnull)adResponseSizeWithString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<GFPWaterfallAdSize *> * _Nonnull)adResponseSizeWithData:(NSData * _Nonnull)data SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// GFP에서 지원하는 Interstitial 광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionNone = 0,
@@ -987,6 +1204,25 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionAppLovin = 5,
   GFPInterstitialAdProviderOptionVungle = 6,
 };
+
+@class UIColor;
+
+SWIFT_CLASS("_TtC6GFPSDK14GFPLabelOption")
+@interface GFPLabelOption : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull defaultHighlightTextColor;)
++ (UIColor * _Nonnull)defaultHighlightTextColor SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nullable defaultHighlightBgColor;)
++ (UIColor * _Nullable)defaultHighlightBgColor SWIFT_WARN_UNUSED_RESULT;
+/// Label 에 해당하는 문자열.
+@property (nonatomic, readonly, copy) NSString * _Nullable text;
+/// 광고의 색상 전환이 필요할 때 텍스트 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable highlightTextColor;
+/// 광고의 색상 전환이 필요할 때 텍스트 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable highlightBgColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text hightlightTextColor:(UIColor * _Nullable)highlightTextColor highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @protocol GFPQueueObject;
 
@@ -1004,6 +1240,34 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPLimitQueue")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+enum GFPMediaType : NSInteger;
+@class GFPVideoController;
+@class UIImage;
+
+SWIFT_CLASS("_TtC6GFPSDK12GFPMediaData")
+@interface GFPMediaData : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspectRatio;)
++ (CGFloat)unknwonAspectRatio SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) enum GFPMediaType mediaType;
+@property (nonatomic, readonly, strong) GFPVideoController * _Nullable videoController;
+/// 미디어의 aspectRatio. 값이 없을 경우 -1 을 반환.
+@property (nonatomic, readonly) CGFloat aspectRatio;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
++ (GFPMediaData * _Nonnull)createImageInfoWith:(UIImage * _Nullable)image SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createVideoInfoWith:(GFPVideoController * _Nullable)videoController SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createRichMediaInfo SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createC2SInfoWith:(CGFloat)c2sAspectRatio SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, GFPMediaType, open) {
+  GFPMediaTypeImage = 0,
+  GFPMediaTypeVideo = 1,
+  GFPMediaTypeRichMedia = 2,
+  GFPMediaTypeUnknown = 3,
+};
 
 /// GFP에서 지원하는 네이티브광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
@@ -1067,8 +1331,6 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
 @end
 
-@class UIColor;
-@class UIImage;
 @class UIView;
 
 SWIFT_CLASS("_TtC6GFPSDK22GFPTextAdViewAttribute")
@@ -1114,6 +1376,19 @@ SWIFT_CLASS("_TtC6GFPSDK12GFPUserAgent")
 - (nonnull instancetype)initWithExternalUserAgent:(NSString * _Nonnull)externalUserAgent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVideoAdManager (SWIFT_EXTENSION(GFPSDK))
+/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
+/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
+/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
+/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
+- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
 @end
 
 
@@ -1217,12 +1492,53 @@ typedef SWIFT_ENUM(NSInteger, GFPVideoDisplayType, open) {
   GFPVideoDisplayTypePIP = 2,
 };
 
+enum GFPVideoPlayPolicy : NSInteger;
+
+SWIFT_CLASS("_TtC6GFPSDK15GFPVideoOptions")
+@interface GFPVideoOptions : NSObject
+/// 광고 영상의 재생 정책을 설정합니다. (기본값 Auto)
+/// <ul>
+///   <li>
+///     Auto: 네트워크가 WiFi, Cellular 일 때 영상 끝까지 재생됩니다.
+///   </li>
+///   <li>
+///     Auto Only WiFi: 네트워크가 WiFi 일 때 영상 끝까지 재생됩니다. Cellular의 경우 n초 재생 후 정지합니다.
+///   </li>
+///   <li>
+///     Manual: 광고 노출 시 영상이 일시정지 상태에서 노출됩니다. 재생 시점은 서비스에서 결정합니다.
+///   </li>
+/// </ul>
+@property (nonatomic, readonly) enum GFPVideoPlayPolicy playPolicy;
+/// 광고 영상의 Custom Control View 사용 여부를 설정합니다. (기본값 false)
+/// true로 설정 시 control 구성 요소를 숨기며, false로 설정 시 sdk 내에서 control 구성 요소를 그려줍니다.
+@property (nonatomic, readonly) BOOL useCustomControlView;
+- (nonnull instancetype)initWithPlayPolicy:(enum GFPVideoPlayPolicy)playPolicy useCustomControlView:(BOOL)useCustomControlView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+typedef SWIFT_ENUM(NSInteger, GFPVideoPlayPolicy, open) {
+  GFPVideoPlayPolicyManual = 0,
+  GFPVideoPlayPolicyAutoPlay = 1,
+  GFPVideoPlayPolicyAutoPlayOnlyWiFi = 2,
+};
+
 /// GFP에서 지원하는 비디오광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPVideoProviderOption, open) {
   GFPVideoProviderOptionNone = 0,
   GFPVideoProviderOptionNDA = 1,
   GFPVideoProviderOptionIMA = 2,
 };
+
+
+SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
+@interface GFPWaterfallAdSize : NSObject
+@property (nonatomic) CGFloat width;
+@property (nonatomic) CGFloat height;
+@property (nonatomic, readonly) CGSize size;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC6GFPSDK20kGFPAdInterfaceStyle")

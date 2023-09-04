@@ -163,6 +163,13 @@
       },
       {
         "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAppLovin"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -381,70 +388,70 @@
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3389,
+      "offset": 4360,
       "length": 7,
       "value": "\"jC7Fp\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 328,
+      "offset": 353,
       "length": 10,
       "value": "2022093001"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 366,
+      "offset": 391,
       "length": 10,
       "value": "2022093002"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 413,
+      "offset": 438,
       "length": 10,
       "value": "2022093003"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 455,
+      "offset": 480,
       "length": 10,
       "value": "2022093004"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 500,
+      "offset": 525,
       "length": 10,
       "value": "2022093005"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 544,
+      "offset": 569,
       "length": 10,
       "value": "2022093006"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "IntegerLiteral",
-      "offset": 591,
+      "offset": 616,
       "length": 10,
       "value": "2022093007"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 866,
+      "offset": 891,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 649,
       "length": 24,
       "value": "\"GFPSDKMediationAppLovin.GFPAppLovinNativeAdaptor\""
     },

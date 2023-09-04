@@ -5,6 +5,7 @@
 import AppLovinSDK
 import Foundation
 import GFPSDK
+import NaverAdsServices
 import Swift
 import UIKit
 import _Concurrency

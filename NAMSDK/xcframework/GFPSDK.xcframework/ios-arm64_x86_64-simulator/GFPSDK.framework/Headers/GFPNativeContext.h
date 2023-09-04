@@ -12,15 +12,18 @@
 @class UIViewController;
 @class GFPNativeAdRenderingSetting;
 @class GFPNativeSimpleAdRenderingSetting;
-
+@class GFPVideoOptions;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeContextPresentable <NSObject>
 
 @property (nonatomic, weak, nullable) UIViewController *rootViewController;
+
 @property (nonatomic, strong) GFPNativeAdRenderingSetting *renderingSetting;
 @property (nonatomic, strong) GFPNativeSimpleAdRenderingSetting *simpleAdRenderingSetting;
+
+@property (nonatomic, strong) GFPVideoOptions *videoOptions; //for nn
 
 @end
 
@@ -29,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithRootViewController:(nullable UIViewController *)rootViewController
                           renderingSetting:(GFPNativeAdRenderingSetting *)renderingSetting
+                              videoOptions:(nullable GFPVideoOptions *)videoOptions
                   simpleAdRenderingSetting:(GFPNativeSimpleAdRenderingSetting *)simpleAdRenderingSetting
                              clickDelegate:(nullable id <GFPS2SAdClickDelegate>)clickDelegate;
 

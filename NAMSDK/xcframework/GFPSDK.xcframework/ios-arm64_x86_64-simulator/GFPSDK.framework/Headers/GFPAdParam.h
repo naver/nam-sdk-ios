@@ -55,6 +55,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (readwrite, nonatomic, nullable) GFPContentInfo *contentInfo;
 
+
+/**
+ * s2s waterfall skip을 위해 지원하는 queryString.
+ */
+- (NSString *)adCallQueryWith:(NSString *)adUnitId;
+
 @end
 
 NS_ASSUME_NONNULL_END

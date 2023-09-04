@@ -15,19 +15,37 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @objcMembers public class GFPLabelOption : ObjectiveC.NSObject {
+  @objc(defaultHighlightTextColor) public static let defaultHighlightTextColor: UIKit.UIColor
+  @objc(defaultHighlightBgColor) public static let defaultHighlightBgColor: UIKit.UIColor?
+  @objc final public let text: Swift.String?
+  @objc final public let highlightTextColor: UIKit.UIColor?
+  @objc final public let highlightBgColor: UIKit.UIColor?
+  @objc(initWithText:hightlightTextColor:highlightBgColor:) public init(text: Swift.String?, highlightTextColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
+  @objc deinit
+}
 @objc public protocol GFPEventReportPresentable : ObjectiveC.NSObjectProtocol {
   @objc var adCallRequestTime: Foundation.NSNumber { get set }
 }
-@objc @objcMembers public class GFPCustomAsset : ObjectiveC.NSObject {
-  @objc final public let bundle: Foundation.Bundle?
-  @objc final public let size: CoreFoundation.CGSize
-  @objc final public let lightModeName: Swift.String
-  @objc final public let darkModeName: Swift.String
-  @objc(initWith:size:lightModeName:darkModeName:) public init(bundle: Foundation.Bundle?, size: CoreFoundation.CGSize, lightModeName: Swift.String, darkModeName: Swift.String)
-  @objc(isExistResource) public var isExistResource: Swift.Bool {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPWaterfallAdSize : ObjectiveC.NSObject {
+  @objc public var width: CoreFoundation.CGFloat
+  @objc public var height: CoreFoundation.CGFloat
+  @objc public var size: CoreFoundation.CGSize {
     @objc get
   }
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPInternalUtils : ObjectiveC.NSObject {
+  @objc public class func adResponseSizeWith(dictionary: [Swift.AnyHashable : Any]) -> [GFPSDK.GFPWaterfallAdSize]
+  @objc public class func adResponseSizeWith(string: Swift.String) -> [GFPSDK.GFPWaterfallAdSize]
+  @objc public class func adResponseSizeWith(data: Foundation.Data) -> [GFPSDK.GFPWaterfallAdSize]
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension GFPSDK.GFPBannerView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
 }
 @objc public protocol GFPQueueObject : ObjectiveC.NSObjectProtocol {
 }
@@ -93,6 +111,31 @@ import _StringProcessing
   }
   @objc deinit
 }
+@objc public enum GFPVideoPlayPolicy : Swift.Int {
+  case manual
+  case autoPlay
+  case autoPlayOnlyWiFi
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoOptions : ObjectiveC.NSObject {
+  @objc final public let playPolicy: GFPSDK.GFPVideoPlayPolicy
+  @objc final public let useCustomControlView: Swift.Bool
+  @objc(initWithPlayPolicy:useCustomControlView:) public init(playPolicy: GFPSDK.GFPVideoPlayPolicy, useCustomControlView: Swift.Bool)
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc extension GFPSDK.GFPAdLoader {
+  @objc dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
+  @objc dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
+  @objc dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPAdProviderSetting : ObjectiveC.NSObject {
   @objc public var type: GFPSDK.GFPAdProviderSettingType {
     get
@@ -105,6 +148,11 @@ import _StringProcessing
     @objc get
   }
   @objc deinit
+}
+@objc extension GFPSDK.GFPVideoAdManager {
+  @objc dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
+  @objc dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
+  @objc dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
 }
 @objc public enum GFPVideoBackgroundActionType : Swift.Int {
   case play
@@ -277,6 +325,28 @@ import _StringProcessing
   @objc public init(externalUserAgent: Swift.String)
   @objc deinit
 }
+@objc @objcMembers public class GFPCustomAsset : ObjectiveC.NSObject {
+  @objc final public let bundle: Foundation.Bundle?
+  @objc final public let size: CoreFoundation.CGSize
+  @objc final public let lightModeName: Swift.String
+  @objc final public let darkModeName: Swift.String
+  @objc(initWith:size:lightModeName:darkModeName:) public init(bundle: Foundation.Bundle?, size: CoreFoundation.CGSize, lightModeName: Swift.String, darkModeName: Swift.String)
+  @objc(isExistResource) public var isExistResource: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdNativeOptions : ObjectiveC.NSObject {
+  @objc public var renderingSetting: GFPSDK.GFPNativeAdRenderingSetting?
+  @objc public var videoOptions: GFPSDK.GFPVideoOptions?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdNativeSimpleOptions : ObjectiveC.NSObject {
+  @objc public var simpleAdRenderingSetting: GFPSDK.GFPNativeSimpleAdRenderingSetting?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol GFPDictPresentable {
   @objc func dictionary() -> [Swift.String : Swift.String]?
 }
@@ -348,6 +418,36 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   }
   @objc deinit
 }
+@objc public enum GFPMediaType : Swift.Int {
+  case image
+  case video
+  case richMedia
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPMediaData : ObjectiveC.NSObject {
+  @objc public static let unknwonAspectRatio: CoreFoundation.CGFloat
+  @objc final public let mediaType: GFPSDK.GFPMediaType
+  @objc final public let videoController: GFPSDK.GFPVideoController?
+  @objc public var aspectRatio: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc(createImageInfoWith:) public static func createImageInfo(image: UIKit.UIImage?) -> GFPSDK.GFPMediaData
+  @objc(createVideoInfoWith:) public static func createVideoInfo(videoController: GFPSDK.GFPVideoController?) -> GFPSDK.GFPMediaData
+  @objc(createRichMediaInfo) public static func createRichMediaInfo() -> GFPSDK.GFPMediaData
+  @objc(createC2SInfoWith:) public static func createC2SInfo(c2sAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
+  @objc deinit
+}
+extension GFPSDK.GFPVideoPlayPolicy : Swift.Equatable {}
+extension GFPSDK.GFPVideoPlayPolicy : Swift.Hashable {}
+extension GFPSDK.GFPVideoPlayPolicy : Swift.RawRepresentable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Equatable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Hashable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.RawRepresentable {}
@@ -375,3 +475,6 @@ extension GFPSDK.GFPInterstitialAdProviderOption : Swift.RawRepresentable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.Equatable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.Hashable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.RawRepresentable {}
+extension GFPSDK.GFPMediaType : Swift.Equatable {}
+extension GFPSDK.GFPMediaType : Swift.Hashable {}
+extension GFPSDK.GFPMediaType : Swift.RawRepresentable {}

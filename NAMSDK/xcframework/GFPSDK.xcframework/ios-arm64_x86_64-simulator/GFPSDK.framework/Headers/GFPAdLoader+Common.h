@@ -10,8 +10,6 @@
 #import <Foundation/Foundation.h>
 
 #import "GFPAdLoader.h"
-#import "GFPAdNativeSimpleOptions.h"
-#import "GFPAdNativeOptions.h"
 #import "GFPAdBannerOptions.h"
 #import "GFPNativeAdDelegate.h"
 #import "GFPBannerViewDelegate.h"
@@ -19,6 +17,10 @@
 
 @protocol GFPEventReportDelegate;
 @protocol GFPAdCallDelegate;
+
+@class GFPAdNativeSimpleOptions;
+@class GFPAdNativeOptions;
+
 @class GFPUnifiedMediator;
 @class GFPNativeContext;
 @class GFPBannerContext;

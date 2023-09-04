@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		m3nXPRNIy+Pas3D7JJ5LEDgj114=
+		3m+rtMCNZ+HyHeH+o0/pAW4Ku4Y=
 		</data>
 		<key>GFPNDAMraidResource.bundle/Info.plist</key>
 		<data>
@@ -18,11 +18,7 @@
 		</data>
 		<key>GFPNDANativeResource.bundle/Assets.car</key>
 		<data>
-		64P+ujFaT9UGn9UCtyL8cHGeYyY=
-		</data>
-		<key>GFPNDANativeResource.bundle/GFPNDANativeLocalizable.strings</key>
-		<data>
-		rkXewgWF9xslftfnehvS+ZZkWac=
+		DPRg5xnQJZnPgfVQO/0V6PaHwGk=
 		</data>
 		<key>GFPNDANativeResource.bundle/GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -36,9 +32,81 @@
 		<data>
 		3sDoXgYXNlpb8polfD1pML2TDQM=
 		</data>
+		<key>GFPNDANativeResource.bundle/en.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DLE1u/edavCUDlRqMAzSOuBnV9o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/es.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uYydOjPTwT2wwiEDXSA8NnNHmn8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/fr.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fDwuURDr0nMGDUMb6ppvxwU+dNg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/id.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GisjuqTns/BMnDSXNLO4LNwGpNE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/ko.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NUsTQ2JM8EDWT29vRULLogw5L6U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/th.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FaNutw2tYqWYdV0sHTBkDwEVidU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/zh-HK.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j4ijYO2dckinEG/NMMSNauVFWhA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/zh-TW.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j4ijYO2dckinEG/NMMSNauVFWhA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>GFPNDAVideoResource.bundle/Assets.car</key>
 		<data>
-		m3nXPRNIy+Pas3D7JJ5LEDgj114=
+		3m+rtMCNZ+HyHeH+o0/pAW4Ku4Y=
 		</data>
 		<key>GFPNDAVideoResource.bundle/GFPRemindTextView.nib</key>
 		<data>
@@ -52,7 +120,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UsNom+qJ2sYt4CV3ry4uHny4/Hs=
+			JlYrCD6yoHniRv2Mgz56y9/gN0Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDAVideoResource.bundle/es.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/uchFs5GDVwNfAWaMfo3gbopiw8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDAVideoResource.bundle/fr.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j6V/xLCNc7OXkZze6LOaSaaf2Yc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDAVideoResource.bundle/id.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6woTcaIBvT4pLigj441cZfY5Dos=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -61,7 +156,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qbtdW4w+sjkmuDb9mLXPHS3vTbo=
+			4OEGTU0ly9kad7Qpz5LJROt/dzo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -70,7 +165,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SCPbMWE6q21hBLUQrRnOpTFvSo4=
+			OPv2jqetKf6KCN9NJWJFKmFyRH8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -79,7 +174,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -88,7 +183,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -157,7 +252,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UsNom+qJ2sYt4CV3ry4uHny4/Hs=
+			JlYrCD6yoHniRv2Mgz56y9/gN0Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/uchFs5GDVwNfAWaMfo3gbopiw8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j6V/xLCNc7OXkZze6LOaSaaf2Yc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6woTcaIBvT4pLigj441cZfY5Dos=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -166,7 +288,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qbtdW4w+sjkmuDb9mLXPHS3vTbo=
+			4OEGTU0ly9kad7Qpz5LJROt/dzo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -175,7 +297,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SCPbMWE6q21hBLUQrRnOpTFvSo4=
+			OPv2jqetKf6KCN9NJWJFKmFyRH8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -184,7 +306,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -193,7 +315,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -205,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m3nXPRNIy+Pas3D7JJ5LEDgj114=
+			3m+rtMCNZ+HyHeH+o0/pAW4Ku4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			m5gmwJFJNOz/yEWhmJKPhwMy+BNUPlMKSsg/1zMVdFU=
+			Wpp8NfwXZlIyz8uZ2mGV0TIKmCy/IeOyq0RkJWFlXeo=
 			</data>
 		</dict>
 		<key>GFPNDAMraidResource.bundle/Info.plist</key>
@@ -238,22 +360,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			64P+ujFaT9UGn9UCtyL8cHGeYyY=
+			DPRg5xnQJZnPgfVQO/0V6PaHwGk=
 			</data>
 			<key>hash2</key>
 			<data>
-			WCZOd2RsP3pmIWm87vHRpCn4b6c4tjLg+CUWLJ6Jrcg=
-			</data>
-		</dict>
-		<key>GFPNDANativeResource.bundle/GFPNDANativeLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rkXewgWF9xslftfnehvS+ZZkWac=
-			</data>
-			<key>hash2</key>
-			<data>
-			f03tS0lLh8BRrfwTOzlaxXDF1EHIW1HZZdcqUB1fCeo=
+			1/De03qSj4m0FOUhP+/leuMbTzi7V4rOuAod5ox1gyE=
 			</data>
 		</dict>
 		<key>GFPNDANativeResource.bundle/GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
@@ -289,15 +400,119 @@
 			65KITo+leEg3UARFiLm+wtF6LQTPym2rZjdP68ty7Y0=
 			</data>
 		</dict>
+		<key>GFPNDANativeResource.bundle/en.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DLE1u/edavCUDlRqMAzSOuBnV9o=
+			</data>
+			<key>hash2</key>
+			<data>
+			po1b8vw3uCfEgjf+cZUk+Xu4N+1iC4audnqaNZmSpmU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/es.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uYydOjPTwT2wwiEDXSA8NnNHmn8=
+			</data>
+			<key>hash2</key>
+			<data>
+			+33GXOMtCYrJWx025nldYMRCbw11y6bYcHnI/FbRAvU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/fr.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fDwuURDr0nMGDUMb6ppvxwU+dNg=
+			</data>
+			<key>hash2</key>
+			<data>
+			io2fmiHHH7iTgR1VAGlwZq+ZtiDPe5/ijs/BQMNDpaQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/id.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GisjuqTns/BMnDSXNLO4LNwGpNE=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ogj21bZhGb5ao3rDmqHS5XbiHnCnF814CzBnoCMKdg0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/ko.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NUsTQ2JM8EDWT29vRULLogw5L6U=
+			</data>
+			<key>hash2</key>
+			<data>
+			h+LbT15B2nlXyjZoztZhkK6bYl+rY+oSd2ZoVl45b1w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/th.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FaNutw2tYqWYdV0sHTBkDwEVidU=
+			</data>
+			<key>hash2</key>
+			<data>
+			8hO92hwTUxUMhunuriGfThelTGYG0JDEXaZ8+mtfAFQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/zh-HK.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j4ijYO2dckinEG/NMMSNauVFWhA=
+			</data>
+			<key>hash2</key>
+			<data>
+			yGDXA2rb3NtLJw7wQUJMwXfbSP2bvLLWq2FSThDUDYM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDANativeResource.bundle/zh-TW.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j4ijYO2dckinEG/NMMSNauVFWhA=
+			</data>
+			<key>hash2</key>
+			<data>
+			yGDXA2rb3NtLJw7wQUJMwXfbSP2bvLLWq2FSThDUDYM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>GFPNDAVideoResource.bundle/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m3nXPRNIy+Pas3D7JJ5LEDgj114=
+			3m+rtMCNZ+HyHeH+o0/pAW4Ku4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			m5gmwJFJNOz/yEWhmJKPhwMy+BNUPlMKSsg/1zMVdFU=
+			Wpp8NfwXZlIyz8uZ2mGV0TIKmCy/IeOyq0RkJWFlXeo=
 			</data>
 		</dict>
 		<key>GFPNDAVideoResource.bundle/GFPRemindTextView.nib</key>
@@ -326,11 +541,50 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UsNom+qJ2sYt4CV3ry4uHny4/Hs=
+			JlYrCD6yoHniRv2Mgz56y9/gN0Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			WeeHmBixQ9CPd9AHOgeB6KttNbL3c85TQ+6GK3glOas=
+			Zax4nK5E9BFegzkyYQ6cqw7vGgqHhC1S2uNksOZL64Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDAVideoResource.bundle/es.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/uchFs5GDVwNfAWaMfo3gbopiw8=
+			</data>
+			<key>hash2</key>
+			<data>
+			rBYgxagbTWAG1UCgY0t3dVnmFlS7YM95R7w9BgoBKJc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDAVideoResource.bundle/fr.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j6V/xLCNc7OXkZze6LOaSaaf2Yc=
+			</data>
+			<key>hash2</key>
+			<data>
+			dBYfjxV8/qgpBAs5nquQbjaO49cIAaAJiw2fHvGf2ds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>GFPNDAVideoResource.bundle/id.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6woTcaIBvT4pLigj441cZfY5Dos=
+			</data>
+			<key>hash2</key>
+			<data>
+			DELhPY3rbBne2BwnTDJAhYTdZ2s1pws3vB1nh8rQDP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -339,11 +593,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qbtdW4w+sjkmuDb9mLXPHS3vTbo=
+			4OEGTU0ly9kad7Qpz5LJROt/dzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			TL4YmFnxjcJvkh4mx+qb2bEPoMRxwoVc8UOFopQjVeA=
+			u4ql/NmSDChFnG5egFnQ+D1NziUgEJyOI5mEiQWBt3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -352,11 +606,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SCPbMWE6q21hBLUQrRnOpTFvSo4=
+			OPv2jqetKf6KCN9NJWJFKmFyRH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GHcmNjG8mVONQ1bfUCFIcTFWaGDluZHY6WzyY5cs+aQ=
+			ZTslFBu+Rh8WUYHUBoQ4wGGfdQqQ3cQ5FVwaT9bPbb4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -365,11 +619,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0RbW0D7crasHvf2VdLDwu8+NsAq+fA54ElAV5RcZIBQ=
+			bvDF+nulnNG9UJKUoZWEsXAJAgxxcTQNBI0L78v1pNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -378,11 +632,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0RbW0D7crasHvf2VdLDwu8+NsAq+fA54ElAV5RcZIBQ=
+			bvDF+nulnNG9UJKUoZWEsXAJAgxxcTQNBI0L78v1pNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -545,11 +799,50 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UsNom+qJ2sYt4CV3ry4uHny4/Hs=
+			JlYrCD6yoHniRv2Mgz56y9/gN0Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			WeeHmBixQ9CPd9AHOgeB6KttNbL3c85TQ+6GK3glOas=
+			Zax4nK5E9BFegzkyYQ6cqw7vGgqHhC1S2uNksOZL64Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/uchFs5GDVwNfAWaMfo3gbopiw8=
+			</data>
+			<key>hash2</key>
+			<data>
+			rBYgxagbTWAG1UCgY0t3dVnmFlS7YM95R7w9BgoBKJc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j6V/xLCNc7OXkZze6LOaSaaf2Yc=
+			</data>
+			<key>hash2</key>
+			<data>
+			dBYfjxV8/qgpBAs5nquQbjaO49cIAaAJiw2fHvGf2ds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6woTcaIBvT4pLigj441cZfY5Dos=
+			</data>
+			<key>hash2</key>
+			<data>
+			DELhPY3rbBne2BwnTDJAhYTdZ2s1pws3vB1nh8rQDP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -558,11 +851,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qbtdW4w+sjkmuDb9mLXPHS3vTbo=
+			4OEGTU0ly9kad7Qpz5LJROt/dzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			TL4YmFnxjcJvkh4mx+qb2bEPoMRxwoVc8UOFopQjVeA=
+			u4ql/NmSDChFnG5egFnQ+D1NziUgEJyOI5mEiQWBt3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -571,11 +864,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SCPbMWE6q21hBLUQrRnOpTFvSo4=
+			OPv2jqetKf6KCN9NJWJFKmFyRH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GHcmNjG8mVONQ1bfUCFIcTFWaGDluZHY6WzyY5cs+aQ=
+			ZTslFBu+Rh8WUYHUBoQ4wGGfdQqQ3cQ5FVwaT9bPbb4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -584,11 +877,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0RbW0D7crasHvf2VdLDwu8+NsAq+fA54ElAV5RcZIBQ=
+			bvDF+nulnNG9UJKUoZWEsXAJAgxxcTQNBI0L78v1pNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -597,11 +890,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnv2GigOIREjF1XExVtkbOj8Xgw=
+			kpFdMCsNuiDyO/IKATxtvCcSOeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0RbW0D7crasHvf2VdLDwu8+NsAq+fA54ElAV5RcZIBQ=
+			bvDF+nulnNG9UJKUoZWEsXAJAgxxcTQNBI0L78v1pNw=
 			</data>
 			<key>optional</key>
 			<true/>

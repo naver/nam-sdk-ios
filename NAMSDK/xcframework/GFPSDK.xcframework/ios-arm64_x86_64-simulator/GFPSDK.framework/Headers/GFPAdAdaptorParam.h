@@ -25,6 +25,9 @@
 @class GFPSKAdNetworkInfo;
 @class GFPAdChoiceInfo;
 @class GFPRewardedAdInfo;
+@class GFPWaterfallConfig;
+@class GFPAdImpressionInfo;
+@class GFPAutoPlayInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -108,12 +111,24 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (readonly, nonatomic, strong, nullable) GFPAdChoiceInfo *adChoiceInfo;
 
+/**
+ * Viewable 트랙킹 정보 객체
+ */
+@property (readonly, nonatomic, strong, nullable) GFPAdImpressionInfo *viewableImpInfo;
+
+/**
+ * Native NN AutoPly 정보 객체
+ */
+@property (readonly, nonatomic, strong, nullable) GFPAutoPlayInfo *autoPlayInfo;
+
+
 - (instancetype)initWithAd:(GFPAd *)ad
              eventReporter:(GFPEventReporter *)eventReporter
                    context:(GFPContext *)context
                 renderType:(GFPProviderRenderType)renderType
                    adParam:(nullable GFPAdParam *)adParam
-                     extra:(nullable GFPWaterfallExtra *)extra;
+                     extra:(nullable GFPWaterfallExtra *)extra
+                    config:(nullable GFPWaterfallConfig *)config;
 
 @end
 

@@ -17,6 +17,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, GFPLoadEventStat) {
+    /**
+     * Don't change the value. This is the value defined in the specification.
+     */
     GFPLoadEventStatError = 0,
     GFPLoadEventStatAdSelected = 1,
     GFPLoadEventStatNoFill = 2,

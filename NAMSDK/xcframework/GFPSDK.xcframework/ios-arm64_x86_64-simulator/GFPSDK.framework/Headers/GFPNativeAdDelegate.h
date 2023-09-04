@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class GFPNativeAdBase;
 @class GFPNativeAd;
 @class GFPNativeSimpleAd;
 @class GFPError;
@@ -42,13 +43,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdWasMuted:(GFPNativeAd *)nativeAd;
 
 /**
- * 리로스 재로드가 필요할 때 리소스 재 로드 성공 시 호출됩니다.
+ * 리소스 재로드가 필요할 때 리소스 재 로드 성공 시 호출됩니다.
  * @param nativeAd 네이티브 광고 객체
  */
 - (void)nativeAdDidReloaded:(GFPNativeAd *)nativeAd;
 
 /**
- * 리로스 재로드가 필요할 때 리소스 재 로드 실패 시 호출됩니다.
+ * 리소스 재로드가 필요할 때 리소스 재 로드 실패 시 호출됩니다.
  * @param nativeAd 네이티브 광고 객체
  * @param error     에러객체
  */
@@ -102,7 +103,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @protocol GFPNativeVideoEventDelegate <NSObject>
+
 @optional
+
 /**
  * Rich광고 비디오 재생 시 호출됩니다. player start 직전에 호출됩니다.
  * @param nativeAd 네이티브 광고 객체

@@ -33,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor richAdExtendSizeChanged:(CGSize)size;
 - (void)nativeAdAdaptorDidReloadMedia:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
 - (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor didReloadFailWithError:(GFPError *)error;
+- (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor didChangeUserInterest:(BOOL)userInterest;
 
 @end
 

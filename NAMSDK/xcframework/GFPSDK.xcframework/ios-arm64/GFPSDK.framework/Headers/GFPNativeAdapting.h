@@ -16,12 +16,14 @@
 @class GFPNativeBaseView;
 
 @class GFPWaterfallDedup;
+@class GFPMediaData;
+@class GFPLabelOption;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeAdapting <GFPAdAdapting>
 
-@property(nullable, readwrite, nonatomic, weak) id <GFPNativeAdaptorDelegate> delegate;
+@property (nullable, readwrite, nonatomic, weak) id <GFPNativeAdaptorDelegate> delegate;
 
 - (GFPNativeAdProviderType)adProviderType;
 
@@ -62,9 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CGFloat)estimateHeightWith:(CGFloat)viewWidth;
 
-- (CGSize)imageSize;
-
-- (CGSize)iconSize;
+- (NSDictionary *)nativeExtraInfo;
 
 - (void)clearResource;
 
@@ -72,12 +72,33 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reloadMediaResource;
 
+- (CGSize)imageSize; //deprecate
+
+- (UIImage *)image; //deprecate
+
+- (GFPMediaData * _Nullable)mediaData;
+
 - (NSString * _Nullable)extraTextWith:(NSString *)key;
+
+- (GFPLabelOption * _Nullable)extraTextOptionWith:(NSString *)key;
 
 - (void)applyExtraViewLink:(NSString *)key withView:(UIView *)extraView;
 
-- (CGFloat)mediaRatio;
+- (void)existUserInterestDelegateWith:(BOOL)isExist;
 
+- (GFPLabelOption * _Nullable)titleOption;
+
+- (GFPLabelOption * _Nullable)bodyOption;
+
+- (GFPLabelOption * _Nullable)advertiserOption;
+
+- (GFPLabelOption * _Nullable)badgeOption;
+
+- (GFPLabelOption * _Nullable)callToActionOption;
+
+- (GFPLabelOption * _Nullable)socialContextOption;
+
+- (GFPLabelOption * _Nullable)noticeOption;
 
 @end
 

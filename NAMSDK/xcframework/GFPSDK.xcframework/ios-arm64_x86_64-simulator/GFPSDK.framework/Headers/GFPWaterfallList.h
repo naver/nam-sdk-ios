@@ -28,6 +28,7 @@
 @class GFPAdChoiceInfo;
 @class GFPAdImpressionInfo;
 @class GFPRewardedAdInfo;
+@class GFPAutoPlayInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -48,6 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong) NSNumber *sdkInitLastUpdateMillis;
 @property (readonly, nonatomic, strong) GFPAdImpressionInfo *impressionInfo;
+@property (readonly, nonatomic, strong) GFPAutoPlayInfo *autoPlayInfo;
 
 @property (readonly, nonatomic, assign) BOOL needAdChoice;
 
@@ -94,6 +96,21 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype _Nullable)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict NS_DESIGNATED_INITIALIZER;
 - (instancetype _Nullable)initWithRatio:(NSNumber *)ratio ms:(NSNumber *)ms NS_DESIGNATED_INITIALIZER;
+
+@end
+
+
+/**
+ * GFPAutoPlayInfo
+ */
+
+@interface GFPAutoPlayInfo : NSObject
+
+@property (readonly, nonatomic, strong, nullable) NSNumber *time; //sec
+@property (readonly, nonatomic, strong, nullable) NSNumber *controlType;
+
+- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict NS_DESIGNATED_INITIALIZER;
 
 @end
 
