@@ -4,7 +4,8 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import GFPSDK
+import NaverAdsServices
 import Swift
-import VungleSDK
+import VungleAdsSDK
 import _Concurrency
 import _StringProcessing

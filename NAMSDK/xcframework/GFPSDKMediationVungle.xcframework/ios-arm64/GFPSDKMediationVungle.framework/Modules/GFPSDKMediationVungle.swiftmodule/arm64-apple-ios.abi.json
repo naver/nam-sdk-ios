@@ -40,8 +40,8 @@
       },
       {
         "kind": "Import",
-        "name": "VungleSDK",
-        "printedName": "VungleSDK",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
         "declKind": "Import",
         "moduleName": "GFPSDKMediationVungle",
         "declAttributes": [
@@ -67,8 +67,15 @@
       },
       {
         "kind": "Import",
-        "name": "VungleSDK",
-        "printedName": "VungleSDK",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationVungle"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
         "declKind": "Import",
         "moduleName": "GFPSDKMediationVungle"
       },
@@ -98,8 +105,8 @@
       },
       {
         "kind": "Import",
-        "name": "VungleSDK",
-        "printedName": "VungleSDK",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
         "declKind": "Import",
         "moduleName": "GFPSDKMediationVungle",
         "declAttributes": [
@@ -125,8 +132,8 @@
       },
       {
         "kind": "Import",
-        "name": "VungleSDK",
-        "printedName": "VungleSDK",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
         "declKind": "Import",
         "moduleName": "GFPSDKMediationVungle"
       }
@@ -137,7 +144,7 @@
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Interstitial\/GFPVungleInterstitialAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 325,
+      "offset": 328,
       "length": 30,
       "value": "\"GFPSDKMediationVungle.GFPVungleInterstitialAdAdaptor\""
     },
@@ -172,7 +179,7 @@
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationVungle\/Rewarded\/GFPVungleRewardedAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 321,
+      "offset": 324,
       "length": 26,
       "value": "\"GFPSDKMediationVungle.GFPVungleRewardedAdAdaptor\""
     }

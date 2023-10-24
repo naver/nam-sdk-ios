@@ -312,6 +312,7 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionFAN = 4,
   GFPBannerProviderOptionUnity = 5,
   GFPBannerProviderOptionAppLovin = 6,
+  GFPBannerProviderOptionDT = 7,
 };
 
 
@@ -424,23 +425,20 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionUnity = 4,
   GFPInterstitialAdProviderOptionAppLovin = 5,
   GFPInterstitialAdProviderOptionVungle = 6,
+  GFPInterstitialAdProviderOptionDT = 7,
 };
 
 @class UIColor;
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPLabelOption")
 @interface GFPLabelOption : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull defaultHighlightTextColor;)
-+ (UIColor * _Nonnull)defaultHighlightTextColor SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nullable defaultHighlightBgColor;)
 + (UIColor * _Nullable)defaultHighlightBgColor SWIFT_WARN_UNUSED_RESULT;
 /// Label 에 해당하는 문자열.
 @property (nonatomic, readonly, copy) NSString * _Nullable text;
 /// 광고의 색상 전환이 필요할 때 텍스트 색상
-@property (nonatomic, readonly, strong) UIColor * _Nullable highlightTextColor;
-/// 광고의 색상 전환이 필요할 때 텍스트 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable highlightBgColor;
-- (nonnull instancetype)initWithText:(NSString * _Nullable)text hightlightTextColor:(UIColor * _Nullable)highlightTextColor highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -523,6 +521,7 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionAppLovin = 5,
   GFPRewardedAdProviderOptionNDA = 6,
   GFPRewardedAdProviderOptionVungle = 7,
+  GFPRewardedAdProviderOptionDT = 8,
 };
 
 
@@ -674,7 +673,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// 기본값(=nil or Empty)은, AVPlayer 에서 지원하는 모든 타입이 허용됩니다.
 /// 명시한 MIME type에 해당하는 영상 URL이 서버로부터 제공되지 않으면, 광고로드시 Error 가 송출됩니다.
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable mimeTypes;
-/// 광고 시작요청 이후 실제 시작 시점까지 타임아웃 (기본값은 -1 이며, 이 경우 타임아웃 5초가 적용 됩니다.)
+/// 광고 시작요청 이후 실제 시작 시점까지 타임아웃 (기본값은 -1 이며, 이 경우 타임아웃 8초가 적용 됩니다.)
 @property (nonatomic) NSTimeInterval startTimeoutInterval;
 /// 재생도중 버퍼링이 발생한 경우, 설정된 시간을 초과하면 타임아웃 에러가 발생합니다. (기본값은 -1 이며, 이 경우 타임아웃이 적용되지 않습니다.)
 @property (nonatomic) NSTimeInterval bufferingTimeoutInterval;

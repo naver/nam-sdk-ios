@@ -9,7 +9,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import "GFPAdBackgroundInfo.h"
 #import "GFPNativeAdDelegate.h"
 #import "Swift-Enum.h"
 
@@ -39,6 +38,14 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, assign) GFPAdInterfaceStyle adInterfaceStyle;
 
+/**
+ * 네이티브 광고의 adChoices 를 Custom 하게 사용할 경우 활성화 합니다.
+ * 해당 옵션을 활성할 경우 GFP는 adChoicesView 를 그리지 않습니다.
+ * 단, s2s 광고에 한해 제공합니다. (c2s의 경우 옵션과 관계 없이 처리)
+ * 기본값은 NO 입니다.
+ */
+@property (nonatomic, assign) BOOL enableCustomAdChoices;
+
 @end
 
 
@@ -66,12 +73,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 
 
 @interface GFPNativeSimpleAdRenderingSetting : GFPNativeBaseRenderingSetting
-
-/**
- * 네이티브 심플 광고의 Custom 배경을 설정합니다.
- * 네이버 광고에서 제공하는 NS 광고에 한해 동작하며 그 외 DSP들은 해당 기능을 제공하지 않습니다.
- */
-@property (readwrite, nonatomic, strong, nullable) GFPAdBackgroundInfo *adBackgroundInfo;
 
 /**
  * 네이티브 Media 이미지 적용 시 이미지 사이즈를 우선 할 지 여부입니다.

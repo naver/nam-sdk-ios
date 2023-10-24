@@ -9,11 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Swift-Enum.h"
 #import "GFPNativeAdRenderingSetting.h"
+#import "GFPNativeLanguageType.h"
+
 @import NaverAdsServices;
-//typedef struct GFPCornerInfo {
-//    GFPAlignment leftRightType;
-//    GFPAlignment topBottomType;
-//} GFPCornerInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,6 +29,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (GFPCornerInfo *)cornerInfoWith:(GFPAdChoicesViewPosition)position;
 
 + (CGRect)adChoicesViewFrameWith:(CGRect)frame;
+
+@end
+
+
+
+@interface GFPNativeLanguageUtils : NSObject
+
++ (NSString * _Nullable)languageCodeWith:(GFPNativeLanguageType)languageType;
 
 @end
 

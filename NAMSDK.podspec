@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "6.3.0"
+  s.version      = "6.5.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.subspec 'MediationDFP' do |dfp|
     dfp.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDFP.xcframework"
     dfp.dependency 'NAMSDK/GFPSDK'
-    dfp.dependency 'Google-Mobile-Ads-SDK', '10.1.0'
+    dfp.dependency 'Google-Mobile-Ads-SDK', '10.5.0'
   end
   
   s.subspec 'MediationNDA' do |nda|
@@ -59,20 +59,26 @@ Pod::Spec.new do |s|
   s.subspec 'MediationUnity' do |unity|
     unity.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationUnity.xcframework"
     unity.dependency 'NAMSDK/GFPSDK'
-    unity.dependency 'UnityAds', '4.6.1'
+    unity.dependency 'UnityAds', '4.8.0'
   end
   
   s.subspec 'MediationAppLovin' do |appLovin|
     appLovin.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationAppLovin.xcframework"
     appLovin.resources = ['NAMSDK/ResourceBundle/GFPAppLovinResource.bundle']
     appLovin.dependency 'NAMSDK/GFPSDK'
-    appLovin.dependency 'AppLovinSDK', '11.7.1'
+    appLovin.dependency 'AppLovinSDK', '11.10.1'
   end
 
   s.subspec 'MediationVungle' do |vungle|
     vungle.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationVungle.xcframework"
     vungle.dependency 'NAMSDK/GFPSDK'
-    vungle.dependency 'VungleSDK-iOS', '6.12.3'
+    vungle.dependency 'VungleAds', '7.0.0'
+  end
+
+  s.subspec 'MediationDT' do |dt|
+    dt.source_files = "GFPSDKMediationDT/**/*.{swift}"
+    dt.dependency 'GFPSDK/GFPSDK'
+    dt.dependency 'Fyber_Marketplace_SDK', '8.2.4'
   end
 
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'

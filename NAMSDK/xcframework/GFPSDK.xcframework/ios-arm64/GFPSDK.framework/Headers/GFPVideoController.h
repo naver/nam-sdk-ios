@@ -38,14 +38,32 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign, getter=isMuted) BOOL mute;
 
+- (void)updateMuteWith:(BOOL)isMuted isUser:(BOOL)isUser;
+
 /**
  * 광고 영상의 forwardBufferDuration을 설정합니다.
  * cf. https://developer.apple.com/documentation/avfoundation/avplayeritem/1643630-preferredforwardbufferduration
  */
 @property (nonatomic, assign) NSTimeInterval preferredForwardBufferDuration;
 
+/**
+ * 광고 영상 재생
+ * @param isUser user에 의해 재생되었을 경우 YES (=컴포넌트 터치), 아닐 경우 NO를 전달.
+ */
 - (void)play;
+- (void)playWith:(BOOL)isUser;
+
+/**
+ * 광고 영상 일시 정지
+ * @param isUser user에 의해 정지되었을 경우 YES (=컴포넌트 터치), 아닐 경우 NO를 전달.
+ */
 - (void)pause;
+- (void)pauseWith:(BOOL)isUser;
+
+/**
+ * 광고 영상을 중지하고 영상의 첫 프레임으로 이동합니다.
+ * 영상을 다시 재생 하려면 play를 호출해주세요.
+ */
 - (void)stop;
 
 @end

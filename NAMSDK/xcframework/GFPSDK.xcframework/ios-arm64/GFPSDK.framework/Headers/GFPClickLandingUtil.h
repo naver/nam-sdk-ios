@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, assign) BOOL forceURLLanding;
 
+@property (nonatomic, assign, readonly) BOOL useCustomClick;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWith:(UIViewController * _Nullable)aTarget

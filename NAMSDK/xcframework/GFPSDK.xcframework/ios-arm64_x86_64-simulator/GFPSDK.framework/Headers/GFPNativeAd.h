@@ -17,6 +17,7 @@
 @class GFPLoadResponseInfo;
 @class GFPMediaData;
 @class GFPLabelOption;
+@class GFPAdChoicesData;
 
 @protocol GFPNativeAdDelegate;
 @protocol GFPNativeSimpleAdDelegate;
@@ -94,6 +95,10 @@ extern NSString *const kGFPNativeIconSizeKey;
  */
 @property (readonly, nonatomic, strong, nullable) GFPMediaData *mediaData;
 
+/**
+ * AdChoices 관련 정보
+ */
+@property (readonly, nonatomic, strong, nullable) GFPAdChoicesData *adChoicesData;
 
 @end
 
@@ -129,7 +134,7 @@ extern NSString *const kGFPNativeIconSizeKey;
  * 클릭 버튼 텍스트
  */
 @property (nullable, readonly, nonatomic, strong) NSString *callToAction;
-
+@property (nullable, readonly, nonatomic, strong) GFPLabelOption *callToActionOption;
 
 /**
  * Icon Image 존재 여부

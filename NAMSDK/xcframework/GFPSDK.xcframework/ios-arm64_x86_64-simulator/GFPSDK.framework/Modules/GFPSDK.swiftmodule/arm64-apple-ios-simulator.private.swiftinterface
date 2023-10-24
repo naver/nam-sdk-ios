@@ -16,12 +16,10 @@ import _StringProcessing
   @objc deinit
 }
 @objc @objcMembers public class GFPLabelOption : ObjectiveC.NSObject {
-  @objc(defaultHighlightTextColor) public static let defaultHighlightTextColor: UIKit.UIColor
   @objc(defaultHighlightBgColor) public static let defaultHighlightBgColor: UIKit.UIColor?
   @objc final public let text: Swift.String?
-  @objc final public let highlightTextColor: UIKit.UIColor?
   @objc final public let highlightBgColor: UIKit.UIColor?
-  @objc(initWithText:hightlightTextColor:highlightBgColor:) public init(text: Swift.String?, highlightTextColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
+  @objc(initWithText:highlightBgColor:) public init(text: Swift.String?, highlightBgColor: UIKit.UIColor?)
   @objc deinit
 }
 @objc public protocol GFPEventReportPresentable : ObjectiveC.NSObjectProtocol {
@@ -226,6 +224,7 @@ import _StringProcessing
   case FAN
   case unity
   case appLovin
+  case DT
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -273,6 +272,7 @@ import _StringProcessing
   case appLovin
   case NDA
   case vungle
+  case DT
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -287,6 +287,7 @@ import _StringProcessing
   case unity
   case appLovin
   case vungle
+  case DT
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

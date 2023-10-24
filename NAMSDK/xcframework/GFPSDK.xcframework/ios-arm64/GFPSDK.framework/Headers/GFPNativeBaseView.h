@@ -12,9 +12,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class GFPNativeStyleInfo;
+
 @interface GFPNativeBaseView : UIView
 
 @property (nonatomic, weak, nullable) IBOutlet GFPMediaView *mediaView;
+
 
 @end
 

@@ -23,6 +23,7 @@ FOUNDATION_EXPORT NSString *const GFPBannerProviderInMobiErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderUnityErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderAppLovinErrorKey;
+FOUNDATION_EXPORT NSString *const GFPBannerProviderDTErrorKey;
 FOUNDATION_EXPORT NSString *const GFPVideoProviderIMAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPVideoProviderNDAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPVideoProviderFANErrorKey;
@@ -36,11 +37,14 @@ FOUNDATION_EXPORT NSString *const GFPInterstitialProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderUnityErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderAppLovinErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderVungleErrorKey;
+FOUNDATION_EXPORT NSString *const GFPInterstitialProviderDTErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderUnityErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderAppLovinErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderVungleErrorKey;
+FOUNDATION_EXPORT NSString *const GFPRewardProviderNDAErrorKey;
+FOUNDATION_EXPORT NSString *const GFPRewardProviderDTErrorKey;
 
 typedef NS_ENUM(NSInteger, GFPErrorCode) {
     // General Error

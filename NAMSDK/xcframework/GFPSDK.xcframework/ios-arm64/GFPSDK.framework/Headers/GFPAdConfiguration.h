@@ -112,6 +112,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, nullable) GFPPrivacySetting *privacySetting;
 
+/**
+ * 광고 오디오 mute 설정 (기본값 YES)
+ * 단, C2S 광고 및 S2S 리워드 광고에 한해 적용됩니다. (인스트림, 아웃스트림 제외)
+ */
+@property (nonatomic, assign) BOOL muteAudio;
+
 
 - (GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
 

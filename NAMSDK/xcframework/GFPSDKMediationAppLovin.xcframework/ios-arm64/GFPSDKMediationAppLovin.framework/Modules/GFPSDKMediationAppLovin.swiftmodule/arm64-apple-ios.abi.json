@@ -190,10 +190,7 @@
         "name": "GFPSDK",
         "printedName": "GFPSDK",
         "declKind": "Import",
-        "moduleName": "GFPSDKMediationAppLovin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "GFPSDKMediationAppLovin"
       },
       {
         "kind": "Import",
@@ -388,7 +385,7 @@
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4360,
+      "offset": 4594,
       "length": 7,
       "value": "\"jC7Fp\""
     },

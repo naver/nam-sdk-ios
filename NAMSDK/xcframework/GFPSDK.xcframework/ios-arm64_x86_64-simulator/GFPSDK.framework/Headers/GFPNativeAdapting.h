@@ -18,6 +18,7 @@
 @class GFPWaterfallDedup;
 @class GFPMediaData;
 @class GFPLabelOption;
+@class GFPAdChoicesData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString * _Nullable)badge;
 
 - (NSString * _Nullable)callToAction;
+
+- (GFPLabelOption * _Nullable)callToActionOption;
 
 - (NSString * _Nullable)socialContext;
 
@@ -78,27 +81,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (GFPMediaData * _Nullable)mediaData;
 
-- (NSString * _Nullable)extraTextWith:(NSString *)key;
+- (GFPAdChoicesData * _Nullable)adChoicesData;
 
-- (GFPLabelOption * _Nullable)extraTextOptionWith:(NSString *)key;
+- (NSString * _Nullable)extraTextWith:(NSString *)key;
 
 - (void)applyExtraViewLink:(NSString *)key withView:(UIView *)extraView;
 
 - (void)existUserInterestDelegateWith:(BOOL)isExist;
-
-- (GFPLabelOption * _Nullable)titleOption;
-
-- (GFPLabelOption * _Nullable)bodyOption;
-
-- (GFPLabelOption * _Nullable)advertiserOption;
-
-- (GFPLabelOption * _Nullable)badgeOption;
-
-- (GFPLabelOption * _Nullable)callToActionOption;
-
-- (GFPLabelOption * _Nullable)socialContextOption;
-
-- (GFPLabelOption * _Nullable)noticeOption;
 
 @end
 

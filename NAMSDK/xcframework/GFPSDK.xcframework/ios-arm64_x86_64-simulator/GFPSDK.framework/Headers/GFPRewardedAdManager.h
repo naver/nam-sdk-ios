@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) BOOL isAdInvalidate;
 @property (nonatomic, readonly, assign) BOOL isAdLoaded;
 
-@property (nonatomic, class, assign) BOOL isMuted;
+@property (nonatomic, class, assign) BOOL isMuted DEPRECATED_MSG_ATTRIBUTE("This property will be removed. Use AdConfiguration's muteAudio");
 
 /**
  * 광고 요청이후 로드 완료시점까지 타임아웃 (Optional)

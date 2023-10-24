@@ -189,60 +189,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "defaultHighlightTextColor",
-            "printedName": "defaultHighlightTextColor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLabelOption(cpy)defaultHighlightTextColor",
-            "mangledName": "$s6GFPSDK14GFPLabelOptionC25defaultHighlightTextColorSo7UIColorCvpZ",
-            "moduleName": "GFPSDK",
-            "static": true,
-            "objc_name": "defaultHighlightTextColor",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPLabelOption(cm)defaultHighlightTextColor",
-                "mangledName": "$s6GFPSDK14GFPLabelOptionC25defaultHighlightTextColorSo7UIColorCvgZ",
-                "moduleName": "GFPSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "defaultHighlightBgColor",
             "printedName": "defaultHighlightBgColor",
             "children": [
@@ -380,73 +326,6 @@
           },
           {
             "kind": "Var",
-            "name": "highlightTextColor",
-            "printedName": "highlightTextColor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIColor?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLabelOption(py)highlightTextColor",
-            "mangledName": "$s6GFPSDK14GFPLabelOptionC18highlightTextColorSo7UIColorCSgvp",
-            "moduleName": "GFPSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPLabelOption(im)highlightTextColor",
-                "mangledName": "$s6GFPSDK14GFPLabelOptionC18highlightTextColorSo7UIColorCSgvg",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "highlightBgColor",
             "printedName": "highlightBgColor",
             "children": [
@@ -515,7 +394,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(text:highlightTextColor:highlightBgColor:)",
+            "printedName": "init(text:highlightBgColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -550,27 +429,13 @@
                   }
                 ],
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIColor?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLabelOption(im)initWithText:hightlightTextColor:highlightBgColor:",
-            "mangledName": "$s6GFPSDK14GFPLabelOptionC4text18highlightTextColor0e2BgG0ACSSSg_So7UIColorCSgAJtcfc",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLabelOption(im)initWithText:highlightBgColor:",
+            "mangledName": "$s6GFPSDK14GFPLabelOptionC4text16highlightBgColorACSSSg_So7UIColorCSgtcfc",
             "moduleName": "GFPSDK",
-            "objc_name": "initWithText:hightlightTextColor:highlightBgColor:",
+            "objc_name": "initWithText:highlightBgColor:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -7476,6 +7341,47 @@
             "fixedbinaryorder": 6
           },
           {
+            "kind": "Var",
+            "name": "DT",
+            "printedName": "DT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPBannerProviderOption.Type) -> GFPSDK.GFPBannerProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPBannerProviderOption",
+                    "printedName": "GFPSDK.GFPBannerProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPBannerProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPBannerProviderOption",
+                        "printedName": "GFPSDK.GFPBannerProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption@GFPBannerProviderOptionDT",
+            "mangledName": "$s6GFPSDK23GFPBannerProviderOptionO2DTyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -8763,6 +8669,47 @@
             "fixedbinaryorder": 7
           },
           {
+            "kind": "Var",
+            "name": "DT",
+            "printedName": "DT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPRewardedAdProviderOption.Type) -> GFPSDK.GFPRewardedAdProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPRewardedAdProviderOption",
+                    "printedName": "GFPSDK.GFPRewardedAdProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPRewardedAdProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPRewardedAdProviderOption",
+                        "printedName": "GFPSDK.GFPRewardedAdProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption@GFPRewardedAdProviderOptionDT",
+            "mangledName": "$s6GFPSDK27GFPRewardedAdProviderOptionO2DTyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -9175,6 +9122,47 @@
               "ObjC"
             ],
             "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "DT",
+            "printedName": "DT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPInterstitialAdProviderOption.Type) -> GFPSDK.GFPInterstitialAdProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPInterstitialAdProviderOption",
+                    "printedName": "GFPSDK.GFPInterstitialAdProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPInterstitialAdProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPInterstitialAdProviderOption",
+                        "printedName": "GFPSDK.GFPInterstitialAdProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption@GFPInterstitialAdProviderOptionDT",
+            "mangledName": "$s6GFPSDK31GFPInterstitialAdProviderOptionO2DTyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Constructor",
@@ -14261,7 +14249,7 @@
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPLabelOption.swift",
       "kind": "StringLiteral",
-      "offset": 517,
+      "offset": 415,
       "length": 9,
       "value": "\"#6F9DD7\""
     },
@@ -14499,6 +14487,13 @@
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
+      "offset": 455,
+      "length": 2,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
       "offset": 367,
       "length": 3,
       "value": "1"
@@ -14541,296 +14536,331 @@
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 586,
+      "offset": 455,
+      "length": 2,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 599,
+      "offset": 611,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 586,
+      "offset": 598,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 599,
+      "offset": 611,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 747,
+      "offset": 759,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 760,
+      "offset": 772,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 773,
+      "offset": 785,
       "length": 3,
       "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 786,
+      "offset": 798,
       "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 802,
+      "offset": 814,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 747,
+      "offset": 759,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 760,
+      "offset": 772,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 773,
+      "offset": 785,
       "length": 3,
       "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 786,
+      "offset": 798,
       "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 802,
+      "offset": 814,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 976,
+      "offset": 988,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 976,
+      "offset": 988,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1123,
+      "offset": 1135,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1136,
+      "offset": 1148,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1149,
+      "offset": 1161,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1165,
+      "offset": 1177,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1180,
+      "offset": 1192,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1210,
       "length": 3,
       "value": "6"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1211,
+      "offset": 1223,
       "length": 6,
       "value": "7"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1123,
+      "offset": 1239,
+      "length": 2,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1135,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1136,
+      "offset": 1148,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1149,
+      "offset": 1161,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1165,
+      "offset": 1177,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1180,
+      "offset": 1192,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1210,
       "length": 3,
       "value": "6"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1211,
+      "offset": 1223,
       "length": 6,
       "value": "7"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1371,
+      "offset": 1239,
+      "length": 2,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1395,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1384,
+      "offset": 1408,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1397,
+      "offset": 1421,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1413,
+      "offset": 1437,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1428,
+      "offset": 1452,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1446,
+      "offset": 1470,
       "length": 6,
       "value": "6"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1371,
+      "offset": 1486,
+      "length": 2,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1395,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1384,
+      "offset": 1408,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1397,
+      "offset": 1421,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1413,
+      "offset": 1437,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1428,
+      "offset": 1452,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1446,
+      "offset": 1470,
       "length": 6,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1486,
+      "length": 2,
+      "value": "7"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
