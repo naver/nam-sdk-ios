@@ -76,8 +76,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'MediationDT' do |dt|
-    dt.source_files = "GFPSDKMediationDT/**/*.{swift}"
-    dt.dependency 'GFPSDK/GFPSDK'
+    dt.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDT.xcframework"
+    dt.dependency 'NAMSDK/GFPSDK'
     dt.dependency 'Fyber_Marketplace_SDK', '8.2.4'
   end
 
