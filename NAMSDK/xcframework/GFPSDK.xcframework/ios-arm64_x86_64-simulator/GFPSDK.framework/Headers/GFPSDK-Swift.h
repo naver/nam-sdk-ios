@@ -732,6 +732,10 @@ SWIFT_CLASS("_TtC6GFPSDK15GFPVideoOptions")
 /// 광고 영상의 Custom Control View 사용 여부를 설정합니다. (기본값 false)
 /// true로 설정 시 control 구성 요소를 숨기며, false로 설정 시 sdk 내에서 control 구성 요소를 그려줍니다.
 @property (nonatomic, readonly) BOOL useCustomControlView;
+/// 광고영상의 최대 bitrate (kbit/sec) (기본값 800)
+/// 입력값 보다 낮은 bitrate 광고영상 중 가장 높은 bitrate 영샹이 채택되며,
+/// 입력값 보다 낮은 bitrate 영상이 없는 경우 가장 가까운 bitrate 영샹이 재생됩니다.
+@property (nonatomic) NSInteger maxBitrateKbps;
 - (nonnull instancetype)initWithPlayPolicy:(enum GFPVideoPlayPolicy)playPolicy useCustomControlView:(BOOL)useCustomControlView OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -1510,6 +1514,10 @@ SWIFT_CLASS("_TtC6GFPSDK15GFPVideoOptions")
 /// 광고 영상의 Custom Control View 사용 여부를 설정합니다. (기본값 false)
 /// true로 설정 시 control 구성 요소를 숨기며, false로 설정 시 sdk 내에서 control 구성 요소를 그려줍니다.
 @property (nonatomic, readonly) BOOL useCustomControlView;
+/// 광고영상의 최대 bitrate (kbit/sec) (기본값 800)
+/// 입력값 보다 낮은 bitrate 광고영상 중 가장 높은 bitrate 영샹이 채택되며,
+/// 입력값 보다 낮은 bitrate 영상이 없는 경우 가장 가까운 bitrate 영샹이 재생됩니다.
+@property (nonatomic) NSInteger maxBitrateKbps;
 - (nonnull instancetype)initWithPlayPolicy:(enum GFPVideoPlayPolicy)playPolicy useCustomControlView:(BOOL)useCustomControlView OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;

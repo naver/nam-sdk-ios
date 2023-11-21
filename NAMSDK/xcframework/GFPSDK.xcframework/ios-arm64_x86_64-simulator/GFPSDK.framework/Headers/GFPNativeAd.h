@@ -164,22 +164,6 @@ extern NSString *const kGFPNativeIconSizeKey;
  */
 - (NSString * _Nullable)extraTextWith:(NSString *)key;
 
-/**
- * S2S 사용 시 mediaView Image 초기화를 위한 기능
- */
-- (void)clearForMemoryWarning;
-
-/**
- * S2S 사용 시 mediaView Image 재로드가 필요한 경우
- */
-- (BOOL)isReloadRequired;
-
-/**
- * S2S 사용 시 mediaView Image 수동 재로드
- */
-- (void)reloadMedia;
-
-
 
 /**
  * deprecate property

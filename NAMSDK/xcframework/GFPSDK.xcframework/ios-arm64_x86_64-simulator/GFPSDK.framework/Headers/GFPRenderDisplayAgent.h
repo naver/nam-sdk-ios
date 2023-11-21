@@ -17,11 +17,10 @@ typedef NS_OPTIONS(NSInteger, GFPRenderDisplayAgentType) {
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 @interface GFPRenderDisplayAgent : NSObject
 
 @property (readonly, nonatomic, assign) GFPRenderDisplayAgentType type;
-@property (readonly, nonatomic, strong, nullable) NSString *scheme;
+@property (readonly, nonatomic, strong, nullable) NSString *scheme __deprecated_msg("Use S2S Click Handler instead. it will be removed 7 version");
 @property (nonatomic, assign) BOOL shouldEncoding;
 
 @property (readonly, nonatomic, strong) NSString *typeRawValue;
@@ -30,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithType:(GFPRenderDisplayAgentType)aType;
 
-- (instancetype)initWithType:(GFPRenderDisplayAgentType)aType scheme:(NSString * _Nonnull)aScheme;
+- (instancetype)initWithType:(GFPRenderDisplayAgentType)aType scheme:(NSString * _Nonnull)aScheme __deprecated_msg("Use S2S Click Handler instead. it will be removed 7 version");
 
 - (nullable NSURL *)landingURLWith:(NSString *)aURL;
 

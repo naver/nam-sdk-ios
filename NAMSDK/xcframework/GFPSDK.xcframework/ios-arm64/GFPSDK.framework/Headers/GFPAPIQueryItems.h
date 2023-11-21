@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPSKAdNetworkData;
 @class GFPLogReqInfo;
 
+static const NSString *kGFPExtraParamKeyFAN = @"fb";
+static const NSString *kGFPExtraParamKeyVungle = @"vungle";
+
 @interface GFPAPIQueryItems : NSObject
 
 @property (nonatomic, readonly, strong) NSArray <NSURLQueryItem *> *items;

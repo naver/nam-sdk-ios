@@ -10,6 +10,13 @@
 
 @class GFPVideoController;
 
+typedef NS_OPTIONS(NSInteger, GFPControlButtonType) {
+    GFPControlButtonTypePlay,
+    GFPControlButtonTypePause,
+    GFPControlButtonTypeRewind,
+    GFPControlButtonTypeAudio,
+};
+
 @protocol GFPVideoEventDelegate <NSObject>
 
 /**
@@ -49,5 +56,15 @@
  * @param bufferedTime 버퍼 시간
  */
 - (void)adPlayer:(GFPVideoController *)videoController didChangeBufferedTime:(NSTimeInterval)bufferedTime;
+
+
+@optional
+
+/**
+ * 네이티브 광고 영상의 control 버튼 클릭 시 호출 됩니다.
+ * sdk에서 제공하는 default controlView 사용시 호출되며,  customControlView 사용시 호출되지 않습니다.
+ * @param buttonType control 버튼 타입
+ */
+- (void)adPlayer:(GFPVideoController *)videoController didTappedControlButton:(GFPControlButtonType)buttonType;
 
 @end

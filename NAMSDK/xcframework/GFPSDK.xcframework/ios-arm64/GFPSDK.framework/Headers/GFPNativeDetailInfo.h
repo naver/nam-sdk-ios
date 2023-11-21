@@ -146,6 +146,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) NSURL *source;
 @property (nonatomic, readonly, strong) NSString *body;
 @property (nonatomic, readonly, strong) NSURL *tsource;
+
 @property (nonatomic, readonly, assign) CGSize size;
 @property (nonatomic, readonly, assign) CGFloat ratio;
 

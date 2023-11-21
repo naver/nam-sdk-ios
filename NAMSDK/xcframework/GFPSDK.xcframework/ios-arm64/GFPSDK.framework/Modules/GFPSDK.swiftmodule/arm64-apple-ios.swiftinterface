@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GFPSDK
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GFPSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 @_exported import GFPSDK
@@ -122,6 +122,7 @@ import _StringProcessing
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoOptions : ObjectiveC.NSObject {
   @objc final public let playPolicy: GFPSDK.GFPVideoPlayPolicy
   @objc final public let useCustomControlView: Swift.Bool
+  @objc public var maxBitrateKbps: Swift.Int
   @objc(initWithPlayPolicy:useCustomControlView:) public init(playPolicy: GFPSDK.GFPVideoPlayPolicy, useCustomControlView: Swift.Bool)
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "6.5.0"
+  s.version      = "6.7.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                      "Dojin.park" => "dojin.park@navercorp.com"
                    }
   
-  s.ios.deployment_target = "11.0"
+  s.ios.deployment_target = "12.0"
   s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "#{s.version.to_s}" }
 
   s.default_subspecs = "GFPSDK"
@@ -22,14 +22,14 @@ Pod::Spec.new do |s|
   s.subspec 'GFPSDK' do |sdk|
     sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDK.xcframework", "NAMSDK/xcframework/libraries/OMSDK_Navercorp.xcframework"
     sdk.dependency 'KissXML', '~> 5.2'
-    sdk.dependency 'Naver-Ads-Services', '~> 1.0.3'
+    sdk.dependency 'Naver-Ads-Services', '~> 1.0.4'
     sdk.resources = ['NAMSDK/ResourceBundle/GFPSDKResource.bundle']
   end
   
   s.subspec 'MediationDFP' do |dfp|
     dfp.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDFP.xcframework"
     dfp.dependency 'NAMSDK/GFPSDK'
-    dfp.dependency 'Google-Mobile-Ads-SDK', '10.5.0'
+    dfp.dependency 'Google-Mobile-Ads-SDK', '10.7.0'
   end
   
   s.subspec 'MediationNDA' do |nda|
@@ -47,13 +47,13 @@ Pod::Spec.new do |s|
   s.subspec 'MediationFAN' do |fan|
     fan.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationFAN.xcframework"
     fan.dependency 'NAMSDK/GFPSDK'    
-    fan.dependency 'FBAudienceNetwork', '6.12.0'
+    fan.dependency 'FBAudienceNetwork', '6.14.0'
   end
   
   s.subspec 'MediationInMobi' do |inMobi|
     inMobi.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationInMobi.xcframework"
     inMobi.dependency 'NAMSDK/GFPSDK'
-    inMobi.dependency 'InMobiSDK', '10.1.2'
+    inMobi.dependency 'InMobiSDK', '10.5.8'
   end
   
   s.subspec 'MediationUnity' do |unity|
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   s.subspec 'MediationVungle' do |vungle|
     vungle.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationVungle.xcframework"
     vungle.dependency 'NAMSDK/GFPSDK'
-    vungle.dependency 'VungleAds', '7.0.0'
+    vungle.dependency 'VungleAds', '7.1.0'
   end
 
   s.subspec 'MediationDT' do |dt|

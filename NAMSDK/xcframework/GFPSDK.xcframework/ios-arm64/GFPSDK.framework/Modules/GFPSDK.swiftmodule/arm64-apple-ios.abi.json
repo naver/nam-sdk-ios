@@ -4078,6 +4078,99 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "maxBitrateKbps",
+            "printedName": "maxBitrateKbps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoOptions(py)maxBitrateKbps",
+            "mangledName": "$s6GFPSDK15GFPVideoOptionsC14maxBitrateKbpsSivp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoOptions(im)maxBitrateKbps",
+                "mangledName": "$s6GFPSDK15GFPVideoOptionsC14maxBitrateKbpsSivg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoOptions(im)setMaxBitrateKbps:",
+                "mangledName": "$s6GFPSDK15GFPVideoOptionsC14maxBitrateKbpsSivs",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GFPSDK15GFPVideoOptionsC14maxBitrateKbpsSivM",
+                "mangledName": "$s6GFPSDK15GFPVideoOptionsC14maxBitrateKbpsSivM",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(playPolicy:useCustomControlView:)",

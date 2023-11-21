@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWith:(NSDictionary * _Nonnull)aDict;
+- (GFPExtraRequestParam *)combinedWith: (GFPExtraRequestParam *)requestParam;
 
 @end
 

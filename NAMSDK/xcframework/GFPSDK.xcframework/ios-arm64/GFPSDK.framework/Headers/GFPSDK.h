@@ -18,6 +18,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 
 #import <GFPSDK/GFPAdParam.h>
 #import <GFPSDK/GFPUserParam.h>
+#import <GFPSDK/GFPAPSAdParam.h>
 #import <GFPSDK/GFPContentInfo.h>
 #import <GFPSDK/GFPAdManager.h>
 #import <GFPSDK/GFPBannerView.h>
