@@ -1,7 +1,7 @@
 # Naver Ad Manager SDK for iOS
-![iOS badge](https://img.shields.io/badge/iOS-11.0%2B-green?style=plastic)
+![iOS badge](https://img.shields.io/badge/iOS-12.0%2B-green?style=plastic)
 ![Pods](https://img.shields.io/cocoapods/v/NAMSDK?style=plastic)
-![XCode](https://img.shields.io/badge/Xcode-12%2B-yellow?style=plastic)
+![XCode](https://img.shields.io/badge/Xcode-15%2B-yellow?style=plastic)
 
 Naver Ad Manager는 높은 단가의 ‘네이버 성과형 광고 플랫폼’(네이버SSP에서만 물량 제공)을 비롯해 국내/외 대표적인 DSP를 모두 확보하고 있어 매체 수익화를 위한 최적의 환경을 제공합니다.
 
