@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GFPSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -10,8 +10,15 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @objcMembers public class kGFPAdInterfaceStyle : ObjectiveC.NSObject {
-  @objc public static let Changed: Swift.String
+  @objc public static let changed: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPVideoGlobalOptions : ObjectiveC.NSObject {
+  @objc public static let disableAutoPlay_changed: Swift.String
+  @objc public static let globalPlayPolicy_changed: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -48,7 +55,7 @@ import _StringProcessing
 @objc public protocol GFPQueueObject : ObjectiveC.NSObjectProtocol {
 }
 @objc @objcMembers public class GFPLimitQueue : ObjectiveC.NSObject {
-  @objc public var queue: [GFPSDK.GFPQueueObject] {
+  @objc public var queue: [any GFPSDK.GFPQueueObject] {
     @objc get
   }
   @objc public var size: Swift.Int {
@@ -60,9 +67,9 @@ import _StringProcessing
   @objc public var isEmpty: Swift.Bool {
     @objc get
   }
-  @objc public func enqueue(_ queueObject: GFPSDK.GFPQueueObject?)
-  @objc public func enqueueAndReplace(_ queueObject: GFPSDK.GFPQueueObject?)
-  @objc public func dequeue() -> GFPSDK.GFPQueueObject?
+  @objc public func enqueue(_ queueObject: (any GFPSDK.GFPQueueObject)?)
+  @objc public func enqueueAndReplace(_ queueObject: (any GFPSDK.GFPQueueObject)?)
+  @objc public func dequeue() -> (any GFPSDK.GFPQueueObject)?
   @objc public class func sizeWith(_ size: Swift.Int) -> GFPSDK.GFPLimitQueue
   @objc public init(size: Swift.Int)
   @objc deinit
@@ -105,27 +112,6 @@ import _StringProcessing
     @objc get
   }
   @objc public var initializeDict: Swift.Dictionary<Swift.String, Swift.String> {
-    @objc get
-  }
-  @objc deinit
-}
-@objc public enum GFPVideoPlayPolicy : Swift.Int {
-  case manual
-  case autoPlay
-  case autoPlayOnlyWiFi
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoOptions : ObjectiveC.NSObject {
-  @objc final public let playPolicy: GFPSDK.GFPVideoPlayPolicy
-  @objc final public let useCustomControlView: Swift.Bool
-  @objc public var maxBitrateKbps: Swift.Int
-  @objc(initWithPlayPolicy:useCustomControlView:) public init(playPolicy: GFPSDK.GFPVideoPlayPolicy, useCustomControlView: Swift.Bool)
-  @objc override dynamic public init()
-  @objc override dynamic public var description: Swift.String {
     @objc get
   }
   @objc deinit
@@ -447,9 +433,6 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc(createC2SInfoWith:) public static func createC2SInfo(c2sAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
   @objc deinit
 }
-extension GFPSDK.GFPVideoPlayPolicy : Swift.Equatable {}
-extension GFPSDK.GFPVideoPlayPolicy : Swift.Hashable {}
-extension GFPSDK.GFPVideoPlayPolicy : Swift.RawRepresentable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Equatable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Hashable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.RawRepresentable {}

@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign, readonly) BOOL enableControl;
 
+@property (nonatomic, assign, readonly) BOOL isPlaying;
+
 /**
  * 광고 영상의 mute 여부를 설정합니다.
  */

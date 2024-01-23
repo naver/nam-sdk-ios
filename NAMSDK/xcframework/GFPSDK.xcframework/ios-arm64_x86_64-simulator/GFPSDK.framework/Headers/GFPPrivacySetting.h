@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (class, nonatomic, strong, readonly, nullable) NSString *IAB_TCString; //for GDPR
 @property (class, nonatomic, strong, readonly, nullable) NSString *IAB_USPString; //for CCPA
 
+@property (nonatomic, assign, readonly) BOOL isPrivacyProtection;
+
 /**
  * 성인이 아닌 사용자에 대한 광고 요청 여부
  */

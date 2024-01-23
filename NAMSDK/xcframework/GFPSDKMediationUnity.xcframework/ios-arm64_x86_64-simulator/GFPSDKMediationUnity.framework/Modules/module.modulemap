@@ -1,7 +1,7 @@
 framework module GFPSDKMediationUnity {
   umbrella header "GFPSDKMediationUnity.h"
-
   export *
+
   module * { export * }
 }
 

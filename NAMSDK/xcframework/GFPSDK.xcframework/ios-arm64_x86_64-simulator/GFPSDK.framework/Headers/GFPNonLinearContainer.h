@@ -23,12 +23,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) GFPTextAdViewAttribute *textAdAttribute;
 
 @property (nonatomic, readonly, assign) BOOL canStartReady;
+@property (nonatomic, readonly, assign) BOOL notifiedReady;
 @property (nonatomic, readonly, assign) BOOL isShowing;
 
 - (void)show;
 - (void)show:(GFPNonLinearContainerType)aType;
 - (void)hide;
 - (void)replaceOuterContainer;
+- (void)notifyRemindCallback;
 
 @end
 

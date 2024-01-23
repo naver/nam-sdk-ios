@@ -119,6 +119,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL muteAudio;
 
 
+/**
+ *  서비스에서 위치정보 권한을 얻었어도 무시하는 옵션  (기본값 NO)
+*/
+@property (nonatomic, assign) BOOL disableLocationInfo;
+
+
 - (GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
 
 

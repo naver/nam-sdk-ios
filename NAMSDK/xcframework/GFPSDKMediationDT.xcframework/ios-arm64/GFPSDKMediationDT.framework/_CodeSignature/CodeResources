@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/GFPSDKMediationDT-Swift.h</key>
 		<data>
-		2haffG/7ehBMk5gEmJpSENsE21Y=
+		3wwVmb8ynB1wOA3Rx2CKbGIsaVs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FomAub/PRzq5uH3CS/TaIqLQu5M=
+		op01c7vTCOC/B0Lhqowib/joE2M=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		LGRCxxV8AJxVo7Xob+rsr2wtNMc=
+		AYqhwx+GbzgMhm4ZAFsdRm5ofQ8=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		fLvZQ1QfCRbzsxNybLiZz4+TDz8=
+		pWhgxYPhIlq6r5RWm4lRbsDGo4Q=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NXjx6dr/8GJ/XRCPy+c1Vt78MIM=
+		/F1+xoz7FsSEKzGySFxUHxOHACE=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		fLvZQ1QfCRbzsxNybLiZz4+TDz8=
+		pWhgxYPhIlq6r5RWm4lRbsDGo4Q=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2F3xmJO28aCYWiVDEvUnU6fO74k=
+		sYcKZl5uxgMQxOOlD3VlEJv0URI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,66 +43,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2haffG/7ehBMk5gEmJpSENsE21Y=
+			3wwVmb8ynB1wOA3Rx2CKbGIsaVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			zJPbX12PdXA9WURU6pp2FpjJzNduoKeJPCnSu4i2XWE=
+			/dNvbE5/YeAwJDZpOwUBPqVsB2Q+MlJGJlsd8xFaWLk=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LGRCxxV8AJxVo7Xob+rsr2wtNMc=
+			AYqhwx+GbzgMhm4ZAFsdRm5ofQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			JBLODOsntVqawsEXyifXlLgV/eMQZjmIbfV2MEUsYMM=
+			QkXp/LuRMW2sBcZ65FN0wda2aGF0JxPTbr9fcj6y2gA=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fLvZQ1QfCRbzsxNybLiZz4+TDz8=
+			pWhgxYPhIlq6r5RWm4lRbsDGo4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			vgaiNo452koj8eCUiMAjPDmfJpAvj7sCRBjbCh26LQI=
+			P7yHQOV5MicDOTX4i0C30rL/fUtGGHNhwJmsACHnNFU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NXjx6dr/8GJ/XRCPy+c1Vt78MIM=
+			/F1+xoz7FsSEKzGySFxUHxOHACE=
 			</data>
 			<key>hash2</key>
 			<data>
-			gziLiAa1PislE5WuZ3vbCXB5St1D//PUiz+H9ZoL/ho=
+			hfkW0okB19Vgf1GM6MwaPjBagj8UXOzTbIpABPuQwTo=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fLvZQ1QfCRbzsxNybLiZz4+TDz8=
+			pWhgxYPhIlq6r5RWm4lRbsDGo4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			vgaiNo452koj8eCUiMAjPDmfJpAvj7sCRBjbCh26LQI=
+			P7yHQOV5MicDOTX4i0C30rL/fUtGGHNhwJmsACHnNFU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2F3xmJO28aCYWiVDEvUnU6fO74k=
+			sYcKZl5uxgMQxOOlD3VlEJv0URI=
 			</data>
 			<key>hash2</key>
 			<data>
-			/AHPFzQIjz0Z1WfL+4zp7c08n0VE+jfvXkI4zjEZH9A=
+			lBzcnlPQ+zJ9CQZ10THuNW0SrKUeeAAMbiCGNYmnHEA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
