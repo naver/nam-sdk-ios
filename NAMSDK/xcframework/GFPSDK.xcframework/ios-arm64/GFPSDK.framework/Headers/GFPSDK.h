@@ -146,4 +146,3 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 
 #import <GFPSDK/GFPNativeAdInfoProtocol.h>
 #import <GFPSDK/GFPNativeDetailInfo.h>
-

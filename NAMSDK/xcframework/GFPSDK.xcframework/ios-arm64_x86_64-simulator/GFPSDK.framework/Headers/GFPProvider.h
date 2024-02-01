@@ -26,6 +26,8 @@ FOUNDATION_EXPORT NSString *const GFPProviderTypeUNITY;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeAppLovin;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeVungle;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeDT;
+FOUNDATION_EXPORT NSString *const GFPProviderTypeIS;
+FOUNDATION_EXPORT NSString *const GFPProviderTypeAPS;
 
 typedef NSString *GFPProviderRenderType NS_STRING_ENUM;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNDP;
@@ -40,6 +42,8 @@ FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeUNITY;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeAppLovin;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeVungle;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeDT;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeIS;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeAPS;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeSIMPLE;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNORMAL;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeCOMPOSITE;

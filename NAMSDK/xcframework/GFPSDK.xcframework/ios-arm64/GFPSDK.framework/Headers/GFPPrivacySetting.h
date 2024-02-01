@@ -12,8 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPPrivacySetting : NSObject
 
-@property (class, nonatomic, strong, readonly, nullable) NSString *IAB_TCString; //for GDPR
-@property (class, nonatomic, strong, readonly, nullable) NSString *IAB_USPString; //for CCPA
+/**
+ * for GDPR
+ */
+@property (class, nonatomic, strong, readonly, nullable) NSNumber *IAB_gdprApplies;
+@property (class, nonatomic, strong, readonly, nullable) NSString *IAB_TCString;
+
+/**
+ * for CCPA
+ */
+@property (class, nonatomic, strong, readonly, nullable) NSString *IAB_USPString;
 
 @property (nonatomic, assign, readonly) BOOL isPrivacyProtection;
 

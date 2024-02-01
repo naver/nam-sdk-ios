@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/GFPSDKMediationVungle-Swift.h</key>
 		<data>
-		m73vNPB2EqgrS77nTb2nWVrRBZA=
+		yfi2nYPqDq7zy0Yklpbo6xm3ytY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eedQOv+aNlxl62pqWLsLHzsXyno=
+		hznW1Qdto7H1wqV09IYycVpXW4k=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		0yEJSHb4njWz4ip+2ae4hD8BhLQ=
+		toUCBATzpkiCIKqeeHMBdtrW98U=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		N/q/xRLmCTH4P58sKpUJPL9PIyQ=
+		Fz+Wf6Hau0+xsfT/Mls+IbbjHLs=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zt3to3Pvmp7x0x8ymijAfU935KI=
+		v32yIzd9mMOu2+/musfxhy0/rBc=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		N/q/xRLmCTH4P58sKpUJPL9PIyQ=
+		Fz+Wf6Hau0+xsfT/Mls+IbbjHLs=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wmmNDhW4Q/2yTFD+BIH+/LZ8fI8=
+		bmaGKJVkhYnESDpNdm0ARPRFRWg=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0yEJSHb4njWz4ip+2ae4hD8BhLQ=
+		toUCBATzpkiCIKqeeHMBdtrW98U=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		q0/gx/SogUqT9xaZ9TXI/yZI74Y=
+		cUHZDdrH4gP4eNcavZ8HW09rMtk=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xjBITqpBxppCH0JsP97XXT/YYZs=
+		u5grFJCnL/+oYfy/uFE4kpGICDA=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		q0/gx/SogUqT9xaZ9TXI/yZI74Y=
+		cUHZDdrH4gP4eNcavZ8HW09rMtk=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EP9OE7YTgRUpzEzjVg/NLeNAdwA=
+		O061YOwDwjnb/DsvZ19S6dbo/Uo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,121 +63,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m73vNPB2EqgrS77nTb2nWVrRBZA=
+			yfi2nYPqDq7zy0Yklpbo6xm3ytY=
 			</data>
 			<key>hash2</key>
 			<data>
-			7mQir8s2EMHoF+Wf7bJmGrsMx15yyfB9AI4mjC4e77A=
+			zPZ5cYYe58XuHFSjKPr0HdZcDBJJ/mRBiHLEUuzZ5fo=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0yEJSHb4njWz4ip+2ae4hD8BhLQ=
+			toUCBATzpkiCIKqeeHMBdtrW98U=
 			</data>
 			<key>hash2</key>
 			<data>
-			ayJIETk1ZXG+wAa0/un8C/DW8WHQ5mS8roBGFwc5bUY=
+			fO3+l6qk+sJ0vpWvVKKhLuWpiJ/VfVI35TNvyQeykBI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N/q/xRLmCTH4P58sKpUJPL9PIyQ=
+			Fz+Wf6Hau0+xsfT/Mls+IbbjHLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			YqghE2dIyAZoZcjyaYzNwGt0Lg8OmY21KVbc+Kq0LTQ=
+			waOSKZPYMkFwnRWpU6CVFD9rEi2IhfmgFWwXYsOw9+A=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zt3to3Pvmp7x0x8ymijAfU935KI=
+			v32yIzd9mMOu2+/musfxhy0/rBc=
 			</data>
 			<key>hash2</key>
 			<data>
-			xQQWGrekxIbXFyrbsQPt/A0nqaiXlgSQSpBD63xvhSQ=
+			4mri80m0P3yx2y3RpH0J2QuSNk4ml+7ZCQWtXybVcXM=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N/q/xRLmCTH4P58sKpUJPL9PIyQ=
+			Fz+Wf6Hau0+xsfT/Mls+IbbjHLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			YqghE2dIyAZoZcjyaYzNwGt0Lg8OmY21KVbc+Kq0LTQ=
+			waOSKZPYMkFwnRWpU6CVFD9rEi2IhfmgFWwXYsOw9+A=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wmmNDhW4Q/2yTFD+BIH+/LZ8fI8=
+			bmaGKJVkhYnESDpNdm0ARPRFRWg=
 			</data>
 			<key>hash2</key>
 			<data>
-			CKX+fVDKAUyuZ1ticGH5C1KkkIBzKHOvOhQbnuqE6xQ=
+			YUUgbwTiGX0cGAlf3TOuvYs5orDEHFfdu2VeFWaIsm8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0yEJSHb4njWz4ip+2ae4hD8BhLQ=
+			toUCBATzpkiCIKqeeHMBdtrW98U=
 			</data>
 			<key>hash2</key>
 			<data>
-			ayJIETk1ZXG+wAa0/un8C/DW8WHQ5mS8roBGFwc5bUY=
+			fO3+l6qk+sJ0vpWvVKKhLuWpiJ/VfVI35TNvyQeykBI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q0/gx/SogUqT9xaZ9TXI/yZI74Y=
+			cUHZDdrH4gP4eNcavZ8HW09rMtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1DWAqVvCCJYVpssdxEiA0UO8Q+2/YqYWd1yea/w7IVQ=
+			6jR3ZJ28sHhcZBOpDn9YAHQQPsbLqoMduAbdP9+Y/YU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xjBITqpBxppCH0JsP97XXT/YYZs=
+			u5grFJCnL/+oYfy/uFE4kpGICDA=
 			</data>
 			<key>hash2</key>
 			<data>
-			o1hKe2IYJC1E9fSJ40INw67jgzowqcDGzAp5Vo3uzV0=
+			zm98iFB77y+ylindEMS4O4l/bhd/JvDkOhO37lt3b3E=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q0/gx/SogUqT9xaZ9TXI/yZI74Y=
+			cUHZDdrH4gP4eNcavZ8HW09rMtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1DWAqVvCCJYVpssdxEiA0UO8Q+2/YqYWd1yea/w7IVQ=
+			6jR3ZJ28sHhcZBOpDn9YAHQQPsbLqoMduAbdP9+Y/YU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EP9OE7YTgRUpzEzjVg/NLeNAdwA=
+			O061YOwDwjnb/DsvZ19S6dbo/Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			AQCTySV5UaBDDL01/VtKq/MZUL7m4mQI1CfbNlR1Vao=
+			gHEPszzGP8eQHH52Ao1Dr3XyZhnNE6+V4WawtD9Y1HQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

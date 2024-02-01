@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)load;
 - (void)show:(UIViewController *)rootViewController;
 
++ (void)resumeCurrentRewardVideo;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -13,6 +13,7 @@
 @class GFPAdAdaptor;
 @class GFPAdAdaptorParam;
 @class GFPExtraRequestParam;
+@class GFPAdInitProviderInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong, nullable) GFPExtraRequestParam *extraRequestParam;
 
-- (void)initializeSDKWith:(NSString *)placeId;
+- (void)initializeSDKWith:(GFPAdInitProviderInfo *)providerInfo;
 - (BOOL)isSDKinitialize;
 
 

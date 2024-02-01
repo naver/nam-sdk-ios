@@ -187,13 +187,6 @@
       },
       {
         "kind": "Import",
-        "name": "GFPSDK",
-        "printedName": "GFPSDK",
-        "declKind": "Import",
-        "moduleName": "GFPSDKMediationAppLovin"
-      },
-      {
-        "kind": "Import",
         "name": "AppLovinSDK",
         "printedName": "AppLovinSDK",
         "declKind": "Import",
@@ -343,77 +336,77 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPRewardedAdProviderAppLovin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1106,
+      "offset": 1133,
       "length": 5,
       "value": "false"
     },
     {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPRewardedAdProviderAppLovin.swift",
+      "kind": "Array",
+      "offset": 1449,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 309,
+      "offset": 299,
       "length": 8,
       "value": "\"SDKKey\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 339,
+      "offset": 333,
       "length": 10,
       "value": "\"AdUnitID\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 309,
-      "length": 8,
-      "value": "\"SDKKey\""
+      "offset": 372,
+      "length": 11,
+      "value": "\"adUnitIds\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 339,
-      "length": 10,
-      "value": "\"AdUnitID\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 734,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 772,
+      "offset": 794,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 987,
+      "offset": 1090,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1142,
+      "offset": 1244,
       "length": 143,
       "value": "\"GFPAppLovin adaptor requires AppLovin SDK Key and Ad Unit ID to initialized ALSdk but recieved SDKKey:\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1259,
+      "offset": 1361,
       "length": 1,
       "value": "\", AdUnitID:\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinRequestInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1284,
+      "offset": 1386,
       "length": 4,
       "value": "\"\""
     },
@@ -427,7 +420,7 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 1286,
+      "offset": 1285,
       "length": 27,
       "value": "\"Invalide Rewarded Context\""
     },
@@ -441,65 +434,65 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2394,
+      "offset": 2392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2589,
+      "offset": 2587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2631,
+      "offset": 2629,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3393,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3226,
-      "length": 25,
-      "value": "\"disable_b2b_ad_unit_ids\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3503,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 4233,
+      "offset": 4192,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4423,
+      "offset": 4382,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Rewarded\/GFPAppLovinRewardedAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 5685,
+      "offset": 5644,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPNativeProviderAppLovin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1081,
+      "offset": 1112,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPNativeProviderAppLovin.swift",
+      "kind": "Array",
+      "offset": 1428,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
@@ -532,7 +525,7 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 1951,
+      "offset": 1950,
       "length": 24,
       "value": "\"Invalid Banner Context\""
     },
@@ -546,196 +539,224 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3912,
+      "offset": 3909,
       "length": 38,
       "value": "\"allow_pause_auto_refresh_immediately\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3959,
+      "offset": 3956,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4008,
+      "offset": 4005,
       "length": 18,
       "value": "\"disable_precache\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4035,
+      "offset": 4032,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4148,
+      "offset": 4145,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4961,
+      "offset": 5027,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPAppLovinBannerAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 5151,
+      "offset": 5217,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPBannerProviderAppLovin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1083,
+      "offset": 1107,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPBannerProviderAppLovin.swift",
+      "kind": "Array",
+      "offset": 1419,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Banner\/GFPBannerProviderAppLovin.swift",
+      "kind": "Array",
+      "offset": 1808,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 651,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 620,
+      "offset": 963,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 909,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1052,
+      "offset": 1106,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1233,
+      "length": 4,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1292,
+      "length": 25,
+      "value": "\"disable_b2b_ad_unit_ids\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1381,
       "length": 5,
       "value": "\"max\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1585,
+      "offset": 1830,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2122,
+      "offset": 2367,
       "length": 56,
       "value": "\"AppLovin getALSdk error: \""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2177,
+      "offset": 2422,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2420,
+      "offset": 2665,
       "length": 184,
       "value": "\"AppLovin Provider Ad Load Error. (code: \""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2476,
+      "offset": 2721,
       "length": 1,
       "value": "\", message: \""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2505,
+      "offset": 2750,
       "length": 1,
       "value": "\". Network error info - \""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2563,
+      "offset": 2808,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2603,
+      "offset": 2848,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3154,
+      "offset": 3399,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3179,
+      "offset": 3424,
       "length": 65,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3939,
+      "offset": 4184,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3999,
+      "offset": 4244,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4112,
+      "offset": 4357,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4211,
+      "offset": 4456,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4287,
+      "offset": 4532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Common\/GFPAppLovinConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4594,
+      "offset": 4839,
       "length": 7,
       "value": "\"jC7Fp\""
     },
@@ -805,77 +826,77 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 2063,
+      "offset": 2062,
       "length": 24,
       "value": "\"Invalid Native Context\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3325,
+      "offset": 3320,
       "length": 39,
       "value": "\"Failed to instantiate MANativeAdView.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3556,
+      "offset": 3551,
       "length": 21,
       "value": "\"GFPAppLovinResource\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3594,
+      "offset": 3589,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3714,
+      "offset": 3709,
       "length": 42,
       "value": "\"GFPAppLovinResource.bundle is not found.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3784,
+      "offset": 3779,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3793,
+      "offset": 3788,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3877,
+      "offset": 3872,
       "length": 25,
       "value": "\"GFPAppLovinNativeAdView\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4153,
+      "offset": 4148,
       "length": 41,
       "value": "\"Failed to load MANativeAdView from Nib.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4222,
+      "offset": 4217,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4231,
+      "offset": 4226,
       "length": 2,
       "value": "\"\""
     },
@@ -889,107 +910,114 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 6467,
+      "offset": 6462,
       "length": 34,
       "value": "\"Failed downcasting nativeAdView.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 6529,
+      "offset": 6524,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 6538,
+      "offset": 6533,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 6786,
+      "offset": 6781,
       "length": 79,
       "value": "\"Couldn't register GFPNativeAdView because MANativeAdView was not initialized.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 6893,
+      "offset": 6888,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 6902,
+      "offset": 6897,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 7263,
+      "offset": 7258,
       "length": 38,
       "value": "\"Wrong Media View Settings : \""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 7300,
+      "offset": 7295,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9222,
+      "offset": 9217,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9256,
+      "offset": 9251,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9337,
+      "offset": 9332,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 10711,
+      "offset": 10706,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 11557,
+      "offset": 11621,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Native\/GFPAppLovinNativeAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 11747,
+      "offset": 11811,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPInterstitialAdProviderAppLovin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1129,
+      "offset": 1156,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPInterstitialAdProviderAppLovin.swift",
+      "kind": "Array",
+      "offset": 1472,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
@@ -1001,7 +1029,7 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 1322,
+      "offset": 1321,
       "length": 31,
       "value": "\"Invalide Interstitial Context\""
     },
@@ -1015,49 +1043,49 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2446,
+      "offset": 2444,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2657,
+      "offset": 2655,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2699,
+      "offset": 2697,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 3294,
+      "offset": 3292,
       "length": 25,
       "value": "\"disable_b2b_ad_unit_ids\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3576,
+      "offset": 3574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4320,
+      "offset": 4387,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAppLovin\/Interstitial\/GFPAppLovinInterstitialAdAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 4510,
+      "offset": 4577,
       "length": 45,
       "value": "\"AppLovin SDK initialization request failed.\""
     }

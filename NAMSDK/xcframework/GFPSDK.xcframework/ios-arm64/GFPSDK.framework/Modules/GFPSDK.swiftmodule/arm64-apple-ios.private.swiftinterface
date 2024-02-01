@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GFPSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -11,6 +11,9 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension GFPSDK.GFPErrorUtils {
+  public static func loadError(message: Swift.String, errorKey: Swift.String, errorCode: GFPSDK.GFPErrorCode, loadEventStat: GFPSDK.GFPLoadEventStat) -> (NaverAdsServices.GFPError, GFPSDK.GFPLoadEvent)
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class kGFPAdInterfaceStyle : ObjectiveC.NSObject {
   @objc public static let changed: Swift.String
   @objc override dynamic public init()
@@ -19,6 +22,11 @@ import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @objcMembers public class kGFPVideoGlobalOptions : ObjectiveC.NSObject {
   @objc public static let disableAutoPlay_changed: Swift.String
   @objc public static let globalPlayPolicy_changed: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPRewardedNotification : ObjectiveC.NSObject {
+  @objc public static let resume: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -51,6 +59,20 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
   @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
+}
+@objc(GFPAdInitProviderInfo) @objcMembers final public class GFPAdInitProviderInfo : ObjectiveC.NSObject, GFPSDK.GFPDictPresentable {
+  @objc final public var type: Swift.String
+  @objc final public var placeId: Swift.String
+  @objc final public var testMode: Swift.Bool
+  @objc final public var additionalInfo: GFPSDK.GFPAdInitProviderAdditionalInfo?
+  @objc public init(withDictionary dict: Swift.Dictionary<Swift.String, Any>)
+  @objc public init(withType type: Swift.String, testMode: Swift.Bool)
+  @objc final public func dictionary() -> [Swift.String : Swift.String]?
+  @objc public static func adProviders(_ dict: Swift.Dictionary<Swift.String, Any>) -> [GFPSDK.GFPAdInitProviderInfo]?
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
 }
 @objc public protocol GFPQueueObject : ObjectiveC.NSObjectProtocol {
 }
@@ -212,6 +234,8 @@ import _SwiftConcurrencyShims
   case unity
   case appLovin
   case DT
+  case IS
+  case APS
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -260,6 +284,8 @@ import _SwiftConcurrencyShims
   case NDA
   case vungle
   case DT
+  case IS
+  case APS
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -275,6 +301,8 @@ import _SwiftConcurrencyShims
   case appLovin
   case vungle
   case DT
+  case IS
+  case APS
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -345,6 +373,13 @@ import _SwiftConcurrencyShims
   @objc public class func videoSchedulePhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
   @objc public class func neloPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc(GFPAdInitProviderAdditionalInfo) @objcMembers public class GFPAdInitProviderAdditionalInfo : ObjectiveC.NSObject {
+  @objc public var adUnitIds: [Swift.String]?
+  @objc public var productTypes: [Swift.String]?
+  @objc public var dictionary: [Swift.String : Any]
+  @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPBundle : ObjectiveC.NSObject {
@@ -431,6 +466,21 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc(createVideoInfoWith:) public static func createVideoInfo(videoController: GFPSDK.GFPVideoController?) -> GFPSDK.GFPMediaData
   @objc(createRichMediaInfo) public static func createRichMediaInfo() -> GFPSDK.GFPMediaData
   @objc(createC2SInfoWith:) public static func createC2SInfo(c2sAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
+  @objc deinit
+}
+@propertyWrapper public class GFPThreadSafe<T> {
+  final public let queue: Dispatch.DispatchQueue
+  public init(wrappedValue: T, label: Swift.String)
+  public var wrappedValue: T {
+    get
+    set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GFPErrorPointerUtils {
+  public static func isErrorRaised(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?) -> Swift.Bool
+  public static func raiseError(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?, error: NaverAdsServices.GFPError)
+  public static func raiseError(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?, errorCode: Swift.Int, message: Swift.String? = nil)
   @objc deinit
 }
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Equatable {}
