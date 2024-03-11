@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "7.0.1"
+  s.version      = "7.2.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.subspec 'GFPSDK' do |sdk|
     sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDK.xcframework", "NAMSDK/xcframework/libraries/OMSDK_Navercorp.xcframework"
     sdk.dependency 'KissXML', '~> 5.2'
-    sdk.dependency 'Naver-Ads-Services', '~> 1.0.7'
+    sdk.dependency 'Naver-Ads-Services', '~> 1.0.8'
     sdk.resources = ['NAMSDK/ResourceBundle/GFPSDKResource.bundle']
   end
   
@@ -44,6 +44,12 @@ Pod::Spec.new do |s|
     ndaVideo.dependency 'NAMSDK/GFPSDK'
   end
   
+  s.subspec 'MediationNDARich' do |ndaRich|
+    ndaRich.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationNDARich.xcframework"
+    ndaRich.dependency 'NAMSDK/GFPSDK'
+  end
+  
+
   s.subspec 'MediationFAN' do |fan|
     fan.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationFAN.xcframework"
     fan.dependency 'NAMSDK/GFPSDK'    

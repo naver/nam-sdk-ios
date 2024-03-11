@@ -48,6 +48,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bY6HTC7U2PdjOUsYfEYrZjiamns=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -66,16 +75,16 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-HK.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hans.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPm0Q8sShjE3bn0LMP2FW5NSiQk=
+			Od0eBdaf6/IyVONMva/CNSeVEqM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-TW.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hant.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -161,6 +170,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bY6HTC7U2PdjOUsYfEYrZjiamns=
+			</data>
+			<key>hash2</key>
+			<data>
+			XaftXly8ErRLzINcfJOihcL/kHS0X/+F/2mgTQsMguo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -187,20 +209,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-HK.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hans.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPm0Q8sShjE3bn0LMP2FW5NSiQk=
+			Od0eBdaf6/IyVONMva/CNSeVEqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			A4LdRbloJTYs3EFGMtULs1VhfpLJEAcL5v93ivlGTY8=
+			/+fQ2lA6gn+fuESXdqzqYT+dg1dEnlmS3CTZfI8z7GU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-TW.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hant.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>

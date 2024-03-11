@@ -19,7 +19,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 @interface GFPNativeLinkInfo : NSObject
 
 @property (nonatomic, readonly, strong) NSURL *cURL;
@@ -59,9 +58,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
                                         link:(GFPNativeLinkInfo *)link NS_DESIGNATED_INITIALIZER;
 
-- (GFPRichDetailInfo *)imageWithKey:(NSString *)key;
-- (GFPRichDetailInfo *)videoWithKey:(NSString *)key;
-- (GFPRichDetailInfo *)textWithKey:(NSString *)key;
+- (GFPRichDetailInfo * _Nullable)imageWithKey:(NSString *)key;
+- (GFPRichDetailInfo * _Nullable)videoWithKey:(NSString *)key;
+- (GFPRichDetailInfo * _Nullable)textWithKey:(NSString *)key;
 
 @end
 
@@ -75,12 +74,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface GFPNativeMediaBadgeInfo : NSObject <GFPNativeAdInfoLinkPresentable>
+
+@property (nonatomic, readonly, assign) CGFloat width;
+@property (nonatomic, readonly, assign) CGFloat height;
+@property (nonatomic, readonly, strong) NSString *src;
+@property (nonatomic, readonly, strong) GFPNativeStyleInfo *styleInfo;
+@property (nonatomic, readonly, strong) GFPNativeLinkInfo *link;
+
+- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict NS_DESIGNATED_INITIALIZER;
+
+@end
+
+
 @interface GFPNativeMediaExtensionInfo : NSObject
 
 @property (nonatomic, readonly, strong) NSString *alternativeText;
 @property (nonatomic, readonly, strong, nullable) GFPNativeRichInfo *richInfo;
-
 @property (nonatomic, readonly, assign) BOOL isExistRichAssets;
+
+@property (nonatomic, readonly, strong) NSDictionary<NSString *, GFPNativeMediaBadgeInfo *> *badges;
 
 - (instancetype _Nullable)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
@@ -119,6 +133,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) float shadowY;
 @property (nonatomic, readonly, assign) float shadowBlur;
 @property (nonatomic, readonly, assign) float shadowSpread;
+
+@property (nonatomic, readonly, assign) NSInteger gravity;
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
 

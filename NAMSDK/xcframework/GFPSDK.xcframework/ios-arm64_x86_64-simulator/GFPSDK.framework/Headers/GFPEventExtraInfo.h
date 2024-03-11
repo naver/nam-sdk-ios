@@ -22,10 +22,10 @@ extern NSString * const kGFPEventExtraInfoPremium;
 
 
 @property (nonatomic, readonly, strong) GFPProviderCreativeType creativeType;
-@property (nonatomic, readonly, strong) NSDictionary *dict;
+@property (nonatomic, readonly, strong, nullable) NSDictionary *dict;
 
 @property (nonatomic, readonly, strong) NSString *sizeDescription;
-@property (nonatomic, readonly, strong) NSString *premiumDescription;
+@property (nonatomic, readonly, strong, nullable) NSString *premiumDescription;
 
 
 - (instancetype)initWithCreativeType:(GFPProviderCreativeType)aCreativeType;

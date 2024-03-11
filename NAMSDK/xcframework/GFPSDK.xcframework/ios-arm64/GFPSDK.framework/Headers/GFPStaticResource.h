@@ -87,7 +87,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithDomElement:(DDXMLElement *)aElement duration:(NSTimeInterval)aDuration error:(GFPError *_Nullable * _Nullable)aError;
 
-+ (NSArray <Icon *> *)iconWithDomElement:(DDXMLElement *)aElement duration:(NSTimeInterval)aDuration error:(GFPError *_Nullable *_Nullable)aError;
++ (NSArray <Icon *> * _Nullable)iconWithDomElement:(DDXMLElement *)aElement duration:(NSTimeInterval)aDuration error:(GFPError *_Nullable *_Nullable)aError;
 
 @end
 

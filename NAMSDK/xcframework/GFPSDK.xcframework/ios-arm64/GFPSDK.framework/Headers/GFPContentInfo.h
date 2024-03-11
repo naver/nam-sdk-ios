@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly) BOOL isValid;
 
-@property (readonly) NSDictionary<NSString *, NSString *> *dict;
+@property (readonly, nullable) NSDictionary<NSString *, NSString *> *dict;
 
 - (instancetype)initWithSourceType:(NSString *)st subtype:(NSString *)sst sourceId:(NSString *)si;
 

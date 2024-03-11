@@ -39,7 +39,7 @@ static const NSString *kGFPExtraParamKeyVungle = @"vungle";
 
 - (instancetype)initWith:(GFPAdInitReqInfo *)aInitInfo;
 
-- (instancetype)initWithSKNetworkData:(NSData *)aSkAdNeteworkData;
+- (instancetype)initWithData:(NSData *)data;
 
 - (instancetype)initWithLog:(GFPLogReqInfo *)aLogInfo;
 

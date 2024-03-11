@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (nonatomic, weak) id<NonLinearViewDelegate> delegate;
-@property (nonatomic, strong) GFPRemindAd *remindAd;
+@property (nonatomic, strong, nullable) GFPRemindAd *remindAd;
 
 @property (nonatomic, strong, readonly) GFPClickLandingUtil *landingUtil;
 

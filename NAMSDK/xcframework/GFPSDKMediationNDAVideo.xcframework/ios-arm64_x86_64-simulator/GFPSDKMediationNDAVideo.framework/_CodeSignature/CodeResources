@@ -68,6 +68,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>GFPNDANativeResource.bundle/ja.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cutAehVqHmOX4qNBZC9d4IDTHEA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>GFPNDANativeResource.bundle/ko.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -86,16 +95,16 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDANativeResource.bundle/zh-HK.lproj/GFPNDANativeLocalizable.strings</key>
+		<key>GFPNDANativeResource.bundle/zh-Hans.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SfFiBSxiN5wmGUWc9mMTYUOAtCo=
+			OieQWe2utT3hnh90cVjY7EX6+7w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDANativeResource.bundle/zh-TW.lproj/GFPNDANativeLocalizable.strings</key>
+		<key>GFPNDANativeResource.bundle/zh-Hant.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -152,6 +161,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>GFPNDAVideoResource.bundle/ja.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bY6HTC7U2PdjOUsYfEYrZjiamns=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>GFPNDAVideoResource.bundle/ko.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -170,16 +188,16 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDAVideoResource.bundle/zh-HK.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>GFPNDAVideoResource.bundle/zh-Hans.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPm0Q8sShjE3bn0LMP2FW5NSiQk=
+			Od0eBdaf6/IyVONMva/CNSeVEqM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDAVideoResource.bundle/zh-TW.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>GFPNDAVideoResource.bundle/zh-Hant.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -284,6 +302,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bY6HTC7U2PdjOUsYfEYrZjiamns=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -302,16 +329,16 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-HK.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hans.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPm0Q8sShjE3bn0LMP2FW5NSiQk=
+			Od0eBdaf6/IyVONMva/CNSeVEqM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-TW.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hant.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -452,6 +479,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>GFPNDANativeResource.bundle/ja.lproj/GFPNDANativeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cutAehVqHmOX4qNBZC9d4IDTHEA=
+			</data>
+			<key>hash2</key>
+			<data>
+			tecv9Ci5gb7dvbMQAR/eurtgfQWhOF+V+GY1OUePaD8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>GFPNDANativeResource.bundle/ko.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -478,20 +518,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDANativeResource.bundle/zh-HK.lproj/GFPNDANativeLocalizable.strings</key>
+		<key>GFPNDANativeResource.bundle/zh-Hans.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SfFiBSxiN5wmGUWc9mMTYUOAtCo=
+			OieQWe2utT3hnh90cVjY7EX6+7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			LdSbu4F3XaPn2GrH1O+t/zWVKpNhdELQJ5gAlECcMBU=
+			ND1cwcdHFqBhYxPFq77c9guwDc/IP/PNVBoiznZGvOs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDANativeResource.bundle/zh-TW.lproj/GFPNDANativeLocalizable.strings</key>
+		<key>GFPNDANativeResource.bundle/zh-Hant.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -589,6 +629,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>GFPNDAVideoResource.bundle/ja.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bY6HTC7U2PdjOUsYfEYrZjiamns=
+			</data>
+			<key>hash2</key>
+			<data>
+			XaftXly8ErRLzINcfJOihcL/kHS0X/+F/2mgTQsMguo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>GFPNDAVideoResource.bundle/ko.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -615,20 +668,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDAVideoResource.bundle/zh-HK.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>GFPNDAVideoResource.bundle/zh-Hans.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPm0Q8sShjE3bn0LMP2FW5NSiQk=
+			Od0eBdaf6/IyVONMva/CNSeVEqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			A4LdRbloJTYs3EFGMtULs1VhfpLJEAcL5v93ivlGTY8=
+			/+fQ2lA6gn+fuESXdqzqYT+dg1dEnlmS3CTZfI8z7GU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>GFPNDAVideoResource.bundle/zh-TW.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>GFPNDAVideoResource.bundle/zh-Hant.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -847,6 +900,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/GFPNDAVideoLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bY6HTC7U2PdjOUsYfEYrZjiamns=
+			</data>
+			<key>hash2</key>
+			<data>
+			XaftXly8ErRLzINcfJOihcL/kHS0X/+F/2mgTQsMguo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -873,20 +939,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-HK.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hans.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JPm0Q8sShjE3bn0LMP2FW5NSiQk=
+			Od0eBdaf6/IyVONMva/CNSeVEqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			A4LdRbloJTYs3EFGMtULs1VhfpLJEAcL5v93ivlGTY8=
+			/+fQ2lA6gn+fuESXdqzqYT+dg1dEnlmS3CTZfI8z7GU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh-TW.lproj/GFPNDAVideoLocalizable.strings</key>
+		<key>zh-Hant.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>

@@ -72,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict noticeDuration:(NSTimeInterval)aNoticeDuration withError:(GFPError * _Nullable * _Nullable)aError NS_DESIGNATED_INITIALIZER;
 
 
-- (GFPVideoAdBreak *)adBreakWithAdSource:(GFPVideoAdSource *)aAdSource;
+- (GFPVideoAdBreak * _Nullable)adBreakWithAdSource:(GFPVideoAdSource *)aAdSource;
 
 @end
 

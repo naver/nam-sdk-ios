@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)sendReportErrorWith:(NSString *)message;
-- (GFPError *)adViewSizeError:(UIView *)adView;
+- (GFPError * _Nullable)adViewSizeError:(UIView *)adView;
 
 - (void)updateBannerLayoutWith:(UIView *)aAdView;
 - (void)loadAdInternal:(GFPBannerMediator *)bannerMediator;

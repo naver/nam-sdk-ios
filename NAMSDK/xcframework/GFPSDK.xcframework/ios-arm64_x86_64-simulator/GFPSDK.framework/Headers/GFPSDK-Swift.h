@@ -586,6 +586,21 @@ typedef SWIFT_ENUM(NSInteger, GFPOMContantsType, open) {
 };
 
 
+SWIFT_CLASS("_TtC6GFPSDK18GFPQoeTrackingInfo")
+@interface GFPQoeTrackingInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull urlString;
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull timeTable;
+@property (nonatomic, readonly, copy) NSString * _Nonnull serviceId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull ownerServiceId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull appId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull viewerInfo;
+@property (nonatomic, readonly) BOOL isValid;
++ (GFPQoeTrackingInfo * _Nonnull)createQoeTrackingInfoWith:(NSString * _Nonnull)host path:(NSString * _Nonnull)path timeTable:(NSArray<NSNumber *> * _Nonnull)timeTable serviceId:(NSString * _Nonnull)serviceId ownerServiceId:(NSString * _Nonnull)ownerServiceId appId:(NSString * _Nonnull)appId viewerInfo:(NSString * _Nonnull)viewerInfo SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP6GFPSDK14GFPQueueObject_")
 @protocol GFPQueueObject <NSObject>
 @end
@@ -630,6 +645,13 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK23GFPStringUtilsExtension")
+@interface GFPStringUtilsExtension : NSObject
++ (NSString * _Nonnull)createTransactionId SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIView;
@@ -738,7 +760,7 @@ SWIFT_CLASS("_TtC6GFPSDK23GFPVideoAdPlayerSetting")
 
 
 SWIFT_CLASS("_TtC6GFPSDK26GFPVideoAdRenderingSetting")
-@interface GFPVideoAdRenderingSetting : NSObject
+@interface GFPVideoAdRenderingSetting : NSObject <GFPLanguagePresentable>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger GFPVideoAdRenderingSettingAutodetectBitrate;)
 + (NSInteger)GFPVideoAdRenderingSettingAutodetectBitrate SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVideoAdRenderingSettingDefaultStartTimeout;)
@@ -762,6 +784,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// false: GFPVideoAdScheduleManager.videoView 혹은 GFPVideoAdmanager.videoView 의 너비에 따라 컴포넌트를 그림.
 /// true: 광고 영상의 실제 width 에 따라 컴포넌트를 그림.
 @property (nonatomic) BOOL isPreferContentWidthUI;
+/// 광고 UI 컴포넌트의 언어 설정 (기본값: none)
+/// <ul>
+///   <li>
+///     언어는 한국어, 영어, 프랑스어, 스페인어, 중국 번체 (홍콩/대만), 태국어, 인도네시아어를 지원합니다.
+///   </li>
+///   <li>
+///     none으로 설정 시 디바이스의 언어를 기반으로 렌더링 되며, 지원하지 않는 언어일 경우 영어로 노출됩니다.
+///   </li>
+/// </ul>
+@property (nonatomic) GFPLanguageType preferredLanguage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1432,6 +1464,21 @@ typedef SWIFT_ENUM(NSInteger, GFPOMContantsType, open) {
 };
 
 
+SWIFT_CLASS("_TtC6GFPSDK18GFPQoeTrackingInfo")
+@interface GFPQoeTrackingInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull urlString;
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull timeTable;
+@property (nonatomic, readonly, copy) NSString * _Nonnull serviceId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull ownerServiceId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull appId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull viewerInfo;
+@property (nonatomic, readonly) BOOL isValid;
++ (GFPQoeTrackingInfo * _Nonnull)createQoeTrackingInfoWith:(NSString * _Nonnull)host path:(NSString * _Nonnull)path timeTable:(NSArray<NSNumber *> * _Nonnull)timeTable serviceId:(NSString * _Nonnull)serviceId ownerServiceId:(NSString * _Nonnull)ownerServiceId appId:(NSString * _Nonnull)appId viewerInfo:(NSString * _Nonnull)viewerInfo SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP6GFPSDK14GFPQueueObject_")
 @protocol GFPQueueObject <NSObject>
 @end
@@ -1476,6 +1523,13 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK23GFPStringUtilsExtension")
+@interface GFPStringUtilsExtension : NSObject
++ (NSString * _Nonnull)createTransactionId SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIView;
@@ -1584,7 +1638,7 @@ SWIFT_CLASS("_TtC6GFPSDK23GFPVideoAdPlayerSetting")
 
 
 SWIFT_CLASS("_TtC6GFPSDK26GFPVideoAdRenderingSetting")
-@interface GFPVideoAdRenderingSetting : NSObject
+@interface GFPVideoAdRenderingSetting : NSObject <GFPLanguagePresentable>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger GFPVideoAdRenderingSettingAutodetectBitrate;)
 + (NSInteger)GFPVideoAdRenderingSettingAutodetectBitrate SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVideoAdRenderingSettingDefaultStartTimeout;)
@@ -1608,6 +1662,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// false: GFPVideoAdScheduleManager.videoView 혹은 GFPVideoAdmanager.videoView 의 너비에 따라 컴포넌트를 그림.
 /// true: 광고 영상의 실제 width 에 따라 컴포넌트를 그림.
 @property (nonatomic) BOOL isPreferContentWidthUI;
+/// 광고 UI 컴포넌트의 언어 설정 (기본값: none)
+/// <ul>
+///   <li>
+///     언어는 한국어, 영어, 프랑스어, 스페인어, 중국 번체 (홍콩/대만), 태국어, 인도네시아어를 지원합니다.
+///   </li>
+///   <li>
+///     none으로 설정 시 디바이스의 언어를 기반으로 렌더링 되며, 지원하지 않는 언어일 경우 영어로 노출됩니다.
+///   </li>
+/// </ul>
+@property (nonatomic) GFPLanguageType preferredLanguage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -23,7 +23,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"7.0.1"
+#define GFP_SDK_VERSION              @"7.2.0"
 
 @interface GFPCoreConfig : NSObject
 
@@ -46,7 +46,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly, assign) GFPATTAuthorizationStatus attStatus;
 
-@property (nonatomic, strong, readonly) NSString *gfpUserAgent;
+@property (nonatomic, strong, readonly, nullable) NSString *gfpUserAgent;
+@property (nonatomic, strong, readonly) NSString *gfpWkWebViewUA;
+@property (nonatomic, strong, readonly) NSString *appVersion;
 
 - (void)updateUserAgentWith:(NSString *)externalUserAgent;
 - (BOOL)limitAdTracking;

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPRichTrackingURLs : NSObject
 
 - (instancetype)initWithTrackingArr:(NSArray *)richTrackingArr;
-- (GFPRichDetailInfo *)trackingWithKey:(NSString *)key;
+- (GFPRichDetailInfo * _Nullable)trackingWithKey:(NSString *)key;
 @end
 
 NS_ASSUME_NONNULL_END

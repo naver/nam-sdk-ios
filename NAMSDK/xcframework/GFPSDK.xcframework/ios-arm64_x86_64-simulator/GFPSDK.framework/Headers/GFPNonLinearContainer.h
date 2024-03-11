@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <GFPNonLinearDelegate> delegate;
 
-@property (nonatomic, strong) GFPNonLinearAdView *nonLinearView;
+@property (nonatomic, strong, nullable) GFPNonLinearAdView *nonLinearView;
 
 @property (nonatomic, strong) GFPTextAdViewAttribute *textAdAttribute;
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GFPNativeLanguageType.h"
+#import "GFPLanguageType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, GFPAdChoicesType) {
 @property (nonatomic, strong, readonly) NSArray <NSString *> *reasonCodes;
 
 - (NSString * _Nullable)textWith:(NSString *)reasonCode;
-- (NSString * _Nullable)textWith:(NSString *)reasonCode languageType:(GFPNativeLanguageType)languageType;
+- (NSString * _Nullable)textWith:(NSString *)reasonCode languageType:(GFPLanguageType)languageType;
 
 - (NSString * _Nullable)resourceIdWith:(NSString *)reasonCode;
 

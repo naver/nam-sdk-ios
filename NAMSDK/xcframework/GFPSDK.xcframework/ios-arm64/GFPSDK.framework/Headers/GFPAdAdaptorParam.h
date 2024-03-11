@@ -55,9 +55,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- * IMA vastLoadTimeout
-*/
-@property (readonly, nonatomic, strong, nullable) NSNumber *loadTimeoutSec;
+ * 각 광고 별 timeout
+ * - 광고 어댑터에선 IMA vastLoadTimeout 에 사용
+ */
+@property (readonly, nonatomic, strong, nullable) NSNumber *loadTimeout;
 
 
 /**

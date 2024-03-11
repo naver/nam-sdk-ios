@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class GFPQoeTrackingInfo;
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPVideoPlayPolicy) {
@@ -70,6 +72,12 @@ typedef NS_OPTIONS(NSInteger, GFPVideoPlayPolicy) {
  * 광고 영상의 전역 설정 사용 여부를 조회합니다.
  */
 @property (nonatomic, readonly, assign) BOOL useGlobalOptions;
+
+
+/**
+ * 광고 영상의 qoe 로깅을 위해 정보를 전달합니다.
+ */
+@property (nonatomic, strong, nullable) GFPQoeTrackingInfo *qoeTrackingInfo;
 
 
 + (instancetype)createGlobalOptionsWithUseCustomControlView:(BOOL)useCustomControlView;

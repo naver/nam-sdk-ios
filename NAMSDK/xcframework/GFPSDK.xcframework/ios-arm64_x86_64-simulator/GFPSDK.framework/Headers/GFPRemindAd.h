@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, assign) BOOL isBanner;
 @property (readonly, nonatomic, strong, nullable) NSURL *bannerURL;
 
-- (instancetype)initWithDomElement:(DDXMLElement *)aElement nonLinear:(NonLinear *)aNonLinear info:(NonlinearInfo *)aInfo error:(GFPError * _Nullable * _Nullable)aError;
+- (instancetype)initWithDomElement:(DDXMLElement *)aElement nonLinear:(NonLinear *)aNonLinear info:(NonlinearInfo * _Nullable)aInfo error:(GFPError * _Nullable * _Nullable)aError;
 
 
 @end

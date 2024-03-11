@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Swift-Enum.h"
 #import "GFPNativeAdRenderingSetting.h"
-#import "GFPNativeLanguageType.h"
 
 @import NaverAdsServices;
 
@@ -32,12 +31,5 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-
-
-@interface GFPNativeLanguageUtils : NSObject
-
-+ (NSString * _Nullable)languageCodeWith:(GFPNativeLanguageType)languageType;
-
-@end
 
 NS_ASSUME_NONNULL_END

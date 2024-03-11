@@ -96,7 +96,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public init(size: Swift.Int)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdRenderingSetting : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdRenderingSetting : ObjectiveC.NSObject, GFPSDK.GFPLanguagePresentable {
   @objc public static let GFPVideoAdRenderingSettingAutodetectBitrate: Swift.Int
   @objc public static let GFPVideoAdRenderingSettingDefaultStartTimeout: Swift.Double
   @objc public static let GFPVideoAdRenderingSettingDefaultBufferingTimeout: Swift.Double
@@ -105,6 +105,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public var startTimeoutInterval: Foundation.TimeInterval
   @objc public var bufferingTimeoutInterval: Foundation.TimeInterval
   @objc public var isPreferContentWidthUI: Swift.Bool
+  @objc public var preferredLanguage: GFPSDK.GFPLanguageType
   @objc override dynamic public init()
   @objc deinit
 }
@@ -185,6 +186,11 @@ extension GFPSDK.GFPErrorUtils {
   }
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPStringUtilsExtension : ObjectiveC.NSObject {
+  @objc(createTransactionId) public class func createTransactionId() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public enum GFPOMContantsType : Swift.Int {
   case HTML
   case HTMLVideo
@@ -196,6 +202,19 @@ extension GFPSDK.GFPErrorUtils {
   public var rawValue: Swift.Int {
     get
   }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPQoeTrackingInfo : ObjectiveC.NSObject {
+  @objc final public let urlString: Swift.String
+  @objc final public let timeTable: [Swift.Int]
+  @objc final public let serviceId: Swift.String
+  @objc final public let ownerServiceId: Swift.String
+  @objc final public let appId: Swift.String
+  @objc final public let viewerInfo: Swift.String
+  @objc(isValid) public var isValid: Swift.Bool {
+    @objc get
+  }
+  @objc(createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:) public static func createQoeTrackingInfo(host: Swift.String, path: Swift.String, timeTable: [Swift.Int], serviceId: Swift.String, ownerServiceId: Swift.String, appId: Swift.String, viewerInfo: Swift.String) -> GFPSDK.GFPQoeTrackingInfo
+  @objc deinit
 }
 @objc public protocol GFPEventReportDelegate : ObjectiveC.NSObjectProtocol {
   @objc func reportTrackingAckImp(_ aURL: Swift.String)
