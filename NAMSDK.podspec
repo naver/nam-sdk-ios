@@ -42,11 +42,15 @@ Pod::Spec.new do |s|
     ndaVideo.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationNDAVideo.xcframework"
     ndaVideo.resources = ['NAMSDK/ResourceBundle/GFPNDAVideoResource.bundle']
     ndaVideo.dependency 'NAMSDK/GFPSDK'
+    ndaVideo.dependency 'NAMSDK/MediationNDA'
+
   end
   
   s.subspec 'MediationNDARich' do |ndaRich|
     ndaRich.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationNDARich.xcframework"
     ndaRich.dependency 'NAMSDK/GFPSDK'
+    ndaRich.dependency 'NAMSDK/MediationNDA'
+    ndaRich.dependency 'NAMSDK/MediationNDAVideo'
   end
   
 
