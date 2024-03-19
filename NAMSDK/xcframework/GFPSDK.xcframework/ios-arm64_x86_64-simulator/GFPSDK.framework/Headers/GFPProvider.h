@@ -71,6 +71,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPProvider : NSObject
 
+@property (nonatomic, assign) BOOL isBlacklisted;
+
 @end
 
 NS_ASSUME_NONNULL_END

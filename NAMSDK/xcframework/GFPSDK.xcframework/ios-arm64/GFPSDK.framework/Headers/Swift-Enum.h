@@ -55,7 +55,13 @@ typedef NS_OPTIONS(NSInteger, GFPNonLinearContainerType) {
     GFPNonLinearContainerTypeOuter = 1,
     GFPNonLinearContainerTypeInner = 2,
 };
-typedef NS_OPTIONS(NSInteger, GFPOMContantsType);
+typedef NS_OPTIONS(NSInteger, GFPOMContantsType) {
+    GFPOMContantsTypeHTML = 1,
+    GFPOMContantsTypeHTMLVideo = 2,
+    GFPOMContantsTypeVideo = 3,
+    GFPOMContantsTypeImage = 4,
+    GFPOMContantsTypeAudio = 5,
+};
 
 typedef NS_ENUM(NSInteger, GFPNativeAdMediaType){
     GFPNativeAdMediaTypeUnknown = 0,

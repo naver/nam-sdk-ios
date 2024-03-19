@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Xu3pB7DQ9jDVSYWq70WXdsGr8vo=
+		QPSCmkP3jthZFAQPlIGymt65Mdc=
 		</data>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,11 +54,19 @@
 		</data>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MlUQP484yDrZW0MkeTWEtReUDEw=
+		Vjo6mULlpmoKNgU0N0B7/G3TyY8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		OWXtRZ57OJ7b7Flsoxp6amRRZnI=
+		</data>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<data>
+		FNqCD2wcwTEDJknKcr0bIHwQq/0=
+		</data>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		k9OFlDPBRWfteJ+bfG12WAoBuls=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -133,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xu3pB7DQ9jDVSYWq70WXdsGr8vo=
+			QPSCmkP3jthZFAQPlIGymt65Mdc=
 			</data>
 			<key>hash2</key>
 			<data>
-			fQ308FWgTBeJxpj0A1wxPAwoxxr5QjHC/SDDAHMOhV0=
+			oVRtcPN8JvVUseH5pJ20/nDLtA0yVK1xjrAMseqmVVo=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -188,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MlUQP484yDrZW0MkeTWEtReUDEw=
+			Vjo6mULlpmoKNgU0N0B7/G3TyY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZFh2ac+rL3LWHQpCQznnNsLE+umYWN1e8gqLN43p+xI=
+			8qAPAmVz4mkJBqNBro0iV8fPs6xWjywmZ1SeBiqtr3Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -204,6 +212,28 @@
 			<key>hash2</key>
 			<data>
 			4eVUwoRt6xFV868nvcKHvFQMX77hJ1JGCcDt9LUMcSs=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FNqCD2wcwTEDJknKcr0bIHwQq/0=
+			</data>
+			<key>hash2</key>
+			<data>
+			j4xXdP6C+V6Sho11lF0485HD8D+bm4+ngkCegDjnwbk=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k9OFlDPBRWfteJ+bfG12WAoBuls=
+			</data>
+			<key>hash2</key>
+			<data>
+			RbetuZ/NLZYqHIAPv8wTJbV6f6QWX0FhgjI7tf/pyQA=
 			</data>
 		</dict>
 	</dict>

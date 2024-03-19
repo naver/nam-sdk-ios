@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPNativeMediaExtensionInfo;
 @class GFPNativeStyleInfo;
 @class GFPLabelOption;
+@class GFPAdStyleOption;
 
 @protocol GFPNativeAdInfoLinkPresentable <NSObject>
 
@@ -55,9 +56,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong, nullable) GFPNativeExtensionInfo *extensionInfo;
 
+@end
+
+
+@protocol GFPNativeAdLabelOptionPresentable <GFPNativeAdInfoExtStylePresentable>
+
 - (GFPLabelOption *)labelOptionWith:(BOOL)isDarkMode;
 
 @end
+
+
+@protocol GFPNativeAdStyleOptionPresentable <GFPNativeAdInfoExtStylePresentable>
+
+- (GFPAdStyleOption *)adStyleOptionWith:(BOOL)isDarkMode;
+
+@end
+
 
 @protocol GFPNativeAdInfoSource <NSObject>
 

@@ -19,6 +19,12 @@ typedef NS_OPTIONS(NSInteger, GFPVideoPlayPolicy) {
 };
 
 
+typedef NS_OPTIONS(NSInteger, GFPVideoViewType) {
+    GFPVideoViewTypeDefault,
+    GFPVideoViewTypeLanding,
+};
+
+
 @interface GFPVideoGlobalOptions : NSObject
 
 /**
@@ -55,6 +61,13 @@ typedef NS_OPTIONS(NSInteger, GFPVideoPlayPolicy) {
 @property (nonatomic, readonly, assign) GFPVideoPlayPolicy playPolicy;
 
 /**
+ * 광고 영상의 view type 을 설정합니다.
+ * - Default: 영상 화면 클릭 시 컨트롤 버튼이 노출됩니다.
+ * - Landing: 영상 화면 클릭 시 광고주 사이트로 랜딩 됩니다.
+ */
+@property (nonatomic, readonly, assign) GFPVideoViewType viewType;
+
+/**
  * 광고 영상의 Custom Control View 사용 여부를 설정합니다. (기본값 false)
  * true로 설정 시 control 구성 요소를 숨기며, false로 설정 시 sdk 내에서 control 구성 요소를 그려줍니다.
  */
@@ -80,9 +93,13 @@ typedef NS_OPTIONS(NSInteger, GFPVideoPlayPolicy) {
 @property (nonatomic, strong, nullable) GFPQoeTrackingInfo *qoeTrackingInfo;
 
 
++ (instancetype)createGlobalOptionsWithViewType:(GFPVideoViewType)viewType;
 + (instancetype)createGlobalOptionsWithUseCustomControlView:(BOOL)useCustomControlView;
++ (instancetype)createGlobalOptionsWithViewType:(GFPVideoViewType)viewType useCustonControlView:(BOOL)useCustomControlView;
 
+- (instancetype)initWithPlayPolicy:(GFPVideoPlayPolicy)playPolicy viewType:(GFPVideoViewType)viewType;
 - (instancetype)initWithPlayPolicy:(GFPVideoPlayPolicy)playPolicy useCustomControlView:(BOOL)useCustomControlView;
+- (instancetype)initWithPlayPolicy:(GFPVideoPlayPolicy)playPolicy viewType:(GFPVideoViewType)viewType useCustomControlView:(BOOL)useCustomControlView;
 
 @end
 

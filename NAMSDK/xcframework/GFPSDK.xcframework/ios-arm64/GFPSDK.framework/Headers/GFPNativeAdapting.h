@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString * _Nullable)body;
 
+- (GFPLabelOption * _Nullable)bodyOption;
+
 - (NSString * _Nullable)advertiser;
 
 - (NSString * _Nullable)badge;
@@ -56,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateMediaViewLayout;
 
 - (GFPAdStyleType)adStyleType;
+
+- (GFPAdStyleOption * _Nullable)adStyleOption;
 
 - (BOOL)isInvalid;
 
@@ -84,6 +88,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (GFPAdChoicesData * _Nullable)adChoicesData;
 
 - (NSString * _Nullable)extraTextWith:(NSString *)key;
+
+- (GFPLabelOption * _Nullable)extraLabelOptionWith:(NSString *)key;
 
 - (void)applyExtraViewLink:(NSString *)key withView:(UIView *)extraView;
 

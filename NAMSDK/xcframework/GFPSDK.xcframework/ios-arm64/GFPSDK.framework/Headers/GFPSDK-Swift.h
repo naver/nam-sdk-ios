@@ -382,6 +382,17 @@ SWIFT_CLASS("_TtC6GFPSDK20GFPAdProviderSetting")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UIColor;
+
+SWIFT_CLASS("_TtC6GFPSDK16GFPAdStyleOption")
+@interface GFPAdStyleOption : NSObject
+/// 배경 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable backgroundColor;
+- (nonnull instancetype)initWithBackgroundColor:(UIColor * _Nullable)backgroundColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// GFP에서 지원하는 배너광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionNone = 0,
@@ -507,7 +518,6 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionAPS = 9,
 };
 
-@class UIColor;
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPLabelOption")
 @interface GFPLabelOption : NSObject
@@ -515,9 +525,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 + (UIColor * _Nullable)defaultHighlightBgColor SWIFT_WARN_UNUSED_RESULT;
 /// Label 에 해당하는 문자열.
 @property (nonatomic, readonly, copy) NSString * _Nullable text;
-/// 광고의 색상 전환이 필요할 때 텍스트 색상
+/// Label 의 텍스트 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable textColor;
+/// 광고의 색상 전환이 필요할 때 배경 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable highlightBgColor;
-- (nonnull instancetype)initWithText:(NSString * _Nullable)text highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text highlightBgColor:(UIColor * _Nullable)highlightBgColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -575,14 +589,6 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionFAN = 3,
   GFPNativeProviderOptionInMobi = 4,
   GFPNativeProviderOptionAppLovin = 5,
-};
-
-typedef SWIFT_ENUM(NSInteger, GFPOMContantsType, open) {
-  GFPOMContantsTypeHTML = 0,
-  GFPOMContantsTypeHTMLVideo = 1,
-  GFPOMContantsTypeVideo = 2,
-  GFPOMContantsTypeImage = 3,
-  GFPOMContantsTypeAudio = 4,
 };
 
 

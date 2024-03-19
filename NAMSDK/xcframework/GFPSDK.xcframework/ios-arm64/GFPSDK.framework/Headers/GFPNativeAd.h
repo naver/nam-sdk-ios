@@ -18,6 +18,7 @@
 @class GFPMediaData;
 @class GFPLabelOption;
 @class GFPAdChoicesData;
+@class GFPAdStyleOption;
 
 @protocol GFPNativeAdDelegate;
 @protocol GFPNativeSimpleAdDelegate;
@@ -108,6 +109,8 @@ extern NSString *const kGFPNativeIconSizeKey;
 @property (readwrite, nonatomic, weak) id <GFPNativeAdDelegate> delegate;
 @property (readwrite, nonatomic, weak) id <GFPUserInterestDelegate> userInterestDelegate;
 
+@property (nullable, readonly, nonatomic, strong) GFPAdStyleOption *adStyleOption;
+
 /**
  * 타이틀
  */
@@ -117,7 +120,7 @@ extern NSString *const kGFPNativeIconSizeKey;
  * 본문
  */
 @property (nullable, readonly, nonatomic, strong) NSString *body;
-
+@property (nullable, readonly, nonatomic, strong) GFPLabelOption *bodyOption;
 
 /**
  * 광고주 명
@@ -163,6 +166,7 @@ extern NSString *const kGFPNativeIconSizeKey;
  * s2s 광고 시 Extra Texts
  */
 - (NSString * _Nullable)extraTextWith:(NSString *)key;
+- (GFPLabelOption * _Nullable)extraLabelOptionWith:(NSString *)key;
 
 
 /**

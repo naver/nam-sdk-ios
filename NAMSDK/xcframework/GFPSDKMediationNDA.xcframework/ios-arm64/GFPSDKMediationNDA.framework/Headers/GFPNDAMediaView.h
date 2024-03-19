@@ -64,6 +64,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)didAdMuteChangeWith:(GFPNDAAdMuteState)aState; //for NS Ad.
 - (void)didReloadWith:(GFPNDAMediaViewType)aType;
 - (void)didReloadFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
+- (void)didTappedLandingViewWith:(GFPNDAMediaViewType)aType landingUrl:(NSString *)landingUrl trackers:(NSArray <NSString *> *)trackers;
 
 - (void)didRenderingFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
 

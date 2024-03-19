@@ -33,8 +33,11 @@ extension GFPSDK.GFPErrorUtils {
 @objc @objcMembers public class GFPLabelOption : ObjectiveC.NSObject {
   @objc(defaultHighlightBgColor) public static let defaultHighlightBgColor: UIKit.UIColor?
   @objc final public let text: Swift.String?
+  @objc final public let textColor: UIKit.UIColor?
   @objc final public let highlightBgColor: UIKit.UIColor?
-  @objc(initWithText:highlightBgColor:) public init(text: Swift.String?, highlightBgColor: UIKit.UIColor?)
+  @objc convenience public init(text: Swift.String?, highlightBgColor: UIKit.UIColor?)
+  @objc convenience public init(text: Swift.String?, textColor: UIKit.UIColor?)
+  @objc(initWithText:textColor:highlightBgColor:) public init(text: Swift.String?, textColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
   @objc deinit
 }
 @objc public protocol GFPEventReportPresentable : ObjectiveC.NSObjectProtocol {
@@ -190,18 +193,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc(createTransactionId) public class func createTransactionId() -> Swift.String
   @objc override dynamic public init()
   @objc deinit
-}
-@objc public enum GFPOMContantsType : Swift.Int {
-  case HTML
-  case HTMLVideo
-  case video
-  case image
-  case audio
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPQoeTrackingInfo : ObjectiveC.NSObject {
   @objc final public let urlString: Swift.String
@@ -423,6 +414,11 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
 @objc public protocol GFPS2SAdClickDelegate : ObjectiveC.NSObjectProtocol {
   @objc func openURLWith(_ urlString: Swift.String, landingHandler: (Swift.Bool) -> Swift.Void)
 }
+@objc @objcMembers public class GFPAdStyleOption : ObjectiveC.NSObject {
+  @objc final public let backgroundColor: UIKit.UIColor?
+  @objc(initWithBackgroundColor:) public init(backgroundColor: UIKit.UIColor?)
+  @objc deinit
+}
 @objc public enum GFPVideoDisplayType : Swift.Int {
   case normal
   case casting
@@ -505,9 +501,6 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Equatable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Hashable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.RawRepresentable {}
-extension GFPSDK.GFPOMContantsType : Swift.Equatable {}
-extension GFPSDK.GFPOMContantsType : Swift.Hashable {}
-extension GFPSDK.GFPOMContantsType : Swift.RawRepresentable {}
 extension GFPSDK.GFPBannerProviderOption : Swift.Equatable {}
 extension GFPSDK.GFPBannerProviderOption : Swift.Hashable {}
 extension GFPSDK.GFPBannerProviderOption : Swift.RawRepresentable {}

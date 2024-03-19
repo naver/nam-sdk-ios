@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPProviding <NSObject>
 
+
 @optional
 
 @property (readonly, nonatomic, strong, nullable) GFPExtraRequestParam *extraRequestParam;
@@ -29,8 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @required
 
-- (NSString *)providerType;
+@property (nonatomic, assign) BOOL isBlacklisted;
 
+- (NSString *)providerType;
 
 - (NSArray <GFPProviderRenderType> *)providerRenderTypes;
 

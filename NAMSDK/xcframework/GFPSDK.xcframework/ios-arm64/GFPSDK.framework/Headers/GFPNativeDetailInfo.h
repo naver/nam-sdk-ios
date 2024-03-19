@@ -110,6 +110,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPNativeStyleBaseInfo : NSObject
 
 @property (nonatomic, readonly, strong, nullable) UIColor *bgColor;
+@property (nonatomic, readonly, strong, nullable) UIColor *textColor;
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
 
@@ -118,7 +119,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNativeStyleDetailInfo : GFPNativeStyleBaseInfo
 
-@property (nonatomic, readonly, strong, nullable) UIColor *textColor;
 @property (nonatomic, readonly, assign) float alpha;
 @property (nonatomic, readonly, assign) float radius;
 @property (nonatomic, readonly, assign) float leftMargin;
@@ -173,7 +173,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface GFPNativeBodyInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable>
+@interface GFPNativeBodyInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable, GFPNativeAdLabelOptionPresentable>
 
 - (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
 
@@ -206,7 +206,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface GFPNativeCTAInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoExtStylePresentable>
+@interface GFPNativeCTAInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable, GFPNativeAdLabelOptionPresentable>
 
 - (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
 
@@ -220,7 +220,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface GFPNativeExtraTextInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable>
+@interface GFPNativeExtraTextInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable, GFPNativeAdLabelOptionPresentable>
 
 - (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
 
