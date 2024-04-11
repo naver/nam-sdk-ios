@@ -5,13 +5,7 @@
 import AppLovinSDK
 import Foundation
 import GFPSDK
-import NaverAdsServices
 import Swift
-import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension AppLovinSDK.ALSdk {
-  public func applyUserParam(_ userParam: GFPSDK.GFPUserParam)
-  public func applyAdParam(_ adParam: GFPSDK.GFPAdParam)
-}

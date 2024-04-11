@@ -32,7 +32,6 @@ FOUNDATION_EXPORT NSString *const GFPNativeProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderInMobiErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderNDAErrorKey;
-FOUNDATION_EXPORT NSString *const GFPNativeProviderAppLovinErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderUnityErrorKey;

@@ -18,7 +18,7 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
     GFPAdChoicesViewPositionTopRightCorner = 1,
     GFPAdChoicesViewPositionTopLeftCorner,
     GFPAdChoicesViewPositionBottomRightCorner,
-    GFPAdChoicesViewPositionBottomLeftCorner
+    GFPAdChoicesViewPositionBottomLeftCorner,
 };
 
 @interface GFPNativeBaseRenderingSetting : NSObject
@@ -30,6 +30,14 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * 기본값은 우측상단입니다.
  */
 @property (nonatomic, assign) GFPAdChoicesViewPosition preferredAdChoicesViewPosition;
+
+/**
+ * 네이티브 광고에 adChoicesView 위치를 미디어 크기로 정할 지
+ * 전체 광고뷰로 정할 지 설정하는 옵션입니다.
+ * s2s 광고에 한해 지원되며, YES인 경우 전체 광고뷰로 설정합니다.
+ * 기본값은 NO입니다.
+ */
+@property (nonatomic, assign) BOOL adChoicesPositionInFullAdView;
 
 /**
  * 네이티브 광고의 스타일을 설정합니다. (ex. adChoicesView 색상, rich media 광고 배경색 등)

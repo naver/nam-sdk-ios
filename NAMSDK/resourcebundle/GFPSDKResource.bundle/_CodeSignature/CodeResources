@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		jR5kks/wyXPVXeOvTLbLYPKn2g0=
+		</data>
 		<key>omsdk-v1.js</key>
 		<data>
 		7tJM4K60twtKlup5Di8UBO23EjM=
@@ -11,6 +15,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jR5kks/wyXPVXeOvTLbLYPKn2g0=
+			</data>
+			<key>hash2</key>
+			<data>
+			gOOIgdv7OxZfnvNc+kOyjqwA1bGAWKEnWIwpQZOEHJ8=
+			</data>
+		</dict>
 		<key>omsdk-v1.js</key>
 		<dict>
 			<key>hash</key>

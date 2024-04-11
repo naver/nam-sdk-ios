@@ -12,6 +12,34 @@
 		<data>
 		Nzixd+sidiRu95dv4ZezAvl2K88=
 		</data>
+		<key>InMobiSDK_Privacy.bundle/Info.plist</key>
+		<data>
+		JPbYbMlc63RIKYogoCZd+qfP270=
+		</data>
+		<key>InMobiSDK_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		BLNjR6VVI/K82v3iQCE5o0YXgGI=
+		</data>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		/VEUlKi3Gf26hSpypjRNPmkFq4M=
+		</data>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		xWTiQ0jzqMSRSHs490p5qXfjp6o=
+		</data>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		6GriyQd76WXsySFOvU9YN5PbZS8=
+		</data>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		F4ggJzPIUIvlBuWtAyZzwZ3DOPA=
+		</data>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		GkSO/H6qgatutUcrAYw+DWRC6Hk=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		/Swa0Cpys+SPQDBDBpY+Wo2FFp8=
@@ -83,6 +111,83 @@
 			<key>hash2</key>
 			<data>
 			G8y6XQ3yfwQFSvVZslArA70iADuZuUwWKMFZasoWywk=
+			</data>
+		</dict>
+		<key>InMobiSDK_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JPbYbMlc63RIKYogoCZd+qfP270=
+			</data>
+			<key>hash2</key>
+			<data>
+			qel2cFsd4X3NtiIkJpgwUPznu9XZRrWC9zPrT5FGx3Y=
+			</data>
+		</dict>
+		<key>InMobiSDK_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BLNjR6VVI/K82v3iQCE5o0YXgGI=
+			</data>
+			<key>hash2</key>
+			<data>
+			ES/wHPURrhqoWqlouH6JyVI5Y7FKY1pgaWMpkbPGo0E=
+			</data>
+		</dict>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/VEUlKi3Gf26hSpypjRNPmkFq4M=
+			</data>
+			<key>hash2</key>
+			<data>
+			jxA0daVxlc1PdALnxK0kLAnury5Q5MbPsGQSanr/T9Q=
+			</data>
+		</dict>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xWTiQ0jzqMSRSHs490p5qXfjp6o=
+			</data>
+			<key>hash2</key>
+			<data>
+			i4f8tsw4pDyOqMukPfnWLE1SeKAwn/pm400x0Q1bK6o=
+			</data>
+		</dict>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6GriyQd76WXsySFOvU9YN5PbZS8=
+			</data>
+			<key>hash2</key>
+			<data>
+			HGnDPUYFXoulQGgFoFMLAhvhX+QUEAwRjRtceOUkqU4=
+			</data>
+		</dict>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F4ggJzPIUIvlBuWtAyZzwZ3DOPA=
+			</data>
+			<key>hash2</key>
+			<data>
+			RHnzWDvvpqNg6zRX8x3W0Dcha86nD0LFax4EHL9eaVE=
+			</data>
+		</dict>
+		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GkSO/H6qgatutUcrAYw+DWRC6Hk=
+			</data>
+			<key>hash2</key>
+			<data>
+			WnhUOvZSpDdaepCWHmxwETr7ggtZYtqskrCEjwxD0sg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

@@ -40,6 +40,14 @@
 		<data>
 		stQE2b9NRCxNJQ1+smKaDIBgPQo=
 		</data>
+		<key>UnityAds.bundle/Info.plist</key>
+		<data>
+		idbujaneGcm2rrOGB6kLC5+4Fj8=
+		</data>
+		<key>UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -129,6 +137,28 @@
 			<key>hash2</key>
 			<data>
 			ibuh5tZJQPdwl1YqMSjSVupSbbw9KDEoARbuaFDOT+M=
+			</data>
+		</dict>
+		<key>UnityAds.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			idbujaneGcm2rrOGB6kLC5+4Fj8=
+			</data>
+			<key>hash2</key>
+			<data>
+			tUNC9H485MjX0eFZUIapiVDrbk8btQU1ZFcGarmST04=
+			</data>
+		</dict>
+		<key>UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			f3FIPJmP/SZx3Vlg4pLmKnlyAbkHD2JKFo75koJnVG4=
 			</data>
 		</dict>
 	</dict>

@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationAPS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tpEF9igU0S2xJuucA/+8Qi1hszs=
+		g3i0urbarCECzanS080OqUfWEMg=
 		</data>
 		<key>Modules/GFPSDKMediationAPS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationAPS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Hacguache+Jsma6NDb3FW8O8LhA=
+		JMp3lFvQPp9Tgh4G55Sr7BqL/cU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,11 +118,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tpEF9igU0S2xJuucA/+8Qi1hszs=
+			g3i0urbarCECzanS080OqUfWEMg=
 			</data>
 			<key>hash2</key>
 			<data>
-			PEAG/7DjLkiTSyz9eKId5qDP2M8PnJezgX3zu9hdI28=
+			BalzD7Bdv8W3iqqwvklUqpYNZ8zz5XWFEG1RVNyyEbA=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationAPS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hacguache+Jsma6NDb3FW8O8LhA=
+			JMp3lFvQPp9Tgh4G55Sr7BqL/cU=
 			</data>
 			<key>hash2</key>
 			<data>
-			9G20cd2LSu2RmGB0DiTDtTARXo1zuLTwLZXPIjB6vHs=
+			6gURHDcXB7YoxBPNeLSukcy2gh3/paUkPo/O/Y9kd0Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

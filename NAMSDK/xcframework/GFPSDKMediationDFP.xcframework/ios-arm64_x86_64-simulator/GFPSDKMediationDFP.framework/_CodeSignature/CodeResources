@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<data>
+		513FEhUxPHjbxpwGw1DExHcC1V4=
+		</data>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		VWCA3MeaiPMoOAS1uOteTSLX8js=
+		</data>
 		<key>Headers/GFPSDKMediationDFP-Swift.h</key>
 		<data>
 		sEwNihD5dMD0DXNx/tFYZcOSaVc=
@@ -34,7 +42,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QPSCmkP3jthZFAQPlIGymt65Mdc=
+		xoBC1Iubicd7NsvIK4Ri2a9DGHI=
 		</data>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,7 +62,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vjo6mULlpmoKNgU0N0B7/G3TyY8=
+		g113Fwo4j4P2V35SLCajXpxlGTQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,6 +79,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			513FEhUxPHjbxpwGw1DExHcC1V4=
+			</data>
+			<key>hash2</key>
+			<data>
+			A/Gj1qIYMIFtmXFPssNCtOMhv7IfDMs3BoKZw62slM0=
+			</data>
+		</dict>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VWCA3MeaiPMoOAS1uOteTSLX8js=
+			</data>
+			<key>hash2</key>
+			<data>
+			afsRJYL8I/wGxjXJYdJio/e0tWVNKEeHSR3jAA2t+dI=
+			</data>
+		</dict>
 		<key>Headers/GFPSDKMediationDFP-Swift.h</key>
 		<dict>
 			<key>hash</key>
@@ -141,11 +171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QPSCmkP3jthZFAQPlIGymt65Mdc=
+			xoBC1Iubicd7NsvIK4Ri2a9DGHI=
 			</data>
 			<key>hash2</key>
 			<data>
-			oVRtcPN8JvVUseH5pJ20/nDLtA0yVK1xjrAMseqmVVo=
+			H3b4fNFhFKsX53jY7y1x8nSibGtWSpM1I7kmB0B1m3c=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDFP.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -196,11 +226,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vjo6mULlpmoKNgU0N0B7/G3TyY8=
+			g113Fwo4j4P2V35SLCajXpxlGTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8qAPAmVz4mkJBqNBro0iV8fPs6xWjywmZ1SeBiqtr3Y=
+			sWAMrIYUDIOzHYipUyOnRuebC/36IhsfBj5OjJANKFk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

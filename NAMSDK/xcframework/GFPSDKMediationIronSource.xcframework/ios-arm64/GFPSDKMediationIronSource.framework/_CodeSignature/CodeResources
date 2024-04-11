@@ -12,9 +12,17 @@
 		<data>
 		67apkL+CU5XXxSmTNsIHkjxVgRw=
 		</data>
+		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
+		<data>
+		392qbtNgyShs9obizD7EhxCRiDI=
+		</data>
+		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		BLNjR6VVI/K82v3iQCE5o0YXgGI=
+		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		uyagyFZQkygThh7MBcASsgKSVUg=
+		rh9rsjue6f6cotO06Bt5m0ZkX6k=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +38,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xykotzWQXoTGuoB4RByKTFo64D4=
+		yY65LIHZBvOi2UUDs7rSUF1DtEQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,15 +58,37 @@
 			bRxDXy/qbVzZV3f/cBmY6gCaFThKNQ75AYcByiASzxw=
 			</data>
 		</dict>
+		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			392qbtNgyShs9obizD7EhxCRiDI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Lkb+tIeQp6IrODxFrMaCaY/Qvgn44KUwA7aM+FSfjvQ=
+			</data>
+		</dict>
+		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BLNjR6VVI/K82v3iQCE5o0YXgGI=
+			</data>
+			<key>hash2</key>
+			<data>
+			ES/wHPURrhqoWqlouH6JyVI5Y7FKY1pgaWMpkbPGo0E=
+			</data>
+		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uyagyFZQkygThh7MBcASsgKSVUg=
+			rh9rsjue6f6cotO06Bt5m0ZkX6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			fzfFkgmlthnfNK55/4kE7wjaA/coW6lBzEQUsNgV1Rk=
+			TcCAB0zs4gasKBzh/3i1GyQlY28tj1bWGCa0W2NMF0E=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -98,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xykotzWQXoTGuoB4RByKTFo64D4=
+			yY65LIHZBvOi2UUDs7rSUF1DtEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			SJeZkRjR6pFz2h8NTt2mYYBQIUrI9G2/yosE/4bJYk8=
+			tm0tX0bmvAs2PHehL1Xubx4MomYj0lqIeY5Gq5PZ/d8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

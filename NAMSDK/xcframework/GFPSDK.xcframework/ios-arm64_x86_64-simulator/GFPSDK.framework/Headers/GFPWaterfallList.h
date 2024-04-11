@@ -139,6 +139,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPAdInfoEvent : GFPAdEvent
 
+@property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp1px;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp100;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp100p;
 

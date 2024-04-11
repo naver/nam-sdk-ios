@@ -629,7 +629,7 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
 
 SWIFT_PROTOCOL("_TtP6GFPSDK21GFPS2SAdClickDelegate_")
 @protocol GFPS2SAdClickDelegate <NSObject>
-- (void)openURLWith:(NSString * _Nonnull)urlString landingHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(BOOL))landingHandler;
+- (void)openURLWith:(NSString * _Nonnull)urlString landingHandler:(void (^ _Nonnull)(BOOL))landingHandler;
 @end
 
 

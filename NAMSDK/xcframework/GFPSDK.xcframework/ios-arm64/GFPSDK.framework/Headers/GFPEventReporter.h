@@ -64,6 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportMute;
 
+- (void)reportVImp1px;
 - (void)reportVImp100;
 - (void)reportVImp100p;
 

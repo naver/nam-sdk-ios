@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  * This property is readonly and must be set using `setAdView`.
  * It will be null if the ad is rendered in HTML inside the web view.
  */
-@property(readonly, nonatomic, nullable) UIView *adView;
+@property(readonly, nonatomic, weak) UIView *adView;
 
 /**
  * Sets the native view that contains the ad and is used for viewability tracking.

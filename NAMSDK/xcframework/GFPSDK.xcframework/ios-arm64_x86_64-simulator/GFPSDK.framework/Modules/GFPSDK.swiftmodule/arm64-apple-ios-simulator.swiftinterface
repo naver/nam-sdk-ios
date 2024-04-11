@@ -412,7 +412,7 @@ extension GFPSDK.GFPErrorUtils {
 }
 public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
 @objc public protocol GFPS2SAdClickDelegate : ObjectiveC.NSObjectProtocol {
-  @objc func openURLWith(_ urlString: Swift.String, landingHandler: (Swift.Bool) -> Swift.Void)
+  @objc func openURLWith(_ urlString: Swift.String, landingHandler: @escaping GFPSDK.GFPS2SAdLandingHandler)
 }
 @objc @objcMembers public class GFPAdStyleOption : ObjectiveC.NSObject {
   @objc final public let backgroundColor: UIKit.UIColor?

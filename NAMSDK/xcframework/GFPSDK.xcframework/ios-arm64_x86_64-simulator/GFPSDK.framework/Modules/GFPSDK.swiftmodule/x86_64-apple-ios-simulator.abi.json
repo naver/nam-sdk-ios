@@ -14122,15 +14122,12 @@
                     "printedName": "Swift.Bool",
                     "usr": "s:Sb"
                   }
-                ],
-                "typeAttributes": [
-                  "noescape"
                 ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(pl)GFPS2SAdClickDelegate(im)openURLWith:landingHandler:",
-            "mangledName": "$s6GFPSDK21GFPS2SAdClickDelegateP11openURLWith_14landingHandlerySS_ySbXEtF",
+            "mangledName": "$s6GFPSDK21GFPS2SAdClickDelegateP11openURLWith_14landingHandlerySS_ySbctF",
             "moduleName": "GFPSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : GFPSDK.GFPS2SAdClickDelegate>",
             "sugared_genericSig": "<Self where Self : GFPSDK.GFPS2SAdClickDelegate>",
