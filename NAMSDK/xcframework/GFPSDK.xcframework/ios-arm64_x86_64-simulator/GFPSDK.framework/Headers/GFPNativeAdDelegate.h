@@ -100,6 +100,28 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)nativeSimpleAd:(GFPNativeSimpleAd *)nativeSimpleAd didChangeRichAdSizeWith:(CGSize)size;
 
+/**
+ * Rich  Extend 광고에서 미디어뷰 사이즈 확장 완료 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleRichAdExtendComplete:(GFPNativeSimpleAd *)nativeSimpleAd;
+/**
+ * Rich  Extend 광고에서 미디어뷰 사이즈 확장 시작 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleRichAdExtendStart:(GFPNativeSimpleAd *)nativeSimpleAd;
+
+/**
+ * Rich  Extend 광고에서 미디어뷰 사이즈 축소 완료 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleRichAdShrinkComplete:(GFPNativeSimpleAd *)nativeSimpleAd;
+/**
+ * Rich  Extend 광고에서 미디어뷰 사이즈 축소 시작 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleRichAdShrinkStart:(GFPNativeSimpleAd *)nativeSimpleAd;
+
 @end
 
 @protocol GFPNativeVideoEventDelegate <NSObject>

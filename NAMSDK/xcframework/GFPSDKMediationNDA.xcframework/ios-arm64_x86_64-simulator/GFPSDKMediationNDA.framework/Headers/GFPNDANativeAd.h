@@ -38,6 +38,10 @@
 
 @optional
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd richAdExtendSizeChanged:(CGSize)size;
+- (void)nativeRichAdExtendComplete:(GFPNDANativeAd *)nativeAd;
+- (void)nativeRichAdExtendStart:(GFPNDANativeAd *)nativeAd;
+- (void)nativeRichAdShrinkComplete:(GFPNDANativeAd *)nativeAd;
+- (void)nativeRichAdShrinkStart:(GFPNDANativeAd *)nativeAd;
 
 - (void)nativeAdDidReload:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdDidReloadFailed:(GFPNDANativeAd *)nativeAd error:(GFPError *)error;

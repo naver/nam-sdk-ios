@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
 
 #import "GFPNDAPlayerDelegate.h"
 #import "Swift-Enum.h"
@@ -43,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) AVPlayer *player;
 @property (atomic, strong, nullable) AVPlayerItem *playerItem;
 @property (nonatomic, strong, nullable) GFPNDAAVPlayerView *playerLayerView;
+@property (nonatomic, assign) CMTime duration;
 
 
 - (instancetype)initWithFrame:(CGRect)frame mediaURL:(nonnull NSURL *)aURL loudness:(GFPLoudnessNormalization * _Nullable)aLoudness;

@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/GFPCoreConfig.h</key>
 		<data>
-		5Vq50PfDW4A8trT0ymf+gNovd64=
+		dYPiKJJKQ2L/bJbbRWPnQXSJ/CY=
 		</data>
 		<key>Headers/GFPCreativeExtension.h</key>
 		<data>
@@ -258,7 +258,7 @@
 		</data>
 		<key>Headers/GFPNativeAdDelegate.h</key>
 		<data>
-		r6N86sLs2D8IiBSRpG09J0tmBn8=
+		BbDphnFC3Oam24OkNWu96HXUUoU=
 		</data>
 		<key>Headers/GFPNativeAdInfoProtocol.h</key>
 		<data>
@@ -278,7 +278,7 @@
 		</data>
 		<key>Headers/GFPNativeAdaptorDelegate.h</key>
 		<data>
-		FPt2JV7FpMiJV9Jof4HLqKk97sY=
+		bjlnQPuQJNpE13OvyfZ5t2hIIx8=
 		</data>
 		<key>Headers/GFPNativeBaseView.h</key>
 		<data>
@@ -937,11 +937,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5Vq50PfDW4A8trT0ymf+gNovd64=
+			dYPiKJJKQ2L/bJbbRWPnQXSJ/CY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/HUoMoXTUOYgvcyW/vH92D7qDQdvQiMeh/miD/VzZdU=
+			V9xzS/LQWPy3ZZU5JNCw+xAKw0xbIfUnDbIrYO9C118=
 			</data>
 		</dict>
 		<key>Headers/GFPCreativeExtension.h</key>
@@ -1256,11 +1256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r6N86sLs2D8IiBSRpG09J0tmBn8=
+			BbDphnFC3Oam24OkNWu96HXUUoU=
 			</data>
 			<key>hash2</key>
 			<data>
-			FRTvOYQ7RLo0UZbFYKSJlDUaVIqQnY0b94/NgajbTF4=
+			88ygPNoAgUs0HEJDtOZVts4p5AkNUUhU18QA5b2GcNs=
 			</data>
 		</dict>
 		<key>Headers/GFPNativeAdInfoProtocol.h</key>
@@ -1311,11 +1311,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FPt2JV7FpMiJV9Jof4HLqKk97sY=
+			bjlnQPuQJNpE13OvyfZ5t2hIIx8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pc4immIjNa/P/633ElqSKpz6CeVBxkTbAWo/xdck/T0=
+			cqlnAFpHeXL0gnXCQt+llUrx3veSrMZPJKKWEmFvT9I=
 			</data>
 		</dict>
 		<key>Headers/GFPNativeBaseView.h</key>
