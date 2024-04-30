@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "7.5.2"
+  s.version      = "7.5.3"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -16,14 +16,13 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = "12.0"
   s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "#{s.version.to_s}" }
-
   s.default_subspecs = "GFPSDK"
 
   s.subspec 'GFPSDK' do |sdk|
     sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDK.xcframework", "NAMSDK/xcframework/libraries/OMSDK_Navercorp.xcframework"
     sdk.dependency 'KissXML', '~> 5.2'
     sdk.dependency 'Naver-Ads-Services', '~> 1.0.8'
-    sdk.resources = ['NAMSDK/ResourceBundle/GFPSDKResource.bundle']
+    sdk.resources = ["NAMSDK/ResourceBundle/GFPSDKResource.bundle"]
   end
   
   s.subspec 'MediationDFP' do |dfp|
@@ -108,6 +107,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.static_framework = true
+
+  s.resource_bundles = { "NAMSDKResources" => "NAMSDK/xcframework/GFPSDK.xcframework/ios-arm64/GFPSDK.framework/PrivacyInfo.xcprivacy" }    
+
   s.swift_versions = ['5.0']
   
   s.pod_target_xcconfig  = { 'OTHER_LDFLAGS' => '-ObjC' }
