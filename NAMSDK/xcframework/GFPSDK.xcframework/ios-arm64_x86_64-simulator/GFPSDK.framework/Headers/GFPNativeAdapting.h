@@ -91,6 +91,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (GFPLabelOption * _Nullable)extraLabelOptionWith:(NSString *)key;
 
+- (UIImage * _Nullable)extraImageWith:(NSString *)key;
+
 - (void)applyExtraViewLink:(NSString *)key withView:(UIView *)extraView;
 
 - (void)existUserInterestDelegateWith:(BOOL)isExist;

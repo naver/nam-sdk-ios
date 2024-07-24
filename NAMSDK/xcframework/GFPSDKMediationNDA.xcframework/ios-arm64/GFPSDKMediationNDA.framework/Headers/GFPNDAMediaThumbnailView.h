@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class GFPError;
 @class GFPNDAMediaThumbnailView;
+@class GFPNDARichExtendMeta;
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaThumbnailViewType) {
     GFPNDAMediaThumbnailViewTypeDefault = 1,
@@ -24,6 +25,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaThumbnailViewType) {
 @property (nonatomic, assign, readonly) BOOL isLoaded;
 @property (nonatomic, weak, readonly, nullable) UIImage *image;
 
+@property (nonatomic, strong, nullable) GFPNDARichExtendMeta *richExtendMeta;
 
 - (instancetype)initWith:(GFPNDAMediaThumbnailViewType)type enableBgBlur:(BOOL)enableBgBlur;
 

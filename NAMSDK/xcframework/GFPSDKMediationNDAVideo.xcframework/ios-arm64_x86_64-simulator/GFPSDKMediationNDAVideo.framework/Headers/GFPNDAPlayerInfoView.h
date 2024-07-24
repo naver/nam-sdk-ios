@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "GFPLanguageType.h"
-
 @class GFPNDAVastControlInfo;
 @class GFPNDAPlayerInfoView;
 @class GFPTrackingURLs;
@@ -46,8 +44,7 @@ static const CGFloat kPlayerInfoViewMaxHeight = 56.0;
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 - (instancetype)initWithFrame:(CGRect)frame 
-                  controlInfo:(GFPNDAVastControlInfo *)aControlInfo
-                 languageType:(GFPLanguageType)languageType NS_DESIGNATED_INITIALIZER;
+                  controlInfo:(GFPNDAVastControlInfo *)aControlInfo NS_DESIGNATED_INITIALIZER;
 
 - (void)updateCurrentTime:(NSTimeInterval)aCurrentTime;
 

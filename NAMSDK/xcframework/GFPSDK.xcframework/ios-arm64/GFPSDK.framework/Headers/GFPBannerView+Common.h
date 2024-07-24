@@ -22,14 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@protocol GFPEventReportDelegate;
 @class GFPBannerMediator;
 @class GFPLoadResponseInfo;
 
 @interface GFPBannerView ()
 
 
-@property (nonatomic, weak) id <GFPEventReportDelegate> reportDelegate;
 @property (nonatomic, weak, nullable) id <GFPBannerByLoaderDelegate> delegateByLoader;
 
 

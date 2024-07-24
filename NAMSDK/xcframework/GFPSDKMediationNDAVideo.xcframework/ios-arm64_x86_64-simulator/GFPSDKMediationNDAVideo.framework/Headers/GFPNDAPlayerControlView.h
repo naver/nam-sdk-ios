@@ -17,7 +17,6 @@
 
 @class GFPNDAVast;
 @class GFPAdChoiceInfo;
-@class GFPVideoAdRenderingSetting;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,8 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithFrame:(CGRect)frame
                          vast:(GFPNDAVast *)aVast
                 placementType:(GFPVideoPlacementType)aType
-                 adChoiceInfo:(nullable GFPAdChoiceInfo *)adChoiceInfo
-             renderingSetting:(nullable GFPVideoAdRenderingSetting *)renderingSetting NS_DESIGNATED_INITIALIZER;
+                 adChoiceInfo:(nullable GFPAdChoiceInfo *)adChoiceInfo NS_DESIGNATED_INITIALIZER;
 
 - (IBAction)skipTappedByService:(id)sender;
 - (IBAction)moreTappedByService:(id)sender;

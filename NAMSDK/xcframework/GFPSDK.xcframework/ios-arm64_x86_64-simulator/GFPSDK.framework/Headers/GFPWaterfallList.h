@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, assign) BOOL needAdChoice;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict error:(GFPError *_Nullable *_Nullable)error NS_DESIGNATED_INITIALIZER;
 
 @end
@@ -78,7 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, assign) BOOL shouldRegister;
 
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict error:(GFPError *_Nullable *_Nullable)error NS_DESIGNATED_INITIALIZER;
 
@@ -93,7 +93,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSNumber *ratio;
 @property (readonly, nonatomic, strong, nullable) NSNumber *ms;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict NS_DESIGNATED_INITIALIZER;
 - (instancetype _Nullable)initWithRatio:(NSNumber *)ratio ms:(NSNumber *)ms NS_DESIGNATED_INITIALIZER;
 
@@ -109,7 +109,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSNumber *time; //sec
 @property (readonly, nonatomic, strong, nullable) NSNumber *controlType;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict NS_DESIGNATED_INITIALIZER;
 
 @end
@@ -128,10 +128,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *startErrors;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *attachImpressions;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *completeImpressions;
+@property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *lazyRenderMediaFailedImpressions;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *mutes;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *closeImpressions;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)eventTrackingDict NS_DESIGNATED_INITIALIZER;
 @end
@@ -143,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp100;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp100p;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)eventTrackingDict NS_DESIGNATED_INITIALIZER;
 
@@ -156,7 +157,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong, nullable) NSString *url;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype _Nullable)initWithUrl:(NSString *)url NS_DESIGNATED_INITIALIZER;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)eventTrackingObjectDict NS_DESIGNATED_INITIALIZER;
@@ -181,7 +182,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) GFPAdInfoEvent *eventTracking;
 @property (readonly, nonatomic, strong, nullable) GFPAdInfo *adInfo;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)adDict
                                         data:(GFPAdSkipData * _Nullable)data
@@ -215,7 +216,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) GFPRewardedAdInfo *rewardedAdInfo;
 
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
     
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)adInfoDict
                                     skipInfo:(GFPAdSkipInfo * _Nullable)skipInfo
@@ -233,7 +234,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSNumber *height;
 @property (readonly, nonatomic) CGSize size;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)adInfoSizeDict NS_DESIGNATED_INITIALIZER;
 

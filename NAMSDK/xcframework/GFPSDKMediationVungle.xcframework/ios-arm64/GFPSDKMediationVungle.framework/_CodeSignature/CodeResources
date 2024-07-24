@@ -6,35 +6,43 @@
 	<dict>
 		<key>Headers/GFPSDKMediationVungle-Swift.h</key>
 		<data>
-		2/CMU3tyAnM00vFVKqIjlCnVWv0=
+		SYM7zBcLN25omF9zy9y3m4+mO7Y=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/npX5JXMXz8L34w4jZSrTivJvFY=
+		nZL/pY9WkuF/zkQ+skuOcqyVIkg=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		toUCBATzpkiCIKqeeHMBdtrW98U=
+		rCksuXp1eWhEAnT0V+tHcFDaWXs=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		tPqo7BLkO3RElDcQAApXALbeBbg=
+		V59SRNabVPkoHhHybEI2fJ7D/r0=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		rbsS/VpllcWIYyqLmD8bSuvw6Tg=
+		9DuTA1OZAiOjnj3Qh8aI27iKs7M=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		tPqo7BLkO3RElDcQAApXALbeBbg=
+		V59SRNabVPkoHhHybEI2fJ7D/r0=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		pMCWbN9sNZ+FVRpO5ZOdn2SqqeI=
+		1abYouYOdGaJWfUwkQWm9nZU4ew=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Cu7cWO2cl5w11yaQUtgjBU4cH+Q=
+		</data>
+		<key>VungleAds.bundle/Info.plist</key>
+		<data>
+		iZnoaftVGLcbHyBwExfPMC4GPJQ=
+		</data>
+		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		99lHiKAMEwibufp7vGK7r8V203g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,66 +51,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2/CMU3tyAnM00vFVKqIjlCnVWv0=
+			SYM7zBcLN25omF9zy9y3m4+mO7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			XsTr06wskNV4SgU18p0yJX3a7ReXQxMT6lATeRiTGmE=
+			vgXZRZuUmha+FaDqFbNuUb2117kgcJyxHP3B26QLduI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			toUCBATzpkiCIKqeeHMBdtrW98U=
+			rCksuXp1eWhEAnT0V+tHcFDaWXs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fO3+l6qk+sJ0vpWvVKKhLuWpiJ/VfVI35TNvyQeykBI=
+			rG5YDA2gaS9Uh1tC6RcJnb1o3W0bkfR0YKOaNj2leg4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tPqo7BLkO3RElDcQAApXALbeBbg=
+			V59SRNabVPkoHhHybEI2fJ7D/r0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZtGXw8V1NEJYDQQ9qUr4gY8iX6djNjlAq7d1ZJyE5iA=
+			2U9yUxTsn9s9UilkgKP9N46HW18oI5ISaIO58UEj0cU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rbsS/VpllcWIYyqLmD8bSuvw6Tg=
+			9DuTA1OZAiOjnj3Qh8aI27iKs7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			LnB8xbyNVMHm7SQAujREo2uPb1yvwFBgJos30rBEC2E=
+			voP4dPQkKKSg+FZbqPstwp72kKYTvrmZ9Ypg3M8mfEk=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tPqo7BLkO3RElDcQAApXALbeBbg=
+			V59SRNabVPkoHhHybEI2fJ7D/r0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZtGXw8V1NEJYDQQ9qUr4gY8iX6djNjlAq7d1ZJyE5iA=
+			2U9yUxTsn9s9UilkgKP9N46HW18oI5ISaIO58UEj0cU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pMCWbN9sNZ+FVRpO5ZOdn2SqqeI=
+			1abYouYOdGaJWfUwkQWm9nZU4ew=
 			</data>
 			<key>hash2</key>
 			<data>
-			kA8CVAuHFZ2QHos95/9yyiq/71DGvgabfqIaPDD97XE=
+			fMeomS32ovL/pEWp0xzAR2CLRJxK42GkZ0MnPR1xCy8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -114,6 +122,28 @@
 			<key>hash2</key>
 			<data>
 			G918zqvixEYdiBiyxGqRZMmbAZSOv4A2p5FnG0+w1Xk=
+			</data>
+		</dict>
+		<key>VungleAds.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iZnoaftVGLcbHyBwExfPMC4GPJQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			LANHY9DzGPCgqfF54zyAHSwANhRf0kt/wTvmIxaTy/w=
+			</data>
+		</dict>
+		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			99lHiKAMEwibufp7vGK7r8V203g=
+			</data>
+			<key>hash2</key>
+			<data>
+			RX/aXFa+FOCjdkY1ix5eE2OBHeionXWqGUSFGTmdVUQ=
 			</data>
 		</dict>
 	</dict>

@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong) GFPEventReporter *eventReporter;
 @property (nonatomic, strong, nullable) NSString *adProviderName;
+@property (nonatomic, strong, nullable) NSString *renderType;
 
 @property (readwrite, nonatomic, strong) GFPAdImpressionInfo *viewableImpInfo;
 @property (readwrite, nonatomic, strong, nullable) GFPEventExtraInfo *extraInfo;

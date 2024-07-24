@@ -29,10 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIImage *)imageWith:(NSString *)aName;
 
 - (NSString *)resourceStringWith:(NSString *)aMeesageKey;
-- (NSString *)resourceStringWith:(NSString *)aMeesageKey languageType:(GFPLanguageType)languageType;
-
 - (NSString *)stringWith:(NSString *)aKey message:(NSString *)aMeesage;
-- (NSString *)stringWith:(NSString *)aKey message:(NSString *)aMeesage languageType:(GFPLanguageType)languageType;
 
 @end
 

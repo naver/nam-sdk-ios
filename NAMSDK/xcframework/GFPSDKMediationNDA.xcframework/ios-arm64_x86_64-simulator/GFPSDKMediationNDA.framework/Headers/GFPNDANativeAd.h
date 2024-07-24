@@ -26,6 +26,8 @@
 @class GFPAdSkipInfo;
 @class GFPError;
 @class GFPAdChoicesData;
+@class GFPNDANativeTapGesture;
+@class GFPAutoPlayInfo;
 
 @protocol GFPNDANativeAdDelegate <NSObject>
 
@@ -40,13 +42,17 @@
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd richAdExtendSizeChanged:(CGSize)size;
 - (void)nativeRichAdExtendComplete:(GFPNDANativeAd *)nativeAd;
 - (void)nativeRichAdExtendStart:(GFPNDANativeAd *)nativeAd;
+- (void)nativeRichAdExtendStart:(GFPNDANativeAd *)nativeAd toSize:(CGSize)size;
 - (void)nativeRichAdShrinkComplete:(GFPNDANativeAd *)nativeAd;
 - (void)nativeRichAdShrinkStart:(GFPNDANativeAd *)nativeAd;
+- (void)nativeRichAdShrinkStart:(GFPNDANativeAd *)nativeAd toSize:(CGSize)size;
 
 - (void)nativeAdDidReload:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdDidReloadFailed:(GFPNDANativeAd *)nativeAd error:(GFPError *)error;
 
 - (void)nativeAdDidRenderingFailed:(GFPNDANativeAd *)nativeAd error:(GFPError *)error;
+
+- (void)nativeAdDidRenderingSlotFailed:(GFPNDANativeAd *)nativeAd error:(GFPError *)error;
 
 @end
 
@@ -77,6 +83,9 @@
 @property (nonatomic, strong, readonly) GFPAdChoiceInfo *adChoiceInfo;
 @property (nonatomic, assign, readonly) GFPNDAAdMuteState adMuteState;
 
+@property (nonatomic, strong) GFPVideoOptions *videoOptions;
+@property (nonatomic, strong) GFPAutoPlayInfo *autoPlayInfo;
+
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo
                      skAdNetworkInfo:(GFPSKAdNetworkInfo *)skNetworkInfo
                             skipInfo:(GFPAdSkipInfo *)skipInfo
@@ -93,9 +102,6 @@
 - (void)updateMediaAssetsWith:(UIView *)targetView;
 - (void)updateAdMuteStateWith:(GFPNDAAdMuteState)adMuteState;
 
-- (void)applyLinkWith:(id <GFPNativeAdInfoLinkPresentable>)linkInfo view:(UIView *)aView;
-- (void)removeLinkWith:(UIView *)aView;
-
 - (void)nativeAdDidLoad;
 - (void)nativeAdDidFailWithError:(GFPError *)error;
 
@@ -111,8 +117,7 @@
 - (void)reloadMediaResource;
 
 
-/* Label Style Option */
-- (GFPLabelOption * _Nullable)extraTextLabelOptionWith:(NSString *)key;
-
-
+//for link
+- (void)tapGestureWith:(GFPNDANativeTapGesture *)gesture;
+- (void)tryLandingWith:(GFPNDANativeTapGesture *)gesture;
 @end

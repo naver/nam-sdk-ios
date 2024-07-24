@@ -38,9 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface GFPNativeSimpleContext: GFPNativeContext
-
-@end
 
 @interface GFPCombinedContext : GFPNativeContext
 

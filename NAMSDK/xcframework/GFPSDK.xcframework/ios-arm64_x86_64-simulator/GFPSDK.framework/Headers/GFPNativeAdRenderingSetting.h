@@ -8,9 +8,14 @@
   
 
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "GFPNativeAdDelegate.h"
+#import "GFPNativeRenderer.h"
+
 #import "Swift-Enum.h"
+
+typedef CGFloat (^GFPMaxExtendingHeightSetter)(void);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -54,6 +59,13 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, assign) BOOL enableCustomAdChoices;
 
+/**
+ * 캐러셀 광고 시 슬롯의 여백 값 입니다.
+ * 해당 값을 통해 캐로셀 콜렉션뷰의 inset을 지원합니다.
+ */
+@property (nonatomic, assign) UIEdgeInsets richMediaInsets;
+
+
 @end
 
 
@@ -93,6 +105,26 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * 네이티브 심플에 기반한  리치형 광고 비디오 플레이어 이벤트를 위한 델리게이트 설정
  */
 @property (nonatomic, weak) id<GFPNativeVideoEventDelegate> videoEventDelegate;
+
+/**
+ * 확장형 리치형 광고의 최대 확장 높이를 제한합니다.
+ * 광고가 호출된 이후에도 동적으로 관리할 수 있습니다.
+ * 9:16 비율의 동영상도 제공하는 스페셜 DA 프리미엄형 "뉴" 동영상 확장형 이후로 부터 출시된 일부 광고 상품 부터 적용됩니다.
+ * - maxExtendingHeight <= 0: 높이를 제한하지 않음
+ * - maxExtendingHeight > 0: 높이를 제한 함.
+ * (기본값 -1)
+ */
+@property (nonatomic, copy, nullable) GFPMaxExtendingHeightSetter maxExtendingHeight;
+
+/**
+ * 네이티브 심플의 custom renderer 사용 시 설정
+ * - key: visual key
+ * - value: GFPNativeRendererViewProtocol 을 conform 하는 customView
+ */
+@property (nonatomic, readonly, strong) NSDictionary <NSString *, UIView <GFPNativeRendererViewProtocol> *> *renderers;
+
+- (void)addRendererWith:(NSString *)key rendererView:(UIView <GFPNativeRendererViewProtocol> *)rendererView;
+- (void)removeRendererWith:(NSString *)key;
 
 @end
 

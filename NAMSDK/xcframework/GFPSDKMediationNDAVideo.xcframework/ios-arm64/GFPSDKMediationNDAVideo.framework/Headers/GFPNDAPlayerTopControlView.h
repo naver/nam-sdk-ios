@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "GFPStaticResource.h"
-#import "GFPLanguageType.h"
 
 @class GFPNDAPlayerTopControlView;
 @class GFPAdChoiceInfo;
@@ -41,8 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFrame:(CGRect)aFrame
                  clickThrough:(NSString *)aClickThrough
-                     iconList:(NSArray<Icon *> *)aIconList
-                 languageType:(GFPLanguageType)languageType NS_DESIGNATED_INITIALIZER;
+                     iconList:(NSArray<Icon *> *)aIconList NS_DESIGNATED_INITIALIZER;
 
 - (void)showTopViewComponent;
 - (IBAction)moreTappedByService:(id)sender;

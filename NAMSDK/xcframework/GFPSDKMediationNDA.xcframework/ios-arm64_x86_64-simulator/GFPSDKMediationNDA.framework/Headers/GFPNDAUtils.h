@@ -13,6 +13,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol GFPNativeAdInfoLinkPresentable;
+
 @interface GFPNDAUtils : NSObject
 
 
@@ -48,6 +50,12 @@ NS_ASSUME_NONNULL_BEGIN
  * for customAsset utils
  */
 + (UIImage *)customImageWith:(NSString *)name inBundle:(NSBundle * _Nullable)bundle;
+
+/**
+ * for Link info
+ */
++ (void)applyLinkWith:(id<GFPNativeAdInfoLinkPresentable>)linkInfo target:(id)target view:(UIView *)aView action:(SEL)action;
++ (void)removeLinkWith:(UIView *)aView;
 
 @end
 

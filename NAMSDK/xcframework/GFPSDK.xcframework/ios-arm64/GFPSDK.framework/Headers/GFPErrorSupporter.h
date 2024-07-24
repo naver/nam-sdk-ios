@@ -32,6 +32,7 @@ FOUNDATION_EXPORT NSString *const GFPNativeProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderInMobiErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderNDAErrorKey;
+FOUNDATION_EXPORT NSString *const GFPNativeProviderLANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderUnityErrorKey;
@@ -39,6 +40,7 @@ FOUNDATION_EXPORT NSString *const GFPInterstitialProviderAppLovinErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderVungleErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderDTErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderISErrorKey;
+FOUNDATION_EXPORT NSString *const GFPInterstitialProviderLANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderUnityErrorKey;
@@ -48,6 +50,10 @@ FOUNDATION_EXPORT NSString *const GFPRewardProviderNDAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderDTErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderISErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderAPSErrorKey;
+FOUNDATION_EXPORT NSString *const GFPRewardProviderLANErrorKey;
+
+FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotTypeSubErrorCodeKey;
+FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotVisualSubErrorCodeKey;
 
 typedef NS_ENUM(NSInteger, GFPErrorCode) {
     // General Error

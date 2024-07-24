@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, GFPLanguageType) {
     GFPLanguageType_zh_Hant,
     GFPLanguageType_zh_Hans,
     GFPLanguageType_ja,
+    GFPLanguageType_de,
 };
 
 

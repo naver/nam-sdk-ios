@@ -14,6 +14,7 @@
  *  이 클래스는 각 광고 제공자를 어댑팅 하기 위한 최상위 타입 클래스로 사용됨.
  *  obj-c 특성상 추상 클래스가 불가능하므로, 공통으로 사용할 기능만 구현하고 기능명세는 프로토콜에 하도록 하자.
  */
+NS_ASSUME_NONNULL_BEGIN
 
 typedef NSString *GFPProviderType NS_STRING_ENUM;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeNDA;
@@ -28,6 +29,7 @@ FOUNDATION_EXPORT NSString *const GFPProviderTypeVungle;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeDT;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeIS;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeAPS;
+FOUNDATION_EXPORT NSString *const GFPProviderTypeLAN;
 
 typedef NSString *GFPProviderRenderType NS_STRING_ENUM;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNDP;
@@ -44,6 +46,7 @@ FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeVungle;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeDT;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeIS;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeAPS;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeLAN;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeSIMPLE;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNORMAL;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeCOMPOSITE;
@@ -67,7 +70,6 @@ FOUNDATION_EXPORT NSString *const GFPProviderProductTypeInstreamVideo;
 FOUNDATION_EXPORT NSString *const GFPProviderProductTypeInterstitial;
 
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPProvider : NSObject
 

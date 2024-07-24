@@ -182,116 +182,11 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 1605,
-      "length": 56,
-      "value": "\"GFPDTrewardedAdaptor recieved invalid Rewarded Context\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 2060,
-      "length": 22,
-      "value": "\"Invalid Request Info\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 2841,
-      "length": 4,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 3670,
-      "length": 32,
-      "value": "\"Failed initialize IAAdRequest.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 4006,
-      "length": 45,
-      "value": "\"Failed initialize IAVideoContentController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 4416,
-      "length": 45,
-      "value": "\"Failed initialize IAMRAIDContentController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 4970,
-      "length": 47,
-      "value": "\"Failed initialize IAFullscreenUnitController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 5411,
-      "length": 29,
-      "value": "\"Failed initialize IAAdSpot.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 6125,
-      "length": 46,
-      "value": "\"Missing IAFullscreenUnitController instance.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
       "offset": 334,
       "length": 20,
       "value": "\"GFPSDKMediationDT.GFPDTRewardedAdaptor\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 7062,
-      "length": 75,
-      "value": "\"GFPDTRewardedAdaptor lost IAFullscreenUnitController while presenting ad.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7208,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7562,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 9601,
-      "length": 58,
-      "value": "\"GFPDTRewardedAdaptor did not receive rootViewController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 10649,
-      "length": 4,
-      "value": "\"-1\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10860,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Common\/GFPDTErrorUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 327,
@@ -332,13 +227,6 @@
       "offset": 349,
       "length": 8,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Common\/GFPDTErrorUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1629,
-      "length": 3,
-      "value": "204"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Common\/GFPDTRequestInfo.swift",
@@ -355,123 +243,11 @@
       "value": "\"placementId\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Common\/GFPDTRequestInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 696,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Common\/GFPDTRequestInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 758,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Common\/GFPDTRequestInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1031,
-      "length": 60,
-      "value": "\"GFPDigitalTurbine adaptor requires Digital Turbine SpotID.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1567,
-      "length": 24,
-      "value": "\"Invalid Banner Context\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1990,
-      "length": 22,
-      "value": "\"Invalid Request Info\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2401,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 18,
       "value": "\"GFPSDKMediationDT.GFPDTBannerAdaptor\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 4360,
-      "length": 4,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 5280,
-      "length": 32,
-      "value": "\"Failed initialize IAAdRequest.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 5614,
-      "length": 45,
-      "value": "\"Failed initialize IAMRAIDContentController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 6168,
-      "length": 41,
-      "value": "\"Failed initialize IAViewUnitController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 6581,
-      "length": 29,
-      "value": "\"Failed initialize IAAdSpot.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 7089,
-      "length": 40,
-      "value": "\"Missing IAViewUnitController instance.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 7378,
-      "length": 48,
-      "value": "\"Mismatching IAViewUnitController and IAAdSpot.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 7665,
-      "length": 37,
-      "value": "\"Missing IAViewUnitController.adView\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Banner\/GFPDTBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 7975,
-      "length": 31,
-      "value": "\"Missing storedAdContainerView\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Common\/GFPDTConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2380,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
@@ -483,114 +259,9 @@
     {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
       "kind": "StringLiteral",
-      "offset": 1652,
-      "length": 64,
-      "value": "\"GFPDTInterstitialAdaptor recieved invalid Interstitial Context\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 2115,
-      "length": 22,
-      "value": "\"Invalid Request Info\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 2817,
-      "length": 4,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3553,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 3699,
-      "length": 32,
-      "value": "\"Failed initialize IAAdRequest.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 4039,
-      "length": 45,
-      "value": "\"Failed initialize IAVideoContentController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 4453,
-      "length": 45,
-      "value": "\"Failed initialize IAMRAIDContentController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 5011,
-      "length": 47,
-      "value": "\"Failed initialize IAFullscreenUnitController.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 5456,
-      "length": 29,
-      "value": "\"Failed initialize IAAdSpot.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 6182,
-      "length": 46,
-      "value": "\"Missing IAFullscreenUnitController instance.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
       "offset": 337,
       "length": 24,
       "value": "\"GFPSDKMediationDT.GFPDTInterstitialAdaptor\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 7180,
-      "length": 79,
-      "value": "\"GFPDTInterstitialAdaptor lost IAFullscreenUnitController while presenting ad.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7330,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7680,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 9727,
-      "length": 82,
-      "value": "\"GFPDTInterstitialAdaptor did not receive rootViewController while presenting ad.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10957,
-      "length": 4,
-      "value": "true"
     }
   ]
 }

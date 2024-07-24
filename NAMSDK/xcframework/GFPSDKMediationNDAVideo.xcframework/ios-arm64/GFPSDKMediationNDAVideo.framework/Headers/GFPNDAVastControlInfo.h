@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Icon (GFPNDA)
 
-- (NSString *)contentDescriptionWith:(GFPLanguageType)languageType;
+- (NSString *)contentDescription;
 
 @end
 
@@ -36,7 +36,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAVastIconType) {
 
 - (instancetype)initWithIconList:(NSArray<Icon *> *)aIconList skipOffset:(NSString * _Nullable)aSkipOffset duration:(NSTimeInterval)aDuration skipInfo:(GFPAdSkipInfo * _Nullable)aSkipInfo;
 
-- (BOOL)canShowWith:(GFPNDAVastIconType)iconType currentTime:(NSTimeInterval)aCurrentTime languageType:(GFPLanguageType)languageType;
+- (BOOL)canShowWith:(GFPNDAVastIconType)iconType currentTime:(NSTimeInterval)aCurrentTime;
 
 - (Icon *)providerIcon;
 - (Icon *)postAdAlertIcon;

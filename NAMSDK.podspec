@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "7.5.3"
+  s.version      = "7.8.1"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -24,11 +24,17 @@ Pod::Spec.new do |s|
     sdk.dependency 'Naver-Ads-Services', '~> 1.0.8'
     sdk.resources = ["NAMSDK/ResourceBundle/GFPSDKResource.bundle"]
   end
+
+  s.subspec 'AdRenderer' do |sdk|
+    sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDKAdRenderer.xcframework"
+    sdk.resources = ["NAMSDK/ResourceBundle/GFPSDKRendererResource.bundle"]
+    sdk.dependency 'NAMSDK/GFPSDK'
+  end
   
   s.subspec 'MediationDFP' do |dfp|
     dfp.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDFP.xcframework"
     dfp.dependency 'NAMSDK/GFPSDK'
-    dfp.dependency 'Google-Mobile-Ads-SDK', '11.2.0'
+    dfp.dependency 'Google-Mobile-Ads-SDK', '11.3.0'
   end
   
   s.subspec 'MediationNDA' do |nda|
@@ -50,56 +56,62 @@ Pod::Spec.new do |s|
     ndaRich.dependency 'NAMSDK/GFPSDK'
     ndaRich.dependency 'NAMSDK/MediationNDA'
     ndaRich.dependency 'NAMSDK/MediationNDAVideo'
+    ndaRich.dependency 'NAMSDK/AdRenderer'
   end
   
 
   s.subspec 'MediationFAN' do |fan|
     fan.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationFAN.xcframework"
     fan.dependency 'NAMSDK/GFPSDK'    
-    fan.dependency 'FBAudienceNetwork', '6.15.0'
+    fan.dependency 'FBAudienceNetwork', '6.15.1'
   end
   
   s.subspec 'MediationInMobi' do |inMobi|
     inMobi.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationInMobi.xcframework"
     inMobi.dependency 'NAMSDK/GFPSDK'
-    inMobi.dependency 'InMobiSDK', '10.7.1'
+    inMobi.dependency 'InMobiSDK', '10.7.2'
   end
   
   s.subspec 'MediationUnity' do |unity|
     unity.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationUnity.xcframework"
     unity.dependency 'NAMSDK/GFPSDK'
-    unity.dependency 'UnityAds', '4.10.0'
+    unity.dependency 'UnityAds', '4.12.0'
   end
   
   s.subspec 'MediationAppLovin' do |appLovin|
     appLovin.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationAppLovin.xcframework"
-    appLovin.resources = ['NAMSDK/ResourceBundle/GFPAppLovinResource.bundle']
     appLovin.dependency 'NAMSDK/GFPSDK'
-    appLovin.dependency 'AppLovinSDK', '12.3.1'
+    appLovin.dependency 'AppLovinSDK', '12.5.0'
   end
 
   s.subspec 'MediationVungle' do |vungle|
     vungle.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationVungle.xcframework"
     vungle.dependency 'NAMSDK/GFPSDK'
-    vungle.dependency 'VungleAds', '7.3.0'
+    vungle.dependency 'VungleAds', '7.3.2'
   end
 
   s.subspec 'MediationDT' do |dt|
     dt.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDT.xcframework"
     dt.dependency 'NAMSDK/GFPSDK'
-    dt.dependency 'Fyber_Marketplace_SDK', '8.2.7'
+    dt.dependency 'Fyber_Marketplace_SDK', '8.2.8'
   end
 
   s.subspec 'MediationIronSource' do |ironSource|
     ironSource.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationIronSource.xcframework"
     ironSource.dependency 'NAMSDK/GFPSDK'
-    ironSource.dependency 'IronSourceSDK', '7.9.1'
+    ironSource.dependency 'IronSourceSDK', '8.1.0'
   end
 
   s.subspec 'MediationAPS' do |aps|
     aps.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationAPS.xcframework"
     aps.dependency 'NAMSDK/GFPSDK'
-    aps.dependency 'AmazonPublisherServicesSDK', '4.9.0'
+    aps.dependency 'AmazonPublisherServicesSDK', '4.9.3'
+  end
+
+  s.subspec 'MediationLAN' do |lan|
+    lan.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationLAN.xcframework"
+    lan.dependency 'NAMSDK/GFPSDK'
+    lan.dependency 'FiveAd', '2.7.20240318'
   end
 
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
@@ -112,5 +124,5 @@ Pod::Spec.new do |s|
 
   s.swift_versions = ['5.0']
   
-  s.pod_target_xcconfig  = { 'OTHER_LDFLAGS' => '-ObjC' }
+  s.pod_target_xcconfig  = { 'OTHER_LDFLAGS' => '-ObjC', 'GCC_PREPROCESSOR_DEFINITIONS' => 'NAM=1', 'OTHER_SWIFT_FLAGS' => '-D NAM' }
 end

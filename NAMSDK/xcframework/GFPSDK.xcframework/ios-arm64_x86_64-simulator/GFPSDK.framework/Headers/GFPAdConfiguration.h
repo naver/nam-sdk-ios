@@ -12,6 +12,7 @@
 #import "GFPRenderDisplayAgent.h"
 #import "GFPS2SAdClickDelegate.h"
 #import "GFPPrivacySetting.h"
+#import "GFPLanguageType.h"
 
 #import "Swift-Enum.h"
 
@@ -54,6 +55,15 @@ NS_ASSUME_NONNULL_BEGIN
  * 전면형광고 요청 타임아웃 (기본값 60초, kGFPDefaultInterstitialAdRequestTimeout)
  */
 @property (nonatomic, assign) NSTimeInterval interstitialAdRequestTimeout;
+
+
+/**
+ * 광고 UI 컴포넌트의 언어 설정 (기본값: none)
+ * - 언어는 한국어, 영어, 프랑스어, 스페인어, 중국 번체 (홍콩/대만), 태국어, 인도네시아어를 지원합니다.
+ * - none으로 설정 시 디바이스의 언어를 기반으로 렌더링 되며, 지원하지 않는 언어일 경우 영어로 노출됩니다.
+ */
+@property (nonatomic, assign) GFPLanguageType preferredLanguage;
+
 
 /**
  * 전역 추가 파라미터 (주의! 추가 파라미터 사전의 키/값은 모두 문자열 타입이어야 합니다.)

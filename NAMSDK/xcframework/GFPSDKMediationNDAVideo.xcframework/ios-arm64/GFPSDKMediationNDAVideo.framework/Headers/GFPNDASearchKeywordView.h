@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GFPLanguageType.h"
 
 @class Icon;
 @class GFPTrackingURLs;
@@ -36,8 +35,7 @@ static const CGFloat kSearchKeywordViewHeight = 26.0;
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 - (instancetype)initWithFrame:(CGRect)frame 
-                         icon:(Icon *)data
-                 languageType:(GFPLanguageType)languageType NS_DESIGNATED_INITIALIZER;
+                         icon:(Icon *)data NS_DESIGNATED_INITIALIZER;
 
 - (void)changeKeywordStyleWith:(BOOL)isEnable;
 

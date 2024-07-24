@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GFPLanguageType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -37,8 +36,7 @@ static const NSTimeInterval kKeywordAnimationDuration = 0.5;
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 - (instancetype)initWithFrame:(CGRect)frame 
-                  controlInfo:(GFPNDAVastControlInfo *)aControlInfo
-                 languageType:(GFPLanguageType)languageType NS_DESIGNATED_INITIALIZER;
+                  controlInfo:(GFPNDAVastControlInfo *)aControlInfo NS_DESIGNATED_INITIALIZER;
 
 - (void)updateCurrentTime:(NSTimeInterval)currentTime;
 

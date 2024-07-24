@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GFPLanguageType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,8 +19,7 @@ static const CGFloat kPlayerBottomViewMinHeight = 25.0;
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 - (instancetype)initWithFrame:(CGRect)frame 
-                     duration:(NSTimeInterval)aDuration
-                 languageType:(GFPLanguageType)languageType NS_DESIGNATED_INITIALIZER;
+                     duration:(NSTimeInterval)aDuration NS_DESIGNATED_INITIALIZER;
 
 - (void)updateProgressWith:(NSTimeInterval)aCurrentTime;
 

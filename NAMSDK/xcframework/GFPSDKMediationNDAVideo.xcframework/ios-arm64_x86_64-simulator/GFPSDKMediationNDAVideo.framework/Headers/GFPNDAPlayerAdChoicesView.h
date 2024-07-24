@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GFPLanguageType.h"
 
 @class GFPAdChoiceInfo;
 @class GFPNDAPlayerAdChoicesView;
@@ -36,8 +35,7 @@ static const CGFloat kRewardedPlayerAdChociesWidthHeight = 16.0;
 
 - (instancetype)initWithFrame:(CGRect)aFrame
                      iconList:(NSArray<Icon *> *)aIconList
-                 adChoiceInfo:(nullable GFPAdChoiceInfo *)adChoiceInfo
-                 languageType:(GFPLanguageType)languageType NS_DESIGNATED_INITIALIZER;
+                 adChoiceInfo:(nullable GFPAdChoiceInfo *)adChoiceInfo NS_DESIGNATED_INITIALIZER;
 
 - (void)showViewComponent;
 

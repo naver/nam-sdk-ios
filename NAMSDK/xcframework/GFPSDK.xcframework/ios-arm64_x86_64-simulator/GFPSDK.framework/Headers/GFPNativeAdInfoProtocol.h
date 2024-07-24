@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPNativeMediaExtensionInfo;
 @class GFPNativeStyleInfo;
 @class GFPLabelOption;
+@class GFPNativeAdInfo;
 @class GFPAdStyleOption;
 
 @protocol GFPNativeAdInfoLinkPresentable <NSObject>
@@ -48,6 +49,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly, strong) NSString *text;
 @property (nonatomic, readonly, assign) BOOL isValid;
+
+@end
+
+
+@protocol GFPNativeAdInfoSlotPresentable <NSObject>
+
+@property (nonatomic, readonly) NSString *adVisualKey;
+@property (nonatomic, readonly) NSString *slotKey;
+
+- (NSArray<GFPNativeAdInfo *> *)slotItems;
 
 @end
 

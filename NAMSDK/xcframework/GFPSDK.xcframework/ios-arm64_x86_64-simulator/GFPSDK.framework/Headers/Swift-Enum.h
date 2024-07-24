@@ -29,6 +29,7 @@ typedef NS_OPTIONS(NSInteger, GFPAdProviderSettingType) {
     GFPAdProviderSettingTypeDFP = 1,
     GFPAdProviderSettingTypeFAN = 2,
     GFPAdProviderSettingTypeUnity = 3,
+    GFPAdProviderSettingTypeLAN = 4,
     GFPAdProviderSettingTypeOMID = 100,
 };
 
@@ -81,6 +82,7 @@ typedef NS_OPTIONS(NSInteger, GFPNativeAdDataType){
     GFPNativeAdDataTypeCTA = 7,
     GFPNativeAdDataTypeNotice = 8,
     GFPNativeAdDataTypeExtraText = 9,
+    GFPNativeAdDataTypeExtraImage = 10,
 };
 
 

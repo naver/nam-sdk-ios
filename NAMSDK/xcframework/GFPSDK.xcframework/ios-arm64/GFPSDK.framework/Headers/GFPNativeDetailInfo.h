@@ -19,6 +19,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NSString *GFPRichExtendMediaRatioType NS_STRING_ENUM;
+FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioTypeOther;
+FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType1_1;
+FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType9_16;
+FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
+
 @interface GFPNativeLinkInfo : NSObject
 
 @property (nonatomic, readonly, strong) NSURL *cURL;
@@ -54,10 +60,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) GFPRichTrackingURLs *richTrackings;
 @property (readonly, nonatomic, assign) GFPNativeLinkInfo *link;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
                                         link:(GFPNativeLinkInfo *)link NS_DESIGNATED_INITIALIZER;
 
+- (GFPRichDetailInfo * _Nullable)propertyWithKey:(NSString *)key;
 - (GFPRichDetailInfo * _Nullable)imageWithKey:(NSString *)key;
 - (GFPRichDetailInfo * _Nullable)videoWithKey:(NSString *)key;
 - (GFPRichDetailInfo * _Nullable)textWithKey:(NSString *)key;
@@ -68,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPNativeExtensionInfo : NSObject
 @property (nonatomic, readonly, strong, nullable) GFPNativeStyleInfo *styleInfo;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
                                         link:(GFPNativeLinkInfo *)link NS_DESIGNATED_INITIALIZER;
 
@@ -82,7 +89,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) GFPNativeStyleInfo *styleInfo;
 @property (nonatomic, readonly, strong) GFPNativeLinkInfo *link;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict NS_DESIGNATED_INITIALIZER;
 
 @end
@@ -96,7 +103,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly, strong) NSDictionary<NSString *, GFPNativeMediaBadgeInfo *> *badges;
 
-- (instancetype _Nullable)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
                                         link:(GFPNativeLinkInfo *)link NS_DESIGNATED_INITIALIZER;
 
@@ -109,7 +116,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNativeStyleBaseInfo : NSObject
 
+/**
+ * [주의] style bgColor 참고
+ * - Title, Body 등의 텍스트 에셋의 경우
+ *   - bgColor는 highlightBgColor를 의미한다.
+ *     - ex) CTA 100%+1s 전환 색상 등
+ *   - defaultBgColor는 bgColor를 의미한다.
+ *     - ex) CTA 배경 색상, 쇼핑 라벨 배경 색상 등
+ * - Media, Icon 등 그 외 ext.style의 경우 bgColor는 말 그대로 bgColor를 의미한다.
+ *   - ex) NS 리치 광고 배경 색상 등
+ */
 @property (nonatomic, readonly, strong, nullable) UIColor *bgColor;
+@property (nonatomic, readonly, strong, nullable) UIColor *defaultBgColor;
+
 @property (nonatomic, readonly, strong, nullable) UIColor *textColor;
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
@@ -119,6 +138,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNativeStyleDetailInfo : GFPNativeStyleBaseInfo
 
+/**
+ * for rich ad
+ */
 @property (nonatomic, readonly, assign) float alpha;
 @property (nonatomic, readonly, assign) float radius;
 @property (nonatomic, readonly, assign) float leftMargin;
@@ -225,6 +247,21 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
 
 @end
+
+@interface GFPNativeExtraImageInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource>
+
+@property (nonatomic, readonly, strong) NSURL *source;
+@property (nonatomic, readonly, assign) CGSize size;
+
+@property (nonatomic, readonly, assign) BOOL isValid;
+
+@property (nonatomic, weak) UIImage *image; //for renderer
+
+- (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
+
+@end
+
+
 
 
 

@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
            clickDelegate:(id <GFPS2SAdClickDelegate> _Nullable)clickDelegate NS_DESIGNATED_INITIALIZER;
 
 - (void)openLanding:(GFPS2SAdLandingHandler)aCompletion;
+- (void)openLandingForExceptSKAdn:(GFPS2SAdLandingHandler)aCompletion;
 - (void)openLanding:(GFPS2SAdLandingHandler)aCompletion storeDelegate:(nullable id<SKStoreViewControllerCloseDelegate>)delegate;
 
 @end

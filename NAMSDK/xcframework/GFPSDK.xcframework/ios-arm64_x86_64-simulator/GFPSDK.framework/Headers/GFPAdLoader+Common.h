@@ -15,7 +15,6 @@
 #import "GFPBannerViewDelegate.h"
 #import "GFPAdAdaptor.h"
 
-@protocol GFPEventReportDelegate;
 @protocol GFPAdCallDelegate;
 
 @class GFPAdNativeSimpleOptions;
@@ -28,8 +27,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPAdLoader ()
-
-@property (nonatomic, weak) id <GFPEventReportDelegate> reportDelegate;
 
 //Common
 @property (nonatomic, strong) GFPAdParam *adParam;

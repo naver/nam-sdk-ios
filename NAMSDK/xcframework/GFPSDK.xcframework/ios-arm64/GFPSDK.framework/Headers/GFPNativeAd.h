@@ -23,6 +23,7 @@
 @protocol GFPNativeAdDelegate;
 @protocol GFPNativeSimpleAdDelegate;
 @protocol GFPUserInterestDelegate;
+@protocol GFPNativeAssetProtocol;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +34,7 @@ typedef NS_OPTIONS(NSInteger, GFPNativeAdProviderType) {
     GFPNativeAdProviderTypeInMobi = 1 << 3,  // InMobi
     GFPNativeAdProviderTypeNDA = 1 << 4,      // Naver Native
     GFPNativeAdProviderTypeAppLovin = 1 << 5, // AppLovin
+    GFPNativeAdProviderTypeLAN = 1 << 6,
 };
 
 typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
@@ -91,82 +93,15 @@ extern NSString *const kGFPNativeIconSizeKey;
 @property (readonly, nonatomic, strong) GFPLoadResponseInfo *responseInfo;
 
 
-/**
- * Media 관련 정보
- */
-@property (readonly, nonatomic, strong, nullable) GFPMediaData *mediaData;
-
-/**
- * AdChoices 관련 정보
- */
-@property (readonly, nonatomic, strong, nullable) GFPAdChoicesData *adChoicesData;
-
 @end
 
 
-@interface GFPNativeAd : GFPNativeAdBase
+@interface GFPNativeAd : GFPNativeAdBase <GFPNativeAssetProtocol>
 
 @property (readwrite, nonatomic, weak) id <GFPNativeAdDelegate> delegate;
 @property (readwrite, nonatomic, weak) id <GFPUserInterestDelegate> userInterestDelegate;
 
 @property (nullable, readonly, nonatomic, strong) GFPAdStyleOption *adStyleOption;
-
-/**
- * 타이틀
- */
-@property (readonly, nonatomic, strong) NSString *title;
-
-/**
- * 본문
- */
-@property (nullable, readonly, nonatomic, strong) NSString *body;
-@property (nullable, readonly, nonatomic, strong) GFPLabelOption *bodyOption;
-
-/**
- * 광고주 명
- */
-@property (nullable, readonly, nonatomic, strong) NSString *advertiser;
-
-/**
- * Social Context
- */
-@property (nullable, readonly, nonatomic, strong) NSString *socialContext;
-
-
-/**
- * 클릭 버튼 텍스트
- */
-@property (nullable, readonly, nonatomic, strong) NSString *callToAction;
-@property (nullable, readonly, nonatomic, strong) GFPLabelOption *callToActionOption;
-
-/**
- * Icon Image 존재 여부
- */
-@property (readonly, nonatomic, assign) BOOL hasIconImage;
-
-/**
- * Ad Badge
- */
-@property (nullable, readonly, nonatomic, strong) NSString *badge;
-
-/**
- * 고지 문구
- */
-@property (nullable, readonly, nonatomic, strong) NSString *notice;
-
-
-/**
- * 그 외 정보
- * - iconSize
- *   - key: kGFPNativeIconSizeKey, value: icon view 소재 크기. 존재하지 않으면 CGSizeZero 를 반환.
- */
-@property (readonly, nonatomic, strong) NSDictionary <NSString *, NSObject *> *extraInfo;
-
-/**
- * s2s 광고 시 Extra Texts
- */
-- (NSString * _Nullable)extraTextWith:(NSString *)key;
-- (GFPLabelOption * _Nullable)extraLabelOptionWith:(NSString *)key;
 
 
 /**
@@ -183,6 +118,8 @@ extern NSString *const kGFPNativeIconSizeKey;
 @interface GFPNativeSimpleAd : GFPNativeAdBase
 
 @property (readwrite, nonatomic, weak) id <GFPNativeSimpleAdDelegate> delegate;
+
+@property (readonly, nonatomic, strong, nullable) id <GFPNativeAssetProtocol> assets;
 
 /**
  * Image 객체

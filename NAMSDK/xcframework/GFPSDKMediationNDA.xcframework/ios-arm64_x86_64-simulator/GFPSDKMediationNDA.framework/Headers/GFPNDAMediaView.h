@@ -33,11 +33,16 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDAMediaViewIcon = 0,
     GFPNDAMediaViewImage = 1,
     GFPNDAMediaViewVideo = 2,
+    GFPNDAMediaViewCarousel = 3,
+    
     GFPNDARichMediaViewVideoExtend = 102,
     GFPNDARichMediaViewCountdown = 103,
     GFPNDARichMediaViewImageExtend = 104,
     GFPNDARichMediaViewNewVideoExtend = 105,
     GFPNDARichMediaViewDragExtend = 106,
+    GFPNDARichMediaViewNewVideoExtendV2 = 107,
+
+    GFPNDARendererMediaViewShoppingLabel = 1000,
 };
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewRenderType) {
@@ -67,7 +72,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)didTappedLandingViewWith:(GFPNDAMediaViewType)aType landingUrl:(NSString *)landingUrl trackers:(NSArray <NSString *> *)trackers;
 
 - (void)didRenderingFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
-
+- (void)didSlotRenderingFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
 @end
 
 

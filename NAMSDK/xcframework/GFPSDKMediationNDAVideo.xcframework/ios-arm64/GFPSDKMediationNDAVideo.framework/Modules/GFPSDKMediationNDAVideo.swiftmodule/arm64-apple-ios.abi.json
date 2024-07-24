@@ -252,126 +252,161 @@
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5288,
+      "offset": 5290,
+      "length": 23,
+      "value": "\"outstreamRichPauseBtn\""
+    },
+    {
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5463,
+      "length": 22,
+      "value": "\"outstreamRichPlayBtn\""
+    },
+    {
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5639,
+      "length": 24,
+      "value": "\"outstreamRichRewindBtn\""
+    },
+    {
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5821,
+      "length": 26,
+      "value": "\"outstreamRichSoundOffBtn\""
+    },
+    {
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6003,
+      "length": 25,
+      "value": "\"outstreamRichSoundOnBtn\""
+    },
+    {
+      "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6178,
       "length": 22,
       "value": "\"outstreamSoundOffBtn\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5458,
+      "offset": 6348,
       "length": 21,
       "value": "\"outstreamSoundOnBtn\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5619,
+      "offset": 6509,
       "length": 17,
       "value": "\"pipBtnAdMoreNor\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5784,
+      "offset": 6674,
       "length": 21,
       "value": "\"pipBtnAdMorePressed\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5943,
+      "offset": 6833,
       "length": 16,
       "value": "\"pipBtnCloseNor\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6105,
+      "offset": 6995,
       "length": 20,
       "value": "\"pipBtnClosePressed\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6263,
+      "offset": 7153,
       "length": 16,
       "value": "\"pipBtnPauseNor\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6425,
+      "offset": 7315,
       "length": 20,
       "value": "\"pipBtnPausePressed\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6581,
+      "offset": 7471,
       "length": 15,
       "value": "\"pipBtnPlayNor\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6740,
+      "offset": 7630,
       "length": 19,
       "value": "\"pipBtnPlayPressed\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6899,
+      "offset": 7789,
       "length": 17,
       "value": "\"pipBtnReturnNor\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7064,
+      "offset": 7954,
       "length": 21,
       "value": "\"pipBtnReturnPressed\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7231,
+      "offset": 8121,
       "length": 20,
       "value": "\"pipBtnSkipInactive\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7387,
+      "offset": 8277,
       "length": 15,
       "value": "\"pipBtnSkipNor\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7546,
+      "offset": 8436,
       "length": 19,
       "value": "\"pipBtnSkipPressed\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7708,
+      "offset": 8598,
       "length": 19,
       "value": "\"portrait_btnClose\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7874,
+      "offset": 8764,
       "length": 21,
       "value": "\"portrait_btnLanding\""
     },
     {
       "filePath": "\/Users\/user\/Library\/Developer\/Xcode\/DerivedData\/GFPSDK-hilgcivxbvzydmfpmhwdqfwlvhpd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GFPSDKMediationNDAVideo\/IntermediateBuildFilesPath\/GFPSDK.build\/Release-iphoneos\/GFPSDKMediationNDAVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8023,
+      "offset": 8913,
       "length": 11,
       "value": "\"rectangle\""
     }

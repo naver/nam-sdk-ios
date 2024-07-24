@@ -37,6 +37,11 @@ typedef NS_ENUM(NSInteger, GFPUserParamGenderType) {
  */
 @property (nonatomic, copy, nullable) NSString *userID;
 
+/**
+ * 타겟팅 광고를 위한 contentId 값
+ */
+@property (nonatomic, copy, nullable) NSString *contentId;
+
 @end
 
 

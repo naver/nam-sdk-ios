@@ -140,10 +140,13 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPAdLoader+Common.h>
 #import <GFPSDK/GFPUnifiedMediator.h>
 
-
 #import <GFPSDK/Swift-Enum.h>
 
 #import <GFPSDK/GFPExceptionUtils.h>
 
 #import <GFPSDK/GFPNativeAdInfoProtocol.h>
 #import <GFPSDK/GFPNativeDetailInfo.h>
+
+#import <GFPSDK/GFPEventReportDelegate.h>
+
+#import <GFPSDK/GFPAdChoicesData.h>

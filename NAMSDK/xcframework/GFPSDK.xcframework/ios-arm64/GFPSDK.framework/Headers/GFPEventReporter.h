@@ -16,18 +16,32 @@
 @class GFPLoadEvent;
 @class GFPStartEvent;
 @class GFPEventExtraInfo;
-@protocol GFPEventReportPresentable;
-@protocol GFPEventReportDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol GFPEventReportPresentable <NSObject>
 
-@interface GFPEventReporter : NSObject <GFPEventReportPresentable>
+@property (nonatomic, strong) NSNumber *adCallRequestTime;
+
+@end
 
 
-@property (nonatomic, weak) id <GFPEventReportDelegate> delegate;
+@interface GFPBaseEventReporter : NSObject
 
-@property (readonly, nonatomic, strong) GFPAdInfoEvent *providerEvent;
+@property (nonatomic, strong) GFPAdInfoEvent *providerEvent;
+
+- (instancetype)initWithProviderEvent:(GFPAdInfoEvent *)providerEvent;
+- (void)reportProviderEvent:(NSArray<GFPAdEventObject *> *)providerEvtObjs;
+
+- (void)reportVImp100;
+- (void)reportVImp100p;
+- (void)reportVImp1px;
+
+@end
+
+@interface GFPEventReporter : GFPBaseEventReporter <GFPEventReportPresentable>
+
+
 @property (readonly, nonatomic, strong) GFPAdEvent *gfpEvent;
 @property (readonly, nonatomic, strong) NSString *encrypted;
 
@@ -64,9 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportMute;
 
-- (void)reportVImp1px;
-- (void)reportVImp100;
-- (void)reportVImp100p;
+- (void)reportLazySlotRenderFail;
 
 - (void)reportCustomTrackersWith:(NSArray <NSString *> *)trackers;
 - (void)reportCustomEventsWith:(NSArray <GFPAdEventObject *> *)eventObjects;

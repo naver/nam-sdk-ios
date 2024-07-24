@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GFPSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GFPSDK
 import Foundation
 @_exported import GFPSDK
 import NaverAdsServices
@@ -34,14 +33,14 @@ extension GFPSDK.GFPErrorUtils {
   @objc(defaultHighlightBgColor) public static let defaultHighlightBgColor: UIKit.UIColor?
   @objc final public let text: Swift.String?
   @objc final public let textColor: UIKit.UIColor?
+  @objc final public let bgColor: UIKit.UIColor?
   @objc final public let highlightBgColor: UIKit.UIColor?
+  @objc convenience public init(text: Swift.String?)
   @objc convenience public init(text: Swift.String?, highlightBgColor: UIKit.UIColor?)
   @objc convenience public init(text: Swift.String?, textColor: UIKit.UIColor?)
-  @objc(initWithText:textColor:highlightBgColor:) public init(text: Swift.String?, textColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
+  @objc convenience public init(text: Swift.String?, bgColor: UIKit.UIColor?)
+  @objc(initWithText:textColor:bgColor:highlightBgColor:) public init(text: Swift.String?, textColor: UIKit.UIColor?, bgColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
   @objc deinit
-}
-@objc public protocol GFPEventReportPresentable : ObjectiveC.NSObjectProtocol {
-  @objc var adCallRequestTime: Foundation.NSNumber { get set }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPWaterfallAdSize : ObjectiveC.NSObject {
   @objc public var width: CoreFoundation.CGFloat
@@ -99,7 +98,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public init(size: Swift.Int)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdRenderingSetting : ObjectiveC.NSObject, GFPSDK.GFPLanguagePresentable {
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdRenderingSetting : ObjectiveC.NSObject {
   @objc public static let GFPVideoAdRenderingSettingAutodetectBitrate: Swift.Int
   @objc public static let GFPVideoAdRenderingSettingDefaultStartTimeout: Swift.Double
   @objc public static let GFPVideoAdRenderingSettingDefaultBufferingTimeout: Swift.Double
@@ -108,7 +107,11 @@ extension GFPSDK.GFPErrorUtils {
   @objc public var startTimeoutInterval: Foundation.TimeInterval
   @objc public var bufferingTimeoutInterval: Foundation.TimeInterval
   @objc public var isPreferContentWidthUI: Swift.Bool
-  @objc public var preferredLanguage: GFPSDK.GFPLanguageType
+  @objc @available(*, deprecated, message: "Use GFPAdConfiguration's preferredLanguage instead.")
+  public var preferredLanguage: GFPSDK.GFPLanguageType {
+    @objc get
+    @objc set
+  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -207,16 +210,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc(createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:) public static func createQoeTrackingInfo(host: Swift.String, path: Swift.String, timeTable: [Swift.Int], serviceId: Swift.String, ownerServiceId: Swift.String, appId: Swift.String, viewerInfo: Swift.String) -> GFPSDK.GFPQoeTrackingInfo
   @objc deinit
 }
-@objc public protocol GFPEventReportDelegate : ObjectiveC.NSObjectProtocol {
-  @objc func reportTrackingAckImp(_ aURL: Swift.String)
-  @objc func reportTrackingViewableImp(_ aURL: Swift.String)
-  @objc func reportTrackingRenderedImp(_ aURL: Swift.String)
-  @objc func reportTrackingAttachedImp(_ aURL: Swift.String)
-  @objc func reportTrackingClickEvent(_ aURL: Swift.String)
-  @objc func reportTrackingMuteEvent(_ aURL: Swift.String)
-  @objc func reportTrackingLoadError(_ loadEventInfo: Swift.String)
-  @objc func reportTrackingStartError(_ startEventInfo: Swift.String)
-}
 @objc @_inheritsConvenienceInitializers @objcMembers open class GFPTextAdViewAttribute : ObjectiveC.NSObject {
   @objc public var backgroundColor: UIKit.UIColor?
   @objc public var textColor: UIKit.UIColor?
@@ -232,6 +225,11 @@ extension GFPSDK.GFPErrorUtils {
   @objc public class func sendGFPEventToUrl(_ urlString: Swift.String)
   @objc public class func openURLWith(_ aURL: Swift.String, completion: GFPSDK.GFPS2SAdLandingHandler?)
   @objc public class func defaultRequestWith(_ url: Foundation.URL) -> Foundation.URLRequest
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPRendererVisualKey : ObjectiveC.NSObject {
+  @objc public static let shoppingLabel: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -269,6 +267,7 @@ extension GFPSDK.GFPErrorUtils {
   case FAN
   case inMobi
   case appLovin
+  case LAN
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -296,6 +295,7 @@ extension GFPSDK.GFPErrorUtils {
   case DT
   case IS
   case APS
+  case LAN
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -313,6 +313,7 @@ extension GFPSDK.GFPErrorUtils {
   case DT
   case IS
   case APS
+  case LAN
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -383,6 +384,22 @@ extension GFPSDK.GFPErrorUtils {
   @objc public class func videoSchedulePhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
   @objc public class func neloPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum GFPRichMediaDataAdType : Swift.Int {
+  case newVideoExtendV2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class GFPRichMediaData : ObjectiveC.NSObject {
+  @objc final public let adType: GFPSDK.GFPRichMediaDataAdType
+  @objc final public let extendMediaAspectRatioType: GFPSDK.GFPRichExtendMediaRatioType
+  @objc final public let extendMediaSize: CoreFoundation.CGSize
+  @objc public init(adType: GFPSDK.GFPRichMediaDataAdType, videoRatioType: GFPSDK.GFPRichExtendMediaRatioType, mediaSize: CoreFoundation.CGSize)
+  @objc public static func create(adType: GFPSDK.GFPRichMediaDataAdType, mediaSize: CoreFoundation.CGSize) -> GFPSDK.GFPRichMediaData
   @objc deinit
 }
 @objc(GFPAdInitProviderAdditionalInfo) @objcMembers public class GFPAdInitProviderAdditionalInfo : ObjectiveC.NSObject {
@@ -460,6 +477,7 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   case image
   case video
   case richMedia
+  case carousel
   case unknown
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -471,6 +489,8 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc public static let unknwonAspectRatio: CoreFoundation.CGFloat
   @objc final public let mediaType: GFPSDK.GFPMediaType
   @objc final public let videoController: GFPSDK.GFPVideoController?
+  @objc final public let richMediaData: GFPSDK.GFPRichMediaData?
+  @objc public var preferredMediaHeight: CoreFoundation.CGFloat
   @objc public var aspectRatio: CoreFoundation.CGFloat {
     @objc get
   }
@@ -480,7 +500,9 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc(createImageInfoWith:) public static func createImageInfo(image: UIKit.UIImage?) -> GFPSDK.GFPMediaData
   @objc(createVideoInfoWith:) public static func createVideoInfo(videoController: GFPSDK.GFPVideoController?) -> GFPSDK.GFPMediaData
   @objc(createRichMediaInfo) public static func createRichMediaInfo() -> GFPSDK.GFPMediaData
+  @objc(createRichMediaInfo:) public static func createRichMediaInfo(richMediaInfo: GFPSDK.GFPRichMediaData) -> GFPSDK.GFPMediaData
   @objc(createC2SInfoWith:) public static func createC2SInfo(c2sAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
+  @objc(createCarouseMedialInfo) public static func createCarouselMediaInfo() -> GFPSDK.GFPMediaData
   @objc deinit
 }
 @propertyWrapper public class GFPThreadSafe<T> {
@@ -519,6 +541,9 @@ extension GFPSDK.GFPRewardedAdProviderOption : Swift.RawRepresentable {}
 extension GFPSDK.GFPInterstitialAdProviderOption : Swift.Equatable {}
 extension GFPSDK.GFPInterstitialAdProviderOption : Swift.Hashable {}
 extension GFPSDK.GFPInterstitialAdProviderOption : Swift.RawRepresentable {}
+extension GFPSDK.GFPRichMediaDataAdType : Swift.Equatable {}
+extension GFPSDK.GFPRichMediaDataAdType : Swift.Hashable {}
+extension GFPSDK.GFPRichMediaDataAdType : Swift.RawRepresentable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.Equatable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.Hashable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.RawRepresentable {}

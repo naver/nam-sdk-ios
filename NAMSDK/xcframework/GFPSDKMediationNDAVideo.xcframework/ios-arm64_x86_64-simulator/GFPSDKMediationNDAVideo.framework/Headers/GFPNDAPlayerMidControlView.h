@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "GFPNDAPlayerControlViewDelegate.h"
-#import "GFPLanguageType.h"
 
 @class GFPNDAPlayerMidControlView;
 
@@ -34,9 +33,6 @@ static const CGFloat kPlayerPlayResumeButtonSize = 53.0;
 
 @property (nonatomic, readonly, assign) BOOL showControl;
 @property (atomic, readonly, assign) GFPNDALoadingOption loadingOption;
-
-- (instancetype)initWithFrame:(CGRect)frame
-                 languageType:(GFPLanguageType)languageType;
 
 - (void)showLoadingWithOption:(GFPNDALoadingOption)aOption;
 - (void)hideLoadingWithOption:(GFPNDALoadingOption)aOption;

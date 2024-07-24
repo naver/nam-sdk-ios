@@ -13,6 +13,7 @@
 
 @class GFPAdAdaptorParam;
 @class GFPNativeContext;
+@class GFPError;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,7 +27,8 @@ typedef NS_OPTIONS(NSInteger, GFPNDANativeType) {
 @interface GFPNDANativeAdFactory : NSObject
 
 + (GFPNDANativeAd *)creativeNativeParamWith:(GFPAdAdaptorParam *)aAdParam
-                                    context:(GFPNativeContext *)context;
+                                    context:(GFPNativeContext *)context
+                                      error:(GFPError *_Nullable *_Nullable)error;
 
 @end
 

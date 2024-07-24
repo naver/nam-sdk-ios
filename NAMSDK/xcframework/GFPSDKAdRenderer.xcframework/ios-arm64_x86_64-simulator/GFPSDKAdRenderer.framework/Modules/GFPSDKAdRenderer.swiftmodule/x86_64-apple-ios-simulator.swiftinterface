@@ -1,0 +1,56 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GFPSDKAdRenderer
+import Foundation
+import GFPSDK
+import NaverAdsServices
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GFPGradientLabelView) @objcMembers @_Concurrency.MainActor(unsafe) public class GFPGradientLabelView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func sizeToFit()
+  @objc @_Concurrency.MainActor(unsafe) public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public func createGradientView(startPoint: CoreFoundation.CGPoint, endPoint: CoreFoundation.CGPoint, colors: [Any])
+  @objc @_Concurrency.MainActor(unsafe) public func updateGradientView(isHidden: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func updateViewSize(aSize: CoreFoundation.CGSize)
+  @objc @_Concurrency.MainActor(unsafe) public func updateTextColor(color: UIKit.UIColor)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GFPRendererShoppingLabelView) @objcMembers @_Concurrency.MainActor(unsafe) public class GFPRendererShoppingLabelView : UIKit.UIView {
+  @objc(extraKeyAttentionBadge) @_Concurrency.MainActor(unsafe) public static let extraKeyAttentionBadge: Swift.String
+  @objc(extraKeyLabelText) @_Concurrency.MainActor(unsafe) public static let extraKeyLabelText: Swift.String
+  @objc(extraKeyLabelText2) @_Concurrency.MainActor(unsafe) public static let extraKeyLabelText2: Swift.String
+  @objc(extraKeyLabelImage) @_Concurrency.MainActor(unsafe) public static let extraKeyLabelImage: Swift.String
+  @objc(extraKeyLabelImage2) @_Concurrency.MainActor(unsafe) public static let extraKeyLabelImage2: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension GFPSDKAdRenderer.GFPRendererShoppingLabelView : GFPSDK.GFPNativeRendererViewProtocol {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func advertiseAssetView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func mediaContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func bodyAssetView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func ctaAssetView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func noticeAssetView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+}
+@_inheritsConvenienceInitializers @objc(GFPRendererUtils) @objcMembers public class GFPRendererUtils : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: GFPSDKAdRenderer.GFPRendererUtils
+  @objc public func loadNib(name: Swift.String) -> UIKit.UIView?
+  @objc override dynamic public init()
+  @objc deinit
+}

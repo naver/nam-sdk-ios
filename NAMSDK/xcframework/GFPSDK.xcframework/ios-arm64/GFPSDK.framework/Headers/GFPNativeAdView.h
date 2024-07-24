@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setExtraLabelWith:(NSString *)key label:(UILabel *)label;
 - (NSArray *)getAllExtraLabel;
 
+- (NSArray <UILabel *> *)labels;
+
 @end
 
 NS_ASSUME_NONNULL_END

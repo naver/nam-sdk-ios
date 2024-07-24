@@ -149,62 +149,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Rewarded\/GFPAPSRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1014,
-      "length": 29,
-      "value": "\"Invalid Rewarded ad Context\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Rewarded\/GFPAPSRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1803,
-      "length": 15,
-      "value": "\"Message lost \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Rewarded\/GFPAPSRewardedAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2308,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Rewarded\/GFPAPSRewardedAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 3487,
-      "length": 4,
-      "value": "\"-1\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Common\/GFPAPSCommonAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 415,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Common\/GFPAPSCommonAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1076,
-      "length": 104,
-      "value": "\"BidInfo and MediationHints from DTBAdResponse must be provided at GFPAPSParam to load APS rewarded ad.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Common\/GFPAPSCommonAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1933,
-      "length": 66,
-      "value": "\"APS SDK failed to load ad with DTBAdErrorCode: \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Common\/GFPAPSCommonAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1998,
-      "length": 60,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Common\/GFPAPSCommonAdaptor.swift",
       "kind": "StringLiteral",
       "offset": 345,
@@ -212,95 +156,11 @@
       "value": "\"GFPSDKMediationAPS.GFPAPSCommonAdaptor\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Rewarded\/GFPRewardedAdProviderAPS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 910,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Interstitial\/GFPInterstitialAdProviderAPS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 991,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Interstitial\/GFPAPSInterstitialAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 608,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Interstitial\/GFPAPSInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1028,
-      "length": 33,
-      "value": "\"Invalid Interstitial ad Context\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Interstitial\/GFPAPSInterstitialAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 2121,
-      "length": 15,
-      "value": "\"Message lost \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Interstitial\/GFPAPSInterstitialAdaptor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2374,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Banner\/GFPAPSBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 982,
-      "length": 28,
-      "value": "\"Invalid Banner ad Context.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Banner\/GFPAPSBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1239,
-      "length": 29,
-      "value": "\"No banner ad size received.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Banner\/GFPAPSBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 1422,
-      "length": 31,
-      "value": "\"Zero banner ad size received.\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Banner\/GFPAPSBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 3245,
-      "length": 108,
-      "value": "\"Failed to load APS Banner Ad with ErrorCode: \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Banner\/GFPAPSBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 3303,
-      "length": 10,
-      "value": "\" bannerView: \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Banner\/GFPAPSBannerAdaptor.swift",
-      "kind": "StringLiteral",
-      "offset": 3352,
-      "length": 43,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediationAPS\/Banner\/GFPBannerProviderAPS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 937,
-      "length": 4,
-      "value": "true"
     }
   ]
 }

@@ -21,6 +21,7 @@
 @class GFPVideoOptions;
 @class GFPAdImpressionInfo;
 @class GFPAutoPlayInfo;
+@class GFPAdSlotsNativeData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -50,6 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong, nullable) GFPAdSkipInfo *skipInfo;
 
 @property (nonatomic, readonly, strong) id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable> info;
+@property (nonatomic, readonly, strong) GFPNativeAdInfo *nativeAdInfo;
 @property (nonatomic, readonly, strong) NSString *alternativeText;
 
 @property (nonatomic, readonly, strong, nullable) GFPSKAdNetworkInfo *skAdNetworkInfo;
@@ -75,6 +77,22 @@ NS_ASSUME_NONNULL_BEGIN
                 videoOptions:(nullable GFPVideoOptions *)videoOptions
                 autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo
                   creativeId:(nullable NSString *)creativeId;
+
+
+- (instancetype)initWithCarouselInfo:(GFPNativeAdInfo *)aInfo
+                     skAdNetworkInfo:(nullable GFPSKAdNetworkInfo *)skAdNetworkInfo
+                          renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
+                     vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect
+                        videoOptions:(nullable GFPVideoOptions *)videoOptions
+                        autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo;
+
+- (instancetype)initWithDefaultRendererInfo:(GFPNativeAdInfo *)aInfo
+                            skAdNetworkInfo:(nullable GFPSKAdNetworkInfo *)skAdNetworkInfo
+                                 renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
+                            vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect
+                               videoOptions:(nullable GFPVideoOptions *)videoOptions
+                               autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo;
+
 
 @end
 

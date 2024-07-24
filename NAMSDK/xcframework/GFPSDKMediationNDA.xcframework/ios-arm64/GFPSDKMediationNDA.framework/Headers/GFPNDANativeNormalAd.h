@@ -21,9 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) GFPNativeAdRenderingSetting *nativeRenderingSetting;
 
-@property (nonatomic, strong) GFPVideoOptions *videoOptions;
-@property (nonatomic, strong) GFPAutoPlayInfo *autoPlayInfo;
-
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo
                      skAdNetworkInfo:(GFPSKAdNetworkInfo *)skNetworkInfo
                             skipInfo:(GFPAdSkipInfo *)skipInfo

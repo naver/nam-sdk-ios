@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GFPSDKMediationUnity-Swift.h</key>
 		<data>
-		at76hzFOm4oOHvnx0OFFRZJIjyM=
+		JJM14hU7bKA29xViCN20E7bZOao=
 		</data>
 		<key>Headers/GFPSDKMediationUnity.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rSLvvCfqgTmROHaWmcY0aIz8/fY=
+		WWe9A06rG3F8y2xYhA2KDKu0MmI=
 		</data>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,31 +22,39 @@
 		</data>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		fU1jVImH5hYsSys4fE2UzGj3doc=
+		x99m223Zf5DeT0ZPb2jSQ2JB6kE=
 		</data>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hIMmAv6K/ZnxmQa3ens5ALORoNw=
+		rhhi4kRsdZ3dm7RyDJ6t3ixSXwQ=
 		</data>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		fU1jVImH5hYsSys4fE2UzGj3doc=
+		x99m223Zf5DeT0ZPb2jSQ2JB6kE=
 		</data>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8pQ2Xn/lJXo64AJ6QF+q+f14W9o=
+		4Qt2jpDvi7R9c2fiXrbh1Di8jd4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		stQE2b9NRCxNJQ1+smKaDIBgPQo=
 		</data>
-		<key>UnityAds.bundle/Info.plist</key>
+		<key>UnityAdsResources.bundle/Info.plist</key>
 		<data>
-		idbujaneGcm2rrOGB6kLC5+4Fj8=
+		cHoUDUP1VA3xJjZ0w4R1LGNxGJQ=
 		</data>
-		<key>UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
+		</data>
+		<key>UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<data>
+		CYrPj5o14ZkSV5tSn5grkOsAghM=
+		</data>
+		<key>UnityAdsResources.bundle/omsdk-v1.js</key>
+		<data>
+		xFoo41tIvFKNNRq9NwW500wQtM8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			at76hzFOm4oOHvnx0OFFRZJIjyM=
+			JJM14hU7bKA29xViCN20E7bZOao=
 			</data>
 			<key>hash2</key>
 			<data>
-			AO7Q/1NodSnYpzDBA6GTyK4K5Tbu8+UcSlkkG6v98r4=
+			xBFWCLliEpzN3Aub05dS0rNrzHQPF9In0sHTv31MgS4=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationUnity.h</key>
@@ -88,44 +96,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fU1jVImH5hYsSys4fE2UzGj3doc=
+			x99m223Zf5DeT0ZPb2jSQ2JB6kE=
 			</data>
 			<key>hash2</key>
 			<data>
-			L8louj5YA4PQfGLSGwWD488/dg+ltL8jVUtUQBhbyKs=
+			IQBXflr7ko/d7PNNo01rBsRlGwL6HxJoDZyJAkFulT4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hIMmAv6K/ZnxmQa3ens5ALORoNw=
+			rhhi4kRsdZ3dm7RyDJ6t3ixSXwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NYX7FdVk5idPRw0dW70nJ9lBJeUY3qmke5kjjWNSfOw=
+			3zcdEhWbtGXRXzbD3+39uXTQaqb4xdYK7O8tchJN5t4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fU1jVImH5hYsSys4fE2UzGj3doc=
+			x99m223Zf5DeT0ZPb2jSQ2JB6kE=
 			</data>
 			<key>hash2</key>
 			<data>
-			L8louj5YA4PQfGLSGwWD488/dg+ltL8jVUtUQBhbyKs=
+			IQBXflr7ko/d7PNNo01rBsRlGwL6HxJoDZyJAkFulT4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationUnity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8pQ2Xn/lJXo64AJ6QF+q+f14W9o=
+			4Qt2jpDvi7R9c2fiXrbh1Di8jd4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+vH1SEbRD0Y7ctFMctrWiawcLtR1F+h8/oLigRJiPKI=
+			OqAUNjt+RBAECQVxeYDjEKSDCgoylENhgrF9KzvYOSM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -139,18 +147,18 @@
 			ibuh5tZJQPdwl1YqMSjSVupSbbw9KDEoARbuaFDOT+M=
 			</data>
 		</dict>
-		<key>UnityAds.bundle/Info.plist</key>
+		<key>UnityAdsResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			idbujaneGcm2rrOGB6kLC5+4Fj8=
+			cHoUDUP1VA3xJjZ0w4R1LGNxGJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			tUNC9H485MjX0eFZUIapiVDrbk8btQU1ZFcGarmST04=
+			ANB3Y7p6mTSoaYSYslCixP8apszsh1iNk/o9+MbuNSs=
 			</data>
 		</dict>
-		<key>UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -159,6 +167,28 @@
 			<key>hash2</key>
 			<data>
 			f3FIPJmP/SZx3Vlg4pLmKnlyAbkHD2JKFo75koJnVG4=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CYrPj5o14ZkSV5tSn5grkOsAghM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8V5c4BLIe9MsFdcdL9C5VLmy/Z1YGNgXs4IK89k9WjU=
+			</data>
+		</dict>
+		<key>UnityAdsResources.bundle/omsdk-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xFoo41tIvFKNNRq9NwW500wQtM8=
+			</data>
+			<key>hash2</key>
+			<data>
+			iWz5BbK1YoGNpY4Z4ltSUIPxhjj2ubDXxq6kEamQdYU=
 			</data>
 		</dict>
 	</dict>
