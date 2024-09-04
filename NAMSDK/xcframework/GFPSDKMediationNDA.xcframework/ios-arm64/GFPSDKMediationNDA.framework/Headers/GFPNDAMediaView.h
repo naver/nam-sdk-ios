@@ -11,16 +11,19 @@
 #import "GFPNativeAdInfoProtocol.h"
 #import "GFPNDAAdMuteView.h"
 #import "GFPAdBackgroundInfo.h"
+#import "GFPEventReporter.h"
 
 @class GFPNativeMediaInfo;
 @class GFPNativeRichInfo;
 @class GFPMediaData;
+@class GFPIconData;
 
 @class GFPError;
 @class GFPAdEventObject;
 @class GFPNativeBaseView;
 @class GFPNDAMediaViewRenderInfo;
 @class GFPNDAMediaViewInfo;
+@class GFPNDANativeTapGesture;
 
 static CGFloat const kRichAdStandardWidth = 360;
 static CGFloat const kRichAdStandardImageWidth = 375;
@@ -67,10 +70,10 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)didChangeSize:(CGSize)size mediaViewType:(GFPNDAMediaViewType)type;
 - (void)didClickWith:(GFPNDAMediaViewRenderType)aType event:(GFPAdEventObject * _Nullable)aEvent landingURL:(NSURL * _Nullable)url;
 - (void)didAdMuteChangeWith:(GFPNDAAdMuteState)aState; //for NS Ad.
+- (void)didAdMuteCanceled;
 - (void)didReloadWith:(GFPNDAMediaViewType)aType;
 - (void)didReloadFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
 - (void)didTappedLandingViewWith:(GFPNDAMediaViewType)aType landingUrl:(NSString *)landingUrl trackers:(NSArray <NSString *> *)trackers;
-
 - (void)didRenderingFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
 - (void)didSlotRenderingFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
 @end
@@ -108,6 +111,12 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)reloadNativeMedia;
 @end
 
+//For carousel
+@protocol GFPNDAMediaAssetTouchDelegate <NSObject>
+
+- (void) didClickAssetWith:(GFPNDANativeTapGesture *)gesture;
+
+@end
 
 @interface GFPNDAMediaView : UIView <GFPAdBackgroundDataSource, GFPNDAMediaOverrideProtocol>
 
@@ -121,6 +130,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 @property (nonatomic, readonly, assign) BOOL isLoaded;
 @property (nonatomic, readonly, assign) BOOL isLandingEnable;
 
+@property (nonatomic, readonly, strong, nullable) GFPIconData *iconData;
 @property (nonatomic, readonly, strong) GFPMediaData *mediaData;
 @property (nonatomic, readonly, strong) NSString *alternativeText;
 
@@ -132,6 +142,8 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
                          type:(GFPNDAMediaViewType)aType
                          info:(GFPNDAMediaViewInfo *_Nonnull)aInfo;
 - (UIView * _Nullable)touchView;
+
+- (void)shrinkExtendedRichAd;
 
 @end
 

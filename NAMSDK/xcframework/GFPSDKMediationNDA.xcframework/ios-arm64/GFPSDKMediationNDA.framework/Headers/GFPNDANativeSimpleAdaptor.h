@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNDANativeSimpleAdaptor : GFPNDANativeAdaptor
 
+- (void)shrinkExtendedRichAd;
+
 @end
 
 NS_ASSUME_NONNULL_END

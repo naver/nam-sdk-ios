@@ -62,7 +62,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAdChoiceColorType) {
 @interface GFPNDAAdChoiceResourceUtils : NSObject
 
 @property (nonatomic, strong, readonly) GFPNativeBaseRenderingSetting *renderingSetting;
-//@property (nonatomic, assign, readonly) BOOL isDarkMode;
+@property (nonatomic, assign, readonly) BOOL isDarkMode;
 
 - (instancetype)initWith:(GFPNativeBaseRenderingSetting *)renderingSetting;
 

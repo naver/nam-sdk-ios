@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPMediaView : UIView 
 
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -393,6 +393,24 @@ SWIFT_CLASS("_TtC6GFPSDK16GFPAdStyleOption")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC6GFPSDK14GFPBadgeOption")
+@interface GFPBadgeOption : NSObject
+/// Badge의 Border 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable borderColor;
+/// Badge의 Border Alpha
+@property (nonatomic, readonly) CGFloat borderAlpha;
+/// Badge의 BorderWidth
+@property (nonatomic, readonly) CGFloat borderWidth;
+/// Badge의 배경 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable badgeBgColor;
+/// Badge의 배경 Alpha
+@property (nonatomic, readonly) CGFloat badgeBgAlpha;
+- (nonnull instancetype)initWithBorderColor:(UIColor * _Nullable)borderColor borderAlpha:(CGFloat)borderAlpha borderWidth:(CGFloat)borderWidth badgeBgColor:(UIColor * _Nullable)badgeBgColor badgeBgAlpha:(CGFloat)badgeBgAlpha OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// GFP에서 지원하는 배너광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionNone = 0,
@@ -439,6 +457,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (BOOL)isExistImageWithBundle:(NSBundle * _Nullable)bundle name:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
+@protocol GFPCarouselHeightDelegate <NSObject>
+- (CGFloat)preferredHeightWithFixedWidth:(CGFloat)fixedWidth SWIFT_WARN_UNUSED_RESULT;
+@end
+
 /// GFP에서 지원하는 Combined (배너, 네이티브)광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionNone = 0,
@@ -452,8 +476,14 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
 @property (nonatomic, readonly) CGSize size;
 @property (nonatomic, readonly, copy) NSString * _Nonnull lightModeName;
 @property (nonatomic, readonly, copy) NSString * _Nonnull darkModeName;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull darkModeColor;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull lightModeColor;
+@property (nonatomic, readonly) BOOL isTemplateMode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull templateImageName;
 - (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size lightModeName:(NSString * _Nonnull)lightModeName darkModeName:(NSString * _Nonnull)darkModeName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size templateImageName:(NSString * _Nonnull)templateImageName lightModeColor:(UIColor * _Nonnull)lightModeColor darkModeColor:(UIColor * _Nonnull)darkModeColor OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) BOOL isExistResource;
+- (UIColor * _Nullable)getTintColor:(BOOL)isDarkMode SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -473,6 +503,21 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPDeviceInfo")
 @end
 
 
+
+@class UIImage;
+
+SWIFT_CLASS("_TtC6GFPSDK11GFPIconData")
+@interface GFPIconData : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspectRatio;)
++ (CGFloat)unknwonAspectRatio SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) UIImage * _Nullable image;
+/// 아이콘의 aspectRatio. 값이 없을 경우 -1 을 반환.
+@property (nonatomic, readonly) CGFloat aspectRatio;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
++ (GFPIconData * _Nonnull)createIconInfoWith:(UIImage * _Nullable)image SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class GFPWaterfallAdSize;
 
@@ -499,6 +544,7 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionLAN = 10,
 };
 
+@class GFPSpannableOption;
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPLabelOption")
 @interface GFPLabelOption : NSObject
@@ -508,15 +554,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 @property (nonatomic, readonly, copy) NSString * _Nullable text;
 /// Label 의 텍스트 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable textColor;
+/// Label 의 Bold여부
+@property (nonatomic, readonly) BOOL isBold;
 /// Label의 배경 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable bgColor;
 /// 광고의 색상 전환이 필요할 때 배경 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable highlightBgColor;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text;
+/// 쇼핑광고의 Badge 지원
+@property (nonatomic, readonly, strong) GFPBadgeOption * _Nullable badgeOption;
+/// 쇼핑광고 AttributeString 처리
+@property (nonatomic, readonly, copy) NSArray<GFPSpannableOption *> * _Nullable spnnableOption;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text highlightBgColor:(UIColor * _Nullable)highlightBgColor;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor highlightBgColor:(UIColor * _Nullable)highlightBgColor;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text bgColor:(UIColor * _Nullable)bgColor;
-- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor bgColor:(UIColor * _Nullable)bgColor highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor bgColor:(UIColor * _Nullable)bgColor highlightBgColor:(UIColor * _Nullable)highlightBgColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor bgColor:(UIColor * _Nullable)bgColor highlightBgColor:(UIColor * _Nullable)highlightBgColor isBold:(BOOL)isBold badgeOption:(GFPBadgeOption * _Nullable)badgeOption spannableOption:(NSArray<GFPSpannableOption *> * _Nullable)spannableOption OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -541,7 +595,6 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPLimitQueue")
 enum GFPMediaType : NSInteger;
 @class GFPVideoController;
 @class GFPRichMediaData;
-@class UIImage;
 
 SWIFT_CLASS("_TtC6GFPSDK12GFPMediaData")
 @interface GFPMediaData : NSObject
@@ -551,6 +604,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 @property (nonatomic, readonly, strong) GFPVideoController * _Nullable videoController;
 @property (nonatomic, readonly, strong) GFPRichMediaData * _Nullable richMediaData;
 @property (nonatomic) CGFloat preferredMediaHeight;
+@property (nonatomic) CGFloat preferredMediaWidth;
+@property (nonatomic) CGFloat indicatorHeight;
+@property (nonatomic, weak) id <GFPCarouselHeightDelegate> _Nullable carouselHeightDelegate;
+@property (nonatomic, weak) UIImage * _Nullable image;
+- (CGFloat)preferredHeightWithFixedWidth:(CGFloat)fixedWidth SWIFT_WARN_UNUSED_RESULT;
 /// 미디어의 aspectRatio. 값이 없을 경우 -1 을 반환.
 @property (nonatomic, readonly) CGFloat aspectRatio;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -661,6 +719,22 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK18GFPSpannableOption")
+@interface GFPSpannableOption : NSObject
+/// 강조 Text 시작 위치 - 시작 Position은 1입니다.
+@property (nonatomic, readonly) NSInteger startPos;
+/// 강조 Text 끝 위치
+@property (nonatomic, readonly) NSInteger endPos;
+/// 볼드 여부
+@property (nonatomic, readonly) BOOL isBold;
+/// 변경 Text Color
+@property (nonatomic, readonly, strong) UIColor * _Nullable textColor;
+- (nonnull instancetype)initWithTextColor:(UIColor * _Nullable)textColor startPos:(NSInteger)startPos endPos:(NSInteger)endPos isBold:(BOOL)isBold OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -1295,6 +1369,24 @@ SWIFT_CLASS("_TtC6GFPSDK16GFPAdStyleOption")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC6GFPSDK14GFPBadgeOption")
+@interface GFPBadgeOption : NSObject
+/// Badge의 Border 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable borderColor;
+/// Badge의 Border Alpha
+@property (nonatomic, readonly) CGFloat borderAlpha;
+/// Badge의 BorderWidth
+@property (nonatomic, readonly) CGFloat borderWidth;
+/// Badge의 배경 색상
+@property (nonatomic, readonly, strong) UIColor * _Nullable badgeBgColor;
+/// Badge의 배경 Alpha
+@property (nonatomic, readonly) CGFloat badgeBgAlpha;
+- (nonnull instancetype)initWithBorderColor:(UIColor * _Nullable)borderColor borderAlpha:(CGFloat)borderAlpha borderWidth:(CGFloat)borderWidth badgeBgColor:(UIColor * _Nullable)badgeBgColor badgeBgAlpha:(CGFloat)badgeBgAlpha OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// GFP에서 지원하는 배너광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionNone = 0,
@@ -1341,6 +1433,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (BOOL)isExistImageWithBundle:(NSBundle * _Nullable)bundle name:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
+@protocol GFPCarouselHeightDelegate <NSObject>
+- (CGFloat)preferredHeightWithFixedWidth:(CGFloat)fixedWidth SWIFT_WARN_UNUSED_RESULT;
+@end
+
 /// GFP에서 지원하는 Combined (배너, 네이티브)광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionNone = 0,
@@ -1354,8 +1452,14 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
 @property (nonatomic, readonly) CGSize size;
 @property (nonatomic, readonly, copy) NSString * _Nonnull lightModeName;
 @property (nonatomic, readonly, copy) NSString * _Nonnull darkModeName;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull darkModeColor;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull lightModeColor;
+@property (nonatomic, readonly) BOOL isTemplateMode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull templateImageName;
 - (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size lightModeName:(NSString * _Nonnull)lightModeName darkModeName:(NSString * _Nonnull)darkModeName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size templateImageName:(NSString * _Nonnull)templateImageName lightModeColor:(UIColor * _Nonnull)lightModeColor darkModeColor:(UIColor * _Nonnull)darkModeColor OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) BOOL isExistResource;
+- (UIColor * _Nullable)getTintColor:(BOOL)isDarkMode SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1375,6 +1479,21 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPDeviceInfo")
 @end
 
 
+
+@class UIImage;
+
+SWIFT_CLASS("_TtC6GFPSDK11GFPIconData")
+@interface GFPIconData : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspectRatio;)
++ (CGFloat)unknwonAspectRatio SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) UIImage * _Nullable image;
+/// 아이콘의 aspectRatio. 값이 없을 경우 -1 을 반환.
+@property (nonatomic, readonly) CGFloat aspectRatio;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
++ (GFPIconData * _Nonnull)createIconInfoWith:(UIImage * _Nullable)image SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class GFPWaterfallAdSize;
 
@@ -1401,6 +1520,7 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionLAN = 10,
 };
 
+@class GFPSpannableOption;
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPLabelOption")
 @interface GFPLabelOption : NSObject
@@ -1410,15 +1530,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 @property (nonatomic, readonly, copy) NSString * _Nullable text;
 /// Label 의 텍스트 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable textColor;
+/// Label 의 Bold여부
+@property (nonatomic, readonly) BOOL isBold;
 /// Label의 배경 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable bgColor;
 /// 광고의 색상 전환이 필요할 때 배경 색상
 @property (nonatomic, readonly, strong) UIColor * _Nullable highlightBgColor;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text;
+/// 쇼핑광고의 Badge 지원
+@property (nonatomic, readonly, strong) GFPBadgeOption * _Nullable badgeOption;
+/// 쇼핑광고 AttributeString 처리
+@property (nonatomic, readonly, copy) NSArray<GFPSpannableOption *> * _Nullable spnnableOption;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text highlightBgColor:(UIColor * _Nullable)highlightBgColor;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor highlightBgColor:(UIColor * _Nullable)highlightBgColor;
 - (nonnull instancetype)initWithText:(NSString * _Nullable)text bgColor:(UIColor * _Nullable)bgColor;
-- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor bgColor:(UIColor * _Nullable)bgColor highlightBgColor:(UIColor * _Nullable)highlightBgColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor bgColor:(UIColor * _Nullable)bgColor highlightBgColor:(UIColor * _Nullable)highlightBgColor;
+- (nonnull instancetype)initWithText:(NSString * _Nullable)text textColor:(UIColor * _Nullable)textColor bgColor:(UIColor * _Nullable)bgColor highlightBgColor:(UIColor * _Nullable)highlightBgColor isBold:(BOOL)isBold badgeOption:(GFPBadgeOption * _Nullable)badgeOption spannableOption:(NSArray<GFPSpannableOption *> * _Nullable)spannableOption OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1443,7 +1571,6 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPLimitQueue")
 enum GFPMediaType : NSInteger;
 @class GFPVideoController;
 @class GFPRichMediaData;
-@class UIImage;
 
 SWIFT_CLASS("_TtC6GFPSDK12GFPMediaData")
 @interface GFPMediaData : NSObject
@@ -1453,6 +1580,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 @property (nonatomic, readonly, strong) GFPVideoController * _Nullable videoController;
 @property (nonatomic, readonly, strong) GFPRichMediaData * _Nullable richMediaData;
 @property (nonatomic) CGFloat preferredMediaHeight;
+@property (nonatomic) CGFloat preferredMediaWidth;
+@property (nonatomic) CGFloat indicatorHeight;
+@property (nonatomic, weak) id <GFPCarouselHeightDelegate> _Nullable carouselHeightDelegate;
+@property (nonatomic, weak) UIImage * _Nullable image;
+- (CGFloat)preferredHeightWithFixedWidth:(CGFloat)fixedWidth SWIFT_WARN_UNUSED_RESULT;
 /// 미디어의 aspectRatio. 값이 없을 경우 -1 을 반환.
 @property (nonatomic, readonly) CGFloat aspectRatio;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -1563,6 +1695,22 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK18GFPSpannableOption")
+@interface GFPSpannableOption : NSObject
+/// 강조 Text 시작 위치 - 시작 Position은 1입니다.
+@property (nonatomic, readonly) NSInteger startPos;
+/// 강조 Text 끝 위치
+@property (nonatomic, readonly) NSInteger endPos;
+/// 볼드 여부
+@property (nonatomic, readonly) BOOL isBold;
+/// 변경 Text Color
+@property (nonatomic, readonly, strong) UIColor * _Nullable textColor;
+- (nonnull instancetype)initWithTextColor:(UIColor * _Nullable)textColor startPos:(NSInteger)startPos endPos:(NSInteger)endPos isBold:(BOOL)isBold OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

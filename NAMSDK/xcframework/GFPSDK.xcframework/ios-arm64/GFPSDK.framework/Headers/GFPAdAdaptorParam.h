@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPAdAdaptorParam : NSObject
 
+@property (nonatomic, strong) NSString *requestId;
 
 @property (readonly, nonatomic, strong) GFPAdInfoSize *responseSize;
 @property (readonly, nonatomic, strong) NSArray<GFPAdInfoSize *> *requestSizes;

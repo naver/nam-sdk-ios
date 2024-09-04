@@ -43,6 +43,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdWasMuted:(GFPNativeAd *)nativeAd;
 
 /**
+ * 광고 뮤트 취소 시 호출됩니다.
+ * @param nativeAd 네이티브 광고 객체
+ */
+- (void)nativeAdWasCanceledMute:(GFPNativeAd *)nativeAd;
+
+/**
  * 리소스 재로드가 필요할 때 리소스 재 로드 성공 시 호출됩니다.
  * @param nativeAd 네이티브 광고 객체
  */
@@ -87,6 +93,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeSimpleAdWasMuted:(GFPNativeSimpleAd *)nativeSimpleAd;
 
 /**
+ * 광고 뮤트 취소 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleAdWasCanceledMute:(GFPNativeSimpleAd *)nativeSimpleAd;
+
+
+/**
  * 미디어뷰 사이즈 변경 시 호출됩니다.
  * @param nativeSimpleAd 네이티브 광고 객체
  * @param size 변경된 사이즈
@@ -109,7 +122,9 @@ NS_ASSUME_NONNULL_BEGIN
  * Rich  Extend 광고에서 미디어뷰 사이즈 확장 시작 시 호출됩니다.
  * @param nativeSimpleAd 네이티브 광고 객체
  */
-- (void)nativeSimpleRichAdExtendStart:(GFPNativeSimpleAd *)nativeSimpleAd;
+- (void)nativeSimpleRichAdExtendStart:(GFPNativeSimpleAd *)nativeSimpleAd
+DEPRECATED_MSG_ATTRIBUTE("Deprecated. Use `nativeSimpleRichAdExtendStart:toSize:` instead");
+
 /**
  * Rich  Extend 광고에서 미디어뷰 사이즈 확장 시작 시, nativeSimpleRichAdExtendStart: 와 함께 호출됩니다.
  * 9:16, 16:9, 1:1 비율 동영상을 제공하는 스페셜 DA 프리미엄형 "뉴" 동영상 확장형 이후로 부터 출시된 일부 광고 상품 부터 적용됩니다.
@@ -127,7 +142,8 @@ NS_ASSUME_NONNULL_BEGIN
  * Rich  Extend 광고에서 미디어뷰 사이즈 축소 시작 시 호출됩니다.
  * @param nativeSimpleAd 네이티브 광고 객체
  */
-- (void)nativeSimpleRichAdShrinkStart:(GFPNativeSimpleAd *)nativeSimpleAd;
+- (void)nativeSimpleRichAdShrinkStart:(GFPNativeSimpleAd *)nativeSimpleAd
+DEPRECATED_MSG_ATTRIBUTE("Deprecated. Use `nativeSimpleRichAdShrinkStart:toSize:` instead");
 /**
  * Rich  Extend 광고에서 미디어뷰 사이즈 축소 시작 시, nativeSimpleRichAdShrinkStart: 와 함께 호출됩니다.
  * 9:16, 16:9, 1:1 비율 동영상을 제공하는 스페셜 DA 프리미엄형 "뉴" 동영상 확장형 이후로 부터 출시된 일부 광고 상품 부터 적용됩니다.

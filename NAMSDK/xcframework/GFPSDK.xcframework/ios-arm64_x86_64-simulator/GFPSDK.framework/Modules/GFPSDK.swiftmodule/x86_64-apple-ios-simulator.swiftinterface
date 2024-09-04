@@ -33,13 +33,27 @@ extension GFPSDK.GFPErrorUtils {
   @objc(defaultHighlightBgColor) public static let defaultHighlightBgColor: UIKit.UIColor?
   @objc final public let text: Swift.String?
   @objc final public let textColor: UIKit.UIColor?
+  @objc final public let isBold: Swift.Bool
   @objc final public let bgColor: UIKit.UIColor?
   @objc final public let highlightBgColor: UIKit.UIColor?
   @objc convenience public init(text: Swift.String?)
+  @objc final public let badgeOption: GFPSDK.GFPBadgeOption?
+  @objc final public let spnnableOption: [GFPSDK.GFPSpannableOption]?
   @objc convenience public init(text: Swift.String?, highlightBgColor: UIKit.UIColor?)
   @objc convenience public init(text: Swift.String?, textColor: UIKit.UIColor?)
+  @objc(initWithText:textColor:highlightBgColor:) convenience public init(text: Swift.String?, textColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
   @objc convenience public init(text: Swift.String?, bgColor: UIKit.UIColor?)
-  @objc(initWithText:textColor:bgColor:highlightBgColor:) public init(text: Swift.String?, textColor: UIKit.UIColor?, bgColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
+  @objc(initWithText:textColor:bgColor:highlightBgColor:) convenience public init(text: Swift.String?, textColor: UIKit.UIColor?, bgColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?)
+  @objc(initWithText:textColor:bgColor:highlightBgColor:isBold:badgeOption:spannableOption:) public init(text: Swift.String?, textColor: UIKit.UIColor?, bgColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?, isBold: Swift.Bool, badgeOption: GFPSDK.GFPBadgeOption?, spannableOption: [GFPSDK.GFPSpannableOption]?)
+  @objc deinit
+}
+@objc @objcMembers public class GFPBadgeOption : ObjectiveC.NSObject {
+  @objc final public let borderColor: UIKit.UIColor?
+  @objc final public let borderAlpha: CoreFoundation.CGFloat
+  @objc final public let borderWidth: CoreFoundation.CGFloat
+  @objc final public let badgeBgColor: UIKit.UIColor?
+  @objc final public let badgeBgAlpha: CoreFoundation.CGFloat
+  @objc(initWithBorderColor:borderAlpha:borderWidth:badgeBgColor:badgeBgAlpha:) public init(borderColor: UIKit.UIColor?, borderAlpha: CoreFoundation.CGFloat, borderWidth: CoreFoundation.CGFloat, badgeBgColor: UIKit.UIColor?, badgeBgAlpha: CoreFoundation.CGFloat)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPWaterfallAdSize : ObjectiveC.NSObject {
@@ -197,6 +211,14 @@ extension GFPSDK.GFPErrorUtils {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @objcMembers public class GFPSpannableOption : ObjectiveC.NSObject {
+  @objc final public let startPos: Swift.Int
+  @objc final public let endPos: Swift.Int
+  @objc final public let isBold: Swift.Bool
+  @objc final public let textColor: UIKit.UIColor?
+  @objc(initWithTextColor:startPos:endPos:isBold:) public init(textColor: UIKit.UIColor?, startPos: Swift.Int, endPos: Swift.Int, isBold: Swift.Bool)
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPQoeTrackingInfo : ObjectiveC.NSObject {
   @objc final public let urlString: Swift.String
   @objc final public let timeTable: [Swift.Int]
@@ -231,6 +253,18 @@ extension GFPSDK.GFPErrorUtils {
 @objc @_inheritsConvenienceInitializers @objcMembers public class kGFPRendererVisualKey : ObjectiveC.NSObject {
   @objc public static let shoppingLabel: Swift.String
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPIconData : ObjectiveC.NSObject {
+  @objc public static let unknwonAspectRatio: CoreFoundation.CGFloat
+  @objc weak public var image: UIKit.UIImage?
+  @objc public var aspectRatio: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc(createIconInfoWith:) public static func createImageInfo(image: UIKit.UIImage?) -> GFPSDK.GFPIconData
   @objc deinit
 }
 @objc public enum GFPBannerProviderOption : Swift.Int {
@@ -357,10 +391,16 @@ extension GFPSDK.GFPErrorUtils {
   @objc final public let size: CoreFoundation.CGSize
   @objc final public let lightModeName: Swift.String
   @objc final public let darkModeName: Swift.String
+  @objc final public let darkModeColor: UIKit.UIColor
+  @objc final public let lightModeColor: UIKit.UIColor
+  @objc final public let isTemplateMode: Swift.Bool
+  @objc final public let templateImageName: Swift.String
   @objc(initWith:size:lightModeName:darkModeName:) public init(bundle: Foundation.Bundle?, size: CoreFoundation.CGSize, lightModeName: Swift.String, darkModeName: Swift.String)
+  @objc(initWith:size:templateImageName:lightModeColor:darkModeColor:) public init(bundle: Foundation.Bundle?, size: CoreFoundation.CGSize, templateImageName: Swift.String, lightModeColor: UIKit.UIColor, darkModeColor: UIKit.UIColor)
   @objc(isExistResource) public var isExistResource: Swift.Bool {
     @objc get
   }
+  @objc(getTintColor:) public func getTintColor(isDarkMode: Swift.Bool) -> UIKit.UIColor?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdNativeOptions : ObjectiveC.NSObject {
@@ -485,12 +525,20 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
     get
   }
 }
+@objc public protocol GFPCarouselHeightDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func preferredHeightWithFixedWidth(_ fixedWidth: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPMediaData : ObjectiveC.NSObject {
   @objc public static let unknwonAspectRatio: CoreFoundation.CGFloat
   @objc final public let mediaType: GFPSDK.GFPMediaType
   @objc final public let videoController: GFPSDK.GFPVideoController?
   @objc final public let richMediaData: GFPSDK.GFPRichMediaData?
   @objc public var preferredMediaHeight: CoreFoundation.CGFloat
+  @objc public var preferredMediaWidth: CoreFoundation.CGFloat
+  @objc public var indicatorHeight: CoreFoundation.CGFloat
+  @objc weak public var carouselHeightDelegate: (any GFPSDK.GFPCarouselHeightDelegate)?
+  @objc weak public var image: UIKit.UIImage?
+  @objc public func preferredHeightWithFixedWidth(_ fixedWidth: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
   @objc public var aspectRatio: CoreFoundation.CGFloat {
     @objc get
   }

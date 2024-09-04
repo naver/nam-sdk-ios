@@ -47,6 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)stopTrackingViewableImp;
 
+- (void)startTrackingBounceBackImp:(UIView *)viewToBeTracked
+                 completionHandler:(void (^)(GFPImpressionTrackingTarget *target))completionHandler;
+
+- (void)stopTrackingBouncBackImp;
+
 - (GFPImpressionTrackingTarget *)startTrackingCustomImpWithView:(UIView *)viewToBeTracked
                                                adImpressionInfo:(GFPAdImpressionInfo *)adImpressionInfo
                                               completionHandler:(void (^)(GFPImpressionTrackingTarget *target))completionHandler;

@@ -33,7 +33,9 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAdChoiceViewType) {
 - (void)adPrivacyWasClicked:(UIView *)adPrivacyView;
 
 - (void)adMuteWasClicked:(GFPNDAAdMuteView *)adMuteView eventTracking:(GFPAdEventObject *)eventTracking;
+- (void)adMuteWasCanceled:(GFPNDAAdMuteView *)adMuteView;
 - (void)adMute:(GFPNDAAdMuteView *)adMuteView didChangeState:(GFPNDAAdMuteState)state;
+
 
 @end
 

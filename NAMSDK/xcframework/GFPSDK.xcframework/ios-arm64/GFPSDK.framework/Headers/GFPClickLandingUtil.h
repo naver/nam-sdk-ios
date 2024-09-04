@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GFPS2SAdClickDelegate.h"
+
 @import NaverAdsServices;
 
 @class GFPSKAdNetworkInfo;

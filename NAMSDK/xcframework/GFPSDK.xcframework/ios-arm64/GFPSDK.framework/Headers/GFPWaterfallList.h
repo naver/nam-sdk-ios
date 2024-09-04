@@ -131,6 +131,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *lazyRenderMediaFailedImpressions;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *mutes;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *closeImpressions;
+@property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *bounce;
 
 - (instancetype)init NS_UNAVAILABLE;
 

@@ -7,6 +7,7 @@
 //
 
 #import "GFPNDAMediaView.h"
+@class GFPIconData;
 
 NS_ASSUME_NONNULL_BEGIN
 

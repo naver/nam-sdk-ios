@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readwrite, nonatomic, strong) NSNumber *loadRequestTime;      // uptime
 @property (readwrite, nonatomic, strong) NSNumber *startRequestTime;     // uptime
 
+@property (nonatomic, assign, readonly) BOOL existBounceBackEvent;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithProviderEvent:(GFPAdInfoEvent *)providerEvent // ads event
@@ -86,6 +88,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reportAttachImpressionsWithExtraInfo:(GFPEventExtraInfo *_Nullable)aExtraInfo;
 
 - (void)reportCompleteImpressionsWithExtraInfo:(GFPEventExtraInfo *_Nullable)aExtraInfo;
+
+- (void)reportBounceBack;
 
 @end
 

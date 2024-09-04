@@ -19,6 +19,7 @@ typedef NS_OPTIONS(NSInteger, GFPImpressionType) {
     GFPImpressionTypeViewable = 1 << 1,
     GFPImpressionTypeCustom = 1 << 2,
     GFPImpressionTypeSlot = 1 << 3,
+    GFPImpressionTypeBounce = 1 << 4,
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -52,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithVisibleRate:(CGFloat)visibleRate
                         durationSec:(NSTimeInterval)durationSec NS_DESIGNATED_INITIALIZER;
 
-
++ (GFPImpressionTrackThreshold *)makeImpressionTrackThresholdWith:(GFPImpressionType)impType;
 + (GFPImpressionTrackThreshold *)makeImpressionTrackThresholdWith:(GFPImpressionType)impType
                                                  adImpressionInfo:(GFPAdImpressionInfo * _Nullable)adImpressionInfo;
 

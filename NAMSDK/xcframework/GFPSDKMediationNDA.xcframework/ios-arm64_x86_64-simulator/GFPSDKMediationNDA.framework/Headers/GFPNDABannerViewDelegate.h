@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GFPBannerAdaptorDelegate.h"
+#import "GFPEventReporter.h"
 
 @class GFPError;
 

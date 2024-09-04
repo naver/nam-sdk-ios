@@ -128,11 +128,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL muteAudio;
 
-
 /**
  *  서비스에서 위치정보 권한을 얻었어도 무시하는 옵션  (기본값 NO)
 */
 @property (nonatomic, assign) BOOL disableLocationInfo;
+
+/**
+ * sdk 넬로 로그 전송 여부 (기본값 NO)
+ */
+@property (nonatomic, assign) BOOL disableNeloLog;
 
 
 - (GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;

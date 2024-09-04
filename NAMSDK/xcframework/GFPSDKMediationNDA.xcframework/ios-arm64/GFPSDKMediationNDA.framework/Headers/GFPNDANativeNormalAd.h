@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNDANativeNormalAd : GFPNDANativeAd
 
+@property (nonatomic, strong) GFPNDAMediaView *iconView;
 @property (nonatomic, strong, readonly) GFPNativeAdRenderingSetting *nativeRenderingSetting;
 
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo

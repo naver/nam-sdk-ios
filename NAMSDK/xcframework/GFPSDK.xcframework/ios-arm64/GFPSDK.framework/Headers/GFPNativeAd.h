@@ -16,6 +16,7 @@
 
 @class GFPLoadResponseInfo;
 @class GFPMediaData;
+@class GFPIconData;
 @class GFPLabelOption;
 @class GFPAdChoicesData;
 @class GFPAdStyleOption;
@@ -127,6 +128,12 @@ extern NSString *const kGFPNativeIconSizeKey;
 @property (readonly, nonatomic, strong, nonnull) UIImage *image DEPRECATED_MSG_ATTRIBUTE("This property will be removed. If you want to know the aspect ratio of the image, use aspectRatio of mediaData.");
 
 - (CGFloat)estimateHeightWith:(CGFloat)viewWidth;
+
+/**
+ * Shrink extended rich ads to default layout state.
+ * Some rich ads may perform animations.
+ */
+- (void)shrinkExtendedRichAd;
 
 @end
 

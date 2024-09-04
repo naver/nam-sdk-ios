@@ -135,6 +135,16 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @end
 
+@interface GFPNativeStyleSpannableInfo : NSObject
+
+@property (nonatomic, readonly, assign) NSInteger startPos;
+@property (nonatomic, readonly, assign) NSInteger endPos;
+@property (nonatomic, readonly, assign) BOOL isBold;
+@property (nonatomic, readonly, strong, nullable) UIColor *textColor;
+
+- (instancetype)initWithDict:(NSDictionary *)aDict;
+
+@end
 
 @interface GFPNativeStyleDetailInfo : GFPNativeStyleBaseInfo
 
@@ -157,6 +167,23 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @property (nonatomic, readonly, assign) float shadowSpread;
 
 @property (nonatomic, readonly, assign) NSInteger gravity;
+
+
+/**
+ * For Badge
+ */
+@property (nonatomic, readonly, strong, nullable) UIColor *borderColor;
+@property (nonatomic, readonly, assign) float borderAlpha;
+@property (nonatomic, readonly, strong, nullable) UIColor *badgeColor;
+@property (nonatomic, readonly, assign) float bgColorAlpha;
+@property (nonatomic, readonly, assign) float borderWidth;
+@property (nonatomic, readonly, assign) BOOL isBold;
+
+/**
+ * For attributeString
+ */
+@property (nonatomic, readonly, strong, nullable) NSArray<GFPNativeStyleSpannableInfo *> *spannableInfo;
+
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
 
@@ -214,7 +241,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @end
 
 
-@interface GFPNativeSponsorInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable>
+@interface GFPNativeSponsorInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable, GFPNativeAdLabelOptionPresentable>
 
 - (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
 

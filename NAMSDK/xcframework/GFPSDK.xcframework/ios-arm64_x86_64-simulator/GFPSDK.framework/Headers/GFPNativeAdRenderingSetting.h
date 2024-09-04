@@ -65,6 +65,17 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, assign) UIEdgeInsets richMediaInsets;
 
+/**
+ * 캐러셀 광고의 MediaView 내부 폰트를 설정하고 싶을 때 전달합니다.
+ * (기본값은 nil)
+ */
+@property (nonatomic, strong, nullable) UIFont *mediaRegularFont;
+
+/**
+ * 캐러셀 광고의 MediaView 내부 폰트를 설정하고 싶을 때 전달합니다.
+ * (기본값은 nil)
+ */
+@property (nonatomic, strong, nullable) UIFont *mediaBoldFont;
 
 @end
 

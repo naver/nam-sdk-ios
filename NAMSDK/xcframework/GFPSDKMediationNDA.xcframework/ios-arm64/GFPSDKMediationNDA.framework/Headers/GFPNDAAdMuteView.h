@@ -30,6 +30,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAdMuteState) {
 
 - (void)adMuteView:(GFPNDAAdMuteView *)adMuteView didChangeState:(GFPNDAAdMuteState)state;
 - (void)adMuteWasClicked:(GFPNDAAdMuteView *)adMuteView reasonCode:(NSString *)reasonCode;
+- (void)adMuteWasCanceled:(GFPNDAAdMuteView *)adMuteView;
 
 @end
 

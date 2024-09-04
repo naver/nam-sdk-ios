@@ -6,11 +6,11 @@
 	<dict>
 		<key>FiveAd_resources.bundle/Info.plist</key>
 		<data>
-		ylQEhngn7Lrwky+e6hQztaOHzRo=
+		OKSCIEdFL5hbevKutr5EFBXsrR4=
 		</data>
 		<key>FiveAd_resources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
-		b8vO7YZan3Ew0MPDKEdtl7E3AWE=
+		w9kt9KpLQqd6lLxIMY1olPhAOqA=
 		</data>
 		<key>Headers/GFPSDKMediationLAN-Swift.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qAsvQMmZ/xgt+NeGAH54qaADnOc=
+		EpamN/4r1qHP9wgDDF7KdT8wvKA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,22 +55,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ylQEhngn7Lrwky+e6hQztaOHzRo=
+			OKSCIEdFL5hbevKutr5EFBXsrR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			OZs24QwLhdmzrNfkNm61hm12cwpONRBe907YLZJGv1w=
+			Pk/HMkvCd8It+mvD/88OSz06vtKdsQJ8V8RN2LUwUCQ=
 			</data>
 		</dict>
 		<key>FiveAd_resources.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b8vO7YZan3Ew0MPDKEdtl7E3AWE=
+			w9kt9KpLQqd6lLxIMY1olPhAOqA=
 			</data>
 			<key>hash2</key>
 			<data>
-			a9qYpKZyBy2TkdDlmgThwRVfQn6xVYeurQHVzD+jAfc=
+			5vUEqFMrRfeRBGQO50YwR7KHsxVlifr8zcm2+gjqT+w=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationLAN-Swift.h</key>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qAsvQMmZ/xgt+NeGAH54qaADnOc=
+			EpamN/4r1qHP9wgDDF7KdT8wvKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			XUffD6U6N2b+OtNBfsYT76u6+wYhUnc9l6cmyjuB7dw=
+			45BmlYRSXUjR0azvUX7o6afNNf3G7wLa7ZjsyzbMS1Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

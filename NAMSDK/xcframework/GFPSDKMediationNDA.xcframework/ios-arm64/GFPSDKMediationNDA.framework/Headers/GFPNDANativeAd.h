@@ -11,6 +11,7 @@
 #import "GFPNativeContext.h"
 #import "GFPNDAMediaView.h"
 #import "GFPNDAAdMuteView.h"
+#import "GFPEventReporter.h"
 
 @class GFPSKAdNetworkInfo;
 
@@ -36,6 +37,7 @@
 - (void)nativeAdWasSeen:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdWasClicked:(GFPNDANativeAd *)nativeAd trackerList:(NSArray <NSString *> *)trackerList;
 - (void)nativeAdMuteWasClicked:(GFPNDANativeAd *)nativeAd eventTracking:(GFPAdEventObject *)eventTracking;
+- (void)nativeAdMuteWasCanceled:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd didChangeMediaViewSize:(CGSize)size;
 
 @optional

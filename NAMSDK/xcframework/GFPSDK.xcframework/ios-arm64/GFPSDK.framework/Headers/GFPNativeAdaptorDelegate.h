@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nativeAdWasMuted:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdaptor;
 
+- (void)nativeAdWasCanceledMute:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdaptor;
+
 @optional
 - (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor richAdExtendSizeChanged:(CGSize)size;
 - (void)nativeRichAdExtendComplete:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;

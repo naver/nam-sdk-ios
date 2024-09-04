@@ -13,6 +13,7 @@
 @class GFPLabelOption;
 @class GFPAdChoicesData;
 @class GFPMediaData;
+@class GFPIconData;
 
 @protocol GFPNativeAssetProtocol <NSObject>
 
@@ -33,6 +34,12 @@
 @property (readonly, nonatomic, strong, nullable) GFPMediaData *mediaData;
 
 /**
+ * icon 관련 정보
+ */
+@property (readonly, nonatomic, strong, nullable) GFPIconData *iconData;
+
+
+/**
  * AdChoices 관련 정보
  */
 @property (readonly, nonatomic, strong, nullable) GFPAdChoicesData *adChoicesData;
@@ -41,6 +48,7 @@
  * 광고주 명
  */
 @property (nullable, readonly, nonatomic, strong) NSString *advertiser;
+@property (nullable, readonly, nonatomic, strong) GFPLabelOption *advertiserOption;
 
 /**
  * 클릭 버튼 텍스트
