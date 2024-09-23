@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZqSZxB2oA+asWsICG151XZWCmjM=
+		kGS/+No/0z4tYLwnSq3iNvkxdJU=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LVyUCWjrpRBy/Ha5Fa7mQAfNiUU=
+		16H+Na8ZI8j3d2F2PvRWkDqsmjk=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pjuSV6MNMAq/Oe+WMR+NVo4ecV0=
+		DxEZOa43CSppMzygTWP91f85biI=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LVyUCWjrpRBy/Ha5Fa7mQAfNiUU=
+		16H+Na8ZI8j3d2F2PvRWkDqsmjk=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ckH2dGIHViyz6qEzrOL8Rhaqmkg=
+		XJwZIDhZkGHuOMWnyc4xDWEyUz8=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KESeKG6eBunbTUoh31X7cv5BVbI=
+		M1Wo4IleOGtmnAoVacPv4BiidcE=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		59RQFQrhq00Ed9eBTdUqEuohm3c=
+		zcl+xDMofXsFfozQjSwRIt9qzt0=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KESeKG6eBunbTUoh31X7cv5BVbI=
+		M1Wo4IleOGtmnAoVacPv4BiidcE=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Tsc2WHmAkObLByU8x8Em5Yd5KQA=
+		4Yr6gyg/QDQQLDel6M+BF7CHhUw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,44 +115,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LVyUCWjrpRBy/Ha5Fa7mQAfNiUU=
+			16H+Na8ZI8j3d2F2PvRWkDqsmjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KcrBExv6SVMk4+7GN294dWOP6EeneNbKxvEO3J18jVc=
+			jsMpYGfRrnvJoRKCvsWPeJ1+8ok2bvWm1zoEDUCaQQQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pjuSV6MNMAq/Oe+WMR+NVo4ecV0=
+			DxEZOa43CSppMzygTWP91f85biI=
 			</data>
 			<key>hash2</key>
 			<data>
-			iSlTL0lPi5KwJbH6CvmAhpb5UtHeq6ZL5pdR6Phrgb8=
+			kyPyGV2UD6BCY4fKYJ2sNxs53MCS2ppDb72M9mZsq4o=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LVyUCWjrpRBy/Ha5Fa7mQAfNiUU=
+			16H+Na8ZI8j3d2F2PvRWkDqsmjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KcrBExv6SVMk4+7GN294dWOP6EeneNbKxvEO3J18jVc=
+			jsMpYGfRrnvJoRKCvsWPeJ1+8ok2bvWm1zoEDUCaQQQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ckH2dGIHViyz6qEzrOL8Rhaqmkg=
+			XJwZIDhZkGHuOMWnyc4xDWEyUz8=
 			</data>
 			<key>hash2</key>
 			<data>
-			pUb6sLU86oTm/wg7wgkS2ia/AyQCiEQ1XVHJXu8B/9U=
+			d6Hgvzxwr0QVbi+Z3kQBJwX4gT1yI4Dc77JqFqnpCVU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -170,44 +170,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KESeKG6eBunbTUoh31X7cv5BVbI=
+			M1Wo4IleOGtmnAoVacPv4BiidcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			xf30W/Jr9/aWhf3GR6Efeb/z7AYPhS2pZCayf0GImL0=
+			vsbjv9ZSjITa37YUeJB+K7gp129ff24wUMZ20il5KaU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			59RQFQrhq00Ed9eBTdUqEuohm3c=
+			zcl+xDMofXsFfozQjSwRIt9qzt0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ctfRo1p4vnY5gZ0zWLpHaPY7dv7IXjPHixUyFz+GXwM=
+			7CNlUgHoZtgSch4VBSmgux6PCOKatC2OyIIhSrirpnA=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KESeKG6eBunbTUoh31X7cv5BVbI=
+			M1Wo4IleOGtmnAoVacPv4BiidcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			xf30W/Jr9/aWhf3GR6Efeb/z7AYPhS2pZCayf0GImL0=
+			vsbjv9ZSjITa37YUeJB+K7gp129ff24wUMZ20il5KaU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tsc2WHmAkObLByU8x8Em5Yd5KQA=
+			4Yr6gyg/QDQQLDel6M+BF7CHhUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			d6xXeZJD9XBFHyLlWXPqq4z5qrdZp9uIMbq0ZHi06B4=
+			H9ydfkKoQX6atPK3Vh8OG7n1PV7pH9KZ1M6mzbCafZA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

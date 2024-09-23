@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aLwhhQL8NGL+cYXfIdxpQshifDo=
+		3ApMyl0Q5bEY2X8KBfSwI5I9Zgw=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		6+NUGAmivstXeG/Fu0A/pvN9RLE=
+		QKtEBuH0AJZkE39JMDMH/JTloms=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hUVuNwTyiftow+s/ZqTUaxUWTZg=
+		tLLbBMoybgzNKasR7vhpidwfegE=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		6+NUGAmivstXeG/Fu0A/pvN9RLE=
+		QKtEBuH0AJZkE39JMDMH/JTloms=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uDwQPlBt//hdTxKiazCgfX9hJbo=
+		tbY207RnFS/5YK57GsHDZOuUq1U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,44 +95,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6+NUGAmivstXeG/Fu0A/pvN9RLE=
+			QKtEBuH0AJZkE39JMDMH/JTloms=
 			</data>
 			<key>hash2</key>
 			<data>
-			e7DCVEc7r6WgN5xUmcV4czFEw9/RXZOuRLeKVNxlCko=
+			YwthMi+xyd316Tmf8EJSI/yR5Y7QQZRnbNxwZxvD4gg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hUVuNwTyiftow+s/ZqTUaxUWTZg=
+			tLLbBMoybgzNKasR7vhpidwfegE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2uS6EMK+CJBhFj1/ijja/C5nvJUNk+YhAtKV8h2z1Oo=
+			o8LpjG4sqpyGWgCLdkhRfBZiTZpbwJIq6st21+3XiIM=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6+NUGAmivstXeG/Fu0A/pvN9RLE=
+			QKtEBuH0AJZkE39JMDMH/JTloms=
 			</data>
 			<key>hash2</key>
 			<data>
-			e7DCVEc7r6WgN5xUmcV4czFEw9/RXZOuRLeKVNxlCko=
+			YwthMi+xyd316Tmf8EJSI/yR5Y7QQZRnbNxwZxvD4gg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uDwQPlBt//hdTxKiazCgfX9hJbo=
+			tbY207RnFS/5YK57GsHDZOuUq1U=
 			</data>
 			<key>hash2</key>
 			<data>
-			88sFGZ3PnZDGNZLvm0e08HyE0nmeC9PieIeIeUmw/vM=
+			7zoZ8niGwxrFSaUBSI4d1ddeDv+H5aq7i1n72v8MLUw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

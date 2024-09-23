@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qSIVrAeS+AFvk1MXom6Esi0RCx4=
+		FjIQ83C1EoIYndMHniBgYUQNPlI=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		uBJtVnmUP5Q3RZrXc2LCSX7PQUQ=
+		32UvZtxqNNroRhFdNoliBNC1UAI=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		aClr0PZJPP2Xu0OtpHrvB/jiVr8=
+		pIWBJ5m7j/MuTeMJwg1Gkrxvfl8=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		uBJtVnmUP5Q3RZrXc2LCSX7PQUQ=
+		32UvZtxqNNroRhFdNoliBNC1UAI=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		783AxUbJCz/DwqHpG2RrpyqfEh8=
+		N8w0NJsC703H2a9qyRTbPDZ7Q/M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,44 +110,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uBJtVnmUP5Q3RZrXc2LCSX7PQUQ=
+			32UvZtxqNNroRhFdNoliBNC1UAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			+t6difZr8g9pq/ii0NS2yGu5iJZ242p/fco9TYWTHiI=
+			zfTOC+fV8o9gG/GQnCdGt4gFSLhrFvXsEFdmv1NMmdg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aClr0PZJPP2Xu0OtpHrvB/jiVr8=
+			pIWBJ5m7j/MuTeMJwg1Gkrxvfl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			iJGeMho1dF4IqxHEjo7f9N5Ugmyl3LUL5oRxtmrS85I=
+			vOT5EPeZ0JCnbOMswlaIA3zhqxKJ3ZtC1LpHMZDtIT4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uBJtVnmUP5Q3RZrXc2LCSX7PQUQ=
+			32UvZtxqNNroRhFdNoliBNC1UAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			+t6difZr8g9pq/ii0NS2yGu5iJZ242p/fco9TYWTHiI=
+			zfTOC+fV8o9gG/GQnCdGt4gFSLhrFvXsEFdmv1NMmdg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			783AxUbJCz/DwqHpG2RrpyqfEh8=
+			N8w0NJsC703H2a9qyRTbPDZ7Q/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			KqO06kZy1sStwjoQPAmiS5GLOee7ZNIiqaH0nUJMfqU=
+			E5j71bjZqcoDHOuna+QcscHAlDQBMo5mv1v6Hi1skhI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
