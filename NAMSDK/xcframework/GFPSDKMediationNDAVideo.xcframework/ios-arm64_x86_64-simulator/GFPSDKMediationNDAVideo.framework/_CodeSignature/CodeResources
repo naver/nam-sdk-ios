@@ -166,11 +166,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9bccYUSWU5Q7fiviOS6j0+SPTIw=
+		b5mdUcxjIVtjBlida/XxL0NbTsw=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		70ebD2PPThfc4TQvq+U8g4EA/hQ=
+		/JZ/3mD5NxsLdtwuc/SINOYlBYs=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -186,11 +186,11 @@
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0cRd/PxdtyMg8aJyLChHr2kXpJ8=
+		xSQdyTuJ+5K0DffFFUYxT8KyUyQ=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		70ebD2PPThfc4TQvq+U8g4EA/hQ=
+		/JZ/3mD5NxsLdtwuc/SINOYlBYs=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tnzaliD1WKQWUp+SzzI3lkYcLRk=
+		BeEkbNIH7n1ZS02QDGzVEQWctH8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -749,11 +749,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			70ebD2PPThfc4TQvq+U8g4EA/hQ=
+			/JZ/3mD5NxsLdtwuc/SINOYlBYs=
 			</data>
 			<key>hash2</key>
 			<data>
-			gmUJvaGko2FQlRJXDA+2tO38s9j8WKoD/vPCxyUXy5U=
+			N+Q1ii4px7K/hjo/2zMYYp+JcyLG4f3ijtXlzIiyBJI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -793,22 +793,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0cRd/PxdtyMg8aJyLChHr2kXpJ8=
+			xSQdyTuJ+5K0DffFFUYxT8KyUyQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			VA4I0YRF5X+EbgbgoGGSrSIIoV5alw8YSu+GZ5udXps=
+			vdjCtOU3QNouR+MXkbVzi1En9rBfhwJLxtwnc1HD24I=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			70ebD2PPThfc4TQvq+U8g4EA/hQ=
+			/JZ/3mD5NxsLdtwuc/SINOYlBYs=
 			</data>
 			<key>hash2</key>
 			<data>
-			gmUJvaGko2FQlRJXDA+2tO38s9j8WKoD/vPCxyUXy5U=
+			N+Q1ii4px7K/hjo/2zMYYp+JcyLG4f3ijtXlzIiyBJI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -848,11 +848,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tnzaliD1WKQWUp+SzzI3lkYcLRk=
+			BeEkbNIH7n1ZS02QDGzVEQWctH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			V9eextGSzlXE2S3mLltjxYPH7WHuFO27EPVlK6gWSnI=
+			zjsj/Pq7AQIflrLB6uwOPUyzz7kLwiBB11Dp2p0WSaE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

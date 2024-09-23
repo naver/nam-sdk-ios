@@ -55,6 +55,8 @@ FOUNDATION_EXPORT NSString *const GFPRewardProviderLANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotTypeSubErrorCodeKey;
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotVisualSubErrorCodeKey;
 
+FOUNDATION_EXPORT NSErrorUserInfoKey const GFPErrorHttpStatusCode;
+
 typedef NS_ENUM(NSInteger, GFPErrorCode) {
     // General Error
     GFPErrorInternal = 1000,

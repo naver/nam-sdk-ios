@@ -6,7 +6,7 @@
 	<dict>
 		<key>Fyber_Marketplace_SDK.bundle/Info.plist</key>
 		<data>
-		rautFMMGAS/2xRiWY3c3xMz8Lbg=
+		S9605e+3bRF0TPU7LW/QIKc1KPo=
 		</data>
 		<key>Fyber_Marketplace_SDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1RuppwGLOc09TteLSeX6Dpm13M8=
+		pRk43Pt6vxXMmJE9SM/RtmBw3t4=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Ioh4voi1HqIsrf1M5jhlL2RyTJY=
+		GvH4K6jwqyfQfOsu2pMC9tlM6n4=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HmMxu4GSDm2ciTi/ql+Vi1iPEIg=
+		+FFmijk9lxlGWcm1W4UaOpLNQbw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rautFMMGAS/2xRiWY3c3xMz8Lbg=
+			S9605e+3bRF0TPU7LW/QIKc1KPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			MuyOMAbE48Zp7YH/8MOiJxB4ia2TDZruMvpZ93A8ltg=
+			LY55j34QlsGP6y22Id2mzTyD20+j+jeUzPcgAHoJxuQ=
 			</data>
 		</dict>
 		<key>Fyber_Marketplace_SDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -84,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ioh4voi1HqIsrf1M5jhlL2RyTJY=
+			GvH4K6jwqyfQfOsu2pMC9tlM6n4=
 			</data>
 			<key>hash2</key>
 			<data>
-			YCrEE+214OlLCDZGfIgjMV6VeQL1wqR736VZqwZgVz8=
+			kIuZwk1KWD5g++otTpwWiK64jnj3gzRa4GupZnXqjX0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HmMxu4GSDm2ciTi/ql+Vi1iPEIg=
+			+FFmijk9lxlGWcm1W4UaOpLNQbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			lD7a6g6tUo+/2NFEEXLbDfR4G9ro4kAw1FBDp0mmsCo=
+			wyEzTpAyZlbQUoY3ssebeFsvZy5ZRqXojZm4l9vpKxE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

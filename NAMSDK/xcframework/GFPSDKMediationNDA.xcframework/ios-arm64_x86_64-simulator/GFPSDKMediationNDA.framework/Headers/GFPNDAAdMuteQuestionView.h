@@ -42,6 +42,8 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAdMuteQuestionType) {
                           url:(NSString *)url
                 resourceUtils:(GFPNDAAdChoiceResourceUtils *)resourceUtils;
 
+- (void)focusVoiceOver;
+
 @end
 
 NS_ASSUME_NONNULL_END

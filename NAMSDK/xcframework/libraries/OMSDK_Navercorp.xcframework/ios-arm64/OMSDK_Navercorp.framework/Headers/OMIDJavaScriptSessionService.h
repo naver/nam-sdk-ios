@@ -9,8 +9,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * [EXPERIMENTAL - this API is currently being experimentally tested in integrations; using it will
- * cause all ad sessions using it to be marked as `underEvaluation` until its full release.]
  * Service supporting ad sessions managed (started/finished) via JavaScript Session Client APIs
  * by providing native-layer measurement signals.
  * If the JS Session Client is running in a web view, an instance of this service must be
@@ -27,8 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
  * @param webView The web view responsible for starting/finishing ad sessions via the JS Session
  * Client.
  * @param isHTMLAdView Whether the ad is rendered in HTML inside of the provided web view.
- * If true, all ad sessions will be of type "html" and `setAdView` must not be called.
- * If false, all ad sessions will be of type "javascript" and `setAdView` must be called after initialization.
+ * If true, all ad sessions will be of type "html" and calling `setAdView` is
+ * not required.
+ * If false, all ad sessions will be of type "javascript" and `setAdView` must
+ * be called after initialization.
  */
 - (nullable instancetype)initWithPartner:(OMIDNavercorpPartner *)partner
                                  webView:(WKWebView *)webView
@@ -53,14 +53,15 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * The native view containing the ad.
  * This property is readonly and must be set using `setAdView`.
- * It will be null if the ad is rendered in HTML inside the web view.
+ * If `isHTMLAdView` was passed as true in `initWithPartner`, this will equal
+ * the web view by default.
  */
 @property(readonly, nonatomic, weak) UIView *adView;
 
 /**
  * Sets the native view that contains the ad and is used for viewability tracking.
- * If the ad is rendered in HTML inside the web view, this method should not be called; if it is, it
- * will return NO with the error assigned.
+ * If `isHTMLAdView` was passed as true in `initWithPartner`, this method is
+ * not required since the ad view will be set to the web view by default.
  * @param adView The native view.
  * @return Whether the ad view was successfully set.
  */

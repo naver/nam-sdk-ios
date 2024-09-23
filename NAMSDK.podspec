@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "7.9.1"
+  s.version      = "7.9.4"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                      "Dojin.park" => "dojin.park@navercorp.com"
                    }
   
-  s.ios.deployment_target = "12.0"
+  s.ios.deployment_target = "13.0"
   s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "#{s.version.to_s}" }
   s.default_subspecs = "GFPSDK"
 

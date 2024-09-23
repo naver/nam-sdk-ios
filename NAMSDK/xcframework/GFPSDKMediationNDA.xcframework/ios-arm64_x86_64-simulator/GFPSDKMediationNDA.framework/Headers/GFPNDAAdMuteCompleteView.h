@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithFrame:(CGRect)frame
                 resourceUtils:(GFPNDAAdChoiceResourceUtils *)resourceUtils;
 
+- (void)focusVoiceOver;
 @end
 
 NS_ASSUME_NONNULL_END

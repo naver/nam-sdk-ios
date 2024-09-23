@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HAW4Pv9lmSGp1gMU+vohhU3jcdA=
+		OUJjfn0ShOm0nnLaUNdxYGfP/jU=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rCksuXp1eWhEAnT0V+tHcFDaWXs=
+		IJTxCNyp0bLoFozvrPNZtKt6hUQ=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/2t6fV410+1f4f/aK6Zqcu39PMQ=
+		t9FgC79mls8E8wSwYxVsGX6Hd/U=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rCksuXp1eWhEAnT0V+tHcFDaWXs=
+		IJTxCNyp0bLoFozvrPNZtKt6hUQ=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LswTRFSN+qnktFoQtem5v98o9Og=
+		FXo4medeW8PLI9Va1AQ3k1gisXw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>VungleAds.bundle/Info.plist</key>
 		<data>
-		B9U+fmFmw0KkDM0JamLBkymUBDo=
+		LQ0tW4GeMbD4ast8F0F0CV3Ea0I=
 		</data>
 		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -82,11 +82,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rCksuXp1eWhEAnT0V+tHcFDaWXs=
+			IJTxCNyp0bLoFozvrPNZtKt6hUQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rG5YDA2gaS9Uh1tC6RcJnb1o3W0bkfR0YKOaNj2leg4=
+			g9cKJZYf4ZlNV7zqZeOLU3TLmy/nf8sN5j8A2ny4pRc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -126,22 +126,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/2t6fV410+1f4f/aK6Zqcu39PMQ=
+			t9FgC79mls8E8wSwYxVsGX6Hd/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			hMKvTs9HHhm0DYt+pQq+mfqjbkPW3DU3GLqQFAi2IA4=
+			TUwiYCievy21MzCxCzP5dEgUb1+NqvMt3YFDq8/y2+8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rCksuXp1eWhEAnT0V+tHcFDaWXs=
+			IJTxCNyp0bLoFozvrPNZtKt6hUQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rG5YDA2gaS9Uh1tC6RcJnb1o3W0bkfR0YKOaNj2leg4=
+			g9cKJZYf4ZlNV7zqZeOLU3TLmy/nf8sN5j8A2ny4pRc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -181,11 +181,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LswTRFSN+qnktFoQtem5v98o9Og=
+			FXo4medeW8PLI9Va1AQ3k1gisXw=
 			</data>
 			<key>hash2</key>
 			<data>
-			zQGQ4kMR04v63VJQy2bb2Ypb/FlxE28UmUZRbL1DD+Q=
+			aN5DIqDnEs0GXRnF6kVmgp3w5V6FjI/CudI1+1C0k8Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -203,11 +203,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B9U+fmFmw0KkDM0JamLBkymUBDo=
+			LQ0tW4GeMbD4ast8F0F0CV3Ea0I=
 			</data>
 			<key>hash2</key>
 			<data>
-			cf66CG7tKAchR4VfcLUn7W1kcKdWQIh33oldlEoUlJ4=
+			7smuJnTs6D+aJZWEL4sAt4llM+ao3hzRbfVlwCqtSTU=
 			</data>
 		</dict>
 		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
