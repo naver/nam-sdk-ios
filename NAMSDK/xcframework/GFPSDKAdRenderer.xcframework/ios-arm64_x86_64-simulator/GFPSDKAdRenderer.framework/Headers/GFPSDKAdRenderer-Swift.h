@@ -356,11 +356,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+SWIFT_CLASS_NAMED("GFPRendererSmartChannelFlickingView")
+@interface GFPRendererSmartChannelFlickingView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelHeight;)
++ (double)smartChannelHeight SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelMaxWidth;)
++ (double)smartChannelMaxWidth SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelMaxHeight;)
++ (double)smartChannelMaxHeight SWIFT_WARN_UNUSED_RESULT;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+@interface GFPRendererSmartChannelFlickingView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
+- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIImage;
+
 SWIFT_CLASS_NAMED("GFPRendererUtils")
 @interface GFPRendererUtils : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPRendererUtils * _Nonnull sharedInstance;)
 + (GFPRendererUtils * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)loadNibWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
+- (UIImage * _Nullable)loadImageWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -730,11 +756,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+SWIFT_CLASS_NAMED("GFPRendererSmartChannelFlickingView")
+@interface GFPRendererSmartChannelFlickingView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelHeight;)
++ (double)smartChannelHeight SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelMaxWidth;)
++ (double)smartChannelMaxWidth SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelMaxHeight;)
++ (double)smartChannelMaxHeight SWIFT_WARN_UNUSED_RESULT;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+@interface GFPRendererSmartChannelFlickingView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
+- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIImage;
+
 SWIFT_CLASS_NAMED("GFPRendererUtils")
 @interface GFPRendererUtils : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPRendererUtils * _Nonnull sharedInstance;)
 + (GFPRendererUtils * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)loadNibWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
+- (UIImage * _Nullable)loadImageWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

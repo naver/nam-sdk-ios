@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationAPS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+De+DSb2imyBeFSnA0ZzXTb0ZJI=
+		01+ZMhNBKYWhFJitTbtmWzHxV2c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+De+DSb2imyBeFSnA0ZzXTb0ZJI=
+			01+ZMhNBKYWhFJitTbtmWzHxV2c=
 			</data>
 			<key>hash2</key>
 			<data>
-			pqD4rqV5qc/M6SWdmSJag8HV74jMj4POBILjSON+ZL4=
+			PrtAyf7Cz9/jZ4R0+ntISNKralV561BX0NLV7Fpm/aU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

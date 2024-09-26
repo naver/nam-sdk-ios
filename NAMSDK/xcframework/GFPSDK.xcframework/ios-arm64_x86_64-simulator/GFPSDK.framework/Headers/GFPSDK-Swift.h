@@ -945,6 +945,8 @@ SWIFT_CLASS("_TtC6GFPSDK21kGFPRendererVisualKey")
 @interface kGFPRendererVisualKey : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
++ (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1921,6 +1923,8 @@ SWIFT_CLASS("_TtC6GFPSDK21kGFPRendererVisualKey")
 @interface kGFPRendererVisualKey : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
++ (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

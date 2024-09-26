@@ -46,6 +46,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDARichMediaViewNewVideoExtendV2 = 107,
 
     GFPNDARendererMediaViewShoppingLabel = 1000,
+    GFPNDARendererMediaViewSmartChannelFlicking = 1001,
 };
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewRenderType) {

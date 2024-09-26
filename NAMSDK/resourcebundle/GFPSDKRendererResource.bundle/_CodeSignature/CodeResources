@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		rcdZpxxUA53J8ty8WGdnuF4i2L0=
+		</data>
 		<key>GFPRendererShoppingLabelView.nib</key>
 		<data>
 		VvlpwIENEYNuw0Wfvqp3ebjMHao=
@@ -11,6 +15,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rcdZpxxUA53J8ty8WGdnuF4i2L0=
+			</data>
+			<key>hash2</key>
+			<data>
+			qtVh+SCImNr5EQOKKWtg/Af+hRe7BdED48Hqwk3USlY=
+			</data>
+		</dict>
 		<key>GFPRendererShoppingLabelView.nib</key>
 		<dict>
 			<key>hash</key>

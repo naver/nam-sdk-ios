@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		DzJL8zL9EhMWTzla0P8flljVqnU=
+		pMqzLZ42qheriKzDEtEATF1DOO4=
 		</data>
 		<key>GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -15,6 +15,10 @@
 		<key>GFPNDAReasonCollectionViewCell.nib/runtime.nib</key>
 		<data>
 		gKbB2K1fr50GuaqsIDc1LUEdRyI=
+		</data>
+		<key>GFPNDASmartChannelFlickingCell.nib</key>
+		<data>
+		BVkogKDMUWFxhKScnFZiCbLXnds=
 		</data>
 		<key>de.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
@@ -113,11 +117,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DzJL8zL9EhMWTzla0P8flljVqnU=
+			pMqzLZ42qheriKzDEtEATF1DOO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mUisEbhQ3gaUaFahmjzUt7K8ZY6SUjBBc26dNxGzcjo=
+			cpLotqf6eIb2yq/n2p4IyaywblYmvxIewpwlw92jod0=
 			</data>
 		</dict>
 		<key>GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
@@ -140,6 +144,17 @@
 			<key>hash2</key>
 			<data>
 			TvWQFJx2tBtK6GF1N8D5zJiv5hKUxoNx+RqLQu38Q8Y=
+			</data>
+		</dict>
+		<key>GFPNDASmartChannelFlickingCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BVkogKDMUWFxhKScnFZiCbLXnds=
+			</data>
+			<key>hash2</key>
+			<data>
+			Rq+HgqGNlUOylPaEuVwwl/MlZ5LuiJ0IxJcNcZbR1cc=
 			</data>
 		</dict>
 		<key>de.lproj/GFPNDANativeLocalizable.strings</key>

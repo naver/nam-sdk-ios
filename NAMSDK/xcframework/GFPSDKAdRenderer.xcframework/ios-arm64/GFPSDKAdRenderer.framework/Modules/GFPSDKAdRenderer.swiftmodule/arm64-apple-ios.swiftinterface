@@ -51,6 +51,24 @@ extension GFPSDKAdRenderer.GFPRendererShoppingLabelView : GFPSDK.GFPNativeRender
 @_inheritsConvenienceInitializers @objc(GFPRendererUtils) @objcMembers public class GFPRendererUtils : ObjectiveC.NSObject {
   @objc public static let sharedInstance: GFPSDKAdRenderer.GFPRendererUtils
   @objc public func loadNib(name: Swift.String) -> UIKit.UIView?
+  @objc public func loadImage(name: Swift.String) -> UIKit.UIImage?
   @objc override dynamic public init()
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GFPRendererSmartChannelFlickingView) @objcMembers @_Concurrency.MainActor(unsafe) public class GFPRendererSmartChannelFlickingView : UIKit.UIView {
+  @objc(smartChannelHeight) @_Concurrency.MainActor(unsafe) public static let smartChannelHeight: Swift.Double
+  @objc(smartChannelMaxWidth) @_Concurrency.MainActor(unsafe) public static let smartChannelMaxWidth: Swift.Double
+  @objc(smartChannelMaxHeight) @_Concurrency.MainActor(unsafe) public static let smartChannelMaxHeight: Swift.Double
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension GFPSDKAdRenderer.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeRendererViewProtocol {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func mediaContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
 }

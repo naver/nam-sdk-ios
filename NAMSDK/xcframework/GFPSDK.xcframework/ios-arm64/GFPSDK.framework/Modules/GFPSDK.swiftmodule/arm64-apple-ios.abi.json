@@ -9327,6 +9327,59 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "smartChannelCarousel",
+            "printedName": "smartChannelCarousel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cpy)smartChannelCarousel",
+            "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC20smartChannelCarouselSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cm)smartChannelCarousel",
+                "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC20smartChannelCarouselSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -20466,6 +20519,13 @@
       "offset": 330,
       "length": 28,
       "value": "\"NORMAL_IMAGE_SHOPPINGLABEL\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRendererVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 29,
+      "value": "\"CAROUSEL_IMAGE_SMARTCHANNEL\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
