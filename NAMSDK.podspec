@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NAMSDK"
-  s.version      = "7.10.0"
+  s.version      = "7.10.1"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -69,43 +69,43 @@ Pod::Spec.new do |s|
   s.subspec 'MediationInMobi' do |inMobi|
     inMobi.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationInMobi.xcframework"
     inMobi.dependency 'NAMSDK/GFPSDK'
-    inMobi.dependency 'InMobiSDK', '10.7.2'
+    inMobi.dependency 'InMobiSDK', '10.7.5'
   end
   
   s.subspec 'MediationUnity' do |unity|
     unity.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationUnity.xcframework"
     unity.dependency 'NAMSDK/GFPSDK'
-    unity.dependency 'UnityAds', '4.12.0'
+    unity.dependency 'UnityAds', '4.12.2'
   end
   
   s.subspec 'MediationAppLovin' do |appLovin|
     appLovin.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationAppLovin.xcframework"
     appLovin.dependency 'NAMSDK/GFPSDK'
-    appLovin.dependency 'AppLovinSDK', '12.5.0'
+    appLovin.dependency 'AppLovinSDK', '12.6.0'
   end
 
   s.subspec 'MediationVungle' do |vungle|
     vungle.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationVungle.xcframework"
     vungle.dependency 'NAMSDK/GFPSDK'
-    vungle.dependency 'VungleAds', '7.3.2'
+    vungle.dependency 'VungleAds', '7.4.1'
   end
 
   s.subspec 'MediationDT' do |dt|
     dt.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationDT.xcframework"
     dt.dependency 'NAMSDK/GFPSDK'
-    dt.dependency 'Fyber_Marketplace_SDK', '8.2.8'
+    dt.dependency 'Fyber_Marketplace_SDK', '8.3.1'
   end
 
   s.subspec 'MediationIronSource' do |ironSource|
     ironSource.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationIronSource.xcframework"
     ironSource.dependency 'NAMSDK/GFPSDK'
-    ironSource.dependency 'IronSourceSDK', '8.1.0'
+    ironSource.dependency 'IronSourceSDK', '8.2.0'
   end
 
   s.subspec 'MediationAPS' do |aps|
     aps.vendored_frameworks = "NAMSDK/xcframework/GFPSDKMediationAPS.xcframework"
     aps.dependency 'NAMSDK/GFPSDK'
-    aps.dependency 'AmazonPublisherServicesSDK', '4.9.3'
+    aps.dependency 'AmazonPublisherServicesSDK', '4.9.7'
   end
 
   s.subspec 'MediationLAN' do |lan|
