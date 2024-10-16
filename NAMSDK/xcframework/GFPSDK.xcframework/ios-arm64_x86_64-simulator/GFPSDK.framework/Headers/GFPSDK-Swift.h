@@ -423,6 +423,7 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionDT = 7,
   GFPBannerProviderOptionIS = 8,
   GFPBannerProviderOptionAPS = 9,
+  GFPBannerProviderOptionEnd = 10,
 };
 
 
@@ -467,6 +468,7 @@ SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
 typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionNone = 0,
   GFPCombinedProviderOptionDFP = 1,
+  GFPCombinedProviderOptionEnd = 2,
 };
 
 
@@ -542,6 +544,7 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionIS = 8,
   GFPInterstitialAdProviderOptionAPS = 9,
   GFPInterstitialAdProviderOptionLAN = 10,
+  GFPInterstitialAdProviderOptionEnd = 11,
 };
 
 @class GFPSpannableOption;
@@ -637,8 +640,8 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionDFP = 2,
   GFPNativeProviderOptionFAN = 3,
   GFPNativeProviderOptionInMobi = 4,
-  GFPNativeProviderOptionAppLovin = 5,
-  GFPNativeProviderOptionLAN = 6,
+  GFPNativeProviderOptionLAN = 5,
+  GFPNativeProviderOptionEnd = 6,
 };
 
 
@@ -675,6 +678,7 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionIS = 9,
   GFPRewardedAdProviderOptionAPS = 10,
   GFPRewardedAdProviderOptionLAN = 11,
+  GFPRewardedAdProviderOptionEnd = 12,
 };
 
 enum GFPRichMediaDataAdType : NSInteger;
@@ -920,6 +924,7 @@ typedef SWIFT_ENUM(NSInteger, GFPVideoProviderOption, open) {
   GFPVideoProviderOptionNone = 0,
   GFPVideoProviderOptionNDA = 1,
   GFPVideoProviderOptionIMA = 2,
+  GFPVideoProviderOptionEnd = 3,
 };
 
 
@@ -1401,6 +1406,7 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionDT = 7,
   GFPBannerProviderOptionIS = 8,
   GFPBannerProviderOptionAPS = 9,
+  GFPBannerProviderOptionEnd = 10,
 };
 
 
@@ -1445,6 +1451,7 @@ SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
 typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionNone = 0,
   GFPCombinedProviderOptionDFP = 1,
+  GFPCombinedProviderOptionEnd = 2,
 };
 
 
@@ -1520,6 +1527,7 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionIS = 8,
   GFPInterstitialAdProviderOptionAPS = 9,
   GFPInterstitialAdProviderOptionLAN = 10,
+  GFPInterstitialAdProviderOptionEnd = 11,
 };
 
 @class GFPSpannableOption;
@@ -1615,8 +1623,8 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionDFP = 2,
   GFPNativeProviderOptionFAN = 3,
   GFPNativeProviderOptionInMobi = 4,
-  GFPNativeProviderOptionAppLovin = 5,
-  GFPNativeProviderOptionLAN = 6,
+  GFPNativeProviderOptionLAN = 5,
+  GFPNativeProviderOptionEnd = 6,
 };
 
 
@@ -1653,6 +1661,7 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionIS = 9,
   GFPRewardedAdProviderOptionAPS = 10,
   GFPRewardedAdProviderOptionLAN = 11,
+  GFPRewardedAdProviderOptionEnd = 12,
 };
 
 enum GFPRichMediaDataAdType : NSInteger;
@@ -1898,6 +1907,7 @@ typedef SWIFT_ENUM(NSInteger, GFPVideoProviderOption, open) {
   GFPVideoProviderOptionNone = 0,
   GFPVideoProviderOptionNDA = 1,
   GFPVideoProviderOptionIMA = 2,
+  GFPVideoProviderOptionEnd = 3,
 };
 
 

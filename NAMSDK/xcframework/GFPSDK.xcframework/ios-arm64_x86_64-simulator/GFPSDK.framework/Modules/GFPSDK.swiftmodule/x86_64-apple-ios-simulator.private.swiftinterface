@@ -279,6 +279,7 @@ extension GFPSDK.GFPErrorUtils {
   case DT
   case IS
   case APS
+  case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -289,6 +290,7 @@ extension GFPSDK.GFPErrorUtils {
   case none
   case NDA
   case IMA
+  case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -301,8 +303,8 @@ extension GFPSDK.GFPErrorUtils {
   case DFP
   case FAN
   case inMobi
-  case appLovin
   case LAN
+  case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -312,6 +314,7 @@ extension GFPSDK.GFPErrorUtils {
 @objc public enum GFPCombinedProviderOption : Swift.Int {
   case none
   case DFP
+  case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -331,6 +334,7 @@ extension GFPSDK.GFPErrorUtils {
   case IS
   case APS
   case LAN
+  case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -349,6 +353,7 @@ extension GFPSDK.GFPErrorUtils {
   case IS
   case APS
   case LAN
+  case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
