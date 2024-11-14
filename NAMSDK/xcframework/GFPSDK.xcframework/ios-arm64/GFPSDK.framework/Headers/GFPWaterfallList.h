@@ -92,10 +92,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong, nullable) NSNumber *ratio;
 @property (readonly, nonatomic, strong, nullable) NSNumber *ms;
+@property (readonly, nonatomic, assign) BOOL isSmallerThan;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict NS_DESIGNATED_INITIALIZER;
 - (instancetype _Nullable)initWithRatio:(NSNumber *)ratio ms:(NSNumber *)ms NS_DESIGNATED_INITIALIZER;
+- (instancetype _Nullable)initWithRatio:(NSNumber *)ratio ms:(NSNumber *)ms isSmallerThan:(BOOL)isSmallerThan;
 
 @end
 

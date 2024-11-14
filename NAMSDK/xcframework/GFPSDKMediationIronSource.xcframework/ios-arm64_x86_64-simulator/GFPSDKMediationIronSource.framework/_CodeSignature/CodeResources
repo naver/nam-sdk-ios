@@ -14,7 +14,7 @@
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
-		NGFqEG4TwAxok9iPBUQGAYmryJ4=
+		qfzVGzRdP1D5paNn/7VJQPNM2sU=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XJwZIDhZkGHuOMWnyc4xDWEyUz8=
+		8TCTGrRX3l850VfHoya/ZR+lhEI=
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4Yr6gyg/QDQQLDel6M+BF7CHhUw=
+		B53HE5RM2RiUAszFYLTXpCC98rA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,11 +82,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NGFqEG4TwAxok9iPBUQGAYmryJ4=
+			qfzVGzRdP1D5paNn/7VJQPNM2sU=
 			</data>
 			<key>hash2</key>
 			<data>
-			kRXvBzfyYZW+LVQKxs9ARh0KpXBBcaQWKxIvqQ8bZsQ=
+			TTLzKA0mzeybZCBSjJfXhAXpEHbQJczbZFHmYWtsSlw=
 			</data>
 		</dict>
 		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
@@ -148,11 +148,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XJwZIDhZkGHuOMWnyc4xDWEyUz8=
+			8TCTGrRX3l850VfHoya/ZR+lhEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			d6Hgvzxwr0QVbi+Z3kQBJwX4gT1yI4Dc77JqFqnpCVU=
+			2ImO5pbCOdXVYxGuHvW2StlfEXTcUtN4KdpTX+VZ2qQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationIronSource.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -203,11 +203,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4Yr6gyg/QDQQLDel6M+BF7CHhUw=
+			B53HE5RM2RiUAszFYLTXpCC98rA=
 			</data>
 			<key>hash2</key>
 			<data>
-			H9ydfkKoQX6atPK3Vh8OG7n1PV7pH9KZ1M6mzbCafZA=
+			2acsCpIZIhhxz86sausuFjOW4CtFoRYr8/tV4fJ8A1I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

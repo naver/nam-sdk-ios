@@ -47,6 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPImpressionTrackThreshold : NSObject
 @property(readonly, nonatomic, assign) CGFloat visibleRate;
 @property(readonly, nonatomic, assign) NSTimeInterval durationSec;
+@property(readonly, nonatomic, assign) BOOL isSmallerThan;
 
 - (instancetype)init NS_UNAVAILABLE;
 

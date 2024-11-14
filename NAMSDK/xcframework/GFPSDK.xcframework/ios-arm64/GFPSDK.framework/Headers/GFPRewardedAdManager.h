@@ -38,6 +38,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)resumeCurrentRewardVideo;
 
+
+/**
+ * S2S광고에 한해 현재 뮤트 상태에 대한 기능을 제공합니다.
+ */
+- (BOOL)isS2SPlayerMuted;
+- (void)setS2SPlayerMute:(BOOL)isMuted;
+
 @end
 
 NS_ASSUME_NONNULL_END

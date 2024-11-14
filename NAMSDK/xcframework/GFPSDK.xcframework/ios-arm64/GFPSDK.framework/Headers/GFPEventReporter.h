@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithProviderEvent:(GFPAdInfoEvent *)providerEvent;
 - (void)reportProviderEvent:(NSArray<GFPAdEventObject *> *)providerEvtObjs;
+- (void)reportProviderEvent:(NSArray<GFPAdEventObject *> *)providerEvtObjs queryItems:(NSArray<NSURLQueryItem *> *_Nullable)queryItems;
 
 - (void)reportVImp100;
 - (void)reportVImp100p;
@@ -90,6 +91,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reportCompleteImpressionsWithExtraInfo:(GFPEventExtraInfo *_Nullable)aExtraInfo;
 
 - (void)reportBounceBack;
+
+- (void)reportBounceBack:(double)bbt;
 
 @end
 

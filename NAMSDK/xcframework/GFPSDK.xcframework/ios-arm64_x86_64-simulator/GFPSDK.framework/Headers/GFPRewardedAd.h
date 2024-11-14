@@ -42,6 +42,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly, strong) GFPLoadResponseInfo *responseInfo;
 
+
+/**
+ * S2S Player mute 정보
+ */
+@property (nonatomic, readonly, assign) BOOL isS2SPlayerMuted;
+
+/**
+ * S2S Player mute 셋팅
+ */
+- (void)setS2SPlayerMute:(BOOL)isMuted;
+
 @end
 
 

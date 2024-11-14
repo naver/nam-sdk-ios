@@ -20,4 +20,5 @@
 - (void)rewardedAdClosed:(GFPRewardedAd *)rewardedAd;
 - (void)rewardedAdRecieveImpression:(GFPRewardedAd *)rewardedAd;
 
+- (void)rewardedAd:(GFPRewardedAd *)rewardedAd didChangedMute:(BOOL)isMuted;
 @end

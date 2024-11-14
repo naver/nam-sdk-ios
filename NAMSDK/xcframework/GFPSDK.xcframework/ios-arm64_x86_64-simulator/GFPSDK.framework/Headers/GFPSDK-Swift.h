@@ -608,7 +608,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 @property (nonatomic, readonly, strong) GFPRichMediaData * _Nullable richMediaData;
 @property (nonatomic) CGFloat preferredMediaHeight;
 @property (nonatomic) CGFloat preferredMediaWidth;
-@property (nonatomic) CGFloat indicatorHeight;
 @property (nonatomic, weak) id <GFPCarouselHeightDelegate> _Nullable carouselHeightDelegate;
 @property (nonatomic, weak) UIImage * _Nullable image;
 - (CGFloat)preferredHeightWithFixedWidth:(CGFloat)fixedWidth SWIFT_WARN_UNUSED_RESULT;
@@ -619,7 +618,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 + (GFPMediaData * _Nonnull)createVideoInfoWith:(GFPVideoController * _Nullable)videoController SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createRichMediaInfo SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createRichMediaInfo:(GFPRichMediaData * _Nonnull)richMediaInfo SWIFT_WARN_UNUSED_RESULT;
-+ (GFPMediaData * _Nonnull)createC2SInfoWith:(CGFloat)c2sAspectRatio SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createC2SInfoWith:(enum GFPMediaType)type aspectRatio:(CGFloat)c2sAspectRatio SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createCarouseMedialInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -630,7 +629,9 @@ typedef SWIFT_ENUM(NSInteger, GFPMediaType, open) {
   GFPMediaTypeVideo = 1,
   GFPMediaTypeRichMedia = 2,
   GFPMediaTypeCarousel = 3,
-  GFPMediaTypeUnknown = 4,
+  GFPMediaTypeC2s_image = 4,
+  GFPMediaTypeC2s_video = 5,
+  GFPMediaTypeUnknown = 6,
 };
 
 /// GFP에서 지원하는 네이티브광고 제공자 목록
@@ -1591,7 +1592,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 @property (nonatomic, readonly, strong) GFPRichMediaData * _Nullable richMediaData;
 @property (nonatomic) CGFloat preferredMediaHeight;
 @property (nonatomic) CGFloat preferredMediaWidth;
-@property (nonatomic) CGFloat indicatorHeight;
 @property (nonatomic, weak) id <GFPCarouselHeightDelegate> _Nullable carouselHeightDelegate;
 @property (nonatomic, weak) UIImage * _Nullable image;
 - (CGFloat)preferredHeightWithFixedWidth:(CGFloat)fixedWidth SWIFT_WARN_UNUSED_RESULT;
@@ -1602,7 +1602,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 + (GFPMediaData * _Nonnull)createVideoInfoWith:(GFPVideoController * _Nullable)videoController SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createRichMediaInfo SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createRichMediaInfo:(GFPRichMediaData * _Nonnull)richMediaInfo SWIFT_WARN_UNUSED_RESULT;
-+ (GFPMediaData * _Nonnull)createC2SInfoWith:(CGFloat)c2sAspectRatio SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createC2SInfoWith:(enum GFPMediaType)type aspectRatio:(CGFloat)c2sAspectRatio SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createCarouseMedialInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1613,7 +1613,9 @@ typedef SWIFT_ENUM(NSInteger, GFPMediaType, open) {
   GFPMediaTypeVideo = 1,
   GFPMediaTypeRichMedia = 2,
   GFPMediaTypeCarousel = 3,
-  GFPMediaTypeUnknown = 4,
+  GFPMediaTypeC2s_image = 4,
+  GFPMediaTypeC2s_video = 5,
+  GFPMediaTypeUnknown = 6,
 };
 
 /// GFP에서 지원하는 네이티브광고 제공자 목록

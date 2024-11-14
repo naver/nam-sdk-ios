@@ -18,8 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNonLinearFactory : NSObject
 
-
-- (void)append:(GFPRemindAd *)aRemindAd;
 - (void)appendList:(NSArray <GFPRemindAd *> *)aRemindList;
 
 - (GFPRemindAd * _Nullable)remindAdWithOffset:(NSInteger)aOffset;

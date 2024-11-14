@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)rewardedAdManager:(GFPRewardedAdManager *)manager didCompleteAd:(GFPRewardedAd *)rewardedAd withReward:(nullable GFPReward *)reward;
 -(void)rewardedAdManager:(GFPRewardedAdManager *)manager didFailWithError:(GFPError *)error responseInfo:(nullable GFPLoadResponseInfo *)responseInfo;
 
+@optional
+-(void)rewardedAdManager:(GFPRewardedAdManager *)manager didChangedMute:(BOOL)isMuted;
 @end
 
 NS_ASSUME_NONNULL_END

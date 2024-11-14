@@ -18078,6 +18078,88 @@
           },
           {
             "kind": "Var",
+            "name": "c2s_image",
+            "printedName": "c2s_image",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPMediaType.Type) -> GFPSDK.GFPMediaType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMediaType",
+                    "printedName": "GFPSDK.GFPMediaType",
+                    "usr": "c:@M@GFPSDK@E@GFPMediaType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPMediaType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPMediaType",
+                        "printedName": "GFPSDK.GFPMediaType",
+                        "usr": "c:@M@GFPSDK@E@GFPMediaType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPMediaType@GFPMediaTypeC2s_image",
+            "mangledName": "$s6GFPSDK12GFPMediaTypeO9c2s_imageyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "c2s_video",
+            "printedName": "c2s_video",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPMediaType.Type) -> GFPSDK.GFPMediaType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMediaType",
+                    "printedName": "GFPSDK.GFPMediaType",
+                    "usr": "c:@M@GFPSDK@E@GFPMediaType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPMediaType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPMediaType",
+                        "printedName": "GFPSDK.GFPMediaType",
+                        "usr": "c:@M@GFPSDK@E@GFPMediaType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPMediaType@GFPMediaTypeC2s_video",
+            "mangledName": "$s6GFPSDK12GFPMediaTypeO9c2s_videoyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
             "name": "unknown",
             "printedName": "unknown",
             "children": [
@@ -18115,7 +18197,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Constructor",
@@ -18714,99 +18796,6 @@
           },
           {
             "kind": "Var",
-            "name": "indicatorHeight",
-            "printedName": "indicatorHeight",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPMediaData(py)indicatorHeight",
-            "mangledName": "$s6GFPSDK12GFPMediaDataC15indicatorHeight12CoreGraphics7CGFloatVvp",
-            "moduleName": "GFPSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPMediaData(im)indicatorHeight",
-                "mangledName": "$s6GFPSDK12GFPMediaDataC15indicatorHeight12CoreGraphics7CGFloatVvg",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPMediaData(im)setIndicatorHeight:",
-                "mangledName": "$s6GFPSDK12GFPMediaDataC15indicatorHeight12CoreGraphics7CGFloatVvs",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6GFPSDK12GFPMediaDataC15indicatorHeight14CoreFoundation7CGFloatVvM",
-                "mangledName": "$s6GFPSDK12GFPMediaDataC15indicatorHeight12CoreGraphics7CGFloatVvM",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "carouselHeightDelegate",
             "printedName": "carouselHeightDelegate",
             "children": [
@@ -19286,7 +19275,7 @@
           {
             "kind": "Function",
             "name": "createC2SInfo",
-            "printedName": "createC2SInfo(c2sAspectRatio:)",
+            "printedName": "createC2SInfo(type:c2sAspectRatio:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19296,17 +19285,23 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "GFPMediaType",
+                "printedName": "GFPSDK.GFPMediaType",
+                "usr": "c:@M@GFPSDK@E@GFPMediaType"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "CGFloat",
                 "printedName": "CoreGraphics.CGFloat",
                 "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPMediaData(cm)createC2SInfoWith:",
-            "mangledName": "$s6GFPSDK12GFPMediaDataC13createC2SInfo14c2sAspectRatioAC12CoreGraphics7CGFloatV_tFZ",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPMediaData(cm)createC2SInfoWith:aspectRatio:",
+            "mangledName": "$s6GFPSDK12GFPMediaDataC13createC2SInfo4type14c2sAspectRatioAcA0B4TypeO_12CoreGraphics7CGFloatVtFZ",
             "moduleName": "GFPSDK",
             "static": true,
-            "objc_name": "createC2SInfoWith:",
+            "objc_name": "createC2SInfoWith:aspectRatio:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -21576,8 +21571,22 @@
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
-      "length": 7,
+      "length": 9,
       "value": "4"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 358,
+      "length": 9,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 377,
+      "length": 7,
+      "value": "6"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
@@ -21604,41 +21613,48 @@
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
-      "length": 7,
+      "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
-      "offset": 598,
+      "offset": 358,
+      "length": 9,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 377,
+      "length": 7,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 636,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
-      "offset": 792,
+      "offset": 830,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
-      "offset": 840,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 884,
+      "offset": 878,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 521,
+      "offset": 559,
       "length": 12,
       "value": "\"GFPSDK.GFPMediaData\""
     }

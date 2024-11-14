@@ -524,6 +524,8 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   case video
   case richMedia
   case carousel
+  case c2s_image
+  case c2s_video
   case unknown
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -541,7 +543,6 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc final public let richMediaData: GFPSDK.GFPRichMediaData?
   @objc public var preferredMediaHeight: CoreFoundation.CGFloat
   @objc public var preferredMediaWidth: CoreFoundation.CGFloat
-  @objc public var indicatorHeight: CoreFoundation.CGFloat
   @objc weak public var carouselHeightDelegate: (any GFPSDK.GFPCarouselHeightDelegate)?
   @objc weak public var image: UIKit.UIImage?
   @objc public func preferredHeightWithFixedWidth(_ fixedWidth: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
@@ -555,7 +556,7 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc(createVideoInfoWith:) public static func createVideoInfo(videoController: GFPSDK.GFPVideoController?) -> GFPSDK.GFPMediaData
   @objc(createRichMediaInfo) public static func createRichMediaInfo() -> GFPSDK.GFPMediaData
   @objc(createRichMediaInfo:) public static func createRichMediaInfo(richMediaInfo: GFPSDK.GFPRichMediaData) -> GFPSDK.GFPMediaData
-  @objc(createC2SInfoWith:) public static func createC2SInfo(c2sAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
+  @objc(createC2SInfoWith:aspectRatio:) public static func createC2SInfo(type: GFPSDK.GFPMediaType, c2sAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
   @objc(createCarouseMedialInfo) public static func createCarouselMediaInfo() -> GFPSDK.GFPMediaData
   @objc deinit
 }

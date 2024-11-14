@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)rewardedAdWasClicked:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
 - (void)rewardedAdAdaptorRecieveImpression:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
 
+- (void)rewardedAdAdaptor:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor didChangedMute:(BOOL)isMuted;
+
 @end
 
 NS_ASSUME_NONNULL_END
