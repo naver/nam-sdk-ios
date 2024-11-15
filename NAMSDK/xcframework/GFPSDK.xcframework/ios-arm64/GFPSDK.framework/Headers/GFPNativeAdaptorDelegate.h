@@ -34,10 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 - (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor richAdExtendSizeChanged:(CGSize)size;
 - (void)nativeRichAdExtendComplete:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
-- (void)nativeRichAdExtendStart:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
 - (void)nativeRichAdExtendStart:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor toSize:(CGSize)size;
 - (void)nativeRichAdShrinkComplete:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
-- (void)nativeRichAdShrinkStart:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
 - (void)nativeRichAdShrinkStart:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor toSize:(CGSize)size;
 
 

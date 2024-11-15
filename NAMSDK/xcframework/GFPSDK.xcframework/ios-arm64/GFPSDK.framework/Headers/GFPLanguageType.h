@@ -7,18 +7,6 @@
 	
 #import <Foundation/Foundation.h>
 
-typedef NS_OPTIONS(NSInteger, GFPNativeLanguageType) {
-    GFPNativeLanguageType_ko,
-    GFPNativeLanguageType_en,
-    GFPNativeLanguageType_es,
-    GFPNativeLanguageType_fr,
-    GFPNativeLanguageType_id,
-    GFPNativeLanguageType_th,
-    GFPNativeLanguageType_zh_HK,
-    GFPNativeLanguageType_zh_TW,
-} DEPRECATED_MSG_ATTRIBUTE("This type will be removed. Use `GFPLanguageType` instead");
-
-
 typedef NS_ENUM(NSInteger, GFPLanguageType) {
     GFPLanguageType_none,
     GFPLanguageType_ko,

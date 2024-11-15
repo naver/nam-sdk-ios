@@ -43,10 +43,8 @@
 @optional
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd richAdExtendSizeChanged:(CGSize)size;
 - (void)nativeRichAdExtendComplete:(GFPNDANativeAd *)nativeAd;
-- (void)nativeRichAdExtendStart:(GFPNDANativeAd *)nativeAd;
 - (void)nativeRichAdExtendStart:(GFPNDANativeAd *)nativeAd toSize:(CGSize)size;
 - (void)nativeRichAdShrinkComplete:(GFPNDANativeAd *)nativeAd;
-- (void)nativeRichAdShrinkStart:(GFPNDANativeAd *)nativeAd;
 - (void)nativeRichAdShrinkStart:(GFPNDANativeAd *)nativeAd toSize:(CGSize)size;
 
 - (void)nativeAdDidReload:(GFPNDANativeAd *)nativeAd;
@@ -72,10 +70,7 @@
 @property (nonatomic, assign, readonly) BOOL isExpired;
 @property (nonatomic, assign, readonly) BOOL isLoadedIcon; //for nn
 
-@property (nonatomic, strong, readonly) UIImage *image; //deprecate
 @property (nonatomic, assign, readonly) CGSize cropSize;
-
-@property (nonatomic, assign) CGSize imageSize; //deprecate
 
 @property (nonatomic, strong, readonly) NSDictionary <NSString *, NSObject *> *extraInfo;
 

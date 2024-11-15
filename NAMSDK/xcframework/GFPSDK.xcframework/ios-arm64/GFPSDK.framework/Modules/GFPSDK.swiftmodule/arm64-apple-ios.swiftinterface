@@ -121,11 +121,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc public var startTimeoutInterval: Foundation.TimeInterval
   @objc public var bufferingTimeoutInterval: Foundation.TimeInterval
   @objc public var isPreferContentWidthUI: Swift.Bool
-  @objc @available(*, deprecated, message: "Use GFPAdConfiguration's preferredLanguage instead.")
-  public var preferredLanguage: GFPSDK.GFPLanguageType {
-    @objc get
-    @objc set
-  }
   @objc override dynamic public init()
   @objc deinit
 }

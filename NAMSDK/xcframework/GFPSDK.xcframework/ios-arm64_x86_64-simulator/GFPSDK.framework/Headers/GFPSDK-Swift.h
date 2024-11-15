@@ -879,16 +879,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// false: GFPVideoAdScheduleManager.videoView 혹은 GFPVideoAdmanager.videoView 의 너비에 따라 컴포넌트를 그림.
 /// true: 광고 영상의 실제 width 에 따라 컴포넌트를 그림.
 @property (nonatomic) BOOL isPreferContentWidthUI;
-/// 광고 UI 컴포넌트의 언어 설정 (기본값: none)
-/// <ul>
-///   <li>
-///     언어는 한국어, 영어, 프랑스어, 스페인어, 중국 번체 (홍콩/대만), 태국어, 인도네시아어를 지원합니다.
-///   </li>
-///   <li>
-///     none으로 설정 시 디바이스의 언어를 기반으로 렌더링 되며, 지원하지 않는 언어일 경우 영어로 노출됩니다.
-///   </li>
-/// </ul>
-@property (nonatomic) GFPLanguageType preferredLanguage SWIFT_DEPRECATED_MSG("Use GFPAdConfiguration's preferredLanguage instead.");
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1863,16 +1853,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// false: GFPVideoAdScheduleManager.videoView 혹은 GFPVideoAdmanager.videoView 의 너비에 따라 컴포넌트를 그림.
 /// true: 광고 영상의 실제 width 에 따라 컴포넌트를 그림.
 @property (nonatomic) BOOL isPreferContentWidthUI;
-/// 광고 UI 컴포넌트의 언어 설정 (기본값: none)
-/// <ul>
-///   <li>
-///     언어는 한국어, 영어, 프랑스어, 스페인어, 중국 번체 (홍콩/대만), 태국어, 인도네시아어를 지원합니다.
-///   </li>
-///   <li>
-///     none으로 설정 시 디바이스의 언어를 기반으로 렌더링 되며, 지원하지 않는 언어일 경우 영어로 노출됩니다.
-///   </li>
-/// </ul>
-@property (nonatomic) GFPLanguageType preferredLanguage SWIFT_DEPRECATED_MSG("Use GFPAdConfiguration's preferredLanguage instead.");
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

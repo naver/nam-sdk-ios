@@ -83,10 +83,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reloadMediaResource;
 
-- (CGSize)imageSize; //deprecate
-
-- (UIImage *)image; //deprecate
-
 - (GFPMediaData * _Nullable)mediaData;
 
 - (GFPIconData * _Nullable)iconData;
