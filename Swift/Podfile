@@ -3,15 +3,22 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '13.0'
 
 def real_podspec # Real
-  pod 'NAMSDK'
-  pod 'NAMSDK/MediationNDA'
-  pod 'NAMSDK/MediationNDAVideo'
-  pod 'NAMSDK/MediationDFP'  
-  pod 'NAMSDK/MediationFAN'
-  pod 'NAMSDK/MediationInMobi'
-  pod 'NAMSDK/MediationUnity'
-  pod 'NAMSDK/MediationAppLovin'
-  pod 'NAMSDK/MediationVungle'
+  pod 'NAMSDK', '>= 8.0.0'
+  pod 'NAMSDK/MediationNDA', '>= 8.0.0'
+  pod 'NAMSDK/MediationNDAVideo', '>= 8.0.0'
+  pod 'NAMSDK/MediationNDARich', '>= 8.0.0'
+
+  pod 'NAMSDKMediationDFP'
+  pod 'NAMSDKMediationIMA'
+  pod 'NAMSDKMediationFAN'
+  pod 'NAMSDKMediationInMobi'
+  pod 'NAMSDKMediationUnity'
+  pod 'NAMSDKMediationAppLovin'
+  pod 'NAMSDKMediationVungle'
+  pod 'NAMSDKMediationDT'
+  pod 'NAMSDKMediationIronSource'
+  pod 'NAMSDKMediationAPS'
+  pod 'NAMSDKMediationLAN'
 end
 
 
@@ -19,17 +26,24 @@ def local_podspec # Local
   pod 'NAMSDK', :path => "../"               # SDK 본체
   pod 'NAMSDK/MediationNDA', :path => "../"
   pod 'NAMSDK/MediationNDAVideo', :path => "../"
-  pod 'NAMSDK/MediationDFP', :path => "../"
-  pod 'NAMSDK/MediationFAN', :path => "../"
-  pod 'NAMSDK/MediationInMobi', :path => "../"
-  pod 'NAMSDK/MediationUnity', :path => "../"
-  pod 'NAMSDK/MediationAppLovin', :path => "../"
-  pod 'NAMSDK/MediationVungle', :path => "../"
+  pod 'NAMSDK/MediationNDARich', :path => "../"
+
+  pod 'NAMSDKMediationDFP', :path => "../"
+  pod 'NAMSDKMediationIMA', :path => "../"
+  pod 'NAMSDKMediationFAN', :path => "../"
+  pod 'NAMSDKMediationInMobi', :path => "../"
+  pod 'NAMSDKMediationUnity', :path => "../"
+  pod 'NAMSDKMediationAppLovin', :path => "../"
+  pod 'NAMSDKMediationVungle', :path => "../"
+  pod 'NAMSDKMediationDT', :path => "../"
+  pod 'NAMSDKMediationIronSource', :path => "../"
+  pod 'NAMSDKMediationAPS', :path => "../"
+  pod 'NAMSDKMediationLAN', :path => "../"
 end
 
 
 def headerBidding_sdk
-  pod 'AmazonPublisherServicesSDK', '3.4.6' # 헤더비딩 Amazon
+  pod 'AmazonPublisherServicesSDK' # 헤더비딩 Amazon
 end
 
 def sample
@@ -39,8 +53,8 @@ end
 target 'SwiftSample' do
   use_frameworks!
   
-  local_podspec
-  #real_podspec
+  #local_podspec
+  real_podspec
   headerBidding_sdk
   sample
 

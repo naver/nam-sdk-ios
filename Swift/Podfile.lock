@@ -1,52 +1,15 @@
 PODS:
-  - AmazonPublisherServicesSDK (3.4.6)
-  - FBAudienceNetwork (6.12.0)
-  - Google-Mobile-Ads-SDK (10.1.0):
-    - GoogleAppMeasurement (< 11.0, >= 7.0)
+  - AmazonPublisherServicesSDK (4.9.7)
+  - AppLovinSDK (12.6.1)
+  - FBAudienceNetwork (6.15.2)
+  - FiveAd (2.8.20240612)
+  - Fyber_Marketplace_SDK (8.3.1)
+  - Google-Mobile-Ads-SDK (11.10.0):
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (10.10.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.10.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.10.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.10.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.10.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
-    - GoogleUtilities/MethodSwizzler (~> 7.11)
-    - GoogleUtilities/Network (~> 7.11)
-    - "GoogleUtilities/NSData+zlib (~> 7.11)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleUserMessagingPlatform (2.0.1)
-  - GoogleUtilities/AppDelegateSwizzler (7.11.1):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.11.1):
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.11.1):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.11.1):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.11.1):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.11.1)"
-  - GoogleUtilities/Reachability (7.11.1):
-    - GoogleUtilities/Logger
-  - InMobiSDK (10.1.2):
-    - InMobiSDK/InMobiSDK (= 10.1.2)
-  - InMobiSDK/Core (10.1.2)
-  - InMobiSDK/InMobiSDK (10.1.2):
-    - InMobiSDK/Core
+  - GoogleAds-IMA-iOS-SDK (3.20.0)
+  - GoogleUserMessagingPlatform (2.7.0)
+  - InMobiSDK (10.7.5)
+  - IronSourceSDK (8.4.0.0)
   - KissXML (5.3.1):
     - KissXML/All (= 5.3.1)
   - KissXML/Additions (5.3.1):
@@ -55,81 +18,153 @@ PODS:
     - KissXML/Additions
     - KissXML/Core
   - KissXML/Core (5.3.1)
-  - NAMSDK (6.0.0):
-    - NAMSDK/GFPSDK (= 6.0.0)
-  - NAMSDK/GFPSDK (6.0.0):
+  - NAMSDK (8.0.0):
+    - NAMSDK/GFPSDK (= 8.0.0)
+  - NAMSDK/AdRenderer (8.0.0):
+    - NAMSDK/GFPSDK
+  - NAMSDK/GFPSDK (8.0.0):
     - KissXML (~> 5.2)
-    - Naver-Ads-Services (~> 1.0.0)
-  - NAMSDK/MediationDFP (6.0.0):
-    - Google-Mobile-Ads-SDK (= 10.1.0)
+    - Naver-Ads-Services (~> 1.0.8)
+  - NAMSDK/MediationNDA (8.0.0):
     - NAMSDK/GFPSDK
-  - NAMSDK/MediationFAN (6.0.0):
-    - FBAudienceNetwork (= 6.12.0)
+  - NAMSDK/MediationNDARich (8.0.0):
+    - NAMSDK/AdRenderer
     - NAMSDK/GFPSDK
-  - NAMSDK/MediationInMobi (6.0.0):
-    - InMobiSDK (= 10.1.2)
+    - NAMSDK/MediationNDA
+    - NAMSDK/MediationNDAVideo
+  - NAMSDK/MediationNDAVideo (8.0.0):
     - NAMSDK/GFPSDK
-  - NAMSDK/MediationNDA (6.0.0):
-    - NAMSDK/GFPSDK
-  - NAMSDK/MediationUnity (6.0.0):
-    - NAMSDK/GFPSDK
-    - UnityAds (= 4.6.1)
-  - nanopb (2.30909.0):
-    - nanopb/decode (= 2.30909.0)
-    - nanopb/encode (= 2.30909.0)
-  - nanopb/decode (2.30909.0)
-  - nanopb/encode (2.30909.0)
-  - Naver-Ads-Services (1.0.0)
-  - PromisesObjC (2.2.0)
-  - SnapKit (5.6.0)
-  - UnityAds (4.6.1)
+    - NAMSDK/MediationNDA
+  - NAMSDKMediationAppLovin (12.6.1.0):
+    - AppLovinSDK (= 12.6.1)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationAPS (4.9.7.0):
+    - AmazonPublisherServicesSDK (= 4.9.7)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationDFP (11.10.0.0):
+    - Google-Mobile-Ads-SDK (= 11.10.0)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationDT (8.3.1.0):
+    - Fyber_Marketplace_SDK (= 8.3.1)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationFAN (6.15.2.0):
+    - FBAudienceNetwork (= 6.15.2)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationIMA (3.20.0.0):
+    - GoogleAds-IMA-iOS-SDK (= 3.20.0)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationInMobi (10.7.5.0):
+    - InMobiSDK (= 10.7.5)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationIronSource (8.4.0.0):
+    - IronSourceSDK (= 8.4.0)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationLAN (2.8.20240612.0):
+    - FiveAd (= 2.8.20240612)
+    - NAMSDK/GFPSDK (>= 8.0.0)
+  - NAMSDKMediationUnity (4.12.4.0):
+    - NAMSDK/GFPSDK (>= 8.0.0)
+    - UnityAds (= 4.12.4)
+  - NAMSDKMediationVungle (7.4.2.0):
+    - NAMSDK/GFPSDK (>= 8.0.0)
+    - VungleAds (= 7.4.2)
+  - Naver-Ads-Services (1.0.9)
+  - SnapKit (5.7.1)
+  - UnityAds (4.12.4)
+  - VungleAds (7.4.2)
 
 DEPENDENCIES:
-  - AmazonPublisherServicesSDK (= 3.4.6)
+  - AmazonPublisherServicesSDK
   - NAMSDK (from `../`)
-  - NAMSDK/MediationDFP (from `../`)
-  - NAMSDK/MediationFAN (from `../`)
-  - NAMSDK/MediationInMobi (from `../`)
   - NAMSDK/MediationNDA (from `../`)
-  - NAMSDK/MediationUnity (from `../`)
+  - NAMSDK/MediationNDARich (from `../`)
+  - NAMSDK/MediationNDAVideo (from `../`)
+  - NAMSDKMediationAppLovin (from `../`)
+  - NAMSDKMediationAPS (from `../`)
+  - NAMSDKMediationDFP (from `../`)
+  - NAMSDKMediationDT (from `../`)
+  - NAMSDKMediationFAN (from `../`)
+  - NAMSDKMediationIMA (from `../`)
+  - NAMSDKMediationInMobi (from `../`)
+  - NAMSDKMediationIronSource (from `../`)
+  - NAMSDKMediationLAN (from `../`)
+  - NAMSDKMediationUnity (from `../`)
+  - NAMSDKMediationVungle (from `../`)
   - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AmazonPublisherServicesSDK
+    - AppLovinSDK
     - FBAudienceNetwork
+    - FiveAd
+    - Fyber_Marketplace_SDK
     - Google-Mobile-Ads-SDK
-    - GoogleAppMeasurement
+    - GoogleAds-IMA-iOS-SDK
     - GoogleUserMessagingPlatform
-    - GoogleUtilities
     - InMobiSDK
+    - IronSourceSDK
     - KissXML
-    - nanopb
     - Naver-Ads-Services
-    - PromisesObjC
     - SnapKit
     - UnityAds
+    - VungleAds
 
 EXTERNAL SOURCES:
   NAMSDK:
     :path: "../"
+  NAMSDKMediationAppLovin:
+    :path: "../"
+  NAMSDKMediationAPS:
+    :path: "../"
+  NAMSDKMediationDFP:
+    :path: "../"
+  NAMSDKMediationDT:
+    :path: "../"
+  NAMSDKMediationFAN:
+    :path: "../"
+  NAMSDKMediationIMA:
+    :path: "../"
+  NAMSDKMediationInMobi:
+    :path: "../"
+  NAMSDKMediationIronSource:
+    :path: "../"
+  NAMSDKMediationLAN:
+    :path: "../"
+  NAMSDKMediationUnity:
+    :path: "../"
+  NAMSDKMediationVungle:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AmazonPublisherServicesSDK: d302b2e4695be199fa520786f66570499cff6c94
-  FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
-  Google-Mobile-Ads-SDK: 894be2e3e3e8281004bda14381f9af7ad73eeffd
-  GoogleAppMeasurement: bbbfd4bcb2b40ae9b772c3b0823a58c1e3d618f9
-  GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
-  GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
-  InMobiSDK: 53fef744477945477a863b4eed8612578a20a266
+  AmazonPublisherServicesSDK: c9e8ce9b12d9263d1635f490c1a57eaf6e595c69
+  AppLovinSDK: a892bbeff744749a8121bd863aa1399f7eef6ef1
+  FBAudienceNetwork: 2457a89b45e2596241fd81b0c2fd8cb6f6053869
+  FiveAd: ade443b297dd7eea5bb3231e05b1e5b8a8303896
+  Fyber_Marketplace_SDK: 23285d363d7a56d77e97a9699685885069deb3f7
+  Google-Mobile-Ads-SDK: 13e6e98edfd78ad8d8a791edb927658cc260a56f
+  GoogleAds-IMA-iOS-SDK: f9a6bd69e34f6c3a2d6b2f7cd56814b78fc680f9
+  GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  InMobiSDK: 728c861e41cd738eaf0a26b87f0e3f945e8c5602
+  IronSourceSDK: 557a0edad39c2a48a225af07b491c672ca5acd36
   KissXML: 5c8e0f2e8b9f071d3e1ae123dec3eb5da615c10c
-  NAMSDK: b73c0131137dec7e1011f5985e80a507f2c31aca
-  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  Naver-Ads-Services: e309edd083f9a07bf5038fe740927a9b125772a6
-  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  UnityAds: 824808c73af90fe4302ee0594381c8d515e5ce97
+  NAMSDK: e248e267c3434f3dcea1665024ff89c3a1a4e536
+  NAMSDKMediationAppLovin: 1aa68a7e454403a7d2e2de145feb839884f8f053
+  NAMSDKMediationAPS: 4ec1fb709f3e83318c98f82742a9c175ff89928f
+  NAMSDKMediationDFP: 734ea9b4770aebcd174292fe1801cca73d29357a
+  NAMSDKMediationDT: 584341fe0780a857bdc38ddec28b4b491c6223d6
+  NAMSDKMediationFAN: 19b1ad1dfc29bd795be09c9f26addfe9e5095828
+  NAMSDKMediationIMA: fd5a7c61491820ba5ea9df6e7c1db87f5815e657
+  NAMSDKMediationInMobi: b3126f864d149d7cfb5b58ea8b879861d35a4422
+  NAMSDKMediationIronSource: da7079724bffee36674e96edc907e6d9aa417fd5
+  NAMSDKMediationLAN: 50777608642c0742f6534fa7a8827c7bce741e1b
+  NAMSDKMediationUnity: b06e35f5b1d443ca7e78ab9e5e341333569239eb
+  NAMSDKMediationVungle: 24bffef9dfe7ac2b7111b595af7ee1e6c4419c0f
+  Naver-Ads-Services: 3982a914de84655b96dbb71404e276ef120d6167
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  UnityAds: df29459d94ca7c0676cdd9ba96ef6420670ffbfa
+  VungleAds: d7cf66a6dfd390a583ea2b2cfb9af1043b686e58
 
-PODFILE CHECKSUM: 586ed48d725ac5f50cb7f710e22c0deb083994b8
+PODFILE CHECKSUM: a218638ca2d7a1434be2bd49e1c77188a3f9a9f6
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.3
