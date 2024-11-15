@@ -1,0 +1,190 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationAPS"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationAPS\/Rewarded\/GFPAPSRewardedAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 598,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationAPS\/Common\/GFPAPSCommonAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 345,
+      "length": 19,
+      "value": "\"GFPSDKMediationAPS.GFPAPSCommonAdaptor\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationAPS\/Common\/GFPAPSConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 402,
+      "length": 9,
+      "value": "\"4.9.7.0\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationAPS\/Interstitial\/GFPAPSInterstitialAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 608,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
