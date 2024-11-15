@@ -1,0 +1,340 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FiveAd",
+        "printedName": "FiveAd",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationLAN"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 416,
+      "length": 16,
+      "value": "\"2.8.20240612.0\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Native\/GFPLANNativeAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 629,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Native\/GFPLANNativeAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 19,
+      "value": "\"GFPSDKMediationLAN.GFPLANNativeAdaptor\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Interstitial\/GFPLANInterstitialAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 325,
+      "length": 27,
+      "value": "\"GFPSDKMediationLAN.GFPLANInterstitialAdAdaptor\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Native\/GFPLANNativeSimpleAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 336,
+      "length": 25,
+      "value": "\"GFPSDKMediationLAN.GFPLANNativeSimpleAdaptor\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 354,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 8,
+      "value": "\"slotId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 18,
+      "value": "\"c2sSubRenderType\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 354,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 8,
+      "value": "\"slotId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 18,
+      "value": "\"c2sSubRenderType\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Common\/GFPLANRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 17,
+      "value": "\"GFPSDKMediationLAN.GFPLANRequestInfo\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Reward\/GFPLANRewardedAdAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 23,
+      "value": "\"GFPSDKMediationLAN.GFPLANRewardedAdAdaptor\""
+    }
+  ]
+}
