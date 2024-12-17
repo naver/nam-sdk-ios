@@ -52,8 +52,10 @@ FOUNDATION_EXPORT NSString *const GFPRewardProviderISErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderAPSErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderLANErrorKey;
 
+FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedVisualKeySubErrorCodeKey;
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotTypeSubErrorCodeKey;
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotVisualSubErrorCodeKey;
+FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotEnoughSlotCountSubErrorCodeKey;
 
 FOUNDATION_EXPORT NSErrorUserInfoKey const GFPErrorHttpStatusCode;
 

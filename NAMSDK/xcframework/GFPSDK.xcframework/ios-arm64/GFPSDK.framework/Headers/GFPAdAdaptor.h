@@ -63,4 +63,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface GFPNativeAdAdaptor: GFPAdAdaptor
+
+//needs call
+- (void)updateRegisterStatus:(BOOL)isRegister adView:(nullable UIView *)adView;
+- (void)updateExistUserDelegate:(BOOL)isExist;
+
+//needs override
+- (void)notifyDidChangeUserInterestWith:(BOOL)isUserInterest;
+
+@end
+
 NS_ASSUME_NONNULL_END

@@ -18,7 +18,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GFPNDANativeAdaptor : GFPAdAdaptor <GFPNativeAdapting>
+@interface GFPNDANativeAdaptor : GFPNativeAdAdaptor <GFPNativeAdapting>
 
 @property (nonatomic, readonly, strong) GFPNDANativeAd *ndaNativeAd;
 

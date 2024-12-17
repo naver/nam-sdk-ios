@@ -37,6 +37,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDAMediaViewImage = 1,
     GFPNDAMediaViewVideo = 2,
     GFPNDAMediaViewCarousel = 3,
+    GFPNDAMediaViewComplex = 4,
     
     GFPNDARichMediaViewVideoExtend = 102,
     GFPNDARichMediaViewCountdown = 103,

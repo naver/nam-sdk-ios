@@ -620,6 +620,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 + (GFPMediaData * _Nonnull)createRichMediaInfo:(GFPRichMediaData * _Nonnull)richMediaInfo SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createC2SInfoWith:(enum GFPMediaType)type aspectRatio:(CGFloat)c2sAspectRatio SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createCarouseMedialInfo SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createComplexMediaInfo:(UIImage * _Nullable)image videoController:(GFPVideoController * _Nullable)videoController SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -714,6 +715,28 @@ SWIFT_CLASS("_TtC6GFPSDK11GFPSDKPhase")
 + (NSString * _Nonnull)videoSchedulePhaseWith:(GFPPhaseType)aType SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)neloPhaseWith:(GFPPhaseType)aType SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK14GFPServerError")
+@interface GFPServerError : NSObject
+@property (nonatomic, readonly) NSInteger code;
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+@property (nonatomic, readonly, copy) NSString * _Nullable debug;
+@property (nonatomic, readonly, copy) NSString * _Nullable level;
+- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nonnull)dict OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK22GFPServerErrorResponse")
+@interface GFPServerErrorResponse : NSObject
+@property (nonatomic, readonly, strong) GFPServerError * _Nonnull error;
+- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nonnull)dict OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull serverErrorDescription;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

@@ -71,6 +71,36 @@ extension GFPSDK.GFPErrorUtils {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @objcMembers public class GFPServerErrorResponse : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var error: GFPSDK.GFPServerError {
+    get
+  }
+  @objc public init?(withDictionary dict: [Swift.String : Any])
+  @objc public var serverErrorDescription: Swift.String {
+    @objc get
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers public class GFPServerError : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var code: Swift.Int {
+    get
+  }
+  @objc public var message: Swift.String {
+    get
+  }
+  @objc public var debug: Swift.String? {
+    get
+  }
+  @objc public var level: Swift.String? {
+    get
+  }
+  @objc public init?(withDictionary dict: [Swift.String : Any])
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @objc extension GFPSDK.GFPBannerView {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
   @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
@@ -553,6 +583,7 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc(createRichMediaInfo:) public static func createRichMediaInfo(richMediaInfo: GFPSDK.GFPRichMediaData) -> GFPSDK.GFPMediaData
   @objc(createC2SInfoWith:aspectRatio:) public static func createC2SInfo(type: GFPSDK.GFPMediaType, c2sAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
   @objc(createCarouseMedialInfo) public static func createCarouselMediaInfo() -> GFPSDK.GFPMediaData
+  @objc(createComplexMediaInfo:videoController:) public static func createComplexMediaInfo(image: UIKit.UIImage?, videoController: GFPSDK.GFPVideoController?) -> GFPSDK.GFPMediaData
   @objc deinit
 }
 @propertyWrapper public class GFPThreadSafe<T> {

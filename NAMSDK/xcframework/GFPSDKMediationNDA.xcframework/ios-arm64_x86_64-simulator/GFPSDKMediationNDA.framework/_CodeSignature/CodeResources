@@ -18,7 +18,11 @@
 		</data>
 		<key>GFPNDAShoppingNDA1X3Cell.nib</key>
 		<data>
-		zvcTFRItQkcuymiNxlhQ4F6HgOU=
+		ljCU3MkDBp7oVghNCnHMPVfoT0I=
+		</data>
+		<key>GFPNDAShoppingNDABottomScrollCell.nib</key>
+		<data>
+		3Kkja5XK/Y45+i3Na3T5V8W5KBA=
 		</data>
 		<key>GFPNDAShoppingNDACell.nib</key>
 		<data>
@@ -170,7 +174,7 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		2XMb/G2o4VTc/rmc/CxvDuqOqpU=
+		xjUB3dcePMp/s2p1PGZ0Z+Z6mGc=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
@@ -198,7 +202,7 @@
 		</data>
 		<key>Headers/GFPNDANativeAdaptor.h</key>
 		<data>
-		IFCs9KNJJ4Xm0DNlSce0giyFGKw=
+		Om+uNzX91cXuZEcsSSSzPo0fiAU=
 		</data>
 		<key>Headers/GFPNDANativeNormalAd.h</key>
 		<data>
@@ -386,11 +390,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zvcTFRItQkcuymiNxlhQ4F6HgOU=
+			ljCU3MkDBp7oVghNCnHMPVfoT0I=
 			</data>
 			<key>hash2</key>
 			<data>
-			4e10cR0XA5NMjofADa7Agf+zl1I0qrmYOLpeaXcLO8o=
+			hTf3xCXOBG6sWQdIXA+r+6VOJMeV8401wue1g10Ibk8=
+			</data>
+		</dict>
+		<key>GFPNDAShoppingNDABottomScrollCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3Kkja5XK/Y45+i3Na3T5V8W5KBA=
+			</data>
+			<key>hash2</key>
+			<data>
+			5RIXv/MSMM289/3e7X1D/dCpCt0tebglALafcuHQNfI=
 			</data>
 		</dict>
 		<key>GFPNDAShoppingNDACell.nib</key>
@@ -804,11 +819,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2XMb/G2o4VTc/rmc/CxvDuqOqpU=
+			xjUB3dcePMp/s2p1PGZ0Z+Z6mGc=
 			</data>
 			<key>hash2</key>
 			<data>
-			3ffBYIRqieZ08zqNTnQ168NW+DlWsnYF0Nz1D0iQJR0=
+			1ZW55VRtAqlqFtHQsS4v56lElx/T6ynld59qpb2QO0Q=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
@@ -881,11 +896,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IFCs9KNJJ4Xm0DNlSce0giyFGKw=
+			Om+uNzX91cXuZEcsSSSzPo0fiAU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zv53/aSiU5v2pu5vsbpV0lE4RnSNzkkHjM8VYztN7Os=
+			RUJ1kSvkotcY5PfXA7h6kIzGXor8dNBwjjKlFDfLU7o=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeNormalAd.h</key>
