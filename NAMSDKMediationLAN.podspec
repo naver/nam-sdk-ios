@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDKMediationLAN"
-  s.version      = "2.8.20240612.0"
+  s.version      = "2.8.20240612.1"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   
   s.vendored_frameworks = "MediationSDK/LAN/#{s.version.to_s}/GFPSDKMediationLAN.xcframework"
 
-  s.dependency 'NAMSDK/GFPSDK', '>= 8.0.0'
+  s.dependency 'NAMSDK/GFPSDK', '>= 8.1.0'
   s.dependency 'FiveAd', '2.8.20240612'
 
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
