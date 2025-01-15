@@ -8,6 +8,7 @@
 
 #include <AvailabilityMacros.h>
 #import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
 
 #import "GFPRenderDisplayAgent.h"
 #import "GFPAdConfiguration.h"
@@ -144,6 +145,11 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
  * Remove all oookies.
 */
 + (void)clearCookie;
+
+/**
+ * Register web view for interaction with iOS SDK.
+ */
++ (void)registerWebView:(WKWebView *)webView;
 
 /**
  * GFPSDK Version.

@@ -78,6 +78,12 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 @property (nonatomic, strong, nullable) UIFont *mediaBoldFont;
 
 /**
+ * Special DA의 기본 탑 마진을 사용하지 않고 아래 확장만 사용할 시에 사용합니다.
+ * (기본값은 NO)
+ */
+@property (nonatomic, assign) BOOL enableSpecialDABottomExtend;
+
+/**
  * 광고의 MediaView에 Dimmed를 설정하고 싶을 때 설정합니다.
  * 옵션 사용 시 2%의 Dimmed가 적용됩니다. / 아웃스트림 동영상은 8%의 Dimmed가 적용됩니다.
  * (기본값은 NO)

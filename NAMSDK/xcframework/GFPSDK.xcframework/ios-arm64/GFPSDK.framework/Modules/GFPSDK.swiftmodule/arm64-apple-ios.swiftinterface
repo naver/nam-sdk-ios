@@ -1,6 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GFPSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CoreTelephony
 import Foundation
 @_exported import GFPSDK
 import NaverAdsServices
@@ -102,9 +104,9 @@ extension GFPSDK.GFPErrorUtils {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc extension GFPSDK.GFPBannerView {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
 }
 @objc(GFPAdInitProviderInfo) @objcMembers final public class GFPAdInitProviderInfo : ObjectiveC.NSObject, GFPSDK.GFPDictPresentable {
   @objc final public var type: Swift.String
@@ -175,6 +177,51 @@ extension GFPSDK.GFPErrorUtils {
 @objc @objcMembers public class GFPDeviceInfo : ObjectiveC.NSObject {
   @objc public var uaInfo: GFPSDK.GFPUADeviceInfo
   @objc public var serviceInfo: GFPSDK.GFPServiceInfo
+  @objc public var systemName: Swift.String {
+    get
+  }
+  @objc public var systemVersion: Swift.String {
+    get
+  }
+  @objc public var sdkVersion: Swift.String {
+    get
+  }
+  @objc public var deviceType: Swift.String {
+    get
+  }
+  @objc public var deviceModel: Swift.String {
+    get
+  }
+  @objc public var bundleIdentifier: Swift.String {
+    get
+  }
+  @objc public var appName: Swift.String {
+    @objc get
+  }
+  @objc public var appVersion: Swift.String {
+    @objc get
+  }
+  @objc public var sdkName: Swift.String {
+    @objc get
+  }
+  @objc public var os: Swift.String {
+    @objc get
+  }
+  @objc public var density: Swift.String {
+    @objc get
+  }
+  @objc public var screenWidth: Swift.String {
+    @objc get
+  }
+  @objc public var screenHeight: Swift.String {
+    @objc get
+  }
+  @objc public var locale: Swift.String? {
+    @objc get
+  }
+  @objc public var networkType: Swift.String {
+    @objc get
+  }
   @objc public init(_ version: Swift.String)
   @objc public var dict: Swift.Dictionary<Swift.String, Swift.String> {
     @objc get
@@ -256,6 +303,39 @@ extension GFPSDK.GFPErrorUtils {
   }
   @objc(createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:) public static func createQoeTrackingInfo(host: Swift.String, path: Swift.String, timeTable: [Swift.Int], serviceId: Swift.String, ownerServiceId: Swift.String, appId: Swift.String, viewerInfo: Swift.String) -> GFPSDK.GFPQoeTrackingInfo
   @objc deinit
+}
+public struct GFPWebViewAppEnvironment : Swift.Codable {
+  public var sdkName: Swift.String {
+    get
+  }
+  public var sdkVersion: Swift.String {
+    get
+  }
+  public var limitAdTracking: Swift.Bool? {
+    get
+  }
+  public var adId: Swift.String? {
+    get
+  }
+  public var nac: Swift.String? {
+    get
+  }
+  public var device: [Swift.String : Swift.String]? {
+    get
+  }
+  public init()
+  public func jsonString() -> Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPWebViewManager : ObjectiveC.NSObject {
+  @objc public static let shared: GFPSDK.GFPWebViewManager
+  @objc public func addHandlers(to userContentController: WebKit.WKUserContentController)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GFPSDK.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage) async -> (Any?, Swift.String?)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers open class GFPTextAdViewAttribute : ObjectiveC.NSObject {
   @objc public var backgroundColor: UIKit.UIColor?

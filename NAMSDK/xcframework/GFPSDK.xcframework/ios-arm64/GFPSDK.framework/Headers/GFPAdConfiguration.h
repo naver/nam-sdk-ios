@@ -138,6 +138,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL disableNeloLog;
 
+/**
+ * 기기에서의 허용 여부와 상관 없이 앱의 정책 상 IDFA 사용이 불가한 경우 무시하는 옵션 (기본값 NO)
+ */
+@property (nonatomic, assign) BOOL disableAdID;
 
 - (GFPAdProviderSetting *)adProviderConfigWith:(GFPAdProviderSettingType)aType;
 

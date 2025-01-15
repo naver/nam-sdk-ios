@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPAdInitReqInfo;
 @class GFPSKAdNetworkData;
 @class GFPLogReqInfo;
+@class GFPCachedAdParam;
 
 static const NSString *kGFPExtraParamKeyFAN = @"fb";
 static const NSString *kGFPExtraParamKeyVungle = @"vungle";

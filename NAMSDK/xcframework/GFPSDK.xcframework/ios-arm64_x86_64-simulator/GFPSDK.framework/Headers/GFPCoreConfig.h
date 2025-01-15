@@ -19,11 +19,13 @@
 #import "GFPAPIRequest.h"
 
 @class GFPError;
+@class GFPCachedAdParam;
+@class GFPDeviceInfo;
 @protocol GFPDictPresentable;
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"8.1.0"
+#define GFP_SDK_VERSION              @"8.2.0"
 
 @interface GFPCoreConfig : NSObject
 
@@ -49,6 +51,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly, nullable) NSString *gfpUserAgent;
 @property (nonatomic, strong, readonly) NSString *gfpWkWebViewUA;
 @property (nonatomic, strong, readonly) NSString *appVersion;
+
+@property (nonatomic, strong, readwrite, nonnull) GFPCachedAdParam *cachedParam;
+
+@property (nonatomic, strong, readonly) GFPDeviceInfo *deviceInfo;
 
 - (void)updateUserAgentWith:(NSString *)externalUserAgent;
 - (BOOL)limitAdTracking;
