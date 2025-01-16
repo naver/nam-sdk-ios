@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/GFPNDABannerViewDelegate.h</key>
 		<data>
-		UUYZTFXxQc9Cgk8R4Ux4o0LTAxA=
+		K+wjtV1mEWzPMsrpxeZnTTrbV3c=
 		</data>
 		<key>Headers/GFPNDAFeedbackLoader.h</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		xjUB3dcePMp/s2p1PGZ0Z+Z6mGc=
+		ngm7fp4j+l2W3nNtxZ8Lls+pZ9w=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Headers/GFPNDANativeAd.h</key>
 		<data>
-		L5BAZuH8G6q3r+0fU7c+MUL1eJw=
+		xTkwojwRHABYUuwWG/i+4us1AMA=
 		</data>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
 		<data>
@@ -632,11 +632,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UUYZTFXxQc9Cgk8R4Ux4o0LTAxA=
+			K+wjtV1mEWzPMsrpxeZnTTrbV3c=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ftkIkCmd8nLGIAAxKrsCFNjp/x6Ek7J+yqyR/lmvM0=
+			8Xf/brVwiRfZ7xW3sv+jU19X7vXhO2wJkRlZSSUXe6I=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAFeedbackLoader.h</key>
@@ -819,11 +819,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xjUB3dcePMp/s2p1PGZ0Z+Z6mGc=
+			ngm7fp4j+l2W3nNtxZ8Lls+pZ9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			1ZW55VRtAqlqFtHQsS4v56lElx/T6ynld59qpb2QO0Q=
+			G8vq2ISX9vjnKyu2Rp/9PAoSN9/DIEJcW5891FfImqM=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
@@ -874,11 +874,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L5BAZuH8G6q3r+0fU7c+MUL1eJw=
+			xTkwojwRHABYUuwWG/i+4us1AMA=
 			</data>
 			<key>hash2</key>
 			<data>
-			sQ//CQqgWZmjyxuS2O7kc/yQf8K/xQyUHnsmeMAvklI=
+			dUkbXyZ10xdH3rVl2I6ZntgaGdN+qMFqehq/WQU+k5g=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeAdFactory.h</key>

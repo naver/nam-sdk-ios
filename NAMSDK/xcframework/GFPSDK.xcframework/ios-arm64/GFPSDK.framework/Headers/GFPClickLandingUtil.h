@@ -15,22 +15,30 @@
 
 @class GFPSKAdNetworkInfo;
 @class UIViewController;
+@class GFPClickLandingUtil;
 @protocol GFPS2SAdClickDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol GFPClickLandingUtilDelegate <NSObject>
+
+- (void)didPresentDefaultInAppBrowse:(GFPClickLandingUtil *)landingUtil;
+- (void)didDissmissDefaultInAppBrowse:(GFPClickLandingUtil *)landingUtil;
+
+@end
 
 @interface GFPClickLandingUtil : NSObject
 
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, assign) BOOL forceURLLanding;
-
 @property (nonatomic, assign, readonly) BOOL useCustomClick;
 
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWith:(UIViewController * _Nullable)aTarget
              skAdNetwork:(GFPSKAdNetworkInfo * _Nullable)aSKAdNetwork
-           clickDelegate:(id <GFPS2SAdClickDelegate> _Nullable)clickDelegate NS_DESIGNATED_INITIALIZER;
+           clickDelegate:(id <GFPS2SAdClickDelegate> _Nullable)clickDelegate
+    inAppLandingDelegate:(id<GFPClickLandingUtilDelegate> _Nullable)landingDelegate NS_DESIGNATED_INITIALIZER;
 
 - (void)openLanding:(GFPS2SAdLandingHandler)aCompletion;
 - (void)openLandingForExceptSKAdn:(GFPS2SAdLandingHandler)aCompletion;

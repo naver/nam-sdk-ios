@@ -6,6 +6,7 @@ import CoreTelephony
 import Foundation
 @_exported import GFPSDK
 import NaverAdsServices
+import SafariServices
 import Swift
 import UIKit
 import WebKit

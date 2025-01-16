@@ -43,6 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor didReloadFailWithError:(GFPError *)error;
 - (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor didChangeUserInterest:(BOOL)userInterest;
 
+- (void)nativeAdAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+- (void)nativeAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

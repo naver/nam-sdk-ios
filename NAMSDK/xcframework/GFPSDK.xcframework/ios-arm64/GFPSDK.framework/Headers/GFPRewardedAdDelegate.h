@@ -21,4 +21,8 @@
 - (void)rewardedAdRecieveImpression:(GFPRewardedAd *)rewardedAd;
 
 - (void)rewardedAd:(GFPRewardedAd *)rewardedAd didChangedMute:(BOOL)isMuted;
+
+@optional
+- (void)rewardedAdDidPresentDefaultInAppBrowser:(GFPRewardedAd *)rewardedAd;
+- (void)rewardedAdDidDismissDefaultInAppBrowser:(GFPRewardedAd *)rewardedAd;
 @end

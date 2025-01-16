@@ -36,6 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nonLinearViewWasClicked:(GFPNonLinearAdView *)aView;
 - (void)nonLinearViewOnActiveImpression:(GFPNonLinearAdView *)aView;
 
+@optional
+- (void)nonLinearViewInAppBrowserPresented:(GFPNonLinearAdView *)aView;
+- (void)nonLinearViewInAppBrowserDissmissed:(GFPNonLinearAdView *)aView;
+
 @end
 
 
@@ -61,7 +65,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportViewTracking;
 - (void)updateRemindAd;
-- (void)updateClickDelegate:(id <GFPS2SAdClickDelegate>)clickDelegate;
+- (void)updateClickDelegate:(id <GFPS2SAdClickDelegate>)clickDelegate
+           targetController:(UIViewController * _Nullable)rootViewController;
 
 - (void)wasClicked:(id)sender;
 - (IBAction)close:(id)sender;

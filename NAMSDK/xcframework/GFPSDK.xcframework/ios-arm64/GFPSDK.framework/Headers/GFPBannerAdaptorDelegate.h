@@ -37,6 +37,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)bannerAdaptor:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor didChangeWith:(NSDictionary *)adMeta;
 - (void)bannerAdWasMuted:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;
 
+@optional
+- (void)bannerAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;
+- (void)bannerAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;
+
 @end
 
 NS_ASSUME_NONNULL_END

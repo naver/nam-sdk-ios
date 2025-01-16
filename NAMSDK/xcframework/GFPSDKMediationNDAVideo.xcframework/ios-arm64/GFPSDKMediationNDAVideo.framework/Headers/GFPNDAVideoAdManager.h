@@ -100,6 +100,8 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAutoPlayStatus) {
 - (void)videoAdManager:(GFPNDAVideoAdManager *)manager playControlWillShow:(NSTimeInterval)duration;
 - (void)videoAdManager:(GFPNDAVideoAdManager *)manager playControlWillHide:(NSTimeInterval)duration;
 
+- (void)videoAdManagerDidPresentDefaultInAppBrowser:(GFPNDAVideoAdManager *)manager;
+- (void)videoAdManagerDidDismissDefaultInAppBrowser:(GFPNDAVideoAdManager *)manager;
 
 @end
 

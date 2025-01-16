@@ -103,6 +103,19 @@ didReceiveAccessLogEvents:(NSArray<AVPlayerItemAccessLogEvent *> *)accessLogEven
 */
 - (void)videoAdManager:(GFPVideoAdManager *)videoAdManager playControlWillShow:(NSTimeInterval)duration;
 
+/**
+ * Default In App Browser 사용 시, SFSafariViewController가 정상적으로 Present 시 호출됩니다.
+ * @param videoAdManager 비디오 광고 매니저
+ */
+- (void)videoAdManagerDidPresentDefaultInAppBrowser:(GFPVideoAdManager *)videoAdManager;
+
+/**
+ * Default In App Browser 사용 시, SFSafariViewController가 정상적으로 Dismiss 시 호출됩니다.
+ * @param videoAdManager 비디오 광고 매니저
+ */
+- (void)videoAdManagerDidDismissDefaultInAppBrowser:(GFPVideoAdManager *)videoAdManager;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

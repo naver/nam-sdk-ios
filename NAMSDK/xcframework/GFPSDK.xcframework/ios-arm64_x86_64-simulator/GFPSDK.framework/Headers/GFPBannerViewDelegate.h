@@ -77,6 +77,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)bannerAdWasMuted:(GFPBannerView *)bannerView;
 
+
+/**
+ * Default In App Browser 사용 시, 클릭이 이루어져서 SFSafariViewController가 정상적으로 Present 시 호출됩니다.
+ * @param bannerView GFPBannerView
+ */
+- (void)bannerAdDidPresentDefaultInAppBrowser:(GFPBannerView *)bannerView;
+
+/**
+ * Default In App Browser 사용 시, 클릭이 이루어져서 SFSafariViewController가 정상적으로 Dismiss 시 호출됩니다.
+ * @param bannerView GFPBannerView
+ */
+- (void)bannerAdDidDismissDefaultInAppBrowser:(GFPBannerView *)bannerView;
+
 @end
 
 NS_ASSUME_NONNULL_END

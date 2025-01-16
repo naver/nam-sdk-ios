@@ -54,6 +54,10 @@ didReceiveAccessLogEvents:(NSArray<AVPlayerItemAccessLogEvent *> *)accessLogEven
 
 - (void)videoAdAdaptor:(GFPAdAdaptor <GFPVideoAdapting> *)videoAdaptor playControlWillHide:(NSTimeInterval)duration;
 
+- (void)videoAdAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPVideoAdapting> *)videoAdaptor;
+- (void)videoAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPVideoAdapting> *)videoAdaptor;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

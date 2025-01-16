@@ -61,6 +61,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)nativeAd:(GFPNativeAd *)nativeAd didReloadFailWithError:(GFPError *)error;
 
+/**
+ * Default In App Browser 사용 시, SFSafariViewController가 정상적으로 Present 시 호출됩니다.
+ * @param nativeAd 네이티브 광고 객체
+ */
+- (void)nativeAdDidPresentDefaultInAppBrowser:(GFPNativeAd *)nativeAd;
+
+/**
+ * Default In App Browser 사용 시, SFSafariViewController가 정상적으로 Dismiss 시 호출됩니다.
+ * @param nativeAd 네이티브 광고 객체
+ */
+- (void)nativeAdDidDismissDefaultInAppBrowser:(GFPNativeAd *)nativeAd;
 
 @end
 
@@ -138,6 +149,18 @@ NS_ASSUME_NONNULL_BEGIN
  * @param size 축소될 최종 크기
  */
 - (void)nativeSimpleRichAdShrinkStart:(GFPNativeSimpleAd *)nativeSimpleAd toSize:(CGSize)size;
+
+/**
+ * Default In App Browser 사용 시, 클릭이 이루어져서 SFSafariViewController가 정상적으로 Present 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleAdDidPresentDefaultInAppBrowser:(GFPNativeSimpleAd *)nativeSimpleAd;
+
+/**
+ * Default In App Browser 사용 시, 클릭이 이루어져서 SFSafariViewController가 정상적으로 Dismiss 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleAdDidDismissDefaultInAppBrowser:(GFPNativeSimpleAd *)nativeSimpleAd;
 
 @end
 

@@ -27,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)rewardedAdAdaptor:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor didChangedMute:(BOOL)isMuted;
 
+@optional
+- (void)rewardedAdAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
+- (void)rewardedAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
+
 @end
 
 NS_ASSUME_NONNULL_END

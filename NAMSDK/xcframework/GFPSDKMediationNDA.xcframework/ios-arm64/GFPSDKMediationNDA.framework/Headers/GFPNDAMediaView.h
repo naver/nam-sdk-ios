@@ -78,6 +78,9 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)didTappedLandingViewWith:(GFPNDAMediaViewType)aType landingUrl:(NSString *)landingUrl trackers:(NSArray <NSString *> *)trackers;
 - (void)didRenderingFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
 - (void)didSlotRenderingFailWith:(GFPNDAMediaViewType)aType error:(GFPError *)aError;
+
+- (void)didPresentDefaultInAppBrowser:(GFPNDAMediaViewType)aType;
+- (void)didDismissDefaultInAppBrowser:(GFPNDAMediaViewType)aType;
 @end
 
 
@@ -146,6 +149,9 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (UIView * _Nullable)touchView;
 
 - (void)shrinkExtendedRichAd;
+
+- (void)didPresentDefaultInAppBrowser;
+- (void)didDismissDefaultInAppBrowser;
 
 @end
 

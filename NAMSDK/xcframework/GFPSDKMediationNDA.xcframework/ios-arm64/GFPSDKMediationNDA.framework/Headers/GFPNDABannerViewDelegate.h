@@ -32,4 +32,8 @@
 
 - (void)ndaBannerView:(GFPNDABannerView *)bannerView didChangeWith:(NSDictionary *)adMeta;
 
+- (void)ndaBannerViewDidPresentDefaultInAppBrowser:(GFPNDABannerView *)bannerView;
+- (void)ndaBannerViewDidDismissDefaultInAppBrowser:(GFPNDABannerView *)bannerView;
+
+
 @end

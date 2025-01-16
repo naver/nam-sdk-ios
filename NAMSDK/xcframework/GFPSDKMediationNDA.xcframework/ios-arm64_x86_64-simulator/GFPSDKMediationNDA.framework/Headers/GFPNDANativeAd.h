@@ -54,6 +54,9 @@
 
 - (void)nativeAdDidRenderingSlotFailed:(GFPNDANativeAd *)nativeAd error:(GFPError *)error;
 
+- (void)nativeAdDidPresentDefaultInAppBrowser:(GFPNDANativeAd *)nativeAd;
+- (void)nativeAdDidDismissDefaultInAppBrowser:(GFPNDANativeAd *)nativeAd;
+
 @end
 
 

@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 광고 클릭 후 렌더링 타입
  */
-@property (nonatomic, strong) GFPRenderDisplayAgent *displayAgent;
+@property (nonatomic, strong) GFPRenderDisplayAgent *displayAgent; __deprecated_msg("Use S2S Click Handler or Default InApp Browser instead. it will be removed next version");
 
 
 /**
@@ -137,6 +137,11 @@ NS_ASSUME_NONNULL_BEGIN
  * sdk 넬로 로그 전송 여부 (기본값 NO)
  */
 @property (nonatomic, assign) BOOL disableNeloLog;
+
+/**
+ * s2s광고 랜딩 시 기본 제공 인앱 브라우저 사용 여부 (기본값 NO)
+ */
+@property (nonatomic, assign) BOOL useDefaultSafariBrowser;
 
 /**
  * 기기에서의 허용 여부와 상관 없이 앱의 정책 상 IDFA 사용이 불가한 경우 무시하는 옵션 (기본값 NO)

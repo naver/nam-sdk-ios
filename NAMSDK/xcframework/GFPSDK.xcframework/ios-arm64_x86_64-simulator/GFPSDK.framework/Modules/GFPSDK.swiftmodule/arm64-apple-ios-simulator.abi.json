@@ -11527,6 +11527,13 @@
       },
       {
         "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDK"
+      },
+      {
+        "kind": "Import",
         "name": "NaverAdsServices",
         "printedName": "NaverAdsServices",
         "declKind": "Import",

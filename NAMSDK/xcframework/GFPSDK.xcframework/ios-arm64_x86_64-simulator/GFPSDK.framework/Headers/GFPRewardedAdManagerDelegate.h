@@ -29,6 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 -(void)rewardedAdManager:(GFPRewardedAdManager *)manager didChangedMute:(BOOL)isMuted;
+
+-(void)rewardedAdManagerDidPresentDefaultInAppBrowser:(GFPRewardedAdManager *)manager;
+-(void)rewardedAdManagerDidDismissDefaultInAppBrowser:(GFPRewardedAdManager *)manager;
 @end
 
 NS_ASSUME_NONNULL_END
