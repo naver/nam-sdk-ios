@@ -93,7 +93,7 @@
  * s2s 광고 시 Extra Images
  */
 - (UIImage * _Nullable)extraImageWith:(NSString * _Nonnull)key;
-
+- (NSString * _Nullable)extraImageAccessibilityWith:(NSString * _Nonnull)key;
 
 @end
 

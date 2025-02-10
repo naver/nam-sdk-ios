@@ -108,7 +108,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
                                         link:(GFPNativeLinkInfo *)link NS_DESIGNATED_INITIALIZER;
 
 
-
+- (void)updateAccessibilityTextWith:(NSString *)accessibilityText; //for renderer
 - (void)removeRichInfo;
 
 @end
@@ -275,7 +275,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @end
 
-@interface GFPNativeExtraImageInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource>
+@interface GFPNativeExtraImageInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource, GFPNativeAdInfoExtensionPresentable>
 
 @property (nonatomic, readonly, strong) NSURL *source;
 @property (nonatomic, readonly, assign) CGSize size;

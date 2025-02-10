@@ -95,6 +95,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIImage * _Nullable)extraImageWith:(NSString *)key;
 
+- (NSString * _Nullable)extraImageAccessibilityWith:(NSString *)key;
+
 - (void)applyExtraViewLink:(NSString *)key withView:(UIView *)extraView;
 
 - (void)existUserInterestDelegateWith:(BOOL)isExist;
