@@ -1,0 +1,518 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "GFPSDKMediationDFP",
+    "printedName": "GFPSDKMediationDFP",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDFP"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 10,
+      "value": "\"12.0.0.0\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1092,
+      "length": 11,
+      "value": "\"MobileAds\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 408,
+      "length": 14,
+      "value": "\"NETWORK_CODE\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 448,
+      "length": 14,
+      "value": "\"AD_UNIT_CODE\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 8,
+      "value": "\"gfp_bp\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 566,
+      "length": 8,
+      "value": "\"gfp_no\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 659,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 704,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Common\/GFPDFPRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDFP\/Combined\/GFPDFPCombinedAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 712,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
