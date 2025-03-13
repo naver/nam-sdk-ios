@@ -12,6 +12,7 @@
 
 @class GFPAdAdaptor;
 @class GFPBannerAdSize;
+@class GFPError;
 
 typedef NS_OPTIONS(NSUInteger, GFPBannerSizeChangeType){
     GFPBannerSizeChangeDefault = 1 << 0,
@@ -24,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol GFPBannerAdaptorDelegate <NSObject>
 
 @required
+
+- (void)bannerAdDidFailedToRendering:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor error:(GFPError *)error;
 
 - (void)bannerAdWasClicked:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;
 - (void)bannerAdWasOnActiveImpression:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;

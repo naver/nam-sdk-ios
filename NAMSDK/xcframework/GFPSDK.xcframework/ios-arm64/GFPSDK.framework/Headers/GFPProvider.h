@@ -30,6 +30,8 @@ FOUNDATION_EXPORT NSString *const GFPProviderTypeDT;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeIS;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeAPS;
 FOUNDATION_EXPORT NSString *const GFPProviderTypeLAN;
+FOUNDATION_EXPORT NSString *const GFPProviderTypeChartBoost;
+FOUNDATION_EXPORT NSString *const GFPProviderTypeBidMachine;
 
 typedef NSString *GFPProviderRenderType NS_STRING_ENUM;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNDP;
@@ -47,6 +49,8 @@ FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeDT;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeIS;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeAPS;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeLAN;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeChartBoost;
+FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeBidMachine;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeSIMPLE;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeNORMAL;
 FOUNDATION_EXPORT NSString *const GFPProviderRenderTypeCOMPOSITE;

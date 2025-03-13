@@ -40,7 +40,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @end
 
 
-@interface GFPNativeTitleInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable>
+@interface GFPNativeTitleInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable, GFPNativeAdLabelOptionPresentable>
 
 - (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
 
@@ -262,7 +262,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @end
 
 
-@interface GFPNativeNoticeInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable>
+@interface GFPNativeNoticeInfo : NSObject <GFPNativeAdInfoLabelPresentable, GFPNativeAdInfoLinkPresentable, GFPNativeAdLabelOptionPresentable>
 
 - (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
 

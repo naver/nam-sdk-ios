@@ -311,9 +311,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS_NAMED("GFPAdInitProviderAdditionalInfo")
 @interface GFPAdInitProviderAdditionalInfo : NSObject
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable adUnitIds;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable productTypes;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull dictionary;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable productTypes;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable adUnitIds;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable appSignatureId;
 - (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -428,7 +428,9 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionDT = 7,
   GFPBannerProviderOptionIS = 8,
   GFPBannerProviderOptionAPS = 9,
-  GFPBannerProviderOptionEnd = 10,
+  GFPBannerProviderOptionChartBoost = 10,
+  GFPBannerProviderOptionBidMachine = 11,
+  GFPBannerProviderOptionEnd = 12,
 };
 
 
@@ -564,7 +566,9 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionIS = 8,
   GFPInterstitialAdProviderOptionAPS = 9,
   GFPInterstitialAdProviderOptionLAN = 10,
-  GFPInterstitialAdProviderOptionEnd = 11,
+  GFPInterstitialAdProviderOptionChartBoost = 11,
+  GFPInterstitialAdProviderOptionBidMachine = 12,
+  GFPInterstitialAdProviderOptionEnd = 13,
 };
 
 @class GFPSpannableOption;
@@ -663,7 +667,8 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionFAN = 3,
   GFPNativeProviderOptionInMobi = 4,
   GFPNativeProviderOptionLAN = 5,
-  GFPNativeProviderOptionEnd = 6,
+  GFPNativeProviderOptionBidMachine = 6,
+  GFPNativeProviderOptionEnd = 7,
 };
 
 
@@ -700,7 +705,9 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionIS = 9,
   GFPRewardedAdProviderOptionAPS = 10,
   GFPRewardedAdProviderOptionLAN = 11,
-  GFPRewardedAdProviderOptionEnd = 12,
+  GFPRewardedAdProviderOptionChartBoost = 12,
+  GFPRewardedAdProviderOptionBidMachine = 13,
+  GFPRewardedAdProviderOptionEnd = 14,
 };
 
 enum GFPRichMediaDataAdType : NSInteger;
@@ -972,12 +979,14 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
 @end
 
 @class WKUserContentController;
+@class WKWebView;
 
 SWIFT_CLASS("_TtC6GFPSDK17GFPWebViewManager")
 @interface GFPWebViewManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPWebViewManager * _Nonnull shared;)
 + (GFPWebViewManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)addHandlersTo:(WKUserContentController * _Nonnull)userContentController;
+- (void)examineWebViewStatusWithWebView:(WKWebView * _Nonnull)webView result:(void (^ _Nonnull)(NSError * _Nullable, NSDictionary<NSString *, id> * _Nullable))result;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1344,9 +1353,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS_NAMED("GFPAdInitProviderAdditionalInfo")
 @interface GFPAdInitProviderAdditionalInfo : NSObject
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable adUnitIds;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable productTypes;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull dictionary;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable productTypes;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable adUnitIds;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable appSignatureId;
 - (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1461,7 +1470,9 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionDT = 7,
   GFPBannerProviderOptionIS = 8,
   GFPBannerProviderOptionAPS = 9,
-  GFPBannerProviderOptionEnd = 10,
+  GFPBannerProviderOptionChartBoost = 10,
+  GFPBannerProviderOptionBidMachine = 11,
+  GFPBannerProviderOptionEnd = 12,
 };
 
 
@@ -1597,7 +1608,9 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionIS = 8,
   GFPInterstitialAdProviderOptionAPS = 9,
   GFPInterstitialAdProviderOptionLAN = 10,
-  GFPInterstitialAdProviderOptionEnd = 11,
+  GFPInterstitialAdProviderOptionChartBoost = 11,
+  GFPInterstitialAdProviderOptionBidMachine = 12,
+  GFPInterstitialAdProviderOptionEnd = 13,
 };
 
 @class GFPSpannableOption;
@@ -1696,7 +1709,8 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionFAN = 3,
   GFPNativeProviderOptionInMobi = 4,
   GFPNativeProviderOptionLAN = 5,
-  GFPNativeProviderOptionEnd = 6,
+  GFPNativeProviderOptionBidMachine = 6,
+  GFPNativeProviderOptionEnd = 7,
 };
 
 
@@ -1733,7 +1747,9 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionIS = 9,
   GFPRewardedAdProviderOptionAPS = 10,
   GFPRewardedAdProviderOptionLAN = 11,
-  GFPRewardedAdProviderOptionEnd = 12,
+  GFPRewardedAdProviderOptionChartBoost = 12,
+  GFPRewardedAdProviderOptionBidMachine = 13,
+  GFPRewardedAdProviderOptionEnd = 14,
 };
 
 enum GFPRichMediaDataAdType : NSInteger;
@@ -2005,12 +2021,14 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
 @end
 
 @class WKUserContentController;
+@class WKWebView;
 
 SWIFT_CLASS("_TtC6GFPSDK17GFPWebViewManager")
 @interface GFPWebViewManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPWebViewManager * _Nonnull shared;)
 + (GFPWebViewManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)addHandlersTo:(WKUserContentController * _Nonnull)userContentController;
+- (void)examineWebViewStatusWithWebView:(WKWebView * _Nonnull)webView result:(void (^ _Nonnull)(NSError * _Nullable, NSDictionary<NSString *, id> * _Nullable))result;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

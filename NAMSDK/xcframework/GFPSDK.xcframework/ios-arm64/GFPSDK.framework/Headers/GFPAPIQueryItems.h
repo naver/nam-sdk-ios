@@ -20,8 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPLogReqInfo;
 @class GFPCachedAdParam;
 
-static const NSString *kGFPExtraParamKeyFAN = @"fb";
-static const NSString *kGFPExtraParamKeyVungle = @"vungle";
+static NSString * const kGFPAAPParamKeyAmazon = @"amznhb"; // old: "ha"
+static NSString * const kGFPAAPParamKeyPrebid = @"prebid"; // old: "hb"
+static NSString * const kGFPAAPParamKeyFAN = @"fb";
+static NSString * const kGFPAAPParamKeyVungle = @"vungle";
+static NSString * const kGFPAAPParamKeyKeyChartBoost = @"cb";
+static NSString * const kGFPAAPParamKeyBidMachine = @"bm";
 
 @interface GFPAPIQueryItems : NSObject
 

@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)bannerView:(GFPBannerView *)bannerView didLoadNativeAd:(GFPNativeAd *)nativeAd;
 
 /**
- * 광고 로드에 실패한 경우 호출됩니다.
+ * 광고 로드 및 렌더링에 실패한 경우 호출됩니다.
  * @param bannerView GFPBannerView
  * @param error GFPError
  */

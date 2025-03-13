@@ -10472,6 +10472,93 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "examineWebViewStatus",
+            "printedName": "examineWebViewStatus(webView:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?, [Swift.String : Any]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "((any Swift.Error)?, [Swift.String : Any]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPWebViewManager(im)examineWebViewStatusWithWebView:result:",
+            "mangledName": "$s6GFPSDK17GFPWebViewManagerC010examineWebC6Status03webC06resultySo05WKWebC0C_ys5Error_pSg_SDySSypGSgtctF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -12838,6 +12925,88 @@
           },
           {
             "kind": "Var",
+            "name": "chartBoost",
+            "printedName": "chartBoost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPBannerProviderOption.Type) -> GFPSDK.GFPBannerProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPBannerProviderOption",
+                    "printedName": "GFPSDK.GFPBannerProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPBannerProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPBannerProviderOption",
+                        "printedName": "GFPSDK.GFPBannerProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption@GFPBannerProviderOptionChartBoost",
+            "mangledName": "$s6GFPSDK23GFPBannerProviderOptionO10chartBoostyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "BidMachine",
+            "printedName": "BidMachine",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPBannerProviderOption.Type) -> GFPSDK.GFPBannerProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPBannerProviderOption",
+                    "printedName": "GFPSDK.GFPBannerProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPBannerProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPBannerProviderOption",
+                        "printedName": "GFPSDK.GFPBannerProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption@GFPBannerProviderOptionBidMachine",
+            "mangledName": "$s6GFPSDK23GFPBannerProviderOptionO10BidMachineyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
             "name": "end",
             "printedName": "end",
             "children": [
@@ -12875,7 +13044,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Constructor",
@@ -13571,6 +13740,47 @@
           },
           {
             "kind": "Var",
+            "name": "bidMachine",
+            "printedName": "bidMachine",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPNativeProviderOption.Type) -> GFPSDK.GFPNativeProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPNativeProviderOption",
+                    "printedName": "GFPSDK.GFPNativeProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPNativeProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPNativeProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPNativeProviderOption",
+                        "printedName": "GFPSDK.GFPNativeProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPNativeProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPNativeProviderOption@GFPNativeProviderOptionBidMachine",
+            "mangledName": "$s6GFPSDK23GFPNativeProviderOptionO10bidMachineyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
             "name": "end",
             "printedName": "end",
             "children": [
@@ -13608,7 +13818,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Constructor",
@@ -14509,6 +14719,88 @@
           },
           {
             "kind": "Var",
+            "name": "chartBoost",
+            "printedName": "chartBoost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPRewardedAdProviderOption.Type) -> GFPSDK.GFPRewardedAdProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPRewardedAdProviderOption",
+                    "printedName": "GFPSDK.GFPRewardedAdProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPRewardedAdProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPRewardedAdProviderOption",
+                        "printedName": "GFPSDK.GFPRewardedAdProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption@GFPRewardedAdProviderOptionChartBoost",
+            "mangledName": "$s6GFPSDK27GFPRewardedAdProviderOptionO10chartBoostyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "BidMachine",
+            "printedName": "BidMachine",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPRewardedAdProviderOption.Type) -> GFPSDK.GFPRewardedAdProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPRewardedAdProviderOption",
+                    "printedName": "GFPSDK.GFPRewardedAdProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPRewardedAdProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPRewardedAdProviderOption",
+                        "printedName": "GFPSDK.GFPRewardedAdProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption@GFPRewardedAdProviderOptionBidMachine",
+            "mangledName": "$s6GFPSDK27GFPRewardedAdProviderOptionO10BidMachineyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
             "name": "end",
             "printedName": "end",
             "children": [
@@ -14546,7 +14838,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Constructor",
@@ -15142,6 +15434,88 @@
           },
           {
             "kind": "Var",
+            "name": "chartBoost",
+            "printedName": "chartBoost",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPInterstitialAdProviderOption.Type) -> GFPSDK.GFPInterstitialAdProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPInterstitialAdProviderOption",
+                    "printedName": "GFPSDK.GFPInterstitialAdProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPInterstitialAdProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPInterstitialAdProviderOption",
+                        "printedName": "GFPSDK.GFPInterstitialAdProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption@GFPInterstitialAdProviderOptionChartBoost",
+            "mangledName": "$s6GFPSDK31GFPInterstitialAdProviderOptionO10chartBoostyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "BidMachine",
+            "printedName": "BidMachine",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPInterstitialAdProviderOption.Type) -> GFPSDK.GFPInterstitialAdProviderOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPInterstitialAdProviderOption",
+                    "printedName": "GFPSDK.GFPInterstitialAdProviderOption",
+                    "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPInterstitialAdProviderOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPInterstitialAdProviderOption",
+                        "printedName": "GFPSDK.GFPInterstitialAdProviderOption",
+                        "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption@GFPInterstitialAdProviderOptionBidMachine",
+            "mangledName": "$s6GFPSDK31GFPInterstitialAdProviderOptionO10BidMachineyA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
             "name": "end",
             "printedName": "end",
             "children": [
@@ -15179,7 +15553,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Constructor",
@@ -18567,147 +18941,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "adUnitIds",
-            "printedName": "adUnitIds",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(py)adUnitIds",
-            "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC9adUnitIdsSaySSGSgvp",
-            "moduleName": "GFPSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(im)adUnitIds",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC9adUnitIdsSaySSGSgvg",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(im)setAdUnitIds:",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC9adUnitIdsSaySSGSgvs",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6GFPSDK31GFPAdInitProviderAdditionalInfoC9adUnitIdsSaySSGSgvM",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC9adUnitIdsSaySSGSgvM",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "productTypes",
             "printedName": "productTypes",
             "children": [
@@ -18739,11 +18972,12 @@
             "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC12productTypesSaySSGSgvp",
             "moduleName": "GFPSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18780,20 +19014,60 @@
                 "moduleName": "GFPSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adUnitIds",
+            "printedName": "adUnitIds",
+            "children": [
               {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(py)adUnitIds",
+            "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC9adUnitIdsSaySSGSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
@@ -18818,70 +19092,58 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(im)setProductTypes:",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC12productTypesSaySSGSgvs",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(im)adUnitIds",
+                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC9adUnitIdsSaySSGSgvg",
                 "moduleName": "GFPSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6GFPSDK31GFPAdInitProviderAdditionalInfoC12productTypesSaySSGSgvM",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC12productTypesSaySSGSgvM",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
+                "accessorKind": "get"
               }
             ]
           },
           {
             "kind": "Var",
-            "name": "dictionary",
-            "printedName": "dictionary",
+            "name": "appSignatureId",
+            "printedName": "appSignatureId",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
-                "usr": "s:SD"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(py)dictionary",
-            "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC10dictionarySDySSypGvp",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(py)appSignatureId",
+            "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC14appSignatureIdSaySSGSgvp",
             "moduleName": "GFPSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18891,91 +19153,37 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:SD"
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(im)dictionary",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC10dictionarySDySSypGvg",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(im)appSignatureId",
+                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC14appSignatureIdSaySSGSgvg",
                 "moduleName": "GFPSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAdInitProviderAdditionalInfo(im)setDictionary:",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC10dictionarySDySSypGvs",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6GFPSDK31GFPAdInitProviderAdditionalInfoC10dictionarySDySSypGvM",
-                "mangledName": "$s6GFPSDK31GFPAdInitProviderAdditionalInfoC10dictionarySDySSypGvM",
-                "moduleName": "GFPSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -19032,6 +19240,7 @@
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "init_kind": "Designated"
@@ -23638,28 +23847,49 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2111,
-      "length": 88,
+      "offset": 1738,
+      "length": 83,
       "value": "\"- Type : \""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2133,
+      "offset": 1760,
       "length": 1,
       "value": "\" - PlaceID : \""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2161,
+      "offset": 1788,
       "length": 1,
       "value": "\" - ExtraDict : \""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2198,
+      "offset": 1820,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1851,
+      "length": 51,
+      "value": "\"- Type : \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1873,
+      "length": 1,
+      "value": "\" - PlaceID : \""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1901,
       "length": 1,
       "value": "\"\""
     },
@@ -24087,246 +24317,295 @@
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 492,
-      "length": 3,
+      "length": 10,
       "value": "10"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 636,
-      "length": 3,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 649,
-      "length": 3,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 662,
-      "length": 3,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 810,
-      "length": 3,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 823,
-      "length": 3,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 836,
-      "length": 3,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 849,
-      "length": 6,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 865,
-      "length": 3,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 878,
-      "length": 3,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1047,
-      "length": 3,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1060,
-      "length": 3,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1207,
-      "length": 3,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1220,
-      "length": 3,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1233,
-      "length": 6,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1249,
-      "length": 5,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1264,
-      "length": 8,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1282,
-      "length": 3,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1295,
-      "length": 6,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1311,
-      "length": 2,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1323,
-      "length": 2,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1335,
-      "length": 3,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1348,
-      "length": 3,
+      "offset": 512,
+      "length": 10,
       "value": "11"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1361,
+      "offset": 532,
       "length": 3,
       "value": "12"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1518,
+      "offset": 676,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1531,
+      "offset": 689,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1544,
+      "offset": 702,
+      "length": 3,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 850,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 863,
+      "length": 3,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 876,
+      "length": 3,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 889,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 905,
+      "length": 3,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 918,
+      "length": 10,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 938,
+      "length": 3,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1107,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1120,
+      "length": 3,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1267,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1280,
+      "length": 3,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1293,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1560,
+      "offset": 1309,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1575,
+      "offset": 1324,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1593,
-      "length": 6,
+      "offset": 1342,
+      "length": 3,
       "value": "6"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1609,
-      "length": 2,
+      "offset": 1355,
+      "length": 6,
       "value": "7"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1621,
+      "offset": 1371,
       "length": 2,
       "value": "8"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1633,
-      "length": 3,
+      "offset": 1383,
+      "length": 2,
       "value": "9"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1646,
+      "offset": 1395,
       "length": 3,
       "value": "10"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1659,
+      "offset": 1408,
       "length": 3,
       "value": "11"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1421,
+      "length": 10,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1441,
+      "length": 10,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1461,
+      "length": 3,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1618,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1631,
+      "length": 3,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1644,
+      "length": 6,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1660,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1675,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1693,
+      "length": 6,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1709,
+      "length": 2,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1721,
+      "length": 2,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1733,
+      "length": 3,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1746,
+      "length": 3,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1759,
+      "length": 10,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1779,
+      "length": 10,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1799,
+      "length": 3,
+      "value": "13"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
@@ -24464,23 +24743,23 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 316,
+      "offset": 309,
       "length": 14,
       "value": "\"productTypes\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 371,
+      "offset": 343,
       "length": 11,
       "value": "\"adUnitIds\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
-      "kind": "Dictionary",
-      "offset": 617,
-      "length": 3,
-      "value": "[]"
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 16,
+      "value": "\"appSignatureId\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Util\/GFPBundle.swift",

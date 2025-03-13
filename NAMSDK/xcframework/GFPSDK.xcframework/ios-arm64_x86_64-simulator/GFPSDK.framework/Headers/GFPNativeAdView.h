@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) GFPNativeAd *nativeAd;
 
 @property (nonatomic, weak, nullable) IBOutlet UIImageView *iconView;
+@property (nonatomic, weak, nullable) IBOutlet UIView *serviceAdBadgeView;
 @property (nonatomic, weak, nullable) IBOutlet UILabel *titleLabel;
 @property (nonatomic, weak, nullable) IBOutlet UILabel *bodyLabel;
 @property (nonatomic, weak, nullable) IBOutlet UILabel *advertiserLabel;

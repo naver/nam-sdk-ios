@@ -30,6 +30,7 @@ typedef NS_OPTIONS(NSInteger, GFPAdProviderSettingType) {
     GFPAdProviderSettingTypeFAN = 2,
     GFPAdProviderSettingTypeUnity = 3,
     GFPAdProviderSettingTypeLAN = 4,
+    GFPAdProviderSettingTypeBidMachine = 5,
     GFPAdProviderSettingTypeOMID = 100,
 };
 

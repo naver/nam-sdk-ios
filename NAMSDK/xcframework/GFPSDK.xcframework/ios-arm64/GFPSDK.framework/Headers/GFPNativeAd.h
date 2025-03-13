@@ -36,6 +36,7 @@ typedef NS_OPTIONS(NSInteger, GFPNativeAdProviderType) {
     GFPNativeAdProviderTypeNDA = 1 << 4,        // Naver Native
 //    GFPNativeAdProviderTypeAppLovin = 1 << 5, // AppLovin (deprecate)
     GFPNativeAdProviderTypeLAN = 1 << 6,
+    GFPNativeAdProviderTypeBidMachine = 1 << 7,
 };
 
 typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
@@ -77,7 +78,7 @@ extern NSString *const kGFPNativeIconSizeKey;
  * - adProvider 가 GFPNativeAdProviderTypeFAN 인 경우,
  *   - GFPNativeAdRenderingSetting.hasMediaView == YES 이면, "FBNativeAd" 객체
  *   - GFPNativeAdRenderingSetting.hasMediaView == NO 이면, "FBNativeBannerAd" 객체
- * - adProvider 가 GFPNativeAdProviderTypeDFP 인 경우, "GADNativeAd" 객체
+ * - adProvider 가 GFPNativeAdProviderTypeDFP 인 경우, "NativeAd" 객체
  * - adProvider 가 GFPNativeAdProviderTypeInMobi 인 경우, "IMNative" 객체
  * - adProvider 가 GFPNativeAdProviderTypeLAN 인 경우, "FADAdViewCustomLayout" 객체 혹은 "FADNative" 객체
  */
@@ -94,6 +95,11 @@ extern NSString *const kGFPNativeIconSizeKey;
 @property (readonly, nonatomic, strong) GFPLoadResponseInfo *responseInfo;
 
 
+/**
+ * 광고 배경 정보
+ */
+@property (nullable, readonly, nonatomic, strong) GFPAdStyleOption *adStyleOption;
+
 @end
 
 
@@ -102,15 +108,12 @@ extern NSString *const kGFPNativeIconSizeKey;
 @property (readwrite, nonatomic, weak) id <GFPNativeAdDelegate> delegate;
 @property (readwrite, nonatomic, weak) id <GFPUserInterestDelegate> userInterestDelegate;
 
-@property (nullable, readonly, nonatomic, strong) GFPAdStyleOption *adStyleOption;
-
 @end
 
 
 @interface GFPNativeSimpleAd : GFPNativeAdBase
 
 @property (readwrite, nonatomic, weak) id <GFPNativeSimpleAdDelegate> delegate;
-
 @property (readonly, nonatomic, strong, nullable) id <GFPNativeAssetProtocol> assets;
 
 - (CGFloat)estimateHeightWith:(CGFloat)viewWidth;

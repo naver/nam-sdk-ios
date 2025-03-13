@@ -152,6 +152,11 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
 + (void)registerWebView:(WKWebView *)webView;
 
 /**
+ * Check for web view registration success  .
+ */
++ (void)examineWebViewStatus:(WKWebView *)webView result:(void (^)(NSError * _Nullable error, NSDictionary *statusInfo))result;
+
+/**
  * GFPSDK Version.
  */
 + (NSString *)sdkVersion;

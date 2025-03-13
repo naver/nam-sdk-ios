@@ -33,19 +33,18 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)hasIconImage;
 
 - (NSString * _Nullable)title;
+- (GFPLabelOption * _Nullable)titleOption;
 
 - (NSString * _Nullable)body;
-
 - (GFPLabelOption * _Nullable)bodyOption;
 
 - (NSString * _Nullable)advertiser;
-
 - (GFPLabelOption * _Nullable)advertiserOption;
+
 
 - (NSString * _Nullable)badge;
 
 - (NSString * _Nullable)callToAction;
-
 - (GFPLabelOption * _Nullable)callToActionOption;
 
 - (NSString * _Nullable)socialContext;
@@ -57,6 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isRegistered;
 
 @optional
+
 - (void)updateMediaViewLayout;
 
 - (GFPAdStyleType)adStyleType;
@@ -70,6 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIImage * _Nullable)image;
 
 - (NSString * _Nullable)notice;
+- (GFPLabelOption * _Nullable)noticeOption;
 
 - (GFPWaterfallDedup * _Nullable)dedup;
 

@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPAdAdaptor : NSObject <GFPAdAdapting>
 
+@property (nonatomic, strong, nullable) NSString *adUnitId;
+
 @property (readonly, nonatomic, strong) GFPEventReporter *eventReporter;
 @property (nonatomic, strong, nullable) NSString *adProviderName;
 @property (nonatomic, strong, nullable) NSString *renderType;

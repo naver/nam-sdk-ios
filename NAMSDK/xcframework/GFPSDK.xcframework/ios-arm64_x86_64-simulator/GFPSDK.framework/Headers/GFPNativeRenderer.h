@@ -21,6 +21,7 @@
  * 타이틀
  */
 @property (nullable, readonly, nonatomic, strong) NSString *title;
+@property (nullable, readonly, nonatomic, strong) GFPLabelOption *titleOption;
 
 /**
  * 본문
@@ -65,6 +66,7 @@
  * 고지 문구
  */
 @property (nullable, readonly, nonatomic, strong) NSString *notice;
+@property (nullable, readonly, nonatomic, strong) GFPLabelOption *noticeOption;
 
 /**
  * Social Context

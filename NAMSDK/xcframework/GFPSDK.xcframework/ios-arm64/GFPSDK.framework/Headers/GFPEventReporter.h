@@ -71,9 +71,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reportClick;
 - (void)reportClickWithExtraInfo:(GFPEventExtraInfo * _Nullable)aExtraInfo;
 
-- (void)reportLoadError:(GFPLoadEvent *)loadEventInfo;
+- (void)reportLoadError:(GFPLoadEvent * _Nullable)loadEventInfo;
 
-- (void)reportStartError:(GFPStartEvent *)startEventInfo;
+- (void)reportStartError:(GFPStartEvent * _Nullable)startEventInfo;
 
 - (void)reportGfpTracking:(NSString *)gfpBaseUrl;
 
