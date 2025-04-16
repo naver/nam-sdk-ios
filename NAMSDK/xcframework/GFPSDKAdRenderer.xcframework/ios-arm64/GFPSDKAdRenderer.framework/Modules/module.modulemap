@@ -1,4 +1,0 @@
-framework module GFPSDKAdRenderer {
-  header "GFPSDKAdRenderer-Swift.h"
-  requires objc
-}

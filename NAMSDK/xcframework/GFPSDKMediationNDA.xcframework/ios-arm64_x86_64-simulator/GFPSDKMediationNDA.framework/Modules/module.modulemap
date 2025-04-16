@@ -1,6 +1,0 @@
-framework module GFPSDKMediationNDA {
-  umbrella header "GFPSDKMediationNDA.h"
-  export *
-
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module GFPSDKMediationNDARich {
-  umbrella header "GFPSDKMediationNDARich.h"
-  export *
-
-  module * { export * }
-}

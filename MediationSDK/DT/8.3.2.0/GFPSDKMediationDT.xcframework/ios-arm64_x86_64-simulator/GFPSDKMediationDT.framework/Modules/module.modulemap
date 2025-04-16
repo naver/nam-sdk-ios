@@ -1,4 +1,0 @@
-framework module GFPSDKMediationDT {
-  header "GFPSDKMediationDT-Swift.h"
-  requires objc
-}

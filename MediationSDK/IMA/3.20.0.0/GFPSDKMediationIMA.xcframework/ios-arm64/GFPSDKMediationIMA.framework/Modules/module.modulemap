@@ -1,6 +1,0 @@
-framework module GFPSDKMediationIMA {
-  umbrella header "GFPSDKMediationIMA.h"
-  export *
-
-  module * { export * }
-}
