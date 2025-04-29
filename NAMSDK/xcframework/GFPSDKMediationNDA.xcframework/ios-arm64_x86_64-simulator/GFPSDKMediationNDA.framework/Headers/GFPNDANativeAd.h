@@ -29,6 +29,8 @@
 @class GFPAdChoicesData;
 @class GFPNDANativeTapGesture;
 @class GFPAutoPlayInfo;
+@class GFPNDAVastVerification;
+@class GFPOMMediaEvent;
 
 @protocol GFPNDANativeAdDelegate <NSObject>
 
@@ -39,6 +41,7 @@
 - (void)nativeAdMuteWasClicked:(GFPNDANativeAd *)nativeAd eventTracking:(GFPAdEventObject *)eventTracking;
 - (void)nativeAdMuteWasCanceled:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd didChangeMediaViewSize:(CGSize)size;
+- (void)nativeAdPrivWasClicked:(GFPNDANativeAd *)nativeAd;
 
 @optional
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd richAdExtendSizeChanged:(CGSize)size;
@@ -86,6 +89,8 @@
 @property (nonatomic, strong) GFPVideoOptions *videoOptions;
 @property (nonatomic, strong) GFPAutoPlayInfo *autoPlayInfo;
 
+@property (nonatomic, strong, readonly, nullable) NSArray <GFPNDAVastVerification *> *vastOmidInfos;
+
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo
                      skAdNetworkInfo:(GFPSKAdNetworkInfo *)skNetworkInfo
                             skipInfo:(GFPAdSkipInfo *)skipInfo
@@ -101,6 +106,7 @@
 - (void)updateLayout:(GFPNDAMediaView *)aMediaView nativeView:(UIView *)nativeView;
 - (void)updateMediaAssetsWith:(UIView *)targetView;
 - (void)updateAdMuteStateWith:(GFPNDAAdMuteState)adMuteState;
+- (void)updateOMIDMediaEventWith:(GFPOMMediaEvent * _Nullable)mediaEvent;
 
 - (void)nativeAdDidLoad;
 - (void)nativeAdDidFailWithError:(GFPError *)error;

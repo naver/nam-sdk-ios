@@ -14,6 +14,7 @@
 #import "Swift-Enum.h"
 @class UIViewController;
 @class GFPAdBannerWebViewOptions;
+@class GFPOMFriendlyObstruction;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +30,8 @@ extern NSString *const kNDAHostMetaThemeLight;
 @property (nonatomic, strong, nullable) NSDictionary <NSString *, NSString *> *hostMeta;
 @property (nonatomic, assign) GFPBannerViewLayoutType layoutType;
 @property (nonatomic, strong, nullable) GFPAdBannerWebViewOptions *webViewOptions;
+
+@property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
 - (instancetype)initWithRootViewController:(nullable UIViewController *)rootViewController
                                   hostMeta:(NSDictionary <NSString *, NSString *> *)hostMeta

@@ -28,6 +28,7 @@
 @class GFPWaterfallConfig;
 @class GFPAdImpressionInfo;
 @class GFPAutoPlayInfo;
+@class GFPOMIDInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -122,6 +123,11 @@ NS_ASSUME_NONNULL_BEGIN
  * Native NN AutoPly 정보 객체
  */
 @property (readonly, nonatomic, strong, nullable) GFPAutoPlayInfo *autoPlayInfo;
+
+/**
+ * OMSDK 정보 객체
+ */
+@property (readonly, nonatomic, strong, nullable) GFPOMIDInfo *omidInfo;
 
 
 - (instancetype)initWithAd:(GFPAd *)ad

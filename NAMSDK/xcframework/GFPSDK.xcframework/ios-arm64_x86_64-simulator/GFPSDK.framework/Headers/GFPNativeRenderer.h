@@ -129,5 +129,6 @@
 @optional
 
 - (CGFloat)estimateHeight;
+- (CGFloat)scaleRatio;
 
 @end

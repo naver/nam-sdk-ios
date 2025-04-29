@@ -22,7 +22,7 @@ static const CGFloat kRewardedPlayerAdChociesWidthHeight = 16.0;
 
 @protocol GFPNDAPlayerAdChoicesDelegate <NSObject>
 
-- (void)adChoicesView:(GFPNDAPlayerAdChoicesView *)aAdChoicesView didAdPrivacyTapped:(NSString *)aURL;
+- (void)adChoicesView:(GFPNDAPlayerAdChoicesView *)aAdChoicesView didAdPrivacyTapped:(NSString *)aURL trackingUrls:(nullable NSArray <NSString *> *)trackingUrls;
 
 @end
 

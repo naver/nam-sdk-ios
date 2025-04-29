@@ -31,7 +31,7 @@ typedef NS_OPTIONS(NSInteger, GFPAdProviderSettingType) {
     GFPAdProviderSettingTypeUnity = 3,
     GFPAdProviderSettingTypeLAN = 4,
     GFPAdProviderSettingTypeBidMachine = 5,
-    GFPAdProviderSettingTypeOMID = 100,
+    GFPAdProviderSettingTypeGFP = 100,
 };
 
 typedef NS_ENUM(NSInteger, GFPBannerViewLayoutType) {
@@ -60,8 +60,8 @@ typedef NS_OPTIONS(NSInteger, GFPNonLinearContainerType) {
 typedef NS_OPTIONS(NSInteger, GFPOMContantsType) {
     GFPOMContantsTypeHTML = 1,
     GFPOMContantsTypeHTMLVideo = 2,
-    GFPOMContantsTypeVideo = 3,
-    GFPOMContantsTypeImage = 4,
+    GFPOMContantsTypeNative = 3,
+    GFPOMContantsTypeVideo = 4,
     GFPOMContantsTypeAudio = 5,
 };
 

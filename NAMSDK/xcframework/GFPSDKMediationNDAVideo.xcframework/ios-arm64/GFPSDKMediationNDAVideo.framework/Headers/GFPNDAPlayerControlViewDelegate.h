@@ -47,7 +47,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAControlStatus) {
 - (void)playerControlView:(GFPNDAPlayerControlView *)controlView playControlWillShow:(CFTimeInterval)duration;
 - (void)playerControlView:(GFPNDAPlayerControlView *)controlView playControlWillHide:(CFTimeInterval)duration;
 
-- (void)playerControlView:(GFPNDAPlayerControlView *)controlView adChoicelandingTappedWithUrl:(NSString *)landingUrl;
+- (void)playerControlView:(GFPNDAPlayerControlView *)controlView adChoiceLandingTappedWithUrl:(NSString *)landingUrl trackingUrls:(nullable NSArray <NSString *> *)trackingUrls;
 
 @end
 

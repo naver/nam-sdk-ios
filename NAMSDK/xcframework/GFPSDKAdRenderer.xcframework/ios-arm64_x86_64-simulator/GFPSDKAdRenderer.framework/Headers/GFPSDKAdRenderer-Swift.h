@@ -360,6 +360,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+SWIFT_CLASS_NAMED("GFPRendererShoppingNDAView")
+@interface GFPRendererShoppingNDAView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyDiscount;)
++ (NSString * _Nonnull)extraKeyDiscount SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyPrice;)
++ (NSString * _Nonnull)extraKeyPrice SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelBadge;)
++ (NSString * _Nonnull)extraKeyLabelBadge SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyStar;)
++ (NSString * _Nonnull)extraKeyStar SWIFT_WARN_UNUSED_RESULT;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+
+@interface GFPRendererShoppingNDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
+- (UIView * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adBadgeAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)scaleRatio SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS_NAMED("GFPRendererSmartChannelFlickingView")
 @interface GFPRendererSmartChannelFlickingView : UIView
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelHeight;)
@@ -761,6 +792,37 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS_NAMED("GFPRendererShoppingNDAView")
+@interface GFPRendererShoppingNDAView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyDiscount;)
++ (NSString * _Nonnull)extraKeyDiscount SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyPrice;)
++ (NSString * _Nonnull)extraKeyPrice SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelBadge;)
++ (NSString * _Nonnull)extraKeyLabelBadge SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyStar;)
++ (NSString * _Nonnull)extraKeyStar SWIFT_WARN_UNUSED_RESULT;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+
+@interface GFPRendererShoppingNDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
+- (UIView * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adBadgeAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)scaleRatio SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

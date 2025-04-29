@@ -104,11 +104,6 @@ extension GFPSDK.GFPErrorUtils {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc extension GFPSDK.GFPBannerView {
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
-}
 @objc(GFPAdInitProviderInfo) @objcMembers final public class GFPAdInitProviderInfo : ObjectiveC.NSObject, GFPSDK.GFPDictPresentable {
   @objc final public var type: Swift.String
   @objc final public var placeId: Swift.String
@@ -232,11 +227,6 @@ extension GFPSDK.GFPErrorUtils {
   }
   @objc deinit
 }
-@objc extension GFPSDK.GFPAdLoader {
-  @objc dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
-  @objc dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
-  @objc dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
-}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPAdProviderSetting : ObjectiveC.NSObject {
   @objc public var type: GFPSDK.GFPAdProviderSettingType {
     get
@@ -249,11 +239,6 @@ extension GFPSDK.GFPErrorUtils {
     @objc get
   }
   @objc deinit
-}
-@objc extension GFPSDK.GFPVideoAdManager {
-  @objc dynamic public func loadAdWith(dict preloadWaterfallResponse: [Swift.AnyHashable : Any])
-  @objc dynamic public func loadAdWith(string preloadWaterfallResponse: Swift.String)
-  @objc dynamic public func loadAdWith(data preloadWaterfallResponse: Foundation.Data)
 }
 @objc public enum GFPVideoBackgroundActionType : Swift.Int {
   case play
@@ -360,6 +345,7 @@ extension GFPSDK.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
 @objc @_inheritsConvenienceInitializers @objcMembers public class kGFPRendererVisualKey : ObjectiveC.NSObject {
   @objc public static let shoppingLabel: Swift.String
   @objc public static let smartChannelCarousel: Swift.String
+  @objc public static let shopppingNda: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }

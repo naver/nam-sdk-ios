@@ -19,6 +19,8 @@
 @class GFPNativeSimpleAdRenderingSetting;
 @class GFPBannerAdSize;
 @class GFPAdBannerWebViewOptions;
+@class GFPOMFriendlyObstruction;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPAdBannerOptions : NSObject
@@ -54,6 +56,11 @@ NS_ASSUME_NONNULL_BEGIN
  * Banner webview option 설정
  */
 @property (readwrite, nonatomic, strong) GFPAdBannerWebViewOptions *webViewOption;
+
+/**
+ * OMSDK를 측정하는 광고의 friendlyObstruction을 설정합니다.
+ */
+@property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
 @end
 

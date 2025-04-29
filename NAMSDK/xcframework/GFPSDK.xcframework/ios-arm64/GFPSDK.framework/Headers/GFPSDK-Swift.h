@@ -341,20 +341,6 @@ SWIFT_CLASS_NAMED("GFPAdInitProviderInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSData;
-
-@interface GFPAdLoader (SWIFT_EXTENSION(GFPSDK))
-/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
-/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
-/// 통합 로더에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
-@end
-
 @class GFPNativeAdRenderingSetting;
 @class GFPVideoOptions;
 
@@ -432,19 +418,6 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionBidMachine = 11,
   GFPBannerProviderOptionEnd = 12,
 };
-
-
-@interface GFPBannerView (SWIFT_EXTENSION(GFPSDK))
-/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
-/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
-/// BannerView 에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
-@end
 
 @class NSBundle;
 
@@ -544,6 +517,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 @end
 
 @class GFPWaterfallAdSize;
+@class NSData;
 
 SWIFT_CLASS("_TtC6GFPSDK16GFPInternalUtils")
 @interface GFPInternalUtils : NSObject
@@ -847,19 +821,6 @@ SWIFT_CLASS("_TtC6GFPSDK12GFPUserAgent")
 @end
 
 
-@interface GFPVideoAdManager (SWIFT_EXTENSION(GFPSDK))
-/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithDict:(NSDictionary * _Nonnull)preloadWaterfallResponse;
-/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithString:(NSString * _Nonnull)preloadWaterfallResponse;
-/// VideoManager 에 광고 요청, WF 단계를 건너뛰기 위한 요청
-/// @param preloadWaterfallResponse  서비스 측에서 미리 로드된 WF 전문
-- (void)loadAdWithData:(NSData * _Nonnull)preloadWaterfallResponse;
-@end
-
-
 /// <ul>
 ///   <li>
 ///     Schedule Load 이후 비디오 광고 요청에 필요한 별도 Param 생성.
@@ -1011,6 +972,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shopppingNda;)
++ (NSString * _Nonnull)shopppingNda SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

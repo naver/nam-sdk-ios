@@ -58,6 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong, nullable) NSNumber *vastMaxRedirect;
 
 @property (nonatomic, readonly, strong, nullable) GFPVideoOptions *videoOptions;
+@property (nonatomic, readonly, strong, nullable) NSNumber *videoLoadTimeout;
 @property (nonatomic, readonly, strong, nullable) GFPAutoPlayInfo *autoPlayInfo;
 @property (nonatomic, readonly, strong) NSString *creativeId;
 
@@ -75,6 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
                   renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
              vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect
                 videoOptions:(nullable GFPVideoOptions *)videoOptions
+            videoLoadTimeout:(nullable NSNumber *)videoLoadTimeout
                 autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo
                   creativeId:(nullable NSString *)creativeId;
 

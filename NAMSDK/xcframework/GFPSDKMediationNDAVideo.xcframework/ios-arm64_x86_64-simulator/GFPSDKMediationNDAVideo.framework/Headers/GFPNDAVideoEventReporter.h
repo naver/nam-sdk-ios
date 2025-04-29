@@ -12,6 +12,7 @@
 
 @class GFPVastEvent;
 @class GFPTrackingURLs;
+@class GFPOMMediaEvent;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,21 +22,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithVastEvent:(GFPVastEvent * _Nullable)aVastEvent;
 
-
 - (void)reportProgressWithCurrentTime:(double)currentTime;
 - (void)reportImpression;
 - (void)reportStart;
 - (void)reportComplete;
 - (void)reportSkip;
 - (void)reportClick;
-- (void)reportPause;
-- (void)reportResume;
-- (void)reportRewind;
 - (void)reportError;
-- (void)reportMute;
-- (void)reportUnMute;
+
+- (void)reportPauseWith:(BOOL)isUserAction;
+- (void)reportResumeWith:(BOOL)isUserAction;
+- (void)reportRewindWith:(BOOL)isUserAction;
+- (void)reportMuteWith:(BOOL)isUserAction;
+- (void)reportUnMuteWith:(BOOL)isUserAction;
 
 - (void)reportTrackingWith:(NSArray <NSString *> *)urls;
+
+- (void)updateOMIDMediaEvent:(GFPOMMediaEvent * _Nullable)mediaEvent;
 
 @end
 

@@ -80,6 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reportRewardVideoClose:(NSString *)playTime;
 
 - (void)reportMute;
+- (void)reportPriv;
 
 - (void)reportLazySlotRenderFail;
 
@@ -89,8 +90,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reportAttachImpressionsWithExtraInfo:(GFPEventExtraInfo *_Nullable)aExtraInfo;
 
 - (void)reportCompleteImpressionsWithExtraInfo:(GFPEventExtraInfo *_Nullable)aExtraInfo;
-
-- (void)reportBounceBack;
 
 - (void)reportBounceBack:(double)bbt;
 

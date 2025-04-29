@@ -29,6 +29,9 @@
 @class GFPAdImpressionInfo;
 @class GFPRewardedAdInfo;
 @class GFPAutoPlayInfo;
+@class GFPOMIDInfo;
+
+@protocol GFPOMIDInfoPresentable;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -146,6 +149,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp1px;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp100;
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *vimp100p;
+@property (readonly, nonatomic, strong, nullable) NSArray<GFPAdEventObject *> *priv;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -217,7 +221,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSNumber *expireTime; // seconds
 
 @property (readonly, nonatomic, strong, nullable) GFPRewardedAdInfo *rewardedAdInfo;
-
+@property (readonly, nonatomic, strong, nullable) GFPOMIDInfo *omidInfo;
 
 - (instancetype)init NS_UNAVAILABLE;
     
@@ -240,6 +244,18 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)adInfoSizeDict NS_DESIGNATED_INITIALIZER;
+
+@end
+
+
+/**
+ * GFPOMIDInfo
+ */
+@interface GFPOMIDInfo: NSObject <GFPOMIDInfoPresentable>
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dictionary NS_DESIGNATED_INITIALIZER;
 
 @end
 

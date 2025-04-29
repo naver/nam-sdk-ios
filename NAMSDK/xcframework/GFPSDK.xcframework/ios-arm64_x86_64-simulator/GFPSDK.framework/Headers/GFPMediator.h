@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GFPLoadResponseInfo+Common.h"
+#import "GFPLoadResponseInfo+Private.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

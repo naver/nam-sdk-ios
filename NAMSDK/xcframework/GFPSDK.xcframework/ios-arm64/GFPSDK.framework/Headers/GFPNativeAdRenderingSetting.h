@@ -13,6 +13,8 @@
 #import "GFPNativeAdDelegate.h"
 #import "GFPNativeRenderer.h"
 
+#import "GFPOMFriendlyObstruction.h"
+
 #import "Swift-Enum.h"
 
 typedef CGFloat (^GFPMaxExtendingHeightSetter)(void);
@@ -90,6 +92,10 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, assign) BOOL useMediaDimmed;
 
+/**
+ * OMSDK를 측정하는 광고의 friendlyObstruction을 설정합니다.
+ */
+@property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
 @end
 

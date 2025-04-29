@@ -29,8 +29,19 @@ static CGFloat const kRichAdStandardWidth = 360;
 static CGFloat const kRichAdStandardImageWidth = 375;
 static CGFloat const kRichAdMaxWidth = 414;
 
-static NSInteger const kElectionBadgePositionLeftBottom = 9;
-static NSInteger const kElectionBadgePositionRightBottom = 10;
+/*
+ * GFP Gravity Values
+ * 0001 Left
+ * 0010 Right
+ * 0100 Top
+ * 1000 Bottom
+ * 0001 0000 Horizontal Center
+ * 0010 0000 Vertical Center
+ */
+static NSInteger const kElectionBadgePositionLeftBottom = 0b1001;   // 9
+static NSInteger const kElectionBadgePositionRightBottom = 0b1010;  // 10
+static NSInteger const kElectionBadgePositionLeftTop = 0b0101;      // 5
+static NSInteger const kElectionBadgePositionRightTop = 0b0110;     // 6
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDAMediaViewIcon = 0,
@@ -48,6 +59,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
 
     GFPNDARendererMediaViewShoppingLabel = 1000,
     GFPNDARendererMediaViewSmartChannelFlicking = 1001,
+    GFPNDARendererMediaViewShoppingNDA = 1002
 };
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewRenderType) {

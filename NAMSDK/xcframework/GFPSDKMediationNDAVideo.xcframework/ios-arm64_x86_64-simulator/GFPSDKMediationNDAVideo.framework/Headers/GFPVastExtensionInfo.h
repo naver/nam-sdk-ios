@@ -12,15 +12,25 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class DDXMLElement;
+@class GFPNDAVastVerification;
+
+typedef NS_OPTIONS(NSInteger, GFPVastExtensionType) {
+    GFPVastExtensionTypeNone,
+    GFPVastExtensionTypeGFP,
+    GFPVastExtensionTypeAdVerification
+};
 
 @interface GFPVastExtensionInfo : NSObject
 
-@property (nonatomic, readonly, strong) NSString *type;
-@property (nonatomic, readonly, strong) NSString *value;
+@property (nonatomic, readonly, assign) GFPVastExtensionType type;
+
+@property (nonatomic, readonly, nullable) NSString *ctaText;
+@property (nonatomic, readonly, nullable) NSArray <GFPNDAVastVerification *> *verifications;
 
 - (instancetype)initWithElement:(DDXMLElement *)elem;
-- (NSString * _Nullable)getGfpCtaText;
+
 + (NSArray <GFPVastExtensionInfo *> * _Nullable)extensionInfos:(DDXMLElement *)extensionElems;
+
 @end
 
 NS_ASSUME_NONNULL_END

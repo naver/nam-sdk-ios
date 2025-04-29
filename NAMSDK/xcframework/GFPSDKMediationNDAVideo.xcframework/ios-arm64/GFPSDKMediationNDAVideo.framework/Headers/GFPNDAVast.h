@@ -10,6 +10,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#import "GFPOMIDInfoProtocol.h"
+
 @class GFPError;
 @class GFPNDAVastMediaFile;
 @class GFPAdSkipInfo;
@@ -25,6 +28,7 @@
 @class GFPVastCompanionAd;
 @class HTMLResource;
 @class GFPNDAVast;
+@class GFPNDAVastVerification;
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -92,6 +96,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) GFPLoudnessNormalization *loudness;
 
 @property (readonly, nonatomic, strong, nullable) NSString *ctaText;
+@property (readonly, nonatomic, strong, nullable) NSArray <GFPNDAVastVerification *> *adVerifications;
 
 //all, any, or none.
 @property (nonatomic, strong, nullable) NSString *companionRequired;
@@ -168,5 +173,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface GFPNDAVastVerification: NSObject <GFPOMIDInfoPresentable>
+
+- (instancetype)initWithElement:(DDXMLElement *)elem;
+
+@end
 
 NS_ASSUME_NONNULL_END
