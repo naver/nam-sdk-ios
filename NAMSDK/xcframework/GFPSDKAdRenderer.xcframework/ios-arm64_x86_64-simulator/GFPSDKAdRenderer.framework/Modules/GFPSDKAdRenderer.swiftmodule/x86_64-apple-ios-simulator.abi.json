@@ -99,62 +99,6 @@
           },
           {
             "kind": "Var",
-            "name": "extraKeyPrice",
-            "printedName": "extraKeyPrice",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(cpy)extraKeyPrice",
-            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC13extraKeyPriceSSvpZ",
-            "moduleName": "GFPSDKAdRenderer",
-            "static": true,
-            "objc_name": "extraKeyPrice",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(cm)extraKeyPrice",
-                "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC13extraKeyPriceSSvgZ",
-                "moduleName": "GFPSDKAdRenderer",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "extraKeyLabelBadge",
             "printedName": "extraKeyLabelBadge",
             "children": [
@@ -511,47 +455,6 @@
           },
           {
             "kind": "Function",
-            "name": "extraView",
-            "printedName": "extraView(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)extraViewWith:",
-            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC9extraView4withSo6UIViewCSgSS_tF",
-            "moduleName": "GFPSDKAdRenderer",
-            "objc_name": "extraViewWith:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "createView",
             "printedName": "createView()",
             "children": [
@@ -703,6 +606,46 @@
             "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC10scaleRatio12CoreGraphics7CGFloatVyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "scaleRatio",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateRenderingSetting",
+            "printedName": "updateRenderingSetting(renderingSetting:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPNativeBaseRenderingSetting?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPNativeBaseRenderingSetting",
+                    "printedName": "GFPSDK.GFPNativeBaseRenderingSetting",
+                    "usr": "c:objc(cs)GFPNativeBaseRenderingSetting"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)updateRenderingSetting:",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC22updateRenderingSetting09renderingH0ySo013GFPNativeBasegH0CSg_tF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "updateRenderingSetting:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -3126,105 +3069,98 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "StringLiteral",
-      "offset": 477,
-      "length": 7,
-      "value": "\"price\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
-      "kind": "StringLiteral",
-      "offset": 558,
+      "offset": 487,
       "length": 11,
       "value": "\"labeltext\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "StringLiteral",
-      "offset": 631,
+      "offset": 560,
       "length": 6,
       "value": "\"star\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1056,
+      "offset": 985,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1166,
+      "offset": 1160,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1210,
+      "offset": 1204,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1253,
+      "offset": 1247,
       "length": 3,
       "value": "393"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1301,
+      "offset": 1295,
       "length": 3,
       "value": "390"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1351,
+      "offset": 1345,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1446,
+      "offset": 1390,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1497,
+      "offset": 1441,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1542,
+      "offset": 1486,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1587,
+      "offset": 1531,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1630,
+      "offset": 1574,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1679,
+      "offset": 1623,
       "length": 1,
       "value": "4"
     },

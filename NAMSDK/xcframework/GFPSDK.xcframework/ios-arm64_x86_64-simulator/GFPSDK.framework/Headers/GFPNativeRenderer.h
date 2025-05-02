@@ -14,6 +14,7 @@
 @class GFPAdChoicesData;
 @class GFPMediaData;
 @class GFPIconData;
+@class GFPNativeBaseRenderingSetting;
 
 @protocol GFPNativeAssetProtocol <NSObject>
 
@@ -130,5 +131,7 @@
 
 - (CGFloat)estimateHeight;
 - (CGFloat)scaleRatio;
+
+- (void)updateRenderingSetting:(GFPNativeBaseRenderingSetting * _Nullable)renderingSetting NS_SWIFT_NAME(updateRenderingSetting(renderingSetting:));
 
 @end
