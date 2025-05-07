@@ -19,7 +19,7 @@ fileprivate extension String {
     static let language = "SettingsManager.language"
     static let testModeDFP = "SettingsManager.testModeDFP"
     static let testModeFAN = "SettingsManager.testModeFAN"
-    static let testModeOMID = "SettingsManager.testModeOMID"
+    static let testModeGFP = "SettingsManager.testModeGFP"
     static let testModeUnity = "SettingsManager.testModeUnity"
     static let timeoutDisplayAd = "SettingsManager.timeoutDisplayAd"
     static let timeoutVideoAd = "SettingsManager.timeoutVideoAd"
@@ -83,7 +83,7 @@ class SettingsManager: NSObject {
         timeoutInterstitialAd = timeoutInterstitialAd
         testModeDFP = testModeDFP
         testModeFAN = testModeFAN
-        testModeOMID = testModeOMID
+        testModeGFP = testModeGFP
         testModeUnity = testModeUnity
         gender = gender
         yearOfBirth = yearOfBirth
@@ -105,7 +105,7 @@ class SettingsManager: NSObject {
         setTimeout(60.0, forType: .interstitialAd)
         setTestMode(false, forType: .DFP)
         setTestMode(false, forType: .FAN)
-        setTestMode(false, forType: .OMID)
+        setTestMode(false, forType: .GFP)
         setTestMode(false, forType: .unity)
         gender = .female
         yearOfBirth = 1980
@@ -249,8 +249,8 @@ class SettingsManager: NSObject {
     @PersistedProviderSetting(key: .testModeFAN, defaultValue: .type(.FAN, testMode: false))
     private(set) var testModeFAN: GFPAdProviderSetting
 
-    @PersistedProviderSetting(key: .testModeOMID, defaultValue: .type(.OMID, testMode: false))
-    private(set) var testModeOMID: GFPAdProviderSetting
+    @PersistedProviderSetting(key: .testModeGFP, defaultValue: .type(.GFP, testMode: false))
+    private(set) var testModeGFP: GFPAdProviderSetting
 
     @PersistedProviderSetting(key: .testModeUnity, defaultValue: .type(.unity, testMode: false))
     private(set) var testModeUnity: GFPAdProviderSetting
@@ -259,7 +259,7 @@ class SettingsManager: NSObject {
         var configList = [
             GFPAdProviderSetting.type(.DFP, testMode: false),
             GFPAdProviderSetting.type(.FAN, testMode: false),
-            GFPAdProviderSetting.type(.OMID, testMode: false),
+            GFPAdProviderSetting.type(.GFP, testMode: false),
             GFPAdProviderSetting.type(.unity, testMode: false)
         ].filter { $0.type != testMode.type }
 
@@ -269,7 +269,7 @@ class SettingsManager: NSObject {
         switch testMode.type {
         case .DFP: testModeDFP = testMode
         case .FAN: testModeFAN = testMode
-        case .OMID: testModeOMID = testMode
+        case .GFP: testModeGFP = testMode
         case .unity: testModeUnity = testMode
         default: break
         }
@@ -284,7 +284,7 @@ class SettingsManager: NSObject {
         switch type {
         case .DFP: return testModeDFP.isTestMode
         case .FAN: return testModeFAN.isTestMode
-        case .OMID: return testModeOMID.isTestMode
+        case .GFP: return testModeGFP.isTestMode
         case .unity: return testModeUnity.isTestMode
         default: return false
         }

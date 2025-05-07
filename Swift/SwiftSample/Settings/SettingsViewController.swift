@@ -48,7 +48,7 @@ final class SettingsViewController: BaseTableVC {
         Section(title: "TestMode_Settings".localized, rows: [
             .testModeGoogle,
             .testModeFacebook,
-            .testModeOMID,
+            .testModeGFP,
             .testModeUnity
         ]),
         Section(title: "Setting_Info".localized, rows: [
@@ -81,7 +81,7 @@ final class SettingsViewController: BaseTableVC {
 
         case testModeFacebook
         case testModeGoogle
-        case testModeOMID
+        case testModeGFP
         case testModeUnity
 
         case sdkVersion
@@ -111,7 +111,7 @@ final class SettingsViewController: BaseTableVC {
 
             case .testModeFacebook: return "Setting_Test_Facebook".localized
             case .testModeGoogle: return "Setting_Test_Google".localized
-            case .testModeOMID: return "Setting_Test_OMID".localized
+            case .testModeGFP: return "Setting_Test_OMID".localized
             case .testModeUnity: return "Setting_Test_Unity".localized
 
             case .sdkVersion: return "App : \(Bundle.currentVersion) - GFPSDK version : \(manager.sdkVersion)"
@@ -310,13 +310,13 @@ final class SettingsViewController: BaseTableVC {
                 }
             return cell
 
-        case .testModeOMID:
+        case .testModeGFP:
             let cell = SwitchCell()
             cell.configure(
                 withTitle: row.title) {
-                    Self.manager.isTestMode(forType: .OMID)
+                    Self.manager.isTestMode(forType: .GFP)
                 } onSwtichChange: { isOn in
-                    Self.manager.setTestMode(isOn, forType: .OMID)
+                    Self.manager.setTestMode(isOn, forType: .GFP)
                 }
             return cell
 
@@ -429,7 +429,7 @@ final class SettingsViewController: BaseTableVC {
         case .resetAll:
             resetAlert()
 
-        case .darkMode, .phase, .deviceIp, .useImageCache, .timeoutDisplayAd, .timeoutVideoAd, .timeoutRewardedAd, .timeoutInterstitialAd, .testModeFacebook, .testModeGoogle, .testModeOMID, .testModeUnity, .sdkVersion:
+        case .darkMode, .phase, .deviceIp, .useImageCache, .timeoutDisplayAd, .timeoutVideoAd, .timeoutRewardedAd, .timeoutInterstitialAd, .testModeFacebook, .testModeGoogle, .testModeGFP, .testModeUnity, .sdkVersion:
             break
         }
 
