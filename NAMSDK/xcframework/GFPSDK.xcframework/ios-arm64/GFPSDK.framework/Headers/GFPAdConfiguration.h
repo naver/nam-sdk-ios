@@ -70,10 +70,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy, nullable) NSDictionary <NSString *, NSString *> *customParam;
 
+
+
 /**
  * 광고 클릭 후 렌더링 타입
  */
-@property (nonatomic, strong) GFPRenderDisplayAgent *displayAgent; __deprecated_msg("Use S2S Click Handler or Default InApp Browser instead. it will be removed next version");
+@property (nonatomic, strong) GFPRenderDisplayAgent *displayAgent __deprecated_msg("Use S2S Click Handler or Default InApp Browser instead. it will be removed next version");
 
 
 /**

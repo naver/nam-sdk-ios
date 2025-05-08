@@ -93,6 +93,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPAdDedupeManager.h>
 #import <GFPSDK/GFPVideoController.h>
 #import <GFPSDK/GFPVideoEventDelegate.h>
+#import <GFPSDK/GFPOMIDInfoProtocol.h>
 
 #import <GFPSDK/GFPInterstitialAdAdaptorDelegate.h>
 
@@ -127,6 +128,13 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPAPIQueryItems.h>
 #import <GFPSDK/GFPAdAttachmentInfo.h>
 #import <GFPSDK/GFPVideoAdManager.h>
+
+#import <GFPSDK/GFPRewardedAdManager+WFPreload.h>
+#import <GFPSDK/GFPVideoAdManager+WFPreload.h>
+#import <GFPSDK/GFPInterstitialAdManager+WFPreload.h>
+#import <GFPSDK/GFPAdLoader+WFPreload.h>
+#import <GFPSDK/GFPBannerView+WFPreload.h>
+
 
 //For internal
 #import <GFPSDK/Swift-Enum.h>
