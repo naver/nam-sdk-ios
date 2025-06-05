@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDKMediationChartBoost"
-  s.version      = "9.7.0.0"
+  s.version      = "9.8.0.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "MediationSDK/ChartBoost/#{s.version.to_s}/GFPSDKMediationChartBoost.xcframework"
 
   s.dependency 'NAMSDK/GFPSDK', '>= 8.4.0'
-  s.dependency 'ChartboostSDK', '9.7.0'
+  s.dependency 'ChartboostSDK', '9.8.0'
 
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
   
