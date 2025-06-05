@@ -283,7 +283,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import WebKit;
 #endif
 
 #import <GFPSDK/GFPSDK.h>
@@ -384,6 +383,37 @@ SWIFT_CLASS("_TtC6GFPSDK16GFPAdStyleOption")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class GFPBackgroundOptionAttributes;
+
+SWIFT_CLASS_NAMED("GFPBackgroundOption")
+@interface GFPBackgroundOption : NSObject
+@property (nonatomic, strong) GFPBackgroundOptionAttributes * _Nonnull light;
+@property (nonatomic, strong) GFPBackgroundOptionAttributes * _Nonnull dark;
+- (nonnull instancetype)initWithLight:(GFPBackgroundOptionAttributes * _Nonnull)light dark:(GFPBackgroundOptionAttributes * _Nonnull)dark OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS_NAMED("GFPBackgroundOptionAttributes")
+@interface GFPBackgroundOptionAttributes : NSObject
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat alpha;
+@property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic) CGFloat leftMargin;
+@property (nonatomic) CGFloat rightMargin;
+@property (nonatomic) CGFloat topMargin;
+@property (nonatomic) CGFloat bottomMargin;
+@property (nonatomic) CGFloat maxWidth;
+@property (nonatomic, strong) UIColor * _Nullable shadowColor;
+@property (nonatomic) CGFloat shadowAlpha;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGFloat shadowSpread;
+@property (nonatomic) CGFloat shadowX;
+@property (nonatomic) CGFloat shadowY;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPBadgeOption")
 @interface GFPBadgeOption : NSObject
@@ -419,25 +449,6 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionEnd = 12,
 };
 
-@class NSBundle;
-
-SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
-@interface GFPBundle : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPBundle * _Nonnull sharedInstance;)
-+ (GFPBundle * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull appVersion;)
-+ (NSString * _Nonnull)appVersion SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull appName;)
-+ (NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull identifier;)
-+ (NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
-- (NSArray<NSString *> * _Nonnull)skAdNetworkList SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setup;
-+ (NSString * _Nullable)sdkResourceWith:(NSString * _Nullable)aPath type:(NSString * _Nullable)aType SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)isExistImageWithBundle:(NSBundle * _Nullable)bundle name:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-@end
-
 
 SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
 @protocol GFPCarouselHeightDelegate <NSObject>
@@ -451,6 +462,7 @@ typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionEnd = 2,
 };
 
+@class NSBundle;
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
 @interface GFPCustomAsset : NSObject
@@ -466,35 +478,6 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
 - (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size templateImageName:(NSString * _Nonnull)templateImageName lightModeColor:(UIColor * _Nonnull)lightModeColor darkModeColor:(UIColor * _Nonnull)darkModeColor OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) BOOL isExistResource;
 - (UIColor * _Nullable)getTintColor:(BOOL)isDarkMode SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class GFPUADeviceInfo;
-@class GFPServiceInfo;
-
-SWIFT_CLASS("_TtC6GFPSDK13GFPDeviceInfo")
-@interface GFPDeviceInfo : NSObject
-@property (nonatomic, strong) GFPUADeviceInfo * _Nonnull uaInfo;
-@property (nonatomic, strong) GFPServiceInfo * _Nonnull serviceInfo;
-@property (nonatomic, readonly, copy) NSString * _Nonnull systemName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull systemVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull deviceType;
-@property (nonatomic, readonly, copy) NSString * _Nonnull deviceModel;
-@property (nonatomic, readonly, copy) NSString * _Nonnull bundleIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull appName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull appVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sdkName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull os;
-@property (nonatomic, readonly, copy) NSString * _Nonnull density;
-@property (nonatomic, readonly, copy) NSString * _Nonnull screenWidth;
-@property (nonatomic, readonly, copy) NSString * _Nonnull screenHeight;
-@property (nonatomic, readonly, copy) NSString * _Nullable locale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull networkType;
-- (nonnull instancetype)init:(NSString * _Nonnull)version OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull initializeDict;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -741,16 +724,6 @@ SWIFT_CLASS("_TtC6GFPSDK22GFPServerErrorResponse")
 @end
 
 
-SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
-@interface GFPServiceInfo : NSObject
-@property (nonatomic, copy) NSString * _Nonnull appName;
-@property (nonatomic, copy) NSString * _Nonnull appVersion;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
-@end
-
-
 SWIFT_CLASS("_TtC6GFPSDK18GFPSpannableOption")
 @interface GFPSpannableOption : NSObject
 /// 강조 Text 시작 위치 - 시작 Position은 1입니다.
@@ -787,16 +760,6 @@ SWIFT_CLASS("_TtC6GFPSDK22GFPTextAdViewAttribute")
 - (nonnull instancetype)initWithContainer:(UIView * _Nullable)container OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC6GFPSDK15GFPUADeviceInfo")
-@interface GFPUADeviceInfo : NSObject
-@property (nonatomic, copy) NSString * _Nonnull systemVersion;
-@property (nonatomic, copy) NSString * _Nonnull deviceType;
-- (nonnull instancetype)initWith:(NSString * _Nonnull)aSystemVersion deviceType:(NSString * _Nonnull)aDeviceType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class NSURL;
 @class NSURLRequest;
 
@@ -808,6 +771,7 @@ SWIFT_CLASS("_TtC6GFPSDK20GFPURLUtilsExtension")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class GFPUADeviceInfo;
 
 SWIFT_CLASS("_TtC6GFPSDK12GFPUserAgent")
 @interface GFPUserAgent : NSObject
@@ -939,24 +903,6 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class WKUserContentController;
-@class WKWebView;
-
-SWIFT_CLASS("_TtC6GFPSDK17GFPWebViewManager")
-@interface GFPWebViewManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPWebViewManager * _Nonnull shared;)
-+ (GFPWebViewManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (void)addHandlersTo:(WKUserContentController * _Nonnull)userContentController;
-- (void)examineWebViewStatusWithWebView:(WKWebView * _Nonnull)webView result:(void (^ _Nonnull)(NSError * _Nullable, NSDictionary<NSString *, id> * _Nullable))result;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class WKScriptMessage;
-
-@interface GFPWebViewManager (SWIFT_EXTENSION(GFPSDK)) <WKScriptMessageHandlerWithReply>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message replyHandler:(void (^ _Nonnull)(id _Nullable, NSString * _Nullable))completionHandler;
-@end
-
 
 SWIFT_CLASS("_TtC6GFPSDK20kGFPAdInterfaceStyle")
 @interface kGFPAdInterfaceStyle : NSObject
@@ -972,8 +918,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shopppingNda;)
-+ (NSString * _Nonnull)shopppingNda SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
++ (NSString * _Nonnull)shoppingNda SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1288,7 +1234,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import WebKit;
 #endif
 
 #import <GFPSDK/GFPSDK.h>
@@ -1389,6 +1334,37 @@ SWIFT_CLASS("_TtC6GFPSDK16GFPAdStyleOption")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class GFPBackgroundOptionAttributes;
+
+SWIFT_CLASS_NAMED("GFPBackgroundOption")
+@interface GFPBackgroundOption : NSObject
+@property (nonatomic, strong) GFPBackgroundOptionAttributes * _Nonnull light;
+@property (nonatomic, strong) GFPBackgroundOptionAttributes * _Nonnull dark;
+- (nonnull instancetype)initWithLight:(GFPBackgroundOptionAttributes * _Nonnull)light dark:(GFPBackgroundOptionAttributes * _Nonnull)dark OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS_NAMED("GFPBackgroundOptionAttributes")
+@interface GFPBackgroundOptionAttributes : NSObject
+@property (nonatomic, strong) UIColor * _Nonnull color;
+@property (nonatomic) CGFloat alpha;
+@property (nonatomic) CGFloat cornerRadius;
+@property (nonatomic) CGFloat leftMargin;
+@property (nonatomic) CGFloat rightMargin;
+@property (nonatomic) CGFloat topMargin;
+@property (nonatomic) CGFloat bottomMargin;
+@property (nonatomic) CGFloat maxWidth;
+@property (nonatomic, strong) UIColor * _Nullable shadowColor;
+@property (nonatomic) CGFloat shadowAlpha;
+@property (nonatomic) CGFloat shadowRadius;
+@property (nonatomic) CGFloat shadowSpread;
+@property (nonatomic) CGFloat shadowX;
+@property (nonatomic) CGFloat shadowY;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPBadgeOption")
 @interface GFPBadgeOption : NSObject
@@ -1424,25 +1400,6 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionEnd = 12,
 };
 
-@class NSBundle;
-
-SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
-@interface GFPBundle : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPBundle * _Nonnull sharedInstance;)
-+ (GFPBundle * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull appVersion;)
-+ (NSString * _Nonnull)appVersion SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull appName;)
-+ (NSString * _Nonnull)appName SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull identifier;)
-+ (NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
-- (NSArray<NSString *> * _Nonnull)skAdNetworkList SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setup;
-+ (NSString * _Nullable)sdkResourceWith:(NSString * _Nullable)aPath type:(NSString * _Nullable)aType SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)isExistImageWithBundle:(NSBundle * _Nullable)bundle name:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-@end
-
 
 SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
 @protocol GFPCarouselHeightDelegate <NSObject>
@@ -1456,6 +1413,7 @@ typedef SWIFT_ENUM(NSInteger, GFPCombinedProviderOption, open) {
   GFPCombinedProviderOptionEnd = 2,
 };
 
+@class NSBundle;
 
 SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
 @interface GFPCustomAsset : NSObject
@@ -1471,35 +1429,6 @@ SWIFT_CLASS("_TtC6GFPSDK14GFPCustomAsset")
 - (nonnull instancetype)initWith:(NSBundle * _Nullable)bundle size:(CGSize)size templateImageName:(NSString * _Nonnull)templateImageName lightModeColor:(UIColor * _Nonnull)lightModeColor darkModeColor:(UIColor * _Nonnull)darkModeColor OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) BOOL isExistResource;
 - (UIColor * _Nullable)getTintColor:(BOOL)isDarkMode SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class GFPUADeviceInfo;
-@class GFPServiceInfo;
-
-SWIFT_CLASS("_TtC6GFPSDK13GFPDeviceInfo")
-@interface GFPDeviceInfo : NSObject
-@property (nonatomic, strong) GFPUADeviceInfo * _Nonnull uaInfo;
-@property (nonatomic, strong) GFPServiceInfo * _Nonnull serviceInfo;
-@property (nonatomic, readonly, copy) NSString * _Nonnull systemName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull systemVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sdkVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull deviceType;
-@property (nonatomic, readonly, copy) NSString * _Nonnull deviceModel;
-@property (nonatomic, readonly, copy) NSString * _Nonnull bundleIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull appName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull appVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sdkName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull os;
-@property (nonatomic, readonly, copy) NSString * _Nonnull density;
-@property (nonatomic, readonly, copy) NSString * _Nonnull screenWidth;
-@property (nonatomic, readonly, copy) NSString * _Nonnull screenHeight;
-@property (nonatomic, readonly, copy) NSString * _Nullable locale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull networkType;
-- (nonnull instancetype)init:(NSString * _Nonnull)version OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull initializeDict;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1746,16 +1675,6 @@ SWIFT_CLASS("_TtC6GFPSDK22GFPServerErrorResponse")
 @end
 
 
-SWIFT_CLASS("_TtC6GFPSDK14GFPServiceInfo")
-@interface GFPServiceInfo : NSObject
-@property (nonatomic, copy) NSString * _Nonnull appName;
-@property (nonatomic, copy) NSString * _Nonnull appVersion;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull appVersionDict;
-@end
-
-
 SWIFT_CLASS("_TtC6GFPSDK18GFPSpannableOption")
 @interface GFPSpannableOption : NSObject
 /// 강조 Text 시작 위치 - 시작 Position은 1입니다.
@@ -1792,16 +1711,6 @@ SWIFT_CLASS("_TtC6GFPSDK22GFPTextAdViewAttribute")
 - (nonnull instancetype)initWithContainer:(UIView * _Nullable)container OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC6GFPSDK15GFPUADeviceInfo")
-@interface GFPUADeviceInfo : NSObject
-@property (nonatomic, copy) NSString * _Nonnull systemVersion;
-@property (nonatomic, copy) NSString * _Nonnull deviceType;
-- (nonnull instancetype)initWith:(NSString * _Nonnull)aSystemVersion deviceType:(NSString * _Nonnull)aDeviceType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class NSURL;
 @class NSURLRequest;
 
@@ -1813,6 +1722,7 @@ SWIFT_CLASS("_TtC6GFPSDK20GFPURLUtilsExtension")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class GFPUADeviceInfo;
 
 SWIFT_CLASS("_TtC6GFPSDK12GFPUserAgent")
 @interface GFPUserAgent : NSObject
@@ -1944,24 +1854,6 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class WKUserContentController;
-@class WKWebView;
-
-SWIFT_CLASS("_TtC6GFPSDK17GFPWebViewManager")
-@interface GFPWebViewManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPWebViewManager * _Nonnull shared;)
-+ (GFPWebViewManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (void)addHandlersTo:(WKUserContentController * _Nonnull)userContentController;
-- (void)examineWebViewStatusWithWebView:(WKWebView * _Nonnull)webView result:(void (^ _Nonnull)(NSError * _Nullable, NSDictionary<NSString *, id> * _Nullable))result;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class WKScriptMessage;
-
-@interface GFPWebViewManager (SWIFT_EXTENSION(GFPSDK)) <WKScriptMessageHandlerWithReply>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message replyHandler:(void (^ _Nonnull)(id _Nullable, NSString * _Nullable))completionHandler;
-@end
-
 
 SWIFT_CLASS("_TtC6GFPSDK20kGFPAdInterfaceStyle")
 @interface kGFPAdInterfaceStyle : NSObject
@@ -1977,8 +1869,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shopppingNda;)
-+ (NSString * _Nonnull)shopppingNda SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
++ (NSString * _Nonnull)shoppingNda SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

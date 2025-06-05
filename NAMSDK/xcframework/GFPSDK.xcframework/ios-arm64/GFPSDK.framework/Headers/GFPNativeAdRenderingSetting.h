@@ -18,6 +18,7 @@
 #import "Swift-Enum.h"
 
 typedef CGFloat (^GFPMaxExtendingHeightSetter)(void);
+@class GFPBackgroundOption;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -146,6 +147,12 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * (기본값 -1)
  */
 @property (nonatomic, copy, nullable) GFPMaxExtendingHeightSetter maxExtendingHeight;
+
+/**
+ * Sets Native Simple Ad's background style.
+ * Background style in ad response overrides this option.
+ */
+@property (nonatomic, strong, nullable) GFPBackgroundOption *backgroundOption;
 
 /**
  * 네이티브 심플의 custom renderer 사용 시 설정

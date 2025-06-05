@@ -22,12 +22,13 @@
 @class GFPCachedAdParam;
 @class GFPDeviceInfo;
 @protocol GFPDictPresentable;
+@protocol GFPWebViewAppEnvDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"8.5.2"
+#define GFP_SDK_VERSION              @"8.6.0"
 
-@interface GFPCoreConfig : NSObject
+@interface GFPCoreConfig : NSObject <GFPWebViewAppEnvDelegate>
 
 @property (class, readonly, nonatomic) GFPCoreConfig *sharedInstance;
 
@@ -40,7 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, getter=isDebugMode) BOOL debugMode;
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> sdkInfo;
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> initializeInfo;
-@property (nonatomic, strong, readonly) id <GFPDictPresentable> appVersionInfo;
 
 @property (nullable, nonatomic, strong, readwrite) GFPUserParam *userParam;
 @property (nonatomic, strong, readonly, nullable) NSString *adID;

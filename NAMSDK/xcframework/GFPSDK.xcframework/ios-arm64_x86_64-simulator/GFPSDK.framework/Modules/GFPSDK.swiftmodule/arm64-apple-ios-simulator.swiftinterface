@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GFPSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
-import CoreTelephony
 import Foundation
 @_exported import GFPSDK
 import NaverAdsServices
@@ -152,81 +151,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @objcMembers public class GFPUADeviceInfo : ObjectiveC.NSObject {
-  @objc public var systemVersion: Swift.String
-  @objc public var deviceType: Swift.String
-  @objc(initWith:deviceType:) public init(_ aSystemVersion: Swift.String, deviceType aDeviceType: Swift.String)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPServiceInfo : ObjectiveC.NSObject {
-  @objc public var appName: Swift.String
-  @objc public var appVersion: Swift.String
-  @objc override dynamic public init()
-  @objc public var dict: Swift.Dictionary<Swift.String, Swift.String> {
-    @objc get
-  }
-  @objc public var appVersionDict: Swift.Dictionary<Swift.String, Swift.String> {
-    @objc get
-  }
-  @objc deinit
-}
-@objc @objcMembers public class GFPDeviceInfo : ObjectiveC.NSObject {
-  @objc public var uaInfo: GFPSDK.GFPUADeviceInfo
-  @objc public var serviceInfo: GFPSDK.GFPServiceInfo
-  @objc public var systemName: Swift.String {
-    get
-  }
-  @objc public var systemVersion: Swift.String {
-    get
-  }
-  @objc public var sdkVersion: Swift.String {
-    get
-  }
-  @objc public var deviceType: Swift.String {
-    get
-  }
-  @objc public var deviceModel: Swift.String {
-    get
-  }
-  @objc public var bundleIdentifier: Swift.String {
-    get
-  }
-  @objc public var appName: Swift.String {
-    @objc get
-  }
-  @objc public var appVersion: Swift.String {
-    @objc get
-  }
-  @objc public var sdkName: Swift.String {
-    @objc get
-  }
-  @objc public var os: Swift.String {
-    @objc get
-  }
-  @objc public var density: Swift.String {
-    @objc get
-  }
-  @objc public var screenWidth: Swift.String {
-    @objc get
-  }
-  @objc public var screenHeight: Swift.String {
-    @objc get
-  }
-  @objc public var locale: Swift.String? {
-    @objc get
-  }
-  @objc public var networkType: Swift.String {
-    @objc get
-  }
-  @objc public init(_ version: Swift.String)
-  @objc public var dict: Swift.Dictionary<Swift.String, Swift.String> {
-    @objc get
-  }
-  @objc public var initializeDict: Swift.Dictionary<Swift.String, Swift.String> {
-    @objc get
-  }
-  @objc deinit
-}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPAdProviderSetting : ObjectiveC.NSObject {
   @objc public var type: GFPSDK.GFPAdProviderSettingType {
     get
@@ -290,40 +214,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc(createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:) public static func createQoeTrackingInfo(host: Swift.String, path: Swift.String, timeTable: [Swift.Int], serviceId: Swift.String, ownerServiceId: Swift.String, appId: Swift.String, viewerInfo: Swift.String) -> GFPSDK.GFPQoeTrackingInfo
   @objc deinit
 }
-public struct GFPWebViewAppEnvironment : Swift.Codable {
-  public var sdkName: Swift.String {
-    get
-  }
-  public var sdkVersion: Swift.String {
-    get
-  }
-  public var limitAdTracking: Swift.Bool? {
-    get
-  }
-  public var adId: Swift.String? {
-    get
-  }
-  public var nac: Swift.String? {
-    get
-  }
-  public var device: [Swift.String : Swift.String]? {
-    get
-  }
-  public init()
-  public func jsonString() -> Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPWebViewManager : ObjectiveC.NSObject {
-  @objc public static let shared: GFPSDK.GFPWebViewManager
-  @objc public func addHandlers(to userContentController: WebKit.WKUserContentController)
-  @objc public func examineWebViewStatus(webView: WebKit.WKWebView, result: @escaping ((any Swift.Error)?, [Swift.String : Any]?) -> Swift.Void)
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension GFPSDK.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage) async -> (Any?, Swift.String?)
-}
 @objc @_inheritsConvenienceInitializers @objcMembers open class GFPTextAdViewAttribute : ObjectiveC.NSObject {
   @objc public var backgroundColor: UIKit.UIColor?
   @objc public var textColor: UIKit.UIColor?
@@ -345,7 +235,7 @@ extension GFPSDK.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
 @objc @_inheritsConvenienceInitializers @objcMembers public class kGFPRendererVisualKey : ObjectiveC.NSObject {
   @objc public static let shoppingLabel: Swift.String
   @objc public static let smartChannelCarousel: Swift.String
-  @objc public static let shopppingNda: Swift.String
+  @objc public static let shoppingNda: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -488,7 +378,7 @@ extension GFPSDK.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
   @objc public var wkwebViewUA: Swift.String {
     @objc get
   }
-  @objc(initWith:) public init(deviceInfo: GFPSDK.GFPUADeviceInfo)
+  @objc(initWith:) public init(deviceInfo: NaverAdsServices.GFPUADeviceInfo)
   @objc public init(externalUserAgent: Swift.String)
   @objc deinit
 }
@@ -548,29 +438,35 @@ extension GFPSDK.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
   @objc public static func create(adType: GFPSDK.GFPRichMediaDataAdType, mediaSize: CoreFoundation.CGSize) -> GFPSDK.GFPRichMediaData
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc(GFPBackgroundOptionAttributes) @objcMembers public class GFPBackgroundOptionAttributes : ObjectiveC.NSObject {
+  @objc public var color: UIKit.UIColor
+  @objc public var alpha: CoreFoundation.CGFloat
+  @objc public var cornerRadius: CoreFoundation.CGFloat
+  @objc public var leftMargin: CoreFoundation.CGFloat
+  @objc public var rightMargin: CoreFoundation.CGFloat
+  @objc public var topMargin: CoreFoundation.CGFloat
+  @objc public var bottomMargin: CoreFoundation.CGFloat
+  @objc public var maxWidth: CoreFoundation.CGFloat
+  @objc public var shadowColor: UIKit.UIColor?
+  @objc public var shadowAlpha: CoreFoundation.CGFloat
+  @objc public var shadowRadius: CoreFoundation.CGFloat
+  @objc public var shadowSpread: CoreFoundation.CGFloat
+  @objc public var shadowX: CoreFoundation.CGFloat
+  @objc public var shadowY: CoreFoundation.CGFloat
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(GFPBackgroundOption) @objcMembers public class GFPBackgroundOption : ObjectiveC.NSObject {
+  @objc public var light: GFPSDK.GFPBackgroundOptionAttributes
+  @objc public var dark: GFPSDK.GFPBackgroundOptionAttributes
+  @objc public init(light: GFPSDK.GFPBackgroundOptionAttributes, dark: GFPSDK.GFPBackgroundOptionAttributes)
+  @objc deinit
+}
 @objc(GFPAdInitProviderAdditionalInfo) @objcMembers public class GFPAdInitProviderAdditionalInfo : ObjectiveC.NSObject {
   @objc final public let productTypes: [Swift.String]?
   @objc final public let adUnitIds: [Swift.String]?
   @objc final public let appSignatureId: [Swift.String]?
   @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPBundle : ObjectiveC.NSObject {
-  @objc public static let sharedInstance: GFPSDK.GFPBundle
-  @objc public static var appVersion: Swift.String {
-    @objc get
-  }
-  @objc public static var appName: Swift.String {
-    @objc get
-  }
-  @objc public static var identifier: Swift.String {
-    @objc get
-  }
-  @objc public func skAdNetworkList() -> [Swift.String]
-  @objc override dynamic public init()
-  @objc public func setup()
-  @objc public class func sdkResource(with aPath: Swift.String?, type aType: Swift.String?) -> Swift.String?
-  @objc public class func isExistImage(bundle: Foundation.Bundle?, name: Swift.String) -> Swift.Bool
   @objc deinit
 }
 public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void

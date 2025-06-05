@@ -16,6 +16,8 @@
 #import "GFPRichTrackingURLs.h"
 #import "Swift-Enum.h"
 
+@class GFPBackgroundOption;
+@class GFPBackgroundOptionAttributes;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -132,6 +134,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @property (nonatomic, readonly, strong, nullable) UIColor *textColor;
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
+- (instancetype)initWithBackgroundOptionAttributes:(GFPBackgroundOptionAttributes *)attr;
 
 @end
 
@@ -186,6 +189,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
+- (instancetype)initWithBackgroundOptionAttributes:(GFPBackgroundOptionAttributes *)attr;
 
 @end
 
@@ -196,6 +200,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @property (nonatomic, readonly, strong, nullable) GFPNativeStyleInfo *richStyleInfo;
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
+- (instancetype)initWithBackgroundOption:(GFPBackgroundOption *)option;
 
 @end
 
