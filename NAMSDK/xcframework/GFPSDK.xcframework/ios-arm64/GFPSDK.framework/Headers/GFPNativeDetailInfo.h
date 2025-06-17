@@ -60,7 +60,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @property (readonly, nonatomic, assign) NSInteger richType;
 @property (readonly, nonatomic, strong, nullable) GFPRichTrackingURLs *richTrackings;
-@property (readonly, nonatomic, assign) GFPNativeLinkInfo *link;
+@property (readonly, nonatomic, strong) GFPNativeLinkInfo *link;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict

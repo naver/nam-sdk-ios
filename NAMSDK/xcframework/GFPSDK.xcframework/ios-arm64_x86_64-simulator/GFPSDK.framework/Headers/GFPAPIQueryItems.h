@@ -48,6 +48,9 @@ static NSString * const kGFPAAPParamKeyBidMachine = @"bm";
 
 - (instancetype)initWithLog:(GFPLogReqInfo *)aLogInfo;
 
+- (instancetype)initWithRewardVerification:(NSString *)verificationInfo;
+
+
 @end
 
 

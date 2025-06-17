@@ -13,6 +13,7 @@
 @class GFPNativeAdRenderingSetting;
 @class GFPNativeSimpleAdRenderingSetting;
 @class GFPVideoOptions;
+@class GFPNativeTemplateOptions;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) GFPNativeSimpleAdRenderingSetting *simpleAdRenderingSetting;
 
 @property (nonatomic, strong) GFPVideoOptions *videoOptions; //for nn
+@property (nonatomic, strong) GFPNativeTemplateOptions *templateOptions; //for ns
 
 @end
 
@@ -34,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
                           renderingSetting:(GFPNativeAdRenderingSetting *)renderingSetting
                               videoOptions:(nullable GFPVideoOptions *)videoOptions
                   simpleAdRenderingSetting:(GFPNativeSimpleAdRenderingSetting *)simpleAdRenderingSetting
+                           templateOptions:(nullable GFPNativeTemplateOptions *)templateOptions
                              clickDelegate:(nullable id <GFPS2SAdClickDelegate>)clickDelegate;
 
 @end

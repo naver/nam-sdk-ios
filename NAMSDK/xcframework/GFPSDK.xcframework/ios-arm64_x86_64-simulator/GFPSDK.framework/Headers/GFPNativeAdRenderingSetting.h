@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 #import "GFPNativeAdDelegate.h"
-#import "GFPNativeRenderer.h"
+#import "GFPNativeProtocol.h"
 
 #import "GFPOMFriendlyObstruction.h"
 
@@ -95,6 +95,9 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 
 /**
  * OMSDK를 측정하는 광고의 friendlyObstruction을 설정합니다.
+ * - s2s의 경우 OMSDK 의 friendlyObstruction을 설정함.
+ * - c2s의 경우 동작하지 않음.
+ *   - LAN AP에 한하여 view만 전달함.
  */
 @property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
@@ -153,16 +156,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * Background style in ad response overrides this option.
  */
 @property (nonatomic, strong, nullable) GFPBackgroundOption *backgroundOption;
-
-/**
- * 네이티브 심플의 custom renderer 사용 시 설정
- * - key: visual key
- * - value: GFPNativeRendererViewProtocol 을 conform 하는 customView
- */
-@property (nonatomic, readonly, strong) NSDictionary <NSString *, UIView <GFPNativeRendererViewProtocol> *> *renderers;
-
-- (void)addRendererWith:(NSString *)key rendererView:(UIView <GFPNativeRendererViewProtocol> *)rendererView;
-- (void)removeRendererWith:(NSString *)key;
 
 @end
 

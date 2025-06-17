@@ -1,5 +1,5 @@
 //
-//  GFPNativeRenderer.h
+//  GFPNativeProtocol.h
 //
 //  NAM(Naver Ad Manager) SDK for iOS
 //  Copyright 2022-present NAVER Corp.
@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @class GFPNativeBaseView;
+@class GFPMediaView;
 @class GFPLabelOption;
 @class GFPAdChoicesData;
 @class GFPMediaData;
@@ -96,6 +97,7 @@
  * s2s 광고 시 Extra Images
  */
 - (UIImage * _Nullable)extraImageWith:(NSString * _Nonnull)key;
+- (NSURL * _Nullable)extraImageUrlWith:(NSString * _Nonnull)key;
 - (NSString * _Nullable)extraImageAccessibilityWith:(NSString * _Nonnull)key;
 
 @end
@@ -104,23 +106,25 @@
 
 @optional
 
-- (UIView *_Nullable)titleAssetView;
-- (UIView *_Nullable)bodyAssetView;
-- (UIView *_Nullable)advertiseAssetView;
-- (UIView *_Nullable)socialContextAssetView;
-- (UIView *_Nullable)ctaAssetView;
-- (UIView *_Nullable)adBadgeAssetView;
-- (UIView *_Nullable)noticeAssetView;
+- (UILabel *_Nullable)titleAssetView;
+- (UILabel *_Nullable)bodyAssetView;
+- (UILabel *_Nullable)advertiseAssetView;
+- (UILabel *_Nullable)socialContextAssetView;
+- (UILabel *_Nullable)ctaAssetView;
+- (UILabel *_Nullable)adBadgeAssetView;
+- (UILabel *_Nullable)noticeAssetView;
 
-- (UIView * _Nullable)iconContainerView;
-- (UIView * _Nullable)mediaContainerView;
+- (UIImageView * _Nullable)iconContainerView;
+- (GFPMediaView * _Nullable)mediaContainerView;
 - (UIView * _Nullable)adChoicesContainerView;
+
+- (UIView * _Nullable)serviceAdBadgeContainerView;
 
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key;
 
 @end
 
-@protocol GFPNativeRendererViewProtocol <GFPNativeAssetViewProtocol>
+@protocol GFPNativeTemplateViewProtocol <GFPNativeAssetViewProtocol>
 
 + (UIView * _Nullable)createView;
 

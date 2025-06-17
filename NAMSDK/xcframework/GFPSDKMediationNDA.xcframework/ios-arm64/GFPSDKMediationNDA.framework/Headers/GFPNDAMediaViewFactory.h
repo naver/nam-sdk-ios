@@ -22,6 +22,7 @@
 @class GFPAdImpressionInfo;
 @class GFPAutoPlayInfo;
 @class GFPAdSlotsNativeData;
+@class GFPNativeTemplateOptions;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -62,6 +63,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong, nullable) GFPAutoPlayInfo *autoPlayInfo;
 @property (nonatomic, readonly, strong) NSString *creativeId;
 
+@property (nonatomic, readonly, strong, nullable) GFPNativeTemplateOptions *templateOptions;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable>)aInfo;
@@ -93,7 +96,8 @@ NS_ASSUME_NONNULL_BEGIN
                                  renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
                             vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect
                                videoOptions:(nullable GFPVideoOptions *)videoOptions
-                               autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo;
+                               autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo
+                            templateOptions:(nullable GFPNativeTemplateOptions *)templateOptions;
 
 
 @end

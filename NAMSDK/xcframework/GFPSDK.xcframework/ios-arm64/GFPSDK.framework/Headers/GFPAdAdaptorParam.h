@@ -28,6 +28,7 @@
 @class GFPWaterfallConfig;
 @class GFPAdImpressionInfo;
 @class GFPAutoPlayInfo;
+@class GFPAdInfoID;
 @class GFPOMIDInfo;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPAdAdaptorParam : NSObject
 
 @property (nonatomic, strong) NSString *requestId;
+@property (nonatomic, strong) NSString *unitId;
 
 @property (readonly, nonatomic, strong) GFPAdInfoSize *responseSize;
 @property (readonly, nonatomic, strong) NSArray<GFPAdInfoSize *> *requestSizes;
@@ -68,6 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (readonly, nonatomic, strong, nullable) GFPAdHTML *adHTML;
 @property (readonly, nonatomic, strong, nullable) GFPNativeAdInfo *nativeInfo;
+@property (readonly, nonatomic, strong, nullable) GFPAdInfoID *adInfoId;
 @property (readonly, nonatomic, strong, nullable) NSNumber *videoLoadTimeout;
 @property (readonly, nonatomic, strong, nullable) NSNumber *expireTime;
 

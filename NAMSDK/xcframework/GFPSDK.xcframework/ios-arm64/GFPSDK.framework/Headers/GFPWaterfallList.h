@@ -29,6 +29,7 @@
 @class GFPAdImpressionInfo;
 @class GFPRewardedAdInfo;
 @class GFPAutoPlayInfo;
+@class GFPAdInfoID;
 @class GFPOMIDInfo;
 
 @protocol GFPOMIDInfoPresentable;
@@ -206,7 +207,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSArray<GFPAdInfoSize *> *requestSizes;
 @property (readonly, nonatomic, strong, nullable) GFPAdInfoSize *responseSize;
 @property (readonly, nonatomic, strong, nullable) NSDictionary<NSString *, NSString *> *sdkRequestInfo;
-@property (readonly, nonatomic, assign, nullable) NSNumber *timeout; // milliseconds
+@property (readonly, nonatomic, strong, nullable) NSNumber *timeout; // milliseconds
 
 @property (readonly, nonatomic, strong, nullable) NSString *bidPrice;
 
@@ -221,6 +222,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) NSNumber *expireTime; // seconds
 
 @property (readonly, nonatomic, strong, nullable) GFPRewardedAdInfo *rewardedAdInfo;
+
+/**
+ * NDA NativeAd's ID
+ */
+@property (readonly, nonatomic, strong, nullable) GFPAdInfoID *adInfoID;
+
 @property (readonly, nonatomic, strong, nullable) GFPOMIDInfo *omidInfo;
 
 - (instancetype)init NS_UNAVAILABLE;

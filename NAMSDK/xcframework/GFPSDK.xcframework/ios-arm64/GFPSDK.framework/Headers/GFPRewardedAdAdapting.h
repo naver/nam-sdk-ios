@@ -36,6 +36,9 @@ typedef NS_OPTIONS(NSInteger, GFPRewardedStatus) {
 @optional
 - (BOOL)isS2SPlayerMuted;
 - (void)setS2SPlayerMute:(BOOL)isMuted;
+- (BOOL)isAdServerVerificationEnabled;
+- (void)requestServerVerification;
+- (void)close;
 
 @end
 

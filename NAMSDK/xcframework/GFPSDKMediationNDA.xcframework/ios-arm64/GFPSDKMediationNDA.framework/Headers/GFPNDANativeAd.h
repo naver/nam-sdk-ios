@@ -70,6 +70,8 @@
 
 @property (nonatomic, strong, readonly) GFPNativeAdInfo *nativeAdInfo;
 @property (nonatomic, strong, readonly) GFPNativeAdData *nativeData;
+@property (nonatomic, strong, readonly) GFPAdInfoID *adInfoId;
+
 
 @property (nonatomic, strong, readonly) GFPNDAMediaView *mediaView;
 @property (nonatomic, strong, readonly) GFPNDAMediaViewRenderInfo *renderInfo;
@@ -96,7 +98,8 @@
                             skipInfo:(GFPAdSkipInfo *)skipInfo
                         adChoiceInfo:(GFPAdChoiceInfo *)adChoiceInfo
                      vastMaxRedirect:(NSNumber *)vastMaxRedirect
-                             context:(GFPNativeContext *)context;
+                             context:(GFPNativeContext *)context
+                            adInfoId:(GFPAdInfoID *)adInfoId;
 
 - (void)loadAd;
 

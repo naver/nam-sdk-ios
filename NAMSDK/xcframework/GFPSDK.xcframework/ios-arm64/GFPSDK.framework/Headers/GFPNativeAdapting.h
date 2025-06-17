@@ -57,6 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
+- (NSString * _Nullable)adStyleVisualKey;
+
 - (void)updateMediaViewLayout;
 
 - (GFPAdStyleType)adStyleType;
@@ -95,6 +97,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (GFPLabelOption * _Nullable)extraLabelOptionWith:(NSString *)key;
 
 - (UIImage * _Nullable)extraImageWith:(NSString *)key;
+
+- (NSURL * _Nullable)extraImageUrlWith:(NSString *)key;
 
 - (NSString * _Nullable)extraImageAccessibilityWith:(NSString *)key;
 

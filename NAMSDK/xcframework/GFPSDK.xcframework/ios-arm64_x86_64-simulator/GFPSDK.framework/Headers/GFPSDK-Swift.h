@@ -353,11 +353,14 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPAdNativeOptions")
 @end
 
 @class GFPNativeSimpleAdRenderingSetting;
+@class GFPNativeTemplateOptions;
 
 SWIFT_CLASS("_TtC6GFPSDK24GFPAdNativeSimpleOptions")
 @interface GFPAdNativeSimpleOptions : NSObject
 /// 네이티브 Simple 형(=단일 이미지) 광고 렌더링 세팅 (Optional)
 @property (nonatomic, strong) GFPNativeSimpleAdRenderingSetting * _Nullable simpleAdRenderingSetting;
+/// 네이티브 템플릿 광고 세팅 (Optional)
+@property (nonatomic, strong) GFPNativeTemplateOptions * _Nullable templateOptions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -448,6 +451,16 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionBidMachine = 11,
   GFPBannerProviderOptionEnd = 12,
 };
+
+
+SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
+@interface GFPBundle : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPBundle * _Nonnull sharedInstance;)
++ (GFPBundle * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)sdkResourceStringWith:(NSString * _Nonnull)aMessageKey SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)sdkResourceWith:(NSString * _Nullable)aPath type:(NSString * _Nullable)aType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
@@ -912,22 +925,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
-SWIFT_CLASS("_TtC6GFPSDK21kGFPRendererVisualKey")
-@interface kGFPRendererVisualKey : NSObject
+SWIFT_CLASS("_TtC6GFPSDK24kGFPRewardedNotification")
+@interface kGFPRewardedNotification : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull resume;)
++ (NSString * _Nonnull)resume SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK21kGFPTemplateVisualKey")
+@interface kGFPTemplateVisualKey : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull defaultVisualKey;)
++ (NSString * _Nonnull)defaultVisualKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
 + (NSString * _Nonnull)shoppingNda SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC6GFPSDK24kGFPRewardedNotification")
-@interface kGFPRewardedNotification : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull resume;)
-+ (NSString * _Nonnull)resume SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1304,11 +1319,14 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPAdNativeOptions")
 @end
 
 @class GFPNativeSimpleAdRenderingSetting;
+@class GFPNativeTemplateOptions;
 
 SWIFT_CLASS("_TtC6GFPSDK24GFPAdNativeSimpleOptions")
 @interface GFPAdNativeSimpleOptions : NSObject
 /// 네이티브 Simple 형(=단일 이미지) 광고 렌더링 세팅 (Optional)
 @property (nonatomic, strong) GFPNativeSimpleAdRenderingSetting * _Nullable simpleAdRenderingSetting;
+/// 네이티브 템플릿 광고 세팅 (Optional)
+@property (nonatomic, strong) GFPNativeTemplateOptions * _Nullable templateOptions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1399,6 +1417,16 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionBidMachine = 11,
   GFPBannerProviderOptionEnd = 12,
 };
+
+
+SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
+@interface GFPBundle : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPBundle * _Nonnull sharedInstance;)
++ (GFPBundle * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)sdkResourceStringWith:(NSString * _Nonnull)aMessageKey SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)sdkResourceWith:(NSString * _Nullable)aPath type:(NSString * _Nullable)aType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_PROTOCOL("_TtP6GFPSDK25GFPCarouselHeightDelegate_")
@@ -1863,22 +1891,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
-SWIFT_CLASS("_TtC6GFPSDK21kGFPRendererVisualKey")
-@interface kGFPRendererVisualKey : NSObject
+SWIFT_CLASS("_TtC6GFPSDK24kGFPRewardedNotification")
+@interface kGFPRewardedNotification : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull resume;)
++ (NSString * _Nonnull)resume SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK21kGFPTemplateVisualKey")
+@interface kGFPTemplateVisualKey : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull defaultVisualKey;)
++ (NSString * _Nonnull)defaultVisualKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
 + (NSString * _Nonnull)shoppingNda SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC6GFPSDK24kGFPRewardedNotification")
-@interface kGFPRewardedNotification : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull resume;)
-+ (NSString * _Nonnull)resume SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

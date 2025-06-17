@@ -343,14 +343,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+@class UILabel;
+@class GFPMediaView;
 @protocol GFPNativeAssetProtocol;
 
-@interface GFPRendererShoppingLabelView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
-- (UIView * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
+@interface GFPRendererShoppingLabelView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
@@ -368,6 +370,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)extraKeyLabelBadge SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyStar;)
 + (NSString * _Nonnull)extraKeyStar SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyBadge;)
++ (NSString * _Nonnull)extraViewKeyBadge SWIFT_WARN_UNUSED_RESULT;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
@@ -376,11 +380,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 @class GFPNativeBaseRenderingSetting;
 
-@interface GFPRendererShoppingNDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
-- (UIView * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)adBadgeAssetView SWIFT_WARN_UNUSED_RESULT;
+@interface GFPRendererShoppingNDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
 - (void)changeStyleWith:(BOOL)isDarkMode;
@@ -404,8 +408,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelM
 @end
 
 
-@interface GFPRendererSmartChannelFlickingView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
-- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+@interface GFPRendererSmartChannelFlickingView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
@@ -422,6 +426,62 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPRendererU
 - (UIView * _Nullable)loadNibWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 - (UIImage * _Nullable)loadImageWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("GFPTemplateDefaultNativeBannerView")
+@interface GFPTemplateDefaultNativeBannerView : UIView
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+
+@interface GFPTemplateDefaultNativeBannerView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)serviceAdBadgeContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS_NAMED("GFPTemplateDefaultNativeView")
+@interface GFPTemplateDefaultNativeView : UIView
+@property (nonatomic) CGFloat mediaViewMaxHeight;
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface GFPTemplateDefaultNativeView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPUserInterestDelegate>
+- (void)ad:(NSObject * _Null_unspecified)ad didChangeUserInterest:(BOOL)userInterest;
+@end
+
+
+@interface GFPTemplateDefaultNativeView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)serviceAdBadgeContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
@@ -777,14 +837,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+@class UILabel;
+@class GFPMediaView;
 @protocol GFPNativeAssetProtocol;
 
-@interface GFPRendererShoppingLabelView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
-- (UIView * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
+@interface GFPRendererShoppingLabelView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
@@ -802,6 +864,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)extraKeyLabelBadge SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyStar;)
 + (NSString * _Nonnull)extraKeyStar SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyBadge;)
++ (NSString * _Nonnull)extraViewKeyBadge SWIFT_WARN_UNUSED_RESULT;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
@@ -810,11 +874,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 @class GFPNativeBaseRenderingSetting;
 
-@interface GFPRendererShoppingNDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
-- (UIView * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)adBadgeAssetView SWIFT_WARN_UNUSED_RESULT;
+@interface GFPRendererShoppingNDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
 - (void)changeStyleWith:(BOOL)isDarkMode;
@@ -838,8 +902,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelM
 @end
 
 
-@interface GFPRendererSmartChannelFlickingView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeRendererViewProtocol>
-- (UIView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+@interface GFPRendererSmartChannelFlickingView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
@@ -856,6 +920,62 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPRendererU
 - (UIView * _Nullable)loadNibWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 - (UIImage * _Nullable)loadImageWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("GFPTemplateDefaultNativeBannerView")
+@interface GFPTemplateDefaultNativeBannerView : UIView
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+
+@interface GFPTemplateDefaultNativeBannerView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)serviceAdBadgeContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS_NAMED("GFPTemplateDefaultNativeView")
+@interface GFPTemplateDefaultNativeView : UIView
+@property (nonatomic) CGFloat mediaViewMaxHeight;
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface GFPTemplateDefaultNativeView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPUserInterestDelegate>
+- (void)ad:(NSObject * _Null_unspecified)ad didChangeUserInterest:(BOOL)userInterest;
+@end
+
+
+@interface GFPTemplateDefaultNativeView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)serviceAdBadgeContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif

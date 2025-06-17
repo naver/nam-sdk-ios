@@ -49,6 +49,13 @@ extension GFPSDK.GFPErrorUtils {
   @objc(initWithText:textColor:bgColor:highlightBgColor:isBold:badgeOption:spannableOption:) public init(text: Swift.String?, textColor: UIKit.UIColor?, bgColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?, isBold: Swift.Bool, badgeOption: GFPSDK.GFPBadgeOption?, spannableOption: [GFPSDK.GFPSpannableOption]?)
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPBundle : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: GFPSDK.GFPBundle
+  @objc(sdkResourceStringWith:) public class func sdkResourceString(withMessageKey aMessageKey: Swift.String) -> Swift.String
+  @objc public class func sdkResource(with aPath: Swift.String?, type aType: Swift.String?) -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @objcMembers public class GFPBadgeOption : ObjectiveC.NSObject {
   @objc final public let borderColor: UIKit.UIColor?
   @objc final public let borderAlpha: CoreFoundation.CGFloat
@@ -232,7 +239,8 @@ extension GFPSDK.GFPErrorUtils {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPRendererVisualKey : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPTemplateVisualKey : ObjectiveC.NSObject {
+  @objc public static let defaultVisualKey: Swift.String
   @objc public static let shoppingLabel: Swift.String
   @objc public static let smartChannelCarousel: Swift.String
   @objc public static let shoppingNda: Swift.String
@@ -407,6 +415,7 @@ extension GFPSDK.GFPErrorUtils {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdNativeSimpleOptions : ObjectiveC.NSObject {
   @objc public var simpleAdRenderingSetting: GFPSDK.GFPNativeSimpleAdRenderingSetting?
+  @objc public var templateOptions: GFPSDK.GFPNativeTemplateOptions?
   @objc override dynamic public init()
   @objc deinit
 }

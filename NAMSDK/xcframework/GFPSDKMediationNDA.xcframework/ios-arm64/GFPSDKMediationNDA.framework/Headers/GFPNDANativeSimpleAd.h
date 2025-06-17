@@ -11,9 +11,13 @@
 
 @class GFPNativeAdInfo;
 @class GFPNDANativeSimpleAd;
+@class GFPNativeTemplateOptions;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNDANativeSimpleAd : GFPNDANativeAd
+
+@property (nonatomic, assign) GFPNativeTemplateOptions *templateOptions;
 
 @end
 

@@ -32,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)rewardedAdManagerDidPresentDefaultInAppBrowser:(GFPRewardedAdManager *)manager;
 -(void)rewardedAdManagerDidDismissDefaultInAppBrowser:(GFPRewardedAdManager *)manager;
+
+-(void)rewardedAdManagerDidSuccessServerRewardVerification:(GFPRewardedAdManager *)manager;
+-(void)rewardedAdManager:(GFPRewardedAdManager *)manager didFailedServerRewardVerification:(GFPError *)error;
+-(void)rewardedAdManager:(GFPRewardedAdManager *)manager didReceiveErrorServerRewardVerification:(GFPError *)error;
+
 @end
 
 NS_ASSUME_NONNULL_END

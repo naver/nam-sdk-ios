@@ -13,6 +13,25 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface GFPS2SRewardedParam : NSObject
+
+/**
+ * 유저 식별을 위한 토큰
+ */
+@property (nonatomic, readonly, strong, nullable) NSString *utn;
+
+/**
+ * 리워드 콜백 분석을 위한 파라미터
+ */
+@property (nonatomic, readonly, strong, nullable) NSDictionary <NSString *, NSString *> *rcc;
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithUtn:(NSString *)utn
+                        rcc:(NSDictionary <NSString *, NSString *> *)rcc NS_DESIGNATED_INITIALIZER;
+
+@end
+
+
 @interface GFPAdParam : NSObject
 
 /**
@@ -54,6 +73,13 @@ NS_ASSUME_NONNULL_BEGIN
  * Communication Ad 용 Content Info.
  */
 @property (readwrite, nonatomic, nullable) GFPContentInfo *contentInfo;
+
+
+/**
+ * S2S 리워드 광고 용 파라미터
+ */
+@property (readwrite, nonatomic, nullable) GFPS2SRewardedParam *rewardedParam;
+
 
 /**
  * s2s waterfall skip을 위해 지원하는 queryString.

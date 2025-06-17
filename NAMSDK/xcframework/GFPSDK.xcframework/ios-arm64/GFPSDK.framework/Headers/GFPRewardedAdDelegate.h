@@ -12,6 +12,8 @@
 
 @protocol GFPRewardedAdDelegate <NSObject>
 
+NS_ASSUME_NONNULL_BEGIN
+
 - (void)rewardedAd:(GFPRewardedAd *)rewardedAd didCompleteWithReward:(GFPReward *)reward;
 - (void)rewardedAd:(GFPRewardedAd *)rewardedAd didFaileWithError:(GFPError *)error;
 
@@ -25,4 +27,12 @@
 @optional
 - (void)rewardedAdDidPresentDefaultInAppBrowser:(GFPRewardedAd *)rewardedAd;
 - (void)rewardedAdDidDismissDefaultInAppBrowser:(GFPRewardedAd *)rewardedAd;
+
+
+- (void)rewardedAdDidSuccessServerRewardVerification:(GFPRewardedAd *)rewardedAd;
+- (void)rewardedAd:(GFPRewardedAd *)rewardedAd didFailedServerRewardVerification:(GFPError *)error;
+- (void)rewardedAd:(GFPRewardedAd *)rewardedAd didReceiveErrorServerRewardVerification:(GFPError *)error;
+
+NS_ASSUME_NONNULL_END
+
 @end

@@ -146,7 +146,14 @@ typedef NS_ENUM(NSInteger, GFPErrorCode) {
     // Rewarded Ad
     GFPErrorRewardedAd = 6000,
     GFPErrorRewardedAdRendering = 6100,
+    GFPErrorRewardedAdNotComplete = 6101,
     
+    GFPErrorRewardedServerResponse = 6200,
+    GFPErrorRewardedServerResponseJsonInvalid = 6201,
+    GFPErrorRewardedServerResponseFailReason = 6202,
+    GFPErrorRewardedServerResponseFailRejected = 6203,
+
+
     // Interstitial Ad
     GFPErrorInterstitialAd = 7000,
     GFPErrorInterstitialAdRendering = 7100,

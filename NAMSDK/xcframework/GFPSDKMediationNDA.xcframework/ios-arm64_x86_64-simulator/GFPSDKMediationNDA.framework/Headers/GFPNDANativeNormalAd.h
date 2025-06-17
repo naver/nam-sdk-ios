@@ -14,6 +14,7 @@
 @class GFPAdImpressionInfo;
 @class GFPAutoPlayInfo;
 @class GFPVideoOptions;
+@class GFPAdInfoID;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,7 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
                             skipInfo:(GFPAdSkipInfo *)skipInfo
                         adChoiceInfo:(GFPAdChoiceInfo *)adChoiceInfo
                      vastMaxRedirect:(NSNumber *)vastMaxRedirect
-                             context:(GFPNativeContext *)nativeContext;
+                             context:(GFPNativeContext *)nativeContext
+                            adInfoId:(GFPAdInfoID *)adInfoId;
 
 @end
 

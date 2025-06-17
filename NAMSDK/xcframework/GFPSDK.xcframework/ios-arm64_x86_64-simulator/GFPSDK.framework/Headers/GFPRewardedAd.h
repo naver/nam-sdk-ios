@@ -48,10 +48,28 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly, assign) BOOL isS2SPlayerMuted;
 
+
+/**
+ * S2S Server Verification 사용 여부
+ */
+@property (nonatomic, readonly, assign) BOOL isAdServerVerificationEnabled;
+
 /**
  * S2S Player mute 셋팅
  */
 - (void)setS2SPlayerMute:(BOOL)isMuted;
+
+
+/**
+ * S2S Callback 재시도 요청
+ */
+- (void)requestServerVerification;
+
+/**
+ * S2S 광고 닫기 시도
+ */
+- (void)close;
+
 
 @end
 

@@ -20,6 +20,7 @@ typedef NS_OPTIONS(NSInteger, GFPRequestType) {
     GFPRequestSchedule,
     GFPRequestURL,
     GFPRequestNelo,
+    GFPRequestRewardServer,
 };
 
 @interface GFPAPIRequest : NSObject

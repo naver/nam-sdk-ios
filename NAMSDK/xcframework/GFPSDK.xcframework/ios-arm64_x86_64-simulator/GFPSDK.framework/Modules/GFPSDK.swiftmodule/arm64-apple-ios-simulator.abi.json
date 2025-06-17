@@ -1708,6 +1708,270 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "GFPBundle",
+        "printedName": "GFPBundle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPBundle",
+                "printedName": "GFPSDK.GFPBundle",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPBundle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPBundle(cpy)sharedInstance",
+            "mangledName": "$s6GFPSDK9GFPBundleC14sharedInstanceACvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPBundle",
+                    "printedName": "GFPSDK.GFPBundle",
+                    "usr": "c:@M@GFPSDK@objc(cs)GFPBundle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPBundle(cm)sharedInstance",
+                "mangledName": "$s6GFPSDK9GFPBundleC14sharedInstanceACvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sdkResourceString",
+            "printedName": "sdkResourceString(withMessageKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPBundle(cm)sdkResourceStringWith:",
+            "mangledName": "$s6GFPSDK9GFPBundleC17sdkResourceString14withMessageKeyS2S_tFZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "objc_name": "sdkResourceStringWith:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkResource",
+            "printedName": "sdkResource(with:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPBundle(cm)sdkResourceWith:type:",
+            "mangledName": "$s6GFPSDK9GFPBundleC11sdkResource4with4typeSSSgAG_AGtFZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPBundle",
+                "printedName": "GFPSDK.GFPBundle",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPBundle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPBundle(im)init",
+            "mangledName": "$s6GFPSDK9GFPBundleCACycfc",
+            "moduleName": "GFPSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDK@objc(cs)GFPBundle",
+        "mangledName": "$s6GFPSDK9GFPBundleC",
+        "moduleName": "GFPSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "GFPBadgeOption",
         "printedName": "GFPBadgeOption",
         "children": [
@@ -8961,13 +9225,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "kGFPRendererVisualKey",
-        "printedName": "kGFPRendererVisualKey",
+        "name": "kGFPTemplateVisualKey",
+        "printedName": "kGFPTemplateVisualKey",
         "children": [
           {
             "kind": "Var",
-            "name": "shoppingLabel",
-            "printedName": "shoppingLabel",
+            "name": "defaultVisualKey",
+            "printedName": "defaultVisualKey",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8977,8 +9241,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cpy)shoppingLabel",
-            "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC13shoppingLabelSSvpZ",
+            "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cpy)defaultVisualKey",
+            "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC07defaultcD0SSvpZ",
             "moduleName": "GFPSDK",
             "static": true,
             "declAttributes": [
@@ -9004,8 +9268,61 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cm)shoppingLabel",
-                "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC13shoppingLabelSSvgZ",
+                "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cm)defaultVisualKey",
+                "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC07defaultcD0SSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shoppingLabel",
+            "printedName": "shoppingLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cpy)shoppingLabel",
+            "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC13shoppingLabelSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cm)shoppingLabel",
+                "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC13shoppingLabelSSvgZ",
                 "moduleName": "GFPSDK",
                 "static": true,
                 "implicit": true,
@@ -9030,8 +9347,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cpy)smartChannelCarousel",
-            "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC20smartChannelCarouselSSvpZ",
+            "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cpy)smartChannelCarousel",
+            "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC20smartChannelCarouselSSvpZ",
             "moduleName": "GFPSDK",
             "static": true,
             "declAttributes": [
@@ -9057,8 +9374,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cm)smartChannelCarousel",
-                "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC20smartChannelCarouselSSvgZ",
+                "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cm)smartChannelCarousel",
+                "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC20smartChannelCarouselSSvgZ",
                 "moduleName": "GFPSDK",
                 "static": true,
                 "implicit": true,
@@ -9083,8 +9400,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cpy)shoppingNda",
-            "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC11shoppingNdaSSvpZ",
+            "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cpy)shoppingNda",
+            "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC11shoppingNdaSSvpZ",
             "moduleName": "GFPSDK",
             "static": true,
             "declAttributes": [
@@ -9110,8 +9427,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(cm)shoppingNda",
-                "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC11shoppingNdaSSvgZ",
+                "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(cm)shoppingNda",
+                "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC11shoppingNdaSSvgZ",
                 "moduleName": "GFPSDK",
                 "static": true,
                 "implicit": true,
@@ -9130,14 +9447,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "kGFPRendererVisualKey",
-                "printedName": "GFPSDK.kGFPRendererVisualKey",
-                "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey"
+                "name": "kGFPTemplateVisualKey",
+                "printedName": "GFPSDK.kGFPTemplateVisualKey",
+                "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey(im)init",
-            "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyCACycfc",
+            "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey(im)init",
+            "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyCACycfc",
             "moduleName": "GFPSDK",
             "overriding": true,
             "implicit": true,
@@ -9151,8 +9468,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@GFPSDK@objc(cs)kGFPRendererVisualKey",
-        "mangledName": "$s6GFPSDK21kGFPRendererVisualKeyC",
+        "usr": "c:@M@GFPSDK@objc(cs)kGFPTemplateVisualKey",
+        "mangledName": "$s6GFPSDK21kGFPTemplateVisualKeyC",
         "moduleName": "GFPSDK",
         "declAttributes": [
           "AccessControl",
@@ -15077,6 +15394,124 @@
                 "declKind": "Accessor",
                 "usr": "s:6GFPSDK24GFPAdNativeSimpleOptionsC24simpleAdRenderingSettingSo09GFPNativedghI0CSgvM",
                 "mangledName": "$s6GFPSDK24GFPAdNativeSimpleOptionsC24simpleAdRenderingSettingSo09GFPNativedghI0CSgvM",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "templateOptions",
+            "printedName": "templateOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPNativeTemplateOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPNativeTemplateOptions",
+                    "printedName": "GFPSDK.GFPNativeTemplateOptions",
+                    "usr": "c:objc(cs)GFPNativeTemplateOptions"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPAdNativeSimpleOptions(py)templateOptions",
+            "mangledName": "$s6GFPSDK24GFPAdNativeSimpleOptionsC08templateE0So017GFPNativeTemplateE0CSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GFPSDK.GFPNativeTemplateOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPNativeTemplateOptions",
+                        "printedName": "GFPSDK.GFPNativeTemplateOptions",
+                        "usr": "c:objc(cs)GFPNativeTemplateOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPAdNativeSimpleOptions(im)templateOptions",
+                "mangledName": "$s6GFPSDK24GFPAdNativeSimpleOptionsC08templateE0So017GFPNativeTemplateE0CSgvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GFPSDK.GFPNativeTemplateOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPNativeTemplateOptions",
+                        "printedName": "GFPSDK.GFPNativeTemplateOptions",
+                        "usr": "c:objc(cs)GFPNativeTemplateOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPAdNativeSimpleOptions(im)setTemplateOptions:",
+                "mangledName": "$s6GFPSDK24GFPAdNativeSimpleOptionsC08templateE0So017GFPNativeTemplateE0CSgvs",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GFPSDK24GFPAdNativeSimpleOptionsC08templateE0So017GFPNativeTemplateE0CSgvM",
+                "mangledName": "$s6GFPSDK24GFPAdNativeSimpleOptionsC08templateE0So017GFPNativeTemplateE0CSgvM",
                 "moduleName": "GFPSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -21838,23 +22273,30 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRendererVisualKey.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 330,
+      "offset": 333,
+      "length": 20,
+      "value": "\"DEFAULT_VISUAL_KEY\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
       "length": 28,
       "value": "\"NORMAL_IMAGE_SHOPPINGLABEL\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRendererVisualKey.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 404,
+      "offset": 467,
       "length": 29,
       "value": "\"CAROUSEL_IMAGE_SMARTCHANNEL\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRendererVisualKey.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 470,
+      "offset": 533,
       "length": 27,
       "value": "\"NORMAL_IMAGE_SHOPPING_H84\""
     },

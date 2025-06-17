@@ -31,6 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)rewardedAdAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
 - (void)rewardedAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
 
+- (void)rewardedAdAdaptorDidSuccessServerRewardVerification:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor;
+- (void)rewardedAdAdaptor:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor didFailedServerRewardVerification:(GFPError *)error;
+- (void)rewardedAdAdaptor:(GFPAdAdaptor <GFPRewardedAdAdapting> *)rewardedAdAdaptor didReceiveErrorServerRewardVerification:(GFPError *)error;
+
 @end
 
 NS_ASSUME_NONNULL_END

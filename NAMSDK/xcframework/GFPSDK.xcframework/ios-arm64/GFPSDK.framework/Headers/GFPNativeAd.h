@@ -68,6 +68,11 @@ extern NSString *const kGFPNativeIconSizeKey;
 @property(readonly, nonatomic, strong) NSString *adProviderName;
 
 /**
+ * 광고 비주얼 키
+ */
+@property(readonly, nonatomic, strong, nullable) NSString *adVisualKey;
+
+/**
  * 광고 유효성 여부
  */
 @property(readonly, nonatomic, assign) BOOL isAdInvalidate;

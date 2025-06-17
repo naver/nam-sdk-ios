@@ -26,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) BOOL isAdLoaded;
 
 /**
+ S2S Server Reward 적용된 광고 여부
+ */
+@property (nonatomic, readonly, assign) BOOL isAdServerVerificationEnabled;
+
+/**
  * 광고 요청이후 로드 완료시점까지 타임아웃 (Optional)
  */
 @property(readwrite, nonatomic, assign) NSTimeInterval requestTimeoutInterval;
@@ -50,6 +55,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)isS2SPlayerMuted;
 - (void)setS2SPlayerMute:(BOOL)isMuted;
+
+/**
+ S2S Server Reward Check 요청 API
+ */
+- (void)requestServerVerification;
+/**
+ S2S 광고에 한해 제공되는 Close 옵션
+ */
+- (void)close;
 
 @end
 

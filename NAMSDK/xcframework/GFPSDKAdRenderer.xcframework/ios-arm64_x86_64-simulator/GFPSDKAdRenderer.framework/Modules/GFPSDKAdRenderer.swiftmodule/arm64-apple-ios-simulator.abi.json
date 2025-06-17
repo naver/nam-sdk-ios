@@ -37,6 +37,654 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "GFPTemplateDefaultNativeBannerView",
+        "printedName": "GFPTemplateDefaultNativeBannerView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "awakeFromNib",
+            "printedName": "awakeFromNib()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)awakeFromNib",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC12awakeFromNibyyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "objc_name": "awakeFromNib",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)layoutSubviews",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC14layoutSubviewsyyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPTemplateDefaultNativeBannerView",
+                "printedName": "GFPSDKAdRenderer.GFPTemplateDefaultNativeBannerView",
+                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)initWithFrame:",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GFPSDKAdRenderer.GFPTemplateDefaultNativeBannerView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPTemplateDefaultNativeBannerView",
+                    "printedName": "GFPSDKAdRenderer.GFPTemplateDefaultNativeBannerView",
+                    "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)initWithCoder:",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "iconContainerView",
+            "printedName": "iconContainerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImageView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImageView",
+                    "printedName": "UIKit.UIImageView",
+                    "usr": "c:objc(cs)UIImageView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)iconContainerView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC013iconContainerG0So07UIImageG0CSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "iconContainerView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "titleAssetView",
+            "printedName": "titleAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)titleAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC010titleAssetG0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "titleAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "advertiseAssetView",
+            "printedName": "advertiseAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)advertiseAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC014advertiseAssetG0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "advertiseAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bodyAssetView",
+            "printedName": "bodyAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)bodyAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC09bodyAssetG0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "bodyAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ctaAssetView",
+            "printedName": "ctaAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)ctaAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC08ctaAssetG0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "ctaAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adChoicesContainerView",
+            "printedName": "adChoicesContainerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)adChoicesContainerView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC018adChoicesContainerG0So6UIViewCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "adChoicesContainerView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "serviceAdBadgeContainerView",
+            "printedName": "serviceAdBadgeContainerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)serviceAdBadgeContainerView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC023serviceAdBadgeContainerG0So6UIViewCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "serviceAdBadgeContainerView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createView",
+            "printedName": "createView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(cm)createView",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC06createG0So6UIViewCSgyFZ",
+            "moduleName": "GFPSDKAdRenderer",
+            "static": true,
+            "objc_name": "createView",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bind",
+            "printedName": "bind(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any GFPSDK.GFPNativeAssetProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPNativeAssetProtocol",
+                    "printedName": "any GFPSDK.GFPNativeAssetProtocol",
+                    "usr": "c:objc(pl)GFPNativeAssetProtocol"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)bindWith:",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC4bind4withySo22GFPNativeAssetProtocol_pSg_tF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "bindWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changeStyle",
+            "printedName": "changeStyle(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)changeStyleWith:",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC11changeStyle4withySb_tF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "changeStyleWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "estimateHeight",
+            "printedName": "estimateHeight()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView(im)estimateHeight",
+            "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC14estimateHeight12CoreGraphics7CGFloatVyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "estimateHeight",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeBannerView",
+        "mangledName": "$s16GFPSDKAdRenderer34GFPTemplateDefaultNativeBannerViewC",
+        "moduleName": "GFPSDKAdRenderer",
+        "objc_name": "GFPTemplateDefaultNativeBannerView",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "GFPRendererShoppingNDAView",
         "printedName": "GFPRendererShoppingNDAView",
         "children": [
@@ -210,6 +858,62 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "extraViewKeyBadge",
+            "printedName": "extraViewKeyBadge",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(cpy)extraViewKeyBadge",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC17extraViewKeyBadgeSSvpZ",
+            "moduleName": "GFPSDKAdRenderer",
+            "static": true,
+            "objc_name": "extraViewKeyBadge",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(cm)extraViewKeyBadge",
+                "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC17extraViewKeyBadgeSSvgZ",
+                "moduleName": "GFPSDKAdRenderer",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(coder:)",
@@ -320,13 +1024,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
@@ -334,7 +1038,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)titleAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC14titleAssetViewSo6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC14titleAssetViewSo7UILabelCSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "titleAssetView",
             "declAttributes": [
@@ -356,13 +1060,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
@@ -370,7 +1074,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)advertiseAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC18advertiseAssetViewSo6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC18advertiseAssetViewSo7UILabelCSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "advertiseAssetView",
             "declAttributes": [
@@ -391,13 +1095,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "GFPSDK.GFPMediaView?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "GFPMediaView",
+                    "printedName": "GFPSDK.GFPMediaView",
+                    "usr": "c:objc(cs)GFPMediaView"
                   }
                 ],
                 "usr": "s:Sq"
@@ -405,7 +1109,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)mediaContainerView",
-            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC18mediaContainerViewSo6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC18mediaContainerViewSo08GFPMediaH0CSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "mediaContainerView",
             "declAttributes": [
@@ -420,8 +1124,8 @@
           },
           {
             "kind": "Function",
-            "name": "adBadgeAssetView",
-            "printedName": "adBadgeAssetView()",
+            "name": "extraView",
+            "printedName": "extraView(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -436,13 +1140,19 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)adBadgeAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC16adBadgeAssetViewSo6UIViewCSgyF",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)extraViewWith:",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC9extraView4withSo6UIViewCSgSS_tF",
             "moduleName": "GFPSDKAdRenderer",
-            "objc_name": "adBadgeAssetView",
+            "objc_name": "extraViewWith:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -753,6 +1463,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -1685,13 +2402,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1699,7 +2416,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(im)advertiseAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC014advertiseAssetF0So6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC014advertiseAssetF0So7UILabelCSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "advertiseAssetView",
             "declAttributes": [
@@ -1721,13 +2438,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "GFPSDK.GFPMediaView?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "GFPMediaView",
+                    "printedName": "GFPSDK.GFPMediaView",
+                    "usr": "c:objc(cs)GFPMediaView"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1735,7 +2452,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(im)mediaContainerView",
-            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC014mediaContainerF0So6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC014mediaContainerF0So08GFPMediaF0CSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "mediaContainerView",
             "declAttributes": [
@@ -1756,13 +2473,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1770,7 +2487,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(im)bodyAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC09bodyAssetF0So6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC09bodyAssetF0So7UILabelCSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "bodyAssetView",
             "declAttributes": [
@@ -1791,13 +2508,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1805,7 +2522,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(im)ctaAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC08ctaAssetF0So6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC08ctaAssetF0So7UILabelCSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "ctaAssetView",
             "declAttributes": [
@@ -1826,13 +2543,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1840,7 +2557,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(im)noticeAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC011noticeAssetF0So6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC011noticeAssetF0So7UILabelCSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "noticeAssetView",
             "declAttributes": [
@@ -2749,13 +3466,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "GFPSDK.GFPMediaView?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "GFPMediaView",
+                    "printedName": "GFPSDK.GFPMediaView",
+                    "usr": "c:objc(cs)GFPMediaView"
                   }
                 ],
                 "usr": "s:Sq"
@@ -2763,7 +3480,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererSmartChannelFlickingView(im)mediaContainerView",
-            "mangledName": "$s16GFPSDKAdRenderer35GFPRendererSmartChannelFlickingViewC014mediaContainerG0So6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer35GFPRendererSmartChannelFlickingViewC014mediaContainerG0So08GFPMediaG0CSgyF",
             "moduleName": "GFPSDKAdRenderer",
             "objc_name": "mediaContainerView",
             "declAttributes": [
@@ -3054,11 +3771,884 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKAdRenderer"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPTemplateDefaultNativeView",
+        "printedName": "GFPTemplateDefaultNativeView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "mediaViewMaxHeight",
+            "printedName": "mediaViewMaxHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(py)mediaViewMaxHeight",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC05mediaF9MaxHeight12CoreGraphics7CGFloatVvp",
+            "moduleName": "GFPSDKAdRenderer",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)mediaViewMaxHeight",
+                "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC05mediaF9MaxHeight12CoreGraphics7CGFloatVvg",
+                "moduleName": "GFPSDKAdRenderer",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)setMediaViewMaxHeight:",
+                "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC05mediaF9MaxHeight12CoreGraphics7CGFloatVvs",
+                "moduleName": "GFPSDKAdRenderer",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC05mediaF9MaxHeight14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC05mediaF9MaxHeight12CoreGraphics7CGFloatVvM",
+                "moduleName": "GFPSDKAdRenderer",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "awakeFromNib",
+            "printedName": "awakeFromNib()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)awakeFromNib",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC12awakeFromNibyyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "objc_name": "awakeFromNib",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)layoutSubviews",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC14layoutSubviewsyyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPTemplateDefaultNativeView",
+                "printedName": "GFPSDKAdRenderer.GFPTemplateDefaultNativeView",
+                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)initWithFrame:",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GFPSDKAdRenderer.GFPTemplateDefaultNativeView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPTemplateDefaultNativeView",
+                    "printedName": "GFPSDKAdRenderer.GFPTemplateDefaultNativeView",
+                    "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)initWithCoder:",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "GFPSDKAdRenderer",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "mediaContainerView",
+            "printedName": "mediaContainerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPMediaView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMediaView",
+                    "printedName": "GFPSDK.GFPMediaView",
+                    "usr": "c:objc(cs)GFPMediaView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)mediaContainerView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC014mediaContainerF0So08GFPMediaF0CSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "mediaContainerView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "iconContainerView",
+            "printedName": "iconContainerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImageView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImageView",
+                    "printedName": "UIKit.UIImageView",
+                    "usr": "c:objc(cs)UIImageView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)iconContainerView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC013iconContainerF0So07UIImageF0CSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "iconContainerView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "titleAssetView",
+            "printedName": "titleAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)titleAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC010titleAssetF0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "titleAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "advertiseAssetView",
+            "printedName": "advertiseAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)advertiseAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC014advertiseAssetF0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "advertiseAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bodyAssetView",
+            "printedName": "bodyAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)bodyAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC09bodyAssetF0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "bodyAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ctaAssetView",
+            "printedName": "ctaAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)ctaAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC08ctaAssetF0So7UILabelCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "ctaAssetView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adChoicesContainerView",
+            "printedName": "adChoicesContainerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)adChoicesContainerView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC018adChoicesContainerF0So6UIViewCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "adChoicesContainerView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "serviceAdBadgeContainerView",
+            "printedName": "serviceAdBadgeContainerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)serviceAdBadgeContainerView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC023serviceAdBadgeContainerF0So6UIViewCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "serviceAdBadgeContainerView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createView",
+            "printedName": "createView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(cm)createView",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC06createF0So6UIViewCSgyFZ",
+            "moduleName": "GFPSDKAdRenderer",
+            "static": true,
+            "objc_name": "createView",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bind",
+            "printedName": "bind(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any GFPSDK.GFPNativeAssetProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPNativeAssetProtocol",
+                    "printedName": "any GFPSDK.GFPNativeAssetProtocol",
+                    "usr": "c:objc(pl)GFPNativeAssetProtocol"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)bindWith:",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC4bind4withySo22GFPNativeAssetProtocol_pSg_tF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "bindWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changeStyle",
+            "printedName": "changeStyle(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)changeStyleWith:",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC11changeStyle4withySb_tF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "changeStyleWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "estimateHeight",
+            "printedName": "estimateHeight()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)estimateHeight",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC14estimateHeight12CoreGraphics7CGFloatVyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "estimateHeight",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(_:didChangeUserInterest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "ObjectiveC.NSObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObject",
+                    "printedName": "ObjectiveC.NSObject",
+                    "usr": "c:objc(cs)NSObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView(im)ad:didChangeUserInterest:",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC2ad_21didChangeUserInterestySo8NSObjectCSg_SbtF",
+            "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "ad:didChangeUserInterest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPTemplateDefaultNativeView",
+        "mangledName": "$s16GFPSDKAdRenderer28GFPTemplateDefaultNativeViewC",
+        "moduleName": "GFPSDKAdRenderer",
+        "objc_name": "GFPTemplateDefaultNativeView",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeBannerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1122,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeBannerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1177,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeBannerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1232,
+      "length": 3,
+      "value": "7.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeBannerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1283,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeBannerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1326,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeBannerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1373,
+      "length": 4,
+      "value": "20.0"
+    },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "StringLiteral",
@@ -3082,85 +4672,92 @@
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
+      "kind": "StringLiteral",
+      "offset": 639,
+      "length": 11,
+      "value": "\"slotBadge\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 985,
+      "offset": 1075,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1160,
+      "offset": 1250,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1204,
+      "offset": 1294,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1247,
+      "offset": 1337,
       "length": 3,
       "value": "393"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1295,
+      "offset": 1385,
       "length": 3,
       "value": "390"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1435,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1390,
+      "offset": 1480,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1441,
+      "offset": 1531,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1486,
+      "offset": 1576,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1531,
+      "offset": 1621,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1574,
+      "offset": 1664,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1623,
+      "offset": 1713,
       "length": 1,
       "value": "4"
     },
@@ -3282,6 +4879,41 @@
       "offset": 707,
       "length": 5,
       "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 491,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 602,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1124,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1171,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/Template\/GFPTemplateDefaultNativeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1222,
+      "length": 4,
+      "value": "23.0"
     }
   ]
 }

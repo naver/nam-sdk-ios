@@ -56,7 +56,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDARichMediaViewNewVideoExtend = 105,
     GFPNDARichMediaViewDragExtend = 106,
     GFPNDARichMediaViewNewVideoExtendV2 = 107,
-    //GFPNDARichMediaViewDoubleCrown = 108,
+    GFPNDARichMediaViewDoubleCrown = 108,
 
     GFPNDARendererMediaViewShoppingLabel = 1000,
     GFPNDARendererMediaViewSmartChannelFlicking = 1001,

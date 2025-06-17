@@ -10,20 +10,41 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(GFPTemplateDefaultNativeBannerView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPTemplateDefaultNativeBannerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension GFPSDKAdRenderer.GFPTemplateDefaultNativeBannerView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iconContainerView() -> UIKit.UIImageView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ctaAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func serviceAdBadgeContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+}
 @_inheritsConvenienceInitializers @objc(GFPRendererShoppingNDAView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPRendererShoppingNDAView : UIKit.UIView {
   @objc(extraKeyDiscount) @_Concurrency.MainActor @preconcurrency public static let extraKeyDiscount: Swift.String
   @objc(extraKeyLabelBadge) @_Concurrency.MainActor @preconcurrency public static let extraKeyLabelBadge: Swift.String
   @objc(extraKeyStar) @_Concurrency.MainActor @preconcurrency public static let extraKeyStar: Swift.String
+  @objc(extraViewKeyBadge) @_Concurrency.MainActor @preconcurrency public static let extraViewKeyBadge: Swift.String
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @objc deinit
 }
-extension GFPSDKAdRenderer.GFPRendererShoppingNDAView : GFPSDK.GFPNativeRendererViewProtocol {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adBadgeAssetView() -> UIKit.UIView?
+extension GFPSDKAdRenderer.GFPRendererShoppingNDAView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
@@ -57,12 +78,12 @@ extension GFPSDKAdRenderer.GFPRendererShoppingNDAView : GFPSDK.GFPNativeRenderer
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension GFPSDKAdRenderer.GFPRendererShoppingLabelView : GFPSDK.GFPNativeRendererViewProtocol {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ctaAssetView() -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UIView?
+extension GFPSDKAdRenderer.GFPRendererShoppingLabelView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ctaAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
@@ -86,11 +107,36 @@ extension GFPSDKAdRenderer.GFPRendererShoppingLabelView : GFPSDK.GFPNativeRender
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @objc deinit
 }
-extension GFPSDKAdRenderer.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeRendererViewProtocol {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> UIKit.UIView?
+extension GFPSDKAdRenderer.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+}
+@_inheritsConvenienceInitializers @objc(GFPTemplateDefaultNativeView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPTemplateDefaultNativeView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var mediaViewMaxHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension GFPSDKAdRenderer.GFPTemplateDefaultNativeView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iconContainerView() -> UIKit.UIImageView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ctaAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func serviceAdBadgeContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+}
+extension GFPSDKAdRenderer.GFPTemplateDefaultNativeView : GFPSDK.GFPUserInterestDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ad(_ ad: ObjectiveC.NSObject!, didChangeUserInterest userInterest: Swift.Bool)
 }
