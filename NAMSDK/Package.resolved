@@ -1,0 +1,15 @@
+{
+  "originHash" : "9930c80bfc472e4a0b57780faf8eaf0cce5a87ee95628011472a1fed6bfa3dd9",
+  "pins" : [
+    {
+      "identity" : "kissxml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/KissXML.git",
+      "state" : {
+        "revision" : "990cdef080213b5a3f0d9709b845d553bd3ddb97",
+        "version" : "5.3.3"
+      }
+    }
+  ],
+  "version" : 3
+}
