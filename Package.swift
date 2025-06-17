@@ -17,7 +17,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/robbiehanson/KissXML.git", exact: "5.3.3")
+        .package(url: "https://github.com/robbiehanson/KissXML.git", exact: "5.3.3"),
+        .package(url: "https://github.com/naver/nas-sdk-ios.git", exact: "1.1.2-test")
     ],
     targets: [
         // core
@@ -31,7 +32,7 @@ let package = Package(
         ),
         .target(
             name: "Core",
-            dependencies: ["Core_Binary", "OMSDK_Binary", "KissXML"],
+            dependencies: ["Core_Binary", "OMSDK_Binary", "KissXML", "NaverAdsServices"],
             path: "NAMSDK/SPM_Dummy/Core",
             resources: [
                 .copy("../../resourcebundle/GFPSDKResource.bundle")
