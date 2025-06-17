@@ -1,0 +1,24 @@
+{
+  "originHash" : "96de7b1d1b2df16d0069f2473ae669ddf3e68a98b1d5034d9a96547a6a756e3a",
+  "pins" : [
+    {
+      "identity" : "kissxml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/KissXML.git",
+      "state" : {
+        "revision" : "990cdef080213b5a3f0d9709b845d553bd3ddb97",
+        "version" : "5.3.3"
+      }
+    },
+    {
+      "identity" : "nam-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/naver/nam-sdk-ios.git",
+      "state" : {
+        "revision" : "68d3ccfbae0f4ee6b3cdc2a4301d55971ba08506",
+        "version" : "8.7.0-test"
+      }
+    }
+  ],
+  "version" : 3
+}
