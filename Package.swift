@@ -44,7 +44,7 @@ let package = Package(
                 .copy("../../resourcebundle/GFPSDKResource.bundle")
             ],
             cSettings: [ .define("NAM") ],
-            swiftSettings: [ .define("NAM") ],
+            swiftSettings: [ .define("NAM") ]
         ),
 
         // adRenderer
