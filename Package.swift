@@ -32,7 +32,13 @@ let package = Package(
         ),
         .target(
             name: "Core",
-            dependencies: ["Core_Binary", "OMSDK_Binary", "KissXML", "NaverAdsServices"],
+            dependencies: [
+                "Core_Binary",
+                "OMSDK_Binary",
+                "KissXML",
+
+                .product(name: "NaverAdsServices", package: "nas-sdk-ios")
+            ],
             path: "NAMSDK/SPM_Dummy/Core",
             resources: [
                 .copy("../../resourcebundle/GFPSDKResource.bundle")
