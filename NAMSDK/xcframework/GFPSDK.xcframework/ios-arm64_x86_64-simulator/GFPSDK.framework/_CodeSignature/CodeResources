@@ -406,7 +406,7 @@
 		</data>
 		<key>Headers/GFPSDK-Swift.h</key>
 		<data>
-		rXrj4MF+NycyCpzKJymnpHKqFOE=
+		CHWN3BOOjNBdSnIz0mOG+QLP/BY=
 		</data>
 		<key>Headers/GFPSDK.h</key>
 		<data>
@@ -522,47 +522,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		h89aCKdYfp7w5F8JHCrwE5EuHiQ=
+		GJOkNhIakBTKbiE13rBGTjfoXwE=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6I9gDGpP3kmikStfLFB0it2G4OI=
+		NbWUhiiQKyUif1sODtQpMLCPYFs=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8mS9nPM1aq2oDUVX3cdiCRMCVo4=
+		dAOfrd4jzZL0LWLvDQhhye4nt7M=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zCMCmlupqG/AgOtnpHzFwwZNJQI=
+		S7H6y85/6vXPcBeaMvQytsnHJiY=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8mS9nPM1aq2oDUVX3cdiCRMCVo4=
+		dAOfrd4jzZL0LWLvDQhhye4nt7M=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yOw132hjZ+L+szWcnhl6PUu0vF0=
+		hDgZ5sv2PKBoWHPUQVtj379Mwuk=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6I9gDGpP3kmikStfLFB0it2G4OI=
+		NbWUhiiQKyUif1sODtQpMLCPYFs=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+hcH3pC9AqsYLGLiotK3rpNVpbQ=
+		xGlzGPQOak0oqN7xC3vLEt+p40c=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		B9cHKv3CZwLFhbwJ5UsVRQ7UCx0=
+		3j7Zxfv3XOhqjEvwO1/dE/3pGZA=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+hcH3pC9AqsYLGLiotK3rpNVpbQ=
+		xGlzGPQOak0oqN7xC3vLEt+p40c=
 		</data>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		elIHruQWNnjgvcZW4AhDXTeJ9dk=
+		qqjunsyGvlywRcBZB+eNTVvibZE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1679,11 +1679,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rXrj4MF+NycyCpzKJymnpHKqFOE=
+			CHWN3BOOjNBdSnIz0mOG+QLP/BY=
 			</data>
 			<key>hash2</key>
 			<data>
-			46B7GgLS7bsTEiHk6QjyehZDj2KIABRNtuqESfIa0L8=
+			6OCVc3wSAoPVnryy0slpMjRzjs99xE5xQshpk3eg3o0=
 			</data>
 		</dict>
 		<key>Headers/GFPSDK.h</key>
@@ -1998,110 +1998,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6I9gDGpP3kmikStfLFB0it2G4OI=
+			NbWUhiiQKyUif1sODtQpMLCPYFs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fFq7n58Hg88BDw7hMGBBLBjTbaksmEDfUYQl9C8h2wc=
+			iO2YZxFB7vOZA31x0KCeY6KjFJPyq5Sq+oMyNEXbBb8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8mS9nPM1aq2oDUVX3cdiCRMCVo4=
+			dAOfrd4jzZL0LWLvDQhhye4nt7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			jnUnVGTkcUgqWee44paWI+FlXpP4haFjxkQSOI9brNU=
+			Rkqwx2pq7h8c004fhLuD/ogk19snUM6bm0qFVrJXAXc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zCMCmlupqG/AgOtnpHzFwwZNJQI=
+			S7H6y85/6vXPcBeaMvQytsnHJiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/899Ef8ss2OPFGwrOqIN0BnDdRrvH2ZiTWkAX7TcpjM=
+			lWVd6i32xgiEcUkB9l+cX4BI0TFYRBVKEne55oHMtag=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8mS9nPM1aq2oDUVX3cdiCRMCVo4=
+			dAOfrd4jzZL0LWLvDQhhye4nt7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			jnUnVGTkcUgqWee44paWI+FlXpP4haFjxkQSOI9brNU=
+			Rkqwx2pq7h8c004fhLuD/ogk19snUM6bm0qFVrJXAXc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yOw132hjZ+L+szWcnhl6PUu0vF0=
+			hDgZ5sv2PKBoWHPUQVtj379Mwuk=
 			</data>
 			<key>hash2</key>
 			<data>
-			8d76jwPOoiBfE6d5uALgKZ0FqSYkFxsHn55qzwvdf84=
+			eIGnjoM5WJZ9aCY8mvWmcEV8+MmIKsggc06mjAjgkSk=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6I9gDGpP3kmikStfLFB0it2G4OI=
+			NbWUhiiQKyUif1sODtQpMLCPYFs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fFq7n58Hg88BDw7hMGBBLBjTbaksmEDfUYQl9C8h2wc=
+			iO2YZxFB7vOZA31x0KCeY6KjFJPyq5Sq+oMyNEXbBb8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+hcH3pC9AqsYLGLiotK3rpNVpbQ=
+			xGlzGPQOak0oqN7xC3vLEt+p40c=
 			</data>
 			<key>hash2</key>
 			<data>
-			PUKboMKLP3LCVDtnozzPunl528QgxT2tNiGbynrdVgo=
+			4Gnai6xhdcMZEyKF6B3cNRyfAzxleNb3kduHdvglZq8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B9cHKv3CZwLFhbwJ5UsVRQ7UCx0=
+			3j7Zxfv3XOhqjEvwO1/dE/3pGZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UnPsQnHofHTB+Gx8KpMWNk51TjpGRZZz8e+8YnzJdzM=
+			S2JAXc58tZAHwvx6CL5HdaD4lFPXB2qiy+aqhZ9cf0E=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+hcH3pC9AqsYLGLiotK3rpNVpbQ=
+			xGlzGPQOak0oqN7xC3vLEt+p40c=
 			</data>
 			<key>hash2</key>
 			<data>
-			PUKboMKLP3LCVDtnozzPunl528QgxT2tNiGbynrdVgo=
+			4Gnai6xhdcMZEyKF6B3cNRyfAzxleNb3kduHdvglZq8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			elIHruQWNnjgvcZW4AhDXTeJ9dk=
+			qqjunsyGvlywRcBZB+eNTVvibZE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/mg+cjUaiaqC5rHoebd/MIHVThx4NsFOnmE+/Y2/Rzg=
+			923etFzinpLJABh3Wi82bKhHf6LY3qEDUE/YVMlpItI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

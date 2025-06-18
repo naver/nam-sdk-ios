@@ -13,6 +13,7 @@ let package = Package(
     products: [
         .library(
             name: "GFPSDK",
+            type: .static,
             targets: ["Core", "AdRenderer", "MediationNDA", "MediationNDAVideo", "MediationNDARich"]
         ),
     ],
@@ -41,7 +42,8 @@ let package = Package(
             ],
             path: "NAMSDK/SPM_Dummy/Core",
             resources: [
-                .copy("../../resourcebundle/GFPSDKResource.bundle")
+                .copy("../../resourcebundle/GFPSDKResource.bundle"),
+                .copy("../../xcframework/GFPSDK.xcframework/ios-arm64/GFPSDK.framework/PrivacyInfo.xcprivacy")
             ],
             cSettings: [ .define("NAM") ],
             swiftSettings: [ .define("NAM") ]
