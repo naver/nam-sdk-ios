@@ -42,7 +42,9 @@ let package = Package(
             path: "NAMSDK/SPM_Dummy/Core",
             resources: [
                 .copy("../../resourcebundle/GFPSDKResource.bundle")
-            ]
+            ],
+            cSettings: [ .define("NAM") ],
+            swiftSettings: [ .define("NAM") ],
         ),
 
         // adRenderer
