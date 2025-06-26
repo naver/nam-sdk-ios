@@ -48,6 +48,7 @@ fileprivate extension String {
     static let apsSlotInfo = "SettingsManager.apsSlotInfo"
     static let apsAppKeys = "SettingsManager.apsAppKeys"
     static let useImageCache = "SettingManager.useImageCache"
+    static let useNativeTemplate = "SettingManager.useNativeTemplate"
 }
 
 extension Notification.Name {
@@ -77,6 +78,7 @@ class SettingsManager: NSObject {
         logLevel = logLevel
         phase = phase
         useImageCache = useImageCache
+        useNativeTemplate = useNativeTemplate
         timeoutDisplayAd = timeoutDisplayAd
         timeoutVideoAd = timeoutVideoAd
         timeoutRewardedAd = timeoutRewardedAd
@@ -99,6 +101,7 @@ class SettingsManager: NSObject {
         phase = .real
         displayAgent = .displayAgentTypeInApp
         useImageCache = false
+        useNativeTemplate = false
         setTimeout(60.0, forType: .displayAd)
         setTimeout(60.0, forType: .videoAd)
         setTimeout(60.0, forType: .rewardedAd)
@@ -512,6 +515,9 @@ PrebidConfigInfo(configId: "6ace8c7d-88c0-4623-8117-75bc3f0a2e45", size: .init(w
     @Persisted(key: .useImageCache, defaultValue: false)
     var useImageCache: Bool
 
+    @Persisted(key: .useNativeTemplate, defaultValue: false)
+    var useNativeTemplate: Bool
+
     func clearImageCache() {
         GFPAdManager.clearMemoryCache()
     }
@@ -535,7 +541,20 @@ PrebidConfigInfo(configId: "6ace8c7d-88c0-4623-8117-75bc3f0a2e45", size: .init(w
         simpleRenderingSetting.adInterfaceStyle = .init(rawValue: darkMode.rawValue)
         let nativeSimpleOptions = GFPAdNativeSimpleOptions()
         nativeSimpleOptions.simpleAdRenderingSetting = simpleRenderingSetting
+        nativeSimpleOptions.templateOptions = self.nativeTemplateOptions
         return nativeSimpleOptions
+    }
+
+    var nativeTemplateOptions: GFPNativeTemplateOptions {
+        let templateOptions = GFPNativeTemplateOptions(useNativeTemplate: useNativeTemplate, nativeOptions: self.nativeOptions)
+
+//        let customTemplateView = CustomTemplateView.createView()
+//        
+//        if let customTemplateView = customTemplateView as? UIView & GFPNativeTemplateViewProtocol {
+//            templateOptions.addTemplate(with: kGFPTemplateVisualKey.defaultVisualKey, templateView: customTemplateView)
+//        }
+
+        return templateOptions
     }
 
     var videoRenderingSetting: GFPVideoAdRenderingSetting {

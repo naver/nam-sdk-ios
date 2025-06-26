@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F012E152E0D24FC00285136 /* CustomTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F012E142E0D24FC00285136 /* CustomTemplateView.xib */; };
+		1F012E172E0D252B00285136 /* CustomTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F012E162E0D252B00285136 /* CustomTemplateView.swift */; };
 		1F938A1125AEB42D00EC4BF4 /* GFPNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F938A0F25AEB42D00EC4BF4 /* GFPNativeAdView.xib */; };
 		1F938A1225AEB42D00EC4BF4 /* GFPNativeSimpleAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F938A1025AEB42D00EC4BF4 /* GFPNativeSimpleAdView.xib */; };
 		1F938A1C25AEC5A800EC4BF4 /* CallHistoryTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F938A1B25AEC5A800EC4BF4 /* CallHistoryTextView.swift */; };
@@ -63,6 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F012E142E0D24FC00285136 /* CustomTemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTemplateView.xib; sourceTree = "<group>"; };
+		1F012E162E0D252B00285136 /* CustomTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTemplateView.swift; sourceTree = "<group>"; };
 		1F938A0F25AEB42D00EC4BF4 /* GFPNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFPNativeAdView.xib; sourceTree = "<group>"; };
 		1F938A1025AEB42D00EC4BF4 /* GFPNativeSimpleAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFPNativeSimpleAdView.xib; sourceTree = "<group>"; };
 		1F938A1B25AEC5A800EC4BF4 /* CallHistoryTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryTextView.swift; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 		CEC58C952A0E0A2900C22FF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F012E142E0D24FC00285136 /* CustomTemplateView.xib */,
+				1F012E162E0D252B00285136 /* CustomTemplateView.swift */,
 				1F938A0F25AEB42D00EC4BF4 /* GFPNativeAdView.xib */,
 				1F938A1025AEB42D00EC4BF4 /* GFPNativeSimpleAdView.xib */,
 			);
@@ -441,6 +447,7 @@
 				CEFB1C8B28111F1B00F37E11 /* UnitIDViewController.storyboard in Resources */,
 				1FB55D0D2563B88F00486B6F /* Assets.xcassets in Resources */,
 				1F938A1225AEB42D00EC4BF4 /* GFPNativeSimpleAdView.xib in Resources */,
+				1F012E152E0D24FC00285136 /* CustomTemplateView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +531,7 @@
 				CEC380E929F1052700F5FEA8 /* SwitchCell.swift in Sources */,
 				CEFB1C7E28111EFD00F37E11 /* StringExtensions.swift in Sources */,
 				CEFB1CA62811241000F37E11 /* RewardedAdExample.swift in Sources */,
+				1F012E172E0D252B00285136 /* CustomTemplateView.swift in Sources */,
 				1FB55F17256605A800486B6F /* SettingsViewController.swift in Sources */,
 				CEC58C812A0DD9FA00C22FF1 /* TableViewAdExample.swift in Sources */,
 				CEC58C7B2A08D46100C22FF1 /* SettingsInitializeDetailVC.swift in Sources */,

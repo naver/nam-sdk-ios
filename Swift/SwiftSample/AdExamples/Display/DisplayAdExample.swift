@@ -138,8 +138,8 @@ class DisplayAdExample: AdViewController {
     }
 
     private func updateSimpleAdViewSize(size : CGSize) {
-        self.nativeSimpleAdView?.frame.size = size
-        self.nativeSimpleAdView?.mediaView?.frame.size = size
+        self.nativeSimpleAdView?.updateSizeWith(type: .height, value: size.height)
+        self.nativeSimpleAdView?.mediaView?.updateSizeWith(type: .height, value: size.height)
     }
     
     //MARK: - View Position & frame
@@ -215,9 +215,8 @@ extension DisplayAdExample : GFPAdLoaderDelegate {
 
         self.view.addSubview(nativeAdView)
 
-        nativeAdView.snp.makeConstraints { make in
-            make.top.centerX.equalToSuperview()
-        }
+        nativeAdView.updateSizeWith(type: .width, value: self.view.bounds.size.width)
+        nativeAdView.mediaView?.updateSizeWith(type: .width, value: self.view.bounds.size.width)
 
         nativeAdView.nativeAd = nativeAd
 
@@ -239,11 +238,8 @@ extension DisplayAdExample : GFPAdLoaderDelegate {
         nativeSimpleAd.delegate = self
         self.view.addSubview(self.nativeSimpleAdView!)
 
-        self.nativeSimpleAdView?.snp.makeConstraints { make in
-            make.top.centerX.equalToSuperview()
-            make.width.equalTo(UIScreen.main.bounds.width)
-            make.height.equalTo(140)
-        }
+        self.nativeSimpleAdView?.updateSizeWith(type: .width, value: self.view.bounds.size.width)
+        self.nativeSimpleAdView?.mediaView?.updateSizeWith(type: .width, value: self.view.bounds.size.width)
 
         self.nativeSimpleAdView?.nativeAd = nativeSimpleAd
         self.nativeSimpleAdView?.showDebugBorder(withColor: .green)
