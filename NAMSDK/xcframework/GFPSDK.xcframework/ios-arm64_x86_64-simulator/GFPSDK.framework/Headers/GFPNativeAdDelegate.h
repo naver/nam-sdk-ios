@@ -17,8 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeAdDelegate <NSObject>
 @optional
+
 /**
- * 광고가 사용자에게 보여진 경우 호출됩니다.
+ * 광고가 렌더링 될 때 호출됩니다. (rendered impression)
+ * @param nativeAd 네이티브 광고 응답객체
+ */
+- (void)nativeAdWasRendered:(GFPNativeAd *)nativeAd;
+
+/**
+ * 광고가 사용자에게 보여진 경우 호출됩니다. (viewable impression)
  * @param nativeAd   네이티브 광고 응답객체
  */
 - (void)nativeAdWasSeen:(GFPNativeAd *)nativeAd;
@@ -77,6 +84,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeSimpleAdDelegate <NSObject>
 @optional
+
+/**
+ * 광고가 렌더링 될 때 호출됩니다. (rendered impression)
+ * @param nativeSimpleAd   네이티브 광고 응답객체
+ */
+- (void)nativeSimpleAdWasRendered:(GFPNativeSimpleAd *)nativeSimpleAd;
 
 /**
  * 광고가 사용자에게 보여진 경우 호출됩니다.

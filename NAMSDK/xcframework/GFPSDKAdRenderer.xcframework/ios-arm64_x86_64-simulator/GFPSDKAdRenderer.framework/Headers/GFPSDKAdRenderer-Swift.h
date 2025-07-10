@@ -326,8 +326,8 @@ SWIFT_CLASS_NAMED("GFPGradientLabelView")
 
 SWIFT_CLASS_NAMED("GFPRendererShoppingLabelView")
 @interface GFPRendererShoppingLabelView : UIView
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyAttentionBadge;)
-+ (NSString * _Nonnull)extraKeyAttentionBadge SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyNStore;)
++ (NSString * _Nonnull)extraKeyNStore SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelText;)
 + (NSString * _Nonnull)extraKeyLabelText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelText2;)
@@ -341,7 +341,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 @class UILabel;
 @class GFPMediaView;
@@ -360,6 +359,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 SWIFT_CLASS_NAMED("GFPRendererShoppingNDAView")
@@ -384,6 +384,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
 - (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
@@ -820,8 +821,8 @@ SWIFT_CLASS_NAMED("GFPGradientLabelView")
 
 SWIFT_CLASS_NAMED("GFPRendererShoppingLabelView")
 @interface GFPRendererShoppingLabelView : UIView
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyAttentionBadge;)
-+ (NSString * _Nonnull)extraKeyAttentionBadge SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyNStore;)
++ (NSString * _Nonnull)extraKeyNStore SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelText;)
 + (NSString * _Nonnull)extraKeyLabelText SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelText2;)
@@ -835,7 +836,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 @class UILabel;
 @class GFPMediaView;
@@ -854,6 +854,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 SWIFT_CLASS_NAMED("GFPRendererShoppingNDAView")
@@ -878,6 +879,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
 - (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;

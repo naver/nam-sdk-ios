@@ -40,6 +40,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)bannerView:(GFPBannerView *)bannerView didFailToReceiveAdWithError:(GFPError *)error;
 
 /**
+ * 배너 광고가 렌더링 될 때 호출됩니다. (rendered impression)
+ * @param bannerView GFPBannerView
+ */
+- (void)bannerAdWasRendered:(GFPBannerView *)bannerView;
+
+/**
  * 배너 광고가 사용자에게 보여진 경우 호출됩니다.(viewable impression)
  * @param bannerView GFPBannerView
  */

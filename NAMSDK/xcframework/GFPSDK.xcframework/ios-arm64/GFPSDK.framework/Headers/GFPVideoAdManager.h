@@ -115,6 +115,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)load;
 
 /**
+ * 광고를 요청합니다.
+ * 응답결과는 GFPVideoAdManagerDelegate 를 통해 받으실 수 있습니다.
+ * @param delayMills 광고 요청 딜레이 시간입니다. 생중계 광고를 위한 옵션입니다.
+ */
+- (void)loadWithDelay:(NSInteger)delayMills;
+
+/**
  * 광고를 재생합니다.
  * (광고가 성공적으로 르드된 경우에 호출해주세요.)
  */
@@ -149,6 +156,10 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (void)hideOverlay;
 
+/**
+ * PIP모드 재생 중 컨트롤러를 수동으로 Hide/Show할 경우 호출합니다.
+*/
+- (void)tapControlPIPUI;
 
 /**
  * 광고 Skip 버튼 클릭을 원하는 경우, action 연결.

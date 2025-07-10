@@ -44,6 +44,8 @@
 
 - (void)hideOverlay;
 
+- (void)tapControlPIPUI;
+
 - (IBAction)skipButtonTapped:(id _Nullable)sender;
 - (IBAction)moreButtonTapped:(id _Nullable)sender;
 

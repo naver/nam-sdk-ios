@@ -48,6 +48,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
+extern NSString * const kGFPGeneratedScheduleRequestId;
+
+
 @interface GFPVideoSchedule : NSObject
 
 

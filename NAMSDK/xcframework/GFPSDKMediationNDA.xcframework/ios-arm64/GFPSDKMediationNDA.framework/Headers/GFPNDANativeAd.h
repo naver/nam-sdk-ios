@@ -36,6 +36,7 @@
 
 - (void)nativeAdDidLoad:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd didFailWithError:(GFPError *)error;
+- (void)nativeAdWasRendered:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdWasSeen:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdWasClicked:(GFPNDANativeAd *)nativeAd trackerList:(NSArray <NSString *> *)trackerList;
 - (void)nativeAdMuteWasClicked:(GFPNDANativeAd *)nativeAd eventTracking:(GFPAdEventObject *)eventTracking;
@@ -81,6 +82,7 @@
 @property (nonatomic, assign, readonly) CGSize cropSize;
 
 @property (nonatomic, strong, readonly) NSDictionary <NSString *, NSObject *> *extraInfo;
+@property (readwrite, nonatomic, nullable, strong) NSNumber *slotIndex;
 
 @property (nonatomic, strong) NSNumber *vastMaxRedirect;
 
@@ -128,5 +130,5 @@
 
 //for link
 - (void)tapGestureWith:(GFPNDANativeTapGesture *)gesture;
-- (void)tryLandingWith:(GFPNDANativeTapGesture *)gesture;
+- (void)tryLandingWith:(GFPNDANativeTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
 @end

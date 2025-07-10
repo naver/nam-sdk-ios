@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 - (void)nativeAdWasClicked:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdaptor;
 
+- (void)nativeAdWasOnRenderedImpression:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdaptor;
+
 - (void)nativeAdWasOnActiveImpression:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdaptor;
 
 - (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor didFailWithError:(GFPError *)error;
@@ -45,8 +47,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nativeAdAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
 - (void)nativeAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
-
-
 @end
 
 NS_ASSUME_NONNULL_END

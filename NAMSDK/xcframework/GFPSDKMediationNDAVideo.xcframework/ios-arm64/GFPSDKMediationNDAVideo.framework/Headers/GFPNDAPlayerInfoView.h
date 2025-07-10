@@ -11,6 +11,7 @@
 @class GFPNDAVastControlInfo;
 @class GFPNDAPlayerInfoView;
 @class GFPTrackingURLs;
+@class GFPVideoAdRenderingSetting;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -44,7 +45,8 @@ static const CGFloat kPlayerInfoViewMaxHeight = 56.0;
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 - (instancetype)initWithFrame:(CGRect)frame 
-                  controlInfo:(GFPNDAVastControlInfo *)aControlInfo NS_DESIGNATED_INITIALIZER;
+                  controlInfo:(GFPNDAVastControlInfo *)aControlInfo
+             renderingSetting:(nullable GFPVideoAdRenderingSetting *)renderingSetting NS_DESIGNATED_INITIALIZER;
 
 - (void)updateCurrentTime:(NSTimeInterval)aCurrentTime;
 
@@ -54,6 +56,8 @@ static const CGFloat kPlayerInfoViewMaxHeight = 56.0;
 - (void)updateInfoViewWith:(GFPNDAPlayerInfoViewType)viewType;
 
 - (IBAction)skipTappedByService:(id)sender;
+
+- (void)start;
 
 @end
 

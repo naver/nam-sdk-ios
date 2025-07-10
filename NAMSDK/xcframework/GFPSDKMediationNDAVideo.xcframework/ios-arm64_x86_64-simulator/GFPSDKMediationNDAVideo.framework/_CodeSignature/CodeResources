@@ -38,11 +38,11 @@
 		</data>
 		<key>Headers/GFPNDAPlayerControlPIPView.h</key>
 		<data>
-		ScORJp42arnI6DTQWa6oywYv3/I=
+		OeFK8eqeujd7goDgUeKbDxNgXBo=
 		</data>
 		<key>Headers/GFPNDAPlayerControlView.h</key>
 		<data>
-		BvCJYp2QR3SyH12SAc1cNfc2HyY=
+		W1izWJE2jynEO/+5/uxykzo8zR8=
 		</data>
 		<key>Headers/GFPNDAPlayerControlViewDelegate.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/GFPNDAPlayerInfoView.h</key>
 		<data>
-		rM15/UVjgj9XIFBBKvdCPKfn5ls=
+		dsWu7n8Tx82EXJOsZbNwP0G2muM=
 		</data>
 		<key>Headers/GFPNDAPlayerKeywordView.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/GFPNDAVideoAdManager.h</key>
 		<data>
-		ij692TT/OIrjL/tdwQGSebKvdbI=
+		FUTd4DD9UZV89pTdUI/VSC9bGh8=
 		</data>
 		<key>Headers/GFPNDAVideoAdaptor.h</key>
 		<data>
@@ -397,22 +397,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ScORJp42arnI6DTQWa6oywYv3/I=
+			OeFK8eqeujd7goDgUeKbDxNgXBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hSUaV+KnrjzQpoLiQ9BcEY00vS+xnUCmuYxoSv+TnMI=
+			JrvVo5z1i+o+j6AsDow+rti2B48X2vKdap+a5vX9zVM=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerControlView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BvCJYp2QR3SyH12SAc1cNfc2HyY=
+			W1izWJE2jynEO/+5/uxykzo8zR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			SiVsMpRniKcw4UCKClPQNlKexZSVF/8HL+1/iExe+No=
+			afWmVI6XdV3QHzsKxKyLzZ7f42i2qZd/R5jondBcSlY=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerControlViewDelegate.h</key>
@@ -452,11 +452,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rM15/UVjgj9XIFBBKvdCPKfn5ls=
+			dsWu7n8Tx82EXJOsZbNwP0G2muM=
 			</data>
 			<key>hash2</key>
 			<data>
-			qmZqVwV5jftP6SJmZPJ8UJWnbLh4XCJE86gzjLBjIzc=
+			DRYSKHwLfpupV7jsknT1OkUd31tS2h2/bMmpe6S6xw8=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerKeywordView.h</key>
@@ -562,11 +562,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ij692TT/OIrjL/tdwQGSebKvdbI=
+			FUTd4DD9UZV89pTdUI/VSC9bGh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			d1YD8+qFoMeDW+EbU6KUtml7oNRpmVJmXukarYnXCNU=
+			s9WWAs7yDZ5uUkpmqWtjLhn7B5NZGtxfjoHIrT63zIo=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAVideoAdaptor.h</key>

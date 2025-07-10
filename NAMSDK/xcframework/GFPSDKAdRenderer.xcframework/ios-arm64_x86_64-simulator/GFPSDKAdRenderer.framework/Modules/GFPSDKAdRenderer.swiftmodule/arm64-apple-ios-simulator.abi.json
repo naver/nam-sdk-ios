@@ -1124,6 +1124,40 @@
           },
           {
             "kind": "Function",
+            "name": "bodyAssetView",
+            "printedName": "bodyAssetView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)bodyAssetView",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC13bodyAssetViewSo6UIViewCSgyF",
+            "moduleName": "GFPSDKAdRenderer",
+            "declAttributes": [
+              "Dynamic",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "extraView",
             "printedName": "extraView(with:)",
             "children": [
@@ -1985,8 +2019,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "extraKeyAttentionBadge",
-            "printedName": "extraKeyAttentionBadge",
+            "name": "extraKeyNStore",
+            "printedName": "extraKeyNStore",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1996,11 +2030,11 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(cpy)extraKeyAttentionBadge",
-            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC22extraKeyAttentionBadgeSSvpZ",
+            "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(cpy)extraKeyNStore",
+            "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC14extraKeyNStoreSSvpZ",
             "moduleName": "GFPSDKAdRenderer",
             "static": true,
-            "objc_name": "extraKeyAttentionBadge",
+            "objc_name": "extraKeyNStore",
             "declAttributes": [
               "HasInitialValue",
               "Final",
@@ -2027,8 +2061,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(cm)extraKeyAttentionBadge",
-                "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC22extraKeyAttentionBadgeSSvgZ",
+                "usr": "c:@M@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingLabelView(cm)extraKeyNStore",
+                "mangledName": "$s16GFPSDKAdRenderer28GFPRendererShoppingLabelViewC14extraKeyNStoreSSvgZ",
                 "moduleName": "GFPSDKAdRenderer",
                 "static": true,
                 "implicit": true,
@@ -4680,184 +4714,226 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1075,
+      "offset": 1084,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1250,
-      "length": 2,
-      "value": "84"
+      "offset": 1259,
+      "length": 3,
+      "value": "140"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1294,
-      "length": 2,
-      "value": "84"
+      "offset": 1304,
+      "length": 3,
+      "value": "140"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1337,
+      "offset": 1348,
       "length": 3,
       "value": "393"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1385,
+      "offset": 1396,
       "length": 3,
       "value": "390"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1435,
+      "offset": 1446,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1480,
+      "offset": 1491,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1531,
+      "offset": 1542,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1576,
+      "offset": 1587,
       "length": 2,
-      "value": "36"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1621,
-      "length": 2,
-      "value": "10"
+      "offset": 1642,
+      "length": 1,
+      "value": "6"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1664,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1713,
+      "offset": 1704,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "StringLiteral",
-      "offset": 542,
-      "length": 16,
-      "value": "\"attentionbadge\""
+      "offset": 526,
+      "length": 8,
+      "value": "\"nstore\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 606,
       "length": 11,
       "value": "\"labeltext\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "StringLiteral",
-      "offset": 715,
+      "offset": 691,
       "length": 12,
       "value": "\"labeltext2\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "StringLiteral",
-      "offset": 801,
+      "offset": 777,
       "length": 7,
       "value": "\"label\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 860,
       "length": 8,
       "value": "\"label2\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 937,
+      "offset": 913,
       "length": 4,
       "value": "35.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 979,
+      "offset": 955,
       "length": 4,
       "value": "71.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 1021,
+      "offset": 997,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 1056,
+      "offset": 1032,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 1094,
+      "offset": 1070,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 1142,
+      "offset": 1121,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 1177,
-      "length": 4,
-      "value": "20.0"
+      "offset": 1171,
+      "length": 3,
+      "value": "6.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "FloatLiteral",
-      "offset": 1212,
+      "offset": 1220,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1261,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1296,
+      "length": 4,
+      "value": "70.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1331,
+      "length": 4,
+      "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1366,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1403,
+      "length": 4,
+      "value": "24.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1439,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
       "kind": "StringLiteral",
-      "offset": 1295,
+      "offset": 1522,
       "length": 9,
-      "value": "\"#FF6968\""
+      "value": "\"#FDF2F3\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingLabelView.swift",
+      "kind": "StringLiteral",
+      "offset": 1600,
+      "length": 9,
+      "value": "\"#D40021\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererSmartChannelFlickingView.swift",

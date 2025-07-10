@@ -13,6 +13,7 @@
 #import "Swift-Enum.h"
 #import "GFPAdScheduleParam.h"
 #import "GFPAdvertiseParams.h"
+#import "GFPVideoSchedule.h"
 
 #import "GFPVideoAdScheduleManagerDelegate.h"
 #import "GFPNonLinearDelegate.h"
@@ -24,6 +25,7 @@
 @class GFPVideoAdRenderingSetting;
 @class GFPVideoDisplayMode;
 @class GFPVideoAdPlayerSetting;
+@class GFPVideoSchedule;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -38,7 +40,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong, nonnull) NSString *adScheduleID;
 @property (nonatomic, readonly, strong) AVPlayer *contentPlayer;
 @property (nonatomic, readonly, strong) UIView *videoView;
-
 @property (nonatomic, readonly, strong) GFPAdScheduleParam *scheduleParam;
 
 // Readwrite
@@ -56,16 +57,17 @@ NS_ASSUME_NONNULL_BEGIN
  **/
 @property (nonatomic, assign) float volume;
 
-
+@property (nonatomic, strong) GFPVideoSchedule *adSchedule;
 /**
  * 구글 광고 로드를 위해서는 필수 조건 (View hierachy가 있는 ViewController.)
-*/
+ */
 @property (nonatomic, weak, nullable) UIViewController *rootViewController;
 
 
 - (instancetype)initWithAdScheduleID:(NSString * _Nonnull)aAdScheduleID contentPlayer:(AVPlayer *)aContentPlayer videoView:(UIView *)aVideoView scheduleParam:(GFPAdScheduleParam *)aScheduleParam;
 
 - (void)loadSchedule;
+- (void)loadScheduleWith:(GFPVideoSchedule *)schedule;
 
 - (void)startWith:(BOOL)isNormal;
 
@@ -86,9 +88,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)hideOverlayView;
 
 /**
+ * PIP모드의 Tap Gesture를 수동으로 발생시킵니다.
+ */
+- (void)tapControlPIPUI;
+
+/**
  * RemindAd(Banner, Text) 광고를 노출합니다.
  * ContainerType 없이 기본 위치에 노출. [배너 : Inner, 텍스트 : 가로 방향 (Inner), 세로 방향 (Outer)]
-*/
+ */
 - (void)showNonLinearAd;
 
 /**
@@ -118,10 +125,17 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * RemindAd(Banner, Text) outer 광고 컨테이너를 변경합니다.
  * @param textAdViewAttribute 새로 셋팅해 줄 containerViewAttribute
-*/
+ */
 - (void)replaceTextAdViewAttribute:(GFPTextAdViewAttribute *)textAdViewAttribute;
 
 
+/**
+ * 스케줄 주입을 위한 응답정보를 생성합니다.
+ * @param adUnitId ad unit id
+ * @param adsCount 재생할 광고 수
+ */
++ (GFPVideoSchedule * __nullable)generatePreRollVideoSchedule:(NSString *)adUnitId
+                                                     adsCount:(NSInteger)adsCount;
 @end
 
 NS_ASSUME_NONNULL_END

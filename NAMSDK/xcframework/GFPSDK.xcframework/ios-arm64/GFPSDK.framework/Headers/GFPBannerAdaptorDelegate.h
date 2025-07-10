@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)bannerAdDidFailedToRendering:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor error:(GFPError *)error;
 
 - (void)bannerAdWasClicked:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;
+- (void)bannerAdWasOnRenderedImpression:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;
 - (void)bannerAdWasOnActiveImpression:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor;
 
 - (void)bannerAdaptor:(GFPAdAdaptor <GFPBannerAdapting> *)bannerAdaptor didChangeWith:(GFPBannerAdSize *)size type:(GFPBannerSizeChangeType)changeType;

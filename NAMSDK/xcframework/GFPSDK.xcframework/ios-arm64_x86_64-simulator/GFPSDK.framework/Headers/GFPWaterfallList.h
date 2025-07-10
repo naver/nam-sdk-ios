@@ -18,6 +18,7 @@
 @class GFPAdInfo;
 @class GFPAdInfoSize;
 @class GFPAdInfoStyle;
+@class GFPAdMetaData;
 @class GFPError;
 @class GFPAdHTML;
 @class GFPAdSkipData;
@@ -229,6 +230,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong, nullable) GFPAdInfoID *adInfoID;
 
 @property (readonly, nonatomic, strong, nullable) GFPOMIDInfo *omidInfo;
+
+@property (readonly, nonatomic, strong, nullable) GFPAdMetaData *adContext;
 
 - (instancetype)init NS_UNAVAILABLE;
     

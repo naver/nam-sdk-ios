@@ -44,6 +44,7 @@ extension GFPSDKAdRenderer.GFPRendererShoppingNDAView : GFPSDK.GFPNativeTemplate
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func bodyAssetView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
@@ -67,7 +68,7 @@ extension GFPSDKAdRenderer.GFPRendererShoppingNDAView : GFPSDK.GFPNativeTemplate
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(GFPRendererShoppingLabelView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPRendererShoppingLabelView : UIKit.UIView {
-  @objc(extraKeyAttentionBadge) @_Concurrency.MainActor @preconcurrency public static let extraKeyAttentionBadge: Swift.String
+  @objc(extraKeyNStore) @_Concurrency.MainActor @preconcurrency public static let extraKeyNStore: Swift.String
   @objc(extraKeyLabelText) @_Concurrency.MainActor @preconcurrency public static let extraKeyLabelText: Swift.String
   @objc(extraKeyLabelText2) @_Concurrency.MainActor @preconcurrency public static let extraKeyLabelText2: Swift.String
   @objc(extraKeyLabelImage) @_Concurrency.MainActor @preconcurrency public static let extraKeyLabelImage: Swift.String

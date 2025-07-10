@@ -798,6 +798,12 @@ SWIFT_CLASS("_TtC6GFPSDK12GFPUserAgent")
 @end
 
 
+SWIFT_PROTOCOL("_TtP6GFPSDK49GFPVideoAdAdditionalViewDataAccessibilityProvider_")
+@protocol GFPVideoAdAdditionalViewDataAccessibilityProvider
+- (UIView * _Nullable)additionalAdAccessibilityView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// <ul>
 ///   <li>
 ///     Schedule Load 이후 비디오 광고 요청에 필요한 별도 Param 생성.
@@ -867,6 +873,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// false: GFPVideoAdScheduleManager.videoView 혹은 GFPVideoAdmanager.videoView 의 너비에 따라 컴포넌트를 그림.
 /// true: 광고 영상의 실제 width 에 따라 컴포넌트를 그림.
 @property (nonatomic) BOOL isPreferContentWidthUI;
+/// 인스트림의 SKIP 버튼 위의 Additional Info를 표기할 뷰입니다.
+/// adCount 등에 사용됩니다.
+@property (nonatomic, strong) UIView <GFPVideoAdAdditionalViewDataAccessibilityProvider> * _Nullable adAdditionalInfoView;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1764,6 +1773,12 @@ SWIFT_CLASS("_TtC6GFPSDK12GFPUserAgent")
 @end
 
 
+SWIFT_PROTOCOL("_TtP6GFPSDK49GFPVideoAdAdditionalViewDataAccessibilityProvider_")
+@protocol GFPVideoAdAdditionalViewDataAccessibilityProvider
+- (UIView * _Nullable)additionalAdAccessibilityView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// <ul>
 ///   <li>
 ///     Schedule Load 이후 비디오 광고 요청에 필요한 별도 Param 생성.
@@ -1833,6 +1848,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// false: GFPVideoAdScheduleManager.videoView 혹은 GFPVideoAdmanager.videoView 의 너비에 따라 컴포넌트를 그림.
 /// true: 광고 영상의 실제 width 에 따라 컴포넌트를 그림.
 @property (nonatomic) BOOL isPreferContentWidthUI;
+/// 인스트림의 SKIP 버튼 위의 Additional Info를 표기할 뷰입니다.
+/// adCount 등에 사용됩니다.
+@property (nonatomic, strong) UIView <GFPVideoAdAdditionalViewDataAccessibilityProvider> * _Nullable adAdditionalInfoView;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

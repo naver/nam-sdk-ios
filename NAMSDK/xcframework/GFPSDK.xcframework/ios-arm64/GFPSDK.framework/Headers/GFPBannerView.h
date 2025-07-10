@@ -25,6 +25,7 @@
 @class GFPAdAdaptor;
 @class GFPLoadResponseInfo;
 @class GFPAdBannerWebViewOptions;
+@class GFPAdMetaData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -98,6 +99,11 @@ NS_ASSUME_NONNULL_BEGIN
  * 광고 응답 객체
  */
 @property (readonly, nonatomic, strong) GFPLoadResponseInfo *responseInfo;
+
+/**
+ * 광고 메타 데이터
+ */
+@property (readwrite, nonatomic, strong) GFPAdMetaData *adMetaData;
 
 /**
  * WebView options

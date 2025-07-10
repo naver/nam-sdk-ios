@@ -132,7 +132,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 //For carousel
 @protocol GFPNDAMediaAssetTouchDelegate <NSObject>
 
-- (void) didClickAssetWith:(GFPNDANativeTapGesture *)gesture;
+- (void) didClickAssetWith:(GFPNDANativeTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
 
 @end
 

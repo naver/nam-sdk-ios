@@ -7,10 +7,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Swift-Enum.h"
+#import "GFPPlaceholderHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GFPMediaView : UIView 
+@interface GFPMediaView : UIView
+
+- (void)showPlaceholderWith:(GFPPlaceholderHandler _Nullable)placeholderSetter;
 
 @end
 

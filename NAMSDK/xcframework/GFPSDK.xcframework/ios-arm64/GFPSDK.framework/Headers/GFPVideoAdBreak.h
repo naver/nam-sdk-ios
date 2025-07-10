@@ -55,6 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) GFPVideoPlacementType type;
 @property (nonatomic, readonly, strong) NSString *sourceID;
 @property (nonatomic, readonly, assign) BOOL hasRemindAd;
+@property (nonatomic, readonly, assign) NSInteger delayMills;
 
 
 - (instancetype)initWithDictionary:(NSDictionary *)aDict type:(GFPVideoPlacementType)aType;

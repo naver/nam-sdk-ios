@@ -15,6 +15,7 @@
 @class UIImage;
 
 @class GFPLoadResponseInfo;
+@class GFPAdMetaData;
 @class GFPMediaData;
 @class GFPIconData;
 @class GFPLabelOption;
@@ -110,6 +111,16 @@ extern NSString *const kGFPNativeIconSizeKey;
 
 @interface GFPNativeAd : GFPNativeAdBase <GFPNativeAssetProtocol>
 
+/**
+ * 광고 응답 객체
+ */
+@property (readwrite, nonatomic, strong) GFPLoadResponseInfo *responseInfo;
+
+/**
+ * 광고 메타 데이터
+ */
+@property (readwrite, nonatomic, strong, nullable) GFPAdMetaData *adMetaData;
+
 @property (readwrite, nonatomic, weak) id <GFPNativeAdDelegate> delegate;
 @property (readwrite, nonatomic, weak) id <GFPUserInterestDelegate> userInterestDelegate;
 
@@ -117,6 +128,16 @@ extern NSString *const kGFPNativeIconSizeKey;
 
 
 @interface GFPNativeSimpleAd : GFPNativeAdBase
+
+/**
+ * 광고 응답 객체
+ */
+@property (readwrite, nonatomic, strong) GFPLoadResponseInfo *responseInfo;
+
+/**
+ * 광고 메타 데이터
+ */
+@property (readwrite, nonatomic, strong, nullable) GFPAdMetaData *adMetaData;
 
 @property (readwrite, nonatomic, weak) id <GFPNativeSimpleAdDelegate> delegate;
 @property (readonly, nonatomic, strong, nullable) id <GFPNativeAssetProtocol> assets;

@@ -17,6 +17,7 @@
 @class GFPImpressionTrackingTarget;
 @class GFPAdAttachmentInfo;
 @class GFPAdImpressionInfo;
+@class GFPAdMetaData;
 
 extern NSTimeInterval const kGFPVideoAdViewableImpSec;
 
@@ -35,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readwrite, nonatomic, strong, nullable) GFPEventExtraInfo *extraInfo;
 
 @property (readwrite, atomic, strong) GFPAdAttachmentInfo *attachmentInfo;
+
+@property (readwrite, nonatomic, strong, nullable) GFPAdMetaData *adMetaData;
 
 - (void)loadAdWithCompletionHandler:(GFPAdAdaptorLoadCompletionHandler)completionHandler
                       timeoutMillis:(nullable NSNumber *)timeoutMillis;

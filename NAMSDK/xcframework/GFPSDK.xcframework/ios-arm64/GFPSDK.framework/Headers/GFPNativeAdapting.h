@@ -20,6 +20,8 @@
 @class GFPLabelOption;
 @class GFPAdChoicesData;
 
+@class GFPAdMetaData;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeAdapting <GFPAdAdapting>

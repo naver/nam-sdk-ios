@@ -5114,6 +5114,72 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "GFPVideoAdAdditionalViewDataAccessibilityProvider",
+        "printedName": "GFPVideoAdAdditionalViewDataAccessibilityProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "additionalAdAccessibilityView",
+            "printedName": "additionalAdAccessibilityView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(pl)GFPVideoAdAdditionalViewDataAccessibilityProvider(im)additionalAdAccessibilityView",
+            "mangledName": "$s6GFPSDK49GFPVideoAdAdditionalViewDataAccessibilityProviderP010additionalcgE0So6UIViewCSgyF",
+            "moduleName": "GFPSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider>",
+            "sugared_genericSig": "<Self where Self : GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@GFPSDK@objc(pl)GFPVideoAdAdditionalViewDataAccessibilityProvider",
+        "mangledName": "$s6GFPSDK49GFPVideoAdAdditionalViewDataAccessibilityProviderP",
+        "moduleName": "GFPSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "GFPVideoAdRenderingSetting",
         "printedName": "GFPVideoAdRenderingSetting",
         "children": [
@@ -5784,6 +5850,121 @@
                 "declKind": "Accessor",
                 "usr": "s:6GFPSDK26GFPVideoAdRenderingSettingC22isPreferContentWidthUISbvM",
                 "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC22isPreferContentWidthUISbvM",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adAdditionalInfoView",
+            "printedName": "adAdditionalInfoView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdRenderingSetting(py)adAdditionalInfoView",
+            "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC20adAdditionalInfoViewAA0bcgI25DataAccessibilityProvider_So6UIViewCXcSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdRenderingSetting(im)adAdditionalInfoView",
+                "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC20adAdditionalInfoViewAA0bcgI25DataAccessibilityProvider_So6UIViewCXcSgvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdRenderingSetting(im)setAdAdditionalInfoView:",
+                "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC20adAdditionalInfoViewAA0bcgI25DataAccessibilityProvider_So6UIViewCXcSgvs",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GFPSDK26GFPVideoAdRenderingSettingC20adAdditionalInfoViewAA0bcgI25DataAccessibilityProvider_So6UIViewCXcSgvM",
+                "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC20adAdditionalInfoViewAA0bcgI25DataAccessibilityProvider_So6UIViewCXcSgvM",
                 "moduleName": "GFPSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -22198,21 +22379,21 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 376,
+      "offset": 515,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 463,
+      "offset": 602,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
-      "offset": 554,
+      "offset": 693,
       "length": 2,
       "value": "-1"
     },

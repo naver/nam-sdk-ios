@@ -146,6 +146,9 @@ extension GFPSDK.GFPErrorUtils {
   @objc public init(size: Swift.Int)
   @objc deinit
 }
+@objc public protocol GFPVideoAdAdditionalViewDataAccessibilityProvider {
+  @objc func additionalAdAccessibilityView() -> UIKit.UIView?
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPVideoAdRenderingSetting : ObjectiveC.NSObject {
   @objc public static let GFPVideoAdRenderingSettingAutodetectBitrate: Swift.Int
   @objc public static let GFPVideoAdRenderingSettingDefaultStartTimeout: Swift.Double
@@ -155,6 +158,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public var startTimeoutInterval: Foundation.TimeInterval
   @objc public var bufferingTimeoutInterval: Foundation.TimeInterval
   @objc public var isPreferContentWidthUI: Swift.Bool
+  @objc public var adAdditionalInfoView: (any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider)?
   @objc override dynamic public init()
   @objc deinit
 }

@@ -17,10 +17,11 @@
 
 #import "Swift-Enum.h"
 
-typedef CGFloat (^GFPMaxExtendingHeightSetter)(void);
 @class GFPBackgroundOption;
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef CGFloat (^GFPMaxExtendingHeightSetter)(void);
 
 typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
     GFPAdChoicesViewPositionTopRightCorner = 1,
