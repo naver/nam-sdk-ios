@@ -1,0 +1,250 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "GFPSDKMediationInMobi",
+    "printedName": "GFPSDKMediationInMobi",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "InMobiSDK",
+        "printedName": "InMobiSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationInMobi"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Native\/GFPInMobiNativeAdaptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 394,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Native\/GFPInMobiNativeAdaptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Native\/GFPInMobiNativeAdaptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 423,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Native\/GFPInMobiNativeAdaptor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 437,
+      "length": 3,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Native\/GFPInMobiNativeAdaptor.swift",
+      "kind": "Dictionary",
+      "offset": 1033,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Common\/GFPInMobiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 10,
+      "value": "\"10.8.0.1\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Common\/GFPInMobiConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 552,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Common\/GFPInMobiRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 365,
+      "length": 12,
+      "value": "\"ACCOUNT_ID\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Common\/GFPInMobiRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 14,
+      "value": "\"PLACEMENT_ID\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Common\/GFPInMobiRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Common\/GFPInMobiRequestInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 552,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}
