@@ -62,6 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString * _Nullable)adStyleVisualKey;
 
 - (void)updateMediaViewLayout;
+- (void)layoutSubviewsBySimpleViewChanged;
 
 - (GFPAdStyleType)adStyleType;
 
@@ -107,6 +108,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)applyExtraViewLink:(NSString *)key withView:(UIView *)extraView;
 
 - (void)existUserInterestDelegateWith:(BOOL)isExist;
+
+- (BOOL)isImageSizePreferred;
 
 @end
 

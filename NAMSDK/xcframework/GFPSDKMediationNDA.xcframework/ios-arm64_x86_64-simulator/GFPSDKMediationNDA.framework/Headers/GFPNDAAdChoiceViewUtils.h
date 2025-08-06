@@ -14,11 +14,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 extern CGFloat const kAdPrivacyViewWidth;
-extern CGFloat const kAdMuteXWidth;
-extern CGFloat const kAdMuteADXWidth;
-extern CGFloat const kAdMuteIXWidth;
+extern CGFloat const kAdMuteADWidth;
+extern CGFloat const kAdMuteADHeight;
 
-extern CGFloat const kAdChoiceViewHeight;
+extern CGFloat const kAdMuteIWidthHeight;
+
 extern CGFloat const kAdChoiceViewTopBottomGap;
 extern CGFloat const kAdChoiceViewLeftRightGap;
 

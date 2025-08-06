@@ -27,7 +27,7 @@
 
 static CGFloat const kRichAdStandardWidth = 360;
 static CGFloat const kRichAdStandardImageWidth = 375;
-static CGFloat const kRichAdMaxWidth = 414;
+
 
 /*
  * GFP Gravity Values

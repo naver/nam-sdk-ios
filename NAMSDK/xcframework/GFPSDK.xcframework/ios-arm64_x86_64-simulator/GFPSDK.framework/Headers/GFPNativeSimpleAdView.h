@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, nullable) GFPNativeSimpleAd *nativeAd;
 
+- (void)reLayoutSpecialRich:(BOOL)isForce;
 @end
 
 NS_ASSUME_NONNULL_END

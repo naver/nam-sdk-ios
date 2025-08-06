@@ -47,6 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nativeAdAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
 - (void)nativeAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+
+- (void)nativeAdAdaptorDidLoadMediaData:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+
 @end
 
 NS_ASSUME_NONNULL_END

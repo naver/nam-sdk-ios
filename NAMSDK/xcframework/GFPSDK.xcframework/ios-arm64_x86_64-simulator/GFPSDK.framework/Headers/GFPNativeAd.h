@@ -38,6 +38,7 @@ typedef NS_OPTIONS(NSInteger, GFPNativeAdProviderType) {
 //    GFPNativeAdProviderTypeAppLovin = 1 << 5, // AppLovin (deprecate)
     GFPNativeAdProviderTypeLAN = 1 << 6,
     GFPNativeAdProviderTypeBidMachine = 1 << 7,
+    GFPNativeAdProviderTypeVungle = 1 << 8, // Vungle
 };
 
 typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
@@ -138,6 +139,8 @@ extern NSString *const kGFPNativeIconSizeKey;
  * 광고 메타 데이터
  */
 @property (readwrite, nonatomic, strong, nullable) GFPAdMetaData *adMetaData;
+
+@property (nonatomic, readonly, assign) BOOL isImageSizepreferred;
 
 @property (readwrite, nonatomic, weak) id <GFPNativeSimpleAdDelegate> delegate;
 @property (readonly, nonatomic, strong, nullable) id <GFPNativeAssetProtocol> assets;

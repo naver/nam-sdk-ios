@@ -13,11 +13,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPNDAAdMuteIconType) {
-    GFPNDAAdMuteIconTypeX = 1 << 0,         // AdMute only (for nn)
-    GFPNDAAdMuteIconTypeADX = 1 << 1,       // AdMark + AdMute (for ns)
-    GFPNDAAdMuteIconTypeI = 1 << 2,         // AdPrivacy(=Optout) + AdMute (for nn)
-    GFPNDAAdMuteIconTypeIX = 1 << 3,        // AdPrivacy(=Optout) + AdMute (for ns)
-    GFPNDAAdMuteIconTypeCustom = 1 << 4,    // Custom Icon
+    GFPNDAAdMuteIconTypeAD = 1 << 1,       // AdMark + AdMute (for ns)
+    GFPNDAAdMuteIconTypeI = 1 << 2,         // AdPrivacy(Optional) + AdMute (for nn, ns)
+    GFPNDAAdMuteIconTypeCustom = 1 << 3,    // Custom Icon
 };
 
 @protocol GFPNDAAdMuteViewDelegate;

@@ -16,11 +16,9 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAdChoiceViewType) {
     GFPNDAAdChoiceViewTypeNone = 1 << 0,
     GFPNDAAdChoiceViewTypeAdPrivacy = 1 << 1,
     GFPNDAAdChoiceViewTypeAdPrivacyCustom = 1 << 2,
-    GFPNDAAdChoiceViewTypeAdMuteX = 1 << 3,     //for nn
-    GFPNDAAdChoiceViewTypeAdMuteADX = 1 << 4,   //for ns
-    GFPNDAAdChoiceViewTypeAdMuteI = 1 << 5,     //for nn
-    GFPNDAAdChoiceViewTypeAdMuteIX = 1 << 6,    //for ns
-    GFPNDAAdChoiceViewTypeAdMuteCustom = 1 << 7,
+    GFPNDAAdChoiceViewTypeAdMuteAD = 1 << 3,   //for ns
+    GFPNDAAdChoiceViewTypeAdMuteI = 1 << 4,     //for nn, ns
+    GFPNDAAdChoiceViewTypeAdMuteCustom = 1 << 5,
 };
 
 @class GFPNDAAdPrivacyIconView;

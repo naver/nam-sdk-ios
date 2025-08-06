@@ -4756,35 +4756,49 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1491,
+      "offset": 1503,
+      "length": 2,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1562,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1606,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1542,
+      "offset": 1657,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1587,
+      "offset": 1702,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1642,
+      "offset": 1757,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKAdRenderer\/DefaultRenderer\/GFPRendererShoppingNDAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1704,
+      "offset": 1819,
       "length": 1,
       "value": "4"
     },

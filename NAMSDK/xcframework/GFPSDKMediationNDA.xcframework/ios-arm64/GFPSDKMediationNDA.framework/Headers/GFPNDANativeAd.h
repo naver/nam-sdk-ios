@@ -61,6 +61,8 @@
 - (void)nativeAdDidPresentDefaultInAppBrowser:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdDidDismissDefaultInAppBrowser:(GFPNDANativeAd *)nativeAd;
 
+- (void)nativeAdDidLoadMediaData:(GFPNDANativeAd *)nativeAd;
+
 @end
 
 
@@ -93,6 +95,7 @@
 @property (nonatomic, strong) GFPVideoOptions *videoOptions;
 @property (nonatomic, strong) GFPAutoPlayInfo *autoPlayInfo;
 
+@property (nonatomic, weak) GFPNativeBaseView *adView;
 @property (nonatomic, strong, readonly, nullable) NSArray <GFPNDAVastVerification *> *vastOmidInfos;
 
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo
@@ -118,6 +121,7 @@
 
 - (void)layoutBackgroundView:(GFPNativeBaseView *)nativeAdView mediaView:(GFPNDAMediaView *)mediaView;
 - (void)layoutMediaViews;
+- (void)layoutSubviewsBySimpleViewChanged;
 
 - (void)adPrivacyOpenLanding;
 

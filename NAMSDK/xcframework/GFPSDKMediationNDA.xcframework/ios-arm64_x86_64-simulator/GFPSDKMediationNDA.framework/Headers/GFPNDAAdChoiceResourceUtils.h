@@ -14,10 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSInteger, GFPNDAAdChoiceImageType) {
     GFPNDAAdChoiceImageTypeNone = 0,
-    GFPNDAAdChoiceImageTypeADX,
+    GFPNDAAdChoiceImageTypeAD,
     GFPNDAAdChoiceImageTypeI,
-    GFPNDAAdChoiceImageTypeIX,
-    GFPNDAAdChoiceImageTypeX,
     GFPNDAAdChoiceImageTypePrivacy,
     GFPNDAAdChoiceImageTypePrivacyMark,
     GFPNDAAdChoiceImageTypeBack,

@@ -80,6 +80,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)nativeAdDidDismissDefaultInAppBrowser:(GFPNativeAd *)nativeAd;
 
+
+/**
+ * LazyLoading 사용 시, 실 사용되는 MediaData로드가 완료되었을 때 호출 ( 이미지 로드 시점과 동일 )
+ * @param nativeAd 네이티브 광고 객체
+ */
+- (void)nativeAdDidLoadMediaData:(GFPNativeAd *)nativeAd;
 @end
 
 @protocol GFPNativeSimpleAdDelegate <NSObject>
@@ -174,6 +180,12 @@ NS_ASSUME_NONNULL_BEGIN
  * @param nativeSimpleAd 네이티브 광고 객체
  */
 - (void)nativeSimpleAdDidDismissDefaultInAppBrowser:(GFPNativeSimpleAd *)nativeSimpleAd;
+
+/**
+ * LazyLoading 사용 시, 실제 기존 로딩과 같은 타이밍 알림
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleAdDidLoadMedia:(GFPNativeSimpleAd *)nativeSimpleAd;
 
 @end
 

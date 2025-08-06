@@ -444,12 +444,13 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionFAN = 4,
   GFPBannerProviderOptionUnity = 5,
   GFPBannerProviderOptionAppLovin = 6,
-  GFPBannerProviderOptionDT = 7,
-  GFPBannerProviderOptionIS = 8,
-  GFPBannerProviderOptionAPS = 9,
-  GFPBannerProviderOptionChartBoost = 10,
-  GFPBannerProviderOptionBidMachine = 11,
-  GFPBannerProviderOptionEnd = 12,
+  GFPBannerProviderOptionVungle = 7,
+  GFPBannerProviderOptionDT = 8,
+  GFPBannerProviderOptionIS = 9,
+  GFPBannerProviderOptionAPS = 10,
+  GFPBannerProviderOptionChartBoost = 11,
+  GFPBannerProviderOptionBidMachine = 12,
+  GFPBannerProviderOptionEnd = 13,
 };
 
 
@@ -636,9 +637,10 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionDFP = 2,
   GFPNativeProviderOptionFAN = 3,
   GFPNativeProviderOptionInMobi = 4,
-  GFPNativeProviderOptionLAN = 5,
-  GFPNativeProviderOptionBidMachine = 6,
-  GFPNativeProviderOptionEnd = 7,
+  GFPNativeProviderOptionVungle = 5,
+  GFPNativeProviderOptionLAN = 6,
+  GFPNativeProviderOptionBidMachine = 7,
+  GFPNativeProviderOptionEnd = 8,
 };
 
 
@@ -1419,12 +1421,13 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionFAN = 4,
   GFPBannerProviderOptionUnity = 5,
   GFPBannerProviderOptionAppLovin = 6,
-  GFPBannerProviderOptionDT = 7,
-  GFPBannerProviderOptionIS = 8,
-  GFPBannerProviderOptionAPS = 9,
-  GFPBannerProviderOptionChartBoost = 10,
-  GFPBannerProviderOptionBidMachine = 11,
-  GFPBannerProviderOptionEnd = 12,
+  GFPBannerProviderOptionVungle = 7,
+  GFPBannerProviderOptionDT = 8,
+  GFPBannerProviderOptionIS = 9,
+  GFPBannerProviderOptionAPS = 10,
+  GFPBannerProviderOptionChartBoost = 11,
+  GFPBannerProviderOptionBidMachine = 12,
+  GFPBannerProviderOptionEnd = 13,
 };
 
 
@@ -1611,9 +1614,10 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionDFP = 2,
   GFPNativeProviderOptionFAN = 3,
   GFPNativeProviderOptionInMobi = 4,
-  GFPNativeProviderOptionLAN = 5,
-  GFPNativeProviderOptionBidMachine = 6,
-  GFPNativeProviderOptionEnd = 7,
+  GFPNativeProviderOptionVungle = 5,
+  GFPNativeProviderOptionLAN = 6,
+  GFPNativeProviderOptionBidMachine = 7,
+  GFPNativeProviderOptionEnd = 8,
 };
 
 

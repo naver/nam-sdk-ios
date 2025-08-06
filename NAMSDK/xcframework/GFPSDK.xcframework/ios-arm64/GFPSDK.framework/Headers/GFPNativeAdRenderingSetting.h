@@ -102,6 +102,20 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
+/**
+ * Native 광고의 Media / Icon 등의 이미지 로딩을 LazyLoading으로 처리하고 싶을 때 사용합니다.
+ * GFPNativeAdView의
+ * (기본값은 NO)
+ */
+@property (nonatomic, assign) BOOL useLazyMediaLoading;
+
+/**
+ * 네이티브 Media 이미지 적용 시 이미지 사이즈를 우선 할 지 여부입니다.
+ * (기본값은  NO)
+ * 해당 기능을 YES로 셋팅 시, 셋팅된 광고 영역보다 이미지 사이즈가 우선되며 하단에 배치됩니다.
+ */
+@property (nonatomic, assign) BOOL isImageSizePreferred;
+
 @end
 
 
@@ -129,13 +143,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 
 
 @interface GFPNativeSimpleAdRenderingSetting : GFPNativeBaseRenderingSetting
-
-/**
- * 네이티브 Media 이미지 적용 시 이미지 사이즈를 우선 할 지 여부입니다.
- * (기본값은  NO)
- * 해당 기능을 YES로 셋팅 시, 셋팅된 광고 영역보다 이미지 사이즈가 우선되며 하단에 배치됩니다.
- */
-@property (nonatomic, assign) BOOL isImageSizePreferred;
 
 /**
  * 네이티브 심플에 기반한  리치형 광고 비디오 플레이어 이벤트를 위한 델리게이트 설정

@@ -11,7 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+static CGFloat const kRichAdMaxWidth = 414;
+
 @interface GFPMediaView : UIView
+
+@property (nonatomic, assign) BOOL isImageSizePreferred;
 
 - (void)showPlaceholderWith:(GFPPlaceholderHandler _Nullable)placeholderSetter;
 
