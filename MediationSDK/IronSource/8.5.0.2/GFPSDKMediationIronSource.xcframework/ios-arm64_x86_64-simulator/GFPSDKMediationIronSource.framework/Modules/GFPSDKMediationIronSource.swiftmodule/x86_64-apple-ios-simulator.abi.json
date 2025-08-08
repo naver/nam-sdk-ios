@@ -1,0 +1,367 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "GFPSDKMediationIronSource",
+    "printedName": "GFPSDKMediationIronSource",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "IronSource",
+        "printedName": "IronSource",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationIronSource"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Interstitial\/GFPISInterstitialAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 851,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Rewarded\/GFPISRewardedAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 820,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 371,
+      "length": 12,
+      "value": "\"instanceId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 409,
+      "length": 8,
+      "value": "\"appKey\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 14,
+      "value": "\"productTypes\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 9,
+      "value": "\"8.5.0.2\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 624,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 547,
+      "length": 29,
+      "value": "\"com.navercorp.da.gfp.gfpsdk\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5079,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5092,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5171,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5184,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5271,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5284,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5376,
+      "length": 3,
+      "value": "728"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5389,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5468,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationIronSource\/Common\/GFPISConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5479,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}
