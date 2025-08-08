@@ -33,6 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isAdInvalidate;
 - (BOOL)isAdLoaded;
 
+@optional
+- (BOOL)isS2SPlayerMuted;
+- (void)setS2SPlayerMute:(BOOL)isMuted;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

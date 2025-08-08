@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import NaverAdsServices;
 
 @class GFPRemindAd;
 @class GFPNonLinearAdView;
@@ -21,10 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) NSURL *vastURL;
 @property (readonly, nonatomic, strong, nullable) NSArray <GFPRemindAd *> *remindAdList;
 @property (readonly, nonatomic, strong, nullable) GFPLoudnessNormalization *loudness;
+@property (readonly, nonatomic, strong, nullable) GFPNASLoudnessNormalization *nasLoudness;
 
 @property (readonly, nonatomic, strong, nullable) NSArray <GFPNonLinearAdView *> *remindViewList;
 
 - (instancetype)initWithVastURL:(NSURL *)aURL remindAdList:(NSArray <GFPRemindAd *> * _Nullable)aRemindAdList loudness:(GFPLoudnessNormalization * _Nullable)aLoudness;
+
+- (instancetype)initWithVastURL:(NSURL *)aURL
+                nasRemindAdList:(NSArray <GFPRemindAd *> * _Nullable)aRemindAdList
+                       loudness:(GFPNASLoudnessNormalization * _Nullable)aLoudness;
 
 
 @end

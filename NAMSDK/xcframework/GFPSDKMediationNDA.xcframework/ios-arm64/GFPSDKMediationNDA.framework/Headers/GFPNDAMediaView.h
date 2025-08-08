@@ -152,13 +152,21 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 @property (nonatomic, readonly, strong) GFPMediaData *mediaData;
 @property (nonatomic, readonly, strong) NSString *alternativeText;
 
+@property (nonatomic, readonly, strong) NSUUID *logId;
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithLogId:(NSUUID *)logId;
 
 - (instancetype)initWithType:(GFPNDAMediaViewType)aType
-                        info:(GFPNDAMediaViewInfo *_Nonnull)aInfo;
+                        info:(GFPNDAMediaViewInfo *_Nonnull)aInfo
+                       logId:(NSUUID *)logId;
 
 - (instancetype)initWithFrame:(CGRect)aFrame
                          type:(GFPNDAMediaViewType)aType
-                         info:(GFPNDAMediaViewInfo *_Nonnull)aInfo;
+                         info:(GFPNDAMediaViewInfo *_Nonnull)aInfo
+                        logId:(NSUUID *)logId;
+
 - (UIView * _Nullable)touchView;
 
 - (void)shrinkExtendedRichAd;

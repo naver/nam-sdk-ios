@@ -23,6 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)interstitialAdWasClicked:(GFPAdAdaptor <GFPInterstitialAdAdapting> *)interstitialAdAdaptor;
 - (void)interstitialAdAdaptorRecieveImpression:(GFPAdAdaptor <GFPInterstitialAdAdapting> *)interstitialAdAdaptor;
 
+@optional
+- (void)interstitialAdDidClose:(GFPAdAdaptor<GFPInterstitialAdAdapting> *)interstitialAdAdaptor elapsedTime:(NSString *)elapsedTime;
+- (void)interstitialAdAdaptor:(GFPAdAdaptor <GFPInterstitialAdAdapting> *)interstitialAdAdaptor didChangedMute:(BOOL)isMuted;
+- (void)interstitialAdAdaptorDidPresentDefaultInAppBrowser:(GFPAdAdaptor <GFPInterstitialAdAdapting> *)interstitialAdAdaptor;
+- (void)interstitialAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPInterstitialAdAdapting> *)interstitialAdAdaptor;
+
+
 
 @end
 

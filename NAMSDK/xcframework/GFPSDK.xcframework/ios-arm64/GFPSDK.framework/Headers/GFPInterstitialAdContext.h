@@ -10,13 +10,18 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "GFPContext.h"
+
+@class GFPOMFriendlyObstruction;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPInterstitialAdContext : GFPContext
 
 @property (nonatomic, strong) NSString *productType;
+@property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
-- (instancetype)initWithProductType:(NSString *)productType;
+
+- (instancetype)initWithProductType:(NSString *)productType logId:(NSUUID *)logId;
 
 @end
 

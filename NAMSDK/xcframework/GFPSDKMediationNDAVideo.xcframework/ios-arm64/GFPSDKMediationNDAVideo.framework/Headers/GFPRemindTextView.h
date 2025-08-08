@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPRemindTextView : GFPNonLinearAdView
 
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithFrame:(CGRect)frame remindAd:(GFPRemindAd *)aRemindAd logId:(NSUUID *)logId;
 
 @end
 

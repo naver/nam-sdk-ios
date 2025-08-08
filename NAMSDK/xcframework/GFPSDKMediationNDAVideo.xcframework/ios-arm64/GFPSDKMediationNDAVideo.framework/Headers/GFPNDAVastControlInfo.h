@@ -11,7 +11,7 @@
 #import "GFPLanguageType.h"
 
 @class GFPAdSkipInfo;
-
+@import NaverAdsServices;
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -35,6 +35,9 @@ typedef NS_OPTIONS(NSInteger, GFPNDAVastIconType) {
 @property (readonly, nonatomic, strong) NSArray <Icon *> *iconList;
 
 - (instancetype)initWithIconList:(NSArray<Icon *> *)aIconList skipOffset:(NSString * _Nullable)aSkipOffset duration:(NSTimeInterval)aDuration skipInfo:(GFPAdSkipInfo * _Nullable)aSkipInfo;
+
+- (instancetype)initWithIconList:(NSArray<Icon *> *)aIconList skipOffset:(NSString * _Nullable)aSkipOffset duration:(NSTimeInterval)aDuration vastSkipInfo:(GFPVastAdSkipInfo * _Nullable)aSkipInfo;
+
 
 - (BOOL)canShowWith:(GFPNDAVastIconType)iconType currentTime:(NSTimeInterval)aCurrentTime;
 

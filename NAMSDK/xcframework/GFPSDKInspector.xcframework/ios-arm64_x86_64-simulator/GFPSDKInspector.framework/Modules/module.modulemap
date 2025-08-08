@@ -1,0 +1,6 @@
+framework module GFPSDKInspector {
+  umbrella header "GFPSDKInspector.h"
+  export *
+
+  module * { export * }
+}

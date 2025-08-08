@@ -29,8 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPBaseEventReporter : NSObject
 
 @property (nonatomic, strong) GFPAdInfoEvent *providerEvent;
+@property (readonly, nonatomic, strong) NSUUID *logId;
 
-- (instancetype)initWithProviderEvent:(GFPAdInfoEvent *)providerEvent;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithProviderEvent:(GFPAdInfoEvent *)providerEvent logId:(NSUUID *)logId;
 - (void)reportProviderEvent:(NSArray<GFPAdEventObject *> *)providerEvtObjs;
 - (void)reportProviderEvent:(NSArray<GFPAdEventObject *> *)providerEvtObjs queryItems:(NSArray<NSURLQueryItem *> *_Nullable)queryItems;
 
@@ -55,7 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithProviderEvent:(GFPAdInfoEvent *)providerEvent // ads event
                              gfpEvent:(GFPAdEvent *)gfpEvent          // waterfallList event
-                            encrypted:(NSString *)encrypted;
+                            encrypted:(NSString *)encrypted
+                                logId:(NSUUID *)logId;
 
 - (void)reportEmptyImpressions;
 
@@ -77,7 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportGfpTracking:(NSString *)gfpBaseUrl;
 
-- (void)reportRewardVideoClose:(NSString *)playTime;
+- (void)reportFullScreenVideoClose:(NSString *)playTime;
 
 - (void)reportMute;
 - (void)reportPriv;

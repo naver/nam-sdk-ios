@@ -9,6 +9,7 @@
 
 
 #import <Foundation/Foundation.h>
+@import NaverAdsServices;
 
 @class GFPVastEvent;
 @class GFPTrackingURLs;
@@ -19,8 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPNDAVideoEventReporter : NSObject
 
 @property (readonly, nonatomic, strong) GFPVastEvent *vastEvent;
+@property (readonly, nonatomic, strong) GFPVastTrackingInfo *nasVastEvent;
 
-- (instancetype)initWithVastEvent:(GFPVastEvent * _Nullable)aVastEvent;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithVastEvent:(GFPVastEvent *)aVastEvent logId:(NSUUID *)logId;
+
+- (instancetype)initWithNASVastEventInfo:(GFPVastTrackingInfo * _Nullable)aVastEvent logId:(NSUUID *)logId;
 
 - (void)reportProgressWithCurrentTime:(double)currentTime;
 - (void)reportImpression;

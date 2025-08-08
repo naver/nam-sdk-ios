@@ -16,7 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPContext : NSObject
 
-@property (nonatomic, weak) id <GFPS2SAdClickDelegate> clickDelegate;
+@property (nonatomic, strong) NSUUID *logId;
+@property (nullable, nonatomic, weak) id <GFPS2SAdClickDelegate> clickDelegate;
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithLogId:(NSUUID *)logId;
+- (instancetype)initWithClickDelegate:(nullable id <GFPS2SAdClickDelegate>)clickDelegate logId:(NSUUID *)logId;
 
 @end
 

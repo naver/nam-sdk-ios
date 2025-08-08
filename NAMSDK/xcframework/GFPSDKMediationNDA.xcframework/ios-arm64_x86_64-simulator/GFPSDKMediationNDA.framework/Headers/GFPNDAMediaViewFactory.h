@@ -106,7 +106,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPNDAMediaViewFactory : NSObject
 
-+ (GFPNDAMediaView *)mediaViewWithInfo:(GFPNDAMediaViewInfo *)mediaInfo;
++ (GFPNDAMediaView *)mediaViewWithInfo:(GFPNDAMediaViewInfo *)mediaInfo logId:(NSUUID *)logId;
 
 @end
 

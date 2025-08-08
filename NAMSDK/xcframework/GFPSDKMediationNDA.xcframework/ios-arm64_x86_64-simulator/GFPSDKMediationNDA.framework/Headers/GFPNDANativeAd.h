@@ -13,6 +13,8 @@
 #import "GFPNDAAdMuteView.h"
 #import "GFPEventReporter.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class GFPSKAdNetworkInfo;
 
 @class GFPAdChoiceInfo;
@@ -97,6 +99,7 @@
 
 @property (nonatomic, weak) GFPNativeBaseView *adView;
 @property (nonatomic, strong, readonly, nullable) NSArray <GFPNDAVastVerification *> *vastOmidInfos;
+@property (nonatomic, readonly, strong) NSUUID *logId;
 
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo
                      skAdNetworkInfo:(GFPSKAdNetworkInfo *)skNetworkInfo
@@ -136,3 +139,5 @@
 - (void)tapGestureWith:(GFPNDANativeTapGesture *)gesture;
 - (void)tryLandingWith:(GFPNDANativeTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
 @end
+
+NS_ASSUME_NONNULL_END

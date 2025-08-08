@@ -172,6 +172,16 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
  */
 + (void)clearMemoryCache;
 
+/**
+ * Enable or disable ad inspector.
+ */
++ (BOOL)inspectorEnabled;
+
+/**
+ * Enable or disable ad inspector.
+ */
++ (void)setInspectorEnabled:(BOOL)enabled;
+
 @end
 
 NS_ASSUME_NONNULL_END

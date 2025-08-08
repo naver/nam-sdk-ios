@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong, nullable) NSDictionary *dict;
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)init;
 - (instancetype _Nullable)initWith:(NSDictionary * _Nonnull)aDict;
 - (GFPExtraRequestParam *)combinedWith: (GFPExtraRequestParam *)requestParam;
 

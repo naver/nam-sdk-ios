@@ -46,7 +46,8 @@ static const CGFloat kPlayerInfoViewMaxHeight = 56.0;
 
 - (instancetype)initWithFrame:(CGRect)frame 
                   controlInfo:(GFPNDAVastControlInfo *)aControlInfo
-             renderingSetting:(nullable GFPVideoAdRenderingSetting *)renderingSetting NS_DESIGNATED_INITIALIZER;
+             renderingSetting:(nullable GFPVideoAdRenderingSetting *)renderingSetting
+                        logId:(NSUUID *)logId NS_DESIGNATED_INITIALIZER;
 
 - (void)updateCurrentTime:(NSTimeInterval)aCurrentTime;
 

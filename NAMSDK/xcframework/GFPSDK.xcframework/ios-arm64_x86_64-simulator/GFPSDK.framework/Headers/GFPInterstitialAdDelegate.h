@@ -19,5 +19,10 @@
 - (void)interstitialAd:(GFPInterstitialAd *)interstitialAd didFailedWithError:(GFPError *)error;
 - (void)interstitialAdRecieveImpression:(GFPInterstitialAd *)interstitialAd;
 
+@optional
+- (void)interstitialAdDidPresentDefaultInAppBrowser:(GFPInterstitialAd *)interstitialAd;
+- (void)interstitialAdDidDismissDefaultInAppBrowser:(GFPInterstitialAd *)interstitialAd;
+
+
 @end
  

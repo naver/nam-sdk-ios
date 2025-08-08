@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ZtENdAHG6+umAN291XRaAVP9sXA=
+		kvM8kFlobJ/2LYCh1GhyMHgB3lk=
 		</data>
 		<key>GFPNDAReasonCollectionViewCell.nib</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/GFPNDABannerView.h</key>
 		<data>
-		ThySyHa0Dmf80/3Hg+sACcDeQvc=
+		6Y/eDI7ydiE1K5/JbfW+xXj4Ja4=
 		</data>
 		<key>Headers/GFPNDABannerViewDelegate.h</key>
 		<data>
@@ -174,11 +174,11 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		l5k0WNhq0uXv8LbVjjdCjqLW0LY=
+		kJ4d/d0PQWYniaY6sdRdHBMiYhA=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
-		Pc5ZK15xyHECUQppsRfROxSTgnI=
+		BhqJLXmXxaBQ//xNNUc1GrXnQyY=
 		</data>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Headers/GFPNDANativeAd.h</key>
 		<data>
-		51bxXY4UET+vdJsJCMbDHyuqw6U=
+		eizsvVKhcjQJWps9ycyWc9Vnzoo=
 		</data>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
 		<data>
@@ -357,11 +357,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZtENdAHG6+umAN291XRaAVP9sXA=
+			kvM8kFlobJ/2LYCh1GhyMHgB3lk=
 			</data>
 			<key>hash2</key>
 			<data>
-			gLOkMM+Z7uAC1ZwXIpmVOhDaDUiKHbokZbSKs+dvA3g=
+			n1ydActvSjOzByHfURD2rt4mF6zznXfYvyo4k9UDx6A=
 			</data>
 		</dict>
 		<key>GFPNDAReasonCollectionViewCell.nib</key>
@@ -621,11 +621,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ThySyHa0Dmf80/3Hg+sACcDeQvc=
+			6Y/eDI7ydiE1K5/JbfW+xXj4Ja4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1s0JPoUl/qqupN3TPCVTOCN+Y7XN7/vQ0ChVbr1VtnU=
+			08UdWKkczBbW229fkYnvG2p6JyrXt7cDYydNME+XBI8=
 			</data>
 		</dict>
 		<key>Headers/GFPNDABannerViewDelegate.h</key>
@@ -819,22 +819,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l5k0WNhq0uXv8LbVjjdCjqLW0LY=
+			kJ4d/d0PQWYniaY6sdRdHBMiYhA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Buz+krF/2LfepbERl6zSId/bRaEaEx4rbWI4ZQeJyOY=
+			AkmggMwQFoSvBfe/YizCxOm3VjZ0WuF2WiNWnhDRWII=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Pc5ZK15xyHECUQppsRfROxSTgnI=
+			BhqJLXmXxaBQ//xNNUc1GrXnQyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cU6Bcl30rWtwvJ+MSMw9SXeQHVgV0RybN7oj+uLbAgc=
+			YItlcSO0EmoNnevVyZmhXVr3Au3FZNpxZ4igORwl5dY=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
@@ -874,11 +874,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			51bxXY4UET+vdJsJCMbDHyuqw6U=
+			eizsvVKhcjQJWps9ycyWc9Vnzoo=
 			</data>
 			<key>hash2</key>
 			<data>
-			FWArt6vZ/mrjna1Qyw3ihVXDQGCIAZ8S+o3su2bi8tk=
+			0cRsrmVceNt+FX2aIVYn7ApkY4cawpgwGIYMD7wecN0=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeAdFactory.h</key>

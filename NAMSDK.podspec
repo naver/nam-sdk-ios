@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDK"
-  s.version      = "8.9.0"
+  s.version      = "8.10.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = "13.0"
   s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "#{s.version.to_s}" }
-  s.default_subspecs = "GFPSDK"
+  s.default_subspecs = ['GFPSDK', 'Inspector']
 
   s.subspec 'GFPSDK' do |sdk|
     sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDK.xcframework", "NAMSDK/xcframework/libraries/OMSDK_Navercorp.xcframework"
     sdk.dependency 'KissXML', '~> 5.2'
-    sdk.dependency 'Naver-Ads-Services', '~> 1.1.2'
+    sdk.dependency 'Naver-Ads-Services', '~> 1.2.0'
     sdk.resources = ["NAMSDK/ResourceBundle/GFPSDKResource.bundle"]
   end
 
@@ -51,6 +51,11 @@ Pod::Spec.new do |s|
     ndaRich.dependency 'NAMSDK/MediationNDA'
     ndaRich.dependency 'NAMSDK/MediationNDAVideo'
     ndaRich.dependency 'NAMSDK/AdRenderer'
+  end
+
+  s.subspec 'Inspector' do |inspector|
+    inspector.vendored_frameworks = "NAMSDK/xcframework/GFPSDKInspector.xcframework"
+    inspector.dependency 'NAMSDK/GFPSDK'
   end
   
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'

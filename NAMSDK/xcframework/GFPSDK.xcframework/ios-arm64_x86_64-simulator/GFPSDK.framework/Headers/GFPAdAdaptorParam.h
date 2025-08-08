@@ -30,6 +30,7 @@
 @class GFPAutoPlayInfo;
 @class GFPAdInfoID;
 @class GFPOMIDInfo;
+@class GFPInterstitialAdInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -50,6 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) NSString *responseCreativeType;
 
 @property (readonly, nonatomic, strong) GFPRewardedAdInfo *rewardedAdInfo;
+@property (readonly, nonatomic, strong) GFPInterstitialAdInfo *interstitialAdInfo;
 
 
 /**

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import NaverAdsServices;
 
 @class GFPAdChoiceInfo;
 @class GFPNDAPlayerAdChoicesView;
@@ -36,6 +37,11 @@ static const CGFloat kRewardedPlayerAdChociesWidthHeight = 16.0;
 - (instancetype)initWithFrame:(CGRect)aFrame
                      iconList:(NSArray<Icon *> *)aIconList
                  adChoiceInfo:(nullable GFPAdChoiceInfo *)adChoiceInfo NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)initWithFrame:(CGRect)aFrame
+                  nasIconList:(NSArray<GFPVastIcon *> *)aIconList
+                 adChoiceInfo:(nullable GFPAdChoiceInfo *)adChoiceInfo NS_DESIGNATED_INITIALIZER;
+
 
 - (void)showViewComponent;
 

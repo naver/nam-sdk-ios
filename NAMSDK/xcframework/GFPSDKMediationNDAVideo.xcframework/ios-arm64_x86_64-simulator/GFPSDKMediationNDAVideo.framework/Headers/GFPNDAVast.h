@@ -10,8 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-#import "GFPOMIDInfoProtocol.h"
+@import NaverAdsServices;
 
 @class GFPError;
 @class GFPNDAVastMediaFile;

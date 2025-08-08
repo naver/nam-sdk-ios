@@ -47,7 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
               skAdNetworkInfo:(GFPSKAdNetworkInfo *)aSKNetworkInfo
                       context:(nonnull GFPBannerContext *)context
                 configuration:(GFPNDAMraidConfiguration *)configuration
-                      isJsTag:(BOOL)isJsTag;
+                      isJsTag:(BOOL)isJsTag
+                        logId:(NSUUID *)logId;
 
 - (void)loadAd;
 

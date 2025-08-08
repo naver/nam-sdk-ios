@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "GFPCreativeExtension.h"
 
+@import NaverAdsServices;
+
 @class DDXMLElement;
 @class GFPProperties;
 @class GFPError;
@@ -36,6 +38,7 @@ typedef NS_OPTIONS(NSInteger, GFPLoudnessMode) {
 @property (readonly, nonatomic, strong) NSDictionary *referDict;
 
 - (instancetype)initWithDomElement:(DDXMLElement *)aElement error:(GFPError *_Nullable *_Nullable)aError;
+- (instancetype)initWithCreativeExtension:(GFPVastExtension *)extension error:(GFPError *_Nullable *_Nullable)aError;
 
 
 @end

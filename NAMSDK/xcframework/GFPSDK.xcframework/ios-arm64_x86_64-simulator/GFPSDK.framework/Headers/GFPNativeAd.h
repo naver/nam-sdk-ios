@@ -101,6 +101,7 @@ extern NSString *const kGFPNativeIconSizeKey;
  */
 @property (readonly, nonatomic, strong) GFPLoadResponseInfo *responseInfo;
 
+@property (readonly, nonatomic, strong) NSUUID *logId;
 
 /**
  * 광고 배경 정보

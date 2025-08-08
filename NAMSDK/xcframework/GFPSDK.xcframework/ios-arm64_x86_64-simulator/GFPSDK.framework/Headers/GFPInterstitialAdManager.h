@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class GFPAdParam;
-
+@class GFPOMFriendlyObstruction;
 
 @interface GFPInterstitialAdManager : NSObject
 
@@ -33,6 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
  * 광고 요청이후 로드 완료시점까지 타임아웃 (Optional)
  */
 @property(readwrite, nonatomic, assign) NSTimeInterval requestTimeoutInterval;
+
+/**
+ * OMSDK를 측정하는 광고의 friendlyObstruction을 설정합니다.
+ */
+@property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
 @end
 

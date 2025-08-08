@@ -1,0 +1,126 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GFPSDKInspector
+import Foundation
+import GFPSDK
+@_exported import GFPSDKInspector
+import NaverAdsServices
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum GFPInspectorLogType : Swift.Int, GFPSDK.GFPObjcEnum {
+  case inspector
+  case ad
+  case adView
+  case sdkInfo
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [GFPSDKInspector.GFPInspectorLogType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [GFPSDKInspector.GFPInspectorLogType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension NaverAdsServices.GFPError {
+  @objc dynamic public var gfpLogDescription: Swift.String {
+    @objc get
+  }
+}
+@_hasMissingDesignatedInitializers public class GFPJSONUtils {
+  public static func attributedString(from object: Any, titleFont: UIKit.UIFont = .boldSystemFont(ofSize: 16), valueFont: UIKit.UIFont = .systemFont(ofSize: 14), keyColor: UIKit.UIColor = .label, valueColor: UIKit.UIColor = .label, excludeKeys: [Swift.String : Any] = [:], propertyOrder: [Swift.String]? = nil) -> Foundation.NSAttributedString
+  @objc deinit
+}
+@objc @objcMembers public class GFPAdLog : ObjectiveC.NSObject, Swift.Codable {
+  @objc weak public var adView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc public var timestamp: Foundation.Date {
+    get
+  }
+  @objc public var logId: Foundation.UUID
+  public var adViewType: GFPSDK.GFPAdViewType?
+  @objc public var adUnitID: Swift.String?
+  @objc public var adRequestLog: GFPSDK.GFPAPILog?
+  @objc public var adEventLogs: [GFPSDK.GFPAPILog]
+  @objc public var loadResponseInfo: GFPSDK.GFPLoadResponseInfo?
+  @objc public var adParam: GFPSDK.GFPAdParam?
+  @objc public var videoParam: GFPSDK.GFPVideoAdParam?
+  @objc public var extraParam: GFPSDK.GFPExtraRequestParam?
+  @objc public var timeoutInterval: Swift.Double
+  @objc public var internalLogs: [GFPSDK.GFPInspectorInternalLog]
+  @objc public var errorMessage: Swift.String?
+  @objc public func addError(_ error: NaverAdsServices.GFPError)
+  @objc public var cachedParam: GFPSDK.GFPCachedAdParam?
+  @objc public init(withLogId logId: Foundation.UUID)
+  @objc public func creativeType() -> Swift.String?
+  @objc public func providerName() -> Swift.String?
+  public func isFilled() -> Swift.Bool?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPInspectorLogIndex : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var logId: Foundation.UUID?
+  public var logType: GFPSDKInspector.GFPInspectorLogType?
+  @objc public var logSender: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class GFPViewAnalysis : ObjectiveC.NSObject, Swift.Codable {
+  public func fixupAfterDecode()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class GFPInspectorNativeValidation : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc(GFPInspector) @objcMembers public class GFPInspector : ObjectiveC.NSObject {
+  @objc(makeInspectorWithLogId:adViewType:) public static func makeInspector(withLogId logId: Foundation.UUID, adViewType: Foundation.NSNumber) -> GFPSDKInspector.GFPInspector
+  @objc(initWithLogId:adViewType:) public init(withLogId logId: Foundation.UUID, adViewType: GFPSDK.GFPAdViewType)
+  @objc(updateLogId:) public func updateLogId(_ logId: Foundation.UUID)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GFPInspectorLogger) public class GFPInspectorLogger : ObjectiveC.NSObject, Swift.Codable {
+  @objc public static var shared: GFPSDKInspector.GFPInspectorLogger {
+    @objc get
+  }
+  @objc(addNewAdLogWithLogId:) public func addNewAdLog(logId: Foundation.UUID)
+  @objc(adLogForLogId:) public func adLog(forLogId logId: Foundation.UUID) -> GFPSDKInspector.GFPAdLog?
+  @objc(logAdViewTypeWith:logId:) public func logAdViewType(with adViewType: Foundation.NSNumber, logId: Foundation.UUID)
+  @objc(logAdError:logId:) public func logAdError(_ error: NaverAdsServices.GFPError, logId: Foundation.UUID)
+  @objc(logAdView:logId:) public func logAdView(_ adView: UIKit.UIView, logId: Foundation.UUID)
+  @objc(logInternalLog:logId:) public func logInternalLog(_ log: GFPSDK.GFPInspectorInternalLog, logId: Foundation.UUID)
+  @objc(logAdRequest:logId:) public func logAdRequest(_ log: GFPSDK.GFPAPILog, logId: Foundation.UUID)
+  @objc(logAdEvent:logId:) public func logAdEvent(_ log: GFPSDK.GFPAPILog, logId: Foundation.UUID)
+  @objc(logSDKInitRequest:logId:) public func logSDKInitRequest(_ log: GFPSDK.GFPAPILog, logId: Foundation.UUID)
+  @objc(addNewSDKInitLogWithLogId:) public func addNewSDKInitLog(logId: Foundation.UUID)
+  @objc(logSDKInitWithResult:logId:) public func logSDKInit(result: GFPSDK.GFPSDKInitResult, logId: Foundation.UUID)
+  @objc(logUnavailableAdTypeWithBannerOption:) public func logUnavailableAdType(withBannerOption option: Foundation.NSNumber)
+  @objc(logUnavailableAdTypeWithNativeOption:) public func logUnavailableAdType(withNativeOption option: Foundation.NSNumber)
+  @objc(logUnavailableAdTypeWithCombinedOption:) public func logUnavailableAdType(withCombinedOption option: Foundation.NSNumber)
+  @objc(logUnavailableAdTypeWithVideoOption:) public func logUnavailableAdType(withVideoOption option: Foundation.NSNumber)
+  @objc(logUnavailableAdTypeWithRewardedOption:) public func logUnavailableAdType(withRewardedOption option: Foundation.NSNumber)
+  @objc(logUnavailableAdTypeWithInterstitialOption:) public func logUnavailableMediation(withInterstitialOption option: Foundation.NSNumber)
+  @objc(logAvailableMediationWithProviderType:productType:) public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType, productType: GFPSDK.GFPProviderProductType)
+  @objc(logNotUsedMediationWithProviderType:) public func logNotUsedMediation(withProviderType providerType: GFPSDK.GFPProviderType)
+  @objc(logInitializedMediationWithProviderType:) public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType)
+  @objc(logBlockedMediationWithProviderType:) public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType)
+  @objc(logErroredMediationWithProviderType:creativeType:) public func logErroredMediation(withProviderType providerType: GFPSDK.GFPProviderType, creativeType: GFPSDK.GFPProviderCreativeType)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+extension GFPSDKInspector.GFPInspectorLogType : Swift.Equatable {}
+extension GFPSDKInspector.GFPInspectorLogType : Swift.Hashable {}

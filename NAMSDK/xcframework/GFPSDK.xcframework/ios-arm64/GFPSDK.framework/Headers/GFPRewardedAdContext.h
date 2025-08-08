@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *productType;
 @property (nonatomic, strong, nullable) NSArray <GFPOMFriendlyObstruction *> *omFriendlyObstructions;
 
-- (instancetype)initWithProductType:(NSString *)productType;
+- (instancetype)initWithProductType:(NSString *)productType logId:(NSUUID *)logId;
 @end
 
 NS_ASSUME_NONNULL_END

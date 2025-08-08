@@ -11,6 +11,7 @@
 
 @class GFPError;
 @class DDXMLElement;
+@import NaverAdsServices;
 
 
 typedef NS_OPTIONS(NSInteger, GFPCreativeType) {
@@ -31,8 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithDomElement:(DDXMLElement *)aElement error:(GFPError * _Nullable * _Nullable)aError;
 
-
 + (NSArray <GFPCreativeExtension *> * _Nullable)creativeExtension:(DDXMLElement *)aElement error:(GFPError * _Nullable *_Nullable)aError;
+
+
+//For NAS VAST PARSER
+- (instancetype)initWithCreativeExtension:(GFPVastExtension *)creativeExtension error:(GFPError * _Nullable * _Nullable)aError;
++ (NSArray <GFPCreativeExtension *> *)nasCreativeExtensionList:(NSArray <GFPVastExtension *> *)creativeList
+                                                         error:(GFPError *_Nullable * _Nullable)aError;
 
 @end
 

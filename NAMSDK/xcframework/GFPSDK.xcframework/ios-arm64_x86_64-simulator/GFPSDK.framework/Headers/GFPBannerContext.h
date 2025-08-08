@@ -37,7 +37,8 @@ extern NSString *const kNDAHostMetaThemeLight;
                                   hostMeta:(NSDictionary <NSString *, NSString *> *)hostMeta
                                 layoutType:(GFPBannerViewLayoutType)layoutType
                             webViewOptions:(nullable GFPAdBannerWebViewOptions *)webViewOptions
-                             clickDelegate:(nullable id <GFPS2SAdClickDelegate>)clickDelegate;
+                             clickDelegate:(nullable id <GFPS2SAdClickDelegate>)clickDelegate
+                                     logId:(NSUUID *)logId;
 
 @end
 

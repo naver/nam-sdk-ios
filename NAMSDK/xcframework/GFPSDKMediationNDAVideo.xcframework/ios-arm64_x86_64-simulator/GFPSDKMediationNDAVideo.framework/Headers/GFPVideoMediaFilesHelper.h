@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@import NaverAdsServices;
+
 
 @class GFPNDAVastMediaFile;
 @class GFPVideoAdRenderingSetting;
@@ -16,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPVideoMediaFilesHelper : NSObject
 
 + (GFPNDAVastMediaFile * _Nullable)selectMediaFileWithMediaFiles:(NSArray <GFPNDAVastMediaFile *> *)mediaFiles
+                                                renderingSetting:(nullable GFPVideoAdRenderingSetting *)renderingSetting;
+
+
++ (GFPVastMediaFile * _Nullable)selectNASMediaFileWithMediaFiles:(GFPVastMediaFiles *)mediaFiles
                                                 renderingSetting:(nullable GFPVideoAdRenderingSetting *)renderingSetting;
 
 

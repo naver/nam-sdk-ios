@@ -37,7 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
                               videoOptions:(nullable GFPVideoOptions *)videoOptions
                   simpleAdRenderingSetting:(GFPNativeSimpleAdRenderingSetting *)simpleAdRenderingSetting
                            templateOptions:(nullable GFPNativeTemplateOptions *)templateOptions
-                             clickDelegate:(nullable id <GFPS2SAdClickDelegate>)clickDelegate;
+                             clickDelegate:(nullable id <GFPS2SAdClickDelegate>)clickDelegate
+                                     logId:(NSUUID *)logId;
 
 @end
 
