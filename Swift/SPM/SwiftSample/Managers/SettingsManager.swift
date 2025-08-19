@@ -11,7 +11,7 @@ import AppTrackingTransparency
 import AdSupport
 import GFPSDK
 //import PrebidMobile
-import DTBiOSSDK
+//import DTBiOSSDK
 
 
 fileprivate extension String {
@@ -196,7 +196,7 @@ class SettingsManager: NSObject {
         }
     }
 
-    @Persisted(key: .phase, defaultValue: .real)
+    @Persisted(key: .phase, defaultValue: .test)
     var phase: GFPPhaseType {
         didSet {
             GFPAdManager.adConfiguration().phase = phase
@@ -643,26 +643,26 @@ extension SettingsManager: GFPAdManagerDelegate {
     }
 }
 
-extension SettingsManager: DTBAdCallback {
-    func onFailure(_ error: DTBAdError) {
-        /**Please implement the logic to send ad request without our parameters if you want to
-         show ads from other ad networks when Amazon ad request fails**/
-        // MARK: Not supported in NAM SDK
-//        apsParam = nil
-        apsDispatchGroup.leave()
-    }
-
-    func onSuccess(_ adResponse: DTBAdResponse!) {
-        /**Build the ad request to your ad server. This portion will differ depending on your
-         ad server**/
-
-        // MARK: Not supported in NAM SDK
-//        let apsParam = GFPAPSAdParam()
-//        apsParam.crid = adResponse.crid()
-//        apsParam.size = CGSizeMake(CGFloat(adResponse.adSize().width), CGFloat(adResponse.adSize().height));
-//        apsParam.apsHBParam = adResponse.customTargeting() as? [String : NSObject]
-//        apsParam.skAdNetworkParams = adResponse.skAdNetworkParams
-//        self.apsParam = apsParam
-        apsDispatchGroup.leave()
-    }
-}
+//extension SettingsManager: DTBAdCallback {
+//    func onFailure(_ error: DTBAdError) {
+//        /**Please implement the logic to send ad request without our parameters if you want to
+//         show ads from other ad networks when Amazon ad request fails**/
+//        // MARK: Not supported in NAM SDK
+////        apsParam = nil
+//        apsDispatchGroup.leave()
+//    }
+//
+//    func onSuccess(_ adResponse: DTBAdResponse!) {
+//        /**Build the ad request to your ad server. This portion will differ depending on your
+//         ad server**/
+//
+//        // MARK: Not supported in NAM SDK
+////        let apsParam = GFPAPSAdParam()
+////        apsParam.crid = adResponse.crid()
+////        apsParam.size = CGSizeMake(CGFloat(adResponse.adSize().width), CGFloat(adResponse.adSize().height));
+////        apsParam.apsHBParam = adResponse.customTargeting() as? [String : NSObject]
+////        apsParam.skAdNetworkParams = adResponse.skAdNetworkParams
+////        self.apsParam = apsParam
+//        apsDispatchGroup.leave()
+//    }
+//}
