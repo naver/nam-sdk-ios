@@ -25,7 +25,7 @@
 		1FB55F212566078B00486B6F /* AdControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55EF6256604C200486B6F /* AdControlVC.swift */; };
 		1FB55F66256670A100486B6F /* OtherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55F65256670A000486B6F /* OtherExtensions.swift */; };
 		1FC025EA2E546D0500C606E4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1FC025E92E546D0500C606E4 /* SnapKit */; };
-		1FC025F22E54723800C606E4 /* GFPSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1FC025F12E54723800C606E4 /* GFPSDK */; };
+		1FC025FE2E55A08B00C606E4 /* GFPSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1FC025FD2E55A08B00C606E4 /* GFPSDK */; };
 		CE097FDB2A138BD000AAB74D /* TableAdControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE097FDA2A138BD000AAB74D /* TableAdControlVC.swift */; };
 		CE21A013282CDC54001FD1A3 /* AdUnitIDList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE21A012282CDC54001FD1A3 /* AdUnitIDList.plist */; };
 		CE3B4D0C2822881400B55921 /* AdTypeViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B4D0B2822881400B55921 /* AdTypeViewConroller.swift */; };
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC025EA2E546D0500C606E4 /* SnapKit in Frameworks */,
-				1FC025F22E54723800C606E4 /* GFPSDK in Frameworks */,
+				1FC025FE2E55A08B00C606E4 /* GFPSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +412,7 @@
 			mainGroup = 1FB55C7A2563B69B00486B6F;
 			packageReferences = (
 				1FC025E82E546D0500C606E4 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				1FC025F02E54723800C606E4 /* XCLocalSwiftPackageReference "../../../sodam-nam-sdk-ios" */,
+				1FC025FC2E55A08B00C606E4 /* XCLocalSwiftPackageReference "../../../nam-sdk-ios" */,
 			);
 			productRefGroup = 1FB55C842563B69B00486B6F /* Products */;
 			projectDirPath = "";
@@ -719,9 +719,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		1FC025F02E54723800C606E4 /* XCLocalSwiftPackageReference "../../../sodam-nam-sdk-ios" */ = {
+		1FC025FC2E55A08B00C606E4 /* XCLocalSwiftPackageReference "../../../nam-sdk-ios" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../../sodam-nam-sdk-ios";
+			relativePath = "../../../nam-sdk-ios";
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -742,7 +742,7 @@
 			package = 1FC025E82E546D0500C606E4 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		1FC025F12E54723800C606E4 /* GFPSDK */ = {
+		1FC025FD2E55A08B00C606E4 /* GFPSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GFPSDK;
 		};
