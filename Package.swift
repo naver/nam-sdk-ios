@@ -41,31 +41,31 @@ let package = Package(
             ],
             path: "NAMSDK/SPM/Sources/Core",
             resources: [
-                .copy("../../../resourcebundle/GFPSDKResource.bundle"),
-                .copy("../../../xcframework/GFPSDK.xcframework/ios-arm64/GFPSDK.framework/PrivacyInfo.xcprivacy")
+                .process("../../../resourcebundle/GFPSDKResource.bundle"),
+                .process("../../../xcframework/GFPSDK.xcframework/ios-arm64/GFPSDK.framework/PrivacyInfo.xcprivacy")
             ]
         ),
         .target(
             name: "AdRenderer_Resource",
             path: "NAMSDK/SPM/Sources/AdRenderer",
             resources: [
-                .copy("../../../resourcebundle/GFPSDKRendererResource.bundle")
+                .process("../../../resourcebundle/GFPSDKRendererResource.bundle")
             ]
         ),
         .target(
             name: "MediationNDA_Resource",
             path: "NAMSDK/SPM/Sources/MediationNDA",
             resources: [
-                .copy("../../../resourcebundle/GFPNDAMraidResource.bundle"),
-                .copy("../../../resourcebundle/GFPNDANativeResource.bundle")
+                .process("../../../resourcebundle/GFPNDAMraidResource.bundle"),
+                .process("../../../resourcebundle/GFPNDANativeResource.bundle")
             ]
         ),
         .target(
             name: "MediationNDAVideo_Resource",
             path: "NAMSDK/SPM/Sources/MediationNDAVideo",
             resources: [
-                .copy("../../../resourcebundle/GFPNDAVideoResource.bundle"),
-                .copy("../../../resourcebundle/GFPNDANativeResource.bundle")
+                .process("../../../resourcebundle/GFPNDAVideoResource.bundle"),
+                .process("../../../resourcebundle/GFPNDANativeResource.bundle")
             ]
         ),
         
