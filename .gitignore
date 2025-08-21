@@ -1,4 +1,6 @@
 *.xcuserstate
-example/AdsSampleApp.xcworkspace
-Swift/Pods
-Swift/SwiftSample.xcworkspace
+.build/
+.swiftpm/
+Package.pins
+Swift/Cocoapods/Pods
+Swift/Cocoapods/SwiftSample.xcworkspace
