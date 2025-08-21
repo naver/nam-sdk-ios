@@ -1,5 +1,5 @@
 {
-  "originHash" : "b3b796e9823520451b63210d0bc727c5d58a17686c6d4982a5b9b896c6b4b50f",
+  "originHash" : "4c5a98c9344088195059bd55f264c4ba629c1971eeeedeee5000bb34455360a5",
   "pins" : [
     {
       "identity" : "kissxml",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/naver/nas-sdk-ios.git",
       "state" : {
-        "revision" : "a619f3166a3771c5bc6414dcd3c5d187c9579f07",
-        "version" : "1.2.0"
+        "revision" : "318d9d79cc3e0d8cb6113062254a0af18cabe903",
+        "version" : "1.2.1"
       }
     }
   ],
