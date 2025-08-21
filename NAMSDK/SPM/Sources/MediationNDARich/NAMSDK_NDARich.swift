@@ -1,5 +1,5 @@
 //
-//  NAMSDK.swift
+//  NAMSDK_NDARich.swift
 //
 //  NAM(Naver Ad Manager) SDK for iOS
 //  Copyright 2022-present NAVER Corp.
