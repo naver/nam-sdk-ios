@@ -32682,1267 +32682,1267 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 25,
       "value": "\"gfp_adinterface_changed\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
       "kind": "StringLiteral",
       "offset": 462,
       "length": 50,
       "value": "\"gfp_video_global_options_disableAutoPlay_changed\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
       "kind": "StringLiteral",
       "offset": 562,
       "length": 51,
       "value": "\"gfp_video_global_options_globalPlayPolicy_changed\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 29,
       "value": "\"gfp_s2s_rewarded_resume_key\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPCustomNotification.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 33,
       "value": "\"gfp_s2s_interstitial_resume_key\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPLabelOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPLabelOption.swift",
       "kind": "StringLiteral",
       "offset": 415,
       "length": 9,
       "value": "\"#6F9DD7\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
       "kind": "StringLiteral",
       "offset": 767,
       "length": 102,
       "value": "\"GFP server error (level:\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
       "kind": "StringLiteral",
       "offset": 809,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
       "kind": "StringLiteral",
       "offset": 819,
       "length": 1,
       "value": "\") (code:\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
       "kind": "StringLiteral",
       "offset": 840,
       "length": 1,
       "value": "\") (message:\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Network\/GFPServerError.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 378,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 414,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 449,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 1738,
       "length": 83,
       "value": "\"- Type : \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 1760,
       "length": 1,
       "value": "\" - PlaceID : \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 1788,
       "length": 1,
       "value": "\" - ExtraDict : \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 1820,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 1851,
       "length": 51,
       "value": "\"- Type : \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 1873,
       "length": 1,
       "value": "\" - PlaceID : \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderInfo.swift",
       "kind": "StringLiteral",
       "offset": 1901,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 345,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 372,
       "length": 20,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 402,
       "length": 16,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 428,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 454,
       "length": 18,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 482,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 510,
       "length": 18,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 538,
       "length": 9,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 557,
       "length": 10,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 577,
       "length": 26,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 618,
       "length": 12,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 640,
       "length": 12,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 662,
       "length": 13,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 685,
       "length": 11,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 706,
       "length": 12,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 728,
       "length": 9,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPInspectorInternalLogType.swift",
       "kind": "IntegerLiteral",
       "offset": 747,
       "length": 11,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 602,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 693,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
       "kind": "StringLiteral",
       "offset": 900,
       "length": 89,
       "value": "\"<[GFPAdProviderSetting] type(\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
       "kind": "StringLiteral",
       "offset": 942,
       "length": 1,
       "value": "\"), testMode(\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
       "kind": "StringLiteral",
       "offset": 973,
       "length": 5,
       "value": "\"YES\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
       "kind": "StringLiteral",
       "offset": 981,
       "length": 4,
       "value": "\"NO\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/GFPAdProviderSetting.swift",
       "kind": "StringLiteral",
       "offset": 987,
       "length": 1,
       "value": "\">\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdPlayerSetting.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdPlayerSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Debug\/GFPDebugger.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Debug\/GFPDebugger.swift",
       "kind": "BooleanLiteral",
       "offset": 361,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Debug\/GFPDebugger.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Debug\/GFPDebugger.swift",
       "kind": "BooleanLiteral",
       "offset": 458,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPQoeTrackingInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPQoeTrackingInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 1189,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPQoeTrackingInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPQoeTrackingInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 1221,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 20,
       "value": "\"DEFAULT_VISUAL_KEY\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
       "kind": "StringLiteral",
       "offset": 393,
       "length": 28,
       "value": "\"NORMAL_IMAGE_SHOPPINGLABEL\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 29,
       "value": "\"CAROUSEL_IMAGE_SMARTCHANNEL\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPTemplateVisualKey.swift",
       "kind": "StringLiteral",
       "offset": 533,
       "length": 27,
       "value": "\"NORMAL_IMAGE_SHOPPING_H84\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "IntegerLiteral",
       "offset": 328,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "IntegerLiteral",
       "offset": 642,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "IntegerLiteral",
       "offset": 725,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "StringLiteral",
       "offset": 801,
       "length": 17,
       "value": "\"<GFPMediaData :\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "StringLiteral",
       "offset": 875,
       "length": 18,
       "value": "\"Image - \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "StringLiteral",
       "offset": 892,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "StringLiteral",
       "offset": 920,
       "length": 38,
       "value": "\", AspectRatio - \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPIconData.swift",
       "kind": "StringLiteral",
       "offset": 956,
       "length": 1,
       "value": "\">\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 367,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 380,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 393,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 409,
       "length": 3,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 422,
       "length": 5,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 437,
       "length": 8,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 455,
       "length": 6,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 471,
       "length": 2,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 483,
       "length": 2,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
       "length": 3,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 508,
       "length": 10,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 528,
       "length": 10,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 548,
       "length": 3,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 692,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 705,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 718,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 866,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 879,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 892,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 905,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 921,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 3,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 950,
       "length": 10,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 970,
       "length": 3,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1139,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1152,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1299,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1312,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1325,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1341,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1356,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1374,
       "length": 3,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1387,
       "length": 6,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1403,
       "length": 2,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1415,
       "length": 2,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1427,
       "length": 3,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1440,
       "length": 3,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1453,
       "length": 10,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1473,
       "length": 10,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1493,
       "length": 3,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1650,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1663,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1676,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1692,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1707,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1725,
       "length": 3,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1738,
       "length": 6,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 2,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1766,
       "length": 2,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1778,
       "length": 3,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1791,
       "length": 3,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1804,
       "length": 10,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1824,
       "length": 10,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Provider\/GFPProviderOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1844,
       "length": 3,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
       "kind": "IntegerLiteral",
       "offset": 972,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
       "kind": "IntegerLiteral",
       "offset": 1011,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
       "kind": "IntegerLiteral",
       "offset": 1127,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
       "kind": "IntegerLiteral",
       "offset": 1131,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/Internal\/GFPVideoAdParam.swift",
       "kind": "BooleanLiteral",
       "offset": 1045,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 32,
       "value": "\"https:\/\/dev-gfp.veta.naver.com\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 28,
       "value": "\"https:\/\/nam.veta.naver.com\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 33,
       "value": "\"https:\/\/beta-nam.veta.naver.com\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 460,
       "length": 8,
       "value": "\"\/is\/v2\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 505,
       "length": 14,
       "value": "\"\/registSkAdn\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 550,
       "length": 9,
       "value": "\"\/gfp\/v1\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 597,
       "length": 6,
       "value": "\"\/vas\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Config\/GFPSDKPhase.swift",
       "kind": "StringLiteral",
       "offset": 627,
       "length": 40,
       "value": "\"https:\/\/nelo2-col.navercorp.com\/_store\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 1023,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
       "offset": 1099,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
       "offset": 1143,
       "length": 3,
       "value": "9.0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
       "offset": 1147,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
       "offset": 1271,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
       "offset": 1393,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
       "offset": 1398,
       "length": 3,
       "value": "9.0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 436,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 477,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 516,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 556,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 594,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 635,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 793,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 834,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 875,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 911,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPNativeAdBackgroundOption.swift",
       "kind": "IntegerLiteral",
       "offset": 947,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 14,
       "value": "\"productTypes\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
       "kind": "StringLiteral",
       "offset": 343,
       "length": 11,
       "value": "\"adUnitIds\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Initializer\/GFPAdInitProviderAdditionalInfo.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 16,
       "value": "\"appSignatureId\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/GFPInspectorLoggerInterface.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/GFPInspectorLoggerInterface.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 34,
       "value": "\"com.naver.da.gfp.inspectorlogger\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/GFPInspectorEnabler.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/GFPInspectorEnabler.swift",
       "kind": "BooleanLiteral",
       "offset": 481,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 306,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 366,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 381,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 405,
       "length": 8,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/Data\/Common\/GFPAdViewType.swift",
       "kind": "IntegerLiteral",
       "offset": 423,
       "length": 12,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/GFPInspectorInterface.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Inspector\/GFPInspectorInterface.swift",
       "kind": "FloatLiteral",
       "offset": 339,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoDisplayMode.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoDisplayMode.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoDisplayMode.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoDisplayMode.swift",
       "kind": "IntegerLiteral",
       "offset": 330,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 287,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 302,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 321,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 377,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 636,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 830,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 878,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
       "offset": 1999,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2619,
       "length": 42,
       "value": "\"<GFPMediaData : Type - \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2660,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2727,
       "length": 20,
       "value": "\", Image - \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2746,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2834,
       "length": 40,
       "value": "\", VideoController - \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2873,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2910,
       "length": 38,
       "value": "\", AspectRatio - \""
     },
     {
-      "filePath": "\/Users\/sodam\/Documents\/actions-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
       "offset": 2946,
       "length": 1,
