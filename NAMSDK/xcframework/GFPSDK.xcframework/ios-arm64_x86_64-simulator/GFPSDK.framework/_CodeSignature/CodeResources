@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/GFPAdLoader.h</key>
 		<data>
-		+oKsQuXO/FtDtFPLOMRRmyBTuXE=
+		9L3VSsINEQvJcXI+dmKGEmwi2V8=
 		</data>
 		<key>Headers/GFPAdLoaderDelegate.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/GFPBannerView.h</key>
 		<data>
-		HP3vXJRpaZ4Eu5LlLSd6fu+WAhE=
+		iaS/9sU6d4j5nf5Q+F3DY3XyEzw=
 		</data>
 		<key>Headers/GFPBannerViewDelegate.h</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/GFPCoreConfig.h</key>
 		<data>
-		HvnaqrqO10t5Y3RAH1FWMpB25ZA=
+		8zo2ZpS0olAYFoPv2KjpzKBuEJM=
 		</data>
 		<key>Headers/GFPCreativeExtension.h</key>
 		<data>
@@ -727,11 +727,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+oKsQuXO/FtDtFPLOMRRmyBTuXE=
+			9L3VSsINEQvJcXI+dmKGEmwi2V8=
 			</data>
 			<key>hash2</key>
 			<data>
-			doFpgWRqhaQ+w0EVoy5Yn6T04dthY0dbYle7wpqaVik=
+			CU1h7mcUEWyL3+urYleT6UGmOPCQIgfteeDsfGAn+4c=
 			</data>
 		</dict>
 		<key>Headers/GFPAdLoaderDelegate.h</key>
@@ -881,11 +881,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HP3vXJRpaZ4Eu5LlLSd6fu+WAhE=
+			iaS/9sU6d4j5nf5Q+F3DY3XyEzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			J9GgBJNtcRADUV+/8UFOSPIWMxywEyXbFaKWIfTQG1w=
+			bMb7tUBbZm0y8hs9xISJjAw/NpgZSW0UZJHAljjlyoQ=
 			</data>
 		</dict>
 		<key>Headers/GFPBannerViewDelegate.h</key>
@@ -980,11 +980,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HvnaqrqO10t5Y3RAH1FWMpB25ZA=
+			8zo2ZpS0olAYFoPv2KjpzKBuEJM=
 			</data>
 			<key>hash2</key>
 			<data>
-			PwFVQiSdEQHfCQekVrY3OTYLAx0eXWJCi/qU7Syt778=
+			N9i2jBofqj4iWOHFjWIkPsAyVk4n1Ra/SwN37T7cPFY=
 			</data>
 		</dict>
 		<key>Headers/GFPCreativeExtension.h</key>

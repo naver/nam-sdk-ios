@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPAdLoader : NSObject
 
+@property (readonly, nonatomic, strong) NSString *adUnitID;
+
 @property (readonly, nonatomic, strong) GFPAdParam *adParam;
 
 @property (readwrite, nonatomic, weak) id <GFPAdLoaderDelegate> delegate;

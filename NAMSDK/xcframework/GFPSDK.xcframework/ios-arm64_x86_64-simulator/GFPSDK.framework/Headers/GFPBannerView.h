@@ -32,6 +32,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPBannerView : UIView
 
+/**
+ * 광고의 unitId
+ */
+@property (readonly, nonatomic, strong) NSString *adUnitID;
 
 /**
  * 광고 요청에 사용할 파라미터
