@@ -613,6 +613,13 @@
       },
       {
         "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKInspector"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -652,6 +659,13 @@
         "kind": "Import",
         "name": "GFPSDK",
         "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKInspector"
+      },
+      {
+        "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
         "declKind": "Import",
         "moduleName": "GFPSDKInspector"
       },
@@ -5745,7 +5759,7 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/Data\/Utils\/Encodable+JsonObjectNilIncluded.swift",
       "kind": "Array",
-      "offset": 341,
+      "offset": 365,
       "length": 2,
       "value": "[]"
     },
@@ -5815,42 +5829,42 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/Data\/Utils\/GFPJSONUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 454,
+      "offset": 479,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/Data\/Utils\/GFPJSONUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 539,
+      "offset": 564,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/Data\/Utils\/GFPJSONUtils.swift",
       "kind": "Dictionary",
-      "offset": 751,
+      "offset": 776,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/Data\/Utils\/GFPJSONUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1496,
+      "offset": 1521,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/Data\/Utils\/GFPJSONUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1582,
+      "offset": 1607,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/Data\/Utils\/GFPJSONUtils.swift",
       "kind": "Dictionary",
-      "offset": 1797,
+      "offset": 1822,
       "length": 3,
       "value": "[]"
     },
@@ -7215,28 +7229,28 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/GFPInspectorLogger.swift",
       "kind": "Dictionary",
-      "offset": 1307,
+      "offset": 1312,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/GFPInspectorLogger.swift",
       "kind": "Dictionary",
-      "offset": 1403,
+      "offset": 1408,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/GFPInspectorLogger.swift",
       "kind": "Dictionary",
-      "offset": 1713,
+      "offset": 1718,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKInspector\/GFPInspectorLogger.swift",
       "kind": "Dictionary",
-      "offset": 1776,
+      "offset": 1781,
       "length": 3,
       "value": "[]"
     }
