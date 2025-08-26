@@ -1,0 +1,4 @@
+framework module GFPSDKMediationVungle {
+  header "GFPSDKMediationVungle-Swift.h"
+  requires objc
+}
