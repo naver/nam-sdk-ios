@@ -492,6 +492,7 @@ extension GFPSDK.GFPErrorUtils {
 }
 @objc public enum GFPRichMediaDataAdType : Swift.Int {
   case newVideoExtendV2
+  case newVideoExtendV3
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

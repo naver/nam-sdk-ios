@@ -861,6 +861,7 @@ SWIFT_CLASS("_TtC6GFPSDK16GFPRichMediaData")
 
 typedef SWIFT_ENUM(NSInteger, GFPRichMediaDataAdType, open) {
   GFPRichMediaDataAdTypeNewVideoExtendV2 = 0,
+  GFPRichMediaDataAdTypeNewVideoExtendV3 = 1,
 };
 
 

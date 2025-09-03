@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		fMrdEgLyBzyxPwcoSHbKzahYPIs=
+		a4ZU8pkV5/aPfzqdKlXQo728fpc=
 		</data>
 		<key>GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -16,9 +16,17 @@
 		<data>
 		gKbB2K1fr50GuaqsIDc1LUEdRyI=
 		</data>
+		<key>GFPNDAShoppingSingleSlideCell.nib</key>
+		<data>
+		4+GbnnHjJ71eNtG5K83e9WaXegM=
+		</data>
 		<key>GFPNDASmartChannelFlickingCell.nib</key>
 		<data>
-		BVkogKDMUWFxhKScnFZiCbLXnds=
+		G/4lzTMEtrmFe7PWIDcpzdXvP7o=
+		</data>
+		<key>GFPNDATravelNDACell.nib</key>
+		<data>
+		IyVvMeY8fdEESc4QGwtD+8rkpCE=
 		</data>
 		<key>de.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
@@ -117,11 +125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fMrdEgLyBzyxPwcoSHbKzahYPIs=
+			a4ZU8pkV5/aPfzqdKlXQo728fpc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4aBY9gFDOa968KKRerRzFZX/mypJminuxgKgsEyOm+A=
+			XTUTfaCZVDGdZwbwOj/jD3xHzX2QptBR/tiodkO2kW0=
 			</data>
 		</dict>
 		<key>GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
@@ -146,15 +154,37 @@
 			TvWQFJx2tBtK6GF1N8D5zJiv5hKUxoNx+RqLQu38Q8Y=
 			</data>
 		</dict>
+		<key>GFPNDAShoppingSingleSlideCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4+GbnnHjJ71eNtG5K83e9WaXegM=
+			</data>
+			<key>hash2</key>
+			<data>
+			WalJesctPmwg7VMhNob+Dl6tk41prv14KzHbHPkM94g=
+			</data>
+		</dict>
 		<key>GFPNDASmartChannelFlickingCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BVkogKDMUWFxhKScnFZiCbLXnds=
+			G/4lzTMEtrmFe7PWIDcpzdXvP7o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rq+HgqGNlUOylPaEuVwwl/MlZ5LuiJ0IxJcNcZbR1cc=
+			Q5WamPQ6Uy2RTdgM542nITwVfht0DIobntwz4dXrlRA=
+			</data>
+		</dict>
+		<key>GFPNDATravelNDACell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IyVvMeY8fdEESc4QGwtD+8rkpCE=
+			</data>
+			<key>hash2</key>
+			<data>
+			fq26S6WPVmKCiYevNjF1EiG0rRL1GI9NoKojcP8g+oM=
 			</data>
 		</dict>
 		<key>de.lproj/GFPNDANativeLocalizable.strings</key>

@@ -18412,6 +18412,47 @@
             "fixedbinaryorder": 0
           },
           {
+            "kind": "Var",
+            "name": "newVideoExtendV3",
+            "printedName": "newVideoExtendV3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPRichMediaDataAdType.Type) -> GFPSDK.GFPRichMediaDataAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPRichMediaDataAdType",
+                    "printedName": "GFPSDK.GFPRichMediaDataAdType",
+                    "usr": "c:@M@GFPSDK@E@GFPRichMediaDataAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPRichMediaDataAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPRichMediaDataAdType",
+                        "printedName": "GFPSDK.GFPRichMediaDataAdType",
+                        "usr": "c:@M@GFPSDK@E@GFPRichMediaDataAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPRichMediaDataAdType@GFPRichMediaDataAdTypeNewVideoExtendV3",
+            "mangledName": "$s6GFPSDK22GFPRichMediaDataAdTypeO16newVideoExtendV3yA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -33594,49 +33635,56 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
+      "offset": 311,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1049,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1099,
+      "offset": 1125,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1143,
+      "offset": 1169,
       "length": 3,
       "value": "9.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1147,
+      "offset": 1173,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1271,
+      "offset": 1297,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1393,
+      "offset": 1419,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1398,
+      "offset": 1424,
       "length": 3,
       "value": "9.0"
     },

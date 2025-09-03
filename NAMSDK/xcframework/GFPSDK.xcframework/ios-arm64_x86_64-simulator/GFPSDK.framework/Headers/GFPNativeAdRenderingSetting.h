@@ -116,6 +116,12 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  */
 @property (nonatomic, assign) BOOL isImageSizePreferred;
 
+/**
+ * 가로 해상도 기준으로 Cell의 사이즈가 결정되는 광고 타입에서 사용합니다.
+ * 광고가 그려질 View 영역의 Width 값을 설정합니다.
+ */
+@property (nonatomic, nullable) NSNumber *viewWidth;
+
 @end
 
 
