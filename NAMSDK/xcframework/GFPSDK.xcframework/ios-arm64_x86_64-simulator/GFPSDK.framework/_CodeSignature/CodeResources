@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/GFPCoreConfig.h</key>
 		<data>
-		PA/aA0ZQ4USoEyr0SNPN3Q1Li/8=
+		iRs0z249l2/rXHR82I/6HRHPJWc=
 		</data>
 		<key>Headers/GFPCreativeExtension.h</key>
 		<data>
@@ -191,10 +191,6 @@
 		<key>Headers/GFPImpressionTracker.h</key>
 		<data>
 		aNQWdeuFF3g72EFoXmQIseap5sg=
-		</data>
-		<key>Headers/GFPInitResponseCache.h</key>
-		<data>
-		9gGrArfVLKy0qqRlCHiV/Pr0TFA=
 		</data>
 		<key>Headers/GFPInterfaceUtils.h</key>
 		<data>
@@ -422,7 +418,7 @@
 		</data>
 		<key>Headers/GFPSDK.h</key>
 		<data>
-		E5chUuo8+ooeJDp0uO1PwUlfXV0=
+		oVglfPgGZr6YQ3vEtHYe4KiGeY8=
 		</data>
 		<key>Headers/GFPStartEvent.h</key>
 		<data>
@@ -510,7 +506,7 @@
 		</data>
 		<key>Headers/GFPVideoController.h</key>
 		<data>
-		OOnxRJLsFkwOpL2vxIPeZHnda9k=
+		a7ZqFsnKNwCVXpO3lK90KaRJRb4=
 		</data>
 		<key>Headers/GFPVideoEventDelegate.h</key>
 		<data>
@@ -980,11 +976,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PA/aA0ZQ4USoEyr0SNPN3Q1Li/8=
+			iRs0z249l2/rXHR82I/6HRHPJWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			MMaIyOFioyfMh0uqBbnkBnsyLymRwaPEum57v2xXZTE=
+			+VYq9dipo9/pzdYhTGGETSIpZSjqNEylnMMPxt+VzUA=
 			</data>
 		</dict>
 		<key>Headers/GFPCreativeExtension.h</key>
@@ -1106,17 +1102,6 @@
 			<key>hash2</key>
 			<data>
 			Qguiu/xXPklxcbdQ8WPZUNqd96SxR1/OYDKxRCx4T5o=
-			</data>
-		</dict>
-		<key>Headers/GFPInitResponseCache.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9gGrArfVLKy0qqRlCHiV/Pr0TFA=
-			</data>
-			<key>hash2</key>
-			<data>
-			MEyZ5c6bUduNEEe3trhW+NQgxJ8mGQLE3M/WFkCS0ZY=
 			</data>
 		</dict>
 		<key>Headers/GFPInterfaceUtils.h</key>
@@ -1739,11 +1724,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E5chUuo8+ooeJDp0uO1PwUlfXV0=
+			oVglfPgGZr6YQ3vEtHYe4KiGeY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			LR8VqI0dW2wSoglp6B5ws4ySuvCZGv2XEAA1aY0yoxs=
+			8ZPMBZjqjc5/iyJQAaR1aFik06segG+NIim/+s4fW0s=
 			</data>
 		</dict>
 		<key>Headers/GFPStartEvent.h</key>
@@ -1981,11 +1966,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OOnxRJLsFkwOpL2vxIPeZHnda9k=
+			a7ZqFsnKNwCVXpO3lK90KaRJRb4=
 			</data>
 			<key>hash2</key>
 			<data>
-			S4F+7Tgm6rdFoj279M5ndQRXZtPTrIOPsTKJCaoctTk=
+			DOOSNwkJlaURKkw0o8T60y/NBWUNOK5LGKotarF00EI=
 			</data>
 		</dict>
 		<key>Headers/GFPVideoEventDelegate.h</key>

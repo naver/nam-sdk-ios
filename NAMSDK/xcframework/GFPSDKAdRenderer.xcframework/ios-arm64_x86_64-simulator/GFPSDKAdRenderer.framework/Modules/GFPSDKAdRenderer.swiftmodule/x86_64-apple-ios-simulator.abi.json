@@ -1130,13 +1130,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UIView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1144,14 +1144,15 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GFPSDKAdRenderer@objc(cs)GFPRendererShoppingNDAView(im)bodyAssetView",
-            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC13bodyAssetViewSo6UIViewCSgyF",
+            "mangledName": "$s16GFPSDKAdRenderer26GFPRendererShoppingNDAViewC13bodyAssetViewSo7UILabelCSgyF",
             "moduleName": "GFPSDKAdRenderer",
+            "objc_name": "bodyAssetView",
             "declAttributes": [
               "Dynamic",
+              "ObjC",
               "Preconcurrency",
               "Custom",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"

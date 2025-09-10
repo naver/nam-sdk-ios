@@ -999,7 +999,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
 - (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
-- (UIView * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;

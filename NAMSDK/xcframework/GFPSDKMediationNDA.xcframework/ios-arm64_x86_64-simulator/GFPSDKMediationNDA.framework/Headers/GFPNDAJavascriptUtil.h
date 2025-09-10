@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const kNDAAdMuteJSInterfaceName;
+extern NSString * _Nonnull const kNDAAdMuteJSInterfaceName;
 
-extern NSString *const kNDAAdMuteComplete;
-extern NSString *const kNDAAdMuteEventNameKey;
-extern NSString *const kNDAAdMuteEventCodeKey;
+extern NSString * _Nonnull const kNDAAdMuteComplete;
+extern NSString * _Nonnull const kNDAAdMuteEventNameKey;
 
 typedef NS_OPTIONS(NSInteger, GFPNDAJavascriptType) {
     GFPNDARendered = 1 << 0,    //old

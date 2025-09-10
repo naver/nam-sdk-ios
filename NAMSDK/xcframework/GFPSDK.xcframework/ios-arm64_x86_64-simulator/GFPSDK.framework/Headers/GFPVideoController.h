@@ -50,14 +50,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 광고 영상 재생
- * @param isUser user에 의해 재생되었을 경우 YES (=컴포넌트 터치), 아닐 경우 NO를 전달.
+ * - isUser user에 의해 재생되었을 경우 YES (=컴포넌트 터치), 아닐 경우 NO를 전달.
  */
 - (void)play;
 - (void)playWith:(BOOL)isUser;
 
 /**
  * 광고 영상 일시 정지
- * @param isUser user에 의해 정지되었을 경우 YES (=컴포넌트 터치), 아닐 경우 NO를 전달.
+ * - isUser user에 의해 정지되었을 경우 YES (=컴포넌트 터치), 아닐 경우 NO를 전달.
  */
 - (void)pause;
 - (void)pauseWith:(BOOL)isUser;

@@ -5,9 +5,9 @@
 //  Created by dojin.park on 2022/05/20.
 //
 
-#import "GFPAdInitInfo.h"
-
 NS_ASSUME_NONNULL_BEGIN
+
+@class GFPAdInitInfo;
 
 @interface GFPInitResponseCache : NSObject
 

@@ -551,7 +551,7 @@ extension GFPSDK.GFPRendererShoppingNDAView : GFPSDK.GFPNativeTemplateViewProtoc
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func bodyAssetView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
