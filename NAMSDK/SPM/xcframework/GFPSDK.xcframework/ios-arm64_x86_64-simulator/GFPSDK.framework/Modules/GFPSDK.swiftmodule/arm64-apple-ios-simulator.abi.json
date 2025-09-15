@@ -11209,20 +11209,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPURLUtilsExtension(cm)sendGFPEventToUrl:logId:",
-            "mangledName": "$s6GFPSDK20GFPURLUtilsExtensionC17sendGFPEventToUrl_5logIdySS_10Foundation4UUIDVtFZ",
+            "mangledName": "$s6GFPSDK20GFPURLUtilsExtensionC17sendGFPEventToUrl_5logIdySSSg_10Foundation4UUIDVSgtFZ",
             "moduleName": "GFPSDK",
             "static": true,
             "declAttributes": [
@@ -27911,14 +27927,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)addNewAdLogWithLogId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC11addNewAdLog5logIdy10Foundation4UUIDV_tF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC11addNewAdLog5logIdy10Foundation4UUIDVSg_tF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -27952,20 +27976,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAdLogProperty:forKey:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC16logAdLogProperty_6forKey0D2IdyypSg_SS10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC16logAdLogProperty_6forKey0D2IdyypSg_SSSg10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -27985,20 +28025,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPError",
-                "printedName": "NaverAdsServices.GFPError",
-                "usr": "c:@M@NaverAdsServices@objc(cs)GFPError"
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPError",
+                    "printedName": "NaverAdsServices.GFPError",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPError"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAdError:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC10logAdError_0D2Idy16NaverAdsServices8GFPErrorC_10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC10logAdError_0D2Idy16NaverAdsServices8GFPErrorCSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28018,20 +28074,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAdView:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC9logAdView_0D2IdySo6UIViewC_10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC9logAdView_0D2IdySo6UIViewCSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28051,24 +28123,39 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPAdViewType",
-                "printedName": "GFPSDK.GFPAdViewType",
-                "usr": "c:@M@GFPSDK@E@GFPAdViewType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPAdViewType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPAdViewType",
+                    "printedName": "GFPSDK.GFPAdViewType",
+                    "usr": "c:@M@GFPSDK@E@GFPAdViewType"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAdViewType:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC13logAdViewType_0D2IdyAA05GFPAdfG0O_10Foundation4UUIDVtF",
+            "usr": "s:6GFPSDK15GFPLogCollectorC13logAdViewType_0D2IdyAA05GFPAdfG0OSg_10Foundation4UUIDVSgtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC13logAdViewType_0D2IdyAA05GFPAdfG0OSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -28084,20 +28171,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPAPILog",
-                "printedName": "GFPSDK.GFPAPILog",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAPILog"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPAPILog?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPAPILog",
+                    "printedName": "GFPSDK.GFPAPILog",
+                    "usr": "c:@M@GFPSDK@objc(cs)GFPAPILog"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAdRequest:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC12logAdRequest_0D2IdyAA9GFPAPILogC_10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC12logAdRequest_0D2IdyAA9GFPAPILogCSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28118,20 +28221,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPAPILog",
-                "printedName": "GFPSDK.GFPAPILog",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAPILog"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPAPILog?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPAPILog",
+                    "printedName": "GFPSDK.GFPAPILog",
+                    "usr": "c:@M@GFPSDK@objc(cs)GFPAPILog"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAdEvent:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC10logAdEvent_0D2IdyAA9GFPAPILogC_10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC10logAdEvent_0D2IdyAA9GFPAPILogCSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28151,20 +28270,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPAPILog",
-                "printedName": "GFPSDK.GFPAPILog",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAPILog"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPAPILog?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPAPILog",
+                    "printedName": "GFPSDK.GFPAPILog",
+                    "usr": "c:@M@GFPSDK@objc(cs)GFPAPILog"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logSDKInitRequest:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC17logSDKInitRequest_0D2IdyAA9GFPAPILogC_10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC17logSDKInitRequest_0D2IdyAA9GFPAPILogCSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28184,20 +28319,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPInspectorInternalLog",
-                "printedName": "GFPSDK.GFPInspectorInternalLog",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPInspectorInternalLog"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPInspectorInternalLog?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPInspectorInternalLog",
+                    "printedName": "GFPSDK.GFPInspectorInternalLog",
+                    "usr": "c:@M@GFPSDK@objc(cs)GFPInspectorInternalLog"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logInternalLog:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC14logInternalLog_0D2IdyAA012GFPInspectoreF0C_10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC14logInternalLog_0D2IdyAA012GFPInspectoreF0CSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28217,14 +28368,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)addNewSDKInitLogWithLogId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC16addNewSDKInitLog5logIdy10Foundation4UUIDV_tF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC16addNewSDKInitLog5logIdy10Foundation4UUIDVSg_tF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28245,20 +28404,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPSDKInitResult",
-                "printedName": "GFPSDK.GFPSDKInitResult",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPSDKInitResult"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPSDKInitResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPSDKInitResult",
+                    "printedName": "GFPSDK.GFPSDKInitResult",
+                    "usr": "c:@M@GFPSDK@objc(cs)GFPSDKInitResult"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logSDKInitWithResult:logId:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC10logSDKInit6result0D2IdyAA16GFPSDKInitResultC_10Foundation4UUIDVtF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC10logSDKInit6result0D2IdyAA16GFPSDKInitResultCSg_10Foundation4UUIDVSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28441,20 +28616,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPProviderType",
-                "printedName": "GFPSDK.GFPProviderType",
-                "usr": "c:GFPProvider.h@T@GFPProviderType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPProviderType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPProviderType",
+                    "printedName": "GFPSDK.GFPProviderType",
+                    "usr": "c:GFPProvider.h@T@GFPProviderType"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPProviderProductType",
-                "printedName": "GFPSDK.GFPProviderProductType",
-                "usr": "c:GFPProvider.h@T@GFPProviderProductType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPProviderProductType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPProviderProductType",
+                    "printedName": "GFPSDK.GFPProviderProductType",
+                    "usr": "c:GFPProvider.h@T@GFPProviderProductType"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAvailableMediationWithProviderType:productType:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC21logAvailableMediation16withProviderType07productI0ySo011GFPProviderI0a_So0k7ProductI0atF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC21logAvailableMediation16withProviderType07productI0ySo011GFPProviderI0aSg_So0k7ProductI0aSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28474,14 +28665,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPProviderType",
-                "printedName": "GFPSDK.GFPProviderType",
-                "usr": "c:GFPProvider.h@T@GFPProviderType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPProviderType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPProviderType",
+                    "printedName": "GFPSDK.GFPProviderType",
+                    "usr": "c:GFPProvider.h@T@GFPProviderType"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logNotUsedMediationWithProviderType:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC19logNotUsedMediation16withProviderTypeySo011GFPProviderJ0a_tF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC19logNotUsedMediation16withProviderTypeySo011GFPProviderJ0aSg_tF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28501,14 +28700,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPProviderType",
-                "printedName": "GFPSDK.GFPProviderType",
-                "usr": "c:GFPProvider.h@T@GFPProviderType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPProviderType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPProviderType",
+                    "printedName": "GFPSDK.GFPProviderType",
+                    "usr": "c:GFPProvider.h@T@GFPProviderType"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logInitializedMediationWithProviderType:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logInitializedMediation16withProviderTypeySo011GFPProviderI0a_tF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logInitializedMediation16withProviderTypeySo011GFPProviderI0aSg_tF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28528,14 +28735,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPProviderType",
-                "printedName": "GFPSDK.GFPProviderType",
-                "usr": "c:GFPProvider.h@T@GFPProviderType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPProviderType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPProviderType",
+                    "printedName": "GFPSDK.GFPProviderType",
+                    "usr": "c:GFPProvider.h@T@GFPProviderType"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logBlockedMediationWithProviderType:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC19logBlockedMediation16withProviderTypeySo011GFPProviderI0a_tF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC19logBlockedMediation16withProviderTypeySo011GFPProviderI0aSg_tF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -28555,20 +28770,36 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPProviderType",
-                "printedName": "GFPSDK.GFPProviderType",
-                "usr": "c:GFPProvider.h@T@GFPProviderType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPProviderType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPProviderType",
+                    "printedName": "GFPSDK.GFPProviderType",
+                    "usr": "c:GFPProvider.h@T@GFPProviderType"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "GFPProviderCreativeType",
-                "printedName": "GFPSDK.GFPProviderCreativeType",
-                "usr": "c:GFPProvider.h@T@GFPProviderCreativeType"
+                "name": "Optional",
+                "printedName": "GFPSDK.GFPProviderCreativeType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPProviderCreativeType",
+                    "printedName": "GFPSDK.GFPProviderCreativeType",
+                    "usr": "c:GFPProvider.h@T@GFPProviderCreativeType"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logErroredMediationWithProviderType:creativeType:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC19logErroredMediation16withProviderType08creativeI0ySo011GFPProviderI0a_So0k8CreativeI0atF",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC19logErroredMediation16withProviderType08creativeI0ySo011GFPProviderI0aSg_So0k8CreativeI0aSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",

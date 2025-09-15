@@ -721,28 +721,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLogCollec
 + (GFPLogCollector * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) BOOL inspectorLoggingEnagled;
 - (void)enableInspectorLoggingWithEnable:(BOOL)enable;
-- (void)addNewAdLogWithLogId:(NSUUID * _Nonnull)logId;
-- (void)logAdLogProperty:(id _Nullable)value forKey:(NSString * _Nonnull)key logId:(NSUUID * _Nonnull)logId;
-- (void)logAdError:(GFPError * _Nonnull)error logId:(NSUUID * _Nonnull)logId;
-- (void)logAdView:(UIView * _Nonnull)adView logId:(NSUUID * _Nonnull)logId;
-- (void)logAdViewType:(enum GFPAdViewType)adViewType logId:(NSUUID * _Nonnull)logId;
-- (void)logAdRequest:(GFPAPILog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)logAdEvent:(GFPAPILog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)logSDKInitRequest:(GFPAPILog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)logInternalLog:(GFPInspectorInternalLog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)addNewSDKInitLogWithLogId:(NSUUID * _Nonnull)logId;
-- (void)logSDKInitWithResult:(GFPSDKInitResult * _Nonnull)result logId:(NSUUID * _Nonnull)logId;
+- (void)addNewAdLogWithLogId:(NSUUID * _Nullable)logId;
+- (void)logAdLogProperty:(id _Nullable)value forKey:(NSString * _Nullable)key logId:(NSUUID * _Nullable)logId;
+- (void)logAdError:(GFPError * _Nullable)error logId:(NSUUID * _Nullable)logId;
+- (void)logAdView:(UIView * _Nullable)adView logId:(NSUUID * _Nullable)logId;
+- (void)logAdRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)logAdEvent:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)logSDKInitRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)logInternalLog:(GFPInspectorInternalLog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)addNewSDKInitLogWithLogId:(NSUUID * _Nullable)logId;
+- (void)logSDKInitWithResult:(GFPSDKInitResult * _Nullable)result logId:(NSUUID * _Nullable)logId;
 - (void)logUnavailableMediationWithBannerOption:(enum GFPBannerProviderOption)option;
 - (void)logUnavailableMediationWithNativeOption:(enum GFPNativeProviderOption)option;
 - (void)logUnavailableMediationWithCombinedOption:(enum GFPCombinedProviderOption)option;
 - (void)logUnavailableMediationWithVideoOption:(enum GFPVideoProviderOption)option;
 - (void)logUnavailableMediationWithRewardedOption:(enum GFPRewardedAdProviderOption)option;
 - (void)logUnavailableMediationWithInterstitialOption:(enum GFPInterstitialAdProviderOption)option;
-- (void)logAvailableMediationWithProviderType:(GFPProviderType _Nonnull)providerType productType:(GFPProviderProductType _Nonnull)productType;
-- (void)logNotUsedMediationWithProviderType:(GFPProviderType _Nonnull)providerType;
-- (void)logInitializedMediationWithProviderType:(GFPProviderType _Nonnull)providerType;
-- (void)logBlockedMediationWithProviderType:(GFPProviderType _Nonnull)providerType;
-- (void)logErroredMediationWithProviderType:(GFPProviderType _Nonnull)providerType creativeType:(GFPProviderCreativeType _Nonnull)creativeType;
+- (void)logAvailableMediationWithProviderType:(GFPProviderType _Nullable)providerType productType:(GFPProviderProductType _Nullable)productType;
+- (void)logNotUsedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logBlockedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logErroredMediationWithProviderType:(GFPProviderType _Nullable)providerType creativeType:(GFPProviderCreativeType _Nullable)creativeType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -956,7 +955,7 @@ SWIFT_CLASS("_TtC6GFPSDK22GFPTextAdViewAttribute")
 
 SWIFT_CLASS("_TtC6GFPSDK20GFPURLUtilsExtension")
 @interface GFPURLUtilsExtension : NSObject
-+ (void)sendGFPEventToUrl:(NSString * _Nonnull)urlString logId:(NSUUID * _Nonnull)logId;
++ (void)sendGFPEventToUrl:(NSString * _Nullable)urlString logId:(NSUUID * _Nullable)logId;
 + (void)openURLWith:(NSString * _Nonnull)aURL completion:(void (^ _Nullable)(BOOL))completion;
 + (NSURLRequest * _Nonnull)defaultRequestWith:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1883,28 +1882,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLogCollec
 + (GFPLogCollector * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) BOOL inspectorLoggingEnagled;
 - (void)enableInspectorLoggingWithEnable:(BOOL)enable;
-- (void)addNewAdLogWithLogId:(NSUUID * _Nonnull)logId;
-- (void)logAdLogProperty:(id _Nullable)value forKey:(NSString * _Nonnull)key logId:(NSUUID * _Nonnull)logId;
-- (void)logAdError:(GFPError * _Nonnull)error logId:(NSUUID * _Nonnull)logId;
-- (void)logAdView:(UIView * _Nonnull)adView logId:(NSUUID * _Nonnull)logId;
-- (void)logAdViewType:(enum GFPAdViewType)adViewType logId:(NSUUID * _Nonnull)logId;
-- (void)logAdRequest:(GFPAPILog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)logAdEvent:(GFPAPILog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)logSDKInitRequest:(GFPAPILog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)logInternalLog:(GFPInspectorInternalLog * _Nonnull)log logId:(NSUUID * _Nonnull)logId;
-- (void)addNewSDKInitLogWithLogId:(NSUUID * _Nonnull)logId;
-- (void)logSDKInitWithResult:(GFPSDKInitResult * _Nonnull)result logId:(NSUUID * _Nonnull)logId;
+- (void)addNewAdLogWithLogId:(NSUUID * _Nullable)logId;
+- (void)logAdLogProperty:(id _Nullable)value forKey:(NSString * _Nullable)key logId:(NSUUID * _Nullable)logId;
+- (void)logAdError:(GFPError * _Nullable)error logId:(NSUUID * _Nullable)logId;
+- (void)logAdView:(UIView * _Nullable)adView logId:(NSUUID * _Nullable)logId;
+- (void)logAdRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)logAdEvent:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)logSDKInitRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)logInternalLog:(GFPInspectorInternalLog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)addNewSDKInitLogWithLogId:(NSUUID * _Nullable)logId;
+- (void)logSDKInitWithResult:(GFPSDKInitResult * _Nullable)result logId:(NSUUID * _Nullable)logId;
 - (void)logUnavailableMediationWithBannerOption:(enum GFPBannerProviderOption)option;
 - (void)logUnavailableMediationWithNativeOption:(enum GFPNativeProviderOption)option;
 - (void)logUnavailableMediationWithCombinedOption:(enum GFPCombinedProviderOption)option;
 - (void)logUnavailableMediationWithVideoOption:(enum GFPVideoProviderOption)option;
 - (void)logUnavailableMediationWithRewardedOption:(enum GFPRewardedAdProviderOption)option;
 - (void)logUnavailableMediationWithInterstitialOption:(enum GFPInterstitialAdProviderOption)option;
-- (void)logAvailableMediationWithProviderType:(GFPProviderType _Nonnull)providerType productType:(GFPProviderProductType _Nonnull)productType;
-- (void)logNotUsedMediationWithProviderType:(GFPProviderType _Nonnull)providerType;
-- (void)logInitializedMediationWithProviderType:(GFPProviderType _Nonnull)providerType;
-- (void)logBlockedMediationWithProviderType:(GFPProviderType _Nonnull)providerType;
-- (void)logErroredMediationWithProviderType:(GFPProviderType _Nonnull)providerType creativeType:(GFPProviderCreativeType _Nonnull)creativeType;
+- (void)logAvailableMediationWithProviderType:(GFPProviderType _Nullable)providerType productType:(GFPProviderProductType _Nullable)productType;
+- (void)logNotUsedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logBlockedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logErroredMediationWithProviderType:(GFPProviderType _Nullable)providerType creativeType:(GFPProviderCreativeType _Nullable)creativeType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2118,7 +2116,7 @@ SWIFT_CLASS("_TtC6GFPSDK22GFPTextAdViewAttribute")
 
 SWIFT_CLASS("_TtC6GFPSDK20GFPURLUtilsExtension")
 @interface GFPURLUtilsExtension : NSObject
-+ (void)sendGFPEventToUrl:(NSString * _Nonnull)urlString logId:(NSUUID * _Nonnull)logId;
++ (void)sendGFPEventToUrl:(NSString * _Nullable)urlString logId:(NSUUID * _Nullable)logId;
 + (void)openURLWith:(NSString * _Nonnull)aURL completion:(void (^ _Nullable)(BOOL))completion;
 + (NSURLRequest * _Nonnull)defaultRequestWith:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

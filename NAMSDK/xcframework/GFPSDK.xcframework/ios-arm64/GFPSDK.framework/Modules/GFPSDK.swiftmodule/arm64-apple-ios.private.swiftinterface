@@ -287,7 +287,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPURLUtilsExtension : ObjectiveC.NSObject {
-  @objc public class func sendGFPEventToUrl(_ urlString: Swift.String, logId: Foundation.UUID)
+  @objc public class func sendGFPEventToUrl(_ urlString: Swift.String?, logId: Foundation.UUID?)
   @objc public class func openURLWith(_ aURL: Swift.String, completion: GFPSDK.GFPS2SAdLandingHandler?)
   @objc public class func defaultRequestWith(_ url: Foundation.URL) -> Foundation.URLRequest
   @objc override dynamic public init()
@@ -615,28 +615,28 @@ extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
     @objc get
   }
   @objc public func enableInspectorLogging(enable: Swift.Bool)
-  @objc public func addNewAdLog(logId: Foundation.UUID)
-  @objc public func logAdLogProperty(_ value: Any?, forKey key: Swift.String, logId: Foundation.UUID)
-  @objc public func logAdError(_ error: NaverAdsServices.GFPError, logId: Foundation.UUID)
-  @objc public func logAdView(_ adView: UIKit.UIView, logId: Foundation.UUID)
-  @objc public func logAdViewType(_ adViewType: GFPSDK.GFPAdViewType, logId: Foundation.UUID)
-  @objc public func logAdRequest(_ log: GFPSDK.GFPAPILog, logId: Foundation.UUID)
-  @objc public func logAdEvent(_ log: GFPSDK.GFPAPILog, logId: Foundation.UUID)
-  @objc public func logSDKInitRequest(_ log: GFPSDK.GFPAPILog, logId: Foundation.UUID)
-  @objc public func logInternalLog(_ log: GFPSDK.GFPInspectorInternalLog, logId: Foundation.UUID)
-  @objc public func addNewSDKInitLog(logId: Foundation.UUID)
-  @objc public func logSDKInit(result: GFPSDK.GFPSDKInitResult, logId: Foundation.UUID)
+  @objc public func addNewAdLog(logId: Foundation.UUID?)
+  @objc public func logAdLogProperty(_ value: Any?, forKey key: Swift.String?, logId: Foundation.UUID?)
+  @objc public func logAdError(_ error: NaverAdsServices.GFPError?, logId: Foundation.UUID?)
+  @objc public func logAdView(_ adView: UIKit.UIView?, logId: Foundation.UUID?)
+  public func logAdViewType(_ adViewType: GFPSDK.GFPAdViewType?, logId: Foundation.UUID?)
+  @objc public func logAdRequest(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
+  @objc public func logAdEvent(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
+  @objc public func logSDKInitRequest(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
+  @objc public func logInternalLog(_ log: GFPSDK.GFPInspectorInternalLog?, logId: Foundation.UUID?)
+  @objc public func addNewSDKInitLog(logId: Foundation.UUID?)
+  @objc public func logSDKInit(result: GFPSDK.GFPSDKInitResult?, logId: Foundation.UUID?)
   @objc public func logUnavailableMediation(withBannerOption option: GFPSDK.GFPBannerProviderOption)
   @objc public func logUnavailableMediation(withNativeOption option: GFPSDK.GFPNativeProviderOption)
   @objc public func logUnavailableMediation(withCombinedOption option: GFPSDK.GFPCombinedProviderOption)
   @objc public func logUnavailableMediation(withVideoOption option: GFPSDK.GFPVideoProviderOption)
   @objc public func logUnavailableMediation(withRewardedOption option: GFPSDK.GFPRewardedAdProviderOption)
   @objc public func logUnavailableMediation(withInterstitialOption option: GFPSDK.GFPInterstitialAdProviderOption)
-  @objc public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType, productType: GFPSDK.GFPProviderProductType)
-  @objc public func logNotUsedMediation(withProviderType providerType: GFPSDK.GFPProviderType)
-  @objc public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType)
-  @objc public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType)
-  @objc public func logErroredMediation(withProviderType providerType: GFPSDK.GFPProviderType, creativeType: GFPSDK.GFPProviderCreativeType)
+  @objc public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType?, productType: GFPSDK.GFPProviderProductType?)
+  @objc public func logNotUsedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc public func logErroredMediation(withProviderType providerType: GFPSDK.GFPProviderType?, creativeType: GFPSDK.GFPProviderCreativeType?)
   @objc override dynamic public init()
   @objc deinit
 }
