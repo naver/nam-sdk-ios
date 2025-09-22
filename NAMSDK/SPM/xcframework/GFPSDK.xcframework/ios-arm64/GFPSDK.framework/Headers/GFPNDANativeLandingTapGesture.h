@@ -13,11 +13,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GFPNDANativeTapGesture : UITapGestureRecognizer
+@interface GFPNDANativeLandingTapGesture : UITapGestureRecognizer
 
 @property (readonly, nonatomic, strong) NSURL *link;
 @property (readonly, nonatomic, strong) NSArray *trackerList;
 @property (readonly, nonatomic, assign) BOOL forceURLLanding;
+@property (nonatomic, readonly) BOOL isTrackingOnly;
 
 - (instancetype)initWithTarget:(nullable id)target action:(nullable SEL)action NS_UNAVAILABLE;
 

@@ -23,7 +23,7 @@
 @class GFPNativeBaseView;
 @class GFPNDAMediaViewRenderInfo;
 @class GFPNDAMediaViewInfo;
-@class GFPNDANativeTapGesture;
+@class GFPNDANativeLandingTapGesture;
 
 static CGFloat const kRichAdStandardWidth = 360;
 static CGFloat const kRichAdStandardImageWidth = 375;
@@ -133,7 +133,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 //For carousel
 @protocol GFPNDAMediaAssetTouchDelegate <NSObject>
 
-- (void) didClickAssetWith:(GFPNDANativeTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
+- (void) didClickAssetWith:(GFPNDANativeLandingTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
 
 @end
 

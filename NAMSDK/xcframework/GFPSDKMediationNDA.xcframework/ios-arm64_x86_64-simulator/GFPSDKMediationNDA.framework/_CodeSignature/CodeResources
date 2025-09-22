@@ -174,7 +174,7 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		v7TJf9/us2Mg4BAtnpdJOqu/kY0=
+		p4MGLA5psjSK458zbVTOacmKQRs=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Headers/GFPNDANativeAd.h</key>
 		<data>
-		eizsvVKhcjQJWps9ycyWc9Vnzoo=
+		DhzUVSzqcVmi8kWxW9gzeJJ5cas=
 		</data>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
 		<data>
@@ -215,10 +215,6 @@
 		<key>Headers/GFPNDANativeSimpleAdaptor.h</key>
 		<data>
 		S8Xge78x7s6KD7K8v9zRyU8lPu8=
-		</data>
-		<key>Headers/GFPNDANativeTapGesture.h</key>
-		<data>
-		qgh1bfkHiAN3fEocaRsmyV5KJE0=
 		</data>
 		<key>Headers/GFPNDAReasonCollectionView.h</key>
 		<data>
@@ -819,11 +815,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v7TJf9/us2Mg4BAtnpdJOqu/kY0=
+			p4MGLA5psjSK458zbVTOacmKQRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			VKyqg8iHWPjIndj7wEsSrWTfRrWGl3BP8+wzaPeUzfU=
+			heXfiKmPc0OBb1hO77ZYzXRU0ZavfAtFBOeTCwEGYCU=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
@@ -874,11 +870,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eizsvVKhcjQJWps9ycyWc9Vnzoo=
+			DhzUVSzqcVmi8kWxW9gzeJJ5cas=
 			</data>
 			<key>hash2</key>
 			<data>
-			0cRsrmVceNt+FX2aIVYn7ApkY4cawpgwGIYMD7wecN0=
+			M0vSBfTYKqXzbrCQBpi15fLYdFnTB+OD43DOh7EeG2A=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
@@ -934,17 +930,6 @@
 			<key>hash2</key>
 			<data>
 			4U36HtZNdPFZ7JdiW3fQ+JYX3P9pT30SBoXbe76fB4s=
-			</data>
-		</dict>
-		<key>Headers/GFPNDANativeTapGesture.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qgh1bfkHiAN3fEocaRsmyV5KJE0=
-			</data>
-			<key>hash2</key>
-			<data>
-			OEQTqaxTe20dkUc3GBd4v+E91Ar0latnFf6v8Jqvr9c=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAReasonCollectionView.h</key>

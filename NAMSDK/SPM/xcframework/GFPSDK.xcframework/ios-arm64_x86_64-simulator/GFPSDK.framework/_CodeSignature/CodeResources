@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/GFPClickLandingUtil.h</key>
 		<data>
-		jS9xl81wYcB2diKQ2pKk4JYn570=
+		+rHoWQbMVrZnhptMKhu89yfxii0=
 		</data>
 		<key>Headers/GFPCombinedAdapting.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/GFPCoreConfig.h</key>
 		<data>
-		yWUKJlO/OsqIfYNrBq0WBcMqXLk=
+		Q8YiWX4wiodIpKcU4xZ9EAueIF8=
 		</data>
 		<key>Headers/GFPCreativeExtension.h</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Headers/GFPEventReporter.h</key>
 		<data>
-		zyVVnFsfnul4x13HNuYse9pux84=
+		rYRk0BEntzBjzf7l16eo3cpoxHs=
 		</data>
 		<key>Headers/GFPExceptionUtils.h</key>
 		<data>
@@ -422,7 +422,7 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		v7TJf9/us2Mg4BAtnpdJOqu/kY0=
+		p4MGLA5psjSK458zbVTOacmKQRs=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
@@ -442,7 +442,7 @@
 		</data>
 		<key>Headers/GFPNDANativeAd.h</key>
 		<data>
-		eizsvVKhcjQJWps9ycyWc9Vnzoo=
+		DhzUVSzqcVmi8kWxW9gzeJJ5cas=
 		</data>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
 		<data>
@@ -451,6 +451,10 @@
 		<key>Headers/GFPNDANativeAdaptor.h</key>
 		<data>
 		Om+uNzX91cXuZEcsSSSzPo0fiAU=
+		</data>
+		<key>Headers/GFPNDANativeLandingTapGesture.h</key>
+		<data>
+		/TCLT6QcXZp1GIf7B2Xl7nM3GR0=
 		</data>
 		<key>Headers/GFPNDANativeNormalAd.h</key>
 		<data>
@@ -463,10 +467,6 @@
 		<key>Headers/GFPNDANativeSimpleAdaptor.h</key>
 		<data>
 		S8Xge78x7s6KD7K8v9zRyU8lPu8=
-		</data>
-		<key>Headers/GFPNDANativeTapGesture.h</key>
-		<data>
-		qgh1bfkHiAN3fEocaRsmyV5KJE0=
 		</data>
 		<key>Headers/GFPNDANativeVisualUtils.h</key>
 		<data>
@@ -1331,11 +1331,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jS9xl81wYcB2diKQ2pKk4JYn570=
+			+rHoWQbMVrZnhptMKhu89yfxii0=
 			</data>
 			<key>hash2</key>
 			<data>
-			UFrSnzvux+KRreAEAemWlieKD7ZqFld0j674VeDs0N8=
+			D1FJL2Y2fRqnTIgQkJtlptHJSuy2kPz1CTCHOwbsPe4=
 			</data>
 		</dict>
 		<key>Headers/GFPCombinedAdapting.h</key>
@@ -1397,11 +1397,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yWUKJlO/OsqIfYNrBq0WBcMqXLk=
+			Q8YiWX4wiodIpKcU4xZ9EAueIF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			m/qsEdTI0oZyjh+cnYSGRzT/p+1GA/fwidXDR8+sVuA=
+			bCpm1gQbI0YgeE7p4cWipLlepe9IxrLRKmk1XlLwsFo=
 			</data>
 		</dict>
 		<key>Headers/GFPCreativeExtension.h</key>
@@ -1485,11 +1485,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyVVnFsfnul4x13HNuYse9pux84=
+			rYRk0BEntzBjzf7l16eo3cpoxHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			oamGnLCS8Kw12nQQrGErs2rrIdRogmRCYjxGrS2Lz/U=
+			laB8jbXd+cmxwvSA/uDhH+74Y37nK+8G0zijNb84b7U=
 			</data>
 		</dict>
 		<key>Headers/GFPExceptionUtils.h</key>
@@ -2123,11 +2123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v7TJf9/us2Mg4BAtnpdJOqu/kY0=
+			p4MGLA5psjSK458zbVTOacmKQRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			VKyqg8iHWPjIndj7wEsSrWTfRrWGl3BP8+wzaPeUzfU=
+			heXfiKmPc0OBb1hO77ZYzXRU0ZavfAtFBOeTCwEGYCU=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
@@ -2178,11 +2178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eizsvVKhcjQJWps9ycyWc9Vnzoo=
+			DhzUVSzqcVmi8kWxW9gzeJJ5cas=
 			</data>
 			<key>hash2</key>
 			<data>
-			0cRsrmVceNt+FX2aIVYn7ApkY4cawpgwGIYMD7wecN0=
+			M0vSBfTYKqXzbrCQBpi15fLYdFnTB+OD43DOh7EeG2A=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
@@ -2205,6 +2205,17 @@
 			<key>hash2</key>
 			<data>
 			RUJ1kSvkotcY5PfXA7h6kIzGXor8dNBwjjKlFDfLU7o=
+			</data>
+		</dict>
+		<key>Headers/GFPNDANativeLandingTapGesture.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/TCLT6QcXZp1GIf7B2Xl7nM3GR0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ukqCjFBsXS9YVuVhRrf5ZuAH7tyL9y/B62sDR4LdXpM=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeNormalAd.h</key>
@@ -2238,17 +2249,6 @@
 			<key>hash2</key>
 			<data>
 			4U36HtZNdPFZ7JdiW3fQ+JYX3P9pT30SBoXbe76fB4s=
-			</data>
-		</dict>
-		<key>Headers/GFPNDANativeTapGesture.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qgh1bfkHiAN3fEocaRsmyV5KJE0=
-			</data>
-			<key>hash2</key>
-			<data>
-			OEQTqaxTe20dkUc3GBd4v+E91Ar0latnFf6v8Jqvr9c=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeVisualUtils.h</key>

@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, assign) BOOL forceURLLanding;
 @property (nonatomic, assign, readonly) BOOL useCustomClick;
+@property (nonatomic, readonly) BOOL isTrackingOnly;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -43,6 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)openLanding:(GFPS2SAdLandingHandler)aCompletion;
 - (void)openLandingForExceptSKAdn:(GFPS2SAdLandingHandler)aCompletion;
 - (void)openLanding:(GFPS2SAdLandingHandler)aCompletion storeDelegate:(nullable id<SKStoreViewControllerCloseDelegate>)delegate;
+
++ (BOOL)isTrackingOnlyCURLFor:(NSString *)urlString;
 
 @end
 

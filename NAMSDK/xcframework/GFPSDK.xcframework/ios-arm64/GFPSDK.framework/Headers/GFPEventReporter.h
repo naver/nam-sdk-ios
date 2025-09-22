@@ -78,8 +78,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportStartError:(GFPStartEvent * _Nullable)startEventInfo;
 
-- (void)reportGfpTracking:(NSString *)gfpBaseUrl;
-
 - (void)reportFullScreenVideoClose:(NSString *)playTime;
 
 - (void)reportMute;

@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPAdSkipInfo;
 @class GFPError;
 @class GFPAdChoicesData;
-@class GFPNDANativeTapGesture;
+@class GFPNDANativeLandingTapGesture;
 @class GFPAutoPlayInfo;
 @class GFPNDAVastVerification;
 @class GFPOMMediaEvent;
@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd didFailWithError:(GFPError *)error;
 - (void)nativeAdWasRendered:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdWasSeen:(GFPNDANativeAd *)nativeAd;
-- (void)nativeAdWasClicked:(GFPNDANativeAd *)nativeAd trackerList:(NSArray <NSString *> *)trackerList;
+- (void)nativeAdWasClicked:(GFPNDANativeAd *)nativeAd trackerList:(NSArray <NSString *> *)trackerList cURL:(NSURL *)cURL;
 - (void)nativeAdMuteWasClicked:(GFPNDANativeAd *)nativeAd eventTracking:(GFPAdEventObject *)eventTracking;
 - (void)nativeAdMuteWasCanceled:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd didChangeMediaViewSize:(CGSize)size;
@@ -136,8 +136,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 //for link
-- (void)tapGestureWith:(GFPNDANativeTapGesture *)gesture;
-- (void)tryLandingWith:(GFPNDANativeTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
+- (void)tapGestureWith:(GFPNDANativeLandingTapGesture *)gesture;
+- (void)tryLandingWith:(GFPNDANativeLandingTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
 @end
 
 NS_ASSUME_NONNULL_END
