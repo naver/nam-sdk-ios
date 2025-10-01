@@ -1,0 +1,4 @@
+framework module GFPSDKMediationPangle {
+  header "GFPSDKMediationPangle-Swift.h"
+  requires objc
+}
