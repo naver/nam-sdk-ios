@@ -327,6 +327,7 @@ extension GFPSDK.GFPErrorUtils {
   case APS
   case chartBoost
   case BidMachine
+  case pangle
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -354,6 +355,7 @@ extension GFPSDK.GFPErrorUtils {
   case vungle
   case LAN
   case bidMachine
+  case pangle
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -386,6 +388,7 @@ extension GFPSDK.GFPErrorUtils {
   case LAN
   case chartBoost
   case BidMachine
+  case pangle
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -408,6 +411,7 @@ extension GFPSDK.GFPErrorUtils {
   case LAN
   case chartBoost
   case BidMachine
+  case pangle
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -535,6 +539,24 @@ extension GFPSDK.GFPErrorUtils {
   @objc final public let productTypes: [Swift.String]?
   @objc final public let adUnitIds: [Swift.String]?
   @objc final public let appSignatureId: [Swift.String]?
+  @objc final public let adUnits: [GFPSDK.GFPAdInitProviderAdUnits]?
+  @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
+  @objc deinit
+}
+@objc(GFPAdInitProviderAdUnits) @objcMembers public class GFPAdInitProviderAdUnits : ObjectiveC.NSObject {
+  @objc final public let adUnitId: Swift.String?
+  @objc final public let placements: [GFPSDK.GFPAdInitProviderPlacementInfo]?
+  @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
+  @objc public func placement(for placeId: Swift.String) -> GFPSDK.GFPAdInitProviderPlacementInfo?
+  @objc deinit
+}
+@objc(GFPAdInitProviderPlacementInfo) @objcMembers public class GFPAdInitProviderPlacementInfo : ObjectiveC.NSObject {
+  @objc final public let placeId: Swift.String?
+  final public let width: Swift.Int?
+  final public let height: Swift.Int?
+  @objc public var size: CoreFoundation.CGSize {
+    @objc get
+  }
   @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
   @objc deinit
 }

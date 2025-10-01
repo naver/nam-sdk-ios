@@ -17,6 +17,7 @@ FOUNDATION_EXPORT NSString *const GFPErrorUnityDomain;
 FOUNDATION_EXPORT NSString *const GFPErrorMessageKey;
 FOUNDATION_EXPORT NSString *const GFPErrorDescriptionKey;
 FOUNDATION_EXPORT NSString *const GFPErrorSubcodeKey;
+
 FOUNDATION_EXPORT NSString *const GFPBannerProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderNDAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderInMobiErrorKey;
@@ -28,9 +29,12 @@ FOUNDATION_EXPORT NSString *const GFPBannerProviderDTErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderISErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderChartBoostErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderBidMachineErrorKey;
+FOUNDATION_EXPORT NSString *const GFPBannerProviderPangleErrorKey;
+
 FOUNDATION_EXPORT NSString *const GFPVideoProviderIMAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPVideoProviderNDAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPVideoProviderFANErrorKey;
+
 FOUNDATION_EXPORT NSString *const GFPNativeProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderInMobiErrorKey;
@@ -38,6 +42,8 @@ FOUNDATION_EXPORT NSString *const GFPNativeProviderVungleErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderNDAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderLANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderBidMachineErrorKey;
+FOUNDATION_EXPORT NSString *const GFPNativeProviderPangleErrorKey;
+
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderUnityErrorKey;
@@ -48,6 +54,8 @@ FOUNDATION_EXPORT NSString *const GFPInterstitialProviderISErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderLANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderChartBoostErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderBidMachineErrorKey;
+FOUNDATION_EXPORT NSString *const GFPInterstitialProviderPangleErrorKey;
+
 FOUNDATION_EXPORT NSString *const GFPRewardProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderFANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderUnityErrorKey;
@@ -60,6 +68,7 @@ FOUNDATION_EXPORT NSString *const GFPRewardProviderAPSErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderLANErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderChartBoostErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderBidMachineErrorKey;
+FOUNDATION_EXPORT NSString *const GFPRewardProviderPangleErrorKey;
 
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedVisualKeySubErrorCodeKey;
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotTypeSubErrorCodeKey;

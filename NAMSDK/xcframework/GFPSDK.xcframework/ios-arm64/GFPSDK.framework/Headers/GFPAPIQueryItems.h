@@ -26,6 +26,7 @@ static NSString * const kGFPAAPParamKeyFAN = @"fb";
 static NSString * const kGFPAAPParamKeyVungle = @"vungle";
 static NSString * const kGFPAAPParamKeyKeyChartBoost = @"cb";
 static NSString * const kGFPAAPParamKeyBidMachine = @"bm";
+static NSString * const kGFPAAPParamKeyPangle = @"pangle";
 
 @interface GFPAPIQueryItems : NSObject
 

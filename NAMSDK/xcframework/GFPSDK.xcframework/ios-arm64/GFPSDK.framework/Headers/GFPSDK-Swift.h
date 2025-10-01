@@ -327,12 +327,25 @@ SWIFT_CLASS("_TtC6GFPSDK9GFPAPILog")
 
 
 
+@class GFPAdInitProviderPlacementInfo;
+
+SWIFT_CLASS_NAMED("GFPAdInitProviderAdUnits")
+@interface GFPAdInitProviderAdUnits : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable adUnitId;
+@property (nonatomic, readonly, copy) NSArray<GFPAdInitProviderPlacementInfo *> * _Nullable placements;
+- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
+- (GFPAdInitProviderPlacementInfo * _Nullable)placementFor:(NSString * _Nonnull)placeId SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS_NAMED("GFPAdInitProviderAdditionalInfo")
 @interface GFPAdInitProviderAdditionalInfo : NSObject
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable productTypes;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable adUnitIds;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable appSignatureId;
+@property (nonatomic, readonly, copy) NSArray<GFPAdInitProviderAdUnits *> * _Nullable adUnits;
 - (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -356,6 +369,16 @@ SWIFT_CLASS_NAMED("GFPAdInitProviderInfo")
 - (NSDictionary<NSString *, NSString *> * _Nullable)dictionary SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<GFPAdInitProviderInfo *> * _Nullable)adProviders:(NSDictionary<NSString *, id> * _Nonnull)dict SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS_NAMED("GFPAdInitProviderPlacementInfo")
+@interface GFPAdInitProviderPlacementInfo : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable placeId;
+@property (nonatomic, readonly) CGSize size;
+- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -483,7 +506,8 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionAPS = 10,
   GFPBannerProviderOptionChartBoost = 11,
   GFPBannerProviderOptionBidMachine = 12,
-  GFPBannerProviderOptionEnd = 13,
+  GFPBannerProviderOptionPangle = 13,
+  GFPBannerProviderOptionEnd = 14,
 };
 
 
@@ -657,7 +681,8 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionLAN = 11,
   GFPInterstitialAdProviderOptionChartBoost = 12,
   GFPInterstitialAdProviderOptionBidMachine = 13,
-  GFPInterstitialAdProviderOptionEnd = 14,
+  GFPInterstitialAdProviderOptionPangle = 14,
+  GFPInterstitialAdProviderOptionEnd = 15,
 };
 
 @class GFPSpannableOption;
@@ -802,7 +827,8 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionVungle = 5,
   GFPNativeProviderOptionLAN = 6,
   GFPNativeProviderOptionBidMachine = 7,
-  GFPNativeProviderOptionEnd = 8,
+  GFPNativeProviderOptionPangle = 8,
+  GFPNativeProviderOptionEnd = 9,
 };
 
 
@@ -842,7 +868,8 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionLAN = 11,
   GFPRewardedAdProviderOptionChartBoost = 12,
   GFPRewardedAdProviderOptionBidMachine = 13,
-  GFPRewardedAdProviderOptionEnd = 14,
+  GFPRewardedAdProviderOptionPangle = 14,
+  GFPRewardedAdProviderOptionEnd = 15,
 };
 
 enum GFPRichMediaDataAdType : NSInteger;

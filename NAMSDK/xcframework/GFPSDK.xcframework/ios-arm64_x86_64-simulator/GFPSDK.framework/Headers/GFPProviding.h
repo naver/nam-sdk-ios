@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)initializeSDKWith:(GFPAdInitProviderInfo *)providerInfo;
 - (BOOL)isSDKinitialize;
 
+- (GFPExtraRequestParam * _Nullable)extraRequestParamWith:(NSString * _Nullable)adUnitId;
 
 @required
 
