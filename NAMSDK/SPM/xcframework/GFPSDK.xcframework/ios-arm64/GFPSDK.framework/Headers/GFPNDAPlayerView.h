@@ -46,8 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) GFPNDAAVPlayerView *playerLayerView;
 @property (nonatomic, assign) CMTime duration;
 
-
 - (instancetype)initWithFrame:(CGRect)frame mediaURL:(nonnull NSURL *)aURL loudness:(GFPLoudnessNormalization * _Nullable)aLoudness;
+- (instancetype)initRepeatPlayerWithFrame:(CGRect)frame mediaURL:(nonnull NSURL *)aURL loudness:(GFPLoudnessNormalization * _Nullable)aLoudness;
 
 - (void)start;
 - (void)pause;

@@ -18,6 +18,7 @@ static CGFloat const kRichAdMaxWidth = 414;
 @property (nonatomic, assign) BOOL isImageSizePreferred;
 
 - (void)showPlaceholderWith:(GFPPlaceholderHandler _Nullable)placeholderSetter;
+- (void)removePlaceholder;
 
 @end
 

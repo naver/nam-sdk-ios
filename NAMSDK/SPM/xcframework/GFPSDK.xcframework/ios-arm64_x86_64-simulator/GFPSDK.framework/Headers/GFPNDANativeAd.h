@@ -64,6 +64,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdDidDismissDefaultInAppBrowser:(GFPNDANativeAd *)nativeAd;
 
 - (void)nativeAdDidLoadMediaData:(GFPNDANativeAd *)nativeAd;
+- (void)nativeAdDidFailToLoadMediaData:(GFPNDANativeAd *)nativeAd;
+
+- (CGFloat)minimumSpecialDaRegionHeight;
 
 @end
 
@@ -82,6 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) GFPNDAMediaViewRenderInfo *renderInfo;
 @property (nonatomic, assign, readonly) BOOL isExpired;
 @property (nonatomic, assign, readonly) BOOL isLoadedIcon; //for nn
+@property (nonatomic, assign, readonly) BOOL isLazyLoading;
 
 @property (nonatomic, assign, readonly) CGSize cropSize;
 
@@ -130,10 +134,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CGFloat)estimateHeightWith:(CGFloat)viewWidth;
 
+
 - (void)clearForMemoryWarning;
 - (BOOL)isReloadRequired;
 - (void)reloadMediaResource;
-
+- (void)additionalRenderingViewClicked:(UIView *)clickedView;
 
 //for link
 - (void)tapGestureWith:(GFPNDANativeLandingTapGesture *)gesture;

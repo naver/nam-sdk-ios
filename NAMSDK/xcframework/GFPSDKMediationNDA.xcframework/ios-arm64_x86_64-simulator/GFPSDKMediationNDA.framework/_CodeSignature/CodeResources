@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/GFPBannerWebViewConfig.h</key>
 		<data>
-		6v/ginPTeKFMczJatloTIp28rQE=
+		Q2FapyuOvpbH3CeAxkLDBBbkH7I=
 		</data>
 		<key>Headers/GFPMediaCropInfo.h</key>
 		<data>
@@ -174,11 +174,11 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		p4MGLA5psjSK458zbVTOacmKQRs=
+		wIa6QVlXLr7xhkLBMS45wdJqAqA=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
-		BhqJLXmXxaBQ//xNNUc1GrXnQyY=
+		BN0lB2Xs9uV7mzndpHPUwovCcEs=
 		</data>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Headers/GFPNDANativeAd.h</key>
 		<data>
-		DhzUVSzqcVmi8kWxW9gzeJJ5cas=
+		VPPY11RnAs3kDgCz4tv5JlmRmOU=
 		</data>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
 		<data>
@@ -441,11 +441,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6v/ginPTeKFMczJatloTIp28rQE=
+			Q2FapyuOvpbH3CeAxkLDBBbkH7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Oeg1urU8a0PLvn07jrQlmhApmdXG38GgV8B4ljIdp1k=
+			KXJaMbL4H01F82+no2Hn7CRkBhxRQE9/dYJ/BXBDjvc=
 			</data>
 		</dict>
 		<key>Headers/GFPMediaCropInfo.h</key>
@@ -815,22 +815,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p4MGLA5psjSK458zbVTOacmKQRs=
+			wIa6QVlXLr7xhkLBMS45wdJqAqA=
 			</data>
 			<key>hash2</key>
 			<data>
-			heXfiKmPc0OBb1hO77ZYzXRU0ZavfAtFBOeTCwEGYCU=
+			5YVPJygiaRjyykfQJDD50DasmGdBpFzBkj+KNfyA2OI=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BhqJLXmXxaBQ//xNNUc1GrXnQyY=
+			BN0lB2Xs9uV7mzndpHPUwovCcEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			YItlcSO0EmoNnevVyZmhXVr3Au3FZNpxZ4igORwl5dY=
+			/YDmYo/GQBzHSmQYgPSOTv5fh6VRyJ1c9ZXlojptxvI=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
@@ -870,11 +870,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DhzUVSzqcVmi8kWxW9gzeJJ5cas=
+			VPPY11RnAs3kDgCz4tv5JlmRmOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			M0vSBfTYKqXzbrCQBpi15fLYdFnTB+OD43DOh7EeG2A=
+			83WEIhOV40CeDKDP/BBgrlNApMCK7cHopRiec3hoJSg=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeAdFactory.h</key>

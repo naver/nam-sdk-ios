@@ -56,7 +56,13 @@ typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
  * extraInfo's key
  */
 extern NSString *const kGFPNativeIconSizeKey;
+extern NSString *const kGFPNaverAppLogoInfoKey;
+extern NSString *const kGFPMediaViewType;
 
+typedef NS_OPTIONS(NSInteger, GFPExternalMediaViewType) {
+    GFPExternalMediaViewTypeDoubleCrown = 108,
+    GFPExternalMediaViewTypeTripleCrown = 110
+};
 
 @interface GFPNativeAdBase : NSObject
 

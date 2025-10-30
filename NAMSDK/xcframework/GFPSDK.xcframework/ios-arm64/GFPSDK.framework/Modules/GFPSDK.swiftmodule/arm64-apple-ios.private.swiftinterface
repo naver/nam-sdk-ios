@@ -154,6 +154,18 @@ extension GFPSDK.GFPErrorUtils {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVisualKey : ObjectiveC.NSObject {
+  @objc public static let defaultVisualKey: Swift.String
+  @objc public static let shoppingLabel: Swift.String
+  @objc public static let smartChannelCarousel: Swift.String
+  @objc public static let shoppingNda: Swift.String
+  @objc public static let splash: Swift.String
+  @objc public static let imageToMotion: Swift.String
+  @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
+  @objc public static func isNativeNormalVisualKey(_ key: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol GFPQueueObject : ObjectiveC.NSObjectProtocol {
 }
 @objc @objcMembers public class GFPLimitQueue : ObjectiveC.NSObject {
@@ -290,14 +302,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc public class func sendGFPEventToUrl(_ urlString: Swift.String?, logId: Foundation.UUID?)
   @objc public class func openURLWith(_ aURL: Swift.String, completion: GFPSDK.GFPS2SAdLandingHandler?)
   @objc public class func defaultRequestWith(_ url: Foundation.URL) -> Foundation.URLRequest
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPTemplateVisualKey : ObjectiveC.NSObject {
-  @objc public static let defaultVisualKey: Swift.String
-  @objc public static let shoppingLabel: Swift.String
-  @objc public static let smartChannelCarousel: Swift.String
-  @objc public static let shoppingNda: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -479,6 +483,7 @@ extension GFPSDK.GFPErrorUtils {
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdNativeSimpleOptions : ObjectiveC.NSObject {
   @objc public var simpleAdRenderingSetting: GFPSDK.GFPNativeSimpleAdRenderingSetting?
   @objc public var templateOptions: GFPSDK.GFPNativeTemplateOptions?
+  @objc public var tripleCrownDisable: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }

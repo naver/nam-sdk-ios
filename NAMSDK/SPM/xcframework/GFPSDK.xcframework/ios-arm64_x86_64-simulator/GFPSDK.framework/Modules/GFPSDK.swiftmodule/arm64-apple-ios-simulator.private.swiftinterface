@@ -293,14 +293,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class kGFPTemplateVisualKey : ObjectiveC.NSObject {
-  @objc public static let defaultVisualKey: Swift.String
-  @objc public static let shoppingLabel: Swift.String
-  @objc public static let smartChannelCarousel: Swift.String
-  @objc public static let shoppingNda: Swift.String
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPIconData : ObjectiveC.NSObject {
   @objc public static let unknwonAspectRatio: CoreFoundation.CGFloat
   @objc weak public var image: UIKit.UIImage?
@@ -479,6 +471,7 @@ extension GFPSDK.GFPErrorUtils {
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdNativeSimpleOptions : ObjectiveC.NSObject {
   @objc public var simpleAdRenderingSetting: GFPSDK.GFPNativeSimpleAdRenderingSetting?
   @objc public var templateOptions: GFPSDK.GFPNativeTemplateOptions?
+  @objc public var tripleCrownDisable: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -526,6 +519,18 @@ extension GFPSDK.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateV
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPVisualKey : ObjectiveC.NSObject {
+  @objc public static let defaultVisualKey: Swift.String
+  @objc public static let shoppingLabel: Swift.String
+  @objc public static let smartChannelCarousel: Swift.String
+  @objc public static let shoppingNda: Swift.String
+  @objc public static let splash: Swift.String
+  @objc public static let imageToMotion: Swift.String
+  @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
+  @objc public static func isNativeNormalVisualKey(_ key: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GFPGradientLabelView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPGradientLabelView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -690,6 +695,22 @@ extension GFPSDK.GFPTemplateDefaultNativeBannerView : GFPSDK.GFPNativeTemplateVi
   }
   @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GFPRendererSplashView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPRendererSplashView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension GFPSDK.GFPRendererSplashView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iconContainerView() -> UIKit.UIImageView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func updateAdStyleOption(with defaultOption: GFPSDK.GFPAdStyleOption?, darkOption: GFPSDK.GFPAdStyleOption?)
 }
 extension GFPSDK.GFPContentInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws

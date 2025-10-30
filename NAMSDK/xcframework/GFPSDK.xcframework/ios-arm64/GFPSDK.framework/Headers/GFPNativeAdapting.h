@@ -89,6 +89,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reloadMediaResource;
 
+- (void)additionalRenderingViewClicked:(UIView *)clickedView;
+
 - (GFPMediaData * _Nullable)mediaData;
 
 - (GFPIconData * _Nullable)iconData;

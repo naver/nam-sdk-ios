@@ -418,6 +418,29 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelM
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_CLASS_NAMED("GFPRendererSplashView")
+@interface GFPRendererSplashView : UIView
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class UIImageView;
+@class GFPAdStyleOption;
+
+@interface GFPRendererSplashView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+- (void)updateAdStyleOptionWith:(GFPAdStyleOption * _Nullable)defaultOption darkOption:(GFPAdStyleOption * _Nullable)darkOption;
+@end
+
 @class UIImage;
 
 SWIFT_CLASS_NAMED("GFPRendererUtils")
@@ -438,7 +461,6 @@ SWIFT_CLASS_NAMED("GFPTemplateDefaultNativeBannerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 
 @interface GFPTemplateDefaultNativeBannerView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
 - (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
@@ -913,6 +935,29 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelM
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_CLASS_NAMED("GFPRendererSplashView")
+@interface GFPRendererSplashView : UIView
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class UIImageView;
+@class GFPAdStyleOption;
+
+@interface GFPRendererSplashView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+- (void)updateAdStyleOptionWith:(GFPAdStyleOption * _Nullable)defaultOption darkOption:(GFPAdStyleOption * _Nullable)darkOption;
+@end
+
 @class UIImage;
 
 SWIFT_CLASS_NAMED("GFPRendererUtils")
@@ -933,7 +978,6 @@ SWIFT_CLASS_NAMED("GFPTemplateDefaultNativeBannerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 
 @interface GFPTemplateDefaultNativeBannerView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
 - (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;

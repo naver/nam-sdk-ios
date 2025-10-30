@@ -75,6 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
              vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect;
 
 - (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable>)aInfo
+                nativeAdInfo:(nullable GFPNativeAdInfo *)nativeAdInfo
              skAdNetworkInfo:(nullable GFPSKAdNetworkInfo *)skAdNetworkInfo
                   renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
              vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect

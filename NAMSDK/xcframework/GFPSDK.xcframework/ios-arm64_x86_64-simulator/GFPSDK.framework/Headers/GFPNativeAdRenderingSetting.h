@@ -21,6 +21,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+const static NSString *kTripleCrownBgView = @"kTripleCrownBgView";
+const static NSString *kTripleCrownTopObjectView = @"kTripleCrownTopObjectView";
+const static NSString *kDoubleCrownBgView = @"kDoubleCrownBgView";
+
 typedef CGFloat (^GFPMaxExtendingHeightSetter)(void);
 
 typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
@@ -170,6 +174,12 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * Background style in ad response overrides this option.
  */
 @property (nonatomic, strong, nullable) GFPBackgroundOption *backgroundOption;
+
+/**
+ * 트리플크라운 리치 광고의 배경 영역 뷰 전달을 위한 옵션입니다.
+ */
+@property (nonatomic, weak, nullable) UIView *tripleCrownView;
+
 
 @end
 

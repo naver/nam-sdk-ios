@@ -10,6 +10,7 @@
 
 #import "GFPNativeBaseView.h"
 #import "GFPNativeAd.h"
+#import "GFPPlaceholderHandler.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -35,6 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray *)getAllExtraLabel;
 
 - (NSArray <UILabel *> *)labels;
+
+- (void)showIconPlaceholderWith:(GFPPlaceholderHandler _Nullable)placeholderSetter;
+- (void)removeIconPlaceholder;
+- (void)removePlaceholders;
 
 @end
 

@@ -49,6 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdAdaptorDidDismissDefaultInAppBrowser:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
 
 - (void)nativeAdAdaptorDidLoadMediaData:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+- (void)nativeAdAdaptorDidFailToLoadMediaData:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+
+- (CGFloat)minimumSpecialDaRegionHeight;
 
 @end
 

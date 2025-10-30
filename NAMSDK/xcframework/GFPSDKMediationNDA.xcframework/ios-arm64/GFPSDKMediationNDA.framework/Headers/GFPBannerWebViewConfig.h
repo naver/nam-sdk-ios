@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (GFPBannerWebViewConfig *)sharedInstance;
 
 
-- (WKWebViewConfiguration *)configuration;
-- (WKWebViewConfiguration *)companionConfiguration;
+- (WKWebViewConfiguration *)getConfiguration;
+- (WKWebViewConfiguration *)getCompanionConfiguration;
 
 
 @end

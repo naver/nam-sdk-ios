@@ -58,10 +58,12 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDARichMediaViewNewVideoExtendV2 = 107,
     GFPNDARichMediaViewDoubleCrown = 108,
     GFPNDARichMediaViewVideoExtendV3 = 109,
+    GFPNDARichMediaViewTripleCrown = 110,
 
     GFPNDARendererMediaViewShoppingLabel = 1000,
     GFPNDARendererMediaViewSmartChannelFlicking = 1001,
-    GFPNDARendererMediaViewShoppingNDA = 1002
+    GFPNDARendererMediaViewShoppingNDA = 1002,
+    GFPNDARendererMediaViewSplash = 1003,
 };
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewRenderType) {
@@ -95,6 +97,8 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 
 - (void)didPresentDefaultInAppBrowser:(GFPNDAMediaViewType)aType;
 - (void)didDismissDefaultInAppBrowser:(GFPNDAMediaViewType)aType;
+
+- (CGFloat)minimumSpecialDaRegionHeight;
 @end
 
 
@@ -128,6 +132,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)clearForUnregister;
 - (void)clearForMemoryWarning;
 - (void)reloadNativeMedia;
+- (void)additionalRenderingViewClicked:(UIView *)clickedView;
 @end
 
 //For carousel
@@ -174,6 +179,8 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 
 - (void)didPresentDefaultInAppBrowser;
 - (void)didDismissDefaultInAppBrowser;
+- (void)simpleViewChanged;
+- (id)getExtraInfoWithKey:(NSString *)key;
 
 @end
 

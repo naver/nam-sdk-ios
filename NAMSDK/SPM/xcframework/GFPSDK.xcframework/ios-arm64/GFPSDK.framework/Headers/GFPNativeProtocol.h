@@ -16,6 +16,7 @@
 @class GFPMediaData;
 @class GFPIconData;
 @class GFPNativeBaseRenderingSetting;
+@class GFPAdStyleOption;
 
 @protocol GFPNativeAssetProtocol <NSObject>
 
@@ -137,5 +138,6 @@
 - (CGFloat)scaleRatio;
 
 - (void)updateRenderingSetting:(GFPNativeBaseRenderingSetting * _Nullable)renderingSetting NS_SWIFT_NAME(updateRenderingSetting(renderingSetting:));
+- (void)updateAdStyleOptionWith:(GFPAdStyleOption * _Nullable)defaultOption darkOption:(GFPAdStyleOption * _Nullable)darkOption;
 
 @end

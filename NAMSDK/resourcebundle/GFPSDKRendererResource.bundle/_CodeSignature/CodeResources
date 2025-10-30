@@ -12,6 +12,10 @@
 		<data>
 		FgLarqOmIGohSJ0tv2hcRwQZ5ec=
 		</data>
+		<key>GFPRendererSplashView.nib</key>
+		<data>
+		pXfpHe8aHLlMwNThZBCqZDswbzM=
+		</data>
 		<key>GFPTemplateDefaultNativeBannerView.nib</key>
 		<data>
 		gnCzo5/34dJKfkBbMArW1m79MYo=
@@ -43,6 +47,17 @@
 			<key>hash2</key>
 			<data>
 			eNofimVCYx99RYOmxWIzzfqGqZ4gDUhI83ECCOcjqVs=
+			</data>
+		</dict>
+		<key>GFPRendererSplashView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pXfpHe8aHLlMwNThZBCqZDswbzM=
+			</data>
+			<key>hash2</key>
+			<data>
+			CTyI3ZiBhvgl+OVrisL+NzP/OqN7C/qfcaxFxNm/kio=
 			</data>
 		</dict>
 		<key>GFPTemplateDefaultNativeBannerView.nib</key>

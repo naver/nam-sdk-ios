@@ -82,10 +82,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- * LazyLoading 사용 시, 실 사용되는 MediaData로드가 완료되었을 때 호출 ( 이미지 로드 시점과 동일 )
+ * LazyLoading 사용 시, 실 사용되는 MediaData 로드가 완료되었을 때 호출 ( 이미지 로드 시점과 동일 )
  * @param nativeAd 네이티브 광고 객체
  */
 - (void)nativeAdDidLoadMediaData:(GFPNativeAd *)nativeAd;
+
+/**
+ * LazyLoading 사용 시, 실 사용되는 MediaData 로드가 실패했을 때 호출
+ * @param nativeAd 네이티브 광고 객체
+ */
+- (void)nativeAdDidFailToLoadMediaData:(GFPNativeAd *)nativeAd;
+
 @end
 
 @protocol GFPNativeSimpleAdDelegate <NSObject>
@@ -186,6 +193,17 @@ NS_ASSUME_NONNULL_BEGIN
  * @param nativeSimpleAd 네이티브 광고 객체
  */
 - (void)nativeSimpleAdDidLoadMedia:(GFPNativeSimpleAd *)nativeSimpleAd;
+
+/**
+ * LazyLoading 사용 시, 미디어 로딩 실패 시 호출됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ */
+- (void)nativeSimpleAdDidFailToLoadMedia:(GFPNativeSimpleAd *)nativeSimpleAd;
+
+/**
+ * Special DA Rich광고 더블크라운, 트리플 크라운의 최소 영역을 전달받을 때 사용합니다.
+ */
+- (CGFloat)minimumSpecialDaRegionHeight;
 
 @end
 

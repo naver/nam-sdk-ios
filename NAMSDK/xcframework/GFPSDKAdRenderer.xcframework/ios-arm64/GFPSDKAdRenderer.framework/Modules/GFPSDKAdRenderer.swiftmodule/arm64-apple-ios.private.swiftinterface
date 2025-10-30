@@ -10,6 +10,22 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(GFPRendererSplashView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPRendererSplashView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension GFPSDKAdRenderer.GFPRendererSplashView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iconContainerView() -> UIKit.UIImageView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func updateAdStyleOption(with defaultOption: GFPSDK.GFPAdStyleOption?, darkOption: GFPSDK.GFPAdStyleOption?)
+}
 @_inheritsConvenienceInitializers @objc(GFPTemplateDefaultNativeBannerView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPTemplateDefaultNativeBannerView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()

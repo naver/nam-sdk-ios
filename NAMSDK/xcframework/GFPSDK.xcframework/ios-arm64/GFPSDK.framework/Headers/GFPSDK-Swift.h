@@ -404,6 +404,8 @@ SWIFT_CLASS("_TtC6GFPSDK24GFPAdNativeSimpleOptions")
 @property (nonatomic, strong) GFPNativeSimpleAdRenderingSetting * _Nullable simpleAdRenderingSetting;
 /// 네이티브 템플릿 광고 세팅 (Optional)
 @property (nonatomic, strong) GFPNativeTemplateOptions * _Nullable templateOptions;
+/// Special DA Triple Crown 로드 가능 여부 전달 ( Optional )
+@property (nonatomic) BOOL tripleCrownDisable;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1121,6 +1123,26 @@ typedef SWIFT_ENUM(NSInteger, GFPVideoProviderOption, open) {
 };
 
 
+SWIFT_CLASS("_TtC6GFPSDK12GFPVisualKey")
+@interface GFPVisualKey : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull defaultVisualKey;)
++ (NSString * _Nonnull)defaultVisualKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
++ (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
++ (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
++ (NSString * _Nonnull)shoppingNda SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull splash;)
++ (NSString * _Nonnull)splash SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageToMotion;)
++ (NSString * _Nonnull)imageToMotion SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isNativeNormalVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
 @interface GFPWaterfallAdSize : NSObject
 @property (nonatomic) CGFloat width;
@@ -1151,20 +1173,6 @@ SWIFT_CLASS("_TtC6GFPSDK24kGFPRewardedNotification")
 @interface kGFPRewardedNotification : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull resume;)
 + (NSString * _Nonnull)resume SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC6GFPSDK21kGFPTemplateVisualKey")
-@interface kGFPTemplateVisualKey : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull defaultVisualKey;)
-+ (NSString * _Nonnull)defaultVisualKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
-+ (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
-+ (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
-+ (NSString * _Nonnull)shoppingNda SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
