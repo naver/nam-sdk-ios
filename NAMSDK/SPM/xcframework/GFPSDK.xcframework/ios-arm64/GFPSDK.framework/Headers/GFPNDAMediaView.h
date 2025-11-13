@@ -98,7 +98,9 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)didPresentDefaultInAppBrowser:(GFPNDAMediaViewType)aType;
 - (void)didDismissDefaultInAppBrowser:(GFPNDAMediaViewType)aType;
 
+- (void)registerGestureForExtraView:(UIView *)extraView linkInfo:(id<GFPNativeAdInfoLinkPresentable>)linkInfo;
 - (CGFloat)minimumSpecialDaRegionHeight;
+
 @end
 
 

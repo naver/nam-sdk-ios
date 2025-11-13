@@ -51,6 +51,7 @@ extension GFPSDKAdRenderer.GFPTemplateDefaultNativeBannerView : GFPSDK.GFPNative
   @objc(extraKeyLabelBadge) @_Concurrency.MainActor @preconcurrency public static let extraKeyLabelBadge: Swift.String
   @objc(extraKeyStar) @_Concurrency.MainActor @preconcurrency public static let extraKeyStar: Swift.String
   @objc(extraViewKeyBadge) @_Concurrency.MainActor @preconcurrency public static let extraViewKeyBadge: Swift.String
+  @objc(extraViewShortContentsArrow) @_Concurrency.MainActor @preconcurrency public static let extraViewShortContentsArrow: Swift.String
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()

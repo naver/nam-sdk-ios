@@ -86,6 +86,16 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 @property (nonatomic, strong, nullable) UIFont *mediaBoldFont;
 
 /**
+ * 캐러셀 광고의 Default image를 설정하고 싶을 때 전달합니다.
+ * (기본값은 nil)
+ */
+@property (nonatomic, strong, nullable) UIColor *slotLoadingColor;
+@property (nonatomic, strong, nullable) UIColor *slotLoadingDarkColor;
+@property (nonatomic, strong, nullable) UIImage *slotPlaceHolderImage;
+@property (nonatomic, strong, nullable) UIImage *slotPlaceHolderDarkImage;
+
+
+/**
  * Special DA의 기본 탑 마진을 사용하지 않고 아래 확장만 사용할 시에 사용합니다.
  * (기본값은 NO)
  */

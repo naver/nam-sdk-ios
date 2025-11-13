@@ -59,8 +59,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) GFPAdImpressionInfo *impressionInfo;
 @property (readonly, nonatomic, strong) GFPAutoPlayInfo *autoPlayInfo;
 
-@property (readonly, nonatomic, assign) BOOL needAdChoice;
-
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict error:(GFPError *_Nullable *_Nullable)error NS_DESIGNATED_INITIALIZER;
 
@@ -200,8 +198,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)adDict
                                         data:(GFPAdSkipData * _Nullable)data
-                                vastSkipData:(GFPVastAdSkipData * _Nullable)vastSkipData
-                       needAdChoiceForRender:(BOOL)needAdChoiceForRender NS_DESIGNATED_INITIALIZER;
+                                vastSkipData:(GFPVastAdSkipData * _Nullable)vastSkipData NS_DESIGNATED_INITIALIZER;
 
 @end
 
@@ -245,8 +242,7 @@ NS_ASSUME_NONNULL_BEGIN
     
 - (instancetype)initWithDictionary:(NSDictionary *)adInfoDict
                       vastSkipInfo:(GFPVastAdSkipInfo *)vastSkipInfo
-                          skipInfo:(GFPAdSkipInfo *)skipInfo
-             needAdChoiceForRender:(BOOL)needAdChoiceForRender NS_DESIGNATED_INITIALIZER;
+                          skipInfo:(GFPAdSkipInfo *)skipInfo NS_DESIGNATED_INITIALIZER;
 
 @end
 
