@@ -73,6 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly, assign) BOOL notYetLoaded;
 @property (nonatomic, readonly, assign) BOOL isLoaded;
+@property (nonatomic, readonly, assign) BOOL isError;
 
 @end
 
