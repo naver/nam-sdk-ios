@@ -26,7 +26,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 @interface GFPNDAMediaViewRenderInfo : NSObject
 
 @property (nonatomic, assign, readonly) BOOL hasRenderAdBadge;
@@ -70,6 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable>)aInfo;
 
 - (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable>)aInfo
+                nativeAdInfo:(nullable GFPNativeAdInfo *)nativeAdInfo
              skAdNetworkInfo:(nullable GFPSKAdNetworkInfo *)skAdNetworkInfo
                   renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
              vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect;

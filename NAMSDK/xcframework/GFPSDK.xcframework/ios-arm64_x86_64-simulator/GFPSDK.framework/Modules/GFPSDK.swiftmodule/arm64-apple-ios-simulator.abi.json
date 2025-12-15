@@ -5861,6 +5861,218 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "imageScrollMotion",
+            "printedName": "imageScrollMotion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cpy)imageScrollMotion",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC17imageScrollMotionSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)imageScrollMotion",
+                "mangledName": "$s6GFPSDK12GFPVisualKeyC17imageScrollMotionSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carouselComplexImage",
+            "printedName": "carouselComplexImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cpy)carouselComplexImage",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC20carouselComplexImageSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)carouselComplexImage",
+                "mangledName": "$s6GFPSDK12GFPVisualKeyC20carouselComplexImageSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carouselComplexVideo",
+            "printedName": "carouselComplexVideo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cpy)carouselComplexVideo",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC20carouselComplexVideoSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)carouselComplexVideo",
+                "mangledName": "$s6GFPSDK12GFPVisualKeyC20carouselComplexVideoSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carouselAutoInteraction",
+            "printedName": "carouselAutoInteraction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cpy)carouselAutoInteraction",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC23carouselAutoInteractionSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)carouselAutoInteraction",
+                "mangledName": "$s6GFPSDK12GFPVisualKeyC23carouselAutoInteractionSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "isTemplateVisualKey",
             "printedName": "isTemplateVisualKey(_:)",
@@ -5892,8 +6104,8 @@
           },
           {
             "kind": "Function",
-            "name": "isNativeNormalVisualKey",
-            "printedName": "isNativeNormalVisualKey(_:)",
+            "name": "isCarouselVisualkey",
+            "printedName": "isCarouselVisualkey(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5909,8 +6121,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)isNativeNormalVisualKey:",
-            "mangledName": "$s6GFPSDK12GFPVisualKeyC020isNativeNormalVisualC0ySbSSFZ",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)isCarouselVisualkey:",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC19isCarouselVisualkeyySbSSFZ",
             "moduleName": "GFPSDK",
             "static": true,
             "declAttributes": [
@@ -18883,6 +19095,47 @@
             "fixedbinaryorder": 1
           },
           {
+            "kind": "Var",
+            "name": "imageExtendV3",
+            "printedName": "imageExtendV3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDK.GFPRichMediaDataAdType.Type) -> GFPSDK.GFPRichMediaDataAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPRichMediaDataAdType",
+                    "printedName": "GFPSDK.GFPRichMediaDataAdType",
+                    "usr": "c:@M@GFPSDK@E@GFPRichMediaDataAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDK.GFPRichMediaDataAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPRichMediaDataAdType",
+                        "printedName": "GFPSDK.GFPRichMediaDataAdType",
+                        "usr": "c:@M@GFPSDK@E@GFPRichMediaDataAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDK@E@GFPRichMediaDataAdType@GFPRichMediaDataAdTypeImageExtendV3",
+            "mangledName": "$s6GFPSDK22GFPRichMediaDataAdTypeO13imageExtendV3yA2CmF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -31224,7 +31477,6 @@
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
               "ObjC"
             ],
             "accessors": [
@@ -31334,6 +31586,51 @@
             "moduleName": "GFPSDK",
             "static": true,
             "objc_name": "createImageInfoWith:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createImageInfo",
+            "printedName": "createImageInfo(image:manualAspectRatio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMediaData",
+                "printedName": "GFPSDK.GFPMediaData",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPMediaData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPMediaData(cm)createImageInfoWith:manualAspectRatio:",
+            "mangledName": "$s6GFPSDK12GFPMediaDataC15createImageInfo5image17manualAspectRatioACSo7UIImageCSg_12CoreGraphics7CGFloatVtFZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "objc_name": "createImageInfoWith:manualAspectRatio:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -32107,7 +32404,11 @@
                 "moduleName": "GFPSDK",
                 "genericSig": "<τ_0_0>",
                 "sugared_genericSig": "<T>",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -32119,9 +32420,11 @@
         "moduleName": "GFPSDK",
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<T>",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
-          "PropertyWrapper"
+          "PropertyWrapper",
+          "Available"
         ],
         "conformances": [
           {
@@ -34519,6 +34822,34 @@
       "value": "\"NORMAL_VIDEO_IMAGE2MOTION\""
     },
     {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 885,
+      "length": 31,
+      "value": "\"NORMAL_IMAGE_FEED_INTERACTION\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 981,
+      "length": 22,
+      "value": "\"CAROUSEL_IMAGE_MEDIA\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 1036,
+      "length": 22,
+      "value": "\"CAROUSEL_VIDEO_MEDIA\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 1094,
+      "length": 33,
+      "value": "\"CAROUSEL_IMAGE_INTERACTION_HOME\""
+    },
+    {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
@@ -35179,49 +35510,56 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1049,
+      "offset": 337,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1072,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1125,
+      "offset": 1148,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1169,
+      "offset": 1192,
       "length": 3,
       "value": "9.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1173,
+      "offset": 1196,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1297,
+      "offset": 1320,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1419,
+      "offset": 1442,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPRichMediaData.swift",
       "kind": "FloatLiteral",
-      "offset": 1424,
+      "offset": 1447,
       "length": 3,
       "value": "9.0"
     },
@@ -35515,63 +35853,70 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1999,
+      "offset": 2067,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2196,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2619,
+      "offset": 2838,
       "length": 42,
       "value": "\"<GFPMediaData : Type - \""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2660,
+      "offset": 2879,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2727,
+      "offset": 2946,
       "length": 20,
       "value": "\", Image - \""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2746,
+      "offset": 2965,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2834,
+      "offset": 3053,
       "length": 40,
       "value": "\", VideoController - \""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2873,
+      "offset": 3092,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2910,
+      "offset": 3129,
       "length": 38,
       "value": "\", AspectRatio - \""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPMediaData.swift",
       "kind": "StringLiteral",
-      "offset": 2946,
+      "offset": 3165,
       "length": 1,
       "value": "\">\""
     }

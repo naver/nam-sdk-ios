@@ -6,7 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		a4ZU8pkV5/aPfzqdKlXQo728fpc=
+		Q2lkHQUn8OW8RZOs5vYOes8opIA=
+		</data>
+		<key>GFPNDAAutoPagingInteractionCell.nib</key>
+		<data>
+		vQvj1knmzLivPqICiGn9rW/5n5k=
 		</data>
 		<key>GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -15,6 +19,26 @@
 		<key>GFPNDAReasonCollectionViewCell.nib/runtime.nib</key>
 		<data>
 		gKbB2K1fr50GuaqsIDc1LUEdRyI=
+		</data>
+		<key>GFPNDAShoppingNDA1X1Cell.nib</key>
+		<data>
+		19wCxrddCQbIE+YS70c+pPovQeQ=
+		</data>
+		<key>GFPNDAShoppingNDA1X3Cell.nib</key>
+		<data>
+		ryTz0B5U2gLKbziIBIxfnKwVI3U=
+		</data>
+		<key>GFPNDAShoppingNDABottomScrollCell.nib</key>
+		<data>
+		BBuu3gPVUoO9JfyYCVJ8IzlP+ww=
+		</data>
+		<key>GFPNDAShoppingNDACell.nib</key>
+		<data>
+		GtHOMQqzB5/7SwE/lClhMfsGEtI=
+		</data>
+		<key>GFPNDAShoppingSearchNDACell.nib</key>
+		<data>
+		/Rx2yWFePdiwX+k5xY7TT1bhv9I=
 		</data>
 		<key>GFPNDAShoppingSingleSlideCell.nib</key>
 		<data>
@@ -41,7 +65,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ifb3uflGyF6Ko7kqcBSDNmf0tPU=
+			4izgI5lsl1frH2JzyS1f5syKZr4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -86,7 +110,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qAOQ//F8Nh4nUQ819mALG3a3+FM=
+			Tq1mzdtffO1DgV6tELFYeLoKOYY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,11 +149,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a4ZU8pkV5/aPfzqdKlXQo728fpc=
+			Q2lkHQUn8OW8RZOs5vYOes8opIA=
 			</data>
 			<key>hash2</key>
 			<data>
-			XTUTfaCZVDGdZwbwOj/jD3xHzX2QptBR/tiodkO2kW0=
+			GOBk+d6WFdXBDisL7rXbBnIn6Y24Tq5DX56Km/uvOHY=
+			</data>
+		</dict>
+		<key>GFPNDAAutoPagingInteractionCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vQvj1knmzLivPqICiGn9rW/5n5k=
+			</data>
+			<key>hash2</key>
+			<data>
+			IvvgRfC+rlM0OlxBJF21ur4a5FVSUU9dn5knTyPvbGg=
 			</data>
 		</dict>
 		<key>GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
@@ -152,6 +187,61 @@
 			<key>hash2</key>
 			<data>
 			TvWQFJx2tBtK6GF1N8D5zJiv5hKUxoNx+RqLQu38Q8Y=
+			</data>
+		</dict>
+		<key>GFPNDAShoppingNDA1X1Cell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			19wCxrddCQbIE+YS70c+pPovQeQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			klrqjihKSH9OCc5VP2DpWH9fvgLl8UcDNamV/rpzZr0=
+			</data>
+		</dict>
+		<key>GFPNDAShoppingNDA1X3Cell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ryTz0B5U2gLKbziIBIxfnKwVI3U=
+			</data>
+			<key>hash2</key>
+			<data>
+			d1P953fHh8sRkKIBZIse/T3A6GqoFNLz2PlME4nkJEs=
+			</data>
+		</dict>
+		<key>GFPNDAShoppingNDABottomScrollCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BBuu3gPVUoO9JfyYCVJ8IzlP+ww=
+			</data>
+			<key>hash2</key>
+			<data>
+			nSf1c5XGonbgIzFgU/p9BXfpdVX0zwtaNGbrrgw36go=
+			</data>
+		</dict>
+		<key>GFPNDAShoppingNDACell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GtHOMQqzB5/7SwE/lClhMfsGEtI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Rxks+QpONdsCwBs72QoMkGLmmMIC5oktjLNiChLkp8o=
+			</data>
+		</dict>
+		<key>GFPNDAShoppingSearchNDACell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/Rx2yWFePdiwX+k5xY7TT1bhv9I=
+			</data>
+			<key>hash2</key>
+			<data>
+			E69zCtBN5exX1CFvEUwwFwLshtvKYtLbhpA3VCQ0bao=
 			</data>
 		</dict>
 		<key>GFPNDAShoppingSingleSlideCell.nib</key>
@@ -204,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ifb3uflGyF6Ko7kqcBSDNmf0tPU=
+			4izgI5lsl1frH2JzyS1f5syKZr4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hVOUJxUcWeTIGpFKSV56IegwyavbCLsIu9xWuLpJpEA=
+			PdBAnAhBJnz8TfBn9WVbw57ohzPtbFMsn/lJMiP2OLY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -269,11 +359,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qAOQ//F8Nh4nUQ819mALG3a3+FM=
+			Tq1mzdtffO1DgV6tELFYeLoKOYY=
 			</data>
 			<key>hash2</key>
 			<data>
-			1V5OOZIGbXpfq3yX/D+feu98kGseOWepG0nUYfbSWFA=
+			/Tq3TS6rttuFH5djPPgzTauJQPvq9bvfiN66iKAKPBo=
 			</data>
 			<key>optional</key>
 			<true/>

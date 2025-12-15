@@ -87,7 +87,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init NS_UNAVAILABLE;
 
-- (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict error:(GFPError *_Nullable *_Nullable)error NS_DESIGNATED_INITIALIZER;
+- (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)dict
+                               isPredownload:(BOOL)isPredownload
+                                       error:(GFPError *_Nullable *_Nullable)error NS_DESIGNATED_INITIALIZER;
 
 @end
 
@@ -198,7 +200,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)adDict
                                         data:(GFPAdSkipData * _Nullable)data
-                                vastSkipData:(GFPVastAdSkipData * _Nullable)vastSkipData NS_DESIGNATED_INITIALIZER;
+                                vastSkipData:(GFPVastAdSkipData * _Nullable)vastSkipData
+                               isPredownload:(BOOL)isPredownload NS_DESIGNATED_INITIALIZER;
 
 @end
 
@@ -242,7 +245,8 @@ NS_ASSUME_NONNULL_BEGIN
     
 - (instancetype)initWithDictionary:(NSDictionary *)adInfoDict
                       vastSkipInfo:(GFPVastAdSkipInfo *)vastSkipInfo
-                          skipInfo:(GFPAdSkipInfo *)skipInfo NS_DESIGNATED_INITIALIZER;
+                          skipInfo:(GFPAdSkipInfo *)skipInfo
+                     isPredownload:(BOOL)isPredownload NS_DESIGNATED_INITIALIZER;
 
 @end
 

@@ -4,18 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>GFPRendererSplashView.nib</key>
-		<data>
-		pXfpHe8aHLlMwNThZBCqZDswbzM=
-		</data>
-		<key>GFPTemplateDefaultNativeBannerView.nib</key>
-		<data>
-		gnCzo5/34dJKfkBbMArW1m79MYo=
-		</data>
-		<key>GFPTemplateDefaultNativeView.nib</key>
-		<data>
-		IcQqNjqC+NXUwL4Z1hTfR38vJGk=
-		</data>
 		<key>Headers/GFPSDKAdRenderer-Swift.h</key>
 		<data>
 		AxN7caTHCY+RA2N+XXSxIPtZRrc=
@@ -71,39 +59,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>GFPRendererSplashView.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pXfpHe8aHLlMwNThZBCqZDswbzM=
-			</data>
-			<key>hash2</key>
-			<data>
-			CTyI3ZiBhvgl+OVrisL+NzP/OqN7C/qfcaxFxNm/kio=
-			</data>
-		</dict>
-		<key>GFPTemplateDefaultNativeBannerView.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gnCzo5/34dJKfkBbMArW1m79MYo=
-			</data>
-			<key>hash2</key>
-			<data>
-			LTE8FZGwyKHHHmV91S3lOzcwTbpIqCIZ5C4ScLs6r9I=
-			</data>
-		</dict>
-		<key>GFPTemplateDefaultNativeView.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IcQqNjqC+NXUwL4Z1hTfR38vJGk=
-			</data>
-			<key>hash2</key>
-			<data>
-			ImJCG4Z6tNPKcOk2NNzNRP44s+gXB2EFJw3gxWQV8/0=
-			</data>
-		</dict>
 		<key>Headers/GFPSDKAdRenderer-Swift.h</key>
 		<dict>
 			<key>hash</key>

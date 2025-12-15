@@ -161,8 +161,12 @@ extension GFPSDK.GFPErrorUtils {
   @objc public static let shoppingNda: Swift.String
   @objc public static let splash: Swift.String
   @objc public static let imageToMotion: Swift.String
+  @objc public static let imageScrollMotion: Swift.String
+  @objc public static let carouselComplexImage: Swift.String
+  @objc public static let carouselComplexVideo: Swift.String
+  @objc public static let carouselAutoInteraction: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
-  @objc public static func isNativeNormalVisualKey(_ key: Swift.String) -> Swift.Bool
+  @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -502,6 +506,7 @@ extension GFPSDK.GFPErrorUtils {
 @objc public enum GFPRichMediaDataAdType : Swift.Int {
   case newVideoExtendV2
   case newVideoExtendV3
+  case imageExtendV3
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -873,6 +878,7 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
     @objc get
   }
   @objc(createImageInfoWith:) public static func createImageInfo(image: UIKit.UIImage?) -> GFPSDK.GFPMediaData
+  @objc(createImageInfoWith:manualAspectRatio:) public static func createImageInfo(image: UIKit.UIImage?, manualAspectRatio: CoreFoundation.CGFloat) -> GFPSDK.GFPMediaData
   @objc(createVideoInfoWith:) public static func createVideoInfo(videoController: GFPSDK.GFPVideoController?) -> GFPSDK.GFPMediaData
   @objc(createRichMediaInfo) public static func createRichMediaInfo() -> GFPSDK.GFPMediaData
   @objc(createRichMediaInfo:) public static func createRichMediaInfo(richMediaInfo: GFPSDK.GFPRichMediaData) -> GFPSDK.GFPMediaData
@@ -888,6 +894,7 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   @objc override dynamic public init()
   @objc deinit
 }
+@available(*, deprecated, message: "Use NaverAdsServices.GFPAtomic instead(NaverAdsServices >= 1.3.1).")
 @propertyWrapper public class GFPThreadSafe<T> {
   final public let queue: Dispatch.DispatchQueue
   public init(wrappedValue: T, label: Swift.String)

@@ -86,6 +86,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPNativeAdInfoSource <NSObject>
 
+@property (readonly, nonatomic, assign) BOOL isPredownload;
+
 - (void)updateSourceDownload;
 
 @end

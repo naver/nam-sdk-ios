@@ -26,7 +26,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"8.15.1"
+#define GFP_SDK_VERSION              @"8.16.0"
 #define GFP_SDK_MEDIATION_NAME		 @"glad"
 
 @interface GFPCoreConfig : NSObject <GFPWebViewAppEnvDelegate>
@@ -37,9 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSTimeInterval defaultVideoStartTimeout;
 
-@property (nonatomic, strong) GFPAdConfiguration *configuration;
+@property (atomic, strong) GFPAdConfiguration *configuration;
 
-@property (nonatomic, assign, getter=isDebugMode) BOOL debugMode;
+@property (atomic, assign, getter=isDebugMode) BOOL debugMode;
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> sdkInfo;
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> initializeInfo;
 
@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) NSString *gfpWkWebViewUA;
 @property (nonatomic, strong, readonly) NSString *appVersion;
 
-@property (nonatomic, strong, readwrite, nonnull) GFPCachedAdParam *cachedParam;
+@property (atomic, strong, readwrite, nonnull) GFPCachedAdParam *cachedParam;
 
 @property (nonatomic, strong, readonly) GFPDeviceInfo *deviceInfo;
 

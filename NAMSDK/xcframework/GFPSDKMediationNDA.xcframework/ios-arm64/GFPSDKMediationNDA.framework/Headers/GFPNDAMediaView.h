@@ -49,6 +49,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDAMediaViewVideo = 2,
     GFPNDAMediaViewCarousel = 3,
     GFPNDAMediaViewComplex = 4,
+    GFPNDAMediaViewImageMotionScroll = 5,
     
     GFPNDARichMediaViewVideoExtend = 102,
     GFPNDARichMediaViewCountdown = 103,
@@ -59,6 +60,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDARichMediaViewDoubleCrown = 108,
     GFPNDARichMediaViewVideoExtendV3 = 109,
     GFPNDARichMediaViewTripleCrown = 110,
+    GFPNDARichMediaViewImageExtendV3 = 111,
 
     GFPNDARendererMediaViewShoppingLabel = 1000,
     GFPNDARendererMediaViewSmartChannelFlicking = 1001,

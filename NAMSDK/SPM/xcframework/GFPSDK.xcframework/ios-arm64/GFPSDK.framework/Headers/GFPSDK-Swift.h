@@ -899,10 +899,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 @property (nonatomic, weak) id <GFPCarouselHeightDelegate> _Nullable carouselHeightDelegate;
 @property (nonatomic, weak) UIImage * _Nullable image;
 - (CGFloat)preferredHeightWithFixedWidth:(CGFloat)fixedWidth SWIFT_WARN_UNUSED_RESULT;
-/// 미디어의 aspectRatio. 값이 없을 경우 -1 을 반환.
 @property (nonatomic, readonly) CGFloat aspectRatio;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 + (GFPMediaData * _Nonnull)createImageInfoWith:(UIImage * _Nullable)image SWIFT_WARN_UNUSED_RESULT;
++ (GFPMediaData * _Nonnull)createImageInfoWith:(UIImage * _Nullable)image manualAspectRatio:(CGFloat)manualAspectRatio SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createVideoInfoWith:(GFPVideoController * _Nullable)videoController SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createRichMediaInfo SWIFT_WARN_UNUSED_RESULT;
 + (GFPMediaData * _Nonnull)createRichMediaInfo:(GFPRichMediaData * _Nonnull)richMediaInfo SWIFT_WARN_UNUSED_RESULT;
@@ -1130,6 +1130,7 @@ SWIFT_CLASS("_TtC6GFPSDK16GFPRichMediaData")
 typedef SWIFT_ENUM(NSInteger, GFPRichMediaDataAdType, open) {
   GFPRichMediaDataAdTypeNewVideoExtendV2 = 0,
   GFPRichMediaDataAdTypeNewVideoExtendV3 = 1,
+  GFPRichMediaDataAdTypeImageExtendV3 = 2,
 };
 
 
@@ -1439,8 +1440,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)splash SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageToMotion;)
 + (NSString * _Nonnull)imageToMotion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageScrollMotion;)
++ (NSString * _Nonnull)imageScrollMotion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexImage;)
++ (NSString * _Nonnull)carouselComplexImage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexVideo;)
++ (NSString * _Nonnull)carouselComplexVideo SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAutoInteraction;)
++ (NSString * _Nonnull)carouselAutoInteraction SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)isNativeNormalVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

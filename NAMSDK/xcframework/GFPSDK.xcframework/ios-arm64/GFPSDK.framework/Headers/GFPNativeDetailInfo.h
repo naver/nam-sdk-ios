@@ -222,7 +222,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @property (nonatomic, readonly, assign) BOOL isValid;
 
-- (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
+- (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink isPredownload:(BOOL)isPredownload;
 
 @end
 
@@ -241,7 +241,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @property (nonatomic, readonly, assign) BOOL isValid;
 
-- (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
+- (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink isPredownload:(BOOL)isPredownload;
 
 @end
 
@@ -289,7 +289,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @property (nonatomic, weak) UIImage *image; //for renderer
 
-- (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink;
+- (instancetype)initWithDict:(NSDictionary *)aDict link:(GFPNativeLinkInfo *)aLink isPredownload:(BOOL)isPredownload;
 
 @end
 
