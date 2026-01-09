@@ -57,6 +57,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)applyLinkWith:(id<GFPNativeAdInfoLinkPresentable>)linkInfo target:(id)target view:(UIView *)aView action:(SEL)action;
 + (void)removeLinkWith:(UIView *)aView;
 
+/**
+ * For truncate
+ */
++ (NSAttributedString *)truncateToTwoLinesCharWrap:(NSAttributedString *)attr
+                                             width:(CGFloat)width;
 @end
 
 NS_ASSUME_NONNULL_END

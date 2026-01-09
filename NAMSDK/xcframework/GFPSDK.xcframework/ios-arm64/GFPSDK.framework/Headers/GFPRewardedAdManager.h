@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPRewardedAdManager : NSObject
 
+@property (readonly, nonatomic, strong) NSString *adUnitID;
+
 @property (nonatomic, weak) id<GFPRewardedAdManagerDelegate> delegate;
 
 @property (nonatomic, readonly, assign) BOOL isAdInvalidate;

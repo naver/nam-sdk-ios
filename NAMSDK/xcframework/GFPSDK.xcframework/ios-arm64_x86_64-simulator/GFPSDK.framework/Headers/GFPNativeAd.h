@@ -159,7 +159,7 @@ typedef NS_OPTIONS(NSInteger, GFPExternalMediaViewType) {
  * Shrink extended rich ads to default layout state.
  * Some rich ads may perform animations.
  */
-- (void)shrinkExtendedRichAd;
+- (void)shrinkExtendedRichAd __attribute__((deprecated("It will be removed in a future version.")));
 
 @end
 

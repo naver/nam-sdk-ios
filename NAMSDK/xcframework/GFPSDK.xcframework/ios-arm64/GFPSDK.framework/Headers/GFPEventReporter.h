@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol GFPEventReportPresentable <NSObject>
 
 @property (nonatomic, strong) NSNumber *adCallRequestTime;
+@property (nonatomic, strong) NSNumber *responseSavedTime;
 
 @end
 

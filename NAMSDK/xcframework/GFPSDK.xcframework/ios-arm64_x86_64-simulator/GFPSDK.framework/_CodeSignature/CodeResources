@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GFPAPIQueryItems.h</key>
 		<data>
-		Ia8I5zPuBAvynm0L36URynSBJzg=
+		hM9VQSHTBm3l0jT45C9YMj7E08M=
 		</data>
 		<key>Headers/GFPAPIRequest.h</key>
 		<data>
@@ -36,6 +36,14 @@
 		<data>
 		lG5oYAw/8SAEtnR+IMeXN5PSOTs=
 		</data>
+		<key>Headers/GFPAdCacheManager.h</key>
+		<data>
+		fUSr2aTEEhtCkjplRDg+U+lf8bk=
+		</data>
+		<key>Headers/GFPAdCacheOptions.h</key>
+		<data>
+		Et/p3qxycz8mqwjlkcAEG/6zdFU=
+		</data>
 		<key>Headers/GFPAdChoicesData.h</key>
 		<data>
 		iwBpuDrtxYPR+EM/POmmCuAu8JU=
@@ -62,7 +70,7 @@
 		</data>
 		<key>Headers/GFPAdLoader.h</key>
 		<data>
-		9L3VSsINEQvJcXI+dmKGEmwi2V8=
+		qLFtVPxBDdQ65REtQBxkupfsHLg=
 		</data>
 		<key>Headers/GFPAdLoaderDelegate.h</key>
 		<data>
@@ -154,7 +162,7 @@
 		</data>
 		<key>Headers/GFPCoreConfig.h</key>
 		<data>
-		Q02B1QLHNKsT30GHN/mt6hQ7cIs=
+		Zw1b2OcFn81mjkVE7NjmOUmmSQ4=
 		</data>
 		<key>Headers/GFPCreativeExtension.h</key>
 		<data>
@@ -174,7 +182,7 @@
 		</data>
 		<key>Headers/GFPEvent.h</key>
 		<data>
-		OxsoYX4FqfQ8D++ByqzKX/V4XtU=
+		tkxmIsc4dpjfngcxy7nq6n3Pww0=
 		</data>
 		<key>Headers/GFPEventExtraInfo.h</key>
 		<data>
@@ -186,7 +194,7 @@
 		</data>
 		<key>Headers/GFPEventReporter.h</key>
 		<data>
-		rYRk0BEntzBjzf7l16eo3cpoxHs=
+		Y/3hUmYxP+GgGKLDDeR3hBnCquA=
 		</data>
 		<key>Headers/GFPExceptionUtils.h</key>
 		<data>
@@ -234,7 +242,7 @@
 		</data>
 		<key>Headers/GFPInterstitialAdManager.h</key>
 		<data>
-		jhklZ4gGL+z27PzIEa4Wu8naRhM=
+		yQ8+LQPofo4Lotf1bLfp8xmFMaQ=
 		</data>
 		<key>Headers/GFPInterstitialAdManagerDelegate.h</key>
 		<data>
@@ -274,7 +282,7 @@
 		</data>
 		<key>Headers/GFPNativeAd.h</key>
 		<data>
-		slQhfbtfzAXZDUhakM0C1KOwx3o=
+		pIxAES5T6g02oyiYDK15+doWoUM=
 		</data>
 		<key>Headers/GFPNativeAdDelegate.h</key>
 		<data>
@@ -362,7 +370,7 @@
 		</data>
 		<key>Headers/GFPProvider.h</key>
 		<data>
-		rBdauVzGzv5AukP2bHBpmlifGqM=
+		XRCU7fr50/3tkk4frGeZyx/T6xI=
 		</data>
 		<key>Headers/GFPProviding.h</key>
 		<data>
@@ -410,7 +418,7 @@
 		</data>
 		<key>Headers/GFPRewardedAdManager.h</key>
 		<data>
-		IlbTQq7Nk/MgLAERVaKthVUDPME=
+		DqEKZvU0xEMOMCUwTM0MocNlSEY=
 		</data>
 		<key>Headers/GFPRewardedAdManagerDelegate.h</key>
 		<data>
@@ -434,7 +442,7 @@
 		</data>
 		<key>Headers/GFPSDK.h</key>
 		<data>
-		oVglfPgGZr6YQ3vEtHYe4KiGeY8=
+		u3CDsmPVkbvS1MkLPBpTvj4WnSs=
 		</data>
 		<key>Headers/GFPStartEvent.h</key>
 		<data>
@@ -615,11 +623,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ia8I5zPuBAvynm0L36URynSBJzg=
+			hM9VQSHTBm3l0jT45C9YMj7E08M=
 			</data>
 			<key>hash2</key>
 			<data>
-			FX4jRXzt/nNY+sulgQDqdTdwce8kOSNhMnHJSPy5Ez0=
+			OhklL8k3V4ehi7jeWWHKzX3niHoCRPg6CQxdTGFJxV8=
 			</data>
 		</dict>
 		<key>Headers/GFPAPIRequest.h</key>
@@ -699,6 +707,28 @@
 			Ld6DRmn5sLvIhezMAqhkIldcehJJ/Cg0N73gGMlTkjs=
 			</data>
 		</dict>
+		<key>Headers/GFPAdCacheManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fUSr2aTEEhtCkjplRDg+U+lf8bk=
+			</data>
+			<key>hash2</key>
+			<data>
+			nTPvEhQLhMk7GgamaEaGLGHOG2+/4CI+m1EzBZr4qLg=
+			</data>
+		</dict>
+		<key>Headers/GFPAdCacheOptions.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Et/p3qxycz8mqwjlkcAEG/6zdFU=
+			</data>
+			<key>hash2</key>
+			<data>
+			CzCa5ouq8/9G/w65Bc0k5b5DZKA7wkR11rgbKf2Ja7M=
+			</data>
+		</dict>
 		<key>Headers/GFPAdChoicesData.h</key>
 		<dict>
 			<key>hash</key>
@@ -769,11 +799,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9L3VSsINEQvJcXI+dmKGEmwi2V8=
+			qLFtVPxBDdQ65REtQBxkupfsHLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			CU1h7mcUEWyL3+urYleT6UGmOPCQIgfteeDsfGAn+4c=
+			SWaur6ymwmuVeL+tthedsH1UVVCgADTUwGqty4rP4o8=
 			</data>
 		</dict>
 		<key>Headers/GFPAdLoaderDelegate.h</key>
@@ -1022,11 +1052,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q02B1QLHNKsT30GHN/mt6hQ7cIs=
+			Zw1b2OcFn81mjkVE7NjmOUmmSQ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LedptEg9qxPKwK8MCpgLVkt6divnM64rUKhYRF7bbrA=
+			S3ReDQ2oOfjgsoCokoYTPaiMRnWCr1ImUMVsNPj8T2s=
 			</data>
 		</dict>
 		<key>Headers/GFPCreativeExtension.h</key>
@@ -1077,11 +1107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OxsoYX4FqfQ8D++ByqzKX/V4XtU=
+			tkxmIsc4dpjfngcxy7nq6n3Pww0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1tsHHjYjzAxH2grHN/ZKEB8kERtYr2mN3jps7MmGJFc=
+			QU1cueG/X3iMHlcJlyRwUOSEaAJjNi+18tHII2beVW8=
 			</data>
 		</dict>
 		<key>Headers/GFPEventExtraInfo.h</key>
@@ -1110,11 +1140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rYRk0BEntzBjzf7l16eo3cpoxHs=
+			Y/3hUmYxP+GgGKLDDeR3hBnCquA=
 			</data>
 			<key>hash2</key>
 			<data>
-			laB8jbXd+cmxwvSA/uDhH+74Y37nK+8G0zijNb84b7U=
+			uym4pBun2i6jJwLf3GECa7HxvefmhfAA5lVVWmPVmFA=
 			</data>
 		</dict>
 		<key>Headers/GFPExceptionUtils.h</key>
@@ -1242,11 +1272,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jhklZ4gGL+z27PzIEa4Wu8naRhM=
+			yQ8+LQPofo4Lotf1bLfp8xmFMaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nr52zIjPJFT3AQePzcKZCbcwsz1m4BikbWUxqexue94=
+			wpm3XxVrssbTeLwcXPPwidxMqbB6WfM4PFyPtHDi9LE=
 			</data>
 		</dict>
 		<key>Headers/GFPInterstitialAdManagerDelegate.h</key>
@@ -1352,11 +1382,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			slQhfbtfzAXZDUhakM0C1KOwx3o=
+			pIxAES5T6g02oyiYDK15+doWoUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			5ZnyqQR77enoz1sVq6gSTzy2QK+FyXbbX/BbM7tQk7M=
+			YeWdHEgQXEfPL5zon5j39pWaV1E5Jo98KTLkHvhYUqc=
 			</data>
 		</dict>
 		<key>Headers/GFPNativeAdDelegate.h</key>
@@ -1594,11 +1624,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rBdauVzGzv5AukP2bHBpmlifGqM=
+			XRCU7fr50/3tkk4frGeZyx/T6xI=
 			</data>
 			<key>hash2</key>
 			<data>
-			tuxSTP+MYTsIfjXr5j+zqpnXYpjBUn5f9oP+5TzciFM=
+			LpmtcSY9FTpLSaY4sQGo29yOVxKMRs5v+6Mg5kcm4No=
 			</data>
 		</dict>
 		<key>Headers/GFPProviding.h</key>
@@ -1726,11 +1756,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IlbTQq7Nk/MgLAERVaKthVUDPME=
+			DqEKZvU0xEMOMCUwTM0MocNlSEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MQlsDuMEmT83thjbgnHSkKmqEPi3k5Iw3oWIKOgPU1Q=
+			vMsWxHYC7myGFgdDXip1FyThjogtI5/ICoUxeZnmgis=
 			</data>
 		</dict>
 		<key>Headers/GFPRewardedAdManagerDelegate.h</key>
@@ -1792,11 +1822,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oVglfPgGZr6YQ3vEtHYe4KiGeY8=
+			u3CDsmPVkbvS1MkLPBpTvj4WnSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8ZPMBZjqjc5/iyJQAaR1aFik06segG+NIim/+s4fW0s=
+			t9X7co/buH7N9Gkt2fEjTh3lleeFArveWsNrfdeBVBI=
 			</data>
 		</dict>
 		<key>Headers/GFPStartEvent.h</key>

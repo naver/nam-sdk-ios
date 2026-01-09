@@ -71,7 +71,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setupMRAID:(GFPNDAMraidConfiguration *)aConfiguration;
 - (void)didWebViewLoaded;
 - (BOOL)forwardNavigationActionWith:(WKWebView *)webView
-                   navigationAction:(WKNavigationAction *)navigationAction;
+                   navigationAction:(WKNavigationAction *)navigationAction
+                          isTouched:(BOOL)isTouched;
 
 
 @end

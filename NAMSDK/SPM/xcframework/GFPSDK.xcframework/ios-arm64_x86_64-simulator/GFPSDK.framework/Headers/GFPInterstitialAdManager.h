@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPInterstitialAdManager : NSObject
 
+@property (readonly, nonatomic, strong) NSString *adUnitID;
+
 @property (nonatomic, weak) id<GFPInterstitialAdManagerDelegate> delegate;
 
 - (instancetype)initWithUnitID:(NSString *)adUnitID

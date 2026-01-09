@@ -139,6 +139,9 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPAdMetaData.h>
 #import <GFPSDK/GFPInterfaceUtils.h>
 
+#import <GFPSDK/GFPAdCacheManager.h>
+#import <GFPSDK/GFPAdCacheOptions.h>
+
 //For internal
 #import <GFPSDK/Swift-Enum.h>
 

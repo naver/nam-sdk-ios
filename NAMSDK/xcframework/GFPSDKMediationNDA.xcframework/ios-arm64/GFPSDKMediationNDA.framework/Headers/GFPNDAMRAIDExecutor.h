@@ -58,7 +58,8 @@ typedef void (^MraidBannerCompletion)(_Nullable id, NSError * _Nullable error);
 - (void)finishMRAIDLoad;
 
 - (BOOL)forwardNavigationActionWith:(WKWebView *)webView
-                   navigationAction:(WKNavigationAction *)navigationAction;
+                   navigationAction:(WKNavigationAction *)navigationAction
+                          isTouched:(BOOL)isTouched;
 
 @end
 
@@ -66,7 +67,7 @@ typedef void (^MraidBannerCompletion)(_Nullable id, NSError * _Nullable error);
 @protocol GFPNDAMRAIDExecutorDelegate <NSObject>
 
 - (void)openUrlWith:(nonnull NSString *)urlString webView:(nonnull WKWebView *)webView;
-- (void)handleMRAIDURL:(NSURL *)URL executor:(GFPNDAMRAIDExecutor *)executor;
+- (void)handleMRAIDURL:(NSURL *)URL executor:(GFPNDAMRAIDExecutor *)executor isTouched:(BOOL)isTouched;
 
 @end
 

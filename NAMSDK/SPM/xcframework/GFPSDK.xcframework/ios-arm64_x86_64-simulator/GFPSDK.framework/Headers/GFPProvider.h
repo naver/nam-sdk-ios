@@ -75,7 +75,9 @@ FOUNDATION_EXPORT NSString *const GFPProviderProductTypeRewarded;
 FOUNDATION_EXPORT NSString *const GFPProviderProductTypeInstreamVideo;
 FOUNDATION_EXPORT NSString *const GFPProviderProductTypeInterstitial;
 
-
+typedef NSString *GFPProviderConnectionType NS_STRING_ENUM;
+FOUNDATION_EXPORT NSString *const GFPProviderConnectionTypeS2S;
+FOUNDATION_EXPORT NSString *const GFPProviderConnectionTypeC2S;
 
 @interface GFPProvider : NSObject
 

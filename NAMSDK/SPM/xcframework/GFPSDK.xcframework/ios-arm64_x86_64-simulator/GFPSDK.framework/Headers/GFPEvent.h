@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (readonly, nonatomic, strong) NSNumber *eventTime;  // uptime
+@property (readonly, nonatomic, strong) NSNumber *eventTimestamp;
 
 
 @end
