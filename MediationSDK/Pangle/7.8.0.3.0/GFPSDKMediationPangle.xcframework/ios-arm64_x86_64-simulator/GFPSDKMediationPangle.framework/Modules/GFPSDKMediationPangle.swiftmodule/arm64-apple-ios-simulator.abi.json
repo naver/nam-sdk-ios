@@ -1,0 +1,767 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "GFPSDKMediationPangle",
+    "printedName": "GFPSDKMediationPangle",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPPangleAdType",
+        "printedName": "GFPPangleAdType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "banner",
+            "printedName": "banner",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationPangle.GFPPangleAdType.Type) -> GFPSDKMediationPangle.GFPPangleAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPPangleAdType",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                    "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPPangleAdType",
+                        "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                        "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType@GFPPangleAdTypeBanner",
+            "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO6banneryA2CmF",
+            "moduleName": "GFPSDKMediationPangle",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "native",
+            "printedName": "native",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationPangle.GFPPangleAdType.Type) -> GFPSDKMediationPangle.GFPPangleAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPPangleAdType",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                    "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPPangleAdType",
+                        "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                        "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType@GFPPangleAdTypeNative",
+            "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO6nativeyA2CmF",
+            "moduleName": "GFPSDKMediationPangle",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "interstitial",
+            "printedName": "interstitial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationPangle.GFPPangleAdType.Type) -> GFPSDKMediationPangle.GFPPangleAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPPangleAdType",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                    "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPPangleAdType",
+                        "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                        "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType@GFPPangleAdTypeInterstitial",
+            "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO12interstitialyA2CmF",
+            "moduleName": "GFPSDKMediationPangle",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rewarded",
+            "printedName": "rewarded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationPangle.GFPPangleAdType.Type) -> GFPSDKMediationPangle.GFPPangleAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPPangleAdType",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                    "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPPangleAdType",
+                        "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                        "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType@GFPPangleAdTypeRewarded",
+            "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO8rewardedyA2CmF",
+            "moduleName": "GFPSDKMediationPangle",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "desc",
+            "printedName": "desc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GFPSDKMediationPangle15GFPPangleAdTypeO4descSSvp",
+            "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO4descSSvp",
+            "moduleName": "GFPSDKMediationPangle",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GFPSDKMediationPangle15GFPPangleAdTypeO4descSSvg",
+                "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO4descSSvg",
+                "moduleName": "GFPSDKMediationPangle",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GFPSDKMediationPangle.GFPPangleAdType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPPangleAdType",
+                    "printedName": "GFPSDKMediationPangle.GFPPangleAdType",
+                    "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21GFPSDKMediationPangle15GFPPangleAdTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "GFPSDKMediationPangle",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GFPSDKMediationPangle15GFPPangleAdTypeO8rawValueSivp",
+            "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO8rawValueSivp",
+            "moduleName": "GFPSDKMediationPangle",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GFPSDKMediationPangle15GFPPangleAdTypeO8rawValueSivg",
+                "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO8rawValueSivg",
+                "moduleName": "GFPSDKMediationPangle",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@GFPSDKMediationPangle@E@GFPPangleAdType",
+        "mangledName": "$s21GFPSDKMediationPangle15GFPPangleAdTypeO",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationPangle"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Native\/GFPPangleNativeAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5320,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Interstitial\/GFPPangleInterstitialAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 822,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Interstitial\/GFPPangleInterstitialAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3614,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 394,
+      "length": 13,
+      "value": "\"placementId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 433,
+      "length": 13,
+      "value": "\"bid_payload\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 527,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Reward\/GFPPangleRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 791,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Reward\/GFPPangleRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3526,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 383,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 399,
+      "length": 12,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 421,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1119,
+      "length": 10,
+      "value": "\"bidtoken\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 521,
+      "length": 11,
+      "value": "\"7.8.0.3.0\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 616,
+      "length": 5,
+      "value": "\"300\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 675,
+      "length": 149,
+      "value": "\"[{\"name\":\"mediation\",\"value\":\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 1,
+      "value": "\"\"},{\"name\":\"adapter_version\",\"value\":\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 819,
+      "length": 1,
+      "value": "\"\"}]\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 880,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "Dictionary",
+      "offset": 993,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "Array",
+      "offset": 1096,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1860,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Banner\/GFPPangleBannerAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7845,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
