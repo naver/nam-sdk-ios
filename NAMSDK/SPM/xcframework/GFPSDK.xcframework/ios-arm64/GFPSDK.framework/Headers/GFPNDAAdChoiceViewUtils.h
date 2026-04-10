@@ -34,6 +34,12 @@ extern CGFloat const kAdChoiceViewLeftRightGap;
 + (CGSize)sizeWith:(GFPNDAAdChoiceViewType)type
            setting:(GFPNativeBaseRenderingSetting *)setting;
 
++ (CGPoint)nsPositionWith:(CGRect)imagePos
+         adChoiceIconSize:(CGSize)adChoiceIconSize
+           mediaViewFrame:(CGRect)mediaViewFrame
+                  posType:(GFPAdChoicesViewPosition)posType
+             inFullAdView:(BOOL)inFullAdView;
+
 @end
 
 NS_ASSUME_NONNULL_END

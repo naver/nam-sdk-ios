@@ -151,3 +151,8 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPAdChoicesData.h>
 
 #import <GFPSDK/GFPPlaceholderHandler.h>
+
+// Location Logger
+#import <GFPSDK/GFPLocationLogger.h>
+#import <GFPSDK/GFPLocationConfiguration.h>
+#import <GFPSDK/GFPLocationData.h>

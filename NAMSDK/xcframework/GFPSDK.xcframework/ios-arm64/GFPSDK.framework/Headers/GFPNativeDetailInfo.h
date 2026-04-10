@@ -18,6 +18,7 @@
 
 @class GFPBackgroundOption;
 @class GFPBackgroundOptionAttributes;
+@class GFPNativeAIInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -75,7 +76,9 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 
 @interface GFPNativeExtensionInfo : NSObject
+
 @property (nonatomic, readonly, strong, nullable) GFPNativeStyleInfo *styleInfo;
+@property (nonatomic, readonly, strong, nullable) GFPNativeAIInfo *aiInfo;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
@@ -204,8 +207,21 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @end
 
+@interface GFPNativeAIInfo: NSObject
 
-@interface GFPNativeMediaInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource, GFPNativeAdInfoExtensionPresentable>
+@property (nonatomic, readonly, assign) BOOL generatedText;
+@property (nonatomic, readonly, assign) BOOL generatedMedia;
+
+@property (nonatomic, readonly, strong, nullable) NSString *curl;
+
+@property (nonatomic, readonly, assign) BOOL isGeneratedByAI;
+
+- (instancetype)initWithDict:(NSDictionary *)aDict;
+
+@end
+
+
+@interface GFPNativeMediaInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource, GFPNativeAdInfoMediaExtPresentable>
 
 @property (nonatomic, readonly, assign) GFPNativeAdMediaType type;
 @property (nonatomic, readonly, assign, getter=isVideo) BOOL video;
@@ -234,7 +250,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @end
 
 
-@interface GFPNativeIconInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource, GFPNativeAdInfoExtensionPresentable>
+@interface GFPNativeIconInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource, GFPNativeAdInfoMediaExtPresentable>
 
 @property (nonatomic, readonly, strong) NSURL *source;
 @property (nonatomic, readonly, assign) CGSize size;
@@ -280,7 +296,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @end
 
-@interface GFPNativeExtraImageInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource, GFPNativeAdInfoExtensionPresentable>
+@interface GFPNativeExtraImageInfo : NSObject <GFPNativeAdInfoLinkPresentable, GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoSource, GFPNativeAdInfoMediaExtPresentable>
 
 @property (nonatomic, readonly, strong) NSURL *source;
 @property (nonatomic, readonly, assign) CGSize size;

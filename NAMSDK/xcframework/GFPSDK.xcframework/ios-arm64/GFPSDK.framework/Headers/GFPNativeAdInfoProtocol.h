@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@protocol GFPNativeAdInfoExtensionPresentable <NSObject>
+@protocol GFPNativeAdInfoMediaExtPresentable <NSObject>
 
 @property (readonly, nonatomic, strong, nullable) GFPNativeMediaExtensionInfo *extensionInfo;
 
@@ -63,21 +63,21 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@protocol GFPNativeAdInfoExtStylePresentable <NSObject>
+@protocol GFPNativeAdInfoExtPresentable <NSObject>
 
 @property (readonly, nonatomic, strong, nullable) GFPNativeExtensionInfo *extensionInfo;
 
 @end
 
 
-@protocol GFPNativeAdLabelOptionPresentable <GFPNativeAdInfoExtStylePresentable>
+@protocol GFPNativeAdLabelOptionPresentable <GFPNativeAdInfoExtPresentable>
 
 - (GFPLabelOption *)labelOptionWith:(BOOL)isDarkMode;
 
 @end
 
 
-@protocol GFPNativeAdStyleOptionPresentable <GFPNativeAdInfoExtStylePresentable>
+@protocol GFPNativeAdStyleOptionPresentable <GFPNativeAdInfoExtPresentable>
 
 - (GFPAdStyleOption *)adStyleOptionWith:(BOOL)isDarkMode;
 

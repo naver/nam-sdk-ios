@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly, nullable) NSString *adContext;
 
+@property (nonatomic, strong, readonly, nullable) NSString *crid;
+
 @property (nonatomic, strong, readonly) NSArray <GFPInternalResponseInfo *> *loadResponseList;
 
 - (instancetype)init NS_UNAVAILABLE;

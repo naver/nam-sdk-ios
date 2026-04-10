@@ -843,8 +843,12 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPQoeTrackingInfo")
 @property (nonatomic, readonly, copy) NSString * _Nonnull ownerServiceId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull appId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull viewerInfo;
+@property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
+@property (nonatomic, readonly, copy) NSString * _Nullable stmsId;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable serviceCategoryCode;
 @property (nonatomic, readonly) BOOL isValid;
-+ (GFPQoeTrackingInfo * _Nonnull)createQoeTrackingInfoWith:(NSString * _Nonnull)host path:(NSString * _Nonnull)path timeTable:(NSArray<NSNumber *> * _Nonnull)timeTable serviceId:(NSString * _Nonnull)serviceId ownerServiceId:(NSString * _Nonnull)ownerServiceId appId:(NSString * _Nonnull)appId viewerInfo:(NSString * _Nonnull)viewerInfo SWIFT_WARN_UNUSED_RESULT;
++ (GFPQoeTrackingInfo * _Nonnull)createQoeTrackingInfoWith:(NSString * _Nonnull)host path:(NSString * _Nonnull)path timeTable:(NSArray<NSNumber *> * _Nonnull)timeTable serviceId:(NSString * _Nonnull)serviceId ownerServiceId:(NSString * _Nonnull)ownerServiceId appId:(NSString * _Nonnull)appId viewerInfo:(NSString * _Nonnull)viewerInfo SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. using other function.");
++ (GFPQoeTrackingInfo * _Nonnull)createQoeTrackingInfoWith:(NSString * _Nonnull)host path:(NSString * _Nonnull)path timeTable:(NSArray<NSNumber *> * _Nonnull)timeTable serviceId:(NSString * _Nonnull)serviceId ownerServiceId:(NSString * _Nonnull)ownerServiceId appId:(NSString * _Nonnull)appId viewerInfo:(NSString * _Nonnull)viewerInfo entryPoint:(NSString * _Nullable)entryPoint stmsId:(NSString * _Nullable)stmsId serviceCategoryCode:(NSArray<NSString *> * _Nullable)serviceCategoryCode SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1055,6 +1059,7 @@ SWIFT_CLASS("_TtC6GFPSDK23GFPVideoAdPlayerSetting")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+@class GFPOMFriendlyObstruction;
 
 SWIFT_CLASS("_TtC6GFPSDK26GFPVideoAdRenderingSetting")
 @interface GFPVideoAdRenderingSetting : NSObject
@@ -1084,6 +1089,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 /// 인스트림의 SKIP 버튼 위의 Additional Info를 표기할 뷰입니다.
 /// adCount 등에 사용됩니다.
 @property (nonatomic, strong) UIView <GFPVideoAdAdditionalViewDataAccessibilityProvider> * _Nullable adAdditionalInfoView;
+/// OMSDK를 측정하는 광고의 friendlyObstruction을 설정합니다.
+@property (nonatomic, copy) NSArray<GFPOMFriendlyObstruction *> * _Nullable omFriendlyObstructions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1150,6 +1157,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)carouselComplexVideo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAutoInteraction;)
 + (NSString * _Nonnull)carouselAutoInteraction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselTodayNaver;)
++ (NSString * _Nonnull)carouselTodayNaver SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAdvoost1Line;)
++ (NSString * _Nonnull)carouselAdvoost1Line SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

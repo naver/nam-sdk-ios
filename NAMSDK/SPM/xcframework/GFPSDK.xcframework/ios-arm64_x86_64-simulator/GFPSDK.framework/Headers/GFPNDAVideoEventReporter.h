@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPNDAVideoEventReporter : NSObject
 
 @property (readonly, nonatomic, strong) GFPVastTrackingInfo *nasVastEvent;
+@property (readonly, nonatomic, strong) GFPOMMediaEvent *omidMediaEvent;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithNASVastEventInfo:(GFPVastTrackingInfo * _Nullable)aVastEvent logId:(NSUUID *)logId;

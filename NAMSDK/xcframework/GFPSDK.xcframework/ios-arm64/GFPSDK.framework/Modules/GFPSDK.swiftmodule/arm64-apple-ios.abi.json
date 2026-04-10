@@ -6179,6 +6179,112 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "carouselTodayNaver",
+            "printedName": "carouselTodayNaver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cpy)carouselTodayNaver",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC18carouselTodayNaverSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)carouselTodayNaver",
+                "mangledName": "$s6GFPSDK12GFPVisualKeyC18carouselTodayNaverSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carouselAdvoost1Line",
+            "printedName": "carouselAdvoost1Line",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cpy)carouselAdvoost1Line",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC20carouselAdvoost1LineSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)carouselAdvoost1Line",
+                "mangledName": "$s6GFPSDK12GFPVisualKeyC20carouselAdvoost1LineSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "isTemplateVisualKey",
             "printedName": "isTemplateVisualKey(_:)",
@@ -7713,6 +7819,148 @@
                 "declKind": "Accessor",
                 "usr": "s:6GFPSDK26GFPVideoAdRenderingSettingC20adAdditionalInfoViewAA0bcgI25DataAccessibilityProvider_So6UIViewCXcSgvM",
                 "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC20adAdditionalInfoViewAA0bcgI25DataAccessibilityProvider_So6UIViewCXcSgvM",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "omFriendlyObstructions",
+            "printedName": "omFriendlyObstructions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[GFPSDK.GFPOMFriendlyObstruction]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[GFPSDK.GFPOMFriendlyObstruction]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPOMFriendlyObstruction",
+                        "printedName": "GFPSDK.GFPOMFriendlyObstruction",
+                        "usr": "c:objc(cs)GFPOMFriendlyObstruction"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdRenderingSetting(py)omFriendlyObstructions",
+            "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC22omFriendlyObstructionsSaySo24GFPOMFriendlyObstructionCGSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[GFPSDK.GFPOMFriendlyObstruction]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[GFPSDK.GFPOMFriendlyObstruction]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GFPOMFriendlyObstruction",
+                            "printedName": "GFPSDK.GFPOMFriendlyObstruction",
+                            "usr": "c:objc(cs)GFPOMFriendlyObstruction"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdRenderingSetting(im)omFriendlyObstructions",
+                "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC22omFriendlyObstructionsSaySo24GFPOMFriendlyObstructionCGSgvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[GFPSDK.GFPOMFriendlyObstruction]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[GFPSDK.GFPOMFriendlyObstruction]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GFPOMFriendlyObstruction",
+                            "printedName": "GFPSDK.GFPOMFriendlyObstruction",
+                            "usr": "c:objc(cs)GFPOMFriendlyObstruction"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVideoAdRenderingSetting(im)setOmFriendlyObstructions:",
+                "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC22omFriendlyObstructionsSaySo24GFPOMFriendlyObstructionCGSgvs",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GFPSDK26GFPVideoAdRenderingSettingC22omFriendlyObstructionsSaySo24GFPOMFriendlyObstructionCGSgvM",
+                "mangledName": "$s6GFPSDK26GFPVideoAdRenderingSettingC22omFriendlyObstructionsSaySo24GFPOMFriendlyObstructionCGSgvM",
                 "moduleName": "GFPSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -10854,6 +11102,220 @@
           },
           {
             "kind": "Var",
+            "name": "entryPoint",
+            "printedName": "entryPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo(py)entryPoint",
+            "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC10entryPointSSSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo(im)entryPoint",
+                "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC10entryPointSSSgvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stmsId",
+            "printedName": "stmsId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo(py)stmsId",
+            "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC6stmsIdSSSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo(im)stmsId",
+                "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC6stmsIdSSSgvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceCategoryCode",
+            "printedName": "serviceCategoryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo(py)serviceCategoryCode",
+            "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC19serviceCategoryCodeSaySSGSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo(im)serviceCategoryCode",
+                "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC19serviceCategoryCodeSaySSGSgvg",
+                "moduleName": "GFPSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isValid",
             "printedName": "isValid",
             "children": [
@@ -10964,7 +11426,134 @@
             "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC09createQoecD04host4path9timeTable9serviceId012ownerServiceL003appL006viewerD0ACSS_SSSaySiGS4StFZ",
             "moduleName": "GFPSDK",
             "static": true,
+            "deprecated": true,
             "objc_name": "createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createQoeTrackingInfo",
+            "printedName": "createQoeTrackingInfo(host:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:entryPoint:stmsId:serviceCategoryCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPQoeTrackingInfo",
+                "printedName": "GFPSDK.GFPQoeTrackingInfo",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPQoeTrackingInfo(cm)createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:entryPoint:stmsId:serviceCategoryCode:",
+            "mangledName": "$s6GFPSDK18GFPQoeTrackingInfoC09createQoecD04host4path9timeTable9serviceId012ownerServiceL003appL006viewerD010entryPoint04stmsL00K12CategoryCodeACSS_SSSaySiGS5SSgAPSaySSGSgtFZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "objc_name": "createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:entryPoint:stmsId:serviceCategoryCode:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -34970,6 +35559,20 @@
       "value": "\"CAROUSEL_IMAGE_INTERACTION_HOME\""
     },
     {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 1315,
+      "length": 23,
+      "value": "\"CAROUSEL_IMAGE_CUSTOM\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 1371,
+      "length": 15,
+      "value": "\"ADVOOST_1LINE\""
+    },
+    {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Schedule\/GFPVideoAdRenderingSetting.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
@@ -35049,14 +35652,14 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPQoeTrackingInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 1189,
+      "offset": 1506,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPQoeTrackingInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1221,
+      "offset": 1538,
       "length": 1,
       "value": "0"
     },

@@ -15,6 +15,7 @@
 #import "GFPUserParam.h"
 
 #import "GFPAdManagerDelegate.h"
+#import "GFPLocationLogger.h"
 
 @class GFPError;
 
@@ -171,6 +172,19 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
  * MemoryCache Clear (for memory warning)
  */
 + (void)clearMemoryCache;
+
+/**
+ * 네이버 위치정보 약관 동의 여부 설정
+ * @param agreed 동의 여부 (YES: 동의, NO: 미동의)
+ * @param delegate 위치 Logger 상태 델리게이트 (nullable)
+ */
++ (void)setNaverLocationTermsAgreed:(BOOL)agreed
+                           delegate:(id<GFPLocationLoggerDelegate> _Nullable)delegate;
+
+/**
+ * 네이버 위치정보 약관 동의 여부 조회
+ */
++ (BOOL)naverLocationTermsAgreed;
 
 /**
  * Enable or disable ad inspector.

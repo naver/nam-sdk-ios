@@ -9,6 +9,7 @@
 #endif
 
 #import "OMIDPartner.h"
+#import "OMIDUniversalAdID.h"
 #import "OMIDVerificationScriptResource.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -68,6 +69,32 @@ NS_ASSUME_NONNULL_BEGIN
                                resources:(NSArray<OMIDNavercorpVerificationScriptResource *> *)resources
                               contentUrl:(nullable NSString *)contentUrl
                customReferenceIdentifier:(nullable NSString *)customReferenceIdentifier
+                                   error:(NSError *_Nullable *_Nullable)error;
+
+/**
+ * Initializes a new ad session context providing reference to partner, an optional universalAdID and a list of
+ * script resources which should be managed by OMID.
+ *
+ * Calling this method will set the ad session type to `native`.
+ * <p>
+ * NOTE: any attempt to create a new ad session will fail if OMID has not been activated
+ * (see {@link OMIDSDK} class for more information).
+ *
+ * @param partner Details of the integration partner responsible for the ad session.
+ * @param resources The array of all verification providers who expect to receive OMID
+ *   event data. Must contain at least one verification script. The receiver creates a
+ *   deep copy of the array.
+ * @param contentUrl contains the universal link to the ad's screen.
+ * @param universalAdID optional identifier for an ad creative. See {@link OMIDUniversalAdID} class for more information.
+ * @return A new native context instance. Returns nil if OMID has not been activated or if any of the required parameters are invalid.
+ * @see OMIDSDK
+ */
+- (nullable instancetype)initWithPartner:(OMIDNavercorpPartner *)partner
+                                  script:(NSString *)script
+                               resources:(NSArray<OMIDNavercorpVerificationScriptResource *> *)resources
+                              contentUrl:(nullable NSString *)contentUrl
+               customReferenceIdentifier:(nullable NSString *)customReferenceIdentifier
+                           universalAdID:(nullable OMIDNavercorpUniversalAdID *)universalAdID
                                    error:(NSError *_Nullable *_Nullable)error;
 
 #if !(TARGET_OS_TV)

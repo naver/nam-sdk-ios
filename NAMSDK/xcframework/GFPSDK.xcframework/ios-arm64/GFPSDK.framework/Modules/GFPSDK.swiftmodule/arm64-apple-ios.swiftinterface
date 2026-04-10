@@ -167,6 +167,8 @@ extension GFPSDK.GFPErrorUtils {
   @objc public static let carouselComplexImage: Swift.String
   @objc public static let carouselComplexVideo: Swift.String
   @objc public static let carouselAutoInteraction: Swift.String
+  @objc public static let carouselTodayNaver: Swift.String
+  @objc public static let carouselAdvoost1Line: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
   @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
@@ -207,6 +209,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public var bufferingTimeoutInterval: Foundation.TimeInterval
   @objc public var isPreferContentWidthUI: Swift.Bool
   @objc public var adAdditionalInfoView: (any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider)?
+  @objc public var omFriendlyObstructions: [GFPSDK.GFPOMFriendlyObstruction]?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -287,10 +290,15 @@ extension GFPSDK.GFPErrorUtils {
   @objc final public let ownerServiceId: Swift.String
   @objc final public let appId: Swift.String
   @objc final public let viewerInfo: Swift.String
+  @objc final public let entryPoint: Swift.String?
+  @objc final public let stmsId: Swift.String?
+  @objc final public let serviceCategoryCode: [Swift.String]?
   @objc(isValid) public var isValid: Swift.Bool {
     @objc get
   }
+  @available(*, deprecated, message: "This method is deprecated. using other function.")
   @objc(createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:) public static func createQoeTrackingInfo(host: Swift.String, path: Swift.String, timeTable: [Swift.Int], serviceId: Swift.String, ownerServiceId: Swift.String, appId: Swift.String, viewerInfo: Swift.String) -> GFPSDK.GFPQoeTrackingInfo
+  @objc(createQoeTrackingInfoWith:path:timeTable:serviceId:ownerServiceId:appId:viewerInfo:entryPoint:stmsId:serviceCategoryCode:) public static func createQoeTrackingInfo(host: Swift.String, path: Swift.String, timeTable: [Swift.Int], serviceId: Swift.String, ownerServiceId: Swift.String, appId: Swift.String, viewerInfo: Swift.String, entryPoint: Swift.String?, stmsId: Swift.String?, serviceCategoryCode: [Swift.String]?) -> GFPSDK.GFPQoeTrackingInfo
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers open class GFPTextAdViewAttribute : ObjectiveC.NSObject {

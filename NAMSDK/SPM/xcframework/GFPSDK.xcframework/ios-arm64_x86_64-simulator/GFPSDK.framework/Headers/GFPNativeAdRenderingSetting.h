@@ -45,12 +45,20 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 @property (nonatomic, assign) GFPAdChoicesViewPosition preferredAdChoicesViewPosition;
 
 /**
- * 네이티브 광고에 adChoicesView 위치를 미디어 크기로 정할 지
+ * 네이티브 심플 광고에 adChoicesView 위치를 미디어 크기로 정할 지
  * 전체 광고뷰로 정할 지 설정하는 옵션입니다.
  * s2s 광고에 한해 지원되며, YES인 경우 전체 광고뷰로 설정합니다.
  * 기본값은 NO입니다.
  */
-@property (nonatomic, assign) BOOL adChoicesPositionInFullAdView;
+@property (nonatomic, assign) BOOL adChoicesPositionInFullAdView __deprecated_msg("Use adAssetsPositionInFullAdView instead. it will be removed next version");
+
+/**
+ * 네이티브 심플 광고에 에셋(=adChoicesView, adAIDisclosureView 등) 위치를 미디어 크기로 정할 지
+ * 전체 광고뷰로 정할 지 설정하는 옵션입니다.
+ * s2s 광고에 한해 지원되며, YES인 경우 전체 광고뷰로 설정합니다.
+ * 기본값은 NO입니다.
+ */
+@property (nonatomic, assign) BOOL adAssetsPositionInFullAdView;
 
 /**
  * 네이티브 광고의 스타일을 설정합니다. (ex. adChoicesView 색상, rich media 광고 배경색 등)
@@ -94,7 +102,6 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 @property (nonatomic, strong, nullable) UIImage *slotPlaceHolderImage;
 @property (nonatomic, strong, nullable) UIImage *slotPlaceHolderDarkImage;
 
-
 /**
  * Special DA의 기본 탑 마진을 사용하지 않고 아래 확장만 사용할 시에 사용합니다.
  * (기본값은 NO)
@@ -135,6 +142,26 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * 광고가 그려질 View 영역의 Width 값을 설정합니다.
  */
 @property (nonatomic, nullable) NSNumber *viewWidth;
+
+/**
+ * Special DA의 위젯 지면과 합치하는 높이 값을 리턴합니다.
+ */
+@property (nonatomic, assign) CGFloat specialDAOverlayHeight;
+
+/**
+ * Special DA의 위젯 추가 여백 값을 리턴합니다.
+ */
+@property (nonatomic, assign) CGFloat specialDAAdditionalMargin;
+
+/**
+ * Special DA의 Gradient Height
+ */
+@property (nonatomic, assign) CGFloat specialDAGradientHeight;
+
+/**
+ * MediaView의 하단 부분의 v1 gradient 사용 여부
+ */
+@property (nonatomic, assign) BOOL v1Gradient;
 
 @end
 

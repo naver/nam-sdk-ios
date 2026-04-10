@@ -73,6 +73,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewRenderType) {
     GFPNDAMediaViewRenderAdPrivacy = 0,
     GFPNDAMediaViewRenderAdMute = 1,
     GFPNDAMediaViewRenderElectionBadge = 2,
+    GFPNDAMediaViewRenderAdAIUsageBadge = 3,
 };
 
 
@@ -138,6 +139,9 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)clearForMemoryWarning;
 - (void)reloadNativeMedia;
 - (void)additionalRenderingViewClicked:(UIView *)clickedView;
+
+//for external, additional ad ( ex. triple crown )
+- (void)clearAdditionalAds;
 @end
 
 //For carousel
@@ -152,7 +156,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 @property (nonatomic, weak) id <GFPNDAMediaViewDelegate> delegate;
 
 @property (nonatomic, readonly, assign) GFPNDAMediaViewType type;
-@property (nonatomic, readonly, strong) id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable> mediaInfo;
+@property (nonatomic, readonly, strong) id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoMediaExtPresentable> mediaInfo;
 
 @property (nonatomic, readonly, assign) CGSize contentSize;
 

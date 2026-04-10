@@ -27,6 +27,7 @@ typedef NS_OPTIONS(NSInteger, GFPRequestType) {
 
 @property (nonatomic, readonly, assign) GFPRequestType type;
 @property (nonatomic, readonly, strong, nullable) NSURLRequest *request;
+@property (nonatomic, strong, nullable) NSDictionary<NSString *, NSString *> *additionalHeaders;
 
 - (instancetype)initWithType:(GFPRequestType)aType queryItems:(GFPAPIQueryItems *)aQuery;
 - (instancetype)initWithType:(GFPRequestType)aType path:(NSString * _Nullable)aPath queryItems:(GFPAPIQueryItems *)aQuery;

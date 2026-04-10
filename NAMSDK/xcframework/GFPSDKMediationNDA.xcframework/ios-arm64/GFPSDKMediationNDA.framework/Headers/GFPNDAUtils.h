@@ -61,7 +61,12 @@ NS_ASSUME_NONNULL_BEGIN
  * For truncate
  */
 + (NSAttributedString *)truncateToTwoLinesCharWrap:(NSAttributedString *)attr
+                                              font:(UIFont *)font
                                              width:(CGFloat)width;
+
+
++ (void)setCornerRadiusForView:(UIView *)view radius:(CGFloat)radius corners:(UIRectCorner)corners;
+
 @end
 
 NS_ASSUME_NONNULL_END

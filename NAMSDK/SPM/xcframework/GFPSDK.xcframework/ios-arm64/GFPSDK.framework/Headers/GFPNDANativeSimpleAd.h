@@ -15,8 +15,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static CGFloat const kRichNaverAppBottomLayoverDefaultHeight = 24;
-
 @interface GFPNDANativeSimpleAd : GFPNDANativeAd
 
 @property (nonatomic, strong) GFPNativeTemplateOptions *templateOptions;

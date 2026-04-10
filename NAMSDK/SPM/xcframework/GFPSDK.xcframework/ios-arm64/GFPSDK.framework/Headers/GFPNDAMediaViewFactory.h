@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong, nullable) GFPNDAMediaViewRenderInfo *renderInfo;
 @property (nonatomic, readonly, strong, nullable) GFPVastAdSkipInfo *nasSkipInfo;
 
-@property (nonatomic, readonly, strong) id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable> info;
+@property (nonatomic, readonly, strong) id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoMediaExtPresentable> info;
 @property (nonatomic, readonly, strong) GFPNativeAdInfo *nativeAdInfo;
 @property (nonatomic, readonly, strong) NSString *alternativeText;
 
@@ -65,15 +65,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init NS_UNAVAILABLE;
 
-- (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable>)aInfo;
+- (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoMediaExtPresentable>)aInfo;
 
-- (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable>)aInfo
+- (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoMediaExtPresentable>)aInfo
                 nativeAdInfo:(nullable GFPNativeAdInfo *)nativeAdInfo
              skAdNetworkInfo:(nullable GFPSKAdNetworkInfo *)skAdNetworkInfo
                   renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
              vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect;
 
-- (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoExtensionPresentable>)aInfo
+- (instancetype)initWithInfo:(id <GFPNativeAdInfoSourcePresentable, GFPNativeAdInfoMediaExtPresentable>)aInfo
                 nativeAdInfo:(nullable GFPNativeAdInfo *)nativeAdInfo
              skAdNetworkInfo:(nullable GFPSKAdNetworkInfo *)skAdNetworkInfo
                   renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo

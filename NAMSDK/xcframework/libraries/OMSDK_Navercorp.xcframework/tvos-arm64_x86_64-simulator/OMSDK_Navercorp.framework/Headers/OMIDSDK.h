@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN;
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  *  This application level class will be called by all integration partners to ensure OM SDK has been activated before calling any other API methods.
@@ -55,4 +55,4 @@ NS_SWIFT_NAME(shared);
 
 @end
 
-NS_ASSUME_NONNULL_END;
+NS_ASSUME_NONNULL_END
