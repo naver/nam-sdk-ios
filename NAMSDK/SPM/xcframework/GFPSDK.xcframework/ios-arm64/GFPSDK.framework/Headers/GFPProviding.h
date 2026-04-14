@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong, nullable) GFPExtraRequestParam *extraRequestParam;
 
-- (void)initializeSDKWith:(GFPAdInitProviderInfo *)providerInfo;
+- (void)initializeSDKWith:(GFPAdInitProviderInfo *)providerInfo completion:(void (^)(NSError * _Nullable error))completion;
 - (BOOL)isSDKinitialize;
 
 - (GFPExtraRequestParam * _Nullable)extraRequestParamWith:(NSString * _Nullable)adUnitId;

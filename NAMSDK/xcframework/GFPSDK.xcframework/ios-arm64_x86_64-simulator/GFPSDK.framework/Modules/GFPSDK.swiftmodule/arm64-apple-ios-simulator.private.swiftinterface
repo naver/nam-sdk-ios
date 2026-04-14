@@ -2,12 +2,30 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GFPSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AVFoundation
+import AVKit
+import AdSupport
+import AppTrackingTransparency
+import Compression
+import Contacts
+import CoreBluetooth
+import CoreLocation
+import CoreTelephony
+import CryptoKit
+import EventKit
 import Foundation
 @_exported import GFPSDK
+import MessageUI
 import NaverAdsServices
+import Network
+import Photos
 import SafariServices
+import Security
 import Swift
+import SystemConfiguration
 import UIKit
+import UniformTypeIdentifiers
+import UserNotifications
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -122,38 +140,6 @@ extension GFPSDK.GFPErrorUtils {
   }
   @objc deinit
 }
-@objc public enum GFPInspectorInternalLogType : Swift.Int, GFPSDK.GFPObjcEnum {
-  case ackImpression
-  case clickedImpression
-  case completionImpression
-  case adMuteImpression
-  case closedImpression
-  case attachedImpression
-  case renderedImpression
-  case viewableImpression
-  case loadError
-  case startError
-  case lazyRenderMediaFailedError
-  case vimp1pxEvent
-  case vimp100Event
-  case vimp100pEvent
-  case admuteEvent
-  case advmuteEvent
-  case privEvent
-  case bounceEvent
-  public var stringValue: Swift.String {
-    get
-  }
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [GFPSDK.GFPInspectorInternalLogType]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [GFPSDK.GFPInspectorInternalLogType] {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPVisualKey : ObjectiveC.NSObject {
   @objc public static let defaultVisualKey: Swift.String
   @objc public static let shoppingLabel: Swift.String
@@ -264,7 +250,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class GFPDateUtils : ObjectiveC.NSObject {
-  public static let LogDateFormatter: Foundation.ISO8601DateFormatter
+  public static let LogDateFormatter: Foundation.DateFormatter
   public static func logFormatted(_ date: Foundation.Date) -> Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -510,6 +496,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public class func waterfallPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
   @objc public class func videoSchedulePhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
   @objc public class func neloPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
+  @objc public class func adDebuggerPhase(with aType: GFPSDK.GFPPhaseType) -> Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -580,33 +567,36 @@ extension GFPSDK.GFPErrorUtils {
   @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
   @objc deinit
 }
-extension GFPSDK.GFPContentInfo : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  required convenience public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers @objc public class GFPInspectorAccessInfo : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc public class GFPAdDebuggerAccessInfo : ObjectiveC.NSObject {
   weak public var gestureRecognizer: UIKit.UIGestureRecognizer?
   public var logId: Foundation.UUID
-  public var inspectorAvailable: Swift.Bool
   public var isNaver: Swift.Bool
   weak public var view: UIKit.UIView?
   public var adViewType: GFPSDK.GFPAdViewType
   @objc deinit
 }
-extension GFPSDK.GFPAPSAdParam : Swift.Codable {
+public struct GFPAdLogSupplementarySnapshot : Swift.Codable {
+  public var iabGdprApplies: Swift.String?
+  public var iabTCString: Swift.String?
+  public var iabUSPString: Swift.String?
+  public var iabGppString: Swift.String?
+  public var iabGppSID: Swift.String?
+  public var userIP: Swift.String?
+  @GFPSDK.GFPJSONCodableData public var userParamSnapshotData: Foundation.Data? {
+    get
+    set
+    _modify
+  }
   public func encode(to encoder: any Swift.Encoder) throws
-  required convenience public init(from decoder: any Swift.Decoder) throws
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @objcMembers public class GFPInspectorEnabler : ObjectiveC.NSObject {
-  @objc public static let shared: GFPSDK.GFPInspectorEnabler
-  @objc public func setup()
-  @objc deinit
-}
-@propertyWrapper public struct GFPFormattedDate : Swift.Codable {
-  public var wrappedValue: Foundation.Date
-  public init(wrappedValue: Foundation.Date)
   public init(from decoder: any Swift.Decoder) throws
+}
+extension GFPSDK.GFPVideoOptions : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
+  convenience required public init(from decoder: any Swift.Decoder) throws
+}
+extension GFPSDK.GFPCachedAdParam : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  convenience required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum GFPAdViewType : Swift.Int, GFPSDK.GFPObjcEnum {
   case unknown
@@ -630,92 +620,13 @@ extension GFPSDK.GFPAPSAdParam : Swift.Codable {
     get
   }
 }
-public protocol GFPObjcEnum : Swift.CaseIterable, Swift.Decodable, Swift.Encodable, Swift.RawRepresentable where Self.RawValue == Swift.Int {
-  var stringValue: Swift.String { get }
-}
-extension GFPSDK.GFPObjcEnum {
-  public init(from decoder: any Swift.Decoder) throws
+extension GFPSDK.GFPAdConfiguration : Swift.Codable {
+  convenience required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension GFPSDK.GFPUserParam : Swift.Codable {
   convenience required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-}
-extension UIKit.UIView.ContentMode : Swift.Codable {
-}
-extension GFPSDK.GFPAdParam : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  convenience required public init(from decoder: any Swift.Decoder) throws
-}
-extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
-  required convenience public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@_inheritsConvenienceInitializers @objc(GFPLogCollector) @objcMembers public class GFPLogCollector : ObjectiveC.NSObject {
-  @objc public static let shared: GFPSDK.GFPLogCollector
-  @objc public var inspectorLoggingEnagled: Swift.Bool {
-    @objc get
-  }
-  @objc public func enableInspectorLogging(enable: Swift.Bool)
-  @objc public func addNewAdLog(logId: Foundation.UUID?)
-  @objc public func logAdLogProperty(_ value: Any?, forKey key: Swift.String?, logId: Foundation.UUID?)
-  @objc public func logAdError(_ error: NaverAdsServices.GFPError?, logId: Foundation.UUID?)
-  @objc public func logAdView(_ adView: UIKit.UIView?, logId: Foundation.UUID?)
-  public func logAdViewType(_ adViewType: GFPSDK.GFPAdViewType?, logId: Foundation.UUID?)
-  @objc public func logAdRequest(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
-  @objc public func logAdEvent(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
-  @objc public func logSDKInitRequest(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
-  @objc public func logInternalLog(_ log: GFPSDK.GFPInspectorInternalLog?, logId: Foundation.UUID?)
-  @objc public func addNewSDKInitLog(logId: Foundation.UUID?)
-  @objc public func logSDKInit(result: GFPSDK.GFPSDKInitResult?, logId: Foundation.UUID?)
-  @objc public func logUnavailableMediation(withBannerOption option: GFPSDK.GFPBannerProviderOption)
-  @objc public func logUnavailableMediation(withNativeOption option: GFPSDK.GFPNativeProviderOption)
-  @objc public func logUnavailableMediation(withCombinedOption option: GFPSDK.GFPCombinedProviderOption)
-  @objc public func logUnavailableMediation(withVideoOption option: GFPSDK.GFPVideoProviderOption)
-  @objc public func logUnavailableMediation(withRewardedOption option: GFPSDK.GFPRewardedAdProviderOption)
-  @objc public func logUnavailableMediation(withInterstitialOption option: GFPSDK.GFPInterstitialAdProviderOption)
-  @objc public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType?, productType: GFPSDK.GFPProviderProductType?)
-  @objc public func logNotUsedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
-  @objc public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
-  @objc public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
-  @objc public func logErroredMediation(withProviderType providerType: GFPSDK.GFPProviderType?, creativeType: GFPSDK.GFPProviderCreativeType?)
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension GFPSDK.GFPAdConfiguration : Swift.Codable {
-  convenience required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-extension GFPSDK.GFPPrivacySetting : Swift.Codable {
-  convenience required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@propertyWrapper public struct GFPJSONCodableData<T> : Swift.Codable {
-  public var wrappedValue: T
-  public init(wrappedValue: T)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension GFPSDK.GFPInternalResponseInfo : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  convenience required public init(from decoder: any Swift.Decoder) throws
-}
-extension GFPSDK.GFPLoadResponseInfo : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  convenience required public init(from decoder: any Swift.Decoder) throws
-}
-extension GFPSDK.GFPAdProviderSetting : Swift.Codable {
-  convenience public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers public class GFPSDKInitResult : ObjectiveC.NSObject {
-  @objc public var isSuccess: Swift.Bool
-  @objc public var isCached: Swift.Bool
-  @objc public var publisherCode: Swift.String?
-  @objc public var serviceCode: Swift.String?
-  @objc public var error: NaverAdsServices.GFPError?
-  @objc public init(isSuccess: Swift.Bool, isCached: Swift.Bool, publisherCode: Swift.String? = nil, serviceCode: Swift.String? = nil, error: NaverAdsServices.GFPError? = nil)
-  @objc deinit
 }
 public class GFPAPIRequestLog : Swift.Codable {
   public var url: Foundation.URL? {
@@ -751,7 +662,9 @@ public class GFPAPIResponseLog : Swift.Codable {
     get
   }
   public init(response: Foundation.URLResponse?, body: Foundation.Data?, error: (any Swift.Error)?)
-  public func isFilled() -> Swift.Bool?
+  public var isFilled: Swift.Bool? {
+    get
+  }
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -778,21 +691,47 @@ public class GFPAPIResponseLog : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers public class GFPInspectorInterface : ObjectiveC.NSObject {
-  @objc public init(logId: Foundation.UUID, adViewType: GFPSDK.GFPAdViewType)
-  @objc public func updateLogId(with logId: Foundation.UUID?)
-  @objc @_Concurrency.MainActor public func registerGesture(onView view: UIKit.UIView, logId: Foundation.UUID?) -> UIKit.UILongPressGestureRecognizer?
+extension GFPSDK.GFPContentInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  required convenience public init(from decoder: any Swift.Decoder) throws
+}
+@objc public enum GFPAdDebuggerLogType : Swift.Int, GFPSDK.GFPObjcEnum {
+  case adDebugger
+  case ad
+  case adView
+  case sdkInfo
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [GFPSDK.GFPAdDebuggerLogType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [GFPSDK.GFPAdDebuggerLogType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @objcMembers public class GFPAdDebuggerEnabler : ObjectiveC.NSObject {
+  @objc public static let shared: GFPSDK.GFPAdDebuggerEnabler
+  @objc public func setup()
   @objc deinit
 }
-extension GFPSDK.GFPCachedAdParam : Swift.Codable {
+extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
+  required convenience public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-  convenience required public init(from decoder: any Swift.Decoder) throws
 }
-@objc(GFPInspectorInternalLog) public class GFPInspectorInternalLog : ObjectiveC.NSObject, Swift.Codable {
+@available(iOS 14, *)
+extension AppTrackingTransparency.ATTrackingManager.AuthorizationStatus : Swift.Codable {
+}
+extension CoreLocation.CLAuthorizationStatus : Swift.Codable {
+}
+@objc(GFPAdDebuggerInternalLog) public class GFPAdDebuggerInternalLog : ObjectiveC.NSObject, Swift.Codable {
   public var timestamp: Foundation.Date {
     get
   }
-  public var type: GFPSDK.GFPInspectorInternalLogType {
+  public var type: GFPSDK.GFPAdDebuggerInternalLogType {
     get
   }
   public var title: Swift.String {
@@ -802,11 +741,269 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
     get
   }
   public var extraDescription: Swift.String?
-  @objc public init(type: GFPSDK.GFPInspectorInternalLogType, extraDescription: Swift.String? = nil)
-  @objc public init(type: GFPSDK.GFPInspectorInternalLogType)
+  @objc public init(type: GFPSDK.GFPAdDebuggerInternalLogType, extraDescription: Swift.String? = nil)
+  @objc public init(type: GFPSDK.GFPAdDebuggerInternalLogType)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdDebuggerAuthService : ObjectiveC.NSObject {
+  @objc public static let shared: GFPSDK.GFPAdDebuggerAuthService
+  @objc public func checkAuth(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GFPSDK.GFPAPSAdParam : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  required convenience public init(from decoder: any Swift.Decoder) throws
+}
+extension GFPSDK.GFPPrivacySetting : Swift.Codable {
+  convenience required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension GFPSDK.GFPInternalResponseInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  convenience required public init(from decoder: any Swift.Decoder) throws
+}
+extension GFPSDK.GFPLoadResponseInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  convenience required public init(from decoder: any Swift.Decoder) throws
+}
+extension NaverAdsServices.GFPError {
+  @objc dynamic public var gfpLogDescription: Swift.String {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @objc(GFPLogCollector) @objcMembers public class GFPLogCollector : ObjectiveC.NSObject {
+  @objc public static let shared: GFPSDK.GFPLogCollector
+  @objc public var adDebuggerLoggingEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc public static let adDebuggerBecameActiveNotification: Foundation.NSNotification.Name
+  @objc(enableAdDebuggerLogging:) public func enableAdDebuggerLogging(enable: Swift.Bool)
+  @objc public func addNewAdLog(_ adLog: GFPSDK.GFPAdLog?)
+  @objc public func adLog(forLogId logId: Foundation.UUID?) -> GFPSDK.GFPAdLog?
+  @objc public func logAdError(_ error: NaverAdsServices.GFPError?, logId: Foundation.UUID?)
+  @objc public func logAdView(_ adView: UIKit.UIView?, logId: Foundation.UUID?)
+  public func logAdViewType(_ adViewType: GFPSDK.GFPAdViewType?, logId: Foundation.UUID?)
+  @objc(logGlobalTimeout:configName:loaderClassName:forLogId:) public func logGlobalTimeout(_ timeout: Foundation.TimeInterval, configName: Swift.String, loaderClassName: Swift.String, forLogId logId: Foundation.UUID?)
+  @objc public func logAdRequest(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
+  @objc public func logAdEvent(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
+  @objc public func logSDKInitRequest(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
+  @objc public func logInternalLog(_ log: GFPSDK.GFPAdDebuggerInternalLog?, logId: Foundation.UUID?)
+  @objc public func addNewSDKInitLog(logId: Foundation.UUID?)
+  @objc public func logSDKInit(result: GFPSDK.GFPSDKInitResult?, logId: Foundation.UUID?)
+  @objc public func logUnavailableMediation(withBannerOption option: GFPSDK.GFPBannerProviderOption)
+  @objc public func logUnavailableMediation(withNativeOption option: GFPSDK.GFPNativeProviderOption)
+  @objc public func logUnavailableMediation(withCombinedOption option: GFPSDK.GFPCombinedProviderOption)
+  @objc public func logUnavailableMediation(withVideoOption option: GFPSDK.GFPVideoProviderOption)
+  @objc public func logUnavailableMediation(withRewardedOption option: GFPSDK.GFPRewardedAdProviderOption)
+  @objc public func logUnavailableMediation(withInterstitialOption option: GFPSDK.GFPInterstitialAdProviderOption)
+  @objc public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType?, productType: GFPSDK.GFPProviderProductType?)
+  @objc public func logNotUsedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc public func logNotInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?, error: (any Swift.Error)?)
+  @objc public func logInitFailedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc public func logErroredMediation(withProviderType providerType: GFPSDK.GFPProviderType?, creativeType: GFPSDK.GFPProviderCreativeType?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(GFPAdDebugger) @objcMembers public class GFPAdDebugger : ObjectiveC.NSObject {
+  @objc public static let adDebuggerVersion: Swift.String
+  @objc(initWithLogId:adViewType:) public init?(withLogId logId: Foundation.UUID, adViewType: GFPSDK.GFPAdViewType)
+  @objc(updateLogId:) public func updateLogId(_ logId: Foundation.UUID)
+  @objc @_Concurrency.MainActor public func registerGesture(onView view: UIKit.UIView, logId: Foundation.UUID?) -> UIKit.UILongPressGestureRecognizer?
+  @objc public static func forceOpenAdDebugger()
+  @objc deinit
+}
+@objc @objcMembers public class GFPSDKInitResult : ObjectiveC.NSObject {
+  @objc public var isSuccess: Swift.Bool
+  @objc public var isCached: Swift.Bool
+  @objc public var publisherCode: Swift.String?
+  @objc public var serviceCode: Swift.String?
+  @objc public var error: NaverAdsServices.GFPError?
+  @objc public init(isSuccess: Swift.Bool, isCached: Swift.Bool, publisherCode: Swift.String? = nil, serviceCode: Swift.String? = nil, error: NaverAdsServices.GFPError? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class GFPViewAnalysis : ObjectiveC.NSObject, Swift.Codable {
+  public func fixupAfterDecode()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public protocol GFPObjcEnum : Swift.CaseIterable, Swift.Decodable, Swift.Encodable, Swift.RawRepresentable where Self.RawValue == Swift.Int {
+  var stringValue: Swift.String { get }
+}
+extension GFPSDK.GFPObjcEnum {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @objcMembers public class GFPAdLog : ObjectiveC.NSObject, Swift.Codable {
+  @objc weak public var adView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc public var timestamp: Foundation.Date {
+    get
+  }
+  @objc public var logId: Foundation.UUID
+  public var adViewType: GFPSDK.GFPAdViewType?
+  @objc public var adUnitID: Swift.String?
+  @objc public var adRequestLog: GFPSDK.GFPAPILog?
+  @objc public var adEventLogs: [GFPSDK.GFPAPILog]
+  @objc public var loadResponseInfo: GFPSDK.GFPLoadResponseInfo?
+  @objc public var adParam: GFPSDK.GFPAdParam?
+  @objc public var videoParam: GFPSDK.GFPVideoAdParam?
+  @objc public var extraParam: GFPSDK.GFPExtraRequestParam?
+  @objc public var timeoutInterval: Swift.Double
+  @objc public var globalTimeoutInterval: Swift.Double
+  @objc public var globalTimeoutConfigName: Swift.String?
+  @objc public var loaderClassName: Swift.String?
+  @objc public var internalLogs: [GFPSDK.GFPAdDebuggerInternalLog]
+  @nonobjc public var cachedAdEntry: GFPSDK.GFPCachedAdEntry?
+  @objc public var errorMessage: Swift.String?
+  public var errorCode: Swift.Int?
+  public var underlyingURLErrorCode: Swift.Int?
+  @objc public var videoOptions: GFPSDK.GFPVideoOptions?
+  @objc public var configSnapshotData: Foundation.Data?
+  @objc public var videoOptionsSnapshotData: Foundation.Data?
+  @objc public var videoGlobalOptionsSnapshotData: Foundation.Data?
+  public var supplementarySnapshot: GFPSDK.GFPAdLogSupplementarySnapshot?
+  @objc public func addError(_ error: NaverAdsServices.GFPError)
+  @objc public var cachedParam: GFPSDK.GFPCachedAdParam?
+  @objc public init(withLogId logId: Foundation.UUID)
+  @objc public func captureParamsSnapshot()
+  @objc public func creativeType() -> Swift.String?
+  @objc public func providerName() -> Swift.String?
+  @objc public func connectionType() -> Swift.String?
+  @objc public func renderType() -> Swift.String?
+  public var isFilled: Swift.Bool? {
+    get
+  }
+  public var status: GFPSDK.GFPAdLogStatus? {
+    get
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum GFPAdLogStatus {
+  case loading
+  case empty
+  case filled
+  case cached
+  case viewed
+  case error
+  public static func == (a: GFPSDK.GFPAdLogStatus, b: GFPSDK.GFPAdLogStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension GFPSDK.GFPAdProviderSetting : Swift.Codable {
+  convenience public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum GFPCacheStorageType : Swift.String, Swift.Codable {
+  case disk
+  case memory
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum GFPCachedAdEntryStatus : Swift.String, Swift.Codable {
+  case cached
+  case consumed
+  case expired
+  case evicted
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct GFPCachedAdEntry : Swift.Codable {
+  public init(adUnitId: Swift.String, providerName: Swift.String? = nil, connectionType: Swift.String? = nil, renderType: Swift.String? = nil, cacheKey: Swift.String? = nil, storedTimestamp: Foundation.TimeInterval, expDuration: Foundation.TimeInterval, responseData: Foundation.Data? = nil, storageType: GFPSDK.GFPCacheStorageType, entryStatus: GFPSDK.GFPCachedAdEntryStatus = .cached, logId: Foundation.UUID? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct GFPVideoGlobalOptionsSnapshot : Swift.Codable {
+  public var disableAutoPlayback: Swift.Bool
+  public var globalPlayPolicyRawValue: Swift.Int
+  public static func capture() -> GFPSDK.GFPVideoGlobalOptionsSnapshot
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@propertyWrapper public struct GFPJSONCodableData<T> : Swift.Codable {
+  public var wrappedValue: T
+  public init(wrappedValue: T)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension GFPSDK.GFPAdParam : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  convenience required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class GFPAdDebuggerNativeValidation : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public enum GFPAdDebuggerInternalLogType : Swift.Int, GFPSDK.GFPObjcEnum {
+  case ackImpression
+  case clickedImpression
+  case completionImpression
+  case adMuteImpression
+  case closedImpression
+  case attachedImpression
+  case renderedImpression
+  case viewableImpression
+  case loadError
+  case startError
+  case lazyRenderMediaFailedError
+  case requestTimeout
+  case vimp1pxEvent
+  case vimp100Event
+  case vimp100pEvent
+  case admuteEvent
+  case advmuteEvent
+  case privEvent
+  case bounceEvent
+  case cacheLoadAttempt
+  case cacheHit
+  case cacheMiss
+  case cacheMemoryHit
+  case cacheMemoryStored
+  case prefetchStarted
+  case prefetchCompleted
+  case prefetchFailed
+  case cacheLimitReached
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [GFPSDK.GFPAdDebuggerInternalLogType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [GFPSDK.GFPAdDebuggerInternalLogType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIView.ContentMode : Swift.Codable {
+}
+@propertyWrapper public struct GFPFormattedDate : Swift.Codable {
+  public var wrappedValue: Foundation.Date
+  public init(wrappedValue: Foundation.Date)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
 @objc public protocol GFPS2SAdClickDelegate : ObjectiveC.NSObjectProtocol {
@@ -920,8 +1117,6 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   public static func raiseError(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?, errorCode: Swift.Int, message: Swift.String? = nil)
   @objc deinit
 }
-extension GFPSDK.GFPInspectorInternalLogType : Swift.Equatable {}
-extension GFPSDK.GFPInspectorInternalLogType : Swift.Hashable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Equatable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Hashable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.RawRepresentable {}
@@ -948,6 +1143,18 @@ extension GFPSDK.GFPRichMediaDataAdType : Swift.Hashable {}
 extension GFPSDK.GFPRichMediaDataAdType : Swift.RawRepresentable {}
 extension GFPSDK.GFPAdViewType : Swift.Equatable {}
 extension GFPSDK.GFPAdViewType : Swift.Hashable {}
+extension GFPSDK.GFPAdDebuggerLogType : Swift.Equatable {}
+extension GFPSDK.GFPAdDebuggerLogType : Swift.Hashable {}
+extension GFPSDK.GFPAdLogStatus : Swift.Equatable {}
+extension GFPSDK.GFPAdLogStatus : Swift.Hashable {}
+extension GFPSDK.GFPCacheStorageType : Swift.Equatable {}
+extension GFPSDK.GFPCacheStorageType : Swift.Hashable {}
+extension GFPSDK.GFPCacheStorageType : Swift.RawRepresentable {}
+extension GFPSDK.GFPCachedAdEntryStatus : Swift.Equatable {}
+extension GFPSDK.GFPCachedAdEntryStatus : Swift.Hashable {}
+extension GFPSDK.GFPCachedAdEntryStatus : Swift.RawRepresentable {}
+extension GFPSDK.GFPAdDebuggerInternalLogType : Swift.Equatable {}
+extension GFPSDK.GFPAdDebuggerInternalLogType : Swift.Hashable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.Equatable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.Hashable {}
 extension GFPSDK.GFPVideoDisplayType : Swift.RawRepresentable {}

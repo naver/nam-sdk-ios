@@ -23,6 +23,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSNotificationName const GFPAdCachePrefetchDidCompleteNotification;
+extern NSNotificationName const GFPAdCachePrefetchDidFailNotification;
+extern NSNotificationName const GFPAdCachePrefetchLimitReachedNotification;
+extern NSNotificationName const GFPAdCacheConsumedNotification;
+
 @protocol GFPAdCacheManagerDelegate <NSObject>
 
 - (void)cacheManager:(NSString *)adUnitId didCacheNativeAd:(GFPNativeAd *)nativeAd;
@@ -53,6 +58,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)clearWith:(NSString *)adUnitId;
 - (void)clearAll;
+
+/// Returns all non-expired cached waterfall entries as array of dictionaries.
+- (void)allCachedEntriesWithCompletion:(void (^)(NSArray<NSDictionary *> * _Nonnull entries, NSInteger maxCount))completion;
+
+/// Returns {adUnitId: count} for in-memory cached ads.
+- (NSDictionary<NSString *, NSNumber *> *)memoryCachedAdCounts;
 
 @end
 

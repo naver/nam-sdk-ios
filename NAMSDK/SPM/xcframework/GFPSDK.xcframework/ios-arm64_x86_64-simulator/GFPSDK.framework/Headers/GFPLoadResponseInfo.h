@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) NSNumber *loadErrorLatency;
 
 @property (nonatomic, strong, readonly) NSString *errorMesage;
+@property (nonatomic, strong, readonly, nullable) NSNumber *errorCode;
+@property (nonatomic, strong, readonly, nullable) NSString *errorSubcode;
 
 
 @end

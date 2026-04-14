@@ -187,14 +187,33 @@ typedef void(^GFPAdManagerCompletionHandler)(GFPError * _Nullable error);
 + (BOOL)naverLocationTermsAgreed;
 
 /**
- * Enable or disable ad inspector.
+ * Returns whether the ad debugger is force-enabled.
+ *
+ * @warning Intended for development and internal testing only.
+ *          Do not enable in release builds — a visible warning banner will be shown inside the debugger.
  */
-+ (BOOL)inspectorEnabled;
++ (BOOL)adDebuggerEnabled;
 
 /**
- * Enable or disable ad inspector.
+ * Force-enables or disables the ad debugger, bypassing server authentication.
+ *
+ * When enabled, opening the ad debugger will display a warning banner indicating
+ * that it was accessed without server authentication.
+ *
+ * @warning Intended for development and internal testing only.
+ *          Do not call this in release builds.
  */
-+ (void)setInspectorEnabled:(BOOL)enabled;
++ (void)setAdDebuggerEnabled:(BOOL)enabled;
+
+/**
+ * Publisher code set during setup. (readonly)
+ */
++ (nullable NSString *)publisherCd;
+
+/**
+ * Service code set during setup. (readonly)
+ */
++ (nullable NSString *)serviceCd;
 
 @end
 

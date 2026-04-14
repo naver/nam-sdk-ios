@@ -282,6 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreFoundation;
 @import Foundation;
+@import NaverAdsServices;
 @import ObjectiveC;
 #endif
 
@@ -326,6 +327,103 @@ SWIFT_CLASS("_TtC6GFPSDK9GFPAPILog")
 @end
 
 
+
+@class NSUUID;
+enum GFPAdViewType : NSInteger;
+@class UIView;
+@class UILongPressGestureRecognizer;
+
+SWIFT_CLASS_NAMED("GFPAdDebugger")
+@interface GFPAdDebugger : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull adDebuggerVersion;)
++ (NSString * _Nonnull)adDebuggerVersion SWIFT_WARN_UNUSED_RESULT;
+- (nullable instancetype)initWithLogId:(NSUUID * _Nonnull)logId adViewType:(enum GFPAdViewType)adViewType OBJC_DESIGNATED_INITIALIZER;
+- (void)updateLogId:(NSUUID * _Nonnull)logId;
+- (UILongPressGestureRecognizer * _Nullable)registerGestureOnView:(UIView * _Nonnull)view logId:(NSUUID * _Nullable)logId SWIFT_WARN_UNUSED_RESULT;
++ (void)forceOpenAdDebugger;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK23GFPAdDebuggerAccessInfo")
+@interface GFPAdDebuggerAccessInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Handles device authentication for Ad Debugger access.
+/// Calls <code>/adDebugger/v1</code> to verify whether the device is on the whitelist.
+/// Caches the result locally using the TTL from the server response to avoid redundant requests.
+SWIFT_CLASS("_TtC6GFPSDK24GFPAdDebuggerAuthService")
+@interface GFPAdDebuggerAuthService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPAdDebuggerAuthService * _Nonnull shared;)
++ (GFPAdDebuggerAuthService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// Checks authentication. Returns immediately if the cache is still valid, skipping the API call.
+/// \param completion Result of authentication (true: allowed, false: denied)
+///
+- (void)checkAuthWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6GFPSDK20GFPAdDebuggerEnabler")
+@interface GFPAdDebuggerEnabler : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPAdDebuggerEnabler * _Nonnull shared;)
++ (GFPAdDebuggerEnabler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setup;
+@end
+
+enum GFPAdDebuggerInternalLogType : NSInteger;
+
+SWIFT_CLASS_NAMED("GFPAdDebuggerInternalLog")
+@interface GFPAdDebuggerInternalLog : NSObject
+- (nonnull instancetype)initWithType:(enum GFPAdDebuggerInternalLogType)type extraDescription:(NSString * _Nullable)extraDescription OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithType:(enum GFPAdDebuggerInternalLogType)type OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, GFPAdDebuggerInternalLogType, open) {
+  GFPAdDebuggerInternalLogTypeAckImpression = 0,
+  GFPAdDebuggerInternalLogTypeClickedImpression = 1,
+  GFPAdDebuggerInternalLogTypeCompletionImpression = 2,
+  GFPAdDebuggerInternalLogTypeAdMuteImpression = 3,
+  GFPAdDebuggerInternalLogTypeClosedImpression = 4,
+  GFPAdDebuggerInternalLogTypeAttachedImpression = 5,
+  GFPAdDebuggerInternalLogTypeRenderedImpression = 6,
+  GFPAdDebuggerInternalLogTypeViewableImpression = 7,
+  GFPAdDebuggerInternalLogTypeLoadError = 8,
+  GFPAdDebuggerInternalLogTypeStartError = 9,
+  GFPAdDebuggerInternalLogTypeLazyRenderMediaFailedError = 10,
+  GFPAdDebuggerInternalLogTypeRequestTimeout = 11,
+  GFPAdDebuggerInternalLogTypeVimp1pxEvent = 12,
+  GFPAdDebuggerInternalLogTypeVimp100Event = 13,
+  GFPAdDebuggerInternalLogTypeVimp100pEvent = 14,
+  GFPAdDebuggerInternalLogTypeAdmuteEvent = 15,
+  GFPAdDebuggerInternalLogTypeAdvmuteEvent = 16,
+  GFPAdDebuggerInternalLogTypePrivEvent = 17,
+  GFPAdDebuggerInternalLogTypeBounceEvent = 18,
+  GFPAdDebuggerInternalLogTypeCacheLoadAttempt = 19,
+  GFPAdDebuggerInternalLogTypeCacheHit = 20,
+  GFPAdDebuggerInternalLogTypeCacheMiss = 21,
+  GFPAdDebuggerInternalLogTypeCacheMemoryHit = 22,
+  GFPAdDebuggerInternalLogTypeCacheMemoryStored = 23,
+  GFPAdDebuggerInternalLogTypePrefetchStarted = 24,
+  GFPAdDebuggerInternalLogTypePrefetchCompleted = 25,
+  GFPAdDebuggerInternalLogTypePrefetchFailed = 26,
+  GFPAdDebuggerInternalLogTypeCacheLimitReached = 27,
+};
+
+typedef SWIFT_ENUM(NSInteger, GFPAdDebuggerLogType, open) {
+  GFPAdDebuggerLogTypeAdDebugger = 0,
+  GFPAdDebuggerLogTypeAd = 1,
+  GFPAdDebuggerLogTypeAdView = 2,
+  GFPAdDebuggerLogTypeSdkInfo = 3,
+};
 
 @class GFPAdInitProviderPlacementInfo;
 
@@ -383,8 +481,52 @@ SWIFT_CLASS_NAMED("GFPAdInitProviderPlacementInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class GFPNativeAdRenderingSetting;
+@class GFPLoadResponseInfo;
+@class GFPAdParam;
+@class GFPVideoAdParam;
+@class GFPExtraRequestParam;
 @class GFPVideoOptions;
+@class GFPError;
+@class GFPCachedAdParam;
+
+SWIFT_CLASS("_TtC6GFPSDK8GFPAdLog")
+@interface GFPAdLog : NSObject
+@property (nonatomic, weak) UIView * _Nullable adView;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, copy) NSUUID * _Nonnull logId;
+@property (nonatomic, copy) NSString * _Nullable adUnitID;
+@property (nonatomic, strong) GFPAPILog * _Nullable adRequestLog;
+@property (nonatomic, copy) NSArray<GFPAPILog *> * _Nonnull adEventLogs;
+@property (nonatomic, strong) GFPLoadResponseInfo * _Nullable loadResponseInfo;
+@property (nonatomic, strong) GFPAdParam * _Nullable adParam;
+@property (nonatomic, strong) GFPVideoAdParam * _Nullable videoParam;
+@property (nonatomic, strong) GFPExtraRequestParam * _Nullable extraParam;
+@property (nonatomic) NSTimeInterval timeoutInterval;
+/// Global timeout from config, logged by loader before ad request
+@property (nonatomic) NSTimeInterval globalTimeoutInterval;
+/// Config key name for the global timeout (e.g. “Banner”, “Unified”, “Video”, “Rewarded”, “Interstitial”)
+@property (nonatomic, copy) NSString * _Nullable globalTimeoutConfigName;
+/// Loader class name that initiated the ad request (e.g. “GFPAdLoader”, “GFPBannerView”)
+@property (nonatomic, copy) NSString * _Nullable loaderClassName;
+@property (nonatomic, copy) NSArray<GFPAdDebuggerInternalLog *> * _Nonnull internalLogs;
+@property (nonatomic, copy) NSString * _Nullable errorMessage;
+@property (nonatomic, strong) GFPVideoOptions * _Nullable videoOptions;
+@property (nonatomic, copy) NSData * _Nullable configSnapshotData;
+@property (nonatomic, copy) NSData * _Nullable videoOptionsSnapshotData;
+@property (nonatomic, copy) NSData * _Nullable videoGlobalOptionsSnapshotData;
+- (void)addError:(GFPError * _Nonnull)error;
+@property (nonatomic, strong) GFPCachedAdParam * _Nullable cachedParam;
+- (nonnull instancetype)initWithLogId:(NSUUID * _Nonnull)logId OBJC_DESIGNATED_INITIALIZER;
+- (void)captureParamsSnapshot;
+- (NSString * _Nullable)creativeType SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)providerName SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)connectionType SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)renderType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class GFPNativeAdRenderingSetting;
 
 SWIFT_CLASS("_TtC6GFPSDK18GFPAdNativeOptions")
 @interface GFPAdNativeOptions : NSObject
@@ -579,6 +721,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDebugger 
 
 
 
+@interface GFPError (SWIFT_EXTENSION(GFPSDK))
+@property (nonatomic, readonly, copy) NSString * _Nonnull gfpLogDescription;
+@end
+
+
 
 @class UIImage;
 
@@ -594,67 +741,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat unknwonAspec
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
-SWIFT_CLASS("_TtC6GFPSDK22GFPInspectorAccessInfo")
-@interface GFPInspectorAccessInfo : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC6GFPSDK19GFPInspectorEnabler")
-@interface GFPInspectorEnabler : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPInspectorEnabler * _Nonnull shared;)
-+ (GFPInspectorEnabler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setup;
-@end
-
-@class NSUUID;
-@class UIView;
-@class UILongPressGestureRecognizer;
-
-SWIFT_CLASS("_TtC6GFPSDK21GFPInspectorInterface")
-@interface GFPInspectorInterface : NSObject
-- (nonnull instancetype)initWithLogId:(NSUUID * _Nonnull)logId adViewType:(enum GFPAdViewType)adViewType OBJC_DESIGNATED_INITIALIZER;
-- (void)updateLogIdWith:(NSUUID * _Nullable)logId;
-- (UILongPressGestureRecognizer * _Nullable)registerGestureOnView:(UIView * _Nonnull)view logId:(NSUUID * _Nullable)logId SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-enum GFPInspectorInternalLogType : NSInteger;
-
-SWIFT_CLASS_NAMED("GFPInspectorInternalLog")
-@interface GFPInspectorInternalLog : NSObject
-- (nonnull instancetype)initWithType:(enum GFPInspectorInternalLogType)type extraDescription:(NSString * _Nullable)extraDescription OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithType:(enum GFPInspectorInternalLogType)type OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-typedef SWIFT_ENUM(NSInteger, GFPInspectorInternalLogType, open) {
-  GFPInspectorInternalLogTypeAckImpression = 0,
-  GFPInspectorInternalLogTypeClickedImpression = 1,
-  GFPInspectorInternalLogTypeCompletionImpression = 2,
-  GFPInspectorInternalLogTypeAdMuteImpression = 3,
-  GFPInspectorInternalLogTypeClosedImpression = 4,
-  GFPInspectorInternalLogTypeAttachedImpression = 5,
-  GFPInspectorInternalLogTypeRenderedImpression = 6,
-  GFPInspectorInternalLogTypeViewableImpression = 7,
-  GFPInspectorInternalLogTypeLoadError = 8,
-  GFPInspectorInternalLogTypeStartError = 9,
-  GFPInspectorInternalLogTypeLazyRenderMediaFailedError = 10,
-  GFPInspectorInternalLogTypeVimp1pxEvent = 11,
-  GFPInspectorInternalLogTypeVimp100Event = 12,
-  GFPInspectorInternalLogTypeVimp100pEvent = 13,
-  GFPInspectorInternalLogTypeAdmuteEvent = 14,
-  GFPInspectorInternalLogTypeAdvmuteEvent = 15,
-  GFPInspectorInternalLogTypePrivEvent = 16,
-  GFPInspectorInternalLogTypeBounceEvent = 17,
-};
 
 
 @class GFPWaterfallAdSize;
@@ -736,7 +822,6 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPLimitQueue")
 @end
 
 
-@class GFPError;
 @class GFPSDKInitResult;
 enum GFPNativeProviderOption : NSInteger;
 enum GFPVideoProviderOption : NSInteger;
@@ -746,16 +831,20 @@ SWIFT_CLASS_NAMED("GFPLogCollector")
 @interface GFPLogCollector : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLogCollector * _Nonnull shared;)
 + (GFPLogCollector * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly) BOOL inspectorLoggingEnagled;
-- (void)enableInspectorLoggingWithEnable:(BOOL)enable;
-- (void)addNewAdLogWithLogId:(NSUUID * _Nullable)logId;
-- (void)logAdLogProperty:(id _Nullable)value forKey:(NSString * _Nullable)key logId:(NSUUID * _Nullable)logId;
+@property (nonatomic, readonly) BOOL adDebuggerLoggingEnabled;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull adDebuggerBecameActiveNotification;)
++ (NSNotificationName _Nonnull)adDebuggerBecameActiveNotification SWIFT_WARN_UNUSED_RESULT;
+- (void)enableAdDebuggerLogging:(BOOL)enable;
+- (void)addNewAdLog:(GFPAdLog * _Nullable)adLog;
+- (GFPAdLog * _Nullable)adLogForLogId:(NSUUID * _Nullable)logId SWIFT_WARN_UNUSED_RESULT;
 - (void)logAdError:(GFPError * _Nullable)error logId:(NSUUID * _Nullable)logId;
 - (void)logAdView:(UIView * _Nullable)adView logId:(NSUUID * _Nullable)logId;
+/// Log global timeout config value from loader before ad request (ObjC-compatible)
+- (void)logGlobalTimeout:(NSTimeInterval)timeout configName:(NSString * _Nonnull)configName loaderClassName:(NSString * _Nonnull)loaderClassName forLogId:(NSUUID * _Nullable)logId;
 - (void)logAdRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
 - (void)logAdEvent:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
 - (void)logSDKInitRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
-- (void)logInternalLog:(GFPInspectorInternalLog * _Nullable)log logId:(NSUUID * _Nullable)logId;
+- (void)logInternalLog:(GFPAdDebuggerInternalLog * _Nullable)log logId:(NSUUID * _Nullable)logId;
 - (void)addNewSDKInitLogWithLogId:(NSUUID * _Nullable)logId;
 - (void)logSDKInitWithResult:(GFPSDKInitResult * _Nullable)result logId:(NSUUID * _Nullable)logId;
 - (void)logUnavailableMediationWithBannerOption:(enum GFPBannerProviderOption)option;
@@ -768,6 +857,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLogCollec
 - (void)logNotUsedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
 - (void)logInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
 - (void)logBlockedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logNotInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType error:(NSError * _Nullable)error;
+- (void)logInitFailedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
 - (void)logErroredMediationWithProviderType:(GFPProviderType _Nullable)providerType creativeType:(GFPProviderCreativeType _Nullable)creativeType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -924,6 +1015,7 @@ SWIFT_CLASS("_TtC6GFPSDK11GFPSDKPhase")
 + (NSString * _Nonnull)waterfallPhaseWith:(GFPPhaseType)aType SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)videoSchedulePhaseWith:(GFPPhaseType)aType SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)neloPhaseWith:(GFPPhaseType)aType SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)adDebuggerPhaseWith:(GFPPhaseType)aType SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1122,6 +1214,7 @@ typedef SWIFT_ENUM(NSInteger, GFPVideoDisplayType, open) {
   GFPVideoDisplayTypePIP = 2,
 };
 
+
 /// GFP에서 지원하는 비디오광고 제공자 목록
 typedef SWIFT_ENUM(NSInteger, GFPVideoProviderOption, open) {
   GFPVideoProviderOptionNone = 0,
@@ -1129,6 +1222,13 @@ typedef SWIFT_ENUM(NSInteger, GFPVideoProviderOption, open) {
   GFPVideoProviderOptionIMA = 2,
   GFPVideoProviderOptionEnd = 3,
 };
+
+
+SWIFT_CLASS("_TtC6GFPSDK15GFPViewAnalysis")
+@interface GFPViewAnalysis : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC6GFPSDK12GFPVisualKey")
@@ -1175,6 +1275,8 @@ SWIFT_CLASS("_TtC6GFPSDK18GFPWaterfallAdSize")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 SWIFT_CLASS("_TtC6GFPSDK20kGFPAdInterfaceStyle")
