@@ -1,0 +1,4 @@
+framework module GFPSDKMediationAPS {
+  header "GFPSDKMediationAPS-Swift.h"
+  requires objc
+}
