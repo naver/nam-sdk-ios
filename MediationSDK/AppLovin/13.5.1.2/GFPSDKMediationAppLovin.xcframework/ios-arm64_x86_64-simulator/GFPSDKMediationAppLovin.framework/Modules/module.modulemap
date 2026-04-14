@@ -1,0 +1,4 @@
+framework module GFPSDKMediationAppLovin {
+  header "GFPSDKMediationAppLovin-Swift.h"
+  requires objc
+}
