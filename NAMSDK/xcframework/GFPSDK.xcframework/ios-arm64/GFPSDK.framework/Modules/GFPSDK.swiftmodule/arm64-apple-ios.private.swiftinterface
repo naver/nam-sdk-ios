@@ -7,18 +7,14 @@ import AVKit
 import AdSupport
 import AppTrackingTransparency
 import Compression
-import Contacts
-import CoreBluetooth
 import CoreLocation
 import CoreTelephony
 import CryptoKit
-import EventKit
 import Foundation
 @_exported import GFPSDK
 import MessageUI
 import NaverAdsServices
 import Network
-import Photos
 import SafariServices
 import Security
 import Swift
@@ -813,7 +809,7 @@ extension NaverAdsServices.GFPError {
   @objc public static let adDebuggerVersion: Swift.String
   @objc(initWithLogId:adViewType:) public init?(withLogId logId: Foundation.UUID, adViewType: GFPSDK.GFPAdViewType)
   @objc(updateLogId:) public func updateLogId(_ logId: Foundation.UUID)
-  @objc @_Concurrency.MainActor public func registerGesture(onView view: UIKit.UIView, logId: Foundation.UUID?) -> UIKit.UILongPressGestureRecognizer?
+  @objc public func registerGesture(onView view: UIKit.UIView, logId: Foundation.UUID?) -> UIKit.UILongPressGestureRecognizer?
   @objc public static func forceOpenAdDebugger()
   @objc deinit
 }

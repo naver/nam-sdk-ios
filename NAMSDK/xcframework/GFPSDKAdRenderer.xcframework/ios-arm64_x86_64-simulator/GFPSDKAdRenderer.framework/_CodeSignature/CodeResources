@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bWtrqDZNAfucPiv7I++Nx+QOoQs=
+		zuTqTWGQrFbaEHhtU/TbM71/vTI=
 		</data>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AQZ2/lbc6NZOqok79ZQJOICrRi4=
+		UqhRR9s2ilO7LOiKjGgQ56nSx4M=
 		</data>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bWtrqDZNAfucPiv7I++Nx+QOoQs=
+		zuTqTWGQrFbaEHhtU/TbM71/vTI=
 		</data>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TPjL6qZ04gpXYOIrmnEVIOqL+kY=
+		jQZiv/jjn0raPKUrBoziHUApwfg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,11 +74,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bWtrqDZNAfucPiv7I++Nx+QOoQs=
+			zuTqTWGQrFbaEHhtU/TbM71/vTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			WNP70w66aPuJrTjtLUrEARS6EYHAJDhP/21gY5PrDd4=
+			Z/1WZNPIFN+JU3ioLCD81h6Su1DoJ8NL9XIYiTSUVCQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -118,22 +118,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AQZ2/lbc6NZOqok79ZQJOICrRi4=
+			UqhRR9s2ilO7LOiKjGgQ56nSx4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			SpkN9lv+Xgxd0/boCtgXBZQ/JjAlKM7RKWoSiqiYIPI=
+			XYk/8lOg1MzK+zm7n5OGDH+WKEFt+ezqhIcuTFWfHTs=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bWtrqDZNAfucPiv7I++Nx+QOoQs=
+			zuTqTWGQrFbaEHhtU/TbM71/vTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			WNP70w66aPuJrTjtLUrEARS6EYHAJDhP/21gY5PrDd4=
+			Z/1WZNPIFN+JU3ioLCD81h6Su1DoJ8NL9XIYiTSUVCQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKAdRenderer.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TPjL6qZ04gpXYOIrmnEVIOqL+kY=
+			jQZiv/jjn0raPKUrBoziHUApwfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kyG7ywG3zMhnJCZdzxp6LFUNBar4ACXmUuRGYPuTOo4=
+			WOdVoqhBOXGRykhh/8F6vHlMhrCw1QVOH3bgX5qsZxo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
