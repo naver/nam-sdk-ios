@@ -35,6 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setExtraLabelWith:(NSString *)key label:(UILabel *)label;
 - (NSArray *)getAllExtraLabel;
 
+- (UIImageView * _Nullable)extraImageViewWith:(NSString *)key;
+- (void)setExtraImageViewWith:(NSString *)key imageView:(UIImageView *)imageView;
+- (NSArray<UIImageView *> *)getAllExtraImageView;
+
 - (NSArray <UILabel *> *)labels;
 
 - (void)showIconPlaceholderWith:(GFPPlaceholderHandler _Nullable)placeholderSetter;

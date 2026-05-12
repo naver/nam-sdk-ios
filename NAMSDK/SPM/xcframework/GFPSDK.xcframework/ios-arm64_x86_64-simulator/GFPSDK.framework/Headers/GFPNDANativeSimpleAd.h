@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) GFPNativeTemplateOptions *templateOptions;
 @property (nonatomic, readonly, assign) BOOL isImageSizePreferred;
+@property (nonatomic, strong, nullable) NSNumber *videoLoadTimeout;
+
 @end
 
 NS_ASSUME_NONNULL_END

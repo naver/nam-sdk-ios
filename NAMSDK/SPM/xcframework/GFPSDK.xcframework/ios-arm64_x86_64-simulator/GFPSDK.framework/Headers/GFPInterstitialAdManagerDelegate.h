@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)interstitialAdManager:(GFPInterstitialAdManager *)manager didFailWithError:(GFPError *)error responseInfo:(nullable GFPLoadResponseInfo *)responseInfo;
 
 @optional
+-(void)interstitialAdManagerDidReceiveImpression:(GFPInterstitialAdManager *)manager;
+
 -(void)interstitialAdManagerDidPresentDefaultInAppBrowser:(GFPInterstitialAdManager *)manager;
 -(void)interstitialAdManagerDidDismissDefaultInAppBrowser:(GFPInterstitialAdManager *)manager;
 

@@ -68,6 +68,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)stop;
 
+/**
+ * 광고 영상을 해당 progress만큼 seeking합니다.
+ */
+- (void)seek:(float)progress;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

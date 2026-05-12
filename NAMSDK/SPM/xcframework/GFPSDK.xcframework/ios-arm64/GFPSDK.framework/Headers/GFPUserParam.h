@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, GFPUserParamGenderType) {
 @property (nonatomic, assign) NSUInteger yearOfBirth;
 
 /**
- * 국가코드 ex) EN,KO
+ * 국가코드 ex) KR, US (ISO 3166-1 alpha-2)
  */
 @property (nonatomic, copy, nullable) NSString *userCountryCode;
 

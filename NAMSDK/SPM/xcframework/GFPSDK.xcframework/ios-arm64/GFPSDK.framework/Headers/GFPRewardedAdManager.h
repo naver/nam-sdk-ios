@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, strong) NSString *adUnitID;
 
 @property (nonatomic, weak) id<GFPRewardedAdManagerDelegate> delegate;
-
+    
 @property (nonatomic, readonly, assign) BOOL isAdInvalidate;
 @property (nonatomic, readonly, assign) BOOL isAdLoaded;
 

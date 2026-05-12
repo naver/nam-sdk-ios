@@ -146,11 +146,11 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		gcW+BY3RQYJJVCJbTeAPuQTaGZQ=
+		v7ggjo2bokSG6foLQJPyulj33R8=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
-		AWQZ/3BP1H+vSHE7JxZ93iDXL74=
+		2uAU3n35B8Ujn4LSm5ngSpzpyFM=
 		</data>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
 		<data>
@@ -178,11 +178,11 @@
 		</data>
 		<key>Headers/GFPNDANativeNormalAd.h</key>
 		<data>
-		kSdoqpDYa1vNr67UwO9PfnyQdGw=
+		bxT6nL0WiApZHbD2TDfo1I7O0GM=
 		</data>
 		<key>Headers/GFPNDANativeSimpleAd.h</key>
 		<data>
-		HmcmOYKG/dH4VmXj1ZO8pr5bdfA=
+		2NISRcZ+RkzTHaLVgRtp1pKXGsc=
 		</data>
 		<key>Headers/GFPNDANativeSimpleAdaptor.h</key>
 		<data>
@@ -219,10 +219,6 @@
 		<key>Headers/GFPSchemeCommand.h</key>
 		<data>
 		c3xkeVoIYc2pFnH7XatL5nfaPwE=
-		</data>
-		<key>Headers/GFPVastMacroProvider.h</key>
-		<data>
-		AhsknbjDS1kQ3SWw0olMnFCpOPM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -624,22 +620,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gcW+BY3RQYJJVCJbTeAPuQTaGZQ=
+			v7ggjo2bokSG6foLQJPyulj33R8=
 			</data>
 			<key>hash2</key>
 			<data>
-			f2eG8j6fHsdQAMYkR2MFeapw+LREGTltKypoJH9Az5g=
+			XM6pvZBS2aObWrKEUf4kNATZuQCi+KNb9i+QJiYLRzE=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AWQZ/3BP1H+vSHE7JxZ93iDXL74=
+			2uAU3n35B8Ujn4LSm5ngSpzpyFM=
 			</data>
 			<key>hash2</key>
 			<data>
-			NLhJc+BrnwckqhQPYF3jRzMh+/K5TMLl+g0C9LOEK9w=
+			w1GFN6fUBfMIWiMXuDS6/9c6BDpc4G5/3H+ciAWEF58=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
@@ -712,22 +708,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kSdoqpDYa1vNr67UwO9PfnyQdGw=
+			bxT6nL0WiApZHbD2TDfo1I7O0GM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qj+68EfQ7vEEAZfFOy4QjXYqmXPxJTB3ZdIt6CDUots=
+			V6okVn+0lv+KnMQKXR9Ny9sRpuAGB+kZzhb4euy2BJo=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeSimpleAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HmcmOYKG/dH4VmXj1ZO8pr5bdfA=
+			2NISRcZ+RkzTHaLVgRtp1pKXGsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZCiKscZSswYJXzewILjV1la0DRJqvEPmLhHdNpwG46s=
+			OiN3oHiUDpMpBni879Xlk8dza8cxXcv7rNKDaiY/8Fg=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeSimpleAdaptor.h</key>
@@ -827,17 +823,6 @@
 			<key>hash2</key>
 			<data>
 			8pmOp8nDUEMF/LorvJV1BYFDMG8FX5P99sBLGdgGLlA=
-			</data>
-		</dict>
-		<key>Headers/GFPVastMacroProvider.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AhsknbjDS1kQ3SWw0olMnFCpOPM=
-			</data>
-			<key>hash2</key>
-			<data>
-			zmjBakA65NGm7qC4R8idWFqYfHfDtsiOK/gFZ3vuU2E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

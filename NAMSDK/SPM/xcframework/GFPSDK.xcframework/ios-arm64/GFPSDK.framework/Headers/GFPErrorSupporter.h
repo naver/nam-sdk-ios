@@ -168,6 +168,10 @@ typedef NS_ENUM(NSInteger, GFPErrorCode) {
     // Interstitial Ad
     GFPErrorInterstitialAd = 7000,
     GFPErrorInterstitialAdRendering = 7100,
+    
+    // Additional Render
+    GFPErrorAdditionalRenderInfoFailed = 8000,
+    GFPErrorAdditionalRenderInfoParseFailed = 8100,
 };
 
 

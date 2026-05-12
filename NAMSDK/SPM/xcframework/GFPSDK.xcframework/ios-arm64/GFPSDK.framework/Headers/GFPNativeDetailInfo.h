@@ -19,6 +19,7 @@
 @class GFPBackgroundOption;
 @class GFPBackgroundOptionAttributes;
 @class GFPNativeAIInfo;
+@class GFPNativeAPIInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -79,6 +80,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @property (nonatomic, readonly, strong, nullable) GFPNativeStyleInfo *styleInfo;
 @property (nonatomic, readonly, strong, nullable) GFPNativeAIInfo *aiInfo;
+@property (nonatomic, readonly, strong, nullable) GFPNativeAPIInfo *apiInfo;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
@@ -93,6 +95,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @property (nonatomic, readonly, strong) NSString *src;
 @property (nonatomic, readonly, strong) GFPNativeStyleInfo *styleInfo;
 @property (nonatomic, readonly, strong) GFPNativeLinkInfo *link;
+@property (nonatomic, readonly, strong) NSString *alt;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict NS_DESIGNATED_INITIALIZER;
@@ -218,6 +221,11 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 - (instancetype)initWithDict:(NSDictionary *)aDict;
 
+@end
+
+@interface GFPNativeAPIInfo : NSObject
+@property (nonatomic, readonly, strong, nullable) NSString *shopping;
+- (instancetype)initWithDict:(NSDictionary *)aDict;
 @end
 
 

@@ -91,12 +91,14 @@ NS_ASSUME_NONNULL_BEGIN
                         videoOptions:(nullable GFPVideoOptions *)videoOptions
                         autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo;
 
-- (instancetype)initWithDefaultRendererInfo:(GFPNativeAdInfo *)aInfo
+- (instancetype)initWithDefaultRendererInfo:(GFPNativeAdInfo *)nativeAdInfo
                             skAdNetworkInfo:(nullable GFPSKAdNetworkInfo *)skAdNetworkInfo
                                  renderInfo:(nullable GFPNDAMediaViewRenderInfo *)renderInfo
                             vastMaxRedirect:(nullable NSNumber *)vastMaxRedirect
                                videoOptions:(nullable GFPVideoOptions *)videoOptions
+                           videoLoadTimeout:(nullable NSNumber *)videoLoadTimeout
                                autoPlayInfo:(nullable GFPAutoPlayInfo *)autoPlayInfo
+                                 creativeId:(nullable NSString *)creativeId
                             templateOptions:(nullable GFPNativeTemplateOptions *)templateOptions;
 
 

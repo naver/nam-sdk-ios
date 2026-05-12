@@ -728,6 +728,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDebugger 
 
 
 
+SWIFT_CLASS("_TtC6GFPSDK16GFPExtraAssetKey")
+@interface GFPExtraAssetKey : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull engagement;)
++ (NSString * _Nonnull)engagement SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull promotion1;)
++ (NSString * _Nonnull)promotion1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull promotion2;)
++ (NSString * _Nonnull)promotion2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull overlayBadge;)
++ (NSString * _Nonnull)overlayBadge SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @class NSCoder;
 
 SWIFT_CLASS_NAMED("GFPGradientLabelView")
@@ -1477,14 +1491,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)shoppingNdaLighting SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull splash;)
 + (NSString * _Nonnull)splash SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull splashVideo;)
++ (NSString * _Nonnull)splashVideo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull travelSpecialDA;)
 + (NSString * _Nonnull)travelSpecialDA SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageToMotion;)
 + (NSString * _Nonnull)imageToMotion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageRetail;)
++ (NSString * _Nonnull)imageRetail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageScrollMotion;)
 + (NSString * _Nonnull)imageScrollMotion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexImage;)
 + (NSString * _Nonnull)carouselComplexImage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexRetailImage;)
++ (NSString * _Nonnull)carouselComplexRetailImage SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexVideo;)
 + (NSString * _Nonnull)carouselComplexVideo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAutoInteraction;)
@@ -2282,6 +2302,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDebugger 
 
 
 
+SWIFT_CLASS("_TtC6GFPSDK16GFPExtraAssetKey")
+@interface GFPExtraAssetKey : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull engagement;)
++ (NSString * _Nonnull)engagement SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull promotion1;)
++ (NSString * _Nonnull)promotion1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull promotion2;)
++ (NSString * _Nonnull)promotion2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull overlayBadge;)
++ (NSString * _Nonnull)overlayBadge SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @class NSCoder;
 
 SWIFT_CLASS_NAMED("GFPGradientLabelView")
@@ -3031,14 +3065,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)shoppingNdaLighting SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull splash;)
 + (NSString * _Nonnull)splash SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull splashVideo;)
++ (NSString * _Nonnull)splashVideo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull travelSpecialDA;)
 + (NSString * _Nonnull)travelSpecialDA SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageToMotion;)
 + (NSString * _Nonnull)imageToMotion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageRetail;)
++ (NSString * _Nonnull)imageRetail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageScrollMotion;)
 + (NSString * _Nonnull)imageScrollMotion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexImage;)
 + (NSString * _Nonnull)carouselComplexImage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexRetailImage;)
++ (NSString * _Nonnull)carouselComplexRetailImage SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexVideo;)
 + (NSString * _Nonnull)carouselComplexVideo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAutoInteraction;)

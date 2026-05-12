@@ -953,16 +953,27 @@ extension GFPSDK.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateV
   @objc public static let shoppingNda: Swift.String
   @objc public static let shoppingNdaLighting: Swift.String
   @objc public static let splash: Swift.String
+  @objc public static let splashVideo: Swift.String
   @objc public static let travelSpecialDA: Swift.String
   @objc public static let imageToMotion: Swift.String
+  @objc public static let imageRetail: Swift.String
   @objc public static let imageScrollMotion: Swift.String
   @objc public static let carouselComplexImage: Swift.String
+  @objc public static let carouselComplexRetailImage: Swift.String
   @objc public static let carouselComplexVideo: Swift.String
   @objc public static let carouselAutoInteraction: Swift.String
   @objc public static let carouselTodayNaver: Swift.String
   @objc public static let carouselAdvoost1Line: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
   @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPExtraAssetKey : ObjectiveC.NSObject {
+  @objc public static let engagement: Swift.String
+  @objc public static let promotion1: Swift.String
+  @objc public static let promotion2: Swift.String
+  @objc public static let overlayBadge: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }

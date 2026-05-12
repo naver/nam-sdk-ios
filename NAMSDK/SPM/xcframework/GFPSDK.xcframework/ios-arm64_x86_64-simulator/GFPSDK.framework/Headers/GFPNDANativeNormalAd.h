@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) GFPNDAMediaView *iconView;
 @property (nonatomic, strong, readonly) GFPNativeAdRenderingSetting *nativeRenderingSetting;
-@property (nonatomic, strong) NSNumber *videoLoadTimeout;
+@property (nonatomic, strong, nullable) NSNumber *videoLoadTimeout;
 
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo
                      skAdNetworkInfo:(GFPSKAdNetworkInfo *)skNetworkInfo

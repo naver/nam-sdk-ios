@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/robbiehanson/KissXML.git", exact: "5.3.3"),
-        .package(url: "https://github.com/naver/nas-sdk-ios.git", .upToNextMinor(from: "1.5.4"))
+        .package(url: "https://github.com/naver/nas-sdk-ios.git", .upToNextMinor(from: "1.5.5"))
     ],
     targets: [
         // core
