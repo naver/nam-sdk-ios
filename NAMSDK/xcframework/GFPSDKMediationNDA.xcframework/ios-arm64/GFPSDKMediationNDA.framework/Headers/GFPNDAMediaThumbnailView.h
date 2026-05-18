@@ -1,5 +1,5 @@
 //
-//  GFPNDAOutstreamThumbView.h
+//  GFPNDAMediaThumbnailView.h
 //
 //  NAM(Naver Ad Manager) SDK for iOS
 //  Copyright 2022-present NAVER Corp.
@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "GFPNativeAdRenderingSetting.h"
+#import "GFPNDAMediaThumbnailMeta.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class GFPError;
 @class GFPNDAMediaThumbnailView;
-@class GFPNDARichExtendMeta;
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaThumbnailViewType) {
     GFPNDAMediaThumbnailViewTypeDefault = 1,
@@ -25,7 +25,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaThumbnailViewType) {
 @property (nonatomic, assign, readonly) BOOL isLoaded;
 @property (nonatomic, weak, readonly, nullable) UIImage *image;
 
-@property (nonatomic, strong, nullable) GFPNDARichExtendMeta *richExtendMeta;
+@property (nonatomic, strong, nullable) GFPNDAMediaThumbnailMeta *thumbnailMeta;
 
 - (instancetype)initWith:(GFPNDAMediaThumbnailViewType)type enableBgBlur:(BOOL)enableBgBlur;
 

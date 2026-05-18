@@ -140,9 +140,13 @@
 		<data>
 		NXdT1hCeS33gqitoick0Rzugl2I=
 		</data>
+		<key>Headers/GFPNDAMediaThumbnailMeta.h</key>
+		<data>
+		ZJjemFXV/0oiI2MvTdLaHb4fi+4=
+		</data>
 		<key>Headers/GFPNDAMediaThumbnailView.h</key>
 		<data>
-		OXwAas5NfuBVBnTRYIX6AzbxHyM=
+		aAurpY3QbDgRat/fqul7fo9lnQg=
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
@@ -605,15 +609,26 @@
 			h9HzxBwR2FkkP9a2n9hUPh61eDylkV96ybzEAuBEjOk=
 			</data>
 		</dict>
+		<key>Headers/GFPNDAMediaThumbnailMeta.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZJjemFXV/0oiI2MvTdLaHb4fi+4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ITBLn6MNoqQ6LJzEng5fAAn8sh6bh/bcgEsqlh2TN1g=
+			</data>
+		</dict>
 		<key>Headers/GFPNDAMediaThumbnailView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OXwAas5NfuBVBnTRYIX6AzbxHyM=
+			aAurpY3QbDgRat/fqul7fo9lnQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y4SBoVsBvNfaBT5+FWWNDzC5zMMc6bL1275Ssqpxcrk=
+			2hoLJz1jSWjmonrzG3cddxAg3jwhg+1F2WY61NNj1S4=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaView.h</key>
