@@ -26,7 +26,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"8.21.2"
+#define GFP_SDK_VERSION              @"8.21.3"
 #define GFP_SDK_MEDIATION_NAME		 @"glad"
 
 @interface GFPCoreConfig : NSObject <GFPWebViewAppEnvDelegate>
