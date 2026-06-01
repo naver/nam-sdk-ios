@@ -1,0 +1,690 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "GFPSDKMediationMoloco",
+    "printedName": "GFPSDKMediationMoloco",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPMolocoAdType",
+        "printedName": "GFPMolocoAdType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "banner",
+            "printedName": "banner",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMoloco.GFPMolocoAdType.Type) -> GFPSDKMediationMoloco.GFPMolocoAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMolocoAdType",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                    "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPMolocoAdType",
+                        "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                        "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType@GFPMolocoAdTypeBanner",
+            "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO6banneryA2CmF",
+            "moduleName": "GFPSDKMediationMoloco",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "native",
+            "printedName": "native",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMoloco.GFPMolocoAdType.Type) -> GFPSDKMediationMoloco.GFPMolocoAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMolocoAdType",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                    "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPMolocoAdType",
+                        "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                        "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType@GFPMolocoAdTypeNative",
+            "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO6nativeyA2CmF",
+            "moduleName": "GFPSDKMediationMoloco",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "interstitial",
+            "printedName": "interstitial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMoloco.GFPMolocoAdType.Type) -> GFPSDKMediationMoloco.GFPMolocoAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMolocoAdType",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                    "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPMolocoAdType",
+                        "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                        "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType@GFPMolocoAdTypeInterstitial",
+            "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO12interstitialyA2CmF",
+            "moduleName": "GFPSDKMediationMoloco",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rewarded",
+            "printedName": "rewarded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMoloco.GFPMolocoAdType.Type) -> GFPSDKMediationMoloco.GFPMolocoAdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMolocoAdType",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                    "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPMolocoAdType",
+                        "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                        "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType@GFPMolocoAdTypeRewarded",
+            "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO8rewardedyA2CmF",
+            "moduleName": "GFPSDKMediationMoloco",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "desc",
+            "printedName": "desc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GFPSDKMediationMoloco15GFPMolocoAdTypeO4descSSvp",
+            "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO4descSSvp",
+            "moduleName": "GFPSDKMediationMoloco",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GFPSDKMediationMoloco15GFPMolocoAdTypeO4descSSvg",
+                "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO4descSSvg",
+                "moduleName": "GFPSDKMediationMoloco",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMolocoAdType",
+                    "printedName": "GFPSDKMediationMoloco.GFPMolocoAdType",
+                    "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21GFPSDKMediationMoloco15GFPMolocoAdTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "GFPSDKMediationMoloco",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GFPSDKMediationMoloco15GFPMolocoAdTypeO8rawValueSivp",
+            "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO8rawValueSivp",
+            "moduleName": "GFPSDKMediationMoloco",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GFPSDKMediationMoloco15GFPMolocoAdTypeO8rawValueSivg",
+                "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO8rawValueSivg",
+                "moduleName": "GFPSDKMediationMoloco",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@GFPSDKMediationMoloco@E@GFPMolocoAdType",
+        "mangledName": "$s21GFPSDKMediationMoloco15GFPMolocoAdTypeO",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 9,
+      "value": "\"4.6.1.0\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 715,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 366,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 12,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 975,
+      "length": 10,
+      "value": "\"bidtoken\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 8,
+      "value": "\"appKey\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 10,
+      "value": "\"adUnitId\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 427,
+      "length": 13,
+      "value": "\"bid_payload\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 521,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 564,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 609,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Native\/GFPMolocoNativeAdaptor.swift",
+      "kind": "Dictionary",
+      "offset": 912,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Interstitial\/GFPMolocoInterstitialAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 813,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Reward\/GFPMolocoRewardedAdAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 797,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

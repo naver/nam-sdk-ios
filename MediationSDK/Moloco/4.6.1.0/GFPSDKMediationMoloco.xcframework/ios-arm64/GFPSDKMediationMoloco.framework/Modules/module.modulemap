@@ -1,0 +1,4 @@
+framework module GFPSDKMediationMoloco {
+  header "GFPSDKMediationMoloco-Swift.h"
+  requires objc
+}
