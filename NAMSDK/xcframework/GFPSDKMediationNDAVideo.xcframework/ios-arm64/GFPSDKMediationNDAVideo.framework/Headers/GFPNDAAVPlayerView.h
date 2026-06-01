@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) CGSize playerSize;
 
 - (void)setVideoGravity:(AVLayerVideoGravity)gravity;
+- (void)refreshLayer;
 
 @end
 

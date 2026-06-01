@@ -610,6 +610,8 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   @objc public var isPreferContentWidthUI: Swift.Bool
   @objc public var adAdditionalInfoView: (any UIKit.UIView & GFPSDK.GFPVideoAdAdditionalViewDataAccessibilityProvider)?
   @objc public var omFriendlyObstructions: [GFPSDK.GFPOMFriendlyObstruction]?
+  @objc public var isNonSkippableAd: Swift.Bool
+  @objc public var hideProgressInfo: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -746,6 +748,7 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   case chartBoost
   case BidMachine
   case pangle
+  case moloco
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -774,6 +777,8 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   case LAN
   case bidMachine
   case pangle
+  case teads
+  case moloco
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -807,6 +812,7 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   case chartBoost
   case BidMachine
   case pangle
+  case moloco
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -830,6 +836,7 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   case chartBoost
   case BidMachine
   case pangle
+  case moloco
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -855,6 +862,7 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
     @objc get
     @objc set
   }
+  @objc public var sequence: Swift.Int
   @objc public init(scheduleID aScheduleID: Swift.String, requestID: Swift.String, contentLength: Swift.Float)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit

@@ -21,8 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPEventReportPresentable <NSObject>
 
-@property (nonatomic, strong) NSNumber *adCallRequestTime;
-@property (nonatomic, strong) NSNumber *responseSavedTime;
+@property (nonatomic, strong) NSNumber *adCallLatencyTime; //for t0
+@property (nonatomic, strong) NSNumber *responseSavedTime; //for caching's t3
 
 @end
 

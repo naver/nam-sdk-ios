@@ -22,6 +22,7 @@ static const CGFloat kPlayerBottomPIPViewHeight = 5.0;
 - (instancetype)initWithFrame:(CGRect)frame duration:(NSTimeInterval)aDuration NS_DESIGNATED_INITIALIZER;
 
 - (void)updateProgressWith:(NSTimeInterval)aCurrentTime;
+- (void)updateHideProgressInfo:(BOOL)hideProgressInfo;
 
 @end
 

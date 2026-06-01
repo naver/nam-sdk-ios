@@ -137,6 +137,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (GFPVideoSchedule * __nullable)generatePreRollVideoSchedule:(NSString *)adUnitId
                                                      adsCount:(NSInteger)adsCount;
+/**
+ * 스케줄 주입을 위한 응답정보를 생성합니다.
+ * @param adUnitId ad unit id
+ * @param adsCount 재생할 광고 수
+ * @param adSourceDelayInterval 2번째 광고 소스부터 적용되는 최대 딜레이 (초). 기본값 5초
+ */
++ (GFPVideoSchedule * __nullable)generatePreRollVideoSchedule:(NSString *)adUnitId
+                                                     adsCount:(NSInteger)adsCount
+                                        adSourceDelayInterval:(NSTimeInterval)adSourceDelayInterval;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -58,6 +58,8 @@ typedef NS_OPTIONS(NSInteger, GFPNDAControlStatus) {
 
 @property (nonatomic, assign) CGFloat contentWidth;
 @property (nonatomic, assign) BOOL isPreferContentWidthUI;
+@property (nonatomic, assign) BOOL isNonSkippableAd;
+@property (nonatomic, assign) BOOL hideProgressInfo;
 
 @property (nonatomic, readonly, assign) BOOL showSkipButton;
 

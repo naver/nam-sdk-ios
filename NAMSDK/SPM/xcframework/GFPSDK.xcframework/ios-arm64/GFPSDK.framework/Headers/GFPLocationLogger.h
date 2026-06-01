@@ -81,13 +81,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isTermsAgreed;
 
 /**
- * 저장된 위치 데이터를 서버로 벌크 전송
- * 쿠키가 설정되지 않은 경우 전송하지 않음
- */
-- (void)sendBulkLocationData;
-
-
-/**
  * 수집 주기 설정
  * @param minutes 수집 주기 (분 단위)
  */

@@ -651,7 +651,8 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionChartBoost = 11,
   GFPBannerProviderOptionBidMachine = 12,
   GFPBannerProviderOptionPangle = 13,
-  GFPBannerProviderOptionEnd = 14,
+  GFPBannerProviderOptionMoloco = 14,
+  GFPBannerProviderOptionEnd = 15,
 };
 
 
@@ -784,7 +785,8 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionChartBoost = 12,
   GFPInterstitialAdProviderOptionBidMachine = 13,
   GFPInterstitialAdProviderOptionPangle = 14,
-  GFPInterstitialAdProviderOptionEnd = 15,
+  GFPInterstitialAdProviderOptionMoloco = 15,
+  GFPInterstitialAdProviderOptionEnd = 16,
 };
 
 @class GFPSpannableOption;
@@ -935,7 +937,9 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionLAN = 6,
   GFPNativeProviderOptionBidMachine = 7,
   GFPNativeProviderOptionPangle = 8,
-  GFPNativeProviderOptionEnd = 9,
+  GFPNativeProviderOptionTeads = 9,
+  GFPNativeProviderOptionMoloco = 10,
+  GFPNativeProviderOptionEnd = 11,
 };
 
 
@@ -980,7 +984,8 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionChartBoost = 12,
   GFPRewardedAdProviderOptionBidMachine = 13,
   GFPRewardedAdProviderOptionPangle = 14,
-  GFPRewardedAdProviderOptionEnd = 15,
+  GFPRewardedAdProviderOptionMoloco = 15,
+  GFPRewardedAdProviderOptionEnd = 16,
 };
 
 enum GFPRichMediaDataAdType : NSInteger;
@@ -1135,6 +1140,7 @@ SWIFT_CLASS("_TtC6GFPSDK15GFPVideoAdParam")
 @property (nonatomic, readonly) NSInteger remindRequest;
 @property (nonatomic) NSInteger startDelay;
 @property (nonatomic) BOOL hasRemind;
+@property (nonatomic) NSInteger sequence;
 - (nonnull instancetype)initWithScheduleID:(NSString * _Nonnull)aScheduleID requestID:(NSString * _Nonnull)requestID contentLength:(float)contentLength OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1197,6 +1203,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 @property (nonatomic, strong) UIView <GFPVideoAdAdditionalViewDataAccessibilityProvider> * _Nullable adAdditionalInfoView;
 /// OMSDK를 측정하는 광고의 friendlyObstruction을 설정합니다.
 @property (nonatomic, copy) NSArray<GFPOMFriendlyObstruction *> * _Nullable omFriendlyObstructions;
+/// 스킵 할 수 없는 광고를 설정합니다. (기본값은 false)
+/// false: 광고 응답 데이터에 맞게 ui가 구성됩니다.
+/// true: true로 설정 시 skip 버튼/skip 라벨/adAdditionalInfoView가 숨김처리 됩니다.
+@property (nonatomic) BOOL isNonSkippableAd;
+/// 인스트림 광고의 progress info ui를 숨깁니다. (기본값은 false)
+/// false: 광고 응답 데이터에 맞게 ui가 구성됩니다.
+/// true: true로 설정 시 progress bar/ad currentTime/ ad duration ui가 숨김처리 됩니다.
+@property (nonatomic) BOOL hideProgressInfo;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1993,7 +2007,8 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionChartBoost = 11,
   GFPBannerProviderOptionBidMachine = 12,
   GFPBannerProviderOptionPangle = 13,
-  GFPBannerProviderOptionEnd = 14,
+  GFPBannerProviderOptionMoloco = 14,
+  GFPBannerProviderOptionEnd = 15,
 };
 
 
@@ -2126,7 +2141,8 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionChartBoost = 12,
   GFPInterstitialAdProviderOptionBidMachine = 13,
   GFPInterstitialAdProviderOptionPangle = 14,
-  GFPInterstitialAdProviderOptionEnd = 15,
+  GFPInterstitialAdProviderOptionMoloco = 15,
+  GFPInterstitialAdProviderOptionEnd = 16,
 };
 
 @class GFPSpannableOption;
@@ -2277,7 +2293,9 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionLAN = 6,
   GFPNativeProviderOptionBidMachine = 7,
   GFPNativeProviderOptionPangle = 8,
-  GFPNativeProviderOptionEnd = 9,
+  GFPNativeProviderOptionTeads = 9,
+  GFPNativeProviderOptionMoloco = 10,
+  GFPNativeProviderOptionEnd = 11,
 };
 
 
@@ -2322,7 +2340,8 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionChartBoost = 12,
   GFPRewardedAdProviderOptionBidMachine = 13,
   GFPRewardedAdProviderOptionPangle = 14,
-  GFPRewardedAdProviderOptionEnd = 15,
+  GFPRewardedAdProviderOptionMoloco = 15,
+  GFPRewardedAdProviderOptionEnd = 16,
 };
 
 enum GFPRichMediaDataAdType : NSInteger;
@@ -2477,6 +2496,7 @@ SWIFT_CLASS("_TtC6GFPSDK15GFPVideoAdParam")
 @property (nonatomic, readonly) NSInteger remindRequest;
 @property (nonatomic) NSInteger startDelay;
 @property (nonatomic) BOOL hasRemind;
+@property (nonatomic) NSInteger sequence;
 - (nonnull instancetype)initWithScheduleID:(NSString * _Nonnull)aScheduleID requestID:(NSString * _Nonnull)requestID contentLength:(float)contentLength OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -2539,6 +2559,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval GFPVi
 @property (nonatomic, strong) UIView <GFPVideoAdAdditionalViewDataAccessibilityProvider> * _Nullable adAdditionalInfoView;
 /// OMSDK를 측정하는 광고의 friendlyObstruction을 설정합니다.
 @property (nonatomic, copy) NSArray<GFPOMFriendlyObstruction *> * _Nullable omFriendlyObstructions;
+/// 스킵 할 수 없는 광고를 설정합니다. (기본값은 false)
+/// false: 광고 응답 데이터에 맞게 ui가 구성됩니다.
+/// true: true로 설정 시 skip 버튼/skip 라벨/adAdditionalInfoView가 숨김처리 됩니다.
+@property (nonatomic) BOOL isNonSkippableAd;
+/// 인스트림 광고의 progress info ui를 숨깁니다. (기본값은 false)
+/// false: 광고 응답 데이터에 맞게 ui가 구성됩니다.
+/// true: true로 설정 시 progress bar/ad currentTime/ ad duration ui가 숨김처리 됩니다.
+@property (nonatomic) BOOL hideProgressInfo;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

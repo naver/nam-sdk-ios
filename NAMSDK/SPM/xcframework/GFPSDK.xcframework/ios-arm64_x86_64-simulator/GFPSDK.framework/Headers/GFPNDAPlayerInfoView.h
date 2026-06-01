@@ -56,6 +56,7 @@ static const CGFloat kPlayerInfoViewMaxHeight = 56.0;
 - (void)hideOverlayView;
 
 - (void)updateInfoViewWith:(GFPNDAPlayerInfoViewType)viewType;
+- (void)updateNonSkippableAd:(BOOL)isNonSkippableAd;
 
 - (IBAction)skipTappedByService:(id)sender;
 

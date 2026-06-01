@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/GFPNDAAVPlayerView.h</key>
 		<data>
-		lBIHPYARh8SkpNhYf00jVM2jg80=
+		THch+htXBSwO+CVL13eCH7Xn2hQ=
 		</data>
 		<key>Headers/GFPNDABaseVideoAdManager.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/GFPNDAPlayerBottomPIPView.h</key>
 		<data>
-		nHVvmiRkG/5wRfri4mkuBL+HkUI=
+		k5JC2x2A9zi2wCfbyel/y9hvtso=
 		</data>
 		<key>Headers/GFPNDAPlayerBottomView.h</key>
 		<data>
-		XSfutjvKgK6v7AvRSHohJ1fF4Wo=
+		vDmgol2BeolC2e2zF05TZPRS4Ck=
 		</data>
 		<key>Headers/GFPNDAPlayerControlPIPView.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/GFPNDAPlayerControlViewDelegate.h</key>
 		<data>
-		bXWAyEIuu85xT6HwH9amnhA14Kk=
+		JWMZTdnkm6NqWHyG3FgidtT/w0c=
 		</data>
 		<key>Headers/GFPNDAPlayerDelegate.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Headers/GFPNDAPlayerInfoPIPView.h</key>
 		<data>
-		7RG5/WZHlBXhd026Q2hJxS8tT0k=
+		p7c5X8YpIUotMG20rb8Wl1kCnWw=
 		</data>
 		<key>Headers/GFPNDAPlayerInfoView.h</key>
 		<data>
-		u+6g3IuP1jbCABfcqnPbj8ZELsU=
+		NsSh9ADqpIWwqnTXsfXVjgNoy+g=
 		</data>
 		<key>Headers/GFPNDAPlayerKeywordView.h</key>
 		<data>
@@ -198,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lBIHPYARh8SkpNhYf00jVM2jg80=
+			THch+htXBSwO+CVL13eCH7Xn2hQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			yTKHjVFH2UZtDeIbJv+akmVoo9ktepQGTwjnu/k3ql0=
+			wci9qJTXmHKgRhzLpqt9bAPJfEqmz4JigJpuFTb/0KY=
 			</data>
 		</dict>
 		<key>Headers/GFPNDABaseVideoAdManager.h</key>
@@ -231,22 +231,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nHVvmiRkG/5wRfri4mkuBL+HkUI=
+			k5JC2x2A9zi2wCfbyel/y9hvtso=
 			</data>
 			<key>hash2</key>
 			<data>
-			UXjpWVTSDdL+qAlhsG2Y05rfIHYCMyqLL7n+n9GPKuk=
+			PTgTPSCDsUyMV0JbPYZGMuZYuVqjZ/uRLy8GFLRDGLQ=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerBottomView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XSfutjvKgK6v7AvRSHohJ1fF4Wo=
+			vDmgol2BeolC2e2zF05TZPRS4Ck=
 			</data>
 			<key>hash2</key>
 			<data>
-			8zKr9IbVzeqkTqzBeRQTHrlz6dh2CwY0eGlbc6jZWok=
+			GJkhYrGK90nAA/Ou+ohHU8tAAXRocHOaYMqHZaKUw/A=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerControlPIPView.h</key>
@@ -275,11 +275,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bXWAyEIuu85xT6HwH9amnhA14Kk=
+			JWMZTdnkm6NqWHyG3FgidtT/w0c=
 			</data>
 			<key>hash2</key>
 			<data>
-			iyL5WWGSE7wv97H+XoNz4VSH22KBrWncpN6z9tlPi7I=
+			a7lHKFoEqPPIl2BHxWEksA0CNzNoTiXVZBG/Zqhhv48=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerDelegate.h</key>
@@ -297,22 +297,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7RG5/WZHlBXhd026Q2hJxS8tT0k=
+			p7c5X8YpIUotMG20rb8Wl1kCnWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			eEIsreyKNXMIpP8Otyej6sUDatpba9cpZZYnFlurim4=
+			7cqAQEE5IRMsWeNJP32166yewHdb/KQChvFIWyuJkoY=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerInfoView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u+6g3IuP1jbCABfcqnPbj8ZELsU=
+			NsSh9ADqpIWwqnTXsfXVjgNoy+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			COWhcOA5e1M32VWQwyXKbhN0h384lMm/fkMiPnXalAM=
+			v9eDLvRtELyLZTvUnaziK2sjGDAAfLMCmofsk1P5jTo=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAPlayerKeywordView.h</key>

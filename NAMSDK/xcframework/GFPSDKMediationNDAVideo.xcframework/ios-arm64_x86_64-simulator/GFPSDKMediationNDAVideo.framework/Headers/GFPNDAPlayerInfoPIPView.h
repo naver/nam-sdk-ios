@@ -50,6 +50,8 @@ typedef NS_ENUM(NSInteger, GFPNDAPlayerInfoPIPViewType) {
 - (void)showInfoView;
 - (void)hideInfoView;
 
+- (void)updateNonSkippableAd:(BOOL)isNonSkippableAd;
+
 @end
 
 NS_ASSUME_NONNULL_END

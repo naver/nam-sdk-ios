@@ -80,6 +80,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (readwrite, nonatomic, nullable) GFPS2SRewardedParam *rewardedParam;
 
+/**
+ * Unified Id Map (JSON 문자열 형식).
+ */
+@property (readwrite, nonatomic, copy, nullable) NSString *uim;
+
 
 /**
  * s2s waterfall skip을 위해 지원하는 queryString.

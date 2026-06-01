@@ -22,6 +22,7 @@ static const CGFloat kPlayerBottomViewMinHeight = 25.0;
                      duration:(NSTimeInterval)aDuration NS_DESIGNATED_INITIALIZER;
 
 - (void)updateProgressWith:(NSTimeInterval)aCurrentTime;
+- (void)updateHideProgressInfo:(BOOL)hideProgressInfo;
 
 - (void)showOverlayView;
 - (void)hideOverlayView;

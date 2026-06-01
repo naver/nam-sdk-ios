@@ -49,6 +49,8 @@ typedef NS_OPTIONS(NSInteger, GFPVideoSourceStatus) {
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSInteger const kGFPVideoAdSourceInvalidIndex;
+
 #pragma mark - GFPVideoAdSource
 @interface GFPVideoAdSource : NSObject <NSCopying>
 
@@ -56,9 +58,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) NSString *sourceID;
 @property (nonatomic, readonly, assign) BOOL hasRemindAd;
 @property (nonatomic, readonly, assign) NSInteger delayMills;
+@property (nonatomic, readonly, assign) NSInteger sequence;
+@property (nonatomic, readonly, assign) BOOL isLastSource;
 
-
-- (instancetype)initWithDictionary:(NSDictionary *)aDict type:(GFPVideoPlacementType)aType;
+- (instancetype)initWithDictionary:(NSDictionary *)aDict type:(GFPVideoPlacementType)aType sequence:(NSInteger)sequence;
+- (void)updateLastSource:(BOOL)isLastSource;
 
 + (NSArray <GFPVideoAdSource *> *)adSourcesWithDictionary:(NSArray <NSDictionary *> *)aDicts type:(GFPVideoPlacementType)aType;
 
@@ -100,6 +104,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) BOOL isAllLoaded;
 @property (nonatomic, readonly, assign) BOOL isAllCompleted;
 @property (nonatomic, readonly, assign) BOOL hasMoreLoaded;
+@property (nonatomic, readonly, assign) BOOL hasNotYetLoaded;
 @property (nonatomic, readonly, assign) BOOL hasLoadedAd;
 @property (nonatomic, readonly, assign) BOOL isPlaying;
 

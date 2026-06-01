@@ -39,7 +39,9 @@ typedef NS_OPTIONS(NSInteger, GFPNativeAdProviderType) {
     GFPNativeAdProviderTypeLAN = 1 << 6,
     GFPNativeAdProviderTypeBidMachine = 1 << 7,
     GFPNativeAdProviderTypeVungle = 1 << 8, // Vungle
-    GFPNativeAdProviderTypePangle = 1 << 9
+    GFPNativeAdProviderTypePangle = 1 << 9,
+    GFPNativeAdProviderTypeTeads = 1 << 10,  // Teads
+    GFPNativeAdProviderTypeMoloco = 1 << 11
 };
 
 typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
