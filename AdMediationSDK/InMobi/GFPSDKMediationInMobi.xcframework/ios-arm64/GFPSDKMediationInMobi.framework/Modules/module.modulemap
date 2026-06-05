@@ -1,0 +1,11 @@
+framework module GFPSDKMediationInMobi {
+  umbrella header "GFPSDKMediationInMobi.h"
+  export *
+
+  module * { export * }
+}
+
+module GFPSDKMediationInMobi.Swift {
+  header "GFPSDKMediationInMobi-Swift.h"
+  requires objc
+}
