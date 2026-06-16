@@ -93,6 +93,12 @@ typedef NS_OPTIONS(NSInteger, GFPVideoViewType) {
 @property (nonatomic, strong, nullable) GFPQoeTrackingInfo *qoeTrackingInfo;
 
 
+/**
+ * 광고 종료 후 썸네일 숨김 여부를 설정합니다. (기본값: NO)
+ */
+@property (nonatomic, assign) BOOL shouldHideThumbnailAfterAd;
+
+
 + (instancetype)createGlobalOptionsWithViewType:(GFPVideoViewType)viewType;
 + (instancetype)createGlobalOptionsWithUseCustomControlView:(BOOL)useCustomControlView;
 + (instancetype)createGlobalOptionsWithViewType:(GFPVideoViewType)viewType useCustonControlView:(BOOL)useCustomControlView;

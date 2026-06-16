@@ -714,6 +714,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDebugger 
 + (GFPDebugger * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) BOOL waterfallDebugEnabled;
 @property (nonatomic, copy) NSString * _Nullable waterfallFileName;
+/// 워터폴 json 이 번들 루트가 아닌 하위 폴더(folder reference 로 구조 보존)에 있을 때의 서브디렉토리.
+@property (nonatomic, copy) NSString * _Nullable waterfallSubdirectory;
 @property (nonatomic) BOOL sdkInitDebugEnabled;
 @property (nonatomic, copy) NSString * _Nullable sdkInitFileName;
 - (NSDictionary<NSString *, id> * _Nullable)debugWaterfallDict SWIFT_WARN_UNUSED_RESULT;

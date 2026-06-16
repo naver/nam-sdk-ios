@@ -271,6 +271,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public static let shared: GFPSDK.GFPDebugger
   @objc public var waterfallDebugEnabled: Swift.Bool
   @objc public var waterfallFileName: Swift.String?
+  @objc public var waterfallSubdirectory: Swift.String?
   @objc public var sdkInitDebugEnabled: Swift.Bool
   @objc public var sdkInitFileName: Swift.String?
   @objc public func debugWaterfallDict() -> Swift.Dictionary<Swift.String, Any>?
