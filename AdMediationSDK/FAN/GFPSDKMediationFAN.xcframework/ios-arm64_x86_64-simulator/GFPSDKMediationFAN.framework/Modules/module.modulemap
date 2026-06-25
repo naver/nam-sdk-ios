@@ -1,0 +1,11 @@
+framework module GFPSDKMediationFAN {
+  umbrella header "GFPSDKMediationFAN.h"
+  export *
+
+  module * { export * }
+}
+
+module GFPSDKMediationFAN.Swift {
+  header "GFPSDKMediationFAN-Swift.h"
+  requires objc
+}
