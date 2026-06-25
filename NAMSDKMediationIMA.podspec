@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDKMediationIMA"
-  s.version      = "3.31.0.1"
+  s.version      = "3.31.0.2"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -15,14 +15,14 @@ Pod::Spec.new do |s|
                    }
   
   s.ios.deployment_target = "15.0"
-  s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :branch => "main" }
+  s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "IMA-#{s.version.to_s}" }
 
-  s.vendored_frameworks = "MediationSDK/IMA/#{s.version.to_s}/GFPSDKMediationIMA.xcframework"
+  s.vendored_frameworks = "AdMediationSDK/IMA/GFPSDKMediationIMA.xcframework"
   
   s.dependency 'NAMSDK/GFPSDK', '>= 8.22.0'
   s.dependency 'GoogleAds-IMA-iOS-SDK', '3.31.0'
 
-  s.resources = ["MediationSDK/IMA/#{s.version.to_s}/ResourceBundle/GFPIMAResource.bundle"]
+  s.resources = ["AdMediationSDK/IMA/ResourceBundle/GFPIMAResource.bundle"]
 
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
   
