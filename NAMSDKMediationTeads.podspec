@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDKMediationTeads"
-  s.version      = "6.0.10.0"
+  s.version      = "6.0.10.1"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
                    }
   
   s.ios.deployment_target = "13.0"
-  s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :branch => "main" }
+  s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "Teads-#{s.version.to_s}" }
   
-  s.vendored_frameworks = "MediationSDK/Teads/#{s.version.to_s}/GFPSDKMediationTeads.xcframework"
+  s.vendored_frameworks = "AdMediationSDK/Teads/GFPSDKMediationTeads.xcframework"
 
   s.dependency 'NAMSDK/GFPSDK', '>= 8.22.0'
   s.dependency 'TeadsSDK', '6.0.10'
