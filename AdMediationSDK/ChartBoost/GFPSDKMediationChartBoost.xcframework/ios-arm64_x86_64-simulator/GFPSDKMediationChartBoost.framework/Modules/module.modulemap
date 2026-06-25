@@ -1,0 +1,4 @@
+framework module GFPSDKMediationChartBoost {
+  header "GFPSDKMediationChartBoost-Swift.h"
+  requires objc
+}
