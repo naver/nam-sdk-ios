@@ -1,0 +1,4 @@
+framework module GFPSDKMediationIronSource {
+  header "GFPSDKMediationIronSource-Swift.h"
+  requires objc
+}
