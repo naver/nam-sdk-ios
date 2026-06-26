@@ -236,7 +236,7 @@
       "kind": "StringLiteral",
       "offset": 464,
       "length": 9,
-      "value": "\"3.0.0.2\""
+      "value": "\"3.0.1.0\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationLAN\/Native\/GFPLANNativeAdAdaptor.swift",
