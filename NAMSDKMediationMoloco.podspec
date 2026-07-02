@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NAMSDKMediationMoloco"
-  s.version      = "4.6.1.1"
+  s.version      = "4.6.1.2"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.

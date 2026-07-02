@@ -582,105 +582,105 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 9,
-      "value": "\"4.6.1.1\""
+      "value": "\"4.6.1.2\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 715,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 366,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 382,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 404,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
       "kind": "StringLiteral",
       "offset": 975,
       "length": 10,
       "value": "\"bidtoken\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 359,
       "length": 8,
       "value": "\"appKey\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 10,
       "value": "\"adUnitId\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 427,
       "length": 13,
       "value": "\"bid_payload\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 521,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 564,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 609,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Native\/GFPMolocoNativeAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Native\/GFPMolocoNativeAdaptor.swift",
       "kind": "Dictionary",
       "offset": 912,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Interstitial\/GFPMolocoInterstitialAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Interstitial\/GFPMolocoInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 813,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Reward\/GFPMolocoRewardedAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Reward\/GFPMolocoRewardedAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 797,
       "length": 5,
