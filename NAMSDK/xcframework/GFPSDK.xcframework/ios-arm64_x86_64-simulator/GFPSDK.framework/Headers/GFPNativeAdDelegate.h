@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GFPNativeAd.h"
 
 @class GFPNativeAdBase;
 @class GFPNativeAd;
@@ -92,6 +93,17 @@ NS_ASSUME_NONNULL_BEGIN
  * @param nativeAd 네이티브 광고 객체
  */
 - (void)nativeAdDidFailToLoadMediaData:(GFPNativeAd *)nativeAd;
+
+/**
+ * LazyLoading 사용 시, icon/media asset 각각의 로딩 상태가 변경될 때 호출됩니다.
+ * 기존 nativeAdDidLoadMediaData:, nativeAdDidFailToLoadMediaData: 호출은 유지됩니다.
+ * @param nativeAd 네이티브 광고 객체
+ * @param state 변경된 로딩 상태
+ * @param assetType 상태가 변경된 asset 타입
+ */
+- (void)nativeAd:(GFPNativeAd *)nativeAd
+didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
+       assetType:(GFPNativeAdMediaAssetType)assetType;
 
 @end
 
@@ -199,6 +211,17 @@ NS_ASSUME_NONNULL_BEGIN
  * @param nativeSimpleAd 네이티브 광고 객체
  */
 - (void)nativeSimpleAdDidFailToLoadMedia:(GFPNativeSimpleAd *)nativeSimpleAd;
+
+/**
+ * LazyLoading 사용 시, icon/media asset 각각의 로딩 상태가 변경될 때 호출됩니다.
+ * 기존 nativeSimpleAdDidLoadMedia:, nativeSimpleAdDidFailToLoadMedia: 호출은 유지됩니다.
+ * @param nativeSimpleAd 네이티브 광고 객체
+ * @param state 변경된 로딩 상태
+ * @param assetType 상태가 변경된 asset 타입
+ */
+- (void)nativeSimpleAd:(GFPNativeSimpleAd *)nativeSimpleAd
+didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
+             assetType:(GFPNativeAdMediaAssetType)assetType;
 
 /**
  * Special DA Rich광고 더블크라운, 트리플 크라운의 최소 영역을 전달받을 때 사용합니다.

@@ -25,6 +25,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//LazyLoading 시 유예(deferred)된 비디오 로드의 시작 시점을 광고 단위로 조율한다.
+//비디오 뷰는 유예하는 순간 스스로 등록하므로, 뷰 계층 구조나 광고 타입(Complex/Renderer 등
+//컨테이너가 비디오 뷰를 품는 형태)과 무관하게 트리거가 누락되지 않는다. (GFPSDK-1579)
+@interface GFPNDALazyMediaLoadCoordinator : NSObject
+
+//아직 트리거 전이면 mediaView를 보류 목록에 등록하고 YES를 반환한다.
+//이미 트리거된 후면 NO를 반환하며, 호출측은 유예 없이 즉시 로드해야 한다.
+//(코디네이터 또는 mediaView가 nil이면 NO가 되어 즉시 로드로 안전하게 동작)
+- (BOOL)deferVideoLoadForMediaView:(GFPNDAMediaView * _Nullable)mediaView;
+
+//보류 중인 모든 비디오 뷰의 로드를 시작시키고, 이후의 유예 요청은 거절되도록 래치를 세운다.
+//하나라도 트리거했으면 YES를 반환한다.
+- (BOOL)triggerDeferredVideoLoads;
+
+- (BOOL)hasPendingDeferredVideoLoad;
+
+@end
+
 @interface GFPNDAMediaViewRenderInfo : NSObject
 
 @property (nonatomic, assign, readonly) BOOL hasRenderAdBadge;
@@ -36,6 +54,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) GFPAdInterfaceStyle adInterfaceStyle;
 @property (nonatomic, strong, readonly) GFPAdChoiceInfo *adChoiceInfo;
 @property (nonatomic, assign, readonly) GFPNDAAdMuteState adMuteState;
+
+//renderInfo는 접근할 때마다 새로 생성되지만(GFPNDANativeNormalAd/SimpleAd의 renderInfo getter),
+//코디네이터는 광고(GFPNDANativeAd)가 단일 소유한 인스턴스를 실어 나른다.
+@property (nonatomic, strong, nullable) GFPNDALazyMediaLoadCoordinator *lazyMediaLoadCoordinator;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWith:(GFPNativeBaseRenderingSetting *)renderingSetting;

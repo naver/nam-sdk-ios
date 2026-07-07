@@ -12,6 +12,7 @@
 #import "GFPNDAMediaView.h"
 #import "GFPNDAAdMuteView.h"
 #import "GFPEventReporter.h"
+#import "GFPNativeAd.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPAdEventObject;
 @class GFPNDAMediaView;
 @class GFPNDAMediaViewRenderInfo;
+@class GFPNDALazyMediaLoadCoordinator;
 @class GFPError;
 @class GFPAdChoicesData;
 @class GFPNDANativeLandingTapGesture;
@@ -64,8 +66,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nativeAdDidLoadMediaData:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdDidFailToLoadMediaData:(GFPNDANativeAd *)nativeAd;
+- (void)nativeAd:(GFPNDANativeAd *)nativeAd
+didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
+       assetType:(GFPNativeAdMediaAssetType)assetType;
 
 - (CGFloat)minimumSpecialDaRegionHeight;
+
+@end
+
+@class GFPNDANativeAd;
+
+/**
+ * lazy 비디오 미디어의 VAST 사이즈 resolver 인터페이스.
+ * 구현체(GFPNDAVastMediaSizeResolver)는 VAST 파서 접근이 가능한 MediationNDARich 모듈에 있고,
+ * 베이스는 NSClassFromString 으로 동적 로딩한다(팩토리의 기존 모듈 경계 관례).
+ */
+@protocol GFPNDALazyVideoMediaSizeResolving <NSObject>
+
++ (nullable id<GFPNDALazyVideoMediaSizeResolving>)resolverForNativeAd:(GFPNDANativeAd *)nativeAd
+                                                           completion:(void (^)(CGSize mediaSize,
+                                                                                id _Nullable vastAd,
+                                                                                id _Nullable vastMacroProvider))completion;
+- (void)resolveWithVastXML:(nullable NSString *)vastXML;
 
 @end
 
@@ -82,9 +104,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) GFPNDAMediaView *mediaView;
 @property (nonatomic, strong, readonly) GFPNDAMediaViewRenderInfo *renderInfo;
+//LazyLoading 시 유예된 비디오 로드의 등록/트리거를 광고 단위로 조율. renderInfo를 통해 미디어 뷰로 전달된다.
+@property (nonatomic, strong, readonly) GFPNDALazyMediaLoadCoordinator *lazyMediaLoadCoordinator;
 @property (nonatomic, assign, readonly) BOOL isExpired;
 @property (nonatomic, assign, readonly) BOOL isLoadedIcon; //for nn
 @property (nonatomic, assign, readonly) BOOL isLazyLoading;
+@property (nonatomic, assign, readonly) GFPNativeAdMediaLoadingState iconLoadingState;
+@property (nonatomic, assign, readonly) GFPNativeAdMediaLoadingState mediaLoadingState;
 
 @property (nonatomic, assign, readonly) CGSize cropSize;
 
@@ -114,6 +140,35 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loadAd;
 
+/**
+ * LazyLoading 시 광고 타입(loadAd 재정의 여부)과 무관하게 로드 완료를 통지하기 위한 진입점.
+ * adaptor가 loadAd 직후 호출한다. lazyLoading이 아니거나 이미 완료 통지되었으면 no-op.
+ */
+- (void)completeLoadForLazyLoadingIfNeeded;
+
+/**
+ * lazy 로드 완료 통지 훅. 기본 구현은 비디오 메인 미디어의 VAST 사이즈 resolve 를 마친 뒤
+ * notifyLoadCompletionForLazyLoading 을 호출한다. (비디오는 응답에 크기가 없어 resolve 전에는
+ * mediaData 를 만들 수 없으므로, 타입별 재정의 누락으로 mediaData nil 인 채 통지되지 않도록
+ * 베이스에서 일괄 보장한다 — CAROUSEL_VIDEO_MEDIA 초기 높이 0 재발 방지)
+ */
+- (void)performLazyLoadCompletion;
+
+/**
+ * lazy 로드 완료를 delegate에 통지한다. performLazyLoadCompletion 구현체가 호출.
+ */
+- (void)notifyLoadCompletionForLazyLoading;
+
+/**
+ * lazy 비디오 미디어의 VAST 사이즈 resolve 완료 훅 (기본 no-op).
+ * 서브클래스가 resolve 결과물(vastAd 등)을 자신의 미디어 뷰에 전달할 때 override 한다.
+ * vastAd/vastMacroProvider 는 각각 GFPVastAd/GFPVastMacroProvider 이며,
+ * resolve 실패 시 mediaSize 는 CGSizeZero, vastAd 는 nil 일 수 있다.
+ */
+- (void)didResolveLazyVideoMediaSize:(CGSize)mediaSize
+                              vastAd:(nullable id)vastAd
+                   vastMacroProvider:(nullable id)vastMacroProvider;
+
 - (void)registerViewWith:(GFPNativeBaseView *)nativeAdView error:(GFPError **)error;
 - (void)unregisterView;
 
@@ -124,6 +179,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nativeAdDidLoad;
 - (void)nativeAdDidFailWithError:(GFPError *)error;
+- (void)nativeAdDidFailBeforeAssetLoad:(GFPError *)error;
+
+- (BOOL)triggerDeferredVideoLoadIfNeeded;
 
 - (void)layoutBackgroundView:(GFPNativeBaseView *)nativeAdView mediaView:(GFPNDAMediaView *)mediaView;
 - (void)layoutMediaViews;
@@ -138,6 +196,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isReloadRequired;
 - (void)reloadMediaResource;
 - (void)additionalRenderingViewClicked:(UIView *)clickedView;
+
+- (void)markMediaLoading;
+- (void)markIconLoading;
+- (void)resetMediaLoadingState;
+- (void)resetIconLoadingState;
 
 //for link
 - (void)tapGestureWith:(GFPNDANativeLandingTapGesture *)gesture;

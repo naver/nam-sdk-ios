@@ -9,6 +9,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "GFPNativeAd.h"
 
 @protocol GFPNativeAdapting;
 
@@ -50,6 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nativeAdAdaptorDidLoadMediaData:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
 - (void)nativeAdAdaptorDidFailToLoadMediaData:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+- (void)nativeAdAdaptor:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor
+didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
+              assetType:(GFPNativeAdMediaAssetType)assetType;
 
 - (CGFloat)minimumSpecialDaRegionHeight;
 

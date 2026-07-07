@@ -66,6 +66,18 @@ typedef NS_OPTIONS(NSInteger, GFPExternalMediaViewType) {
     GFPExternalMediaViewTypeTripleCrown = 110
 };
 
+typedef NS_ENUM(NSInteger, GFPNativeAdMediaLoadingState) {
+    GFPNativeAdMediaLoadingStateNotAvailable = 0,
+    GFPNativeAdMediaLoadingStateLoading,
+    GFPNativeAdMediaLoadingStateLoaded,
+    GFPNativeAdMediaLoadingStateFailed,
+};
+
+typedef NS_ENUM(NSInteger, GFPNativeAdMediaAssetType) {
+    GFPNativeAdMediaAssetTypeIcon = 0,
+    GFPNativeAdMediaAssetTypeMedia,
+};
+
 @interface GFPNativeAdBase : NSObject
 
 /**
@@ -116,6 +128,22 @@ typedef NS_OPTIONS(NSInteger, GFPExternalMediaViewType) {
  * 광고 배경 정보
  */
 @property (nullable, readonly, nonatomic, strong) GFPAdStyleOption *adStyleOption;
+
+/**
+ * Icon asset loading state.
+ *
+ * If the ad has no icon asset, or the provider does not expose per-asset loading state,
+ * the value is GFPNativeAdMediaLoadingStateNotAvailable.
+ */
+@property (readonly, nonatomic, assign) GFPNativeAdMediaLoadingState iconLoadingState;
+
+/**
+ * Main media asset loading state.
+ *
+ * If the ad has no media asset, or the provider does not expose per-asset loading state,
+ * the value is GFPNativeAdMediaLoadingStateNotAvailable.
+ */
+@property (readonly, nonatomic, assign) GFPNativeAdMediaLoadingState mediaLoadingState;
 
 @end
 

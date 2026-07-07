@@ -731,6 +731,15 @@ extension GFPSDK.GFPContentInfo : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @objcMembers public class GFPAdDebuggerEnabler : ObjectiveC.NSObject {
   @objc public static let shared: GFPSDK.GFPAdDebuggerEnabler
+  @objc public static var isDeveloperEnvironment: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isSimulatorEnvironment: Swift.Bool {
+    @objc get
+  }
+  @objc public static var isDebuggerAttached: Swift.Bool {
+    @objc get
+  }
   @objc public func setup()
   @objc deinit
 }
@@ -802,6 +811,7 @@ extension NaverAdsServices.GFPError {
   @objc public func logAdError(_ error: NaverAdsServices.GFPError?, logId: Foundation.UUID?)
   @objc public func logAdView(_ adView: UIKit.UIView?, logId: Foundation.UUID?)
   public func logAdViewType(_ adViewType: GFPSDK.GFPAdViewType?, logId: Foundation.UUID?)
+  @objc(logLoadResponseInfo:logId:) public func logLoadResponseInfo(_ responseInfo: GFPSDK.GFPLoadResponseInfo?, logId: Foundation.UUID?)
   @objc(logGlobalTimeout:configName:loaderClassName:forLogId:) public func logGlobalTimeout(_ timeout: Foundation.TimeInterval, configName: Swift.String, loaderClassName: Swift.String, forLogId logId: Foundation.UUID?)
   @objc public func logAdRequest(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
   @objc public func logAdEvent(_ log: GFPSDK.GFPAPILog?, logId: Foundation.UUID?)
@@ -859,10 +869,7 @@ extension GFPSDK.GFPObjcEnum {
   }
 }
 @objc @objcMembers public class GFPAdLog : ObjectiveC.NSObject, Swift.Codable {
-  @objc weak public var adView: UIKit.UIView? {
-    @objc get
-    @objc set
-  }
+  @objc weak public var adView: UIKit.UIView?
   @objc public var timestamp: Foundation.Date {
     get
   }
@@ -1000,6 +1007,9 @@ extension GFPSDK.GFPAdParam : Swift.Codable {
   case prefetchCompleted
   case prefetchFailed
   case cacheLimitReached
+  case lazyLoadingStarted
+  case lazyLoadingCompleted
+  case lazyLoadingFailed
   public var stringValue: Swift.String {
     get
   }

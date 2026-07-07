@@ -95,6 +95,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (GFPIconData * _Nullable)iconData;
 
+- (GFPNativeAdMediaLoadingState)mediaLoadingState;
+
+- (GFPNativeAdMediaLoadingState)iconLoadingState;
+
 - (GFPAdChoicesData * _Nullable)adChoicesData;
 
 - (NSString * _Nullable)extraTextWith:(NSString *)key;

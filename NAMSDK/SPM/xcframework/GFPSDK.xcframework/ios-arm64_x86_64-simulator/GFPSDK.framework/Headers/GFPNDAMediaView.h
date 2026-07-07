@@ -141,6 +141,10 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)reloadNativeMedia;
 - (void)additionalRenderingViewClicked:(UIView *)clickedView;
 
+//for deferred video lazy loading
+- (BOOL)hasDeferredVideoLoad;
+- (void)triggerDeferredVideoLoad;
+
 //for external, additional ad ( ex. triple crown )
 - (void)clearAdditionalAds;
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "GFPMediaView.h"
+#import "GFPPlaceholderHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPNativeBaseView : UIView
 
 @property (nonatomic, weak, nullable) IBOutlet GFPMediaView *mediaView;
+@property (nonatomic, copy, nullable) GFPPlaceholderWillRemoveHandler placeholderWillRemoveHandler;
 /**
  * 리치 광고의 추가 렌더링 광고를 위한 뷰 전달 옵션입니다.
  */

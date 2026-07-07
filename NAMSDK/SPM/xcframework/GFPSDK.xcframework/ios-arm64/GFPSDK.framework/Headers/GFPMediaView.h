@@ -16,6 +16,7 @@ static CGFloat const kRichAdMaxWidth = 414;
 @interface GFPMediaView : UIView
 
 @property (nonatomic, assign) BOOL isImageSizePreferred;
+@property (nonatomic, copy, nullable) GFPPlaceholderWillRemoveHandler placeholderWillRemoveHandler;
 
 - (void)showPlaceholderWith:(GFPPlaceholderHandler _Nullable)placeholderSetter;
 - (void)removePlaceholder;

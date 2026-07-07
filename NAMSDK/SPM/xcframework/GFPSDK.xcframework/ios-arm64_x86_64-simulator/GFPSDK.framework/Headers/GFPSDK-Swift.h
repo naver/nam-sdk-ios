@@ -373,6 +373,15 @@ SWIFT_CLASS("_TtC6GFPSDK20GFPAdDebuggerEnabler")
 @interface GFPAdDebuggerEnabler : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPAdDebuggerEnabler * _Nonnull shared;)
 + (GFPAdDebuggerEnabler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// 개발자용 fallback: 시뮬레이터 실행 또는 디버거가 붙은 프로세스(Xcode에서 실행 등)에서는
+/// 사내망 판별이나 서버 인증 없이도 Ad Debugger 를 쓸 수 있게 한다.
+/// 실사용자 배포 빌드는 시뮬레이터가 아니고 디버거도 붙을 수 없으므로 일반 사용자에게 노출되지 않는다.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isDeveloperEnvironment;)
++ (BOOL)isDeveloperEnvironment SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSimulatorEnvironment;)
++ (BOOL)isSimulatorEnvironment SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isDebuggerAttached;)
++ (BOOL)isDebuggerAttached SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setup;
@@ -417,6 +426,9 @@ typedef SWIFT_ENUM(NSInteger, GFPAdDebuggerInternalLogType, open) {
   GFPAdDebuggerInternalLogTypePrefetchCompleted = 25,
   GFPAdDebuggerInternalLogTypePrefetchFailed = 26,
   GFPAdDebuggerInternalLogTypeCacheLimitReached = 27,
+  GFPAdDebuggerInternalLogTypeLazyLoadingStarted = 28,
+  GFPAdDebuggerInternalLogTypeLazyLoadingCompleted = 29,
+  GFPAdDebuggerInternalLogTypeLazyLoadingFailed = 30,
 };
 
 typedef SWIFT_ENUM(NSInteger, GFPAdDebuggerLogType, open) {
@@ -873,6 +885,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 - (GFPAdLog * _Nullable)adLogForLogId:(NSUUID * _Nullable)logId SWIFT_WARN_UNUSED_RESULT;
 - (void)logAdError:(GFPError * _Nullable)error logId:(NSUUID * _Nullable)logId;
 - (void)logAdView:(UIView * _Nullable)adView logId:(NSUUID * _Nullable)logId;
+- (void)logLoadResponseInfo:(GFPLoadResponseInfo * _Nullable)responseInfo logId:(NSUUID * _Nullable)logId;
 /// Log global timeout config value from loader before ad request (ObjC-compatible)
 - (void)logGlobalTimeout:(NSTimeInterval)timeout configName:(NSString * _Nonnull)configName loaderClassName:(NSString * _Nonnull)loaderClassName forLogId:(NSUUID * _Nullable)logId;
 - (void)logAdRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
@@ -1963,6 +1976,15 @@ SWIFT_CLASS("_TtC6GFPSDK20GFPAdDebuggerEnabler")
 @interface GFPAdDebuggerEnabler : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPAdDebuggerEnabler * _Nonnull shared;)
 + (GFPAdDebuggerEnabler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// 개발자용 fallback: 시뮬레이터 실행 또는 디버거가 붙은 프로세스(Xcode에서 실행 등)에서는
+/// 사내망 판별이나 서버 인증 없이도 Ad Debugger 를 쓸 수 있게 한다.
+/// 실사용자 배포 빌드는 시뮬레이터가 아니고 디버거도 붙을 수 없으므로 일반 사용자에게 노출되지 않는다.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isDeveloperEnvironment;)
++ (BOOL)isDeveloperEnvironment SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSimulatorEnvironment;)
++ (BOOL)isSimulatorEnvironment SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isDebuggerAttached;)
++ (BOOL)isDebuggerAttached SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setup;
@@ -2007,6 +2029,9 @@ typedef SWIFT_ENUM(NSInteger, GFPAdDebuggerInternalLogType, open) {
   GFPAdDebuggerInternalLogTypePrefetchCompleted = 25,
   GFPAdDebuggerInternalLogTypePrefetchFailed = 26,
   GFPAdDebuggerInternalLogTypeCacheLimitReached = 27,
+  GFPAdDebuggerInternalLogTypeLazyLoadingStarted = 28,
+  GFPAdDebuggerInternalLogTypeLazyLoadingCompleted = 29,
+  GFPAdDebuggerInternalLogTypeLazyLoadingFailed = 30,
 };
 
 typedef SWIFT_ENUM(NSInteger, GFPAdDebuggerLogType, open) {
@@ -2463,6 +2488,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 - (GFPAdLog * _Nullable)adLogForLogId:(NSUUID * _Nullable)logId SWIFT_WARN_UNUSED_RESULT;
 - (void)logAdError:(GFPError * _Nullable)error logId:(NSUUID * _Nullable)logId;
 - (void)logAdView:(UIView * _Nullable)adView logId:(NSUUID * _Nullable)logId;
+- (void)logLoadResponseInfo:(GFPLoadResponseInfo * _Nullable)responseInfo logId:(NSUUID * _Nullable)logId;
 /// Log global timeout config value from loader before ad request (ObjC-compatible)
 - (void)logGlobalTimeout:(NSTimeInterval)timeout configName:(NSString * _Nonnull)configName loaderClassName:(NSString * _Nonnull)loaderClassName forLogId:(NSUUID * _Nullable)logId;
 - (void)logAdRequest:(GFPAPILog * _Nullable)log logId:(NSUUID * _Nullable)logId;
