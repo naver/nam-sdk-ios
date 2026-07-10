@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "GFPNDAAdChoiceResourceUtils.h"
 
+extern CGFloat const kAdMuteRFontSizeMax;
+extern CGFloat const kAdMuteRFontSizeMin;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @class GFPNDAAdMuteReasonView;

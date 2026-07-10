@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPNDAReasonCollectionViewCell : UICollectionViewCell <GFPNDAAdChoiceResourcePresentable>
 
 - (void)updateText:(NSString *)text;
+- (void)updateText:(NSString *)text preferredFont:(UIFont *)font;
 
 + (NSString *)identifier;
 
