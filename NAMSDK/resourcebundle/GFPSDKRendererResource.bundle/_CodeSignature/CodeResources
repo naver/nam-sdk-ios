@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8POeZAkXopWtRwtrZIB9P7b5TGc=
+		ZecaNjJkZRPKoDJtZz561KpZNEM=
 		</data>
 		<key>GFPRendererShoppingLabelView.nib</key>
 		<data>
@@ -29,21 +29,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8POeZAkXopWtRwtrZIB9P7b5TGc=
-			</data>
 			<key>hash2</key>
 			<data>
-			kUjNaur8H2N2ije4kfEd0YkHpRJY08zdQ9c6L6+1Dw8=
+			G6nZ588mkHdAFIkVctGsNBzjTSphkFOuOmvdr/F8hOA=
 			</data>
 		</dict>
 		<key>GFPRendererShoppingLabelView.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yYWLHxeETCtt/G3CEdKXAMm9s/U=
-			</data>
 			<key>hash2</key>
 			<data>
 			zV1xORaRX0nGyGGyizyGT3PM60n5R8icySAtgaYWJZ0=
@@ -51,10 +43,6 @@
 		</dict>
 		<key>GFPRendererSplashView.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iJqzRtLz1qs56LsIsQ0XiApxUps=
-			</data>
 			<key>hash2</key>
 			<data>
 			8i1b8301j95uhDveGGv1myLAJ1ImB9OzT4HkX3r9XDk=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>GFPTemplateDefaultNativeBannerView.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gnCzo5/34dJKfkBbMArW1m79MYo=
-			</data>
 			<key>hash2</key>
 			<data>
 			LTE8FZGwyKHHHmV91S3lOzcwTbpIqCIZ5C4ScLs6r9I=
@@ -73,10 +57,6 @@
 		</dict>
 		<key>GFPTemplateDefaultNativeView.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IcQqNjqC+NXUwL4Z1hTfR38vJGk=
-			</data>
 			<key>hash2</key>
 			<data>
 			ImJCG4Z6tNPKcOk2NNzNRP44s+gXB2EFJw3gxWQV8/0=

@@ -7,5 +7,4 @@ framework module GFPSDK {
 
 module GFPSDK.Swift {
   header "GFPSDK-Swift.h"
-  requires objc
 }

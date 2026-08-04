@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		D5CJ5RlvMNT2BhaP8ZYDUW/gINo=
+		8nOtgOMAse7Z2qevJZiQlp+pX+w=
 		</data>
 		<key>GFPNDAAutoPagingInteractionCell.nib</key>
 		<data>
@@ -147,21 +147,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			D5CJ5RlvMNT2BhaP8ZYDUW/gINo=
-			</data>
 			<key>hash2</key>
 			<data>
-			3PUIaHWwJF61KX8Bqof69OBdNdABetjT9pdfo0bbsaU=
+			uKDcHrbZLnRxSdKJ+NwiD2viwQbR+dPc+/rRHl4M7oo=
 			</data>
 		</dict>
 		<key>GFPNDAAutoPagingInteractionCell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vQvj1knmzLivPqICiGn9rW/5n5k=
-			</data>
 			<key>hash2</key>
 			<data>
 			IvvgRfC+rlM0OlxBJF21ur4a5FVSUU9dn5knTyPvbGg=
@@ -169,10 +161,6 @@
 		</dict>
 		<key>GFPNDAReasonCollectionViewCell.nib/objects-12.3+.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sOOhxv4n1hphAoRpLcI4yrweP7w=
-			</data>
 			<key>hash2</key>
 			<data>
 			V/iSJLSXoFXCojx9NKr2FT9AzyM4AIMqMlztYTyoFhs=
@@ -180,10 +168,6 @@
 		</dict>
 		<key>GFPNDAReasonCollectionViewCell.nib/runtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gKbB2K1fr50GuaqsIDc1LUEdRyI=
-			</data>
 			<key>hash2</key>
 			<data>
 			TvWQFJx2tBtK6GF1N8D5zJiv5hKUxoNx+RqLQu38Q8Y=
@@ -191,10 +175,6 @@
 		</dict>
 		<key>GFPNDAShoppingNDA1X1Cell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			72gU6kgad61uXXbBa8PqoeCJDJE=
-			</data>
 			<key>hash2</key>
 			<data>
 			sIzFdb91nAo2ZKMX0QalpDyL5lttYKMuXFzK0jiyMdo=
@@ -202,10 +182,6 @@
 		</dict>
 		<key>GFPNDAShoppingNDA1X3Cell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ryTz0B5U2gLKbziIBIxfnKwVI3U=
-			</data>
 			<key>hash2</key>
 			<data>
 			d1P953fHh8sRkKIBZIse/T3A6GqoFNLz2PlME4nkJEs=
@@ -213,10 +189,6 @@
 		</dict>
 		<key>GFPNDAShoppingNDABottomScrollCell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BBuu3gPVUoO9JfyYCVJ8IzlP+ww=
-			</data>
 			<key>hash2</key>
 			<data>
 			nSf1c5XGonbgIzFgU/p9BXfpdVX0zwtaNGbrrgw36go=
@@ -224,10 +196,6 @@
 		</dict>
 		<key>GFPNDAShoppingNDACell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GtHOMQqzB5/7SwE/lClhMfsGEtI=
-			</data>
 			<key>hash2</key>
 			<data>
 			Rxks+QpONdsCwBs72QoMkGLmmMIC5oktjLNiChLkp8o=
@@ -235,10 +203,6 @@
 		</dict>
 		<key>GFPNDAShoppingSearchNDACell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/Rx2yWFePdiwX+k5xY7TT1bhv9I=
-			</data>
 			<key>hash2</key>
 			<data>
 			E69zCtBN5exX1CFvEUwwFwLshtvKYtLbhpA3VCQ0bao=
@@ -246,10 +210,6 @@
 		</dict>
 		<key>GFPNDAShoppingSingleSlideCell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YznGZ8Wc5aPXM5Ot3D+Pk5n97NQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			HI2N4Apg1f39Exgazt2UT2f+df5XeENDLDV71Y6Xqz4=
@@ -257,10 +217,6 @@
 		</dict>
 		<key>GFPNDASmartChannelFlickingCell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			koDRyNTnoljfI2rpK8BcRL7PFg8=
-			</data>
 			<key>hash2</key>
 			<data>
 			YklEYwD6wp9i7SgIvwC22vuChqi+IxxhUg1mLEJD+pA=
@@ -268,10 +224,6 @@
 		</dict>
 		<key>GFPNDATravelNDACell.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o1VpuqhpNgw4zYAETixUEX5KbxY=
-			</data>
 			<key>hash2</key>
 			<data>
 			p0T/1iP1xq44/TbqRBNgWvXD02El4nXN2teTgo0lMvs=
@@ -279,10 +231,6 @@
 		</dict>
 		<key>de.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HhWxRZkW4iOnDQy9WJSRCVoTXAc=
-			</data>
 			<key>hash2</key>
 			<data>
 			3amiZoVwa4hpVnZApBPV/CK0RB/DWYqjE3oCWvwX06Y=
@@ -292,10 +240,6 @@
 		</dict>
 		<key>en.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			v1hdlfIcRfrYoISTzgEC0AXUOUw=
-			</data>
 			<key>hash2</key>
 			<data>
 			7l3Ta7253AW3A1Rqr7aNfJVgYLNQUeXSJXYckY4t0ZE=
@@ -305,10 +249,6 @@
 		</dict>
 		<key>es.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Y4kzbvnkr2oE4hUMsnjgWRNiaWA=
-			</data>
 			<key>hash2</key>
 			<data>
 			6okriCQ5V1N5uIqCKEpamEcQhgNLiXS4fNOAk/H6uEc=
@@ -318,10 +258,6 @@
 		</dict>
 		<key>fr.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zK1gFRb96XX/hGjP726DcFe/E5A=
-			</data>
 			<key>hash2</key>
 			<data>
 			tgRKGA4H2/Q8vq4VDNbg0vD7cLCrBeT86J59b99ZIZ0=
@@ -331,10 +267,6 @@
 		</dict>
 		<key>id.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fFJod4TT+8e20SHNXuN8laxNAQo=
-			</data>
 			<key>hash2</key>
 			<data>
 			BZLoo/c0Y6zgOUEhVfumCjJF6wfRcCQiRjBQH1npxyQ=
@@ -344,10 +276,6 @@
 		</dict>
 		<key>ja.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			O3LS7U2iDxoMepjPDilKfCF5alU=
-			</data>
 			<key>hash2</key>
 			<data>
 			WVv0BkifJ7mRSdTrYT3O3kBCsz6bbZgI6HF33MuYqFk=
@@ -357,10 +285,6 @@
 		</dict>
 		<key>ko.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			K22qTig5ZjcZHSLt/RF4B0y+hsg=
-			</data>
 			<key>hash2</key>
 			<data>
 			+XFt9K/oHdkWhSKe6y2BXpEicx16ePYBl/jDU5WtuaE=
@@ -370,10 +294,6 @@
 		</dict>
 		<key>th.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hqaP6gj8UmbmIui7nsWsGgRRd5A=
-			</data>
 			<key>hash2</key>
 			<data>
 			LLDwJRhEjBBHndtHqv9qb4zXS/grdyAD1CkWAS4URaM=
@@ -383,10 +303,6 @@
 		</dict>
 		<key>zh-Hans.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bAL/wEpyj8OJVKrXWcor6bmvmaE=
-			</data>
 			<key>hash2</key>
 			<data>
 			Serkycg6QiSf39CS8xHIjBcRecuhFtSriB0TNgwBYWE=
@@ -396,10 +312,6 @@
 		</dict>
 		<key>zh-Hant.lproj/GFPNDANativeLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1k4AVWc78OUTipxO4AJofYjXDc0=
-			</data>
 			<key>hash2</key>
 			<data>
 			5sY0LH8Rv/IuRjGudcm6FdrKVZXY4spwCkhT2A2czkc=

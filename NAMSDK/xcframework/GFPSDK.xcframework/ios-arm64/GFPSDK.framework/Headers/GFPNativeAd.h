@@ -11,6 +11,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "Swift-Enum.h"
+
 @class UIView;
 @class UIImage;
 
@@ -144,6 +146,8 @@ typedef NS_ENUM(NSInteger, GFPNativeAdMediaAssetType) {
  * the value is GFPNativeAdMediaLoadingStateNotAvailable.
  */
 @property (readonly, nonatomic, assign) GFPNativeAdMediaLoadingState mediaLoadingState;
+
+- (void)updateInterfaceStyle:(GFPAdInterfaceStyle)interfaceStyle NS_SWIFT_NAME(updateInterfaceStyle(_:));
 
 @end
 

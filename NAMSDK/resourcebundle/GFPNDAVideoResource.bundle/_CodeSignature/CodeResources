@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		eyjsdn93q5lVdk80Jf8Hr3VbIGM=
+		FKaJ40VJHiVZdrKsCit4T4+m404=
 		</data>
 		<key>GFPRemindTextView.nib</key>
 		<data>
@@ -107,21 +107,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eyjsdn93q5lVdk80Jf8Hr3VbIGM=
-			</data>
 			<key>hash2</key>
 			<data>
-			66MGFzvW9nJvhWprcSTH7KM8SD1dw86ILvhYdbHnVTQ=
+			etzZvcHTvwM5jvGB1D08D5jksm/IOl0E/6qrY5slYY4=
 			</data>
 		</dict>
 		<key>GFPRemindTextView.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RtXgdqt2mupHJ+oJdKhg37PdgNY=
-			</data>
 			<key>hash2</key>
 			<data>
 			c6n7mJS8hnFiLEGpZqZBX0bq0DvxSQKHry6osDVyQzQ=
@@ -129,10 +121,6 @@
 		</dict>
 		<key>de.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			79NlyE/h3mN/IHAhnyRUBdo4SFQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			hBVOUZkFAWVlloJ8wv1NHw96hsuCidgGAI/OZHFdykM=
@@ -142,10 +130,6 @@
 		</dict>
 		<key>en.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			p7Rox/J+q66lfiUvPbfs2KVFb2Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			DXiIVL5Q5XOoPgpeWVCQfVl52L4lxPqpYLys0rGcdTw=
@@ -155,10 +139,6 @@
 		</dict>
 		<key>es.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0Bg9A2ZxGanwK6QomNJWviaXvbM=
-			</data>
 			<key>hash2</key>
 			<data>
 			SOPsjp8/lu94w1i4ejCu3z8++Vz+9igKiVRntfwr14M=
@@ -168,10 +148,6 @@
 		</dict>
 		<key>fr.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TvET9x3IELYcVMC9UcdJhh5Wu5E=
-			</data>
 			<key>hash2</key>
 			<data>
 			pfVqdbmY5NrIQ4nple4jvkmYk7FrDZ4MPjwM91qQ2sE=
@@ -181,10 +157,6 @@
 		</dict>
 		<key>id.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u9ULoHTHq+V/wZfzNlRI9bQOeMA=
-			</data>
 			<key>hash2</key>
 			<data>
 			9vUPcqqEFxWVvac+kbLYLQ9SOoJqVU0yyx6c1GAcFUw=
@@ -194,10 +166,6 @@
 		</dict>
 		<key>ja.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			l2mauo+mKpGl/HDBx2bkd2HKenM=
-			</data>
 			<key>hash2</key>
 			<data>
 			zP2GjuDo4fE119VHyvmhsASSBLzMdLDesA14EmoWnHk=
@@ -207,10 +175,6 @@
 		</dict>
 		<key>ko.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lnqQeYcll/BA+jjRGldBNkMe9u0=
-			</data>
 			<key>hash2</key>
 			<data>
 			SdZjHDNyZClRZ+yAynw5pB0w5tO7eV8RKzr9u8BpilA=
@@ -220,10 +184,6 @@
 		</dict>
 		<key>th.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MRAjPqwUfsn7+LY5pJ6qWyCbz0Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			LqnJHNsSshfsqcF/wZE2xCEtow6L7b4sHkjKdYKvJkw=
@@ -233,10 +193,6 @@
 		</dict>
 		<key>zh-Hans.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NjZ792huoZZnHUIz2ZZv77p9rM4=
-			</data>
 			<key>hash2</key>
 			<data>
 			TVJRXOu2Fj6Tn5JqiMSqhI52v6D/J9CNV0pwPRFoaew=
@@ -246,10 +202,6 @@
 		</dict>
 		<key>zh-Hant.lproj/GFPNDAVideoLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ABxuRiAoTZ6illPRKwaYip2BKKQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			KEmCguVZ6hu1VpsW0XK+y0yXkKfu6t6opfb8BezTLdM=

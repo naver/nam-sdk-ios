@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/GFPSDKMediationNDAVideo-Swift.h</key>
 		<data>
-		qsVZLPRZ3l7WLWbvNy6Hu50yraw=
+		po7pWmRDRqtbr9yMNLzS/ImBKN0=
 		</data>
 		<key>Headers/GFPSDKMediationNDAVideo.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XmDQomHy9At1YRGGegKEWDnR3M4=
+		wJ1lnU2rgb54Tq58duHxE/z8nuM=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -142,19 +142,19 @@
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		in0jLFT+eVUBbtd97T7avDgjwlY=
+		dM+IEuveM7fR9KLC1Nx8oIdVFhQ=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ua+dZsonXY0rwt8vwpu/t4MSzAk=
+		YpseOYGN7lBUiPTK8L7biyeMicM=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		in0jLFT+eVUBbtd97T7avDgjwlY=
+		dM+IEuveM7fR9KLC1Nx8oIdVFhQ=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wo600J5N6vgso9DyOJFPpz6BIkc=
+		Y07PU1sPEXK7K439d18l80bE/rE=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -162,33 +162,29 @@
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		odUP5QgDfavm00wX9dijfBncNhQ=
+		X4fJY/5Wf/KhgxLSdIjaYq97kEY=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Z7UD82zMW4bml4BIBchOKr2ye+U=
+		oZwL8iyZ3924VlaUdaCbqwTPqFs=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		odUP5QgDfavm00wX9dijfBncNhQ=
+		X4fJY/5Wf/KhgxLSdIjaYq97kEY=
 		</data>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		L8vO6T/t0fSLCEVwmSxABJtyIi4=
+		Zl/dJCy31ZJGOpazf4bVLXiq+vI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		luxwck0OTydg0sRRBHAHXa7wIy4=
+		ndJMiLkNGz/G9HchCNRRN+LZew8=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/GFPFontUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aBsz4BmxkCv2DzF4g/wsIJkdsfg=
-			</data>
 			<key>hash2</key>
 			<data>
 			RZLsOA4F9e6GS/2zrwzx42R7P0KizikArf1B1rMmV6k=
@@ -196,10 +192,6 @@
 		</dict>
 		<key>Headers/GFPNDAAVPlayerView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			THch+htXBSwO+CVL13eCH7Xn2hQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			wci9qJTXmHKgRhzLpqt9bAPJfEqmz4JigJpuFTb/0KY=
@@ -207,10 +199,6 @@
 		</dict>
 		<key>Headers/GFPNDABaseVideoAdManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YUFVwGcDQ187KrxjqeH0s81MrDg=
-			</data>
 			<key>hash2</key>
 			<data>
 			nRjQvaTY6QlkPB+U/X0jaffmFDiX3FIrG1APpQbId18=
@@ -218,10 +206,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerAdChoicesView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OHaScahMxfDl9R94D9aMnnyBTXk=
-			</data>
 			<key>hash2</key>
 			<data>
 			PejCmNuXzqJQ1E5uVufl25h/Vf9B9bJckifaz1bDObw=
@@ -229,10 +213,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerBottomPIPView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			k5JC2x2A9zi2wCfbyel/y9hvtso=
-			</data>
 			<key>hash2</key>
 			<data>
 			PTgTPSCDsUyMV0JbPYZGMuZYuVqjZ/uRLy8GFLRDGLQ=
@@ -240,10 +220,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerBottomView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vDmgol2BeolC2e2zF05TZPRS4Ck=
-			</data>
 			<key>hash2</key>
 			<data>
 			GJkhYrGK90nAA/Ou+ohHU8tAAXRocHOaYMqHZaKUw/A=
@@ -251,10 +227,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerControlPIPView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8CAzji/+lj4wtfi5Yzm0l2cG/Rg=
-			</data>
 			<key>hash2</key>
 			<data>
 			TTR9vIsH99zDUcRHoW29WfBGUdYc/+PJ8gwGbqZs2UU=
@@ -262,10 +234,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerControlView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NQ/cXrfAOWnvC00TLvvbMtA/L2M=
-			</data>
 			<key>hash2</key>
 			<data>
 			abRz6ZINYnS2+73Tu/Gd///cxwY3G4eyFwJqoFCRgPI=
@@ -273,10 +241,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerControlViewDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JWMZTdnkm6NqWHyG3FgidtT/w0c=
-			</data>
 			<key>hash2</key>
 			<data>
 			a7lHKFoEqPPIl2BHxWEksA0CNzNoTiXVZBG/Zqhhv48=
@@ -284,10 +248,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lHTTwc+Jt9bulxc4xQFp+SvBFp0=
-			</data>
 			<key>hash2</key>
 			<data>
 			2S76ZWTltXEhZA+zWh17VE8hQFD6y2C46ZFN/NJWOA8=
@@ -295,10 +255,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerInfoPIPView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			p7c5X8YpIUotMG20rb8Wl1kCnWw=
-			</data>
 			<key>hash2</key>
 			<data>
 			7cqAQEE5IRMsWeNJP32166yewHdb/KQChvFIWyuJkoY=
@@ -306,10 +262,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerInfoView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NsSh9ADqpIWwqnTXsfXVjgNoy+g=
-			</data>
 			<key>hash2</key>
 			<data>
 			v9eDLvRtELyLZTvUnaziK2sjGDAAfLMCmofsk1P5jTo=
@@ -317,10 +269,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerKeywordView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			egA/aSENkoruHj36dDKOxEtfYp8=
-			</data>
 			<key>hash2</key>
 			<data>
 			9AuKGotwMc8Fxod9zYhA6eMrgiwZTi4kkXBXOcuaPgs=
@@ -328,10 +276,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerMidControlView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Y+V21AI/bApxGMrJpcA1k2hBPIM=
-			</data>
 			<key>hash2</key>
 			<data>
 			RjLRzsHuzq/OCvWf1B3CBIZYXpt4JI8aVYZ7nK2f5jI=
@@ -339,10 +283,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerTopControlView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			O9kH+g1DERj3MU04SdBdF6dUfiY=
-			</data>
 			<key>hash2</key>
 			<data>
 			l0ois/4yy017DN03+gCihM/a3UUnBc6FCCqTy92o3nU=
@@ -350,10 +290,6 @@
 		</dict>
 		<key>Headers/GFPNDAPlayerView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			n6pAZbbnc8CF7uwwrtyAnhw6D3g=
-			</data>
 			<key>hash2</key>
 			<data>
 			myAZKIGGtE6IK9ju4930OzqKmi7vV8nSGHRzXE+esTw=
@@ -361,10 +297,6 @@
 		</dict>
 		<key>Headers/GFPNDASearchKeywordView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FBGvMtI2w/bFJYFqOhIlUtDjoqU=
-			</data>
 			<key>hash2</key>
 			<data>
 			KELsa5OGAe6AT3jrFDWSKZH0dTfY1vKllADazAWfobQ=
@@ -372,10 +304,6 @@
 		</dict>
 		<key>Headers/GFPNDAVideoAdEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DLqbuVYKUHtAeanMpTtxlP2eGQU=
-			</data>
 			<key>hash2</key>
 			<data>
 			Ypi3iA7nkxaM+6co54snEBzL6lNHpy/Lg6kT7GgMxyg=
@@ -383,10 +311,6 @@
 		</dict>
 		<key>Headers/GFPNDAVideoAdManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PySUd2TCZjyZHY9EJktVF8ArL3Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			nU/BjrJTPMDiLLsdcMLnNSAHKRsc0kPlf7fsWux+Wro=
@@ -394,10 +318,6 @@
 		</dict>
 		<key>Headers/GFPNDAVideoAdaptor.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NPiSeqV4/YGv69c9Zhbu8cV6ac0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Lqwa8cxWUJ9c+RL2Ap+v+rzMLd/vXlmjlN4PvDpCkes=
@@ -405,10 +325,6 @@
 		</dict>
 		<key>Headers/GFPNDAVideoConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WMrFl4Tq1jVK8K0dfnLf7izkM6k=
-			</data>
 			<key>hash2</key>
 			<data>
 			Sw/42RSvT8fS0xPrWGFLtV9s3OTH6dGDIiQMMJvluzw=
@@ -416,10 +332,6 @@
 		</dict>
 		<key>Headers/GFPNDAVideoEventReporter.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lYxsF5RsgSLlRdxlvh2qt11uLks=
-			</data>
 			<key>hash2</key>
 			<data>
 			L5gPALtiSUcS4XFc0PJ0LsfYygRirW3XWj5pzl1/xlU=
@@ -427,10 +339,6 @@
 		</dict>
 		<key>Headers/GFPNDAVideoExtraInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IWTJqf/ywtfOyVFg/14H+kn+7WY=
-			</data>
 			<key>hash2</key>
 			<data>
 			wKgT4gc7YPCdsxQHH7Dl2nfWTt8bgmpH3lQvfyfEAFc=
@@ -438,10 +346,6 @@
 		</dict>
 		<key>Headers/GFPNDAVideoUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OpzCE0ACo8wS96p5NNwlRd3QJuI=
-			</data>
 			<key>hash2</key>
 			<data>
 			oQxeKROrm2PAL3wRp2goJ/wTP18upXlBxNOc22xk2vY=
@@ -449,10 +353,6 @@
 		</dict>
 		<key>Headers/GFPRemindBannerView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TPKGAIckEEDP+b9PamJKAHS9tAo=
-			</data>
 			<key>hash2</key>
 			<data>
 			QiKzPtC5DqeJDCxmpfX5KcmxBMj7eoYIalTNPA/ZqEQ=
@@ -460,10 +360,6 @@
 		</dict>
 		<key>Headers/GFPRemindTextView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NnZrqv8oMCdxmkxD+M4D6GBUEIs=
-			</data>
 			<key>hash2</key>
 			<data>
 			rdS/X29W+al/AqxjGxiZlpUxhaKUV1GZ1S58Pp+ie9w=
@@ -471,21 +367,13 @@
 		</dict>
 		<key>Headers/GFPSDKMediationNDAVideo-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qsVZLPRZ3l7WLWbvNy6Hu50yraw=
-			</data>
 			<key>hash2</key>
 			<data>
-			+RnLnPXU9Q0Seva1X044/VUGE9chU4B3FxgU6f5SIv8=
+			ATl7vYd58+paVdrTimcWPgiOHWbgeqsWGXDkCNBY5tE=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationNDAVideo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1vyYD7bNBwPTH6sLPWEYm0jxgvQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			gz2nViBdSYSgc7dSXFTVSyEo86rRfdufTLvVuq+ftjQ=
@@ -493,10 +381,6 @@
 		</dict>
 		<key>Headers/GFPTextAdViewAttribute+NDA.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9X9XB6HN71Tr05T0CgAD027oTzs=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qb7nsTDMEDTfiUFmVYM+9CzsRQPjMrtW0jwtxi5hX2k=
@@ -504,10 +388,6 @@
 		</dict>
 		<key>Headers/GFPVideoMediaFilesHelper.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gCEpMArtDKQLvljJLGcl2jwR900=
-			</data>
 			<key>hash2</key>
 			<data>
 			7XnWF60x3FqO2ZoszNtMqc2KuVBMiJkDhO//JBRqpiA=
@@ -515,10 +395,6 @@
 		</dict>
 		<key>Headers/GFPVideoProviderNDA.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ROkSTu0htbIGzXFkxLxuc1LpJgs=
-			</data>
 			<key>hash2</key>
 			<data>
 			nIZZnxRwQ5TEufD85hkRLuFw1+i0j5qiObE39cXpQJs=
@@ -526,10 +402,6 @@
 		</dict>
 		<key>Headers/NSDateComponentsFormatter+NDAPlayer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G+azUMqi/tH1NSCDW1mLOC48ndU=
-			</data>
 			<key>hash2</key>
 			<data>
 			3Uq1hUPXRVNyEh6fWho9B6YMoNS+R9PXz25Gz0DvJ84=
@@ -537,10 +409,6 @@
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			A6HyZ2f72KSakKcWzi9ON2y4X3Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			skPBHtPmyj6mXfHC45i4hlTlSFkbWaV6HBOujMHLs3E=
@@ -548,54 +416,34 @@
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			in0jLFT+eVUBbtd97T7avDgjwlY=
-			</data>
 			<key>hash2</key>
 			<data>
-			+LB/rhoQDHdr4J/AgGEPeaMD+Lihuvsk0r2QsCMLTvM=
+			F90qp7KdwGLYpFNmBfY3VIa+MMgI1FnlsQDFg7P0Ur4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ua+dZsonXY0rwt8vwpu/t4MSzAk=
-			</data>
 			<key>hash2</key>
 			<data>
-			cH0VH995uIXA+fKts32+0F6qO5iDfuCN4niYGi1ej9U=
+			G63+josqlXbkZGxMnIBhre5hf5gbjf9+rxl0Rj3QYWg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			in0jLFT+eVUBbtd97T7avDgjwlY=
-			</data>
 			<key>hash2</key>
 			<data>
-			+LB/rhoQDHdr4J/AgGEPeaMD+Lihuvsk0r2QsCMLTvM=
+			F90qp7KdwGLYpFNmBfY3VIa+MMgI1FnlsQDFg7P0Ur4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wo600J5N6vgso9DyOJFPpz6BIkc=
-			</data>
 			<key>hash2</key>
 			<data>
-			zKeiFChddre1QvtR5kPp921CBbkFEc2l0lsc+ln5Mow=
+			0bkDeeitZpdplw0psXfhxZYjkX6tIfQndkOmWrU+n48=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			A6HyZ2f72KSakKcWzi9ON2y4X3Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			skPBHtPmyj6mXfHC45i4hlTlSFkbWaV6HBOujMHLs3E=
@@ -603,57 +451,37 @@
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			odUP5QgDfavm00wX9dijfBncNhQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			0fTUK6/eRqn51mW1ZWLv9GydMgj1WdRpR05GTcRHHrA=
+			5uE+jtmvPtrL12UwhESbbeb0Yel2EaZbLBqSjx8IO14=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Z7UD82zMW4bml4BIBchOKr2ye+U=
-			</data>
 			<key>hash2</key>
 			<data>
-			+5Hi+3usr1iErpf4bvX1zkQbxAp6B0UgQ2tobOxodCw=
+			Ncc0F3j2Er8pdiEGzv+vmxd4X777to4luzC4JAbxeTI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			odUP5QgDfavm00wX9dijfBncNhQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			0fTUK6/eRqn51mW1ZWLv9GydMgj1WdRpR05GTcRHHrA=
+			5uE+jtmvPtrL12UwhESbbeb0Yel2EaZbLBqSjx8IO14=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationNDAVideo.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			L8vO6T/t0fSLCEVwmSxABJtyIi4=
-			</data>
 			<key>hash2</key>
 			<data>
-			ShsHxYD0OpIzYNOpSaL3/lPZthJb4ZsXlLabasLhwSc=
+			6NmMxNRYRXvRLyNE8bTjM0z5YOhgDKstrpi9NCrMvQ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			luxwck0OTydg0sRRBHAHXa7wIy4=
-			</data>
 			<key>hash2</key>
 			<data>
-			XxyJkLBUE+Mlgq7V0uPSmFnZvACK4ZQyV+fMfIsOQGo=
+			w9+U+U/vrmUYKAr4YlFCE0XfX3M2scoJQVST5jx+QEo=
 			</data>
 		</dict>
 	</dict>

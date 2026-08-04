@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "GFPAdAdapting.h"
 #import "GFPNativeAd.h"
+#import "Swift-Enum.h"
 
 @protocol GFPNativeAdaptorDelegate;
 
@@ -116,6 +117,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)existUserInterestDelegateWith:(BOOL)isExist;
 
 - (BOOL)isImageSizePreferred;
+
+- (void)updateInterfaceStyle:(GFPAdInterfaceStyle)interfaceStyle NS_SWIFT_NAME(updateInterfaceStyle(_:));
 
 @end
 
