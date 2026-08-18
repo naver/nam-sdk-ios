@@ -278,7 +278,7 @@
       "kind": "StringLiteral",
       "offset": 542,
       "length": 10,
-      "value": "\"9.10.1.2\""
+      "value": "\"9.13.0.0\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationChartBoost\/Common\/GFPChartBoostConfig.swift",

@@ -6,189 +6,141 @@
 	<dict>
 		<key>Headers/GFPSDKMediationChartBoost-Swift.h</key>
 		<data>
-		21MKt3S6RgsUho7auKQrOwW91Ek=
+		XdUGhkeWeT3H5cGQrKQOfMN+/uw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QF+hvLNQePhIstT3E9ZGsroi5v4=
+		VYFTOM0+8KjJizU/RF6L5Laqxmo=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		T83BCdgmdjOI8/he/GTE7SlkRYw=
+		Er57OXfIMBX5b6IWF5ifK/2sqW8=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YDKUjMFIvMbkoahc40UJ0hbpA8Q=
+		X56WgkPz6VRpr+Z/K0T3j47kk5M=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wERrgWSctJKfg2IiZCe3s/Dev4M=
+		vCnOWgHDjj0hc2adW7JR4JXGSNE=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YDKUjMFIvMbkoahc40UJ0hbpA8Q=
+		X56WgkPz6VRpr+Z/K0T3j47kk5M=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qBQX5ZcQr5WvuG+JmMVbIw8Gdwk=
+		/RH+l9oUJok+9X1LGz3vdqqCpGI=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		T83BCdgmdjOI8/he/GTE7SlkRYw=
+		Er57OXfIMBX5b6IWF5ifK/2sqW8=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vwYm6JaCo5hwWl7U0Zt+I8CEKz4=
+		2y7j3TDLQT6f0nuN9mwvio+kkE8=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kNd2VzSq7EZyNWHpckbYXirg4hU=
+		YLTqZy9TFLrKmmw9moNyn5GwMew=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vwYm6JaCo5hwWl7U0Zt+I8CEKz4=
+		2y7j3TDLQT6f0nuN9mwvio+kkE8=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6ENYyxJ7kYbJXKMZN8IWs5cKTT4=
+		BHVftDyiCCvcg4qlYItMhXZDWkc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Goudo/cA86R2dLEZvpTyeNv9GFU=
+		isQmamiOBZmstEgXatsQIR1h0Wo=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/GFPSDKMediationChartBoost-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			21MKt3S6RgsUho7auKQrOwW91Ek=
-			</data>
 			<key>hash2</key>
 			<data>
-			XSF6N95xfV+WlAJNA019M2xQRMWcQ06YaQ6XbSPeG4s=
+			pzVZE3RifS3N/raJNWBdvJG+Ed9m8gf641eh9opzgnk=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			T83BCdgmdjOI8/he/GTE7SlkRYw=
-			</data>
 			<key>hash2</key>
 			<data>
-			e+VAA5Ck2Ghbw23va3t5ULwVDQwcuFxcCrnvebEJ5e4=
+			dB6e+mUoY02xVoLS0/we/qzBvAkDMU5QhCea3cZFWc4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YDKUjMFIvMbkoahc40UJ0hbpA8Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			CuTBD6LzDyno+Deeh+ly7Jo7cehGnIxFYEDyis0YW6E=
+			9RAsn1D881eQgR18c9op2f7+ti+PRLZzwZTs5wQ0gv0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wERrgWSctJKfg2IiZCe3s/Dev4M=
-			</data>
 			<key>hash2</key>
 			<data>
-			8qTulYWKNAm9tKk5Z8fGabJWmEZ5YiervgVjfAfDF/8=
+			ub7T/0unaUFbbrDdhVaULtwKXp6GXKPryyX6OLymHzI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YDKUjMFIvMbkoahc40UJ0hbpA8Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			CuTBD6LzDyno+Deeh+ly7Jo7cehGnIxFYEDyis0YW6E=
+			9RAsn1D881eQgR18c9op2f7+ti+PRLZzwZTs5wQ0gv0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qBQX5ZcQr5WvuG+JmMVbIw8Gdwk=
-			</data>
 			<key>hash2</key>
 			<data>
-			OPXS1N0hd/pMkDiWwEjOUqPyW5OLeLEV07zOsZpBnMY=
+			TuN4OuigGw9FI15faUYWjevEHPpD8QJbkSJRDFzgPNU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			T83BCdgmdjOI8/he/GTE7SlkRYw=
-			</data>
 			<key>hash2</key>
 			<data>
-			e+VAA5Ck2Ghbw23va3t5ULwVDQwcuFxcCrnvebEJ5e4=
+			dB6e+mUoY02xVoLS0/we/qzBvAkDMU5QhCea3cZFWc4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vwYm6JaCo5hwWl7U0Zt+I8CEKz4=
-			</data>
 			<key>hash2</key>
 			<data>
-			Vs7BzZJt0y8/hKj1XJXkOeOj4BFbi5NtQByetCws2Sw=
+			XtJPnFHpdFw5b5KCMO9X2G4E6kRuz3I4LKYu5IOP5U0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kNd2VzSq7EZyNWHpckbYXirg4hU=
-			</data>
 			<key>hash2</key>
 			<data>
-			LYCNo8nY4FLnwTvod+ps4KWW1H5iStExyYMFdhDTqoo=
+			qElis25owbUHUeIL7mnhreoWHZGw1aWmBtdpJ3MdGYg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vwYm6JaCo5hwWl7U0Zt+I8CEKz4=
-			</data>
 			<key>hash2</key>
 			<data>
-			Vs7BzZJt0y8/hKj1XJXkOeOj4BFbi5NtQByetCws2Sw=
+			XtJPnFHpdFw5b5KCMO9X2G4E6kRuz3I4LKYu5IOP5U0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6ENYyxJ7kYbJXKMZN8IWs5cKTT4=
-			</data>
 			<key>hash2</key>
 			<data>
-			psqcpdxPjQy4dEjtqsMbnx6FyPVW+OQ3hJU//ap/YVw=
+			T7Kqpto/Wua51ZUylgqGiPegvxDb8drKz8HmKgOCdIU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Goudo/cA86R2dLEZvpTyeNv9GFU=
-			</data>
 			<key>hash2</key>
 			<data>
-			SZH7PoGFSQrK8RDxn11v9DQVlzYoM6RH4awahL7HFC0=
+			81vjSUC43XVBmT8UlfFAsJxuHqL9hdKVAf+2q4alIjs=
 			</data>
 		</dict>
 	</dict>

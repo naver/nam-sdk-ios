@@ -6,114 +6,86 @@
 	<dict>
 		<key>Headers/GFPSDKMediationChartBoost-Swift.h</key>
 		<data>
-		CK4YhZBC7FT+WdZc70tOUgFeVFM=
+		uugccqqoqbGOL+GvyPmIwtQLfzo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bJ8p+d2PEBtA0p6YpgMFEmDphmo=
+		tNbAaVQr9IToaopjOM0DC12wVpM=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		T83BCdgmdjOI8/he/GTE7SlkRYw=
+		Er57OXfIMBX5b6IWF5ifK/2sqW8=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Ms2/zCzweV2y2cENQsdvGUC9xQU=
+		dlzcJUhxKAt4YWsX8OqjR1O3OO0=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		rpHPVeYbGd9jzEIx7VEvnaMWdY4=
+		WB7ZGG7ld50H+iSF+84/n4juWGI=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Ms2/zCzweV2y2cENQsdvGUC9xQU=
+		dlzcJUhxKAt4YWsX8OqjR1O3OO0=
 		</data>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3Py7zp4wBJV1JngYcVeSYYgFgW0=
+		7/XhpYu4LDE29N6hx+llxxCvG5g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Goudo/cA86R2dLEZvpTyeNv9GFU=
+		isQmamiOBZmstEgXatsQIR1h0Wo=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/GFPSDKMediationChartBoost-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CK4YhZBC7FT+WdZc70tOUgFeVFM=
-			</data>
 			<key>hash2</key>
 			<data>
-			BMz8dX4spAjK8jm8cg/IDXv1AOqOkL8Uqmyl79898Qs=
+			2z8plq4u8P5SnEH2BEPs9ZWGTU44eYYwxtZNDDxrkBM=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			T83BCdgmdjOI8/he/GTE7SlkRYw=
-			</data>
 			<key>hash2</key>
 			<data>
-			e+VAA5Ck2Ghbw23va3t5ULwVDQwcuFxcCrnvebEJ5e4=
+			dB6e+mUoY02xVoLS0/we/qzBvAkDMU5QhCea3cZFWc4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ms2/zCzweV2y2cENQsdvGUC9xQU=
-			</data>
 			<key>hash2</key>
 			<data>
-			tw7IzRNz4ThyNR5JlK05VF4heJT29eL/70w3X68b5d0=
+			H482obUPXCLRdo8fpq7DodJY56wRPGWtkLCTW2Ie/i4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rpHPVeYbGd9jzEIx7VEvnaMWdY4=
-			</data>
 			<key>hash2</key>
 			<data>
-			ueU9iEG0o6TP0xrbgyhFI0BJ3V/oyIp2fyhoWfE60Hw=
+			7tMdoguIA1jUCI6TptPDeuEedSRPooZwdxciXZJVT8k=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ms2/zCzweV2y2cENQsdvGUC9xQU=
-			</data>
 			<key>hash2</key>
 			<data>
-			tw7IzRNz4ThyNR5JlK05VF4heJT29eL/70w3X68b5d0=
+			H482obUPXCLRdo8fpq7DodJY56wRPGWtkLCTW2Ie/i4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationChartBoost.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3Py7zp4wBJV1JngYcVeSYYgFgW0=
-			</data>
 			<key>hash2</key>
 			<data>
-			WgC05jqeuWIhTDDVv8tOCN7NthCIHM5gyAjG7PAW3AM=
+			ckosE/gUiYKZSeFtykmHP1cu0lzf+Vd0FV76ORpR284=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Goudo/cA86R2dLEZvpTyeNv9GFU=
-			</data>
 			<key>hash2</key>
 			<data>
-			SZH7PoGFSQrK8RDxn11v9DQVlzYoM6RH4awahL7HFC0=
+			81vjSUC43XVBmT8UlfFAsJxuHqL9hdKVAf+2q4alIjs=
 			</data>
 		</dict>
 	</dict>
