@@ -760,6 +760,7 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   case BidMachine
   case pangle
   case moloco
+  case magnitePrebid
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -824,6 +825,7 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   case BidMachine
   case pangle
   case moloco
+  case magnitePrebid
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -848,6 +850,7 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   case BidMachine
   case pangle
   case moloco
+  case magnitePrebid
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -968,6 +971,7 @@ extension GFPSDK.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateV
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPVisualKey : ObjectiveC.NSObject {
   @objc public static let defaultVisualKey: Swift.String
   @objc public static let shoppingLabel: Swift.String
+  @objc public static let shoppingLabelRetail: Swift.String
   @objc public static let smartChannelCarousel: Swift.String
   @objc public static let shoppingNda: Swift.String
   @objc public static let shoppingNdaLighting: Swift.String
@@ -983,6 +987,7 @@ extension GFPSDK.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateV
   @objc public static let carouselAutoInteraction: Swift.String
   @objc public static let carouselTodayNaver: Swift.String
   @objc public static let carouselAdvoost1Line: Swift.String
+  @objc public static let carouselPOCSHoppingNDA: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
   @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
@@ -1202,6 +1207,7 @@ extension GFPSDK.GFPRendererTravelSpecialDAView : GFPSDK.GFPNativeTemplateViewPr
 public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
 @objc public protocol GFPS2SAdClickDelegate : ObjectiveC.NSObjectProtocol {
   @objc func openURLWith(_ urlString: Swift.String, landingHandler: @escaping GFPSDK.GFPS2SAdLandingHandler)
+  @objc optional func openURLWith(_ urlString: Swift.String, ebp: Foundation.NSNumber?, landingHandler: @escaping GFPSDK.GFPS2SAdLandingHandler)
 }
 @objc @objcMembers public class GFPAdStyleOption : ObjectiveC.NSObject {
   @objc final public let backgroundColor: UIKit.UIColor?
@@ -1310,6 +1316,53 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   public static func raiseError(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?, error: NaverAdsServices.GFPError)
   public static func raiseError(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?, errorCode: Swift.Int, message: Swift.String? = nil)
   @objc deinit
+}
+extension GFPSDK.GFPMagnitePrebidAdParam : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  required convenience public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc(GFPRendererShoppingLabelRetailView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPRendererShoppingLabelRetailView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyDesc2: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyEngagement: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyOverlayBadge: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyPrice: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyPrice2: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyDiscount: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyDeliveryFee: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyInstallationFee: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyLabelText: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyLabelText2: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyAiReview1: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyAiReview2: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraKeyAiReview3: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraInfoKeyPriceContainerHeight: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyAdBadgeContainer: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyMediaOverlayBadgeLabel: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyPriceContainer: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyCtaContainer: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyAiReviewImage: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyDeliveryContainer: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyDeliveryFeeIcon: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let extraViewKeyNoticeContainer: Swift.String
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension GFPSDK.GFPRendererShoppingLabelRetailView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func iconContainerView() -> UIKit.UIImageView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adBadgeAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func updateExtraInfo(_ info: [Swift.String : ObjectiveC.NSObject]?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
 }
 extension GFPSDK.GFPAdViewType : Swift.Equatable {}
 extension GFPSDK.GFPAdViewType : Swift.Hashable {}

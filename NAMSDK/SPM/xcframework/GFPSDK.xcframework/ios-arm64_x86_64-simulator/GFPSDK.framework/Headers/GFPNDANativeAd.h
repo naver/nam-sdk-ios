@@ -66,6 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nativeAdDidLoadMediaData:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAdDidFailToLoadMediaData:(GFPNDANativeAd *)nativeAd;
+- (void)shouldCalculatePreferredHeight:(GFPNDANativeAd *)nativeAd;
 - (void)nativeAd:(GFPNDANativeAd *)nativeAd
 didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
        assetType:(GFPNativeAdMediaAssetType)assetType;

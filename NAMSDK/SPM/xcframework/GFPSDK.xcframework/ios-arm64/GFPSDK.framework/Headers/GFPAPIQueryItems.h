@@ -29,6 +29,7 @@ static NSString * const kGFPAAPParamKeyBidMachine = @"bm";
 static NSString * const kGFPAAPParamKeyPangle = @"pangle";
 static NSString * const kGFPAAPParamKeyDigitalTurbine = @"dt";
 static NSString * const kGFPAAPParamKeyMoloco = @"moloco";
+static NSString * const kGFPAAPParamKeyMagnite = @"magnite";
 
 
 @interface GFPAPIQueryItems : NSObject

@@ -708,7 +708,8 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionBidMachine = 12,
   GFPBannerProviderOptionPangle = 13,
   GFPBannerProviderOptionMoloco = 14,
-  GFPBannerProviderOptionEnd = 15,
+  GFPBannerProviderOptionMagnitePrebid = 15,
+  GFPBannerProviderOptionEnd = 16,
 };
 
 SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
@@ -829,7 +830,8 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionBidMachine = 13,
   GFPInterstitialAdProviderOptionPangle = 14,
   GFPInterstitialAdProviderOptionMoloco = 15,
-  GFPInterstitialAdProviderOptionEnd = 16,
+  GFPInterstitialAdProviderOptionMagnitePrebid = 16,
+  GFPInterstitialAdProviderOptionEnd = 17,
 };
 
 @class GFPSpannableOption;
@@ -1020,7 +1022,8 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionBidMachine = 13,
   GFPRewardedAdProviderOptionPangle = 14,
   GFPRewardedAdProviderOptionMoloco = 15,
-  GFPRewardedAdProviderOptionEnd = 16,
+  GFPRewardedAdProviderOptionMagnitePrebid = 16,
+  GFPRewardedAdProviderOptionEnd = 17,
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPRichMediaDataAdType)
@@ -1041,9 +1044,14 @@ typedef SWIFT_ENUM(NSInteger, GFPRichMediaDataAdType, open) {
   GFPRichMediaDataAdTypeImageExtendV3 = 2,
 };
 
+@class NSNumber;
 SWIFT_PROTOCOL("_TtP6GFPSDK21GFPS2SAdClickDelegate_")
 @protocol GFPS2SAdClickDelegate <NSObject>
 - (void)openURLWith:(NSString * _Nonnull)urlString landingHandler:(void (^ _Nonnull)(BOOL))landingHandler;
+@optional
+/// 네이티브 광고 응답 Link 오브젝트의 ebp 값을 함께 전달한다. (ebp == 2: 바텀시트 랜딩)
+/// 구현 시 openURLWith(_:landingHandler:) 대신 이 메서드가 호출된다.
+- (void)openURLWith:(NSString * _Nonnull)urlString ebp:(NSNumber * _Nullable)ebp landingHandler:(void (^ _Nonnull)(BOOL))landingHandler;
 @end
 
 SWIFT_CLASS("_TtC6GFPSDK16GFPSDKInitResult")
@@ -1280,6 +1288,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)defaultVisualKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabelRetail;)
++ (NSString * _Nonnull)shoppingLabelRetail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
@@ -1310,6 +1320,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)carouselTodayNaver SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAdvoost1Line;)
 + (NSString * _Nonnull)carouselAdvoost1Line SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselPOCSHoppingNDA;)
++ (NSString * _Nonnull)carouselPOCSHoppingNDA SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2072,7 +2084,8 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionBidMachine = 12,
   GFPBannerProviderOptionPangle = 13,
   GFPBannerProviderOptionMoloco = 14,
-  GFPBannerProviderOptionEnd = 15,
+  GFPBannerProviderOptionMagnitePrebid = 15,
+  GFPBannerProviderOptionEnd = 16,
 };
 
 SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
@@ -2193,7 +2206,8 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionBidMachine = 13,
   GFPInterstitialAdProviderOptionPangle = 14,
   GFPInterstitialAdProviderOptionMoloco = 15,
-  GFPInterstitialAdProviderOptionEnd = 16,
+  GFPInterstitialAdProviderOptionMagnitePrebid = 16,
+  GFPInterstitialAdProviderOptionEnd = 17,
 };
 
 @class GFPSpannableOption;
@@ -2384,7 +2398,8 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionBidMachine = 13,
   GFPRewardedAdProviderOptionPangle = 14,
   GFPRewardedAdProviderOptionMoloco = 15,
-  GFPRewardedAdProviderOptionEnd = 16,
+  GFPRewardedAdProviderOptionMagnitePrebid = 16,
+  GFPRewardedAdProviderOptionEnd = 17,
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPRichMediaDataAdType)
@@ -2405,9 +2420,14 @@ typedef SWIFT_ENUM(NSInteger, GFPRichMediaDataAdType, open) {
   GFPRichMediaDataAdTypeImageExtendV3 = 2,
 };
 
+@class NSNumber;
 SWIFT_PROTOCOL("_TtP6GFPSDK21GFPS2SAdClickDelegate_")
 @protocol GFPS2SAdClickDelegate <NSObject>
 - (void)openURLWith:(NSString * _Nonnull)urlString landingHandler:(void (^ _Nonnull)(BOOL))landingHandler;
+@optional
+/// 네이티브 광고 응답 Link 오브젝트의 ebp 값을 함께 전달한다. (ebp == 2: 바텀시트 랜딩)
+/// 구현 시 openURLWith(_:landingHandler:) 대신 이 메서드가 호출된다.
+- (void)openURLWith:(NSString * _Nonnull)urlString ebp:(NSNumber * _Nullable)ebp landingHandler:(void (^ _Nonnull)(BOOL))landingHandler;
 @end
 
 SWIFT_CLASS("_TtC6GFPSDK16GFPSDKInitResult")
@@ -2644,6 +2664,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)defaultVisualKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabelRetail;)
++ (NSString * _Nonnull)shoppingLabelRetail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
@@ -2674,6 +2696,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)carouselTodayNaver SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAdvoost1Line;)
 + (NSString * _Nonnull)carouselAdvoost1Line SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselPOCSHoppingNDA;)
++ (NSString * _Nonnull)carouselPOCSHoppingNDA SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

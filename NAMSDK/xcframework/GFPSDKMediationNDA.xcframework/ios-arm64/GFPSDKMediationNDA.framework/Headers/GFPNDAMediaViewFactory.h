@@ -63,6 +63,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWith:(GFPNativeBaseRenderingSetting *)renderingSetting;
 - (instancetype)initWith:(GFPAdChoiceInfo *)info renderAdBadge:(BOOL)renderAdBadge renderingSetting:(GFPNativeBaseRenderingSetting *)renderingSetting adMuteState:(GFPNDAAdMuteState)adMuteState;
 
+- (void)updateRenderingSetting:(GFPNativeBaseRenderingSetting *)renderingSetting; //for shoppingLabelRetail
+
 @end
 
 @interface GFPNDAMediaViewInfo : NSObject

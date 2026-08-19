@@ -95,7 +95,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdDidFailToLoadMediaData:(GFPNativeAd *)nativeAd;
 
 /**
- * LazyLoading 사용 시, icon/media asset 각각의 로딩 상태가 변경될 때 호출됩니다.
+ * 캐로셀 광고에서 height 계산이 다시 필요해진 시점에 호출됩니다.
+ * @param nativeAd 네이티브 광고 객체
+ */
+- (void)shouldCalculatePreferredHeight:(GFPNativeAd *)nativeAd;
+
+
+/** LazyLoading 사용 시, icon/media asset 각각의 로딩 상태가 변경될 때 호출됩니다.
  * 기존 nativeAdDidLoadMediaData:, nativeAdDidFailToLoadMediaData: 호출은 유지됩니다.
  * @param nativeAd 네이티브 광고 객체
  * @param state 변경된 로딩 상태

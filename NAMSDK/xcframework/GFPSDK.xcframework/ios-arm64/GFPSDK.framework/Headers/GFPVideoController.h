@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class GFPVideoController;
+@class AVPlayer;
 
 @interface GFPVideoProgressInfo : NSObject
 
@@ -34,6 +35,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) BOOL enableControl;
 
 @property (nonatomic, assign, readonly) BOOL isPlaying;
+
+/**
+ * 광고 영상 재생에 사용되는 AVPlayer 객체입니다. (관찰용)
+ *
+ * 재생 상태 관찰(time observer 등록 등) 용도로만 사용해주세요.
+ * 재생 제어(play/pause/mute)는 반드시 GFPVideoController의 API를 사용해야 하며,
+ * AVPlayer를 직접 제어할 경우 광고 이벤트 집계가 정상 동작하지 않을 수 있습니다.
+ * AVPlayer 기반이 아닌 광고에서는 nil이 반환됩니다.
+ */
+@property (nonatomic, weak, readonly, nullable) AVPlayer *avPlayer;
 
 /**
  * 광고 영상의 mute 여부를 설정합니다.

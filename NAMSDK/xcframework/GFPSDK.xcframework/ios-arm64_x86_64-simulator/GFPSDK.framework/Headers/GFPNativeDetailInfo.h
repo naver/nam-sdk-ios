@@ -20,6 +20,7 @@
 @class GFPBackgroundOptionAttributes;
 @class GFPNativeAIInfo;
 @class GFPNativeAPIInfo;
+@class GFPNativeMetaInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,6 +36,8 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @property (nonatomic, readonly, strong) NSArray <NSString *> *trackerList;
 @property (nonatomic, readonly, strong) NSURL *fURL;
 @property (nonatomic, readonly, strong) NSDictionary *extraDict;
+
+@property (nonatomic, readonly, strong, nullable) NSNumber *ebp;
 
 @property (nonatomic, readonly, strong) NSURL *openURL;
 
@@ -81,6 +84,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 @property (nonatomic, readonly, strong, nullable) GFPNativeStyleInfo *styleInfo;
 @property (nonatomic, readonly, strong, nullable) GFPNativeAIInfo *aiInfo;
 @property (nonatomic, readonly, strong, nullable) GFPNativeAPIInfo *apiInfo;
+@property (nonatomic, readonly, strong, nullable) GFPNativeMetaInfo *metaInfo;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype _Nullable)initWithDictionary:(NSDictionary *_Nullable)aDict
@@ -225,6 +229,18 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @interface GFPNativeAPIInfo : NSObject
 @property (nonatomic, readonly, strong, nullable) NSString *shopping;
+- (instancetype)initWithDict:(NSDictionary *)aDict;
+@end
+
+//ext.meta.shopping — 쇼핑 개인화 매칭용 메타 (mallPid 등)
+@interface GFPNativeShoppingMetaInfo : NSObject
+@property (nonatomic, readonly, strong, nullable) NSString *mallPId;
+- (instancetype)initWithDict:(NSDictionary *)aDict;
+@end
+
+//ext.meta — 도메인별 메타 네임스페이스
+@interface GFPNativeMetaInfo : NSObject
+@property (nonatomic, readonly, strong, nullable) GFPNativeShoppingMetaInfo *shopping;
 - (instancetype)initWithDict:(NSDictionary *)aDict;
 @end
 

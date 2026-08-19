@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/GFPDisplayLinkHelper.h</key>
-		<data>
-		YEBrEzfNtblO/96qOvlz9KzCYhM=
-		</data>
 		<key>Headers/GFPSDKMediationNDARich.h</key>
 		<data>
-		1izj0VjVME7HzwqfmdrYA2H55PY=
+		mFhPZnVqCORetDZjfJCi4y7tamY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -23,18 +19,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/GFPDisplayLinkHelper.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8NR/LaB13J/uldetESo1/7JkicmW9lORbwLjpb30Pcc=
-			</data>
-		</dict>
 		<key>Headers/GFPSDKMediationNDARich.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IzIMGnQz0dttKk6mDC1xEh0f01NnZpL9hy+JQPYjt/Y=
+			J0UYl2a8piGMXIel7UXFhqq9Z9TcoSTZTl99fUWxbCo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

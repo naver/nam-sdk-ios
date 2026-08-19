@@ -68,6 +68,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDARendererMediaViewSplash = 1003,
     GFPNDARendererMediaViewTravelSpecialDA = 1004,
     GFPNDARendererMediaViewSplashVideo = 1005,
+    GFPNDARendererMediaViewShoppingLabelRetail = 1006,
 };
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewRenderType) {
@@ -106,6 +107,8 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (void)registerGestureForExtraView:(UIView *)extraView linkInfo:(id<GFPNativeAdInfoLinkPresentable>)linkInfo;
 - (CGFloat)minimumSpecialDaRegionHeight;
 
+- (void)shouldCalculatePreferredHeight;
+
 @end
 
 
@@ -124,6 +127,8 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 @optional
 - (void)updateViewLayout;
 - (void)updateInitialBgSetting;
+/// 원본 미디어와 다른 표시 영역 비율이 필요한 미디어 뷰만 구현한다.
+- (CGSize)preferredPresentationSizeWithMediaSize:(CGSize)mediaSize;
 
 //for ns
 - (void)updateViewWith:(GFPNativeBaseView *)nativeView renderInfo:(GFPNDAMediaViewRenderInfo *)renderInfo cropSize:(CGSize)cropSize;

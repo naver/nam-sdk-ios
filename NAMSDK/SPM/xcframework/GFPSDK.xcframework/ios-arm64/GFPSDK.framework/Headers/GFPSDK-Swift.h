@@ -709,7 +709,8 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionBidMachine = 12,
   GFPBannerProviderOptionPangle = 13,
   GFPBannerProviderOptionMoloco = 14,
-  GFPBannerProviderOptionEnd = 15,
+  GFPBannerProviderOptionMagnitePrebid = 15,
+  GFPBannerProviderOptionEnd = 16,
 };
 
 SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
@@ -844,7 +845,8 @@ typedef SWIFT_ENUM(NSInteger, GFPInterstitialAdProviderOption, open) {
   GFPInterstitialAdProviderOptionBidMachine = 13,
   GFPInterstitialAdProviderOptionPangle = 14,
   GFPInterstitialAdProviderOptionMoloco = 15,
-  GFPInterstitialAdProviderOptionEnd = 16,
+  GFPInterstitialAdProviderOptionMagnitePrebid = 16,
+  GFPInterstitialAdProviderOptionEnd = 17,
 };
 
 @class GFPSpannableOption;
@@ -1017,6 +1019,77 @@ SWIFT_PROTOCOL("_TtP6GFPSDK14GFPQueueObject_")
 @protocol GFPQueueObject <NSObject>
 @end
 
+SWIFT_CLASS_NAMED("GFPRendererShoppingLabelRetailView")
+@interface GFPRendererShoppingLabelRetailView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyDesc2;)
++ (NSString * _Nonnull)extraKeyDesc2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyEngagement;)
++ (NSString * _Nonnull)extraKeyEngagement SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyOverlayBadge;)
++ (NSString * _Nonnull)extraKeyOverlayBadge SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyPrice;)
++ (NSString * _Nonnull)extraKeyPrice SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyPrice2;)
++ (NSString * _Nonnull)extraKeyPrice2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyDiscount;)
++ (NSString * _Nonnull)extraKeyDiscount SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyDeliveryFee;)
++ (NSString * _Nonnull)extraKeyDeliveryFee SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyInstallationFee;)
++ (NSString * _Nonnull)extraKeyInstallationFee SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelText;)
++ (NSString * _Nonnull)extraKeyLabelText SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyLabelText2;)
++ (NSString * _Nonnull)extraKeyLabelText2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyAiReview1;)
++ (NSString * _Nonnull)extraKeyAiReview1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyAiReview2;)
++ (NSString * _Nonnull)extraKeyAiReview2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyAiReview3;)
++ (NSString * _Nonnull)extraKeyAiReview3 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraInfoKeyPriceContainerHeight;)
++ (NSString * _Nonnull)extraInfoKeyPriceContainerHeight SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyAdBadgeContainer;)
++ (NSString * _Nonnull)extraViewKeyAdBadgeContainer SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyMediaOverlayBadgeLabel;)
++ (NSString * _Nonnull)extraViewKeyMediaOverlayBadgeLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyPriceContainer;)
++ (NSString * _Nonnull)extraViewKeyPriceContainer SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyCtaContainer;)
++ (NSString * _Nonnull)extraViewKeyCtaContainer SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyAiReviewImage;)
++ (NSString * _Nonnull)extraViewKeyAiReviewImage SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyDeliveryContainer;)
++ (NSString * _Nonnull)extraViewKeyDeliveryContainer SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyDeliveryFeeIcon;)
++ (NSString * _Nonnull)extraViewKeyDeliveryFeeIcon SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewKeyNoticeContainer;)
++ (NSString * _Nonnull)extraViewKeyNoticeContainer SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+@class UIImageView;
+@class GFPMediaView;
+@class UILabel;
+@protocol GFPNativeAssetProtocol;
+@interface GFPRendererShoppingLabelRetailView (SWIFT_EXTENSION(GFPSDK)) <GFPNativeTemplateViewProtocol>
+- (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)adBadgeAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (void)updateExtraInfo:(NSDictionary<NSString *, NSObject *> * _Nullable)info;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
 SWIFT_CLASS_NAMED("GFPRendererShoppingLabelView")
 @interface GFPRendererShoppingLabelView : UIView
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyNStore;)
@@ -1035,9 +1108,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-@class GFPMediaView;
-@protocol GFPNativeAssetProtocol;
 @interface GFPRendererShoppingLabelView (SWIFT_EXTENSION(GFPSDK)) <GFPNativeTemplateViewProtocol>
 - (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
 - (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
@@ -1120,7 +1190,6 @@ SWIFT_CLASS_NAMED("GFPRendererSplashView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 @interface GFPRendererSplashView (SWIFT_EXTENSION(GFPSDK)) <GFPNativeTemplateViewProtocol>
 - (UIImageView * _Nullable)iconContainerView SWIFT_WARN_UNUSED_RESULT;
 - (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
@@ -1182,7 +1251,8 @@ typedef SWIFT_ENUM(NSInteger, GFPRewardedAdProviderOption, open) {
   GFPRewardedAdProviderOptionBidMachine = 13,
   GFPRewardedAdProviderOptionPangle = 14,
   GFPRewardedAdProviderOptionMoloco = 15,
-  GFPRewardedAdProviderOptionEnd = 16,
+  GFPRewardedAdProviderOptionMagnitePrebid = 16,
+  GFPRewardedAdProviderOptionEnd = 17,
 };
 
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPRichMediaDataAdType)
@@ -1203,9 +1273,14 @@ typedef SWIFT_ENUM(NSInteger, GFPRichMediaDataAdType, open) {
   GFPRichMediaDataAdTypeImageExtendV3 = 2,
 };
 
+@class NSNumber;
 SWIFT_PROTOCOL("_TtP6GFPSDK21GFPS2SAdClickDelegate_")
 @protocol GFPS2SAdClickDelegate <NSObject>
 - (void)openURLWith:(NSString * _Nonnull)urlString landingHandler:(void (^ _Nonnull)(BOOL))landingHandler;
+@optional
+/// 네이티브 광고 응답 Link 오브젝트의 ebp 값을 함께 전달한다. (ebp == 2: 바텀시트 랜딩)
+/// 구현 시 openURLWith(_:landingHandler:) 대신 이 메서드가 호출된다.
+- (void)openURLWith:(NSString * _Nonnull)urlString ebp:(NSNumber * _Nullable)ebp landingHandler:(void (^ _Nonnull)(BOOL))landingHandler;
 @end
 
 SWIFT_CLASS("_TtC6GFPSDK16GFPSDKInitResult")
@@ -1492,6 +1567,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)defaultVisualKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabel;)
 + (NSString * _Nonnull)shoppingLabel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingLabelRetail;)
++ (NSString * _Nonnull)shoppingLabelRetail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelCarousel;)
 + (NSString * _Nonnull)smartChannelCarousel SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shoppingNda;)
@@ -1522,6 +1599,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)carouselTodayNaver SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselAdvoost1Line;)
 + (NSString * _Nonnull)carouselAdvoost1Line SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselPOCSHoppingNDA;)
++ (NSString * _Nonnull)carouselPOCSHoppingNDA SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

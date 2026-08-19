@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic, strong) NSURL *link;
 @property (readonly, nonatomic, strong) NSArray *trackerList;
+@property (readonly, nonatomic, strong, nullable) NSNumber *ebp;
 @property (readonly, nonatomic, assign) BOOL forceURLLanding;
 @property (nonatomic, readonly) BOOL isTrackingOnly;
 

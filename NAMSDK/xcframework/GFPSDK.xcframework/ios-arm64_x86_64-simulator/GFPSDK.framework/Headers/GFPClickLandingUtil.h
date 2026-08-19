@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPClickLandingUtil : NSObject
 
 @property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong, nullable) NSNumber *ebp;
 @property (nonatomic, assign) BOOL forceURLLanding;
 @property (nonatomic, assign, readonly) BOOL useCustomClick;
 @property (nonatomic, readonly) BOOL isTrackingOnly;

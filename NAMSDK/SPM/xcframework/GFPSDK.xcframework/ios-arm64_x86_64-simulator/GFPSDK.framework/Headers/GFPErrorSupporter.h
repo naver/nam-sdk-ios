@@ -31,6 +31,7 @@ FOUNDATION_EXPORT NSString *const GFPBannerProviderChartBoostErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderBidMachineErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderPangleErrorKey;
 FOUNDATION_EXPORT NSString *const GFPBannerProviderMolocoErrorKey;
+FOUNDATION_EXPORT NSString *const GFPBannerProviderMagnitePrebidErrorKey;
 
 FOUNDATION_EXPORT NSString *const GFPVideoProviderIMAErrorKey;
 FOUNDATION_EXPORT NSString *const GFPVideoProviderNDAErrorKey;
@@ -59,6 +60,7 @@ FOUNDATION_EXPORT NSString *const GFPInterstitialProviderChartBoostErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderBidMachineErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderPangleErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderMolocoErrorKey;
+FOUNDATION_EXPORT NSString *const GFPInterstitialProviderMagnitePrebidErrorKey;
 
 FOUNDATION_EXPORT NSString *const GFPRewardProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderFANErrorKey;
@@ -74,6 +76,7 @@ FOUNDATION_EXPORT NSString *const GFPRewardProviderChartBoostErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderBidMachineErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderPangleErrorKey;
 FOUNDATION_EXPORT NSString *const GFPRewardProviderMolocoErrorKey;
+FOUNDATION_EXPORT NSString *const GFPRewardProviderMagnitePrebidErrorKey;
 
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedVisualKeySubErrorCodeKey;
 FOUNDATION_EXPORT NSString *const GFPNativeCarouselNotSupportedSlotTypeSubErrorCodeKey;

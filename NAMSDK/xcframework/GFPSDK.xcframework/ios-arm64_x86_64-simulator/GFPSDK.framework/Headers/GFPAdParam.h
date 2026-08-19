@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class GFPAPSAdParam;
+@class GFPMagnitePrebidAdParam;
 @class GFPContentInfo;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -68,6 +69,11 @@ NS_ASSUME_NONNULL_BEGIN
  * Amazon  헤더 비딩 파라미터.
  */
 @property (readwrite, nonatomic, nullable) GFPAPSAdParam *apsParam;
+
+/**
+ * Magnite Prebid 헤더 비딩 파라미터.
+ */
+@property (readwrite, nonatomic, nullable) GFPMagnitePrebidAdParam *magnitePrebidParam;
 
 /**
  * Communication Ad 용 Content Info.

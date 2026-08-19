@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <GFPSDK/PublicHeader.h>
 
 #import <GFPSDK/GFPAdParam.h>
+#import <GFPSDK/GFPMagnitePrebidAdParam.h>
 #import <GFPSDK/GFPUserParam.h>
 #import <GFPSDK/GFPAPSAdParam.h>
 #import <GFPSDK/GFPContentInfo.h>

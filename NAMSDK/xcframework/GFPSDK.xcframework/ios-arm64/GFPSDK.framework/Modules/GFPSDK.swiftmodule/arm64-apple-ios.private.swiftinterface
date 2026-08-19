@@ -139,6 +139,7 @@ extension GFPSDK.GFPErrorUtils {
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPVisualKey : ObjectiveC.NSObject {
   @objc public static let defaultVisualKey: Swift.String
   @objc public static let shoppingLabel: Swift.String
+  @objc public static let shoppingLabelRetail: Swift.String
   @objc public static let smartChannelCarousel: Swift.String
   @objc public static let shoppingNda: Swift.String
   @objc public static let shoppingNdaLighting: Swift.String
@@ -154,6 +155,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public static let carouselAutoInteraction: Swift.String
   @objc public static let carouselTodayNaver: Swift.String
   @objc public static let carouselAdvoost1Line: Swift.String
+  @objc public static let carouselPOCSHoppingNDA: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
   @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
@@ -343,6 +345,7 @@ extension GFPSDK.GFPErrorUtils {
   case BidMachine
   case pangle
   case moloco
+  case magnitePrebid
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -407,6 +410,7 @@ extension GFPSDK.GFPErrorUtils {
   case BidMachine
   case pangle
   case moloco
+  case magnitePrebid
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -431,6 +435,7 @@ extension GFPSDK.GFPErrorUtils {
   case BidMachine
   case pangle
   case moloco
+  case magnitePrebid
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -1034,6 +1039,7 @@ extension UIKit.UIView.ContentMode : Swift.Codable {
 public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
 @objc public protocol GFPS2SAdClickDelegate : ObjectiveC.NSObjectProtocol {
   @objc func openURLWith(_ urlString: Swift.String, landingHandler: @escaping GFPSDK.GFPS2SAdLandingHandler)
+  @objc optional func openURLWith(_ urlString: Swift.String, ebp: Foundation.NSNumber?, landingHandler: @escaping GFPSDK.GFPS2SAdLandingHandler)
 }
 @objc @objcMembers public class GFPAdStyleOption : ObjectiveC.NSObject {
   @objc final public let backgroundColor: UIKit.UIColor?
@@ -1142,6 +1148,10 @@ public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
   public static func raiseError(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?, error: NaverAdsServices.GFPError)
   public static func raiseError(errorPtr: Swift.AutoreleasingUnsafeMutablePointer<NaverAdsServices.GFPError?>?, errorCode: Swift.Int, message: Swift.String? = nil)
   @objc deinit
+}
+extension GFPSDK.GFPMagnitePrebidAdParam : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  required convenience public init(from decoder: any Swift.Decoder) throws
 }
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Equatable {}
 extension GFPSDK.GFPVideoBackgroundActionType : Swift.Hashable {}

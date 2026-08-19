@@ -34,7 +34,7 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
     GFPAdChoicesViewPositionBottomLeftCorner,
 };
 
-@interface GFPNativeBaseRenderingSetting : NSObject
+@interface GFPNativeBaseRenderingSetting : NSObject <NSCopying>
 
 /**
  * 네이티브 광고에 adChoicesView 위치를 설정합니다.
@@ -110,7 +110,7 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 
 /**
  * 광고의 MediaView에 Dimmed를 설정하고 싶을 때 설정합니다.
- * 옵션 사용 시 2%의 Dimmed가 적용됩니다. / 아웃스트림 동영상은 8%의 Dimmed가 적용됩니다.
+ * 옵션 사용 시 2%의 Dimmed가 적용되며, 특정 상품에 따라 적용 알파값이 상이합니다.
  * (기본값은 NO)
  */
 @property (nonatomic, assign) BOOL useMediaDimmed;

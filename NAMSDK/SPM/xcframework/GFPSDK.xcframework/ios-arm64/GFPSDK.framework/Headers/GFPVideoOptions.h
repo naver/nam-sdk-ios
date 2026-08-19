@@ -49,7 +49,7 @@ typedef NS_OPTIONS(NSInteger, GFPVideoViewType) {
 @end
 
 
-@interface GFPVideoOptions : NSObject
+@interface GFPVideoOptions : NSObject <NSCopying>
 
 /**
  * 광고 영상의 재생 정책을 설정합니다. (기본값 Auto)

@@ -55,6 +55,8 @@ NS_ASSUME_NONNULL_BEGIN
 didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
               assetType:(GFPNativeAdMediaAssetType)assetType;
 
+- (void)shouldCalculatePreferredHeight:(GFPAdAdaptor <GFPNativeAdapting> *)nativeAdAdaptor;
+
 - (CGFloat)minimumSpecialDaRegionHeight;
 
 @end

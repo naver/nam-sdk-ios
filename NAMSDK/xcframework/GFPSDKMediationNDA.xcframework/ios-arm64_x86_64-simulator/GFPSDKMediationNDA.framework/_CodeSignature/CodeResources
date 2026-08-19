@@ -12,6 +12,10 @@
 		<data>
 		Q2FapyuOvpbH3CeAxkLDBBbkH7I=
 		</data>
+		<key>Headers/GFPDisplayLinkHelper.h</key>
+		<data>
+		g/kmDS6UdWYIsgYnGNP1eujZWAM=
+		</data>
 		<key>Headers/GFPMediaCropInfo.h</key>
 		<data>
 		yvPlePIK99fdz/cCH5fHzaDibGo=
@@ -150,11 +154,11 @@
 		</data>
 		<key>Headers/GFPNDAMediaView.h</key>
 		<data>
-		EDCHLRe7yktIRVkoGhgAW33SOM8=
+		k2qgP0qg4YWA/PdmFTVqu0UbyN8=
 		</data>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<data>
-		6XzxYDTFYRShi6BkRYdqNLsNYTA=
+		2HkDQytsKr8B9S+rr1gMlGFtecU=
 		</data>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
 		<data>
@@ -170,7 +174,7 @@
 		</data>
 		<key>Headers/GFPNDANativeAd.h</key>
 		<data>
-		3ouEU26HfCLUfnmSsRlkq5TA/v8=
+		ex+7HOBxz56rhmBY7hI3rZTA5/4=
 		</data>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
 		<data>
@@ -206,7 +210,7 @@
 		</data>
 		<key>Headers/GFPNDAUtils.h</key>
 		<data>
-		WWrPGVxULYGzBhE8TXF+/jr7H+U=
+		/2zFJZRfhJTv2SzPV5QoK+NVGv8=
 		</data>
 		<key>Headers/GFPNativeProviderNDA.h</key>
 		<data>
@@ -247,6 +251,13 @@
 			<key>hash2</key>
 			<data>
 			KXJaMbL4H01F82+no2Hn7CRkBhxRQE9/dYJ/BXBDjvc=
+			</data>
+		</dict>
+		<key>Headers/GFPDisplayLinkHelper.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SGPYgMaSUnsXx+73sjUJt68NsWhS00TA5b0oLR79alg=
 			</data>
 		</dict>
 		<key>Headers/GFPMediaCropInfo.h</key>
@@ -491,14 +502,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZtRe1rzdoYeWcfKzYdzyg4IJyRsB6jrRIlGTitkJRSE=
+			du5cVb0l4O4zEMsmsMZhXJ4QGLNDWuUvnSXY43Y1k6Q=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMediaViewFactory.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9JXpJzzim+s5eutVDnRR9/3Un+q2294pPUj/2cgbT0k=
+			ahUUqr/vuVSsd+NxIv+cN7SNKrLGqqbbKiQxwrNB5z8=
 			</data>
 		</dict>
 		<key>Headers/GFPNDAMraidConfiguration.h</key>
@@ -526,7 +537,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wTiDduAuBq75YazMfBe87Jx9C1U4WULksMXqx+LVnWc=
+			4unxIXkUvCATO8soyM8AnnVR77aPVrp1wgg9LZfuk34=
 			</data>
 		</dict>
 		<key>Headers/GFPNDANativeAdFactory.h</key>
@@ -589,7 +600,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IqfazuhMGCygl5GS5D76Acp37StLXF5oBZS3TiM5xRY=
+			kw3vIN/xPljYnDg6yb1NG2LE7dIayKsVPx6SIub3c3M=
 			</data>
 		</dict>
 		<key>Headers/GFPNativeProviderNDA.h</key>
