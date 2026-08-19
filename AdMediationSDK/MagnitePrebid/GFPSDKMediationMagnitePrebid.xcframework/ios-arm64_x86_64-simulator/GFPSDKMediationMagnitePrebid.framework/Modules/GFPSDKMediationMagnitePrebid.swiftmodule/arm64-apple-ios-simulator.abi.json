@@ -1,0 +1,1819 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "GFPSDKMediationMagnitePrebid",
+    "printedName": "GFPSDKMediationMagnitePrebid",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPMagnitePrebidBannerRequest",
+        "printedName": "GFPMagnitePrebidBannerRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adUnit",
+            "printedName": "adUnit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MediationBannerAdUnit",
+                "printedName": "PrebidMobile.MediationBannerAdUnit",
+                "usr": "c:@M@PrebidMobile@objc(cs)MediationBannerAdUnit"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest(py)adUnit",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC13BannerRequestC6adUnit0C6Mobile09Mediatione2AdH0Cvp",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediationBannerAdUnit",
+                    "printedName": "PrebidMobile.MediationBannerAdUnit",
+                    "usr": "c:@M@PrebidMobile@objc(cs)MediationBannerAdUnit"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest(im)adUnit",
+                "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC13BannerRequestC6adUnit0C6Mobile09Mediatione2AdH0Cvg",
+                "moduleName": "GFPSDKMediationMagnitePrebid",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(builder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidBannerRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidBannerRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMagnitePrebid.GFPMagnitePrebidMediationDelegate) -> PrebidMobile.MediationBannerAdUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediationBannerAdUnit",
+                    "printedName": "PrebidMobile.MediationBannerAdUnit",
+                    "usr": "c:@M@PrebidMobile@objc(cs)MediationBannerAdUnit"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMagnitePrebidMediationDelegate",
+                    "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidMediationDelegate",
+                    "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest(im)initWithBuilder:",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC13BannerRequestC7builderAC0C6Mobile09MediationE6AdUnitCAA0dcI8DelegateCXE_tcfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidBannerRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidBannerRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest(im)init",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC13BannerRequestCACycfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest",
+        "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC13BannerRequestC",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "objc_name": "GFPMagnitePrebidBannerRequest",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPMagnitePrebidInterstitialRequest",
+        "printedName": "GFPMagnitePrebidInterstitialRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adUnit",
+            "printedName": "adUnit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MediationInterstitialAdUnit",
+                "printedName": "PrebidMobile.MediationInterstitialAdUnit",
+                "usr": "c:@M@PrebidMobile@objc(cs)MediationInterstitialAdUnit"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest(py)adUnit",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC19InterstitialRequestC6adUnit0C6Mobile09Mediatione2AdH0Cvp",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediationInterstitialAdUnit",
+                    "printedName": "PrebidMobile.MediationInterstitialAdUnit",
+                    "usr": "c:@M@PrebidMobile@objc(cs)MediationInterstitialAdUnit"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest(im)adUnit",
+                "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC19InterstitialRequestC6adUnit0C6Mobile09Mediatione2AdH0Cvg",
+                "moduleName": "GFPSDKMediationMagnitePrebid",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(builder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidInterstitialRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidInterstitialRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMagnitePrebid.GFPMagnitePrebidMediationDelegate) -> PrebidMobile.MediationInterstitialAdUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediationInterstitialAdUnit",
+                    "printedName": "PrebidMobile.MediationInterstitialAdUnit",
+                    "usr": "c:@M@PrebidMobile@objc(cs)MediationInterstitialAdUnit"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMagnitePrebidMediationDelegate",
+                    "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidMediationDelegate",
+                    "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest(im)initWithBuilder:",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC19InterstitialRequestC7builderAC0C6Mobile09MediationE6AdUnitCAA0dcI8DelegateCXE_tcfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidInterstitialRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidInterstitialRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest(im)init",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC19InterstitialRequestCACycfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest",
+        "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC19InterstitialRequestC",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "objc_name": "GFPMagnitePrebidInterstitialRequest",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPMagnitePrebidRewardedRequest",
+        "printedName": "GFPMagnitePrebidRewardedRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adUnit",
+            "printedName": "adUnit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MediationRewardedAdUnit",
+                "printedName": "PrebidMobile.MediationRewardedAdUnit",
+                "usr": "c:@M@PrebidMobile@objc(cs)MediationRewardedAdUnit"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest(py)adUnit",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC15RewardedRequestC6adUnit0C6Mobile09Mediatione2AdH0Cvp",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediationRewardedAdUnit",
+                    "printedName": "PrebidMobile.MediationRewardedAdUnit",
+                    "usr": "c:@M@PrebidMobile@objc(cs)MediationRewardedAdUnit"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest(im)adUnit",
+                "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC15RewardedRequestC6adUnit0C6Mobile09Mediatione2AdH0Cvg",
+                "moduleName": "GFPSDKMediationMagnitePrebid",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(builder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidRewardedRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidRewardedRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMagnitePrebid.GFPMagnitePrebidMediationDelegate) -> PrebidMobile.MediationRewardedAdUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MediationRewardedAdUnit",
+                    "printedName": "PrebidMobile.MediationRewardedAdUnit",
+                    "usr": "c:@M@PrebidMobile@objc(cs)MediationRewardedAdUnit"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMagnitePrebidMediationDelegate",
+                    "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidMediationDelegate",
+                    "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest(im)initWithBuilder:",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC15RewardedRequestC7builderAC0C6Mobile09MediationE6AdUnitCAA0dcI8DelegateCXE_tcfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidRewardedRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidRewardedRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest(im)init",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC15RewardedRequestCACycfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest",
+        "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC15RewardedRequestC",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "objc_name": "GFPMagnitePrebidRewardedRequest",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPMagnitePrebidDemandResult",
+        "printedName": "GFPMagnitePrebidDemandResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "resultCode",
+            "printedName": "resultCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResultCode",
+                "printedName": "PrebidMobile.ResultCode",
+                "usr": "c:@M@PrebidMobile@E@ResultCode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(py)resultCode",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC10resultCode0C6Mobile0fH0Ovp",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResultCode",
+                    "printedName": "PrebidMobile.ResultCode",
+                    "usr": "c:@M@PrebidMobile@E@ResultCode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(im)resultCode",
+                "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC10resultCode0C6Mobile0fH0Ovg",
+                "moduleName": "GFPSDKMediationMagnitePrebid",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "values",
+            "printedName": "values",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(py)values",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC6valuesSDySSypGSgvp",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(im)values",
+                "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC6valuesSDySSypGSgvg",
+                "moduleName": "GFPSDKMediationMagnitePrebid",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bid",
+            "printedName": "bid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PrebidMobile.Bid?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bid",
+                    "printedName": "PrebidMobile.Bid",
+                    "usr": "c:@M@PrebidMobile@objc(cs)Bid"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(py)bid",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC3bid0C6Mobile3BidCSgvp",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrebidMobile.Bid?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bid",
+                        "printedName": "PrebidMobile.Bid",
+                        "usr": "c:@M@PrebidMobile@objc(cs)Bid"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(im)bid",
+                "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC3bid0C6Mobile3BidCSgvg",
+                "moduleName": "GFPSDKMediationMagnitePrebid",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "targetingKeywords",
+            "printedName": "targetingKeywords",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(py)targetingKeywords",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC17targetingKeywordsSDyS2SGSgvp",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(im)targetingKeywords",
+                "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC17targetingKeywordsSDyS2SGSgvg",
+                "moduleName": "GFPSDKMediationMagnitePrebid",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidDemandResult",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemandResult",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult(im)init",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultCACycfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult",
+        "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC12DemandResultC",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "objc_name": "GFPMagnitePrebidDemandResult",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPMagnitePrebidMediationDelegate",
+        "printedName": "GFPMagnitePrebidMediationDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setUpAdObject",
+            "printedName": "setUpAdObject(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate(im)setUpAdObjectWith:",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC17MediationDelegateC13setUpAdObject4withSbSDySSypG_tF",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "objc_name": "setUpAdObjectWith:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanUpAdObject",
+            "printedName": "cleanUpAdObject()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate(im)cleanUpAdObject",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC17MediationDelegateC15cleanUpAdObjectyyF",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "objc_name": "cleanUpAdObject",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdView",
+            "printedName": "getAdView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate(im)getAdView",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC17MediationDelegateC9getAdViewSo6UIViewCSgyF",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "objc_name": "getAdView",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidMediationDelegate",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidMediationDelegate",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate(im)init",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC17MediationDelegateCACycfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidMediationDelegate",
+        "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC17MediationDelegateC",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "objc_name": "GFPMagnitePrebidMediationDelegate",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PrebidMediationDelegate",
+            "printedName": "PrebidMediationDelegate",
+            "usr": "c:@M@PrebidMobile@objc(pl)PrebidMediationDelegate",
+            "mangledName": "$s12PrebidMobile0A17MediationDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPMagnitePrebidDemand",
+        "printedName": "GFPMagnitePrebidDemand",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchBanner",
+            "printedName": "fetchBanner(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidBannerRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidBannerRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidBannerRequest"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemandResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMagnitePrebidDemandResult",
+                    "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemandResult",
+                    "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemand(cm)fetchBannerWithRequest:completion:",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC6DemandC11fetchBanner7request10completionyAA0dcG7RequestC_yAA0dcE6ResultCctFZ",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchInterstitial",
+            "printedName": "fetchInterstitial(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidInterstitialRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidInterstitialRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidInterstitialRequest"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemandResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMagnitePrebidDemandResult",
+                    "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemandResult",
+                    "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemand(cm)fetchInterstitialWithRequest:completion:",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC6DemandC17fetchInterstitial7request10completionyAA0dcG7RequestC_yAA0dcE6ResultCctFZ",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRewarded",
+            "printedName": "fetchRewarded(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidRewardedRequest",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidRewardedRequest",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidRewardedRequest"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemandResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPMagnitePrebidDemandResult",
+                    "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemandResult",
+                    "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemandResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemand(cm)fetchRewardedWithRequest:completion:",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC6DemandC13fetchRewarded7request10completionyAA0dcG7RequestC_yAA0dcE6ResultCctFZ",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPMagnitePrebidDemand",
+                "printedName": "GFPSDKMediationMagnitePrebid.GFPMagnitePrebidDemand",
+                "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemand"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemand(im)init",
+            "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC6DemandCACycfc",
+            "moduleName": "GFPSDKMediationMagnitePrebid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GFPSDKMediationMagnitePrebid@objc(cs)GFPMagnitePrebidDemand",
+        "mangledName": "$s28GFPSDKMediationMagnitePrebid010GFPMagniteC6DemandC",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "objc_name": "GFPMagnitePrebidDemand",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMagnitePrebid"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Banner\/GFPMagnitePrebidBannerAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 923,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidCommonAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 9,
+      "value": "\"3.3.1.0\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Interstitial\/GFPMagnitePrebidInterstitialAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 891,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Rewarded\/GFPMagnitePrebidRewardedAdaptor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 869,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidDemand.swift",
+      "kind": "Array",
+      "offset": 3383,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidDemand.swift",
+      "kind": "Array",
+      "offset": 3457,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidDemand.swift",
+      "kind": "Array",
+      "offset": 3523,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidDemand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6996,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidDemand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Common\/GFPMagnitePrebidDemand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8646,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

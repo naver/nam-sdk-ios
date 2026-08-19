@@ -1,0 +1,3 @@
+framework module GFPSDKMediationMagnitePrebid {
+  header "GFPSDKMediationMagnitePrebid-Swift.h"
+}
