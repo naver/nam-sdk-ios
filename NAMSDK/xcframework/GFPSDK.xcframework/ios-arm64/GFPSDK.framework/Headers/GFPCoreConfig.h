@@ -26,7 +26,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define GFP_SDK_VERSION              @"8.24.2"
+#define GFP_SDK_VERSION              @"8.24.3"
 #define GFP_SDK_MEDIATION_NAME		 @"glad"
 
 @interface GFPCoreConfig : NSObject <GFPWebViewAppEnvDelegate>
@@ -43,7 +43,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> sdkInfo;
 @property (nonatomic, strong, readonly) id <GFPDictPresentable> initializeInfo;
 
-@property (nullable, nonatomic, strong, readwrite) GFPUserParam *userParam;
+/**
+ * 서비스에서 임의의 스레드에 세팅(+[GFPAdManager setUserParam:])하고
+ * SDK 는 광고 요청 스레드에서 읽으므로 atomic 으로 선언한다.
+ */
+@property (nullable, atomic, strong, readwrite) GFPUserParam *userParam;
 @property (nonatomic, strong, readonly, nullable) NSString *adID;
 @property (nonatomic, strong, readonly, nullable) NSString *idfv;
 

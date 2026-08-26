@@ -67,8 +67,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 전역 추가 파라미터 (주의! 추가 파라미터 사전의 키/값은 모두 문자열 타입이어야 합니다.)
+ * 서비스에서 갱신한 값을 SDK가 광고 요청 스레드에서 읽으므로 atomic 으로 선언한다.
  */
-@property (nonatomic, copy, nullable) NSDictionary <NSString *, NSString *> *customParam;
+@property (atomic, copy, nullable) NSDictionary <NSString *, NSString *> *customParam;
 
 
 
