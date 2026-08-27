@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5ZQbJTVAytr4OR+gQ86PoA/OtwA=
+		RPZlGlJ8+bbH1P4KLg+effUUynE=
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8B7mEUu8YoLbmdo0U8NVGIS0jRY=
+		Ow9dXJNgAsclPrLbA4cz+4KwLuw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M8+nFB/IaXQx1JzwkqjZ3KLMpdZTRoq4Euv3j5S9z/o=
+			fxRFxwTX1kWOsc6VexCF3mtqekU33j0o64dntm9dXBI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JLxoh2ANcrCr8OSAXbawY3GsJt6xETC1/ub/+A0xcKc=
+			o2nHSxTl56PpoQiXlLtQaxLM+xlNj42uYtSIE4BOy/A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

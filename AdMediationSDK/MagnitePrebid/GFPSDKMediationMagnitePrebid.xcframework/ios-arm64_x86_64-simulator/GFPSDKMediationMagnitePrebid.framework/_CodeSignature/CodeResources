@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5ZQbJTVAytr4OR+gQ86PoA/OtwA=
+		RPZlGlJ8+bbH1P4KLg+effUUynE=
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IRAEdqnW58qab4SUZuLbt2/6h8I=
+		5TCUi/HMDiJLugsi8xIwTEPyg6E=
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5ZQbJTVAytr4OR+gQ86PoA/OtwA=
+		RPZlGlJ8+bbH1P4KLg+effUUynE=
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/c5M3lXNsx/8hrYSLpBjpbCN+sU=
+		viccsytjEcnPpA21X7x0f2gBh74=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M8+nFB/IaXQx1JzwkqjZ3KLMpdZTRoq4Euv3j5S9z/o=
+			fxRFxwTX1kWOsc6VexCF3mtqekU33j0o64dntm9dXBI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LIfWleKG5uXwW/IhY8zPI6Rvyc6M8orujpkYboEerLU=
+			qkg1VywUDhgnJjgP+B1qLQIjZnAGX2EHOb7YbI2eEKk=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M8+nFB/IaXQx1JzwkqjZ3KLMpdZTRoq4Euv3j5S9z/o=
+			fxRFxwTX1kWOsc6VexCF3mtqekU33j0o64dntm9dXBI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMagnitePrebid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9f2tyfxICoR1NaJBKXdyHkToAor+QVAOl2ZF/rHDVPs=
+			E/erjpmuoARqstiamVph+PXEXGx7Tmiux5PNVHBBWQU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
