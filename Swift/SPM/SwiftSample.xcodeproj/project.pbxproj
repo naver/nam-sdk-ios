@@ -731,8 +731,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/naver/nam-sdk-ios.git";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 8.10.1;
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.24.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

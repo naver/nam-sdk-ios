@@ -17,7 +17,6 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/robbiehanson/KissXML.git", exact: "5.3.3"),
         .package(url: "https://github.com/naver/nas-sdk-ios.git", .upToNextMinor(from: "1.5.8"))
     ],
     targets: [
@@ -35,8 +34,6 @@ let package = Package(
             dependencies: [
                 "Core_Binary",
                 "OMSDK_Binary",
-                "KissXML",
-
                 .product(name: "NaverAdsServices", package: "nas-sdk-ios")
             ],
             path: "NAMSDK/SPM/Sources/Core",

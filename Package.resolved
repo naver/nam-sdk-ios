@@ -1,22 +1,13 @@
 {
-  "originHash" : "4c5a98c9344088195059bd55f264c4ba629c1971eeeedeee5000bb34455360a5",
+  "originHash" : "b788fff42342d5321d1020c060eb9527605c5328d24b4905b7a5c9b76c6f9d54",
   "pins" : [
-    {
-      "identity" : "kissxml",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/robbiehanson/KissXML.git",
-      "state" : {
-        "revision" : "990cdef080213b5a3f0d9709b845d553bd3ddb97",
-        "version" : "5.3.3"
-      }
-    },
     {
       "identity" : "nas-sdk-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/naver/nas-sdk-ios.git",
       "state" : {
-        "revision" : "318d9d79cc3e0d8cb6113062254a0af18cabe903",
-        "version" : "1.2.1"
+        "revision" : "15ae36649d04f06250b0acf5ecccd15a3b7440bb",
+        "version" : "1.5.8"
       }
     }
   ],
