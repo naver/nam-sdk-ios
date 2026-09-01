@@ -108,6 +108,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPBannerContext.h>
 #import <GFPSDK/GFPRewardedAdContext.h>
 #import <GFPSDK/GFPInterstitialAdContext.h>
+#import <GFPSDK/GFPVideoContext.h>
 
 #import <GFPSDK/GFPContext.h>
 #import <GFPSDK/GFPWaterfallList.h>
@@ -157,3 +158,13 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPLocationLogger.h>
 #import <GFPSDK/GFPLocationConfiguration.h>
 #import <GFPSDK/GFPLocationData.h>
+
+// InHouse (for spm)
+#import <GFPSDK/GFPAdConfiguration+InHouse.h>
+#import <GFPSDK/GFPAdLoader+InHouse.h>
+#import <GFPSDK/GFPInterstitialAdManager+InHouse.h>
+#import <GFPSDK/GFPNativeAd+InHouse.h>
+#import <GFPSDK/GFPNativeAdRenderingSetting+InHouse.h>
+#import <GFPSDK/GFPRewardedAdManager+InHouse.h>
+#import <GFPSDK/GFPVideoAdManager+InHouse.h>
+#import <GFPSDK/GFPVideoAdScheduleManager+InHouse.h>
