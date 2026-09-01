@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,15 @@
 		1FB55F66256670A100486B6F /* OtherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB55F65256670A000486B6F /* OtherExtensions.swift */; };
 		1FC025EA2E546D0500C606E4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1FC025E92E546D0500C606E4 /* SnapKit */; };
 		277156ED2E56DFF60023F519 /* GFPSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 277156EC2E56DFF60023F519 /* GFPSDK */; };
+		7A10CB03D5E90F3A6B2C1D03 /* GFPSDKMediationDFP in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB02D5E90F3A6B2C1D02 /* GFPSDKMediationDFP */; };
+		7A10CB06D5E90F3A6B2C1D06 /* GFPSDKMediationAppLovin in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB05D5E90F3A6B2C1D05 /* GFPSDKMediationAppLovin */; };
+		7A10CB09D5E90F3A6B2C1D09 /* GFPSDKMediationChartBoost in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB08D5E90F3A6B2C1D08 /* GFPSDKMediationChartBoost */; };
+		7A10CB0CD5E90F3A6B2C1D0C /* GFPSDKMediationDT in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB0BD5E90F3A6B2C1D0B /* GFPSDKMediationDT */; };
+		7A10CB0FD5E90F3A6B2C1D0F /* GFPSDKMediationFAN in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB0ED5E90F3A6B2C1D0E /* GFPSDKMediationFAN */; };
+		7A10CB15D5E90F3A6B2C1D15 /* GFPSDKMediationLAN in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB14D5E90F3A6B2C1D14 /* GFPSDKMediationLAN */; };
+		7A10CB18D5E90F3A6B2C1D18 /* GFPSDKMediationMoloco in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB17D5E90F3A6B2C1D17 /* GFPSDKMediationMoloco */; };
+		7A10CB1BD5E90F3A6B2C1D1B /* GFPSDKMediationTeads in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB1AD5E90F3A6B2C1D1A /* GFPSDKMediationTeads */; };
+		7A10CB1ED5E90F3A6B2C1D1E /* GFPSDKMediationVungle in Frameworks */ = {isa = PBXBuildFile; productRef = 7A10CB1DD5E90F3A6B2C1D1D /* GFPSDKMediationVungle */; };
 		CE097FDB2A138BD000AAB74D /* TableAdControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE097FDA2A138BD000AAB74D /* TableAdControlVC.swift */; };
 		CE21A013282CDC54001FD1A3 /* AdUnitIDList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE21A012282CDC54001FD1A3 /* AdUnitIDList.plist */; };
 		CE3B4D0C2822881400B55921 /* AdTypeViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B4D0B2822881400B55921 /* AdTypeViewConroller.swift */; };
@@ -131,6 +140,15 @@
 			files = (
 				1FC025EA2E546D0500C606E4 /* SnapKit in Frameworks */,
 				277156ED2E56DFF60023F519 /* GFPSDK in Frameworks */,
+				7A10CB03D5E90F3A6B2C1D03 /* GFPSDKMediationDFP in Frameworks */,
+				7A10CB06D5E90F3A6B2C1D06 /* GFPSDKMediationAppLovin in Frameworks */,
+				7A10CB09D5E90F3A6B2C1D09 /* GFPSDKMediationChartBoost in Frameworks */,
+				7A10CB0CD5E90F3A6B2C1D0C /* GFPSDKMediationDT in Frameworks */,
+				7A10CB0FD5E90F3A6B2C1D0F /* GFPSDKMediationFAN in Frameworks */,
+				7A10CB15D5E90F3A6B2C1D15 /* GFPSDKMediationLAN in Frameworks */,
+				7A10CB18D5E90F3A6B2C1D18 /* GFPSDKMediationMoloco in Frameworks */,
+				7A10CB1BD5E90F3A6B2C1D1B /* GFPSDKMediationTeads in Frameworks */,
+				7A10CB1ED5E90F3A6B2C1D1E /* GFPSDKMediationVungle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +431,15 @@
 			packageReferences = (
 				1FC025E82E546D0500C606E4 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				277156EB2E56DFF60023F519 /* XCRemoteSwiftPackageReference "nam-sdk-ios" */,
+				7A10CB01D5E90F3A6B2C1D01 /* XCLocalSwiftPackageReference "LocalPackages/MediationDFP" */,
+				7A10CB04D5E90F3A6B2C1D04 /* XCLocalSwiftPackageReference "LocalPackages/MediationAppLovin" */,
+				7A10CB07D5E90F3A6B2C1D07 /* XCLocalSwiftPackageReference "LocalPackages/MediationChartBoost" */,
+				7A10CB0AD5E90F3A6B2C1D0A /* XCLocalSwiftPackageReference "LocalPackages/MediationDT" */,
+				7A10CB0DD5E90F3A6B2C1D0D /* XCLocalSwiftPackageReference "LocalPackages/MediationFAN" */,
+				7A10CB13D5E90F3A6B2C1D13 /* XCLocalSwiftPackageReference "LocalPackages/MediationLAN" */,
+				7A10CB16D5E90F3A6B2C1D16 /* XCLocalSwiftPackageReference "LocalPackages/MediationMoloco" */,
+				7A10CB19D5E90F3A6B2C1D19 /* XCLocalSwiftPackageReference "LocalPackages/MediationTeads" */,
+				7A10CB1CD5E90F3A6B2C1D1C /* XCLocalSwiftPackageReference "LocalPackages/MediationVungle" */,
 			);
 			productRefGroup = 1FB55C842563B69B00486B6F /* Products */;
 			projectDirPath = "";
@@ -718,6 +745,45 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		7A10CB01D5E90F3A6B2C1D01 /* XCLocalSwiftPackageReference "LocalPackages/MediationDFP" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationDFP;
+		};
+		7A10CB04D5E90F3A6B2C1D04 /* XCLocalSwiftPackageReference "LocalPackages/MediationAppLovin" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationAppLovin;
+		};
+		7A10CB07D5E90F3A6B2C1D07 /* XCLocalSwiftPackageReference "LocalPackages/MediationChartBoost" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationChartBoost;
+		};
+		7A10CB0AD5E90F3A6B2C1D0A /* XCLocalSwiftPackageReference "LocalPackages/MediationDT" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationDT;
+		};
+		7A10CB0DD5E90F3A6B2C1D0D /* XCLocalSwiftPackageReference "LocalPackages/MediationFAN" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationFAN;
+		};
+		7A10CB13D5E90F3A6B2C1D13 /* XCLocalSwiftPackageReference "LocalPackages/MediationLAN" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationLAN;
+		};
+		7A10CB16D5E90F3A6B2C1D16 /* XCLocalSwiftPackageReference "LocalPackages/MediationMoloco" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationMoloco;
+		};
+		7A10CB19D5E90F3A6B2C1D19 /* XCLocalSwiftPackageReference "LocalPackages/MediationTeads" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationTeads;
+		};
+		7A10CB1CD5E90F3A6B2C1D1C /* XCLocalSwiftPackageReference "LocalPackages/MediationVungle" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalPackages/MediationVungle;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		1FC025E82E546D0500C606E4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -747,6 +813,42 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 277156EB2E56DFF60023F519 /* XCRemoteSwiftPackageReference "nam-sdk-ios" */;
 			productName = GFPSDK;
+		};
+		7A10CB02D5E90F3A6B2C1D02 /* GFPSDKMediationDFP */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationDFP;
+		};
+		7A10CB05D5E90F3A6B2C1D05 /* GFPSDKMediationAppLovin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationAppLovin;
+		};
+		7A10CB08D5E90F3A6B2C1D08 /* GFPSDKMediationChartBoost */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationChartBoost;
+		};
+		7A10CB0BD5E90F3A6B2C1D0B /* GFPSDKMediationDT */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationDT;
+		};
+		7A10CB0ED5E90F3A6B2C1D0E /* GFPSDKMediationFAN */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationFAN;
+		};
+		7A10CB14D5E90F3A6B2C1D14 /* GFPSDKMediationLAN */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationLAN;
+		};
+		7A10CB17D5E90F3A6B2C1D17 /* GFPSDKMediationMoloco */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationMoloco;
+		};
+		7A10CB1AD5E90F3A6B2C1D1A /* GFPSDKMediationTeads */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationTeads;
+		};
+		7A10CB1DD5E90F3A6B2C1D1D /* GFPSDKMediationVungle */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GFPSDKMediationVungle;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
