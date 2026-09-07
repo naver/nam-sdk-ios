@@ -195,6 +195,7 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (UIView * _Nullable)touchView;
 
 - (void)shrinkExtendedRichAd;
+- (void)restoreRichAdLayout;
 
 - (void)didPresentDefaultInAppBrowser;
 - (void)didDismissDefaultInAppBrowser;

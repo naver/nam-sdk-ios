@@ -64,6 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)updateMediaViewLayout;
 - (void)layoutSubviewsBySimpleViewChanged;
+- (void)restoreRichAdLayout;
 
 - (GFPAdStyleType)adStyleType;
 
