@@ -346,17 +346,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -585,13 +585,13 @@
       "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
       "kind": "StringLiteral",
       "offset": 522,
-      "length": 9,
-      "value": "\"4.6.1.2\""
+      "length": 10,
+      "value": "\"4.10.0.0\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 715,
+      "offset": 716,
       "length": 5,
       "value": "false"
     },

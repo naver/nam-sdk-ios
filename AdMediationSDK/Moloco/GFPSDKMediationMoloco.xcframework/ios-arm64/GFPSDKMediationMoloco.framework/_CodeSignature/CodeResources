@@ -6,39 +6,39 @@
 	<dict>
 		<key>Headers/GFPSDKMediationMoloco-Swift.h</key>
 		<data>
-		j3iDCgzTmupGFMh19RSBtZ2ptUM=
+		p+3JSQtIYLdRo+dGKI7X7PbvDns=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+uuFwe3wT4Oi52s03QptF8+EIvA=
+		bICivwqRNJF4Q8v1ptRwUJ/NSJ0=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+3Ls1qGtaCKEGkSwDBdIgjSbyfY=
+		GNCrbeYD8UZHcKCW1eUz2vx8S6U=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		FKbfjk32dDw+g1Yd9514dNOfogM=
+		oIkmXiL5D6SdKtbxo6euZIGc8xs=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		IlFS/z9FTJL4/RG9dzGGvQLgxng=
+		eLH71ei+6GmK71kPLm9Db6S2ujk=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		FKbfjk32dDw+g1Yd9514dNOfogM=
+		oIkmXiL5D6SdKtbxo6euZIGc8xs=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sfLOBTOBdql9806to4aECIGOV5o=
+		bv9I0PCnLuoZowwHfraG/6ytdmE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		NzLCCiP07gzmS3dxYuEfohgVhnM=
+		aWu1Em1R148dHEcBmeCAdvr6iyA=
 		</data>
 		<key>MolocoSDK.bundle/Info.plist</key>
 		<data>
-		JU2hdjcjiNgOPZXcEbpYd5NSi78=
+		iS3b5xnK3NXbj1Wxiw2jhE+UN2w=
 		</data>
 		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -57,98 +57,62 @@
 	<dict>
 		<key>Headers/GFPSDKMediationMoloco-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			j3iDCgzTmupGFMh19RSBtZ2ptUM=
-			</data>
 			<key>hash2</key>
 			<data>
-			YC6IppI0LnjJWth1mgH3PuSf98aysrt4ehxdrs1NZBY=
+			hoNPkDn13yv3/TMenMPilzAg94LJdD2pQmjVPnjGua8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+3Ls1qGtaCKEGkSwDBdIgjSbyfY=
-			</data>
 			<key>hash2</key>
 			<data>
-			/Y1Ij9HPqAQ+2KAKtg/KG6gBKGQ0AlvwWLtwMQoHJMo=
+			RIqA9JOmBU1acatbpCfbtddrREUdQbWRO7mUQGNS650=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FKbfjk32dDw+g1Yd9514dNOfogM=
-			</data>
 			<key>hash2</key>
 			<data>
-			LqPM/TNPgz7x4bbOPyqNaEWdCLkTn+Tq4nTwOxD2v1o=
+			JvJDhn9RkCCRFIxz0/82MyFKvj/ohaHFOJOBK5fWujc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IlFS/z9FTJL4/RG9dzGGvQLgxng=
-			</data>
 			<key>hash2</key>
 			<data>
-			kRTjsNBJ6frHHKqi8aRcX85Ws7FMypI1GO9bTcuLXqw=
+			8Sm7EbUKNLNHzoqusKIrBcKUVQfOd3izQT/3S6LB1lI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FKbfjk32dDw+g1Yd9514dNOfogM=
-			</data>
 			<key>hash2</key>
 			<data>
-			LqPM/TNPgz7x4bbOPyqNaEWdCLkTn+Tq4nTwOxD2v1o=
+			JvJDhn9RkCCRFIxz0/82MyFKvj/ohaHFOJOBK5fWujc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sfLOBTOBdql9806to4aECIGOV5o=
-			</data>
 			<key>hash2</key>
 			<data>
-			b7Pdr252hS9awxatotAGwH9+UeScxLkGlEijFzT5I5I=
+			IVJV4beBu5zr3XCMUSxOdFFVA+2UtRaaOJ3EBni0g+0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NzLCCiP07gzmS3dxYuEfohgVhnM=
-			</data>
 			<key>hash2</key>
 			<data>
-			nKVAc0OkpCO0IkCwVOyfPq6HNxSbqD0yglslZH3mmDI=
+			U0znsocb4rC+kQKPw5LSrm6uOHkvXBRYmCv6RiEnc4U=
 			</data>
 		</dict>
 		<key>MolocoSDK.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JU2hdjcjiNgOPZXcEbpYd5NSi78=
-			</data>
 			<key>hash2</key>
 			<data>
-			gWpn7jhEMjs/uwX2FUaTGn82GB4ZeQhyj9kUBC0+nuU=
+			n6csH5Vn6WfuP3u7Jr/h6MKHaWu8M58VhymslXp/aTk=
 			</data>
 		</dict>
 		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hJKEwRb/BrBZuzCUCo8Mvi5mFAk=
-			</data>
 			<key>hash2</key>
 			<data>
 			ubOnCkg6p4/yut54YsOhIahV81IwyMSGaYVosuDmSjc=
@@ -156,10 +120,6 @@
 		</dict>
 		<key>MolocoSDK.bundle/Resources.bundle/endcard.html</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GdIEFHBikc7SVB9eykIZOhWTkr4=
-			</data>
 			<key>hash2</key>
 			<data>
 			eolTtxN4GEA4VyA+YonMS7FPWA075nkQk5Fi3KG8BNo=
@@ -167,10 +127,6 @@
 		</dict>
 		<key>MolocoSDK.bundle/mraid.js.ignore</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QbcmfpscYXVHrQDN7tmKwxTKmss=
-			</data>
 			<key>hash2</key>
 			<data>
 			0ymH9S0677V8jqsxQQzygdJKIOtCZOIZSkcaYxd/uQ4=
