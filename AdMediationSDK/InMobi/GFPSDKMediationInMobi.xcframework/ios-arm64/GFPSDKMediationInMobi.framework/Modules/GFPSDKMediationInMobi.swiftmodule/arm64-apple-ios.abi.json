@@ -209,7 +209,7 @@
       "kind": "StringLiteral",
       "offset": 481,
       "length": 10,
-      "value": "\"11.1.0.2\""
+      "value": "\"11.1.0.3\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationInMobi\/Common\/GFPInMobiConfig.swift",

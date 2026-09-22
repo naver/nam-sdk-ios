@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GFPSDKMediationInMobi-Swift.h</key>
 		<data>
-		7t2eSjtBYjRo/rhS8Yo5Dbc88oQ=
+		xiS9bitsJwgtnHU0va5Pbt76kBg=
 		</data>
 		<key>Headers/GFPSDKMediationInMobi.h</key>
 		<data>
@@ -14,72 +14,64 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		H7vICev5J2NNvGFofbb3hXVepnI=
+		wOrGZFvQgAW1EiBDSTX2snsE+50=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5THVk5l/evnLvI6nK61nQMkWUyM=
+		MDkJVdpiLGv1DXh3tWzzerJIqkQ=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xg/A4Qkqni7wbUHMx1a8OZIbomg=
+		RpMBhHfOCNWMGbC13AjhAaNg99w=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dcz0l8sCBz6i/LRxmrocHbqjZZs=
+		xjt5N/8awMbt3LAWM+2ws9nkmU4=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xg/A4Qkqni7wbUHMx1a8OZIbomg=
+		RpMBhHfOCNWMGbC13AjhAaNg99w=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Sz1m+mZDDIjafGRRJr+MHDShcbM=
+		51yC74+dcSDl2zQxlRKhjz1rOSM=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5THVk5l/evnLvI6nK61nQMkWUyM=
+		MDkJVdpiLGv1DXh3tWzzerJIqkQ=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ozTJYsfvx17MXHplVukzx80B/rc=
+		WkZKaOc6nLKwixXCtCvV3PihxRw=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		C0C3jldSnbdgQfr4ftG3BtYI1/o=
+		x+IwrD6fza9QyhJAK7yGSiso7IE=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ozTJYsfvx17MXHplVukzx80B/rc=
+		WkZKaOc6nLKwixXCtCvV3PihxRw=
 		</data>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kfg8AyTurpLHza15e52jMCD/LHk=
+		rLIQujztAF+wb04EjG954Oc72EE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		dEaiLAOFt5DRwNXYjQfN5HiOVD8=
+		N6gm5Q7cHnWFD8eM/guo9BgMMCY=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/GFPSDKMediationInMobi-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7t2eSjtBYjRo/rhS8Yo5Dbc88oQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			c5U9Mhi68i9gF8qaz5vubTILsopFbpbAhhnbwHZepUg=
+			LPervI+19hAcy4hGZUi+HpT/IhUhnFDunWbUfhhrxY4=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationInMobi.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Nzixd+sidiRu95dv4ZezAvl2K88=
-			</data>
 			<key>hash2</key>
 			<data>
 			G8y6XQ3yfwQFSvVZslArA70iADuZuUwWKMFZasoWywk=
@@ -87,123 +79,79 @@
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5THVk5l/evnLvI6nK61nQMkWUyM=
-			</data>
 			<key>hash2</key>
 			<data>
-			EwvcRQ8jJ89XysBvNdFPgmzj1wdH8+LVAAv0zygxEp0=
+			/QpBxFB1CnSO0A4xx2S15gwQbC7lYlKVHsMnJsovByk=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xg/A4Qkqni7wbUHMx1a8OZIbomg=
-			</data>
 			<key>hash2</key>
 			<data>
-			i+NVpTVI1deZ07lFWooRHnw8nty+aZ0kAFdWzt6LnRE=
+			9bCR+M+7ZZ2A2l5dAFtaxDMTLjXXRNfveIXTWK1s6sE=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dcz0l8sCBz6i/LRxmrocHbqjZZs=
-			</data>
 			<key>hash2</key>
 			<data>
-			g+GVAymwCURCVSfL0/PO1CMVbin4eQ3frIam79d0oQg=
+			y2hq3E8ckhua4CmMS6XeiwDA/9SoaOlDlOKx3IHasPE=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xg/A4Qkqni7wbUHMx1a8OZIbomg=
-			</data>
 			<key>hash2</key>
 			<data>
-			i+NVpTVI1deZ07lFWooRHnw8nty+aZ0kAFdWzt6LnRE=
+			9bCR+M+7ZZ2A2l5dAFtaxDMTLjXXRNfveIXTWK1s6sE=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Sz1m+mZDDIjafGRRJr+MHDShcbM=
-			</data>
 			<key>hash2</key>
 			<data>
-			wDVYlGNMC9ql3udUOCtY8wmAmBCDPr+aV4tiKQMKlt4=
+			gGi42uhS5DpN5UCUk9K7Kh3fEgPaZeJhOy9bTr7yMDQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5THVk5l/evnLvI6nK61nQMkWUyM=
-			</data>
 			<key>hash2</key>
 			<data>
-			EwvcRQ8jJ89XysBvNdFPgmzj1wdH8+LVAAv0zygxEp0=
+			/QpBxFB1CnSO0A4xx2S15gwQbC7lYlKVHsMnJsovByk=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ozTJYsfvx17MXHplVukzx80B/rc=
-			</data>
 			<key>hash2</key>
 			<data>
-			SWi0iLnDrA/hVu/04umwZtrrW5kovVQXMolj2r1VZ2M=
+			obV94GitrNAVT6+U+XqK/5/H5qlgBYd8yCqR/NnwrO0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C0C3jldSnbdgQfr4ftG3BtYI1/o=
-			</data>
 			<key>hash2</key>
 			<data>
-			MOpcP/7V4u8wbcWsUyl5MgEBwA5y/ymTtU5sxJdzP4s=
+			BDUWHYXgeWtapqSlfkPijzKkoSkti2ng+ciTsGCQHpo=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ozTJYsfvx17MXHplVukzx80B/rc=
-			</data>
 			<key>hash2</key>
 			<data>
-			SWi0iLnDrA/hVu/04umwZtrrW5kovVQXMolj2r1VZ2M=
+			obV94GitrNAVT6+U+XqK/5/H5qlgBYd8yCqR/NnwrO0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationInMobi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kfg8AyTurpLHza15e52jMCD/LHk=
-			</data>
 			<key>hash2</key>
 			<data>
-			e6tD5PZxjn7gqzc9yquyqs5+q6clFUd+fLw/mYkPypY=
+			QBjEdULmwmrNH34wVuuYHdo3Ont1yxW/UozYK27EYmo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dEaiLAOFt5DRwNXYjQfN5HiOVD8=
-			</data>
 			<key>hash2</key>
 			<data>
-			icLpos1ZNRYCNbDWGNK4Pc8q1dVrjwzlKW1zJOI8bGY=
+			1zPydmEwDOxiIOdhV7gLFa9XPUuMUXmoLFhf/WT3LKw=
 			</data>
 		</dict>
 	</dict>
