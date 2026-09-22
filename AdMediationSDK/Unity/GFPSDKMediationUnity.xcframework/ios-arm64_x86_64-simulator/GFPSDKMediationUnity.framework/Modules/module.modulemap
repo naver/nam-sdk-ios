@@ -7,5 +7,4 @@ framework module GFPSDKMediationUnity {
 
 module GFPSDKMediationUnity.Swift {
   header "GFPSDKMediationUnity-Swift.h"
-  requires objc
 }
