@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDK"
-  s.version      = "8.24.6"
+  s.version      = "8.25.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -14,13 +14,13 @@ Pod::Spec.new do |s|
                      "Sangeun.yoon" => "sangeun.yoon@navercorp.com"
                    }
   
-  s.ios.deployment_target = "13.0"
+  s.ios.deployment_target = "15.0"
   s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "#{s.version.to_s}" }
   s.default_subspecs = ['GFPSDK']
 
   s.subspec 'GFPSDK' do |sdk|
     sdk.vendored_frameworks = "NAMSDK/xcframework/GFPSDK.xcframework", "NAMSDK/xcframework/libraries/OMSDK_Navercorp.xcframework"
-    sdk.dependency 'Naver-Ads-Services', '~> 1.5.8'
+    sdk.dependency 'Naver-Ads-Services', '~> 1.6.0'
     sdk.resources = ["NAMSDK/ResourceBundle/GFPSDKResource.bundle"]
   end
 

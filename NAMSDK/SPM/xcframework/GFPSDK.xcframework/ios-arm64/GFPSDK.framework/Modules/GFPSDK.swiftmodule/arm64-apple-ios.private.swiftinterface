@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GFPSDK
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GFPSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AVFoundation
 import AVKit
@@ -68,10 +68,8 @@ extension GFPSDK.GFPErrorUtils {
   @objc(initWithText:textColor:bgColor:highlightBgColor:isBold:badgeOption:spannableOption:) public init(text: Swift.String?, textColor: UIKit.UIColor?, bgColor: UIKit.UIColor?, highlightBgColor: UIKit.UIColor?, isBold: Swift.Bool, badgeOption: GFPSDK.GFPBadgeOption?, spannableOption: [GFPSDK.GFPSpannableOption]?)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPAdDebuggerAuthService : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPAdDebuggerAuthService : ObjectiveC.NSObject {
   @objc public static let shared: GFPSDK.GFPAdDebuggerAuthService
-  @objc public func checkAuth(completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc override dynamic public init()
   @objc deinit
 }
 extension GFPSDK.GFPContentInfo : Swift.Codable {
@@ -137,13 +135,13 @@ extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
   @objc public func logInternalLog(_ log: GFPSDK.GFPAdDebuggerInternalLog?, logId: Foundation.UUID?)
   @objc public func addNewSDKInitLog(logId: Foundation.UUID?)
   @objc public func logSDKInit(result: GFPSDK.GFPSDKInitResult?, logId: Foundation.UUID?)
-  @objc public func logUnavailableMediation(withBannerOption option: GFPSDK.GFPBannerProviderOption)
-  @objc public func logUnavailableMediation(withNativeOption option: GFPSDK.GFPNativeProviderOption)
-  @objc public func logUnavailableMediation(withCombinedOption option: GFPSDK.GFPCombinedProviderOption)
-  @objc public func logUnavailableMediation(withVideoOption option: GFPSDK.GFPVideoProviderOption)
-  @objc public func logUnavailableMediation(withRewardedOption option: GFPSDK.GFPRewardedAdProviderOption)
-  @objc public func logUnavailableMediation(withInterstitialOption option: GFPSDK.GFPInterstitialAdProviderOption)
-  @objc public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType?, productType: GFPSDK.GFPProviderProductType?)
+  @objc public func logUnavailableMediation(withBannerOption option: GFPSDK.GFPBannerProviderOption, optionName: Swift.String? = nil)
+  @objc public func logUnavailableMediation(withNativeOption option: GFPSDK.GFPNativeProviderOption, optionName: Swift.String? = nil)
+  @objc public func logUnavailableMediation(withCombinedOption option: GFPSDK.GFPCombinedProviderOption, optionName: Swift.String? = nil)
+  @objc public func logUnavailableMediation(withVideoOption option: GFPSDK.GFPVideoProviderOption, optionName: Swift.String? = nil)
+  @objc public func logUnavailableMediation(withRewardedOption option: GFPSDK.GFPRewardedAdProviderOption, optionName: Swift.String? = nil)
+  @objc public func logUnavailableMediation(withInterstitialOption option: GFPSDK.GFPInterstitialAdProviderOption, optionName: Swift.String? = nil)
+  @objc public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType?, productType: GFPSDK.GFPProviderProductType?, providerClassName: Swift.String? = nil)
   @objc public func logNotUsedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
   @objc public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
   @objc public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
@@ -331,6 +329,9 @@ public class GFPAPIResponseLog : Swift.Codable {
   public var error: Swift.String? {
     get
   }
+  public var bodyJSONObject: [Swift.String : Any]? {
+    get
+  }
   public var waterfallList: GFPSDK.GFPWaterfallList? {
     get
   }
@@ -492,7 +493,7 @@ extension UIKit.UIView.ContentMode : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @objcMembers public class GFPAdDebuggerEnabler : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc @objcMembers public class GFPAdDebuggerEnabler : ObjectiveC.NSObject {
   @objc public static let shared: GFPSDK.GFPAdDebuggerEnabler
   @objc public static var isDeveloperEnvironment: Swift.Bool {
     @objc get
@@ -503,7 +504,11 @@ extension UIKit.UIView.ContentMode : Swift.Codable {
   @objc public static var isDebuggerAttached: Swift.Bool {
     @objc get
   }
-  @objc public func setup()
+  @objc public func activateAtStartup()
+  @objc @available(*, deprecated, renamed: "activateAtStartup")
+  public func setup()
+  @objc public func refreshCollectionGate()
+  @objc override dynamic public init()
   @objc deinit
 }
 extension GFPSDK.GFPCachedAdParam : Swift.Codable {
@@ -980,6 +985,7 @@ extension GFPSDK.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateV
   @objc public static let travelSpecialDA: Swift.String
   @objc public static let imageToMotion: Swift.String
   @objc public static let imageRetail: Swift.String
+  @objc public static let shortFormRetail: Swift.String
   @objc public static let imageScrollMotion: Swift.String
   @objc public static let carouselComplexImage: Swift.String
   @objc public static let carouselComplexRetailImage: Swift.String

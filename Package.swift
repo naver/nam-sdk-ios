@@ -17,7 +17,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/naver/nas-sdk-ios.git", .upToNextMinor(from: "1.5.8"))
+        .package(url: "https://github.com/naver/nas-sdk-ios.git", .upToNextMinor(from: "1.6.0"))
     ],
     targets: [
         // core

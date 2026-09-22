@@ -1949,72 +1949,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "checkAuth",
-            "printedName": "checkAuth(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerAuthService(im)checkAuthWithCompletion:",
-            "mangledName": "$s6GFPSDK24GFPAdDebuggerAuthServiceC05checkD010completionyySbc_tF",
-            "moduleName": "GFPSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GFPAdDebuggerAuthService",
-                "printedName": "GFPSDK.GFPAdDebuggerAuthService",
-                "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerAuthService"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerAuthService(im)init",
-            "mangledName": "$s6GFPSDK24GFPAdDebuggerAuthServiceCACycfc",
-            "moduleName": "GFPSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -2028,6 +1962,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -3794,7 +3729,7 @@
           {
             "kind": "Function",
             "name": "logUnavailableMediation",
-            "printedName": "logUnavailableMediation(withBannerOption:)",
+            "printedName": "logUnavailableMediation(withBannerOption:optionName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3806,11 +3741,26 @@
                 "name": "GFPBannerProviderOption",
                 "printedName": "GFPSDK.GFPBannerProviderOption",
                 "usr": "c:@M@GFPSDK@E@GFPBannerProviderOption"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithBannerOption:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation16withBannerOptionyAA017GFPBannerProviderI0O_tF",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithBannerOption:optionName:",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation16withBannerOption10optionNameyAA017GFPBannerProviderI0O_SSSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -3822,7 +3772,7 @@
           {
             "kind": "Function",
             "name": "logUnavailableMediation",
-            "printedName": "logUnavailableMediation(withNativeOption:)",
+            "printedName": "logUnavailableMediation(withNativeOption:optionName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3834,11 +3784,26 @@
                 "name": "GFPNativeProviderOption",
                 "printedName": "GFPSDK.GFPNativeProviderOption",
                 "usr": "c:@M@GFPSDK@E@GFPNativeProviderOption"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithNativeOption:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation16withNativeOptionyAA017GFPNativeProviderI0O_tF",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithNativeOption:optionName:",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation16withNativeOption10optionNameyAA017GFPNativeProviderI0O_SSSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -3849,7 +3814,7 @@
           {
             "kind": "Function",
             "name": "logUnavailableMediation",
-            "printedName": "logUnavailableMediation(withCombinedOption:)",
+            "printedName": "logUnavailableMediation(withCombinedOption:optionName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3861,11 +3826,26 @@
                 "name": "GFPCombinedProviderOption",
                 "printedName": "GFPSDK.GFPCombinedProviderOption",
                 "usr": "c:@M@GFPSDK@E@GFPCombinedProviderOption"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithCombinedOption:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation18withCombinedOptionyAA019GFPCombinedProviderI0O_tF",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithCombinedOption:optionName:",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation18withCombinedOption10optionNameyAA019GFPCombinedProviderI0O_SSSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -3876,7 +3856,7 @@
           {
             "kind": "Function",
             "name": "logUnavailableMediation",
-            "printedName": "logUnavailableMediation(withVideoOption:)",
+            "printedName": "logUnavailableMediation(withVideoOption:optionName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3888,11 +3868,26 @@
                 "name": "GFPVideoProviderOption",
                 "printedName": "GFPSDK.GFPVideoProviderOption",
                 "usr": "c:@M@GFPSDK@E@GFPVideoProviderOption"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithVideoOption:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation15withVideoOptionyAA016GFPVideoProviderI0O_tF",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithVideoOption:optionName:",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation15withVideoOption10optionNameyAA016GFPVideoProviderI0O_SSSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -3903,7 +3898,7 @@
           {
             "kind": "Function",
             "name": "logUnavailableMediation",
-            "printedName": "logUnavailableMediation(withRewardedOption:)",
+            "printedName": "logUnavailableMediation(withRewardedOption:optionName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3915,11 +3910,26 @@
                 "name": "GFPRewardedAdProviderOption",
                 "printedName": "GFPSDK.GFPRewardedAdProviderOption",
                 "usr": "c:@M@GFPSDK@E@GFPRewardedAdProviderOption"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithRewardedOption:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation18withRewardedOptionyAA021GFPRewardedAdProviderI0O_tF",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithRewardedOption:optionName:",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation18withRewardedOption10optionNameyAA021GFPRewardedAdProviderI0O_SSSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -3930,7 +3940,7 @@
           {
             "kind": "Function",
             "name": "logUnavailableMediation",
-            "printedName": "logUnavailableMediation(withInterstitialOption:)",
+            "printedName": "logUnavailableMediation(withInterstitialOption:optionName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3942,11 +3952,26 @@
                 "name": "GFPInterstitialAdProviderOption",
                 "printedName": "GFPSDK.GFPInterstitialAdProviderOption",
                 "usr": "c:@M@GFPSDK@E@GFPInterstitialAdProviderOption"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithInterstitialOption:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation22withInterstitialOptionyAA025GFPInterstitialAdProviderI0O_tF",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logUnavailableMediationWithInterstitialOption:optionName:",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC23logUnavailableMediation22withInterstitialOption10optionNameyAA025GFPInterstitialAdProviderI0O_SSSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
@@ -3957,7 +3982,7 @@
           {
             "kind": "Function",
             "name": "logAvailableMediation",
-            "printedName": "logAvailableMediation(withProviderType:productType:)",
+            "printedName": "logAvailableMediation(withProviderType:productType:providerClassName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3991,14 +4016,30 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAvailableMediationWithProviderType:productType:",
-            "mangledName": "$s6GFPSDK15GFPLogCollectorC21logAvailableMediation16withProviderType07productI0ySo011GFPProviderI0aSg_So0k7ProductI0aSgtF",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPLogCollector(im)logAvailableMediationWithProviderType:productType:providerClassName:",
+            "mangledName": "$s6GFPSDK15GFPLogCollectorC21logAvailableMediation16withProviderType07productI017providerClassNameySo011GFPProviderI0aSg_So0n7ProductI0aSgSSSgtF",
             "moduleName": "GFPSDK",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -4276,7 +4317,8 @@
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
@@ -11310,6 +11352,89 @@
           },
           {
             "kind": "Var",
+            "name": "bodyJSONObject",
+            "printedName": "bodyJSONObject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6GFPSDK17GFPAPIResponseLogC14bodyJSONObjectSDySSypGSgvp",
+            "mangledName": "$s6GFPSDK17GFPAPIResponseLogC14bodyJSONObjectSDySSypGSgvp",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6GFPSDK17GFPAPIResponseLogC14bodyJSONObjectSDySSypGSgvg",
+                "mangledName": "$s6GFPSDK17GFPAPIResponseLogC14bodyJSONObjectSDySSypGSgvg",
+                "moduleName": "GFPSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "waterfallList",
             "printedName": "waterfallList",
             "children": [
@@ -14061,6 +14186,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDK"
       },
       {
         "kind": "Import",
@@ -17576,6 +17708,28 @@
           },
           {
             "kind": "Function",
+            "name": "activateAtStartup",
+            "printedName": "activateAtStartup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerEnabler(im)activateAtStartup",
+            "mangledName": "$s6GFPSDK20GFPAdDebuggerEnablerC17activateAtStartupyyF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setup",
             "printedName": "setup()",
             "children": [
@@ -17589,11 +17743,61 @@
             "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerEnabler(im)setup",
             "mangledName": "$s6GFPSDK20GFPAdDebuggerEnablerC5setupyyF",
             "moduleName": "GFPSDK",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
+              "Available",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshCollectionGate",
+            "printedName": "refreshCollectionGate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerEnabler(im)refreshCollectionGate",
+            "mangledName": "$s6GFPSDK20GFPAdDebuggerEnablerC21refreshCollectionGateyyF",
+            "moduleName": "GFPSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAdDebuggerEnabler",
+                "printedName": "GFPSDK.GFPAdDebuggerEnabler",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerEnabler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPAdDebuggerEnabler(im)init",
+            "mangledName": "$s6GFPSDK20GFPAdDebuggerEnablerCACycfc",
+            "moduleName": "GFPSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -17603,10 +17807,10 @@
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -36604,6 +36808,59 @@
           },
           {
             "kind": "Var",
+            "name": "shortFormRetail",
+            "printedName": "shortFormRetail",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cpy)shortFormRetail",
+            "mangledName": "$s6GFPSDK12GFPVisualKeyC15shortFormRetailSSvpZ",
+            "moduleName": "GFPSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GFPSDK@objc(cs)GFPVisualKey(cm)shortFormRetail",
+                "mangledName": "$s6GFPSDK12GFPVisualKeyC15shortFormRetailSSvgZ",
+                "moduleName": "GFPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "imageScrollMotion",
             "printedName": "imageScrollMotion",
             "children": [
@@ -51416,6 +51673,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "GFPErrorUtils",
         "printedName": "GFPErrorUtils",
@@ -53987,9 +54254,30 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerAuthService.swift",
       "kind": "StringLiteral",
-      "offset": 691,
-      "length": 31,
-      "value": "\"kGFPAdDebuggerExpiryTimestamp\""
+      "offset": 1396,
+      "length": 28,
+      "value": "\"kGFPAdDebuggerDeniedExpiry\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerAuthService.swift",
+      "kind": "StringLiteral",
+      "offset": 1601,
+      "length": 29,
+      "value": "\"kGFPAdDebuggerAllowedExpiry\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerAuthService.swift",
+      "kind": "StringLiteral",
+      "offset": 1749,
+      "length": 34,
+      "value": "\"kGFPAdDebuggerLegacyCacheCleaned\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerAuthService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2107,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/SDKTab\/Tables\/GFPAdDebuggerAdaptersTable.swift",
@@ -54505,7 +54793,7 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPLogCollector.swift",
       "kind": "StringLiteral",
-      "offset": 693,
+      "offset": 1653,
       "length": 33,
       "value": "\"GFPAdDebuggerLoggerBecameActive\""
     },
@@ -54827,107 +55115,121 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 3824,
+      "offset": 3493,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 3928,
+      "offset": 3597,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Array",
-      "offset": 4064,
+      "offset": 3733,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 4096,
+      "offset": 3765,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 4215,
+      "offset": 3884,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 4268,
+      "offset": 3937,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 4336,
+      "offset": 4005,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 4483,
+      "offset": 4152,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 4533,
+      "offset": 4202,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4672,
+      "offset": 4341,
       "length": 43,
       "value": "\"com.naver.gfpsdk.adDebuggerLogger.logging\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 11550,
+      "offset": 13202,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 11613,
+      "offset": 13321,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 11732,
+      "offset": 13396,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
       "kind": "Dictionary",
-      "offset": 11807,
+      "offset": 13474,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
-      "kind": "Dictionary",
-      "offset": 11885,
+      "kind": "FloatLiteral",
+      "offset": 14853,
       "length": 3,
-      "value": "[]"
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 15131,
+      "length": 52,
+      "value": "\"com.naver.gfpsdk.adDebuggerLogger.initEventPersist\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15337,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Utils\/GFPAdDebuggerFileUtils.swift",
@@ -55029,169 +55331,232 @@
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "FloatLiteral",
-      "offset": 3810,
-      "length": 4,
-      "value": "80.0"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3954,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5224,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 930,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 5271,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5477,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5524,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5726,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5773,
+      "offset": 1053,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "BooleanLiteral",
-      "offset": 5990,
+      "offset": 1115,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 6047,
+      "offset": 1599,
       "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6360,
-      "length": 5,
-      "value": "false"
+      "value": "32"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 6464,
+      "offset": 1703,
+      "length": 3,
+      "value": "-32"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "Array",
+      "offset": 2053,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2683,
       "length": 1,
-      "value": "3"
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "FloatLiteral",
+      "offset": 8262,
+      "length": 4,
+      "value": "80.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "BooleanLiteral",
-      "offset": 6627,
+      "offset": 8406,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8738,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 6678,
+      "offset": 9607,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9813,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9860,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "BooleanLiteral",
-      "offset": 6895,
+      "offset": 10062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 6942,
+      "offset": 10109,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10326,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10383,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10696,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 7071,
+      "offset": 10800,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10963,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11014,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11231,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11278,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "StringLiteral",
+      "offset": 11393,
+      "length": 12,
+      "value": "\"Prefetched\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11485,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "BooleanLiteral",
-      "offset": 7109,
+      "offset": 11523,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "BooleanLiteral",
-      "offset": 7334,
+      "offset": 11748,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 7431,
+      "offset": 11845,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 9269,
+      "offset": 14280,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 9278,
+      "offset": 14289,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 9289,
+      "offset": 14300,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/GFPAdDebuggerAdLogsListTable.swift",
       "kind": "IntegerLiteral",
-      "offset": 9299,
+      "offset": 14310,
       "length": 1,
       "value": "7"
     },
@@ -55317,21 +55682,21 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/Detail\/GFPAdDebuggerLogSelectorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5030,
+      "offset": 4936,
       "length": 4,
       "value": "9999"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/Detail\/GFPAdDebuggerLogSelectorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5083,
+      "offset": 4989,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/Detail\/GFPAdDebuggerLogSelectorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5140,
+      "offset": 5046,
       "length": 2,
       "value": "36"
     },
@@ -55947,30 +56312,44 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/GFPAdDebuggerMainTabBar.swift",
       "kind": "StringLiteral",
-      "offset": 1181,
+      "offset": 1552,
+      "length": 178,
+      "value": "\"사내망 연결로 애드디버거 열람이 인증되었습니다. 인증 상태는 앱을 종료하기 전까지 유지되며, 광고 로그는 이제부터 수집됩니다.\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/GFPAdDebuggerMainTabBar.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
       "length": 23,
       "value": "\"square.and.arrow.down\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/GFPAdDebuggerMainTabBar.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 2186,
       "length": 17,
       "value": "\"arrow.clockwise\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/GFPAdDebuggerMainTabBar.swift",
       "kind": "StringLiteral",
-      "offset": 2041,
+      "offset": 2685,
       "length": 21,
       "value": "\"square.and.arrow.up\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/GFPAdDebuggerMainTabBar.swift",
       "kind": "BooleanLiteral",
-      "offset": 2312,
+      "offset": 2956,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/GFPAdDebuggerMainTabBar.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13166,
+      "length": 2,
+      "value": "26"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/AdLogsTab\/Detail\/Tables\/GFPAdDebuggerAdViewTable.swift",
@@ -56155,6 +56534,20 @@
       "value": "\"Cache Events\""
     },
     {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAPILog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1436,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAPILog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1537,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
       "offset": 2003,
@@ -56164,63 +56557,63 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 3447,
+      "offset": 3761,
       "length": 5,
       "value": "\"3.0\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 3516,
+      "offset": 3830,
       "length": 5,
       "value": "\"2.2\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 3585,
+      "offset": 3899,
       "length": 5,
       "value": "\"2.1\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 3654,
+      "offset": 3968,
       "length": 5,
       "value": "\"2.0\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 3723,
+      "offset": 4037,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 3765,
+      "offset": 4079,
       "length": 35,
       "value": "\"SKAdN unsupports this iOS Version\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 3909,
+      "offset": 4223,
       "length": 18,
       "value": "\"SKAdNetworkItems\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "Array",
-      "offset": 3953,
+      "offset": 4267,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPAdDebuggerPrivacyLogs.swift",
       "kind": "StringLiteral",
-      "offset": 4108,
+      "offset": 4422,
       "length": 23,
       "value": "\"SKAdNetworkIdentifier\""
     },
@@ -56436,43 +56829,36 @@
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebugger.swift",
-      "kind": "StringLiteral",
-      "offset": 698,
-      "length": 33,
-      "value": "\"https:\/\/beta-nam.veta.naver.com\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebugger.swift",
-      "kind": "StringLiteral",
-      "offset": 766,
-      "length": 9,
-      "value": "\"\/gfp\/v1\""
+      "kind": "IntegerLiteral",
+      "offset": 1137,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebugger.swift",
       "kind": "FloatLiteral",
-      "offset": 901,
+      "offset": 1189,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebugger.swift",
       "kind": "BooleanLiteral",
-      "offset": 936,
+      "offset": 1434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebugger.swift",
       "kind": "StringLiteral",
-      "offset": 984,
+      "offset": 1482,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"1.0.1\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebugger.swift",
       "kind": "BooleanLiteral",
-      "offset": 4756,
+      "offset": 4477,
       "length": 5,
       "value": "false"
     },
@@ -56549,7 +56935,7 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Views\/SDKTab\/Tables\/GFPAdDebuggerSDKInfoTable.swift",
       "kind": "StringLiteral",
-      "offset": 919,
+      "offset": 951,
       "length": 39,
       "value": "\"Long tap values to copy to clipboard.\""
     },
@@ -56577,7 +56963,7 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Logs\/GFPMediationLog.swift",
       "kind": "Dictionary",
-      "offset": 643,
+      "offset": 1070,
       "length": 3,
       "value": "[]"
     },
@@ -57514,52 +57900,73 @@
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2072,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
       "kind": "BooleanLiteral",
-      "offset": 541,
+      "offset": 2589,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
       "kind": "BooleanLiteral",
-      "offset": 1134,
+      "offset": 2823,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
+      "kind": "Array",
+      "offset": 3896,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3938,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4531,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1451,
+      "offset": 4848,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1457,
+      "offset": 4854,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
       "kind": "BooleanLiteral",
-      "offset": 1473,
+      "offset": 4870,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1532,
+      "offset": 4929,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerEnabler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1679,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/Data\/Enums\/GFPAdModuleTypeState.swift",
@@ -59146,77 +59553,84 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 1342,
+      "offset": 1310,
+      "length": 36,
+      "value": "\"NORMAL_IMAGE_FEED_SHORTFORM_RETAIL\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
+      "kind": "StringLiteral",
+      "offset": 1411,
       "length": 22,
       "value": "\"CAROUSEL_IMAGE_MEDIA\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 1403,
+      "offset": 1472,
       "length": 29,
       "value": "\"CAROUSEL_IMAGE_MEDIA_RETAIL\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 1465,
+      "offset": 1534,
       "length": 22,
       "value": "\"CAROUSEL_VIDEO_MEDIA\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 1523,
+      "offset": 1592,
       "length": 33,
       "value": "\"CAROUSEL_IMAGE_INTERACTION_HOME\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 1587,
+      "offset": 1656,
       "length": 23,
       "value": "\"CAROUSEL_IMAGE_CUSTOM\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 1643,
+      "offset": 1712,
       "length": 15,
       "value": "\"ADVOOST_1LINE\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 1693,
+      "offset": 1762,
       "length": 29,
       "value": "\"CAROUSEL_IMAGE_SHOPPING_NDA\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2175,
       "length": 12,
       "value": "\"engagement\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 2141,
+      "offset": 2210,
       "length": 16,
       "value": "\"promotiontext1\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2249,
       "length": 16,
       "value": "\"promotiontext2\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/Display\/Native\/GFPVisualKey.swift",
       "kind": "StringLiteral",
-      "offset": 2221,
+      "offset": 2290,
       "length": 14,
       "value": "\"overlaybadge\""
     },
@@ -60388,6 +60802,13 @@
       "offset": 5840,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDK\/AdDebugger\/GFPAdDebuggerInitEventStore.swift",
+      "kind": "StringLiteral",
+      "offset": 840,
+      "length": 31,
+      "value": "\"gfp_debugger_init_events.json\""
     }
   ]
 }

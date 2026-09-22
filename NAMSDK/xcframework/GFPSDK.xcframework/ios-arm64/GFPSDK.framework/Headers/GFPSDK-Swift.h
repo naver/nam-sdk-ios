@@ -414,20 +414,45 @@ SWIFT_CLASS("_TtC6GFPSDK23GFPAdDebuggerAccessInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Handles device authentication for Ad Debugger access.
-/// Calls <code>/adDebugger/v1</code> to verify whether the device is on the whitelist.
-/// Caches the result locally using the TTL from the server response to avoid redundant requests.
+/// Ad Debugger 기기 인증 서비스.
+/// <code>/adDebugger/v1</code> 로 이 기기가 화이트리스트에 있는지 확인하고,
+/// 응답을 — 허용이든 거부든 — 서버가 내려준 TTL 동안 로컬에 캐시한다.
+/// 거부 응답까지 캐시하는 이유: 모든 기기가 SDK 초기화 시점에 이 확인을 타므로,
+/// 거부를 캐시하지 않으면 기기들이 매 초기화마다 API 를 호출해 동시 초기화 시
+/// RPS 가 폭주한다. Android 가 실제로 겪고 같은 정책으로 완화한 이슈(GFP-3387)이며,
+/// Android 의 AdDebuggerCache 와 동일한 구조다.
 SWIFT_CLASS("_TtC6GFPSDK24GFPAdDebuggerAuthService")
 @interface GFPAdDebuggerAuthService : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPAdDebuggerAuthService * _Nonnull shared;)
 + (GFPAdDebuggerAuthService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-/// Checks authentication. Returns immediately if the cache is still valid, skipping the API call.
-/// \param completion Result of authentication (true: allowed, false: denied)
-///
-- (void)checkAuthWithCompletion:(void (^ _Nonnull)(BOOL))completion;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Ad Debugger 의 “열람 허용”과 “adlog 수집 허용”을 모두 관리하는 단일 클래스.
+/// 열람 판정(<code>requestEntry</code>)은 아래 순서로 첫 번째로 성립하는 신호에서 끝난다.
+/// <ol>
+///   <li>
+///     코드 활성화(명시 플래그) 또는 개발자 환경(시뮬레이터/디버거 부착) — 즉시 허용
+///   </li>
+///   <li>
+///     유효한 서버 “허용” 캐시 — 즉시 허용 (네트워크 없음)
+///   </li>
+///   <li>
+///     사내망 — 사내망이면 서버 인증 없이 허용 (판별은 열람 시도 때 세션당 1회)
+///   </li>
+///   <li>
+///     서버 화이트리스트 재검증 — 거부 캐시가 남아 있어도 다시 확인
+///   </li>
+/// </ol>
+/// 1·2·4 는 Android(InternalGfpSdk.checkAdDebuggerActivation / GfpAdDebugger.show)와 동일한
+/// 정책이고, 3(사내망 프리패스)은 iOS 전용이다.
+/// 사내망 판별은 <em>열람 시도(<code>requestEntry</code>)에서만, 세션당 1회</em> 수행한다. SDK 초기화 등
+/// 열람과 무관한 시점에는 하지 않는다. 판별 요청이 일반 사용자 기기에서까지 주기적으로 나가면
+/// 사내 서버 입장에서 정체 불명의 트래픽으로 보이기 때문이다.
+/// 수집 게이트(<code>adDebuggerAvailable</code>)는 위 신호 중 하나라도 참이면 켜진다. SDK 초기화 시점
+/// (<code>activateAtStartup</code>)에는 서버 활성화 확인(TTL 캐시)만 하므로, 화이트리스트 기기는 첫 열람
+/// 전에도 세션 시작부터 수집하고, 사내망 기기는 첫 열람이 허용된 시점부터 수집한다.
 SWIFT_CLASS("_TtC6GFPSDK20GFPAdDebuggerEnabler")
 @interface GFPAdDebuggerEnabler : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPAdDebuggerEnabler * _Nonnull shared;)
@@ -441,9 +466,24 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSimulatorEnvi
 + (BOOL)isSimulatorEnvironment SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isDebuggerAttached;)
 + (BOOL)isDebuggerAttached SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setup;
+/// SDK 초기화(setupWithPublisherCd) 시점에 항상 호출된다.
+/// <ul>
+///   <li>
+///     코드 활성화/개발자 환경 기기는 즉시 수집을 켠다.
+///   </li>
+///   <li>
+///     그 외 기기는 서버 화이트리스트 활성화를 확인해 허용 기기만 그 시점부터 수집한다.
+///     활성화 캐시(허용/거부 모두, 서버 TTL)가 유효한 동안에는 서버 요청이 없다.
+///   </li>
+/// </ul>
+/// 사내망 판별은 여기서 하지 않는다. 열람 시도 때만 수행하므로(<code>requestEntry</code>),
+/// 디버거를 열지 않는 일반 사용자 기기에서는 사내망 판별 요청이 발생하지 않는다.
+- (void)activateAtStartup;
+- (void)setup SWIFT_DEPRECATED_MSG("", "activateAtStartup");
+/// 수집 게이트를 현재 신호로 재평가해 GFPLogCollector 에 반영한다.
+/// 명시 활성화 플래그가 바뀌는 등 신호가 변할 때 호출한다.
+- (void)refreshCollectionGate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPAdDebuggerInternalLogType)
@@ -884,6 +924,22 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPLimitQueue")
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPNativeProviderOption)
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPVideoProviderOption)
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPRewardedAdProviderOption)
+/// Ad Debugger 로그 수집 파이프. 수집 게이트는 GFPAdDebuggerEnabler 가 결정하고,
+/// 이 클래스는 그 결과(enableAdDebuggerLogging)를 반영만 한다.
+/// Android(DebugLogger)와 동일한 정책으로 두 종류의 로그를 구분한다:
+/// <ul>
+///   <li>
+///     광고 로드 계열 로그: 수집이 꺼져 있으면 버린다. 일반 사용자 기기는
+///     광고 로그를 보관하지 않는다 (isEnabled 게이트와 동일).
+///   </li>
+///   <li>
+///     SDK 초기화 흐름 로그(init 결과, 어댑터/미디에이션 가용성): 수집 게이트와 무관하게
+///     항상 기록하고 파일로 영속화한다 (GfpAdDebuggerInitEventStore 대응).
+///     서버 화이트리스트 활성화 응답이 도착하기 전에 SDK init 이 먼저 진행되므로,
+///     항상 기록하지 않으면 화이트리스트 기기조차 첫 실행에서 SDK 탭이 비어 보인다.
+///     영속화 덕분에 직전 세션의 초기화 기록도 SDK 탭에서 확인할 수 있다.
+///   </li>
+/// </ul>
 SWIFT_CLASS_NAMED("GFPLogCollector")
 @interface GFPLogCollector : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLogCollector * _Nonnull shared;)
@@ -905,13 +961,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 - (void)logInternalLog:(GFPAdDebuggerInternalLog * _Nullable)log logId:(NSUUID * _Nullable)logId;
 - (void)addNewSDKInitLogWithLogId:(NSUUID * _Nullable)logId;
 - (void)logSDKInitWithResult:(GFPSDKInitResult * _Nullable)result logId:(NSUUID * _Nullable)logId;
-- (void)logUnavailableMediationWithBannerOption:(enum GFPBannerProviderOption)option;
-- (void)logUnavailableMediationWithNativeOption:(enum GFPNativeProviderOption)option;
-- (void)logUnavailableMediationWithCombinedOption:(enum GFPCombinedProviderOption)option;
-- (void)logUnavailableMediationWithVideoOption:(enum GFPVideoProviderOption)option;
-- (void)logUnavailableMediationWithRewardedOption:(enum GFPRewardedAdProviderOption)option;
-- (void)logUnavailableMediationWithInterstitialOption:(enum GFPInterstitialAdProviderOption)option;
-- (void)logAvailableMediationWithProviderType:(GFPProviderType _Nullable)providerType productType:(GFPProviderProductType _Nullable)productType;
+- (void)logUnavailableMediationWithBannerOption:(enum GFPBannerProviderOption)option optionName:(NSString * _Nullable)optionName;
+- (void)logUnavailableMediationWithNativeOption:(enum GFPNativeProviderOption)option optionName:(NSString * _Nullable)optionName;
+- (void)logUnavailableMediationWithCombinedOption:(enum GFPCombinedProviderOption)option optionName:(NSString * _Nullable)optionName;
+- (void)logUnavailableMediationWithVideoOption:(enum GFPVideoProviderOption)option optionName:(NSString * _Nullable)optionName;
+- (void)logUnavailableMediationWithRewardedOption:(enum GFPRewardedAdProviderOption)option optionName:(NSString * _Nullable)optionName;
+- (void)logUnavailableMediationWithInterstitialOption:(enum GFPInterstitialAdProviderOption)option optionName:(NSString * _Nullable)optionName;
+/// \param providerClassName 등록된 프로바이더 클래스 이름. GFPAdapterType 목록에 없는 모듈의 버전을 규약(GFP<Module>Config)으로 찾는 데 쓴다.
+///
+- (void)logAvailableMediationWithProviderType:(GFPProviderType _Nullable)providerType productType:(GFPProviderProductType _Nullable)productType providerClassName:(NSString * _Nullable)providerClassName;
 - (void)logNotUsedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
 - (void)logInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
 - (void)logBlockedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
@@ -1306,6 +1364,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)imageToMotion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageRetail;)
 + (NSString * _Nonnull)imageRetail SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull shortFormRetail;)
++ (NSString * _Nonnull)shortFormRetail SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageScrollMotion;)
 + (NSString * _Nonnull)imageScrollMotion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselComplexImage;)

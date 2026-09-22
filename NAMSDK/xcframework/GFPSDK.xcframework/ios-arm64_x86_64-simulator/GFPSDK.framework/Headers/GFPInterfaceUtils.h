@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)isDarkModeWith:(GFPAdInterfaceStyle)style;
 
+// 씬 기반 keyWindow / interfaceOrientation 조회는 NAS 의 GFPDeviceUtils(keyWindow, interfaceOrientation, interfaceOrientationForView:) 를 사용한다. (GFPSDK-1804)
+
 @end
 
 NS_ASSUME_NONNULL_END

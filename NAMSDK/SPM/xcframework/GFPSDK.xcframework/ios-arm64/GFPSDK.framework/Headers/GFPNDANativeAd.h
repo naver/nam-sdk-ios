@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class GFPAdChoicesData;
 @class GFPNDANativeLandingTapGesture;
 @class GFPAutoPlayInfo;
-@class GFPNDAVastVerification;
+@class GFPVastAdVerification;
 @class GFPOMMediaEvent;
 
 @protocol GFPNDANativeAdDelegate <NSObject>
@@ -128,7 +128,7 @@ didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
 @property (nonatomic, strong) GFPAutoPlayInfo *autoPlayInfo;
 
 @property (nonatomic, weak) GFPNativeBaseView *adView;
-@property (nonatomic, strong, readonly, nullable) NSArray <GFPNDAVastVerification *> *vastOmidInfos;
+@property (nonatomic, strong, readonly, nullable) NSArray <GFPVastAdVerification *> *vastOmidInfos;
 @property (nonatomic, readonly, strong) NSUUID *logId;
 
 - (instancetype)initWithNativeAdInfo:(GFPNativeAdInfo *)nativeAdInfo

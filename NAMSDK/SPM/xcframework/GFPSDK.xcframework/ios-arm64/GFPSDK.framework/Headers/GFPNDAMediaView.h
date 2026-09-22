@@ -149,9 +149,6 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 //for deferred video lazy loading
 - (BOOL)hasDeferredVideoLoad;
 - (void)triggerDeferredVideoLoad;
-
-//for external, additional ad ( ex. triple crown )
-- (void)clearAdditionalAds;
 @end
 
 //For carousel
@@ -196,6 +193,10 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 
 - (void)shrinkExtendedRichAd;
 - (void)restoreRichAdLayout;
+
+//register / unregister lifecycle hooks
+- (void)postRenderingWith:(GFPNativeBaseView *)nativeAdView;
+- (void)postUnregisterRendering;
 
 - (void)didPresentDefaultInAppBrowser;
 - (void)didDismissDefaultInAppBrowser;

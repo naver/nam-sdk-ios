@@ -27,7 +27,7 @@
 @class GFPNDAVideoExtraInfo;
 @class GFPVideoDisplayMode;
 @class GFPError;
-@class GFPNDAVastVerification;
+@class GFPVastAdVerification;
 @class GFPOMMediaEvent;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -56,7 +56,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAutoPlayStatus) {
 
 @property (nonatomic, readonly, assign) BOOL enableAttached;
 
-@property (nonatomic, strong, readonly, nullable) NSArray <GFPNDAVastVerification *> *vastOmidInfos;
+@property (nonatomic, strong, readonly, nullable) NSArray <GFPVastAdVerification *> *vastOmidInfos;
 
 - (instancetype)initManagerWithVastXML:(NSString *)vastXMLString
                        vastMaxRedirect:(NSNumber *)vastMaxRedirect
