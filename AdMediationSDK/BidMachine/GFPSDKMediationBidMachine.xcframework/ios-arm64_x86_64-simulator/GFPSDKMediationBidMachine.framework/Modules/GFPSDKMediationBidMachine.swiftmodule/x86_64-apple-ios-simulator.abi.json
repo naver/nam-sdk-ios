@@ -392,7 +392,7 @@
       "kind": "StringLiteral",
       "offset": 496,
       "length": 9,
-      "value": "\"3.5.0.4\""
+      "value": "\"3.5.0.5\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",

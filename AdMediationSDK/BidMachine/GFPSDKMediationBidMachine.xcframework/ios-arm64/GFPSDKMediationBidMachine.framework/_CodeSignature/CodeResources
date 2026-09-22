@@ -6,7 +6,7 @@
 	<dict>
 		<key>BidMachine.bundle/Info.plist</key>
 		<data>
-		Lr8f6APnc7/6ZjjxUgOv0+BmU9U=
+		TgqBVKBF0xCU+sWFzAdbi1TWOS4=
 		</data>
 		<key>BidMachine.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7v9UhYDkYsDU257qvFRlQhKMJ0Y=
+		OdUFMUDHQsiG54/A4UbRz8Cm5C4=
 		</data>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		TKwMW8tuAYTrNQcXT/JE9D8LzPY=
+		Og7GUYu9/CaFVmbMBY1WZZQ13rI=
 		</data>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		U9s3Xhcpi2MZR8F4e73M8fh+VC0=
+		iVGztK6hJMt57Wma6baXLAGlKd8=
 		</data>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		2sDhrVWPd46jUWOxluTRUusNJDI=
+		LMZNGF/h9ajqGuESgx2VHekGwBA=
 		</data>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		U9s3Xhcpi2MZR8F4e73M8fh+VC0=
+		iVGztK6hJMt57Wma6baXLAGlKd8=
 		</data>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		5nBq+0IJ0dzdcRK5BR80a1E0fdA=
+		V+ybJOoiAnTqrz7894c4XF7zi1M=
 		</data>
 		<key>StackModules.bundle/Info.plist</key>
 		<data>
-		t2iM31sRDZ74PLu7OcNBTSvnupM=
+		ySolLmQh8QNfJtgG8zbKgOnwAec=
 		</data>
 		<key>StackModules.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>StackProductPresentation.bundle/Info.plist</key>
 		<data>
-		y1525Ul2U1FoIU51UFoYM3gTWCY=
+		hSLEjUGFYaQET1lAPOnVeanYmuE=
 		</data>
 		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>StackRendering.bundle/Info.plist</key>
 		<data>
-		pJiq2yO/sr6Dw6Eupcs86ZfHXPE=
+		Qz5nyW8bZkJ+pGankRlvP5q/HNY=
 		</data>
 		<key>StackRendering.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -65,21 +65,13 @@
 	<dict>
 		<key>BidMachine.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Lr8f6APnc7/6ZjjxUgOv0+BmU9U=
-			</data>
 			<key>hash2</key>
 			<data>
-			BbForYZsZxoLWL4JgIrwNH6BW5qrEPpPKyjTWl9xmXo=
+			539BWknp0RCzVKlumWMfZqul2KpXRqPGsY0+B2TtAV8=
 			</data>
 		</dict>
 		<key>BidMachine.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KzGN9kIaiUzlyqYSrB4HMQ7GY6Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			0H2yqL1OorskXVA3Xgd6k4OR0cLDQkxIdx17ngKx6QU=
@@ -87,76 +79,48 @@
 		</dict>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TKwMW8tuAYTrNQcXT/JE9D8LzPY=
-			</data>
 			<key>hash2</key>
 			<data>
-			gC61oz0zO5J2zMthf2ASLtLFJAZBKITBqF04f5fNgUA=
+			EMZ3AVsCCyM39/Dwk2KO4WovfxmUUtCJGUtONC2gBYc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			U9s3Xhcpi2MZR8F4e73M8fh+VC0=
-			</data>
 			<key>hash2</key>
 			<data>
-			CFBuD3jttDb8oXfO9ko2p+CggvUbcgNMHlBUkBwj8MI=
+			wf2irfyNLe+Oovw6rBBwxgl+/oLK+KBPE3tpqWkflnY=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2sDhrVWPd46jUWOxluTRUusNJDI=
-			</data>
 			<key>hash2</key>
 			<data>
-			xR0Cx0pXI5boDY/JHC/VtBRoclgD7VpYGiMrt1sxfwA=
+			Usc7tGdoHh2KGpYzePWPzqreYRvzW3NUq+nENqd0vn4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			U9s3Xhcpi2MZR8F4e73M8fh+VC0=
-			</data>
 			<key>hash2</key>
 			<data>
-			CFBuD3jttDb8oXfO9ko2p+CggvUbcgNMHlBUkBwj8MI=
+			wf2irfyNLe+Oovw6rBBwxgl+/oLK+KBPE3tpqWkflnY=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationBidMachine.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5nBq+0IJ0dzdcRK5BR80a1E0fdA=
-			</data>
 			<key>hash2</key>
 			<data>
-			iiXyVwbPyIuGgcBQox0Rqn56KchoXCzphULYMJ6WVck=
+			gBwBU/lr4XutRSnT6WefP9ywisXf5oSOcy/QNIe8lu4=
 			</data>
 		</dict>
 		<key>StackModules.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			t2iM31sRDZ74PLu7OcNBTSvnupM=
-			</data>
 			<key>hash2</key>
 			<data>
-			a7DXnZjPRYMI+jLiPVbhEh2cqclj4t5f51Kyp6v2wGM=
+			Cck+q32dOnyVAxxBdSLmrbIvhnfMAiJtz5s7ixrEeeY=
 			</data>
 		</dict>
 		<key>StackModules.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IrAHXcp7Z4z7z6KmfyIdYqsZZV0=
-			</data>
 			<key>hash2</key>
 			<data>
 			bbG9hxAQ9QJMMQPu6E5/VC+D21TNkpVOexF8EHFZiIw=
@@ -164,21 +128,13 @@
 		</dict>
 		<key>StackProductPresentation.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			y1525Ul2U1FoIU51UFoYM3gTWCY=
-			</data>
 			<key>hash2</key>
 			<data>
-			iHmERE17S8S+5O/T37U/vMpwbavb2UyAjVzocaxGJtY=
+			j9sTWY24PBeAugnLkh2AOkbHZ0aZWc7V42IOaPlAisU=
 			</data>
 		</dict>
 		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
-			</data>
 			<key>hash2</key>
 			<data>
 			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
@@ -186,21 +142,13 @@
 		</dict>
 		<key>StackRendering.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pJiq2yO/sr6Dw6Eupcs86ZfHXPE=
-			</data>
 			<key>hash2</key>
 			<data>
-			8MzqpIN0GPYEF4kjd7/oGtqtsIXxAW7b8TA3R4FKzGI=
+			bPWg9PXEgJetvS0Q/3iJ1GZonvFEH01SHDRMQgObrVo=
 			</data>
 		</dict>
 		<key>StackRendering.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9aZf0UM06Ctn/6bQC4RXUcpVvlg=
-			</data>
 			<key>hash2</key>
 			<data>
 			V8fzCycAtEfk3wutYZsSxGCZFdeJf96DNEEhevi/K8g=
