@@ -6,7 +6,7 @@
 	<dict>
 		<key>FiveAd_resources.bundle/Info.plist</key>
 		<data>
-		cURqNrLc7+y0XhPEPqzjqpGBhN8=
+		4ica2mgf4xqkWrc1HKv/YYSVDkI=
 		</data>
 		<key>FiveAd_resources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/GFPSDKMediationLAN-Swift.h</key>
 		<data>
-		Th6Ph/R+duFzHaWlUUXtXHwJGMs=
+		pNyXoS4Zm0fyvH3yDAVA+u7lj6E=
 		</data>
 		<key>Headers/GFPSDKMediationLAN.h</key>
 		<data>
@@ -22,72 +22,64 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4/N4sLyndx9qCJfw60pFp4cwBFY=
+		emgCgb216yGXBU3eL5d84fo1ARY=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Rn/vfdlM/7Uo/spK6z3/zEq80FE=
+		uWt3gR0qHyxLRDs+kZfRtLm1DX4=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		im3moDwJehVA//6uKeQEPeQYpEo=
+		eQA1g73BkcY5fZeGrjZHnv1+L/U=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UuGoJ5utdqwFsGsiohlBQ0RJcjY=
+		FWPaspbVuQLP/PKTuzdfrzkFy3k=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		im3moDwJehVA//6uKeQEPeQYpEo=
+		eQA1g73BkcY5fZeGrjZHnv1+L/U=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		c4WImEGnh+JL2RgkSpV3TVXrxoY=
+		6IVzFu6p9x/5pVg8hIeARcIhnO8=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Rn/vfdlM/7Uo/spK6z3/zEq80FE=
+		uWt3gR0qHyxLRDs+kZfRtLm1DX4=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ncOrhMplGqfTAq2i4oFAAkTdOLk=
+		pNWrTW3tzJPmDkZeK+1Q7udMR74=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7BW0xRBwTiX6SHp8Omu9cRYgUhU=
+		p+TUP4+Tdm33HnBvs99AnfLVFM8=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ncOrhMplGqfTAq2i4oFAAkTdOLk=
+		pNWrTW3tzJPmDkZeK+1Q7udMR74=
 		</data>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aGP2Izmb3GXpvC47Th1IZrg/Tpw=
+		8RA4up3Y5iuoq5qCREOjsb0HFF4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		hQqn3aUPxE2JiNxWp7cpkEs67nk=
+		ondoB06G44wh4BC26LV5ceO+GHU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>FiveAd_resources.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cURqNrLc7+y0XhPEPqzjqpGBhN8=
-			</data>
 			<key>hash2</key>
 			<data>
-			OgS9v8WzUvlTHPhATXNKF/MNVTBGj+BSnIz9eChdvFM=
+			PH3L6dQmpKL6Z9Vseu10J7qkZ2Ddrl+lmbGW2YDnX9U=
 			</data>
 		</dict>
 		<key>FiveAd_resources.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			w9kt9KpLQqd6lLxIMY1olPhAOqA=
-			</data>
 			<key>hash2</key>
 			<data>
 			5vUEqFMrRfeRBGQO50YwR7KHsxVlifr8zcm2+gjqT+w=
@@ -95,21 +87,13 @@
 		</dict>
 		<key>Headers/GFPSDKMediationLAN-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Th6Ph/R+duFzHaWlUUXtXHwJGMs=
-			</data>
 			<key>hash2</key>
 			<data>
-			rN18vNe4B3Rpn/3kRsOYAr1ybZmGv+rkliq3ACbt5m8=
+			a7SmIFo6XNM1vO076c9E48i1HirzxT5n8sN1kQCBPog=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationLAN.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WNsm+EzaxpkIY3hYnRsz6x+cu6g=
-			</data>
 			<key>hash2</key>
 			<data>
 			XZjN+C8yWOOOyqlX6HXCEx7qpJV2hEj4VQbwW83dQN0=
@@ -117,123 +101,79 @@
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Rn/vfdlM/7Uo/spK6z3/zEq80FE=
-			</data>
 			<key>hash2</key>
 			<data>
-			nhDKfoENSZn9lxhdr20bLsPPNhLhL0nOymYABea912Y=
+			vUEKGndgu9juUqxBzssSn8FEj0BwxL8e1glT3/BoNw8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			im3moDwJehVA//6uKeQEPeQYpEo=
-			</data>
 			<key>hash2</key>
 			<data>
-			Zeg9EXodENruhDUkLG1Ur/7KL7ubPrinLYHm+BVGkcs=
+			1qsnFPBrV5JzfCsVDoYKwQKZX7MZWoFvpi3Ew3W8JqI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UuGoJ5utdqwFsGsiohlBQ0RJcjY=
-			</data>
 			<key>hash2</key>
 			<data>
-			fam1o9ZqK2lOKwtK6VoLiFUkIVvdBj9t1cMOpCX4OEk=
+			vZgr9YMxJz/FjcXLQKKoiN+6PlrCTjHoYegPCKo/MaE=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			im3moDwJehVA//6uKeQEPeQYpEo=
-			</data>
 			<key>hash2</key>
 			<data>
-			Zeg9EXodENruhDUkLG1Ur/7KL7ubPrinLYHm+BVGkcs=
+			1qsnFPBrV5JzfCsVDoYKwQKZX7MZWoFvpi3Ew3W8JqI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			c4WImEGnh+JL2RgkSpV3TVXrxoY=
-			</data>
 			<key>hash2</key>
 			<data>
-			YxdGwCKxb2ETOPLqcHT0oEjaTzXendqPLC89AMR8Jfo=
+			nuI1P/YRgC1/q40jGU2znzwggOIOmvsCrUJgDZD0hvI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Rn/vfdlM/7Uo/spK6z3/zEq80FE=
-			</data>
 			<key>hash2</key>
 			<data>
-			nhDKfoENSZn9lxhdr20bLsPPNhLhL0nOymYABea912Y=
+			vUEKGndgu9juUqxBzssSn8FEj0BwxL8e1glT3/BoNw8=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ncOrhMplGqfTAq2i4oFAAkTdOLk=
-			</data>
 			<key>hash2</key>
 			<data>
-			dby8GwzZTDAJsIUuiXqoV/AIjkBtedITPUSbIBhsgqo=
+			pzrTdvaadMdrGFInf9JmYBCuJuYHnlvbX+1HPn89gmQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7BW0xRBwTiX6SHp8Omu9cRYgUhU=
-			</data>
 			<key>hash2</key>
 			<data>
-			zoV1+z+SxB+1SFqXHJxzW9AgyLISTcxF98NpOUp4US8=
+			/NooWtbZ+QySycxRDaOER2RM9goKfhZUutYc0/i3kR4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ncOrhMplGqfTAq2i4oFAAkTdOLk=
-			</data>
 			<key>hash2</key>
 			<data>
-			dby8GwzZTDAJsIUuiXqoV/AIjkBtedITPUSbIBhsgqo=
+			pzrTdvaadMdrGFInf9JmYBCuJuYHnlvbX+1HPn89gmQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationLAN.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aGP2Izmb3GXpvC47Th1IZrg/Tpw=
-			</data>
 			<key>hash2</key>
 			<data>
-			WgXWIBDywFxZfffmpIGyI/T/29QEUpDJpIDX1veYQXI=
+			CQrP1YzKboBHGdeNGLDii2L65wEXFAylM388PMCXXJ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hQqn3aUPxE2JiNxWp7cpkEs67nk=
-			</data>
 			<key>hash2</key>
 			<data>
-			SZ4Bgx1dBWNY+A1G75+14Vx1VIPvbIfuh58g23WnXyw=
+			/rfpTiKohxltIDPoNWzTcqoQhYMWTYVokDC9HHcneWM=
 			</data>
 		</dict>
 	</dict>

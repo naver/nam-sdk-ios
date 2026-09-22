@@ -7,5 +7,4 @@ framework module GFPSDKMediationLAN {
 
 module GFPSDKMediationLAN.Swift {
   header "GFPSDKMediationLAN-Swift.h"
-  requires objc
 }
