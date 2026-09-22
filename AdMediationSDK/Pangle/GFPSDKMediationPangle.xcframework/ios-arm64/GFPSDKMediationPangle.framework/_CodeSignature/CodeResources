@@ -6,7 +6,7 @@
 	<dict>
 		<key>AdsGlobalSDK.bundle/Info.plist</key>
 		<data>
-		ttFAkqfqbvG+zh+4JWVfWa0dnik=
+		rTXVUuXBz211DdjeqJozjOXG5iU=
 		</data>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,35 +14,35 @@
 		</data>
 		<key>Headers/GFPSDKMediationPangle-Swift.h</key>
 		<data>
-		suEDmmH8n5AATZ0nKEsqwgVCZnU=
+		+qDasE4MQVD2y/0mgcv/8MXwu18=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/HjGKzWzJoOtiBUnh0I2qkf+CYk=
+		y54u/KAsiPLN+1weh/4B8i7ScKQ=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		HqJozPIF6QlOBq9Izrq79g6wfuo=
+		fZ9v67oNyGAOre7iBPRmTqTj+Q8=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		NnpqaxnGwe/4OPlnalbzf6xV73o=
+		0vzU70XYBoEJjPPw1y+1XRN5NAE=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bxjOEC2cZUERwvXQNYUB3crbkBw=
+		wRii7ZaYxuVwDiHMlfdQFQBp6Ig=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		NnpqaxnGwe/4OPlnalbzf6xV73o=
+		0vzU70XYBoEJjPPw1y+1XRN5NAE=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XjKcm0GK/9WP8/hfs6zwSh/PpEM=
+		7QCk5RlMGZ6jfjOnZYh/Nz/IqSY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ngOVaAFMBMogeGJpYLC5eXTdORE=
+		2nBsmMUjO9+qn5DwcPJrQ74idl0=
 		</data>
 		<key>PAGAdSDK.bundle/400001562.json</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>TikTokBusinessSDK.bundle/Info.plist</key>
 		<data>
-		hUj7ahCOXwt41wlJ9NqtvrCLhpc=
+		YiThxHZ+tusjlJKmgD0P5aXSQL0=
 		</data>
 		<key>TikTokBusinessSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -125,21 +125,13 @@
 	<dict>
 		<key>AdsGlobalSDK.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ttFAkqfqbvG+zh+4JWVfWa0dnik=
-			</data>
 			<key>hash2</key>
 			<data>
-			yYqLcUj8TM+qUQUauZ/vVQeRU5HQMWGgaWbZgeY1uGQ=
+			44/GyR2zhxWUrCGKqPgRk6T+vh20N5g7InXK8QqW+9Y=
 			</data>
 		</dict>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/9EtcEGxvliJS6WqSyAMGN1TBwE=
-			</data>
 			<key>hash2</key>
 			<data>
 			y5cXDuafZAHCK9CZXFBYYkEI7u+LZGwDEwlq24JR8ik=
@@ -147,87 +139,55 @@
 		</dict>
 		<key>Headers/GFPSDKMediationPangle-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			suEDmmH8n5AATZ0nKEsqwgVCZnU=
-			</data>
 			<key>hash2</key>
 			<data>
-			xpoSlDjR+o3YWPD7RyeoeyGqudX7Hiplbteav8vs+EI=
+			fhS3z1jvxUs0g2mEy+zCTkZHrYi9Ak0osA+H0DZ+Vrc=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HqJozPIF6QlOBq9Izrq79g6wfuo=
-			</data>
 			<key>hash2</key>
 			<data>
-			OkRMDvqEOipIYw4VSM9pSSp8QhtfjSUL/h852mw57Xk=
+			DA9M8tG2zhTMOmVMaeGtWi166+a7ONdr9jQ40kKizR0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NnpqaxnGwe/4OPlnalbzf6xV73o=
-			</data>
 			<key>hash2</key>
 			<data>
-			kU1FUD+RhFQiDHOBQncGWjIHVFmbgM6IUfl7B8z/67E=
+			as1XbkwEaBpW0rgKV9k7an4Y9o7BI3jEwrhCoFv/3Cg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bxjOEC2cZUERwvXQNYUB3crbkBw=
-			</data>
 			<key>hash2</key>
 			<data>
-			zqZTPpcH0EGZ3FALODYFjxpeIDDokAYSp330pgckIiA=
+			4T/U+dexv4kHMf3IsiOfZQRJ3e9iKL9b74981iy2seQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NnpqaxnGwe/4OPlnalbzf6xV73o=
-			</data>
 			<key>hash2</key>
 			<data>
-			kU1FUD+RhFQiDHOBQncGWjIHVFmbgM6IUfl7B8z/67E=
+			as1XbkwEaBpW0rgKV9k7an4Y9o7BI3jEwrhCoFv/3Cg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XjKcm0GK/9WP8/hfs6zwSh/PpEM=
-			</data>
 			<key>hash2</key>
 			<data>
-			pQxh5aK3RNCfb7Slh6qaIT7Hf2glla61H9HS1z3TlOo=
+			VCC9O8zUORRLUvkNCsZyf6QH2lYtGybwjhp9UfKSTEg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ngOVaAFMBMogeGJpYLC5eXTdORE=
-			</data>
 			<key>hash2</key>
 			<data>
-			UlDqJiY0ywmY6+oLuNJAHz3cT4z9/ONgLOVBxRaOErw=
+			fNQEn34DX1XL6BpCErZfdcR5eP02sd/G04bb4o9S9no=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/400001562.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OWy+nAUoSGf18os0/Ypy+FPsaH0=
-			</data>
 			<key>hash2</key>
 			<data>
 			f68CEAO4tvsmN3NZWzC0Ib83xLJpSUIn5+oSyN1LwdE=
@@ -235,10 +195,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400001924.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			A1Vbzf4WumplRmXGrkvMh453biE=
-			</data>
 			<key>hash2</key>
 			<data>
 			A9Ps9asMrXInRKfssbkWMFGevv98ZMKOW02rDJt4gnE=
@@ -246,10 +202,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400001965.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0Pe66i+Ln7O2oAGT2tLg2rEFPHU=
-			</data>
 			<key>hash2</key>
 			<data>
 			kKIbMHkFu17qwy2hzkg8nDzjPRz9tUC+2IkA545nG90=
@@ -257,10 +209,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400002028.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tTGMs0QKsFzKX/8aF5dE9P0mkys=
-			</data>
 			<key>hash2</key>
 			<data>
 			uJxuONxKGNf1GVsTqZyVRbFNFfNQQc+ZYX/ukZuHxss=
@@ -268,10 +216,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400002029.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uijoBTMtKWICiLnGDujDR0FLdK0=
-			</data>
 			<key>hash2</key>
 			<data>
 			pBbrcjYxcEpVO1uhQT/wduzSPNNj5xUz1y8L0dSHDeY=
@@ -279,10 +223,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400007896.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fAPLnYiX95ptTcM1oOSf+61M/fo=
-			</data>
 			<key>hash2</key>
 			<data>
 			7FRejQA6EO6xM7/Vq8odwaL+zYMFOLQG6UvksqPk+Dg=
@@ -290,10 +230,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400007913.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5q86CJE9HpjQQ9Ukbb9WPcxUxi0=
-			</data>
 			<key>hash2</key>
 			<data>
 			W9xXJWyecKwR527OgT2PElwBZBd+Rp3lxqSPV/sC24M=
@@ -301,10 +237,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400007914.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C9na1jUPC9lfttfQ+c3/zIvM5lg=
-			</data>
 			<key>hash2</key>
 			<data>
 			x2meWrRsMaW574Tibh34fB8SAF9A+EeFw86wIzrwcRU=
@@ -312,10 +244,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400007918.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ps6UK8x6zr8lwb5lndr89EZcL5M=
-			</data>
 			<key>hash2</key>
 			<data>
 			kXeu/VRr7KpBcWD+80yGalGaEHINNAzNc4Bi2j1XKEU=
@@ -323,10 +251,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400007923.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wszSaxcAh8+sfbw5X7r35sGzsrI=
-			</data>
 			<key>hash2</key>
 			<data>
 			P3wuO4W9SIp/mzbPC8yQDURE4nPXgdjKJ6K7feI1MPM=
@@ -334,10 +258,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400007941.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QNNyKQTwHu2w7V229uebCNdtzPs=
-			</data>
 			<key>hash2</key>
 			<data>
 			hmV93IfMO9AQfrKUH0jTC5bLw6p5ffOTmXSekJKQrYI=
@@ -345,10 +265,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/400007999.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+uUTZq6R6wiVpauUJPZsrcwZo9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			0ZvzpkSC5n0z7SrSS0dUbe3kBtAf5xhsghbnF2Lw5sw=
@@ -356,10 +272,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7p9aS9xmPIWM7ssl5k8EXmPauIU=
-			</data>
 			<key>hash2</key>
 			<data>
 			A7tCMFqJuVHlyvL0gGM8FrHLvcWyxNVk+DlsoXLy6dY=
@@ -367,10 +279,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uNXTB10Deu+9qTcM94WfbxC721w=
-			</data>
 			<key>hash2</key>
 			<data>
 			4rNQ9FGUzUTIOXGrt3tN7g98i/2kSGYeNnJWVRQj+bo=
@@ -378,10 +286,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/9EtcEGxvliJS6WqSyAMGN1TBwE=
-			</data>
 			<key>hash2</key>
 			<data>
 			y5cXDuafZAHCK9CZXFBYYkEI7u+LZGwDEwlq24JR8ik=
@@ -389,10 +293,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/omsdk-v1.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WX9bWVBNl+h/NW1bQTdx+psJVyU=
-			</data>
 			<key>hash2</key>
 			<data>
 			Hlaaa4S6qm4V7fKq/DHH3FhORcQgKZ+hqniOO4ptmHc=
@@ -400,10 +300,6 @@
 		</dict>
 		<key>PAGAdSDK.bundle/version.txt</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zp/Uba49VuHNlvFqd9J3a3HjldI=
-			</data>
 			<key>hash2</key>
 			<data>
 			kl+MsSZHoV8ZkL6dkrUi1PcFHlozvLu+Tj+9T/ve5Lg=
@@ -411,21 +307,13 @@
 		</dict>
 		<key>TikTokBusinessSDK.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hUj7ahCOXwt41wlJ9NqtvrCLhpc=
-			</data>
 			<key>hash2</key>
 			<data>
-			GKSjvUmtR2llwPH2DohzAV+Ohe6wcUIoVrueoTJv4M8=
+			Wj4JtC1RFlc2HeL341wo7WVApoGeg7HFCOIw3+l7GP4=
 			</data>
 		</dict>
 		<key>TikTokBusinessSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mTK8OTaETgRAx3w+SAynt3Z+ncw=
-			</data>
 			<key>hash2</key>
 			<data>
 			h5ztaf1/AS8qM+j6tlwi+JwB+KQEegXx5+aea9fQc/M=
