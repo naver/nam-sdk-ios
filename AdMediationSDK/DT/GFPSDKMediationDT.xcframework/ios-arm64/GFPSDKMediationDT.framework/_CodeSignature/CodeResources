@@ -6,7 +6,7 @@
 	<dict>
 		<key>Fyber_Marketplace_SDK.bundle/Info.plist</key>
 		<data>
-		GH4mmZi4YLzakEW1IYRLNHiP0O4=
+		wDMdyB5kaRPEO8YO/tov8UwLqrU=
 		</data>
 		<key>Fyber_Marketplace_SDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,56 +14,48 @@
 		</data>
 		<key>Headers/GFPSDKMediationDT-Swift.h</key>
 		<data>
-		aAVrVffIcDlnUBoidmNjDTjrPNs=
+		LqRYHSEivW1BI/O560P53GIb6f0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Lbw5errOg+Ojd5oCgawNHmpTRnc=
+		+lr4lyOutK4KwAqIBTcrdJHYvoQ=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		YY8j6ccuXaREN3mTikj7YMqNJe0=
+		26/Aarw0DbI36ZVCCQd1kmLxsD4=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		zl6cA5WoRxet1ELNckIzrzz52Ro=
+		17v0OERyZo7Ky6gVTpx9HQMhJNY=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		VjR8In70TtW3NUn1xmMpYhZXm8A=
+		wRhTED04azfk5iqACuyMCp8/VDo=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		zl6cA5WoRxet1ELNckIzrzz52Ro=
+		17v0OERyZo7Ky6gVTpx9HQMhJNY=
 		</data>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ezdpyljnzmdZnYSmpXvzmCp3Qi4=
+		KiTL3PpADdWn8NNZvRB8YtaApDY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		DhqOCqAv99SvzB2Lu4bslkGiOrE=
+		bV5TPSUR1NsNnfhvyFZeRCu/Vns=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Fyber_Marketplace_SDK.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GH4mmZi4YLzakEW1IYRLNHiP0O4=
-			</data>
 			<key>hash2</key>
 			<data>
-			RztiySOGTmIMqVKgacr/B1LAD3QvL4u84TsrSZwFk+8=
+			wwu2AI/etbNbK08nbIEZUOVFIueWaaoQFWyuvbYWIjA=
 			</data>
 		</dict>
 		<key>Fyber_Marketplace_SDK.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wQj/VbiBnny3b63k0acjA2qnfNs=
-			</data>
 			<key>hash2</key>
 			<data>
 			dDIi4xb1Sm+j5OK6zfnCY49nltBpkaMQSrbcnLj/KfY=
@@ -71,79 +63,51 @@
 		</dict>
 		<key>Headers/GFPSDKMediationDT-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aAVrVffIcDlnUBoidmNjDTjrPNs=
-			</data>
 			<key>hash2</key>
 			<data>
-			KUAaZHUDADboutTsbD8sZ9nr7Fy8hqCqEbZiJlzB7OU=
+			DjqTv32BWNfthZHWPJpgdn3FQr93tiLXwkJhvAyva1g=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YY8j6ccuXaREN3mTikj7YMqNJe0=
-			</data>
 			<key>hash2</key>
 			<data>
-			45XzzBagFtyq/tCejBuxgX+q0pTVCLcEyNMGL/hROZw=
+			/NYbf61jZePZU+KZz/nk28ZJne10uHuooDjWsVlUC7c=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zl6cA5WoRxet1ELNckIzrzz52Ro=
-			</data>
 			<key>hash2</key>
 			<data>
-			rkef38UUZQ830VSPLwZu1L9SW3MXXticrvovX79Z5KY=
+			tZCyINf5UEuOKPBCiSxNxwVeRj3dwCdKU513HI/faUQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VjR8In70TtW3NUn1xmMpYhZXm8A=
-			</data>
 			<key>hash2</key>
 			<data>
-			9gBsphAk4ivmK8lYU6DVHvN2VqrCBW91EJ9LH/kjzW8=
+			zZNAoIngdWxy6XTRTI8sy32GYJKH0VgTmFr69H++D7s=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zl6cA5WoRxet1ELNckIzrzz52Ro=
-			</data>
 			<key>hash2</key>
 			<data>
-			rkef38UUZQ830VSPLwZu1L9SW3MXXticrvovX79Z5KY=
+			tZCyINf5UEuOKPBCiSxNxwVeRj3dwCdKU513HI/faUQ=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationDT.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ezdpyljnzmdZnYSmpXvzmCp3Qi4=
-			</data>
 			<key>hash2</key>
 			<data>
-			4HY+iuq0sYbaOEqeW1c2l6Z2+9VjTmi3WhWDUx7Keho=
+			5l347oiUCEBhyUc6xjqHBsiEV2RaPJUmjqRvA5Ur2i8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DhqOCqAv99SvzB2Lu4bslkGiOrE=
-			</data>
 			<key>hash2</key>
 			<data>
-			GC09JiTB8aabUJKZbN+YJxIvNwWiss2xP/PWSFVLVaY=
+			vJDnXBAsEjfJK283O6SOuGPlvVyr4WjxaP1uStJ7Tlw=
 			</data>
 		</dict>
 	</dict>
