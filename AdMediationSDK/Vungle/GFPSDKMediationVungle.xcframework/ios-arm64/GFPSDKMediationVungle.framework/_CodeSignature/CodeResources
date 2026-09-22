@@ -6,39 +6,39 @@
 	<dict>
 		<key>Headers/GFPSDKMediationVungle-Swift.h</key>
 		<data>
-		KxL+7iyIo3Qz156pGh/obgDJbMg=
+		vEuM5xtsD50JgvQbVxCW2/O02rs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sgTn6qWGI9RiJLFI91kxIvn2FUM=
+		Kx6FLkjdEp/2pFNYvH+JiEz5xF4=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		MtR2GytSVvXCfQ08xS7524/MD4k=
+		8ZuCbO7g3UkAn1WGzlKLl9pPEiA=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		lsJDfMawa9Vxz7dD6OaVoPWl0Ko=
+		oiEyQjyw8OzmzzoxUYMGeAJRE80=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		/VP9+WhFRbWau2Tdlf8L2myGARE=
+		Jxt1o/7xKTPMiJ6Tzmp4KaX/Tc4=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		lsJDfMawa9Vxz7dD6OaVoPWl0Ko=
+		oiEyQjyw8OzmzzoxUYMGeAJRE80=
 		</data>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		J5k6ehCoSpual4fzZcqp5fVOVag=
+		ZRcI2YAuAbhdSNOGKSm/CKEjNLY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Cu7cWO2cl5w11yaQUtgjBU4cH+Q=
+		fG9VeZpJ+aQxcmBsMXBZ+5v4f5o=
 		</data>
 		<key>VungleAds.bundle/Info.plist</key>
 		<data>
-		pzNjna1v9QEEUdETDCDWTokKUwk=
+		sQO+/bg7bcGeCkw+ZBnQFS4fL9I=
 		</data>
 		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -49,98 +49,62 @@
 	<dict>
 		<key>Headers/GFPSDKMediationVungle-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KxL+7iyIo3Qz156pGh/obgDJbMg=
-			</data>
 			<key>hash2</key>
 			<data>
-			IutW4eZZVHfpWXVQaxasywLEXgMdAI2EdMnUGYIHUxI=
+			O3XXqnWjHNCti131P6C26nO53IkKfN63Mi4TZpY4zE4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MtR2GytSVvXCfQ08xS7524/MD4k=
-			</data>
 			<key>hash2</key>
 			<data>
-			pLeNAGZ9U8TM6fmY20Q+5+2Y4pvx/D6LDAF0y9KNA4w=
+			nyJKB1aPUlWMNhAIAv/RsyrcWVKPiIj9C9ETCeddCFU=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lsJDfMawa9Vxz7dD6OaVoPWl0Ko=
-			</data>
 			<key>hash2</key>
 			<data>
-			E3su9diRiaNF3yRS9F21+hHsNzh2aucY2Ckig9L6KUU=
+			e4cYxSxwQjd6V+RGfO9qCqWmN0rTtTRl1UzocfhK8Vs=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/VP9+WhFRbWau2Tdlf8L2myGARE=
-			</data>
 			<key>hash2</key>
 			<data>
-			iNP4KXI8CnuSvzoTC6XW8+Q305bcyqfJPU2ucS22rWI=
+			kQtb2tP/i+kz5RzmsdZI7SjemFW/tAfY9iCZmBrQHug=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lsJDfMawa9Vxz7dD6OaVoPWl0Ko=
-			</data>
 			<key>hash2</key>
 			<data>
-			E3su9diRiaNF3yRS9F21+hHsNzh2aucY2Ckig9L6KUU=
+			e4cYxSxwQjd6V+RGfO9qCqWmN0rTtTRl1UzocfhK8Vs=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationVungle.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			J5k6ehCoSpual4fzZcqp5fVOVag=
-			</data>
 			<key>hash2</key>
 			<data>
-			hd4jgVvIvQE9WgKMXRSav6SGYIG1v2KCWRKkg+qugdI=
+			Brc7v08VCtKF82XaKqnmQ/9IvFBCBk+KkoovIUZguqA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Cu7cWO2cl5w11yaQUtgjBU4cH+Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			G918zqvixEYdiBiyxGqRZMmbAZSOv4A2p5FnG0+w1Xk=
+			8aVl0+wCTYD7V9VVHXIZ28QWrn8LhJqHl9mdMP5GniA=
 			</data>
 		</dict>
 		<key>VungleAds.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pzNjna1v9QEEUdETDCDWTokKUwk=
-			</data>
 			<key>hash2</key>
 			<data>
-			sH2VLQcvQostY92Dw7OXFwlspXXQw3av6vH6kQfe/Hk=
+			xiZa8LLnDTwaCX/Nc3YOKgEk4TnVTwyZHQvxd/d8vW4=
 			</data>
 		</dict>
 		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			COhxM0H7+Gp/ed2fy4Li+IZWHRQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			YAGiRWxwvRHypK5douHP5fWvYgPwyj/xXlq1RpJ1kAQ=
