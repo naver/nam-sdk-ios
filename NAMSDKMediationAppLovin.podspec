@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDKMediationAppLovin"
-  s.version      = "13.5.1.3"
+  s.version      = "13.5.1.4"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -14,12 +14,12 @@ Pod::Spec.new do |s|
                      "Sangeun.yoon" => "sangeun.yoon@navercorp.com"
                    }
   
-  s.ios.deployment_target = "13.0"
+  s.ios.deployment_target = "15.0"
   s.source       = { :git => "https://github.com/naver/nam-sdk-ios", :tag => "AppLovin-#{s.version.to_s}" }
   
   s.vendored_frameworks = "AdMediationSDK/AppLovin/GFPSDKMediationAppLovin.xcframework"
   
-  s.dependency 'NAMSDK/GFPSDK', '>= 8.20.0'
+  s.dependency 'NAMSDK/GFPSDK', '>= 8.25.0'
   s.dependency 'AppLovinSDK', '13.5.1'
 
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
