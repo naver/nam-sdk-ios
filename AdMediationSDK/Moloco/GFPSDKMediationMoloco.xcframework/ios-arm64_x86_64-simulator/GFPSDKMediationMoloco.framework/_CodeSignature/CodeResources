@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Da9aqwiMmeH6Fk8KhU4LJeyngaM=
+		kzTbjlxEhhqD4dkh5lPqU75WjtA=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GNCrbeYD8UZHcKCW1eUz2vx8S6U=
+		Yu+ekW953t9UFL9CD+uzF4GZrPE=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		n+SJLnFlBhp2bn3SaVv2700Wobo=
+		WQzZdQR5lgPw6ACvaA4YYRNwTKg=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ovceinns1M2UBaFolsjinl9DHic=
+		N/2PWbQMqVDDJ1wwSCq6Sw+j+rY=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		n+SJLnFlBhp2bn3SaVv2700Wobo=
+		WQzZdQR5lgPw6ACvaA4YYRNwTKg=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oBdN20VDyRus5///BKXHrOTXADc=
+		dUZAAoJO1IpmlyReMZOyMNTKRrE=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GNCrbeYD8UZHcKCW1eUz2vx8S6U=
+		Yu+ekW953t9UFL9CD+uzF4GZrPE=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5lGta8L2nE3m4BdXkn2ZJB8wHfQ=
+		Pj4J5KltbIJc7Je4PPAYmiwyl/8=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kG9ordvKcm/oQaKVYHLv5+VEVeY=
+		lTla3wtRvi4MnxxhY0xP+38wi5g=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5lGta8L2nE3m4BdXkn2ZJB8wHfQ=
+		Pj4J5KltbIJc7Je4PPAYmiwyl/8=
 		</data>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mmZCiB0USOY4/zIgd3ly2oRXtPg=
+		tup0OSFj4jg6Sce0YYYDWJGI2Z4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>MolocoSDK.bundle/Info.plist</key>
 		<data>
-		LBr1DacMlw6EeMRlueyAUafa3Eg=
+		U6xZc8U/OZVVZRomgY4QWb39n0Y=
 		</data>
 		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -86,70 +86,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RIqA9JOmBU1acatbpCfbtddrREUdQbWRO7mUQGNS650=
+			ZHM5wPAjFKGf7075YMAJzwdM/uqq+E5TXzEhWR1sfL4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jO7IOLRghvzEX7yn/+qIIA9FV/EMDsikKb22wrS8dl0=
+			L4hjUMoNF5NikxXMB/cugPw2+kNYl9i6f+bBgWMS50w=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mRbah/jNsafVfVNNxpyVJxNDxZj3DPFlESfcf3Vfjfc=
+			lMvVC7f/5Omc+JhR0dF6F9q+w5sFIuySj0CE91IL9Vw=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jO7IOLRghvzEX7yn/+qIIA9FV/EMDsikKb22wrS8dl0=
+			L4hjUMoNF5NikxXMB/cugPw2+kNYl9i6f+bBgWMS50w=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SBoSon3jTrQWFkKPg1oo46vQizaFa9u4/xo4Sh6FhkQ=
+			G+PlbBeipjPpzmzXWXGSlhE5JH7d6Hy88EPSxovXsk0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RIqA9JOmBU1acatbpCfbtddrREUdQbWRO7mUQGNS650=
+			ZHM5wPAjFKGf7075YMAJzwdM/uqq+E5TXzEhWR1sfL4=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+UhWCK5O6ll4u98pNT5lFqpYrdhuMls9rVIF2T8Fahs=
+			2tEifbi+02qr4r8U+/CyOqgDFWlW/kRz4G8iFlSu5+c=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pab0+qHxFgm2gYJD7CRjpC+I0mQdcfd7z6b8n8aVqXE=
+			kkh+fOcnGBGVahJXk0xOzd2Ie8GmJXfd850QLVN07qg=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+UhWCK5O6ll4u98pNT5lFqpYrdhuMls9rVIF2T8Fahs=
+			2tEifbi+02qr4r8U+/CyOqgDFWlW/kRz4G8iFlSu5+c=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationMoloco.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BmreRiCeXw23LRPNsiYIR2+3G1udUbZiUE8yZRUONH4=
+			FpbyumsxQLWKctuxridinQ4bU4nQECzdmdBOjJxawFY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,7 +163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AESwcIIgs8h0/hLBjEQlexKtGdMhgF+UMIaUFGjTVW8=
+			SCMQHgIfgxyEdnwzZMeVHuHmwnbMgaZOJZ8+m34Ol28=
 			</data>
 		</dict>
 		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
