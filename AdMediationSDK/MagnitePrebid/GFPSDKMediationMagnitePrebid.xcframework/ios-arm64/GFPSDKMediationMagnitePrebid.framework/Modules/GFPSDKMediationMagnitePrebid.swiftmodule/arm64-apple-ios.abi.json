@@ -1757,7 +1757,7 @@
       "kind": "StringLiteral",
       "offset": 487,
       "length": 9,
-      "value": "\"3.3.4.0\""
+      "value": "\"3.3.4.1\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMagnitePrebid\/Interstitial\/GFPMagnitePrebidInterstitialAdaptor.swift",
