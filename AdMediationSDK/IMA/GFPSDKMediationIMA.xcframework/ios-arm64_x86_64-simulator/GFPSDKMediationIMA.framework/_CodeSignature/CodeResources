@@ -6,11 +6,11 @@
 	<dict>
 		<key>GFPIMAResource.bundle/Assets.car</key>
 		<data>
-		CGmfKDl0kAxYnQFl4xRqk+Z8oj4=
+		kxH7QqDcwzfYNnKAHevDPgYytZ0=
 		</data>
 		<key>GFPIMAResource.bundle/Info.plist</key>
 		<data>
-		o4dZe66VS+kWExq5cQrsYKvHv3c=
+		u4pbGOSue+kgnZ68Yn2+JneixXM=
 		</data>
 		<key>Headers/GFPSDKMediationIMA.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		u/331Pklhiw3mIYHur30ES7n1pA=
+		cqNMgUt8YdjITJmM/4hn7CEzHLU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,32 +29,20 @@
 	<dict>
 		<key>GFPIMAResource.bundle/Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CGmfKDl0kAxYnQFl4xRqk+Z8oj4=
-			</data>
 			<key>hash2</key>
 			<data>
-			cwrDBMRAsCAX5wwasQrqxBKQw/MPfisDAs6NfMr6wbY=
+			jry/5Lfk+N3ncBanM/IQvTj1gycd/a70Nqh1zp75AWk=
 			</data>
 		</dict>
 		<key>GFPIMAResource.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o4dZe66VS+kWExq5cQrsYKvHv3c=
-			</data>
 			<key>hash2</key>
 			<data>
-			rMbYBYy2yyOLZnJE8ptoldcwngmo7RhyUURnkonHQjM=
+			fF9xRs7411gJYtyK0UTq6zcXtCCb7svzKq8aAME5lC4=
 			</data>
 		</dict>
 		<key>Headers/GFPSDKMediationIMA.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FiexCPTKiQvU2i/zl03/TQ3oi4Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			QM+moN4E1cvmRZn6Z1O79FBohfE87AA8zDLZ6N0rYKI=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QDwcRy+Vq+x0/fTK1LoVwYtSSkg=
-			</data>
 			<key>hash2</key>
 			<data>
 			PblHaOR6COV0fcY1V8vgx5stlXTVrdSNprv5a/Bp/Ys=
