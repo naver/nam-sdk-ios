@@ -589,175 +589,182 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Native\/GFPPangleNativeAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Native\/GFPPangleNativeAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 5320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Interstitial\/GFPPangleInterstitialAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Interstitial\/GFPPangleInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 822,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Interstitial\/GFPPangleInterstitialAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Interstitial\/GFPPangleInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 3614,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 360,
       "length": 7,
       "value": "\"appId\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 13,
       "value": "\"placementId\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 433,
       "length": 13,
       "value": "\"bid_payload\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 527,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 578,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 623,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Reward\/GFPPangleRewardedAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Reward\/GFPPangleRewardedAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 791,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Reward\/GFPPangleRewardedAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Reward\/GFPPangleRewardedAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 3526,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 383,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 399,
       "length": 12,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 421,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleCommonProvider.swift",
       "kind": "StringLiteral",
       "offset": 1119,
       "length": 10,
       "value": "\"bidtoken\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "StringLiteral",
       "offset": 521,
       "length": 11,
-      "value": "\"7.8.0.3.3\""
+      "value": "\"7.8.0.3.4\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "StringLiteral",
       "offset": 616,
       "length": 5,
       "value": "\"300\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "StringLiteral",
       "offset": 675,
       "length": 149,
       "value": "\"[{\"name\":\"mediation\",\"value\":\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 1,
       "value": "\"\"},{\"name\":\"adapter_version\",\"value\":\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "StringLiteral",
       "offset": 819,
       "length": 1,
       "value": "\"\"}]\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 880,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1083,
+      "length": 28,
+      "value": "\"com.naver.gfp.pangle.token\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "Dictionary",
-      "offset": 993,
+      "offset": 1207,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "Array",
-      "offset": 1096,
+      "offset": 1501,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Common\/GFPPangleConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1860,
+      "offset": 2265,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Banner\/GFPPangleBannerAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationPangle\/Banner\/GFPPangleBannerAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 7845,
       "length": 5,

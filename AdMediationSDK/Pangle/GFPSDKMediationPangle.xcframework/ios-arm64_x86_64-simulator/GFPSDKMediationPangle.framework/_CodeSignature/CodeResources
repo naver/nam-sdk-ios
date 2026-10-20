@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fZ9v67oNyGAOre7iBPRmTqTj+Q8=
+		f2jJv/dOB2S4A5fR3x/YgLzwjhM=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zNVWKkR5ufqmfWswqAI1IpbjTyM=
+		1oNtkhojiGRJg6P3754l5zGORK0=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fZ9v67oNyGAOre7iBPRmTqTj+Q8=
+		f2jJv/dOB2S4A5fR3x/YgLzwjhM=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Yuxfu8vR/jc8Ux4qNsrNf4RVGlE=
+		Btsc0fgQmAOdROBMXmjdWGsGP9E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -168,7 +168,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DA9M8tG2zhTMOmVMaeGtWi166+a7ONdr9jQ40kKizR0=
+			ZEgH80lxZhha29F3vvEKl/SmpRSfqyJ+nDzIGypoZuw=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -196,14 +196,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jlt7J3HOrKlDjQAI9GtOzPJhoW2RM8+XF068HZf0vUQ=
+			TBZlJXMIAskPis8sRViFZ2rMecacp+6u5a61G7ecQEs=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DA9M8tG2zhTMOmVMaeGtWi166+a7ONdr9jQ40kKizR0=
+			ZEgH80lxZhha29F3vvEKl/SmpRSfqyJ+nDzIGypoZuw=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -231,7 +231,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W9UTsVvzxfAemfNuPKogJNc6H9Tifye1GG+vGEIHwyM=
+			eXN4/b5YfX94lLOgb6+VKPKVQhftCtWj5AIfz8tpng4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
