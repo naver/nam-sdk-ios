@@ -4,14 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>GFPIMAResource.bundle/Assets.car</key>
-		<data>
-		kxH7QqDcwzfYNnKAHevDPgYytZ0=
-		</data>
-		<key>GFPIMAResource.bundle/Info.plist</key>
-		<data>
-		u4pbGOSue+kgnZ68Yn2+JneixXM=
-		</data>
 		<key>Headers/GFPSDKMediationIMA.h</key>
 		<data>
 		FiexCPTKiQvU2i/zl03/TQ3oi4Q=
@@ -27,20 +19,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>GFPIMAResource.bundle/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jry/5Lfk+N3ncBanM/IQvTj1gycd/a70Nqh1zp75AWk=
-			</data>
-		</dict>
-		<key>GFPIMAResource.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fF9xRs7411gJYtyK0UTq6zcXtCCb7svzKq8aAME5lC4=
-			</data>
-		</dict>
 		<key>Headers/GFPSDKMediationIMA.h</key>
 		<dict>
 			<key>hash2</key>
