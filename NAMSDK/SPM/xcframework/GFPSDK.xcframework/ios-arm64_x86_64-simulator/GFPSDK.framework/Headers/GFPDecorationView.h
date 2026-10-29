@@ -11,6 +11,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
+ * 데코레이션 뷰 안에서 쿠폰을 그리는 형태.
+ */
+typedef NS_ENUM(NSInteger, GFPDecorationCouponViewType) {
+    /// 기본 형태
+    GFPDecorationCouponViewTypeDefault = 0,
+    /// 클립 형태
+    GFPDecorationCouponViewTypeClip,
+};
+
+
+/**
  * POC 추가 렌더링(쿠폰·CTA·가격 등) 뷰들이 놓이는 컨테이너.
  *
  * - 컨테이너 자신은 터치를 받지 않고 아래 뷰(미디어 등)로 통과시킵니다.
@@ -18,6 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
  *   (subview가 터치를 받으려면 이 컨테이너의 `userInteractionEnabled`는 YES여야 합니다. 기본값 YES)
  */
 @interface GFPDecorationView : UIView
+
+/**
+ * 쿠폰을 그리는 형태. 기본값은 `GFPDecorationCouponViewTypeDefault`.
+ */
+@property(nonatomic, assign) GFPDecorationCouponViewType couponViewType;
 
 @end
 

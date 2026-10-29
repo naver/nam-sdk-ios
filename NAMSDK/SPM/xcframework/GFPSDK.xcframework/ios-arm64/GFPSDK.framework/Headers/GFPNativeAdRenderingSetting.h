@@ -25,6 +25,8 @@ const static NSString *kTripleCrownBgView = @"kTripleCrownBgView";
 const static NSString *kTripleCrownTopObjectView = @"kTripleCrownTopObjectView";
 const static NSString *kDoubleCrownBgView = @"kDoubleCrownBgView";
 
+const static NSString *kPOCCouponDecorationView = @"kPOCCouponDecorationView";
+
 typedef CGFloat (^GFPMaxExtendingHeightSetter)(void);
 
 typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {

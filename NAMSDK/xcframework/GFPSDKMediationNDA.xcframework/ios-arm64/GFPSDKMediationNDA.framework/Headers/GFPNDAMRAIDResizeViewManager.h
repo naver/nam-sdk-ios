@@ -30,6 +30,8 @@
                           error:(GFPError **)error;
 - (void)detachResizeView;
 - (void)didMoveAnchorViewToWindow;
+//폴더블 접힘/펼침 등 기기 회전 노티 없이 화면 지오메트리가 바뀐 경우의 재배치 (회전은 기존 디바이스 방향 노티가 처리)
+- (void)handleScreenGeometryChange;
 
 @end
 

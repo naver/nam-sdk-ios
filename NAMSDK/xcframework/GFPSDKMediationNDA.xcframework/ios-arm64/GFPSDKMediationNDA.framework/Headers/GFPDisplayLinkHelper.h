@@ -15,7 +15,10 @@ typedef NS_OPTIONS(NSUInteger, GFPDisplayLinkOptions) {
     GFPDisplayLinkOptionNone = 0,
     GFPDisplayLinkOptionAutoReverse = 1 << 0,
     GFPDisplayLinkOptionRepeat = 1 << 1,
-  
+    /// 틱 간 진행도 상한을 60fps 1프레임치로 제한한다. 메인 스레드 스톨/프레임 드랍 시
+    /// 벽시계 기반 진행도가 한 번에 점프해 모션이 덜컥이는 것을 막고, 대신 그만큼
+    /// 지속시간이 늘어난다(렌더된 프레임 수 기준 진행). 정상 60fps에서는 동작 차이가 없다.
+    GFPDisplayLinkOptionClampFrameGap = 1 << 2,
 };
 
 typedef void(^GFPDisplayLinkStartBlock)(void);

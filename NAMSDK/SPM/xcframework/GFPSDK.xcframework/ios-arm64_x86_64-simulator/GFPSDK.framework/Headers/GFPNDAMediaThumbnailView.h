@@ -33,6 +33,9 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaThumbnailViewType) {
 
 - (void)updateThumbnail:(UIImage *)thumbnail;
 
+/// 반투명 외곽을 이미지 자신의 색으로 채운 불투명 이미지. 알파 채널이 없으면 그대로 돌려준다.
++ (UIImage *)imageByFillingTranslucentEdges:(UIImage *)image;
+
 @end
 
 NS_ASSUME_NONNULL_END

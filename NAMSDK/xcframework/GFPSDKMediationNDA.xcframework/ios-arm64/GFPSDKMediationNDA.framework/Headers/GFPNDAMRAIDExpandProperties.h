@@ -26,5 +26,7 @@
 @property (nonatomic, readonly, assign) BOOL isInvalid;
 
 @property (nonatomic, readonly, assign) CGSize validSize;
+//멀티씬 대응: view 가 주어지면 그 씬의 화면 기준으로 계산
+- (CGSize)validSizeForView:(UIView * _Nullable)view;
 
 @end

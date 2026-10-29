@@ -57,6 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //renderInfo는 접근할 때마다 새로 생성되지만(GFPNDANativeNormalAd/SimpleAd의 renderInfo getter),
 //코디네이터는 광고(GFPNDANativeAd)가 단일 소유한 인스턴스를 실어 나른다.
+//LazyLoading 광고일 때만 설정되며, nil 이면 비디오 뷰는 유예 없이 즉시 로드한다.
 @property (nonatomic, strong, nullable) GFPNDALazyMediaLoadCoordinator *lazyMediaLoadCoordinator;
 
 - (instancetype)init NS_UNAVAILABLE;

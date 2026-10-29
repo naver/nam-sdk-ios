@@ -601,6 +601,7 @@ SWIFT_CLASS("_TtC6GFPSDK8GFPAdLog")
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
 @property (nonatomic, copy) NSUUID * _Nonnull logId;
 @property (nonatomic, copy) NSString * _Nullable adUnitID;
+@property (nonatomic, copy) NSString * _Nullable productType;
 @property (nonatomic, strong) GFPAPILog * _Nullable adRequestLog;
 @property (nonatomic, copy) NSArray<GFPAPILog *> * _Nonnull adEventLogs;
 @property (nonatomic, strong) GFPLoadResponseInfo * _Nullable loadResponseInfo;
@@ -752,6 +753,30 @@ typedef SWIFT_ENUM(NSInteger, GFPBannerProviderOption, open) {
   GFPBannerProviderOptionMagnitePrebid = 15,
   GFPBannerProviderOptionEnd = 16,
 };
+
+SWIFT_CLASS("_TtC6GFPSDK13GFPBreadcrumb")
+@interface GFPBreadcrumb : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultMaxCount;)
++ (NSInteger)defaultMaxCount SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init;
+- (nonnull instancetype)initWithMaxCount:(NSInteger)maxCount OBJC_DESIGNATED_INITIALIZER;
+- (void)addCategory:(NSString * _Nonnull)category data:(NSDictionary * _Nullable)data message:(NSString * _Nullable)message;
+- (NSArray * _Nonnull)breadcrumbsArray SWIFT_WARN_UNUSED_RESULT;
+- (void)clear;
+@end
+
+/// breadcrumb 기록용 공개 진입점. 상태는 로거의 로그 큐가 소유하므로 모든 호출은
+/// 그 큐로 async 로 넘기고 바로 돌아온다.
+SWIFT_CLASS("_TtC6GFPSDK18GFPBreadcrumbStore")
+@interface GFPBreadcrumbStore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPBreadcrumbStore * _Nonnull shared;)
++ (GFPBreadcrumbStore * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)addCategory:(NSString * _Nonnull)category data:(NSDictionary * _Nullable)data message:(NSString * _Nullable)message;
+/// completion 은 로그 큐에서 불린다.
+- (void)breadcrumbsWithCompletion:(void (^ _Nonnull)(NSArray * _Nonnull))completion;
+- (void)clear;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 SWIFT_CLASS("_TtC6GFPSDK9GFPBundle")
 @interface GFPBundle : NSObject
@@ -935,6 +960,10 @@ SWIFT_CLASS("_TtC6GFPSDK13GFPLimitQueue")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class GFPNeloBreadcrumbs;
+@class NSURL;
+@class NSError;
+@class AVAsset;
 @class GFPSDKInitResult;
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPNativeProviderOption)
 SWIFT_ENUM_FWD_DECL(NSInteger, GFPVideoProviderOption)
@@ -963,6 +992,61 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLogCollec
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull adDebuggerBecameActiveNotification;)
 + (NSNotificationName _Nonnull)adDebuggerBecameActiveNotification SWIFT_WARN_UNUSED_RESULT;
 - (void)enableAdDebuggerLogging:(BOOL)enable;
+/// 이번 세션의 breadcrumb 배열. completion 은 로그 큐에서 불린다.
+- (void)breadcrumbsWithCompletion:(void (^ _Nonnull)(NSArray * _Nonnull))completion;
+/// 이번 세션의 헤더. completion 은 로그 큐에서 불린다.
+- (void)breadcrumbHeaderWithCompletion:(void (^ _Nonnull)(NSDictionary * _Nonnull))completion;
+/// NELO 로그 1건에 실을 breadcrumb 상태를 모은다.
+/// <ul>
+///   <li>
+///     crash report: 이번 세션 기록이 비어 있으면 마지막으로 영속된 스냅샷·헤더로
+///     폴백한다(재실행 직후의 크래시 리포트가 대상).
+///   </li>
+///   <li>
+///     일반 로그: 이번 세션 상태만 쓴다. 파일로 폴백하면 이전 세션 상태가
+///     current_session 으로 실린다. 광고 실패 로그이고 차단 정황이 있으면
+///     타임라인 허용량을 하나 쓴다.
+///   </li>
+/// </ul>
+/// completion 은 로그 큐 또는 저장소 큐에서 불린다.
+- (void)collectNeloBreadcrumbsForCrashReport:(BOOL)crashReport adFailureLog:(BOOL)adFailureLog completion:(void (^ _Nonnull)(GFPNeloBreadcrumbs * _Nonnull))completion;
+/// 서버에 닿지 못한 로그에 쓴 타임라인 허용량을 돌려준다.
+- (void)refundAdBlockTimelineAllowance:(NSString * _Nonnull)allowance;
+- (void)clearBreadcrumbs;
+@property (nonatomic, readonly, copy) NSString * _Nonnull breadcrumbCrashMarkerPath;
+- (void)hasPendingBreadcrumbCrashReportWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull pendingBreadcrumbCrashReportIdKey;)
++ (NSString * _Nonnull)pendingBreadcrumbCrashReportIdKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull pendingBreadcrumbCrashReportBreadcrumbsKey;)
++ (NSString * _Nonnull)pendingBreadcrumbCrashReportBreadcrumbsKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull pendingBreadcrumbCrashReportHeaderKey;)
++ (NSString * _Nonnull)pendingBreadcrumbCrashReportHeaderKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull pendingBreadcrumbCrashReportInfoKey;)
++ (NSString * _Nonnull)pendingBreadcrumbCrashReportInfoKey SWIFT_WARN_UNUSED_RESULT;
+/// 가장 오래된 미전송 크래시 리포트를 전송용으로 가져간다. 다른 전송이 진행 중이거나
+/// 없으면 nil. 키는 <code>pendingBreadcrumbCrashReport*Key</code>.
+- (void)claimNextPendingBreadcrumbCrashReportWithCompletion:(void (^ _Nonnull)(NSDictionary * _Nullable))completion;
+/// 전송 결과를 반영한다. <code>sent</code> 면 다음 항목을 이어서 넘기고, 아니면 nil.
+/// \param sent 서버가 받았다.
+///
+/// \param responded 서버가 응답했다. 받지 않고 응답만 했으면 거절로 센다.
+///
+- (void)finishPendingBreadcrumbCrashReportWithId:(NSString * _Nonnull)id sent:(BOOL)sent responded:(BOOL)responded completion:(void (^ _Nonnull)(NSDictionary * _Nullable))completion;
+- (void)clearPendingBreadcrumbCrashReports;
+/// 직전 세션 마커의 승격이 끝난 뒤 block 을 저장소 큐에서 실행한다.
+- (void)performAfterBreadcrumbCrashStoreReady:(void (^ _Nonnull)(void))block;
+/// setup 호출 스레드(보통 main)를 붙잡지 않도록 로그 큐에서 기록한다.
+- (void)logSDKStartup;
+- (void)logSDKInitializeWithPublisherCd:(NSString * _Nullable)publisherCd serviceCd:(NSString * _Nullable)serviceCd logId:(NSUUID * _Nullable)logId;
+/// 소재 다운로드 결과 노티 구독, 네트워크 경로 감시, 백그라운드·종료 시 저장을
+/// 한 번만 설치한다. 콜백은 모두 로그 큐로 넘긴다.
+- (void)installBreadcrumbObservers;
+/// SDK 가 직접 보낸 요청의 결과(GFPURLSession·트래킹 경로).
+- (void)logNetworkOutcomeForURL:(NSURL * _Nullable)url response:(NSURLResponse * _Nullable)response error:(NSError * _Nullable)error;
+/// WKWebView 탐색 실패. 취소(-999)는 기록하지 않는다.
+- (void)logWebViewNavigationFailureForURL:(NSURL * _Nullable)url error:(NSError * _Nullable)error;
+/// AVPlayer 재생 실패.
+- (void)logPlaybackFailureForAsset:(AVAsset * _Nullable)asset error:(NSError * _Nullable)error;
 - (void)addNewAdLog:(GFPAdLog * _Nullable)adLog;
 - (GFPAdLog * _Nullable)adLogForLogId:(NSUUID * _Nullable)logId SWIFT_WARN_UNUSED_RESULT;
 - (void)logAdError:(GFPError * _Nullable)error logId:(NSUUID * _Nullable)logId;
@@ -976,7 +1060,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 - (void)logInternalLog:(GFPAdDebuggerInternalLog * _Nullable)log logId:(NSUUID * _Nullable)logId;
 - (void)addNewSDKInitLogWithLogId:(NSUUID * _Nullable)logId;
 - (void)logSDKInitWithResult:(GFPSDKInitResult * _Nullable)result logId:(NSUUID * _Nullable)logId;
+/// 이미 진행 중이거나 끝난 초기화에 대한 중복 호출. Ad Debugger 의 시도 목록에는
+/// 남기되, breadcrumb 와 헤더의 초기화 상태는 첫 초기화의 결과를 유지한다.
+- (void)logDuplicateSDKInitWithResult:(GFPSDKInitResult * _Nullable)result logId:(NSUUID * _Nullable)logId;
+- (void)logAdapterRequestedWithLogId:(NSUUID * _Nullable)logId adUnitId:(NSString * _Nullable)adUnitId adProviderName:(NSString * _Nullable)adProviderName creativeType:(NSString * _Nullable)creativeType renderType:(NSString * _Nullable)renderType adapter:(NSString * _Nullable)adapter;
+- (void)logAdapterLoadedWithLogId:(NSUUID * _Nullable)logId adUnitId:(NSString * _Nullable)adUnitId adProviderName:(NSString * _Nullable)adProviderName creativeType:(NSString * _Nullable)creativeType renderType:(NSString * _Nullable)renderType adStyle:(NSString * _Nullable)adStyle visualKey:(NSString * _Nullable)visualKey richType:(NSInteger)richType responseSize:(NSString * _Nullable)responseSize;
+- (void)logAdapterLoadErrorWithLogId:(NSUUID * _Nullable)logId adUnitId:(NSString * _Nullable)adUnitId adProviderName:(NSString * _Nullable)adProviderName creativeType:(NSString * _Nullable)creativeType renderType:(NSString * _Nullable)renderType error:(GFPError * _Nullable)error;
+/// 구성 회차 시작. <code>token</code> 은 호출 측이 만들어 이번 회차의 어댑터 init 콜백에도
+/// 그대로 넘긴다 — 회차 번호를 돌려받으려고 로그 큐를 기다리지 않기 위함이다.
+- (void)beginMediationConfigurationCycleWithToken:(NSUUID * _Nonnull)token;
 - (void)logUnavailableMediationWithBannerOption:(enum GFPBannerProviderOption)option optionName:(NSString * _Nullable)optionName;
+- (void)logMediationConfigurationApplied;
 - (void)logUnavailableMediationWithNativeOption:(enum GFPNativeProviderOption)option optionName:(NSString * _Nullable)optionName;
 - (void)logUnavailableMediationWithCombinedOption:(enum GFPCombinedProviderOption)option optionName:(NSString * _Nullable)optionName;
 - (void)logUnavailableMediationWithVideoOption:(enum GFPVideoProviderOption)option optionName:(NSString * _Nullable)optionName;
@@ -986,11 +1080,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 ///
 - (void)logAvailableMediationWithProviderType:(GFPProviderType _Nullable)providerType productType:(GFPProviderProductType _Nullable)productType providerClassName:(NSString * _Nullable)providerClassName;
 - (void)logNotUsedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logConfiguredMediationWithProviderType:(GFPProviderType _Nullable)providerType renderType:(GFPProviderRenderType _Nullable)renderType credentialProvided:(BOOL)credentialProvided;
+- (void)logMediationProviderMatchedWithProviderType:(GFPProviderType _Nullable)providerType renderType:(GFPProviderRenderType _Nullable)renderType;
+- (void)logMediationInitializationStartedWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logMediationInitializationNotRequiredWithProviderType:(GFPProviderType _Nullable)providerType;
 - (void)logInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType configurationToken:(NSUUID * _Nonnull)configurationToken;
 - (void)logBlockedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
+- (void)logBlockedMediationWithProviderType:(GFPProviderType _Nullable)providerType renderType:(GFPProviderRenderType _Nullable)renderType;
 - (void)logNotInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType error:(NSError * _Nullable)error;
+- (void)logNotInitializedMediationWithProviderType:(GFPProviderType _Nullable)providerType error:(NSError * _Nullable)error configurationToken:(NSUUID * _Nonnull)configurationToken;
 - (void)logInitFailedMediationWithProviderType:(GFPProviderType _Nullable)providerType;
 - (void)logErroredMediationWithProviderType:(GFPProviderType _Nullable)providerType creativeType:(GFPProviderCreativeType _Nullable)creativeType;
+- (void)logErroredMediationWithProviderType:(GFPProviderType _Nullable)providerType providerClassName:(NSString * _Nullable)providerClassName creativeType:(GFPProviderCreativeType _Nullable)creativeType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1054,6 +1156,17 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionMoloco = 10,
   GFPNativeProviderOptionEnd = 11,
 };
+
+/// NELO 로그 1건에 실을 breadcrumb 상태. 값만 담으며 만들어진 뒤 바뀌지 않는다.
+SWIFT_CLASS_NAMED("GFPNeloBreadcrumbs")
+@interface GFPNeloBreadcrumbs : NSObject
+@property (nonatomic, readonly, strong) NSDictionary * _Nonnull header;
+@property (nonatomic, readonly, strong) NSArray * _Nonnull breadcrumbs;
+/// 애드블락 타임라인에 쓴 허용량. nil 이면 타임라인을 붙이지 않는다.
+@property (nonatomic, readonly, copy) NSString * _Nullable timelineAllowance;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 SWIFT_CLASS("_TtC6GFPSDK18GFPQoeTrackingInfo")
 @interface GFPQoeTrackingInfo : NSObject
@@ -1348,6 +1461,7 @@ SWIFT_CLASS("_TtC6GFPSDK16GFPSDKInitResult")
 @property (nonatomic, copy) NSString * _Nullable publisherCode;
 @property (nonatomic, copy) NSString * _Nullable serviceCode;
 @property (nonatomic, strong) GFPError * _Nullable error;
+@property (nonatomic) BOOL crashReportEnable;
 - (nonnull instancetype)initWithIsSuccess:(BOOL)isSuccess isCached:(BOOL)isCached publisherCode:(NSString * _Nullable)publisherCode serviceCode:(NSString * _Nullable)serviceCode error:(GFPError * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1467,7 +1581,6 @@ SWIFT_CLASS("_TtC6GFPSDK22GFPTextAdViewAttribute")
 - (nonnull instancetype)initWithContainer:(UIView * _Nullable)container OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSURL;
 SWIFT_CLASS("_TtC6GFPSDK20GFPURLUtilsExtension")
 @interface GFPURLUtilsExtension : NSObject
 + (void)sendGFPEventToUrl:(NSString * _Nullable)urlString logId:(NSUUID * _Nullable)logId;

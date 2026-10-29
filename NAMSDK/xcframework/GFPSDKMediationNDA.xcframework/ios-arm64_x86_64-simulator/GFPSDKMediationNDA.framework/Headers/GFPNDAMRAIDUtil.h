@@ -76,6 +76,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGSize)screenSize;
 + (CGSize)maxSizeSafeArea;
 
+// MARK: - View 기준 조회 (멀티씬 대응)
+// UIScreen.main 은 iPhone Duo 에서 외부(접힘) 화면에 고정되어 펼침 상태에서 실제 화면과 값이 갈린다.
+// 뷰(웹뷰)가 있으면 그 씬의 화면 기준으로 계산하고, nil 이면 기존 전역 동작으로 폴백한다.
++ (CGSize)screenSizeForView:(UIView * _Nullable)view;
++ (CGSize)maxSizeSafeAreaForView:(UIView * _Nullable)view;
++ (CGRect)portraitScreenBoundsForView:(UIView * _Nullable)view;
++ (CGRect)portraitScreenBoundsApplyingSafeAreaInsetsForView:(UIView * _Nullable)view;
++ (CGRect)adjustAbsoluteRectFrom:(CGRect)rect forView:(UIView * _Nullable)view;
++ (NSString *)currentOrientationForView:(UIView * _Nullable)view;
+
 + (GFPNDAMRAIDAction)actionForCommand:(NSString *)command;
 + (GFPNDAMRAIDCustomClosePosition)customClosePositionWith:(NSString *)customClosePositionString;
 + (GFPNDAMRAIDOrientation)orientationFromForceOrientationString:(NSString *)orientationString;

@@ -105,7 +105,7 @@ didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
 
 @property (nonatomic, strong, readonly) GFPNDAMediaView *mediaView;
 @property (nonatomic, strong, readonly) GFPNDAMediaViewRenderInfo *renderInfo;
-//LazyLoading 시 유예된 비디오 로드의 등록/트리거를 광고 단위로 조율. renderInfo를 통해 미디어 뷰로 전달된다.
+//LazyLoading 시 유예된 비디오 로드의 등록/트리거를 광고 단위로 조율. LazyLoading 광고일 때만 renderInfo를 통해 미디어 뷰로 전달된다.
 @property (nonatomic, strong, readonly) GFPNDALazyMediaLoadCoordinator *lazyMediaLoadCoordinator;
 @property (nonatomic, assign, readonly) BOOL isExpired;
 @property (nonatomic, assign, readonly) BOOL isLoadedIcon; //for nn
@@ -146,6 +146,12 @@ didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
  * adaptor가 loadAd 직후 호출한다. lazyLoading이 아니거나 이미 완료 통지되었으면 no-op.
  */
 - (void)completeLoadForLazyLoadingIfNeeded;
+
+/**
+ * LazyLoading 광고일 때만 renderInfo 에 코디네이터를 싣는다. 판정은 isLazyLoading 과 같은 기준을 쓴다.
+ * 서브클래스의 renderInfo getter 에서 호출한다.
+ */
+- (void)attachLazyMediaLoadCoordinatorIfNeededTo:(GFPNDAMediaViewRenderInfo *)renderInfo;
 
 /**
  * lazy 로드 완료 통지 훅. 기본 구현은 비디오 메인 미디어의 VAST 사이즈 resolve 를 마친 뒤

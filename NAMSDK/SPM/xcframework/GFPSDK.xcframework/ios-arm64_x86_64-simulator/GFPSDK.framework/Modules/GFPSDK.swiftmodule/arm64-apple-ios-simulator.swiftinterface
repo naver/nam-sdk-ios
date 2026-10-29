@@ -115,6 +115,12 @@ extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
   required convenience public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
+@_hasMissingDesignatedInitializers @objc(GFPNeloBreadcrumbs) @objcMembers final public class GFPNeloBreadcrumbs : ObjectiveC.NSObject {
+  @objc final public let header: Foundation.NSDictionary
+  @objc final public let breadcrumbs: Foundation.NSArray
+  @objc final public let timelineAllowance: Swift.String?
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc(GFPLogCollector) @objcMembers public class GFPLogCollector : ObjectiveC.NSObject {
   @objc public static let shared: GFPSDK.GFPLogCollector
   @objc public var adDebuggerLoggingEnabled: Swift.Bool {
@@ -122,6 +128,29 @@ extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
   }
   @objc public static let adDebuggerBecameActiveNotification: Foundation.NSNotification.Name
   @objc(enableAdDebuggerLogging:) public func enableAdDebuggerLogging(enable: Swift.Bool)
+  @objc public func breadcrumbs(completion: @escaping (Foundation.NSArray) -> Swift.Void)
+  @objc public func breadcrumbHeader(completion: @escaping (Foundation.NSDictionary) -> Swift.Void)
+  @objc(collectNeloBreadcrumbsForCrashReport:adFailureLog:completion:) public func collectNeloBreadcrumbs(forCrashReport crashReport: Swift.Bool, adFailureLog: Swift.Bool, completion: @escaping (GFPSDK.GFPNeloBreadcrumbs) -> Swift.Void)
+  @objc(refundAdBlockTimelineAllowance:) public func refundAdBlockTimelineAllowance(_ allowance: Swift.String)
+  @objc public func clearBreadcrumbs()
+  @objc public var breadcrumbCrashMarkerPath: Swift.String {
+    @objc get
+  }
+  @objc public func hasPendingBreadcrumbCrashReport(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public static let pendingBreadcrumbCrashReportIdKey: Swift.String
+  @objc public static let pendingBreadcrumbCrashReportBreadcrumbsKey: Swift.String
+  @objc public static let pendingBreadcrumbCrashReportHeaderKey: Swift.String
+  @objc public static let pendingBreadcrumbCrashReportInfoKey: Swift.String
+  @objc(claimNextPendingBreadcrumbCrashReportWithCompletion:) public func claimNextPendingBreadcrumbCrashReport(completion: @escaping (Foundation.NSDictionary?) -> Swift.Void)
+  @objc(finishPendingBreadcrumbCrashReportWithId:sent:responded:completion:) public func finishPendingBreadcrumbCrashReport(id: Swift.String, sent: Swift.Bool, responded: Swift.Bool, completion: @escaping (Foundation.NSDictionary?) -> Swift.Void)
+  @objc public func clearPendingBreadcrumbCrashReports()
+  @objc(performAfterBreadcrumbCrashStoreReady:) public func performAfterBreadcrumbCrashStoreReady(_ block: @escaping () -> Swift.Void)
+  @objc public func logSDKStartup()
+  @objc(logSDKInitializeWithPublisherCd:serviceCd:logId:) public func logSDKInitialize(publisherCd: Swift.String?, serviceCd: Swift.String?, logId: Foundation.UUID?)
+  @objc public func installBreadcrumbObservers()
+  @objc(logNetworkOutcomeForURL:response:error:) public func logNetworkOutcome(url: Foundation.URL?, response: Foundation.URLResponse?, error: Foundation.NSError?)
+  @objc(logWebViewNavigationFailureForURL:error:) public func logWebViewNavigationFailure(url: Foundation.URL?, error: Foundation.NSError?)
+  @objc(logPlaybackFailureForAsset:error:) public func logPlaybackFailure(asset: AVFoundation.AVAsset?, error: Foundation.NSError?)
   @objc public func addNewAdLog(_ adLog: GFPSDK.GFPAdLog?)
   @objc public func adLog(forLogId logId: Foundation.UUID?) -> GFPSDK.GFPAdLog?
   @objc public func logAdError(_ error: NaverAdsServices.GFPError?, logId: Foundation.UUID?)
@@ -135,7 +164,13 @@ extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
   @objc public func logInternalLog(_ log: GFPSDK.GFPAdDebuggerInternalLog?, logId: Foundation.UUID?)
   @objc public func addNewSDKInitLog(logId: Foundation.UUID?)
   @objc public func logSDKInit(result: GFPSDK.GFPSDKInitResult?, logId: Foundation.UUID?)
+  @objc(logDuplicateSDKInitWithResult:logId:) public func logDuplicateSDKInit(result: GFPSDK.GFPSDKInitResult?, logId: Foundation.UUID?)
+  @objc(logAdapterRequestedWithLogId:adUnitId:adProviderName:creativeType:renderType:adapter:) public func logAdapterRequested(logId: Foundation.UUID?, adUnitId: Swift.String?, adProviderName: Swift.String?, creativeType: Swift.String?, renderType: Swift.String?, adapter: Swift.String?)
+  @objc(logAdapterLoadedWithLogId:adUnitId:adProviderName:creativeType:renderType:adStyle:visualKey:richType:responseSize:) public func logAdapterLoaded(logId: Foundation.UUID?, adUnitId: Swift.String?, adProviderName: Swift.String?, creativeType: Swift.String?, renderType: Swift.String?, adStyle: Swift.String?, visualKey: Swift.String?, richType: Swift.Int, responseSize: Swift.String?)
+  @objc(logAdapterLoadErrorWithLogId:adUnitId:adProviderName:creativeType:renderType:error:) public func logAdapterLoadError(logId: Foundation.UUID?, adUnitId: Swift.String?, adProviderName: Swift.String?, creativeType: Swift.String?, renderType: Swift.String?, error: NaverAdsServices.GFPError?)
+  @objc(beginMediationConfigurationCycleWithToken:) public func beginMediationConfigurationCycle(token: Foundation.UUID)
   @objc public func logUnavailableMediation(withBannerOption option: GFPSDK.GFPBannerProviderOption, optionName: Swift.String? = nil)
+  @objc(logMediationConfigurationApplied) public func logMediationConfigurationApplied()
   @objc public func logUnavailableMediation(withNativeOption option: GFPSDK.GFPNativeProviderOption, optionName: Swift.String? = nil)
   @objc public func logUnavailableMediation(withCombinedOption option: GFPSDK.GFPCombinedProviderOption, optionName: Swift.String? = nil)
   @objc public func logUnavailableMediation(withVideoOption option: GFPSDK.GFPVideoProviderOption, optionName: Swift.String? = nil)
@@ -143,11 +178,19 @@ extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
   @objc public func logUnavailableMediation(withInterstitialOption option: GFPSDK.GFPInterstitialAdProviderOption, optionName: Swift.String? = nil)
   @objc public func logAvailableMediation(withProviderType providerType: GFPSDK.GFPProviderType?, productType: GFPSDK.GFPProviderProductType?, providerClassName: Swift.String? = nil)
   @objc public func logNotUsedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc(logConfiguredMediationWithProviderType:renderType:credentialProvided:) public func logConfiguredMediation(withProviderType providerType: GFPSDK.GFPProviderType?, renderType: GFPSDK.GFPProviderRenderType?, credentialProvided: Swift.Bool)
+  @objc(logMediationProviderMatchedWithProviderType:renderType:) public func logMediationProviderMatched(withProviderType providerType: GFPSDK.GFPProviderType?, renderType: GFPSDK.GFPProviderRenderType?)
+  @objc(logMediationInitializationStartedWithProviderType:) public func logMediationInitializationStarted(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc(logMediationInitializationNotRequiredWithProviderType:) public func logMediationInitializationNotRequired(withProviderType providerType: GFPSDK.GFPProviderType?)
   @objc public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc(logInitializedMediationWithProviderType:configurationToken:) public func logInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?, configurationToken: Foundation.UUID)
   @objc public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
+  @objc(logBlockedMediationWithProviderType:renderType:) public func logBlockedMediation(withProviderType providerType: GFPSDK.GFPProviderType?, renderType: GFPSDK.GFPProviderRenderType?)
   @objc public func logNotInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?, error: (any Swift.Error)?)
+  @objc(logNotInitializedMediationWithProviderType:error:configurationToken:) public func logNotInitializedMediation(withProviderType providerType: GFPSDK.GFPProviderType?, error: (any Swift.Error)?, configurationToken: Foundation.UUID)
   @objc public func logInitFailedMediation(withProviderType providerType: GFPSDK.GFPProviderType?)
   @objc public func logErroredMediation(withProviderType providerType: GFPSDK.GFPProviderType?, creativeType: GFPSDK.GFPProviderCreativeType?)
+  @objc(logErroredMediationWithProviderType:providerClassName:creativeType:) public func logErroredMediation(withProviderType providerType: GFPSDK.GFPProviderType?, providerClassName: Swift.String?, creativeType: GFPSDK.GFPProviderCreativeType?)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -187,6 +230,7 @@ extension GFPSDK.GFPExtraRequestParam : Swift.Codable {
   @objc public var logId: Foundation.UUID
   public var adViewType: GFPSDK.GFPAdViewType?
   @objc public var adUnitID: Swift.String?
+  @objc public var productType: Swift.String?
   @objc public var adRequestLog: GFPSDK.GFPAPILog?
   @objc public var adEventLogs: [GFPSDK.GFPAPILog]
   @objc public var loadResponseInfo: GFPSDK.GFPLoadResponseInfo?
@@ -421,6 +465,7 @@ public struct GFPAdLogSupplementarySnapshot : Swift.Codable {
   @objc public var publisherCode: Swift.String?
   @objc public var serviceCode: Swift.String?
   @objc public var error: NaverAdsServices.GFPError?
+  @objc public var crashReportEnable: Swift.Bool
   @objc public init(isSuccess: Swift.Bool, isCached: Swift.Bool, publisherCode: Swift.String? = nil, serviceCode: Swift.String? = nil, error: NaverAdsServices.GFPError? = nil)
   @objc deinit
 }
@@ -641,6 +686,50 @@ extension GFPSDK.GFPCachedAdParam : Swift.Codable {
   @objc override final public var description: Swift.String {
     @objc get
   }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class GFPBreadcrumbStore : ObjectiveC.NSObject {
+  @objc public static let shared: GFPSDK.GFPBreadcrumbStore
+  @objc(addCategory:data:message:) final public func add(category: Swift.String, data: Foundation.NSDictionary? = nil, message: Swift.String? = nil)
+  @objc(breadcrumbsWithCompletion:) final public func breadcrumbs(completion: @escaping (Foundation.NSArray) -> Swift.Void)
+  @objc final public func clear()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class GFPBreadcrumb : ObjectiveC.NSObject, Swift.Codable {
+  public struct Entry : Swift.Codable {
+    public let type: Swift.String
+    public let category: Swift.String
+    public let data: [Swift.String : GFPSDK.GFPBreadcrumb.Value]?
+    public let message: Swift.String?
+    public let timestamp: Foundation.Date
+    public let logId: Foundation.UUID?
+    public var timestampString: Swift.String {
+      get
+    }
+    public func toDictionary(includeLogId: Swift.Bool = false) -> Foundation.NSDictionary
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum Value : Swift.Codable {
+    case string(Swift.String)
+    case int(Swift.Int)
+    case double(Swift.Double)
+    case bool(Swift.Bool)
+    case array([GFPSDK.GFPBreadcrumb.Value])
+    case object([Swift.String : GFPSDK.GFPBreadcrumb.Value])
+    case null
+    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+  }
+  @objc public static let defaultMaxCount: Swift.Int
+  @objc override convenience dynamic public init()
+  @objc public init(maxCount: Swift.Int)
+  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  @objc(addCategory:data:message:) final public func add(category: Swift.String, data: Foundation.NSDictionary? = nil, message: Swift.String? = nil)
+  @objc final public func breadcrumbsArray() -> Foundation.NSArray
+  @objc final public func clear()
   @objc deinit
 }
 @objc public enum GFPVideoBackgroundActionType : Swift.Int {

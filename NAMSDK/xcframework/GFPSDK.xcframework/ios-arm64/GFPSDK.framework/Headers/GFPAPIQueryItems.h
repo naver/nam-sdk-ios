@@ -55,6 +55,13 @@ static NSString * const kGFPAAPParamKeyMagnite = @"magnite";
 
 - (instancetype)initWithRewardVerification:(NSString *)verificationInfo;
 
+/**
+ * dw/dh 용 화면 스냅샷 갱신. 광고 요청 진입 시점에 호출한다. 메인 스레드면 활성 씬 화면, 아니면 UIScreen.main 을 저장한다.
+ * 쿼리 조립(addDeviceInfo)은 백그라운드 큐에서 실행되므로 GFPDeviceUtils.keyWindow(UIApplication.connectedScenes, 메인 전용)를
+ * 직접 읽지 않고 이 스냅샷만 읽는다.
+ */
++ (void)updateScreenSnapshot;
+
 
 @end
 

@@ -10,6 +10,7 @@
 
 #import "GFPMediaView.h"
 #import "GFPPlaceholderHandler.h"
+#import "GFPDecorationView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,6 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
  * 리치 광고의 광고 뷰 외부의 추가 렌더링 광고를 위한 뷰 전달 옵션입니다.
  */
 @property (nonatomic, strong, nullable) NSDictionary<NSString *, UIView *> *additionalRenderingViewDict;
+
+/**
+ * POC광고 등 광고 뷰 내부의 추가 렌더링을 위한 뷰 전달 옵션입니다.
+ */
+@property (nonatomic, strong, nullable) NSDictionary<NSString *, GFPDecorationView *> *decorationViewDict;
 
 /**
  * 리치 광고의 추가 렌더링 뷰들의 터치 이벤트 전달

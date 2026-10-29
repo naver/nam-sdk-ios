@@ -69,6 +69,11 @@ typedef void (^MraidBannerCompletion)(_Nullable id, NSError * _Nullable error);
 - (void)openUrlWith:(nonnull NSString *)urlString webView:(nonnull WKWebView *)webView;
 - (void)handleMRAIDURL:(NSURL *)URL executor:(GFPNDAMRAIDExecutor *)executor isTouched:(BOOL)isTouched;
 
+@optional
+//화면 지오메트리(방향 또는 화면 크기)가 바뀌어 screenSize/maxSize 를 재전송한 뒤 호출된다.
+//폴더블 접힘/펼침처럼 회전 노티 없이 화면이 바뀌는 경우 resize 뷰 재배치 등에 사용한다.
+- (void)screenGeometryDidChangeWithExecutor:(GFPNDAMRAIDExecutor *)executor;
+
 @end
 
 

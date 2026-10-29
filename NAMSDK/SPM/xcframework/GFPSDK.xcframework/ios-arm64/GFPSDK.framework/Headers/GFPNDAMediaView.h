@@ -61,6 +61,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDARichMediaViewVideoExtendV3 = 109,
     GFPNDARichMediaViewTripleCrown = 110,
     GFPNDARichMediaViewImageExtendV3 = 111,
+    GFPNDARichMediaViewNewVideoExtendV2Renewal = 112, // 동확플 V2 신규 디자인. 구 V2(107)와 별도 상품
 
     GFPNDARendererMediaViewShoppingLabel = 1000,
     GFPNDARendererMediaViewSmartChannelFlicking = 1001,
