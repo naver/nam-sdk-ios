@@ -109,7 +109,10 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
 
 @interface GFPNativeMediaExtensionInfo : NSObject
 
+/// 응답 ext.alt 원본. 렌더러가 기본 문구를 넣어도 바뀌지 않는다 (alt 유무 판정용).
 @property (nonatomic, readonly, strong) NSString *alternativeText;
+/// 에셋 단위 낭독 문구 — alt 가 있으면 alt, 없으면 updateAccessibilityTextWith: 로 받은 기본 문구.
+@property (nonatomic, readonly, strong, nullable) NSString *accessibilityText;
 @property (nonatomic, readonly, strong, nullable) GFPNativeRichInfo *richInfo;
 @property (nonatomic, readonly, assign) BOOL isExistRichAssets;
 
@@ -120,7 +123,7 @@ FOUNDATION_EXPORT NSString *const GFPRichExtendMediaRatioType16_9;
                                         link:(GFPNativeLinkInfo *)link NS_DESIGNATED_INITIALIZER;
 
 
-- (void)updateAccessibilityTextWith:(NSString *)accessibilityText; //for renderer
+- (void)updateAccessibilityTextWith:(NSString *)accessibilityText; //for renderer — alt 가 없을 때 쓸 기본 문구
 - (void)removeRichInfo;
 
 @end

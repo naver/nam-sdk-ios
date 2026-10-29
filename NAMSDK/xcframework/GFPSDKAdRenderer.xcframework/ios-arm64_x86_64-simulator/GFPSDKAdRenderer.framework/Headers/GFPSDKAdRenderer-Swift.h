@@ -443,6 +443,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class UIImageView;
 @class GFPMediaView;
 @class UILabel;
+@class GFPNativeAccessibilityItem;
 @protocol GFPNativeAssetProtocol;
 @class NSObject;
 @interface GFPRendererShoppingLabelRetailView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
@@ -454,6 +455,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름):
+/// 브랜드 → 혜택 문구 → 참여 문구 → 메인 이미지 → 오버레이 배지 → 상품명 → 가격 영역(SDK POC 레이아웃, 배송비·설치비 포함)
+/// → AI 리뷰요약 + 칩 → 혜택 티켓(SDK POC CTA 레이아웃) → 고지(SDK 기본 고지 포함).
+/// 가격·혜택 티켓·고지는 SDK 가 그리므로 종류만 선언하고 텍스트는 컨테이너가 채운다.
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
 - (void)changeStyleWith:(BOOL)isDarkMode;
@@ -486,6 +492,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름):
+/// 스토어명 → 스토어 배지(alt 있을 때만) → 메인 이미지 → 본문 → 라벨 칩(표시된 순서, 최대 2) → CTA → 고지.
+/// 이미지 칩은 alt 가 없으면 읽지 않는다. attentionbadge 는 기본 템플릿이 그리지 않아 없다.
+/// 스토어 배지·이미지 칩은 키만 넘기고 alt 판정은 SDK 가 응답 원본으로 한다 — extraImageAccessibility 는 alt 가 없어도 기본 문구(“광고 이미지”)를 돌려준다.
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
@@ -519,6 +530,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름): 메인 이미지 → 제목 → 할인율 → 가격(body) → 배지 또는 별점 → 광고주.
+/// 배지(labeltext)와 별점(star)은 같은 자리에 하나만 그리므로(labeltext 우선) 그려진 쪽만 읽는다.
+/// “광고”/AI 접두어, alt 치환, “N%할인”·“별점 N” 단위 문구는 SDK 가 처리한다.
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)scaleRatio SWIFT_WARN_UNUSED_RESULT;
@@ -551,6 +566,57 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelM
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+/// 스페셜DA 스마트채널280(750*280) NN 렌더러. (GFPSDK-1697)
+/// 좌/우 오브젝트 배치 2종 비주얼을 하나의 뷰로 지원한다.
+/// 레이아웃 규칙 (Figma V2.1 기본 구성 마크업 GUIDE, W375 기준):
+/// <ul>
+///   <li>
+///     기본형 01: 문구폭 154~190 → 오브젝트+문구 묶음 전체 센터 정렬, 꺾쇠 미노출
+///   </li>
+///   <li>
+///     기본형 02: 문구폭 153 이하 → 꺾쇠형 랜딩 아이콘 노출, L형은 텍스트를/R형은 이미지를 N영역 내 센터 정렬
+///   </li>
+/// </ul>
+SWIFT_CLASS_NAMED("GFPRendererSmartChannelSpecialDAView")
+@interface GFPRendererSmartChannelSpecialDAView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyMovieNotice;)
++ (NSString * _Nonnull)extraKeyMovieNotice SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewLandingArrow;)
++ (NSString * _Nonnull)extraViewLandingArrow SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewCtaContainer;)
++ (NSString * _Nonnull)extraViewCtaContainer SWIFT_WARN_UNUSED_RESULT;
+/// 오브젝트(메인 이미지) 좌/우 배치. visual key 2종(A/B)에 따라 컨테이너가 지정한다.
+@property (nonatomic) BOOL isObjectOnRight;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+@interface GFPRendererSmartChannelSpecialDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름). 광고주 뷰가 없어 광고주는 읽지 않는다.
+/// <ul>
+///   <li>
+///     _A(이미지 왼쪽): 메인 이미지 → 메인 문구 → 서브 문구 → {CTA | 영화 안내·고지}
+///   </li>
+///   <li>
+///     _B(이미지 오른쪽): 메인 문구 → 서브 문구 → 영화 안내 → 메인 이미지 → 고지 (CTA 는 그리지 않음)
+///     안내 라벨은 고지(notice)와 영화 안내(labeltext) 중 하나만 그리므로, 그려진 쪽을 제 위치에 넣는다.
+///   </li>
+/// </ul>
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)scaleRatio SWIFT_WARN_UNUSED_RESULT;
+- (void)updateRenderingSetting:(GFPNativeBaseRenderingSetting * _Nullable)renderingSetting;
 @end
 
 SWIFT_CLASS_NAMED("GFPRendererSplashView")
@@ -592,6 +658,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름): 메인 이미지 → 숙소명 → 할인율 → 가격 → 판매처 → 별점(없으면 리뷰 문구 그대로).
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -1109,6 +1177,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class UIImageView;
 @class GFPMediaView;
 @class UILabel;
+@class GFPNativeAccessibilityItem;
 @protocol GFPNativeAssetProtocol;
 @class NSObject;
 @interface GFPRendererShoppingLabelRetailView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
@@ -1120,6 +1189,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름):
+/// 브랜드 → 혜택 문구 → 참여 문구 → 메인 이미지 → 오버레이 배지 → 상품명 → 가격 영역(SDK POC 레이아웃, 배송비·설치비 포함)
+/// → AI 리뷰요약 + 칩 → 혜택 티켓(SDK POC CTA 레이아웃) → 고지(SDK 기본 고지 포함).
+/// 가격·혜택 티켓·고지는 SDK 가 그리므로 종류만 선언하고 텍스트는 컨테이너가 채운다.
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
 - (void)changeStyleWith:(BOOL)isDarkMode;
@@ -1152,6 +1226,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)ctaAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)adChoicesContainerView SWIFT_WARN_UNUSED_RESULT;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름):
+/// 스토어명 → 스토어 배지(alt 있을 때만) → 메인 이미지 → 본문 → 라벨 칩(표시된 순서, 최대 2) → CTA → 고지.
+/// 이미지 칩은 alt 가 없으면 읽지 않는다. attentionbadge 는 기본 템플릿이 그리지 않아 없다.
+/// 스토어 배지·이미지 칩은 키만 넘기고 alt 판정은 SDK 가 응답 원본으로 한다 — extraImageAccessibility 는 alt 가 없어도 기본 문구(“광고 이미지”)를 돌려준다.
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
@@ -1185,6 +1264,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름): 메인 이미지 → 제목 → 할인율 → 가격(body) → 배지 또는 별점 → 광고주.
+/// 배지(labeltext)와 별점(star)은 같은 자리에 하나만 그리므로(labeltext 우선) 그려진 쪽만 읽는다.
+/// “광고”/AI 접두어, alt 치환, “N%할인”·“별점 N” 단위 문구는 SDK 가 처리한다.
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)scaleRatio SWIFT_WARN_UNUSED_RESULT;
@@ -1217,6 +1300,57 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double smartChannelM
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+/// 스페셜DA 스마트채널280(750*280) NN 렌더러. (GFPSDK-1697)
+/// 좌/우 오브젝트 배치 2종 비주얼을 하나의 뷰로 지원한다.
+/// 레이아웃 규칙 (Figma V2.1 기본 구성 마크업 GUIDE, W375 기준):
+/// <ul>
+///   <li>
+///     기본형 01: 문구폭 154~190 → 오브젝트+문구 묶음 전체 센터 정렬, 꺾쇠 미노출
+///   </li>
+///   <li>
+///     기본형 02: 문구폭 153 이하 → 꺾쇠형 랜딩 아이콘 노출, L형은 텍스트를/R형은 이미지를 N영역 내 센터 정렬
+///   </li>
+/// </ul>
+SWIFT_CLASS_NAMED("GFPRendererSmartChannelSpecialDAView")
+@interface GFPRendererSmartChannelSpecialDAView : UIView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraKeyMovieNotice;)
++ (NSString * _Nonnull)extraKeyMovieNotice SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewLandingArrow;)
++ (NSString * _Nonnull)extraViewLandingArrow SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull extraViewCtaContainer;)
++ (NSString * _Nonnull)extraViewCtaContainer SWIFT_WARN_UNUSED_RESULT;
+/// 오브젝트(메인 이미지) 좌/우 배치. visual key 2종(A/B)에 따라 컨테이너가 지정한다.
+@property (nonatomic) BOOL isObjectOnRight;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+@interface GFPRendererSmartChannelSpecialDAView (SWIFT_EXTENSION(GFPSDKAdRenderer)) <GFPNativeTemplateViewProtocol>
+- (UILabel * _Nullable)titleAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)bodyAssetView SWIFT_WARN_UNUSED_RESULT;
+- (UILabel * _Nullable)noticeAssetView SWIFT_WARN_UNUSED_RESULT;
+- (GFPMediaView * _Nullable)mediaContainerView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)extraViewWith:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
+- (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름). 광고주 뷰가 없어 광고주는 읽지 않는다.
+/// <ul>
+///   <li>
+///     _A(이미지 왼쪽): 메인 이미지 → 메인 문구 → 서브 문구 → {CTA | 영화 안내·고지}
+///   </li>
+///   <li>
+///     _B(이미지 오른쪽): 메인 문구 → 서브 문구 → 영화 안내 → 메인 이미지 → 고지 (CTA 는 그리지 않음)
+///     안내 라벨은 고지(notice)와 영화 안내(labeltext) 중 하나만 그리므로, 그려진 쪽을 제 위치에 넣는다.
+///   </li>
+/// </ul>
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
+- (void)changeStyleWith:(BOOL)isDarkMode;
+- (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)scaleRatio SWIFT_WARN_UNUSED_RESULT;
+- (void)updateRenderingSetting:(GFPNativeBaseRenderingSetting * _Nullable)renderingSetting;
 @end
 
 SWIFT_CLASS_NAMED("GFPRendererSplashView")
@@ -1258,6 +1392,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (UILabel * _Nullable)advertiseAssetView SWIFT_WARN_UNUSED_RESULT;
 + (UIView * _Nullable)createView SWIFT_WARN_UNUSED_RESULT;
 - (void)bindWith:(id <GFPNativeAssetProtocol> _Nullable)asset;
+/// 단일 포커스 접근성 항목 (결정안 2026-10-22, 눈 흐름): 메인 이미지 → 숙소명 → 할인율 → 가격 → 판매처 → 별점(없으면 리뷰 문구 그대로).
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems SWIFT_WARN_UNUSED_RESULT;
 - (void)changeStyleWith:(BOOL)isDarkMode;
 - (CGFloat)estimateHeight SWIFT_WARN_UNUSED_RESULT;
 @end

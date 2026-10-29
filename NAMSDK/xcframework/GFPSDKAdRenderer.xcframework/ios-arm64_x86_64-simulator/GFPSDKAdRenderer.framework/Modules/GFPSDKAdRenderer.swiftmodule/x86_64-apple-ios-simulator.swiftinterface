@@ -65,6 +65,7 @@ extension GFPSDKAdRenderer.GFPRendererShoppingNDASpecialDAView : GFPSDK.GFPNativ
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scaleRatio() -> CoreFoundation.CGFloat
@@ -105,6 +106,7 @@ extension GFPSDKAdRenderer.GFPRendererShoppingLabelView : GFPSDK.GFPNativeTempla
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func ctaAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
@@ -148,6 +150,7 @@ extension GFPSDKAdRenderer.GFPRendererShoppingLabelRetailView : GFPSDK.GFPNative
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
@@ -193,8 +196,36 @@ extension GFPSDKAdRenderer.GFPRendererTravelSpecialDAView : GFPSDK.GFPNativeTemp
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+}
+@_inheritsConvenienceInitializers @objc(GFPRendererSmartChannelSpecialDAView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPRendererSmartChannelSpecialDAView : UIKit.UIView {
+  @objc(extraKeyMovieNotice) @_Concurrency.MainActor @preconcurrency public static let extraKeyMovieNotice: Swift.String
+  @objc(extraViewLandingArrow) @_Concurrency.MainActor @preconcurrency public static let extraViewLandingArrow: Swift.String
+  @objc(extraViewCtaContainer) @_Concurrency.MainActor @preconcurrency public static let extraViewCtaContainer: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public var isObjectOnRight: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension GFPSDKAdRenderer.GFPRendererSmartChannelSpecialDAView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scaleRatio() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func updateRenderingSetting(renderingSetting: GFPSDK.GFPNativeBaseRenderingSetting?)
 }
 @_inheritsConvenienceInitializers @objc(GFPTemplateDefaultNativeView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPTemplateDefaultNativeView : UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency public var mediaViewMaxHeight: CoreFoundation.CGFloat

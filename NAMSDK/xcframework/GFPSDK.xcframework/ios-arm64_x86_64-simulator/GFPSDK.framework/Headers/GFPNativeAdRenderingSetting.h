@@ -59,6 +59,8 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
  * 전체 광고뷰로 정할 지 설정하는 옵션입니다.
  * s2s 광고에 한해 지원되며, YES인 경우 전체 광고뷰로 설정합니다.
  * 기본값은 NO입니다.
+ * 클릭 영역에는 영향을 주지 않습니다. 미디어 이미지 영역은 미디어 링크, 그 밖의 여백(레터박스·광고뷰 마진)은
+ * 광고 전체 영역 클릭(nativeData.link)으로 랜딩됩니다. (8.27.0)
  */
 @property (nonatomic, assign) BOOL adAssetsPositionInFullAdView;
 

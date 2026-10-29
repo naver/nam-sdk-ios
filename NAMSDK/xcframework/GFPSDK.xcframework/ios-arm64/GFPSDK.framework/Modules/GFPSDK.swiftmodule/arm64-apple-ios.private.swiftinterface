@@ -146,6 +146,8 @@ extension GFPSDK.GFPErrorUtils {
   @objc public static let splash: Swift.String
   @objc public static let splashVideo: Swift.String
   @objc public static let travelSpecialDA: Swift.String
+  @objc public static let smartChannelSpecialDA: Swift.String
+  @objc public static let smartChannelSpecialDARight: Swift.String
   @objc public static let imageToMotion: Swift.String
   @objc public static let imageRetail: Swift.String
   @objc public static let shortFormRetail: Swift.String
@@ -158,6 +160,7 @@ extension GFPSDK.GFPErrorUtils {
   @objc public static let carouselAdvoost1Line: Swift.String
   @objc public static let carouselPOCSHoppingNDA: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
+  @objc public static func isAccessibilitySummaryVisualKey(_ key: Swift.String) -> Swift.Bool
   @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit

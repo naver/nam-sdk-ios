@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 #import "GFPLanguageType.h"
+#import "GFPNativeProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -66,6 +67,15 @@ static NSString * const kGFPNDAAccessibilityMaxDiscountedPriceFormatKey = @"acce
  */
 + (void)applyLinkWith:(id<GFPNativeAdInfoLinkPresentable>)linkInfo target:(id)target view:(UIView *)aView action:(SEL)action;
 + (void)removeLinkWith:(UIView *)aView;
+
+/**
+ * for accessibility summary (광고 단위 단일 포커스 문구)
+ */
++ (NSString *)accessibilityAdPrefix;                                   // "광고"
++ (NSString *)accessibilityAIUsagePrefix;                              // "AI 활용"
++ (NSString *)accessibilityImageTextWithAlt:(nullable NSString *)alt;  // alt 가 있으면 alt, 없으면 "광고 이미지"(accessibility_ad)
++ (NSString *)accessibilitySummaryWithItems:(NSArray<NSString *> *)items; // 빈 항목 제거 후 ", " 로 연결
++ (nullable NSString *)accessibilityTextWithKind:(GFPNativeAccessibilityItemKind)kind text:(nullable NSString *)text; // kind 별 단위 문구 적용 ("%@할인", "배송비 %@", "별점 %@", "AI 리뷰"). 값이 비면 nil
 
 /**
  * For truncate

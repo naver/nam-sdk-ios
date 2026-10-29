@@ -1039,6 +1039,7 @@ extension GFPSDK.GFPRendererShoppingLabelView : GFPSDK.GFPNativeTemplateViewProt
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func ctaAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
@@ -1072,6 +1073,8 @@ extension GFPSDK.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateV
   @objc public static let splash: Swift.String
   @objc public static let splashVideo: Swift.String
   @objc public static let travelSpecialDA: Swift.String
+  @objc public static let smartChannelSpecialDA: Swift.String
+  @objc public static let smartChannelSpecialDARight: Swift.String
   @objc public static let imageToMotion: Swift.String
   @objc public static let imageRetail: Swift.String
   @objc public static let shortFormRetail: Swift.String
@@ -1084,6 +1087,7 @@ extension GFPSDK.GFPRendererSmartChannelFlickingView : GFPSDK.GFPNativeTemplateV
   @objc public static let carouselAdvoost1Line: Swift.String
   @objc public static let carouselPOCSHoppingNDA: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
+  @objc public static func isAccessibilitySummaryVisualKey(_ key: Swift.String) -> Swift.Bool
   @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
@@ -1274,6 +1278,7 @@ extension GFPSDK.GFPRendererShoppingNDASpecialDAView : GFPSDK.GFPNativeTemplateV
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scaleRatio() -> CoreFoundation.CGFloat
@@ -1296,8 +1301,36 @@ extension GFPSDK.GFPRendererTravelSpecialDAView : GFPSDK.GFPNativeTemplateViewPr
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func advertiseAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+}
+@_inheritsConvenienceInitializers @objc(GFPRendererSmartChannelSpecialDAView) @objcMembers @_Concurrency.MainActor @preconcurrency public class GFPRendererSmartChannelSpecialDAView : UIKit.UIView {
+  @objc(extraKeyMovieNotice) @_Concurrency.MainActor @preconcurrency public static let extraKeyMovieNotice: Swift.String
+  @objc(extraViewLandingArrow) @_Concurrency.MainActor @preconcurrency public static let extraViewLandingArrow: Swift.String
+  @objc(extraViewCtaContainer) @_Concurrency.MainActor @preconcurrency public static let extraViewCtaContainer: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public var isObjectOnRight: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension GFPSDK.GFPRendererSmartChannelSpecialDAView : GFPSDK.GFPNativeTemplateViewProtocol {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func titleAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bodyAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mediaContainerView() -> GFPSDK.GFPMediaView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func estimateHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scaleRatio() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func updateRenderingSetting(renderingSetting: GFPSDK.GFPNativeBaseRenderingSetting?)
 }
 public typealias GFPS2SAdLandingHandler = (Swift.Bool) -> Swift.Void
 @objc public protocol GFPS2SAdClickDelegate : ObjectiveC.NSObjectProtocol {
@@ -1453,6 +1486,7 @@ extension GFPSDK.GFPRendererShoppingLabelRetailView : GFPSDK.GFPNativeTemplateVi
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func noticeAssetView() -> UIKit.UILabel?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adChoicesContainerView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func extraView(with key: Swift.String) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func accessibilitySummaryItems() -> [GFPSDK.GFPNativeAccessibilityItem]?
   @_Concurrency.MainActor @preconcurrency @objc public static func createView() -> UIKit.UIView?
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func bind(with asset: (any GFPSDK.GFPNativeAssetProtocol)?)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func changeStyle(with isDarkMode: Swift.Bool)

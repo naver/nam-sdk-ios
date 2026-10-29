@@ -132,6 +132,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL muteAudio;
 
 /**
+ * 아웃스트림 광고 영상 재생 구간의 AVAudioSession 카테고리를 SDK가 관리하는 옵션 (기본값 NO)
+ * YES 인 경우 muted 재생 중에는 Ambient(다른 앱 오디오와 공존), unmute 시 SoloAmbient 로 전환하고
+ * 재생이 모두 종료되면 관리 시작 전 카테고리로 복원합니다. 상세 동작은 GFPAudioSessionManager 참고.
+ * 앱이 자체적으로 오디오세션을 관리하는 경우에는 NO 로 두고, 필요 시 GFPVideoEventDelegate 의 재생 직전 콜백을 사용하세요.
+ */
+@property (nonatomic, assign) BOOL manageAudioSession;
+
+/**
  *  서비스에서 위치정보 권한을 얻었어도 무시하는 옵션  (기본값 NO)
 */
 @property (nonatomic, assign) BOOL disableLocationInfo;

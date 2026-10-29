@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "GFPNativeAccessibilityItem.h"
 
 @class GFPNativeBaseView;
 @class GFPMediaView;
@@ -140,5 +141,13 @@
 - (void)updateRenderingSetting:(GFPNativeBaseRenderingSetting * _Nullable)renderingSetting NS_SWIFT_NAME(updateRenderingSetting(renderingSetting:));
 - (void)updateAdStyleOptionWith:(GFPAdStyleOption * _Nullable)defaultOption darkOption:(GFPAdStyleOption * _Nullable)darkOption;
 - (void)updateExtraInfo:(NSDictionary<NSString *, NSObject *> * _Nullable)info;
+
+/**
+ * 광고 단위 단일 포커스 접근성 문구에 들어갈 항목을 화면에 보이는 순서(눈 흐름)대로 돌려준다.
+ * - 화면에 그려진 에셋만 넣는다. 엑스트라 이미지는 alt 가 있을 때만 Text 로 넣는다 (alt 없으면 읽지 않음).
+ * - "광고" 접두어와 AI 활용 접두어는 SDK 가 붙이므로 포함하지 않는다. 빈 항목은 SDK 가 제외한다.
+ * - 미구현이거나 nil 을 돌려주면 SDK 기본 순서(광고주 → 제목 → 본문 → 메인 이미지 → CTA → 고지)를 쓴다.
+ */
+- (NSArray<GFPNativeAccessibilityItem *> * _Nullable)accessibilitySummaryItems;
 
 @end

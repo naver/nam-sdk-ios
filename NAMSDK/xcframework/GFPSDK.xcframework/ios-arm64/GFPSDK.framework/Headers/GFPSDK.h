@@ -34,6 +34,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPVideoAdQoeInfo.h>
 #import <GFPSDK/GFPVideoAdQoeDelegate.h>
 #import <GFPSDK/GFPAdConfiguration.h>
+#import <GFPSDK/GFPAudioSessionManager.h>
 #import <GFPSDK/GFPMRAIDSupportSetting.h>
 #import <GFPSDK/GFPUserInterestDelegate.h>
 #import <GFPSDK/GFPVideoOptions.h>

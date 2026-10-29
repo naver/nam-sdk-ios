@@ -212,6 +212,17 @@ didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
 //for link
 - (void)tapGestureWith:(GFPNDANativeLandingTapGesture *)gesture;
 - (void)tryLandingWith:(GFPNDANativeLandingTapGesture *)gesture slotIndex:(NSNumber *_Nullable)slotIndex;
+
+//for root link (광고 뷰 전체 영역 클릭 → nativeData.link 랜딩)
+/// registerViewWith: 가 광고 뷰(GFPNativeAdView / GFPNativeSimpleAdView) 자체에 부착한 root link 제스처. root link 가 없으면 nil.
+@property (nonatomic, strong, readonly, nullable) GFPNDANativeLandingTapGesture *rootLinkGesture;
+/// 광고 뷰 자체에 root link 제스처를 부착한다. 베이스 registerViewWith: 끝에서 호출되며, super 를 호출하지 않는 서브클래스는 직접 호출한다.
+- (void)applyRootLinkWith:(GFPNativeBaseView *)nativeAdView;
+- (void)removeRootLink;
+/// hitView 에서 시작된 터치를 root link 제스처가 받아도 되는지 판정한다 (UIGestureRecognizerDelegate 에서 사용).
+- (BOOL)shouldRootLinkReceiveTouchOn:(nullable UIView *)hitView;
+/// hitView 부터 광고 뷰 직전까지의 조상 각각에 대해 호출된다. YES 면 root link 가 그 터치를 받지 않는다. 서브클래스는 자기 규칙을 더한 뒤 super 를 호출한다.
+- (BOOL)isRootLinkExcludedView:(UIView *)view;
 @end
 
 NS_ASSUME_NONNULL_END

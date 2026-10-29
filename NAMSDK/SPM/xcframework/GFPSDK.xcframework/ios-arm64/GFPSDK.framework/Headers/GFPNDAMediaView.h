@@ -70,6 +70,7 @@ typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewType) {
     GFPNDARendererMediaViewTravelSpecialDA = 1004,
     GFPNDARendererMediaViewSplashVideo = 1005,
     GFPNDARendererMediaViewShoppingLabelRetail = 1006,
+    GFPNDARendererMediaViewSmartChannelSpecialDA = 1007,
 };
 
 typedef NS_OPTIONS(NSInteger, GFPNDAMediaViewRenderType) {
@@ -109,6 +110,9 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 - (CGFloat)minimumSpecialDaRegionHeight;
 
 - (void)shouldCalculatePreferredHeight;
+
+/// 렌더러가 그린 텍스트(POC 가격·혜택 티켓·고지)가 비동기로 바뀌어 단일 포커스 접근성 문구를 다시 만들어야 할 때.
+- (void)didChangeAccessibilityContentWith:(GFPNDAMediaViewType)aType;
 
 @end
 

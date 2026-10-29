@@ -1473,6 +1473,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)splashVideo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull travelSpecialDA;)
 + (NSString * _Nonnull)travelSpecialDA SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelSpecialDA;)
++ (NSString * _Nonnull)smartChannelSpecialDA SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelSpecialDARight;)
++ (NSString * _Nonnull)smartChannelSpecialDARight SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageToMotion;)
 + (NSString * _Nonnull)imageToMotion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageRetail;)
@@ -1496,6 +1500,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselPOCSHoppingNDA;)
 + (NSString * _Nonnull)carouselPOCSHoppingNDA SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isAccessibilitySummaryVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -3022,6 +3027,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)splashVideo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull travelSpecialDA;)
 + (NSString * _Nonnull)travelSpecialDA SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelSpecialDA;)
++ (NSString * _Nonnull)smartChannelSpecialDA SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull smartChannelSpecialDARight;)
++ (NSString * _Nonnull)smartChannelSpecialDARight SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageToMotion;)
 + (NSString * _Nonnull)imageToMotion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imageRetail;)
@@ -3045,6 +3054,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselPOCSHoppingNDA;)
 + (NSString * _Nonnull)carouselPOCSHoppingNDA SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isAccessibilitySummaryVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

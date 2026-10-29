@@ -74,7 +74,7 @@ typedef NS_OPTIONS(NSInteger, GFPVideoViewType) {
 @property (nonatomic, readonly, assign) BOOL useCustomControlView;
 
 /**
- * 광고영상의 최대 bitrate (kbit/sec) (기본값 800)
+ * 광고영상의 최대 bitrate (kbit/sec) (기본값 1600)
  * 입력값 보다 낮은 bitrate 광고영상 중 가장 높은 bitrate 영샹이 채택되며,
  * 입력값 보다 낮은 bitrate 영상이 없는 경우 가장 가까운 bitrate 영샹이 재생됩니다.
  */
