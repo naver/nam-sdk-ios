@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "NAMSDKMediationVungle"
-  s.version      = "7.6.2.4"
+  s.version      = "7.7.4.0"
   s.summary      = "Naver Mobile Ads Mediation SDK"
   s.description  = <<-DESC
                     NAM wiil find the best available ad network to fill your ad slots.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "AdMediationSDK/Vungle/GFPSDKMediationVungle.xcframework"
 
   s.dependency 'NAMSDK/GFPSDK', '>= 8.25.0'
-  s.dependency 'VungleAds', '7.6.2'
+  s.dependency 'VungleAds', '7.7.4'
 
   s.frameworks = 'UIKit', 'Foundation', 'QuartzCore', 'AdSupport', 'AVFoundation', 'AVKit', 'MobileCoreServices', 'SystemConfiguration', 'WebKit', 'CoreLocation'
   
