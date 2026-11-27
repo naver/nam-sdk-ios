@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		f2jJv/dOB2S4A5fR3x/YgLzwjhM=
+		lVEYLDSZvbh8CSiHq/8rxO831kI=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HipJ3kgFs9UIdwyFJfsEtgxkDoY=
+		syTzQVoWjjsuZKEaF0I9Thuvj0k=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HipJ3kgFs9UIdwyFJfsEtgxkDoY=
+		syTzQVoWjjsuZKEaF0I9Thuvj0k=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1oNtkhojiGRJg6P3754l5zGORK0=
+		6sNDzq8m4r7DBzqnzk4t4HfIG5c=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		f2jJv/dOB2S4A5fR3x/YgLzwjhM=
+		lVEYLDSZvbh8CSiHq/8rxO831kI=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7tmeKOVNjg6ToNwwcT/nrpnOv24=
+		Qjor5Vn0oZTszXhj4NQxEyyiPsk=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7tmeKOVNjg6ToNwwcT/nrpnOv24=
+		Qjor5Vn0oZTszXhj4NQxEyyiPsk=
 		</data>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Btsc0fgQmAOdROBMXmjdWGsGP9E=
+		jk8LMCbGMNtANulm8i0/A2AWN8Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -168,14 +168,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEgH80lxZhha29F3vvEKl/SmpRSfqyJ+nDzIGypoZuw=
+			SgnEbh9aliuBbWZ+xnR/rSRKGYYjDDFqhskjUZ+zFx0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rxhpqFQP6LpuWUHdy3fx5dbsF6VtFjxXzHa/3fJqihE=
+			rTAxHdsHM5MJaFAu1piUGVYI1An0YZvL5t+6zQGC1Eo=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -189,28 +189,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rxhpqFQP6LpuWUHdy3fx5dbsF6VtFjxXzHa/3fJqihE=
+			rTAxHdsHM5MJaFAu1piUGVYI1An0YZvL5t+6zQGC1Eo=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TBZlJXMIAskPis8sRViFZ2rMecacp+6u5a61G7ecQEs=
+			V0y4ExxEv1Qzhwz/6GvKt7a+tKtPUkg0DJET2f15PuI=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEgH80lxZhha29F3vvEKl/SmpRSfqyJ+nDzIGypoZuw=
+			SgnEbh9aliuBbWZ+xnR/rSRKGYYjDDFqhskjUZ+zFx0=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vPhcKOUszuvzQYJebAU3l6vACeGR0DNtc8gsRoM3v9w=
+			Il49PIZIzPrCbKDha61zl8vbOyJ+4T4ZNdlHKvgYNVE=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -224,14 +224,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vPhcKOUszuvzQYJebAU3l6vACeGR0DNtc8gsRoM3v9w=
+			Il49PIZIzPrCbKDha61zl8vbOyJ+4T4ZNdlHKvgYNVE=
 			</data>
 		</dict>
 		<key>Modules/GFPSDKMediationPangle.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXN4/b5YfX94lLOgb6+VKPKVQhftCtWj5AIfz8tpng4=
+			YPlZBFQc1j1/AhK/nacPHSTgGBvcVuxrxqRTiPKUsZ4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

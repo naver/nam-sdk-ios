@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Foundation
 import GFPSDK
+import NaverAdsServices
 import PAGAdSDK
 import Swift
 import UIKit
