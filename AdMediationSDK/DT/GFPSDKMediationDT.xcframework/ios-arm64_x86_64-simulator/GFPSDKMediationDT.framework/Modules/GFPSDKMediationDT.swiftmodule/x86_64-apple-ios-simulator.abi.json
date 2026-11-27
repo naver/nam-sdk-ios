@@ -40,30 +40,6 @@
       },
       {
         "kind": "Import",
-        "name": "IASDKCore",
-        "printedName": "IASDKCore",
-        "declKind": "Import",
-        "moduleName": "GFPSDKMediationDT"
-      },
-      {
-        "kind": "Import",
-        "name": "GFPSDK",
-        "printedName": "GFPSDK",
-        "declKind": "Import",
-        "moduleName": "GFPSDKMediationDT"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GFPSDKMediationDT",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "GFPSDK",
         "printedName": "GFPSDK",
         "declKind": "Import",
@@ -201,6 +177,54 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "IASDKCore",
+        "printedName": "IASDKCore",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDT"
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDT"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDT",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GFPSDK",
+        "printedName": "GFPSDK",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDT"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDT",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationDT"
       },
       {
         "kind": "Import",
@@ -223,7 +247,7 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDT\/Rewarded\/GFPDTRewardedAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 543,
+      "offset": 834,
       "length": 5,
       "value": "false"
     },
@@ -240,6 +264,13 @@
       "offset": 349,
       "length": 8,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDT\/Common\/GFPDTErrorUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 367,
+      "length": 6,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDT\/Common\/GFPDTRequestInfo.swift",
@@ -274,12 +305,12 @@
       "kind": "StringLiteral",
       "offset": 643,
       "length": 10,
-      "value": "\"8.4.10.0\""
+      "value": "\"8.4.10.1\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationDT\/Interstitial\/GFPDTInterstitialAdaptor.swift",
       "kind": "BooleanLiteral",
-      "offset": 562,
+      "offset": 853,
       "length": 5,
       "value": "false"
     }
