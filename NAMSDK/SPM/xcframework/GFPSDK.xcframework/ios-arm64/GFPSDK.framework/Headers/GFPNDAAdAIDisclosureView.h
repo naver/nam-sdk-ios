@@ -31,6 +31,10 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAdAIDisclosureViewType) {
 
 - (instancetype)initWithFrame:(CGRect)frame type:(GFPNDAAdAIDisclosureViewType)type;
 
+/// 배지의 접근성 유형. 클릭 URL(curl)이 있어 랜딩하면 "버튼", 없으면 문구("AI 활용")만 읽힌다 (결정안 2026-10-27).
+/// 랜딩이 없으면 터치도 받지 않아 탭이 아래 광고 클릭 영역으로 통과하고, VoiceOver 이중 탭은 아무 동작을 하지 않는다.
+- (void)updateAccessibilityWithLanding:(BOOL)hasLanding;
+
 @end
 
 NS_ASSUME_NONNULL_END

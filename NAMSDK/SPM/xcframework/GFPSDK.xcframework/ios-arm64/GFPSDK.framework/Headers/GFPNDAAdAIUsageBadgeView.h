@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <GFPNDAAdAIUsageBadgeDelegate> delegate;
 
+/// 클릭 URL(curl) 유무. 기본 YES. NO 면 "버튼" 유형을 떼고, VoiceOver 이중 탭도 아무 동작을 하지 않는다.
+@property (nonatomic, assign) BOOL hasLanding;
+
 @end
 
 NS_ASSUME_NONNULL_END

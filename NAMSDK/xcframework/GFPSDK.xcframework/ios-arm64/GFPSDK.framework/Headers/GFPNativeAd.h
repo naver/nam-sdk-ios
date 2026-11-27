@@ -43,7 +43,8 @@ typedef NS_OPTIONS(NSInteger, GFPNativeAdProviderType) {
     GFPNativeAdProviderTypeVungle = 1 << 8, // Vungle
     GFPNativeAdProviderTypePangle = 1 << 9,
     GFPNativeAdProviderTypeTeads = 1 << 10,  // Teads
-    GFPNativeAdProviderTypeMoloco = 1 << 11
+    GFPNativeAdProviderTypeMoloco = 1 << 11,
+    GFPNativeAdProviderTypeDT = 1 << 12     // Digital Turbine
 };
 
 typedef NS_OPTIONS(NSInteger, GFPAdStyleType) {
@@ -166,6 +167,17 @@ typedef NS_ENUM(NSInteger, GFPNativeAdMediaAssetType) {
 
 @property (readwrite, nonatomic, weak) id <GFPNativeAdDelegate> delegate;
 @property (readwrite, nonatomic, weak) id <GFPUserInterestDelegate> userInterestDelegate;
+
+/**
+ * 캐러셀 1+N형(복합형) 광고의 메인 미디어 귀퉁이를 런타임에 변경합니다.
+ * 호출한 광고에만 적용되며, 렌더링 세팅(GFPNativeAdRenderingSetting)의 값은 바꾸지 않습니다.
+ * 1+N형이 아닌 광고에서는 동작하지 않습니다.
+ *
+ * @param cornerRadius 네 귀퉁이에 공통으로 적용할 반경. nil 이면 SDK 기본 반경 16, 0 이면 직각입니다.
+ * @param roundedCorners 둥글게 처리할 귀퉁이. 선택하지 않은 귀퉁이는 직각으로 그려집니다.
+ */
+- (void)updateComplexMediaCornerRadius:(nullable NSNumber *)cornerRadius
+                        roundedCorners:(UIRectCorner)roundedCorners NS_SWIFT_NAME(updateComplexMediaCorner(radius:roundedCorners:));
 
 @end
 

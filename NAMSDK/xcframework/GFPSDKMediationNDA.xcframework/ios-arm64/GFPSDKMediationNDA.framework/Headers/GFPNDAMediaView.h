@@ -174,6 +174,8 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 
 @property (nonatomic, readonly, assign) BOOL isLoaded;
 @property (nonatomic, readonly, assign) BOOL isLandingEnable;
+/// VoiceOver 이중 탭에서 root link 랜딩이 isLandingEnable 로 막혔을 때, 미디어가 터치로 처리하던 자체 랜딩을 수행한다. 수행했으면 YES. 기본 구현은 NO (자체 랜딩 없음).
+- (BOOL)performAccessibilityLanding;
 
 @property (nonatomic, readonly, strong, nullable) GFPIconData *iconData;
 @property (nonatomic, readonly, strong) GFPMediaData *mediaData;
@@ -198,10 +200,26 @@ typedef void (^LoadCompletion)(NSError *_Nullable error);
 
 - (void)shrinkExtendedRichAd;
 - (void)restoreRichAdLayout;
+- (void)updateComplexMediaCornerRadius:(nullable NSNumber *)cornerRadius roundedCorners:(UIRectCorner)roundedCorners;
 
 //register / unregister lifecycle hooks
 - (void)postRenderingWith:(GFPNativeBaseView *)nativeAdView;
 - (void)postUnregisterRendering;
+
+//accessibility — 광고 단위 단일 포커스(NN)에서 광고 요소 다음에 각자 포커스를 받을 뷰
+/// 미디어 안에서 자기 동작(랜딩·재생·슬라이드 등)이 있어 광고 전체 포커스와 분리해야 하는 뷰들. 순서대로 포커스를 받는다.
+/// 이미지: AI 활용 배지(보이면 항상, 버튼 유형은 curl 있을 때만)·선거광고 배지 / 동영상·캐러셀: 미디어뷰 자신(컨테이너, 내부 컨트롤·슬롯을 VoiceOver 가 순회) / 기본: 없음.
+- (NSArray<UIView *> *)accessibilitySeparateFocusViews;
+/// AI 활용 배지가 실제로 그려져 있는지 (curl 무관) — 단일 포커스 문구의 "AI 활용" 접두어 판정용.
+- (BOOL)hasVisibleAIUsageBadge;
+/// 단일 포커스 문구에 메인 이미지(alt, 없으면 "광고 이미지")를 넣는 미디어인지. 이미지 계열만 YES, 동영상·캐러셀은 별도 포커스라 NO.
+- (BOOL)accessibilityReadsMainImage;
+/// 미디어 위에 SDK 가 그린 장식(POC 쿠폰·가격 등)의 화면 텍스트. 단일 포커스 문구에서 extraImage 뒤·CTA 앞에 읽힌다 (AOS 정합 2026-11-06). 기본 빈 배열.
+- (NSArray<NSString *> *)accessibilityDecorationTexts;
+/// 미디어가 그린 AdChoices(광고 옵션) 뷰. 단일 포커스에서 미디어 별도 포커스 뷰 다음 순서로 포커스를 받는다 (NS 전 상품, 2026-11). 기본 nil.
+- (nullable UIView *)accessibilityAdChoiceView;
+/// 선거광고 배지가 실제로 그려져 있는지 — 단일 포커스 문구의 "선거광고" 접두어 판정용(리치). 기본 NO.
+- (BOOL)hasVisibleElectionBadge;
 
 - (void)didPresentDefaultInAppBrowser;
 - (void)didDismissDefaultInAppBrowser;

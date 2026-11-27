@@ -13,6 +13,7 @@
 #import "GFPS2SAdClickDelegate.h"
 #import "GFPPrivacySetting.h"
 #import "GFPLanguageType.h"
+#import "GFPExternalId.h"
 
 #import "Swift-Enum.h"
 
@@ -71,6 +72,22 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (atomic, copy, nullable) NSDictionary <NSString *, NSString *> *customParam;
 
+/**
+ * External Id 조회
+ */
+@property (atomic, readonly, copy) NSArray <GFPExternalId *> *externalIds;
+
+/**
+ * External Id 설정
+ * - 기존에 설정된 값은 모두 제거되고 전달한 값으로 교체된다.
+ * - 하나의 source 에 여러 개의 id 를 설정할 경우 같은 source 로 여러 개를 전달한다.
+ */
+- (void)setExternalIds:(NSArray <GFPExternalId *> *)externalIds;
+
+/**
+ * External Id 전체 제거
+ */
+- (void)clearExternalIds;
 
 
 /**

@@ -581,8 +581,10 @@ SWIFT_CLASS_NAMED("GFPAdInitProviderInfo")
 SWIFT_CLASS_NAMED("GFPAdInitProviderPlacementInfo")
 @interface GFPAdInitProviderPlacementInfo : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable placeId;
+@property (nonatomic, readonly, copy) NSString * _Nullable creativeType;
 @property (nonatomic, readonly) CGSize size;
 - (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isCreativeType:(NSString * _Nonnull)type SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1139,7 +1141,8 @@ typedef SWIFT_ENUM(NSInteger, GFPNativeProviderOption, open) {
   GFPNativeProviderOptionPangle = 8,
   GFPNativeProviderOptionTeads = 9,
   GFPNativeProviderOptionMoloco = 10,
-  GFPNativeProviderOptionEnd = 11,
+  GFPNativeProviderOptionDT = 11,
+  GFPNativeProviderOptionEnd = 12,
 };
 
 /// NELO 로그 1건에 실을 breadcrumb 상태. 값만 담으며 만들어진 뒤 바뀌지 않는다.
@@ -1500,7 +1503,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull carouselPOCSHoppingNDA;)
 + (NSString * _Nonnull)carouselPOCSHoppingNDA SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTemplateVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)isAccessibilitySummaryVisualKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isCarouselVisualkey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

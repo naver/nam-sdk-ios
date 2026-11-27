@@ -72,6 +72,12 @@ typedef NSArray<UIView *> *_Nullable(^GFPImpressionTrackCustomViews)(void);
 @property(readonly, nonatomic, copy) GFPImpressionTrackCompletionHandler completionHandler;
 @property(readonly, nonatomic, copy) GFPImpressionTrackCustomCompleteCheckHandler customCompleteCheckHandler;
 
+/**
+ * YES 면 추적을 시작한 뒤 뷰가 화면에서 사라진 적이 있어야(이탈) 노출 판정을 시작한다. bounce back 용.
+ * 이탈 = 앱 백그라운드 진입, 뷰가 윈도우에서 빠짐, 뷰의 화면 위로 다른 화면이 present 됨(알럿·액션 시트 제외).
+ */
+@property(nonatomic, assign) BOOL requiresDeparture;
+@property(nonatomic, assign) BOOL departed;
 
 - (instancetype)init NS_UNAVAILABLE;
 

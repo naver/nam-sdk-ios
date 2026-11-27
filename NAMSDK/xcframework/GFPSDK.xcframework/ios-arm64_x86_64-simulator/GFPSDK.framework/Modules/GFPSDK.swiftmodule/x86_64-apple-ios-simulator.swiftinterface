@@ -160,7 +160,6 @@ extension GFPSDK.GFPErrorUtils {
   @objc public static let carouselAdvoost1Line: Swift.String
   @objc public static let carouselPOCSHoppingNDA: Swift.String
   @objc public static func isTemplateVisualKey(_ key: Swift.String) -> Swift.Bool
-  @objc public static func isAccessibilitySummaryVisualKey(_ key: Swift.String) -> Swift.Bool
   @objc public static func isCarouselVisualkey(_ key: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
@@ -380,6 +379,7 @@ extension GFPSDK.GFPErrorUtils {
   case pangle
   case teads
   case moloco
+  case DT
   case end
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -586,10 +586,12 @@ extension GFPSDK.GFPErrorUtils {
   @objc final public let placeId: Swift.String?
   final public let width: Swift.Int?
   final public let height: Swift.Int?
+  @objc final public let creativeType: Swift.String?
   @objc public var size: CoreFoundation.CGSize {
     @objc get
   }
   @objc public init?(withDictionary dict: Swift.Dictionary<Swift.String, Any>?)
+  @objc public func isCreativeType(_ type: Swift.String) -> Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class GFPBreadcrumb : ObjectiveC.NSObject, Swift.Codable {

@@ -95,6 +95,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)reportBounceBack:(double)bbt;
 
+/**
+ * 마지막 bounce 측정 시작 이후 클릭 이벤트를 보낸 적이 있으면 YES 를 돌려주고 표시를 지운다.
+ * bounce back 측정은 클릭 이벤트를 보낸 경우에만 시작한다.
+ */
+- (BOOL)consumeClickReportForBounceBack;
+
 @end
 
 NS_ASSUME_NONNULL_END

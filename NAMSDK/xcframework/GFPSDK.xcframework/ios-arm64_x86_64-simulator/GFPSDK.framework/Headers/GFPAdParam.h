@@ -94,8 +94,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * s2s waterfall skip을 위해 지원하는 queryString.
+ * 비동기로 발급되는 데이터는 포함하지 않음.
  */
 - (NSString *)adCallQueryWith:(NSString *)adUnitId;
+
+/**
+ * s2s waterfall skip을 위해 지원하는 queryString.
+ * 비동기로 발급되는 데이터까지 최대 2초 동안 새로 받아 포함.
+ * ex. Moloco, Pangle, BidMachine 등 비딩 토큰
+ */
+- (void)fetchAdCallQueryWith:(NSString *)adUnitId completion:(void (^)(NSString *query))completion NS_SWIFT_NAME(fetchAdCallQuery(with:completion:));
 
 @end
 

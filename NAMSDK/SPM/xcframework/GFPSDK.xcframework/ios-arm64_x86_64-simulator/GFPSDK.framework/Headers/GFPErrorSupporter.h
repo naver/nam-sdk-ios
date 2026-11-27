@@ -47,6 +47,7 @@ FOUNDATION_EXPORT NSString *const GFPNativeProviderBidMachineErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderPangleErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderTeadsErrorKey;
 FOUNDATION_EXPORT NSString *const GFPNativeProviderMolocoErrorKey;
+FOUNDATION_EXPORT NSString *const GFPNativeProviderDTErrorKey;
 
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderDFPErrorKey;
 FOUNDATION_EXPORT NSString *const GFPInterstitialProviderFANErrorKey;

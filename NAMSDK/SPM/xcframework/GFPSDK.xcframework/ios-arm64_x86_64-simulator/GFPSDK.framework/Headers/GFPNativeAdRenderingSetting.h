@@ -86,6 +86,21 @@ typedef NS_OPTIONS(NSInteger, GFPAdChoicesViewPosition) {
 @property (nonatomic, assign) UIEdgeInsets richMediaInsets;
 
 /**
+ * 캐러셀 1+N형(복합형) 광고의 메인 미디어 귀퉁이 반경입니다.
+ * 네 귀퉁이에 같은 반경이 적용되며, 둥글릴 귀퉁이는 complexMediaRoundedCorners 로 고릅니다.
+ * 0 을 전달하면 직각으로 그려집니다.
+ * (기본값은 nil 이며, 이 경우 SDK 기본 반경 16 이 적용됩니다)
+ */
+@property (nonatomic, strong, nullable) NSNumber *complexMediaCornerRadius;
+
+/**
+ * 캐러셀 1+N형(복합형) 광고의 메인 미디어에서 둥글게 처리할 귀퉁이입니다.
+ * 선택하지 않은 귀퉁이는 직각으로 그려집니다.
+ * (기본값은 UIRectCornerAllCorners)
+ */
+@property (nonatomic, assign) UIRectCorner complexMediaRoundedCorners;
+
+/**
  * 캐러셀 광고의 MediaView 내부 폰트를 설정하고 싶을 때 전달합니다.
  * (기본값은 nil)
  */

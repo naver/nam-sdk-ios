@@ -21,6 +21,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 #import <GFPSDK/GFPUserParam.h>
 #import <GFPSDK/GFPAPSAdParam.h>
 #import <GFPSDK/GFPContentInfo.h>
+#import <GFPSDK/GFPExternalId.h>
 #import <GFPSDK/GFPAdManager.h>
 #import <GFPSDK/GFPBannerView.h>
 #import <GFPSDK/GFPBannerViewDelegate.h>
@@ -106,6 +107,7 @@ FOUNDATION_EXPORT const unsigned char GFPSDKVersionString[];
 
 
 #import <GFPSDK/GFPExtraRequestParam.h>
+#import <GFPSDK/GFPProviderRequestInfo.h>
 #import <GFPSDK/GFPNativeContext.h>
 #import <GFPSDK/GFPBannerContext.h>
 #import <GFPSDK/GFPRewardedAdContext.h>

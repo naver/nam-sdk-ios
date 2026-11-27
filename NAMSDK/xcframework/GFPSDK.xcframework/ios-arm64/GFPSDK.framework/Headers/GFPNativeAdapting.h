@@ -121,6 +121,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)updateInterfaceStyle:(GFPAdInterfaceStyle)interfaceStyle NS_SWIFT_NAME(updateInterfaceStyle(_:));
 
+- (void)updateComplexMediaCornerRadius:(nullable NSNumber *)cornerRadius
+                        roundedCorners:(UIRectCorner)roundedCorners NS_SWIFT_NAME(updateComplexMediaCorner(radius:roundedCorners:));
+
 @end
 
 NS_ASSUME_NONNULL_END

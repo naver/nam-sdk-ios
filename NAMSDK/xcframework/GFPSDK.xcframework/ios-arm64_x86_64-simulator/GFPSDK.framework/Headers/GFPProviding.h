@@ -14,6 +14,7 @@
 @class GFPAdAdaptorParam;
 @class GFPExtraRequestParam;
 @class GFPAdInitProviderInfo;
+@class GFPProviderRequestInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isSDKinitialize;
 
 - (GFPExtraRequestParam * _Nullable)extraRequestParamWith:(NSString * _Nullable)adUnitId;
+
+- (void)collectExtraRequestParamWith:(GFPProviderRequestInfo *)info
+                          completion:(void (^)(GFPExtraRequestParam * _Nullable param, NSError * _Nullable error))completion
+    NS_SWIFT_NAME(collectExtraRequestParam(with:completion:));
 
 @required
 

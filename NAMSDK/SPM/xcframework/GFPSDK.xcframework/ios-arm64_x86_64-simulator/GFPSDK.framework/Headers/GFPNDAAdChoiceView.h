@@ -43,6 +43,9 @@ typedef NS_OPTIONS(NSInteger, GFPNDAAdChoiceViewType) {
 @property (nonatomic, weak) id <GFPNDAAdChoiceViewDelegate> delegate;
 @property (nonatomic, assign, readonly) GFPNDAAdChoiceViewType type;
 
+/// 접근성 알림 전송 훅 (기본 nil → UIAccessibilityPostNotification). 광고 끄기 화면이 닫혀 광고로 돌아올 때 포커스 복귀 알림을 보낸다. 테스트 주입용.
+@property (nonatomic, copy, nullable) void (^accessibilityNotificationHandler)(UIAccessibilityNotifications notification, id _Nullable argument);
+
 - (instancetype)initWithFrame:(CGRect)frame adChoiceInfo:(GFPAdChoiceInfo *)adChoiceInfo renderAdBadge:(BOOL)renderAdBadge;
 
 - (void)updateViewWith:(UIView *)adView renderingSetting:(GFPNativeBaseRenderingSetting *)renderingSetting adMuteState:(GFPNDAAdMuteState)adMuteState;

@@ -200,6 +200,9 @@ didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
 
 
 - (void)clearForMemoryWarning;
+
+//캐러셀 1+N형(복합형) 메인 미디어 귀퉁이 런타임 변경. 복합형 광고(GFPNDANativeNormalComplexAd)만 동작한다.
+- (void)updateComplexMediaCornerRadius:(nullable NSNumber *)cornerRadius roundedCorners:(UIRectCorner)roundedCorners;
 - (BOOL)isReloadRequired;
 - (void)reloadMediaResource;
 - (void)additionalRenderingViewClicked:(UIView *)clickedView;
@@ -221,6 +224,8 @@ didChangeMediaAssetLoadingState:(GFPNativeAdMediaLoadingState)state
 - (void)removeRootLink;
 /// hitView 에서 시작된 터치를 root link 제스처가 받아도 되는지 판정한다 (UIGestureRecognizerDelegate 에서 사용).
 - (BOOL)shouldRootLinkReceiveTouchOn:(nullable UIView *)hitView;
+/// 단일 포커스 요소의 VoiceOver 이중 탭 처리. 일반 터치와 같은 판정을 통과하면 root link 로 랜딩하고, 미디어의 isLandingEnable 로만 막혔으면 미디어 자체 랜딩(performAccessibilityLanding)을 부른다. 랜딩하지 않아도 항상 YES 로 소비한다.
+- (BOOL)activateAccessibilitySummary;
 /// hitView 부터 광고 뷰 직전까지의 조상 각각에 대해 호출된다. YES 면 root link 가 그 터치를 받지 않는다. 서브클래스는 자기 규칙을 더한 뒤 super 를 호출한다.
 - (BOOL)isRootLinkExcludedView:(UIView *)view;
 @end
