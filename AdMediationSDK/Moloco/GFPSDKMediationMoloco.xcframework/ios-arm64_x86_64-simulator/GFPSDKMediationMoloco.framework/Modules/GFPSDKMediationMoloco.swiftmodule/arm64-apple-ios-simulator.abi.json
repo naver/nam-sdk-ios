@@ -23,6 +23,13 @@
       },
       {
         "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationMoloco"
+      },
+      {
+        "kind": "Import",
         "name": "GFPSDK",
         "printedName": "GFPSDK",
         "declKind": "Import",
@@ -584,16 +591,37 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
       "kind": "StringLiteral",
-      "offset": 522,
+      "offset": 547,
       "length": 10,
-      "value": "\"4.10.0.1\""
+      "value": "\"4.10.0.2\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 716,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 898,
+      "length": 43,
+      "value": "\"com.navercorp.da.gfp.GFPMolocoConfig.init\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
+      "kind": "Array",
+      "offset": 1070,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1214,
+      "length": 49,
+      "value": "\"com.navercorp.da.gfp.GFPMolocoConfig.lastAppKey\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2562,
+      "length": 30,
+      "value": "\"[Moloco] appKey nil or empty\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
@@ -615,13 +643,6 @@
       "offset": 404,
       "length": 8,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoCommonProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 975,
-      "length": 10,
-      "value": "\"bidtoken\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationMoloco\/Common\/GFPMolocoRequestInfo.swift",
