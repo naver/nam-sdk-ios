@@ -287,6 +287,13 @@
       },
       {
         "kind": "Import",
+        "name": "NaverAdsServices",
+        "printedName": "NaverAdsServices",
+        "declKind": "Import",
+        "moduleName": "GFPSDKMediationBidMachine"
+      },
+      {
+        "kind": "Import",
         "name": "GFPSDK",
         "printedName": "GFPSDK",
         "declKind": "Import",
@@ -297,151 +304,95 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Rewarded\/GFPBidMachineRewardedAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Native\/GFPNativeProviderBidMachine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 954,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Rewarded\/GFPBidMachineRewardedAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 625,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 363,
       "length": 10,
       "value": "\"sourceId\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 13,
       "value": "\"placementId\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineRequestInfo.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineRequestInfo.swift",
       "kind": "StringLiteral",
       "offset": 463,
       "length": 13,
       "value": "\"bid_payload\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Interstitial\/GFPBidMachineInterstitialAdAdaptor.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Interstitial\/GFPBidMachineInterstitialAdAdaptor.swift",
       "kind": "BooleanLiteral",
       "offset": 653,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 4,
       "value": "\"sv\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
       "kind": "StringLiteral",
       "offset": 438,
       "length": 10,
       "value": "\"bidtoken\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1016,
-      "length": 2,
-      "value": "20"
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 16,
+      "value": "\"nativebidtoken\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1023,
-      "length": 5,
-      "value": "\"...\""
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 950,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1034,
-      "length": 7,
-      "value": "\"(nil)\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1063,
-      "length": 73,
-      "value": "\"[BidMachine][ExtraParam] \""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1106,
-      "length": 3,
-      "value": "\" → bidtoken=\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineCommonProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1135,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 496,
+      "offset": 521,
       "length": 9,
-      "value": "\"3.5.0.5\""
+      "value": "\"3.5.0.6\""
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1075,
-      "length": 32,
-      "value": "\"com.naver.gfp.bidmachine.token\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
       "kind": "Array",
-      "offset": 1172,
+      "offset": 946,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
-      "kind": "Dictionary",
-      "offset": 1219,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner-2\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1533,
-      "length": 35,
-      "value": "\"com.naver.gfp.bidmachine.inflight\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
-      "kind": "Dictionary",
-      "offset": 1635,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
-      "kind": "FloatLiteral",
-      "offset": 1826,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/gfp-sdk-ios\/gfp-sdk-ios\/GFPSDKMediation\/develop\/GFPSDKMediationBidMachine\/Common\/GFPBidMachineConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2085,
-      "length": 32,
-      "value": "\"com.naver.gfp.bidmachine.fetch\""
+      "offset": 957,
+      "length": 54,
+      "value": "\"com.navercorp.da.gfp.GFPBidMachineConfig.adUnitInfos\""
     }
   ]
 }

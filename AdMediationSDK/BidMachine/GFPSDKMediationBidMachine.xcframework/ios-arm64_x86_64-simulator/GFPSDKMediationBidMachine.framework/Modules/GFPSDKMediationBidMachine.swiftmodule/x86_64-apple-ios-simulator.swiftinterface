@@ -6,6 +6,7 @@ import BidMachine
 import CoreLocation
 import Foundation
 import GFPSDK
+import NaverAdsServices
 import Swift
 import _Concurrency
 import _StringProcessing
